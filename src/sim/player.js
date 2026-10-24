@@ -124,7 +124,7 @@ export class Player {
     // integrate
     if (this.navigation) {
       const x=this.pos.x,z=this.pos.z;
-      if (moveWithGuards(this.pos,m.vx*dt,m.vz*dt,this.navigation.barriers)) {
+      if (moveWithGuards(this.pos,m.vx*dt,m.vz*dt,(this.navigation.nearby?.(this.pos) ?? this.navigation.barriers))) {
         m.vx=(this.pos.x-x)/(dt||1);m.vz=(this.pos.z-z)/(dt||1);
       }
     } else {
@@ -138,7 +138,18 @@ export class Player {
     this._origin.y += 1.0;
     this.ray.set(this._origin, this._down);
     this.ray.far = 1.0 + (m.vy < 0 ? Math.max(0.3, -m.vy * dt + 0.25) : 0.3);
-    const hits = this.ray.intersectObjects(this.colliders, false);
+    let hits = this.ray.intersectObjects(this.colliders, false);
+    // A capsule has a foot area. Exact fan/triangle-edge rays can miss at tiny
+    // floating-point offsets (notably camera-relative single-finger movement).
+    // Only on a missed centre ray, probe 3 cm around it, within the foot radius.
+    if (!hits.length && m.vy <= .01) {
+      for(const [dx,dz] of [[.03,0],[-.03,0],[0,.03],[0,-.03]]) {
+        this._origin.set(this.pos.x+dx,this.pos.y+1,this.pos.z+dz);
+        this.ray.set(this._origin,this._down);
+        hits=this.ray.intersectObjects(this.colliders,false);
+        if(hits.length)break;
+      }
+    }
     const wasGrounded = m.grounded;
     m.grounded = false;
     if (hits.length && m.vy <= 0.01) {
@@ -148,7 +159,7 @@ export class Player {
         this.pos.y = groundY;
         m.vy = 0;
         m.grounded = true;
-        if (!this.navigation || isSafeCheckpoint(this.pos,hit.object,this.navigation.islands,this.navigation.barriers)) {
+        if (!this.navigation || isSafeCheckpoint(this.pos,hit.object,this.navigation.islands,(this.navigation.nearby?.(this.pos) ?? this.navigation.barriers))) {
           this.lastGrounded.copy(this.pos);
         }
         // jump pad?

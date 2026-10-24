@@ -5,16 +5,8 @@ import { toonMaterial, addOutline } from './toon.js';
 import { CHIMES, MURAL_ORDER } from '../sim/puzzle.js';
 import { muralTexture } from './textures.js';
 
-export const ISLANDS = [
-  { name: 'home', x: 0, y: 0, z: 0, r: 9 },
-  { name: 'tree', x: 26, y: 5, z: -14, r: 7 },
-  { name: 'temple', x: -24, y: 10, z: -20, r: 8 },
-  { name: 'koi', x: 18, y: 8, z: 22, r: 7 },
-  { name: 'meadow', x: -14, y: 3, z: 18, r: 6 },
-  { name: 'windmill', x: -30, y: 8, z: 4, r: 6 },
-  { name: 'crystal', x: 34, y: 13, z: 4, r: 5 },
-  { name: 'lookout', x: 2, y: 14, z: -30, r: 5 }
-];
+import layout from '../data/yuan-layout.json' with { type: 'json' };
+export const ISLANDS = layout.nodes.filter(n=>n.island).map(n=>({name:n.island,x:n.x,y:n.y,z:n.z,r:n.r}));
 
 const GRASS = 0x8fdcb4;
 const GRASS_DARK = 0x6fc79c;

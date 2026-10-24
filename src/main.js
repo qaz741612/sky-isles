@@ -1,5 +1,6 @@
 // Sky Isles — boot, game loop, interactions, debug handle.
 import * as THREE from 'three';
+import { Panorama } from './sim/panorama.js';
 import { cameraProfile } from './sim/camera-profile.js';
 import { Rng } from './sim/rng.js';
 import { ChimePuzzle, CHIMES, MURAL_ORDER } from './sim/puzzle.js';
@@ -52,7 +53,7 @@ const colliders = [
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
-player.navigation = { islands: ISLANDS, barriers: bridges.barriers };
+player.navigation = { islands: ISLANDS, barriers: bridges.barriers, nearby: bridges.nearby };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);
 Object.assign(player.orbit, initialView);
@@ -60,6 +61,23 @@ camera.fov = initialView.fov;
 camera.updateProjectionMatrix();
 const ui = new UI();
 const policyUI = new PolicyUI(policyData, islands.islands, camera, ui);
+
+const panoramaButton = document.getElementById('panorama-btn');
+const exploreFog = scene.fog;
+const panorama = new Panorama(camera,bridges.bounds,active=>{
+ document.body.classList.toggle('panorama',active);
+ ui.suspended=active;
+ ui.resetInput();
+ scene.fog=active?null:exploreFog;sky.setOverview(active);clouds.setOverview(active);
+ panoramaButton.textContent=active?'返回探索':'全景';
+ panoramaButton.setAttribute('aria-pressed',String(active));
+});
+panoramaButton.addEventListener('click',()=>{
+ if(panorama.mode==='overview')panorama.leave();
+ else if(!panorama.active && player.move.grounded && !policyUI.isOpen)panorama.enter();
+ else if(!panorama.active)ui.hint('請在安全路面停穩後開啟全景',1800);
+ panoramaButton.blur();
+});
 
 player.onJumpPad = () => {
   audio.boing();
@@ -93,6 +111,7 @@ function playChime(index) {
 }
 
 function tryInteract() {
+  if(panorama.active)return;
   const near = chimes.nearest(player.pos);
   if (near) playChime(near.index);
 }
@@ -101,7 +120,7 @@ function tryInteract() {
 const tapRay = new THREE.Raycaster();
 const tapNdc = new THREE.Vector2();
 ui.onTap = (nx, ny) => {
-  if (!started || policyUI.isOpen) return;
+  if (!started || policyUI.isOpen || panorama.active) return;
   tapNdc.set(nx, ny);
   tapRay.setFromCamera(tapNdc, camera);
   const hits = tapRay.intersectObjects(chimes.hitMeshes, false);
@@ -138,6 +157,7 @@ window.addEventListener('resize', () => {
   camera.fov = cameraProfile(innerWidth, innerHeight).fov;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
+  panorama.fit(innerWidth,innerHeight);
 });
 
 // ----- debug handle for e2e / QA -----
@@ -149,6 +169,7 @@ window.__skyisles = {
       respawnCount: player.respawnCount,
       checkpoint: player.lastGrounded.toArray(),
       playerPos: { x: player.pos.x, y: player.pos.y, z: player.pos.z },
+      panoramaMode: panorama.mode,
       started,
       muralOrder: [...MURAL_ORDER]
     };
@@ -170,7 +191,7 @@ window.__skyisles = {
       started = true;
     }
   },
-  world: { scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, ui }
+  world: { panorama, policyUI, scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, ui }
 };
 
 // ----- main loop -----
@@ -183,24 +204,27 @@ function frame() {
   const dt = Math.min(clock.getDelta(), 0.05);
   const t = clock.elapsedTime;
 
-  const input = started && !policyUI.isOpen
+  const input = started && !policyUI.isOpen && !panorama.active
     ? ui.poll(player.orbit)
     : { x: 0, z: 0, jumpPressed: false, jumpHeld: false };
 
-  player.update(dt, input, t);
+  if(!panorama.active)player.update(dt, input, t);
+  panorama.update(dt);
+  panoramaButton.hidden=!started;
 
   playerCenter.copy(player.pos);
   playerCenter.y += 1.2;
   chimes.update(t, dt, started ? playerCenter : null);
   sky.update(t, dt);
-  clouds.update(t, dt, camera);
+  clouds.update(t, dt, panorama.camera);
   bridges.update(t);
   props.update(t, dt);
   transport.update(t);
   updateJumpPads(islands.jumpPads, t, dt);
 
-  renderer.render(scene, camera);
-  policyUI.update(started, player.pos);
+  renderer.render(scene, panorama.camera);
+  policyUI.camera=panorama.camera;
+  policyUI.update(started, player.pos, panorama.active, panorama.labelled === true);
 
   if (firstFrame) {
     firstFrame = false;

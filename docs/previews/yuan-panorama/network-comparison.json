@@ -1,0 +1,195 @@
+{
+  "scaleXZ": 0.78,
+  "islandRadiiUnchanged": true,
+  "heightFactor": 1,
+  "rawTriangleGrade": 0,
+  "levelDatum": 0,
+  "baselineHeightRange": [
+    0,
+    2
+  ],
+  "maxTriangleGrade": 0,
+  "deckTriangles": 1801,
+  "boundarySegments": 1721,
+  "unionComponents": 1,
+  "totalLengthBefore": 1137.0921395172427,
+  "totalLengthAfter": 886.9168103366217,
+  "shortestBefore": {
+    "home": {
+      "home": 0,
+      "tree": 55.113,
+      "temple": 72.064,
+      "koi": 75.75,
+      "meadow": 63.872,
+      "windmill": 176.419,
+      "crystal": 147.843,
+      "lookout": 224.337
+    },
+    "tree": {
+      "home": 55.113,
+      "tree": 0,
+      "temple": 85.109,
+      "koi": 130.863,
+      "meadow": 75.646,
+      "windmill": 231.533,
+      "crystal": 202.957,
+      "lookout": 279.45
+    },
+    "temple": {
+      "home": 72.064,
+      "tree": 85.109,
+      "temple": 0,
+      "koi": 81.054,
+      "meadow": 135.936,
+      "windmill": 181.724,
+      "crystal": 219.907,
+      "lookout": 296.401
+    },
+    "koi": {
+      "home": 75.75,
+      "tree": 130.863,
+      "temple": 81.054,
+      "koi": 0,
+      "meadow": 139.622,
+      "windmill": 100.67,
+      "crystal": 223.593,
+      "lookout": 300.087
+    },
+    "meadow": {
+      "home": 63.872,
+      "tree": 75.646,
+      "temple": 135.936,
+      "koi": 139.622,
+      "meadow": 0,
+      "windmill": 240.292,
+      "crystal": 160.06,
+      "lookout": 288.209
+    },
+    "windmill": {
+      "home": 176.419,
+      "tree": 231.533,
+      "temple": 181.724,
+      "koi": 100.67,
+      "meadow": 240.292,
+      "windmill": 0,
+      "crystal": 324.263,
+      "lookout": 400.756
+    },
+    "crystal": {
+      "home": 147.843,
+      "tree": 202.957,
+      "temple": 219.907,
+      "koi": 223.593,
+      "meadow": 160.06,
+      "windmill": 324.263,
+      "crystal": 0,
+      "lookout": 372.18
+    },
+    "lookout": {
+      "home": 224.337,
+      "tree": 279.45,
+      "temple": 296.401,
+      "koi": 300.087,
+      "meadow": 288.209,
+      "windmill": 400.756,
+      "crystal": 372.18,
+      "lookout": 0
+    }
+  },
+  "shortestAfter": {
+    "home": {
+      "home": 0,
+      "tree": 42.987,
+      "temple": 56.21,
+      "koi": 59.084,
+      "meadow": 49.82,
+      "windmill": 137.607,
+      "crystal": 115.316,
+      "lookout": 174.981
+    },
+    "tree": {
+      "home": 42.987,
+      "tree": 0,
+      "temple": 66.383,
+      "koi": 102.072,
+      "meadow": 59.004,
+      "windmill": 180.594,
+      "crystal": 158.303,
+      "lookout": 217.969
+    },
+    "temple": {
+      "home": 56.21,
+      "tree": 66.383,
+      "temple": 0,
+      "koi": 63.221,
+      "meadow": 106.03,
+      "windmill": 141.744,
+      "crystal": 171.525,
+      "lookout": 231.191
+    },
+    "koi": {
+      "home": 59.084,
+      "tree": 102.072,
+      "temple": 63.221,
+      "koi": 0,
+      "meadow": 108.905,
+      "windmill": 78.522,
+      "crystal": 174.4,
+      "lookout": 234.066
+    },
+    "meadow": {
+      "home": 49.82,
+      "tree": 59.004,
+      "temple": 106.03,
+      "koi": 108.905,
+      "meadow": 0,
+      "windmill": 187.427,
+      "crystal": 124.844,
+      "lookout": 224.802
+    },
+    "windmill": {
+      "home": 137.607,
+      "tree": 180.594,
+      "temple": 141.744,
+      "koi": 78.522,
+      "meadow": 187.427,
+      "windmill": 0,
+      "crystal": 252.922,
+      "lookout": 312.588
+    },
+    "crystal": {
+      "home": 115.316,
+      "tree": 158.303,
+      "temple": 171.525,
+      "koi": 174.4,
+      "meadow": 124.844,
+      "windmill": 252.922,
+      "crystal": 0,
+      "lookout": 290.297
+    },
+    "lookout": {
+      "home": 174.981,
+      "tree": 217.969,
+      "temple": 231.191,
+      "koi": 234.066,
+      "meadow": 224.802,
+      "windmill": 312.588,
+      "crystal": 290.297,
+      "lookout": 0
+    }
+  },
+  "boundsBefore": {
+    "width": 209.96579672540003,
+    "height": 228.20000000000002
+  },
+  "boundsAfter": {
+    "width": 165.26815,
+    "height": 179.492
+  },
+  "bounds": {
+    "minX": -82.96,
+    "maxX": 82.30815,
+    "minZ": -53.008,
+    "maxZ": 126.484
+  }
+}

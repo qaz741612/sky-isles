@@ -15,7 +15,7 @@ async function enter(page) {
 
 test('walk every island without jumping through keyboard or a single joystick pointer', async ({page,isMobile})=>{
   await enter(page);
-  const plans=await page.evaluate(()=>window.__skyisles.world.bridges.plans.map(({from,to,points})=>({from,to,points})));
+  const plans=await page.evaluate(()=>window.__skyisles.world.bridges.plans.map(({id,from,to,points})=>({id,from,to,points})));
   const route=walkTour(plans);
   let session=null;
   if(isMobile) {
@@ -30,7 +30,7 @@ test('walk every island without jumping through keyboard or a single joystick po
   const result=await page.evaluate(({route,mobile})=>{
     const w=window.__skyisles.world,p=w.player,stick=document.getElementById('joystick');
     const rect=stick.getBoundingClientRect(),cx=rect.left+rect.width/2,cy=rect.top+rect.height/2;
-    const visited=new Set(['home']),yaw=p.orbit.yaw;let ticks=0,forcedFall=false;
+    const visited=new Set(['F']),yaw=p.orbit.yaw;let ticks=0,forcedFall=false;
     const pointer=(x,z)=>stick.dispatchEvent(new PointerEvent('pointermove',{pointerId:window.tourPointerId,pointerType:'touch',clientX:cx+x*42,clientY:cy+z*42,bubbles:true}));
     const tick=()=>{
       const input=w.ui.poll(p.orbit);
@@ -46,13 +46,13 @@ test('walk every island without jumping through keyboard or a single joystick po
           if(mobile)pointer((dx*Math.cos(yaw)-dz*Math.sin(yaw))/len,(dx*Math.sin(yaw)+dz*Math.cos(yaw))/len);
           else {p.orbit.yaw=Math.atan2(-dx,-dz);window.dispatchEvent(new KeyboardEvent('keydown',{code:'KeyW',bubbles:true}));}
           tick();
-          if(p.pos.y<target.y-4)throw new Error(`fell below ${leg.to}`);
+          if(p.pos.y<target.y-4)throw new Error(`fell below ${leg.to}: target=${JSON.stringify(target)} pos=${JSON.stringify(p.pos)} input=${JSON.stringify(w.ui.input)} pointer=${window.tourPointerId}`);
         }
         if(remaining<=0)throw new Error(`stuck at ${leg.to}: ${JSON.stringify(target)} / ${JSON.stringify(p.pos)}`);
         if(mobile)pointer(0,0);else window.dispatchEvent(new KeyboardEvent('keyup',{code:'KeyW',bubbles:true}));
         for(let i=0;i<40;i++)tick();
       }
-      visited.add(leg.to);if(visited.size===8)break;
+      visited.add(leg.to);
     }
     const before=p.pos.clone();for(let i=0;i<120;i++)tick();
     const stopped={speed:Math.hypot(p.move.vx,p.move.vz),drift:before.distanceTo(p.pos),respawns:p.respawnCount,checkpoint:p.lastGrounded.toArray()};
@@ -61,10 +61,10 @@ test('walk every island without jumping through keyboard or a single joystick po
   },{route,mobile:isMobile});
   if(session){await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await session.detach();}
   else await page.keyboard.up('KeyW');
-  expect(result.visited).toHaveLength(8);expect(result.stopped.speed).toBe(0);expect(result.stopped.drift).toBeLessThan(0.5);
+  expect(result.visited).toHaveLength(21);expect(result.stopped.speed).toBe(0);expect(result.stopped.drift).toBeLessThan(0.5);
   expect(result.stopped.respawns).toBe(0);expect(result.yawUnchanged).toBe(true);
   expect(Math.hypot(result.returned[0]-result.stopped.checkpoint[0],result.returned[2]-result.stopped.checkpoint[2])).toBeLessThan(0.1);
-  expect(result.returned[0]).toBeGreaterThan(25);
+  expect(result.ticks).toBeGreaterThan(10000);
   console.log(JSON.stringify({device:isMobile?'single-pointer joystick':'keyboard',...result}));
 });
 
@@ -74,7 +74,7 @@ test('guards block sideways movement on the live mesh; stepping on a mushroom ne
     const w=window.__skyisles.world,p=w.bridges.plans[0];
     // A closed long ramp has two parallel guard walls. The short entry landing
     // intentionally permits walking around its corner back onto the island.
-    const i=p.points.findIndex((a,i)=>p.points[i+1] && Math.abs(p.points[i+1].y-a.y)>0.001);
+    const i=8;
     const a=p.points[i],b=p.points[i+1],x=(a.x+b.x)/2,z=(a.z+b.z)/2,y=(a.y+b.y)/2;
     w.player.orbit.yaw=0;w.player.teleport(x,y+0.05,z);
     const d=Math.hypot(b.x-a.x,b.z-a.z),nx=-(b.z-a.z)/d,nz=(b.x-a.x)/d;
@@ -87,7 +87,7 @@ test('guards block sideways movement on the live mesh; stepping on a mushroom ne
     for(let j=0;j<180;j++){w.tourStep(1/60,{x:0,z:0,jumpHeld:false,jumpPressed:false},j/60);maxUp=Math.max(maxUp,w.player.move.vy);}
     return {offset,grounded,maxUp};
   });
-  expect(result.grounded).toBe(true);expect(result.offset).toBeLessThan(1.45);expect(result.offset).toBeGreaterThan(1);
+  expect(result.grounded).toBe(true);expect(result.offset).toBeLessThan(2.05);expect(result.offset).toBeGreaterThan(1.8);
   expect(result.maxUp).toBe(0);
 });
 

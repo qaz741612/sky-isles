@@ -1,0 +1,13 @@
+[WebServer] (node:39296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 38 tests using 1 worker
+(node:39313) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·········°·°···°{"device":"keyboard","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":107260,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.05972760775745555,1.1920928910669204e-8,0.0034130061575688986]},"endpoint":[0.05972760775745555,1.1920928910669204e-8,0.0034130061575688986],"returned":[0.05972760775745555,0.40000001192092893,0.0034130061575688986],"yawUnchanged":true}
+··°(node:40847) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+················{"device":"single-pointer joystick","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":112071,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.006681852498449088,1.1920928910669204e-8,0.00038182014276832944]},"endpoint":[0.006681852498449088,1.1920928910669204e-8,0.00038182014276832944],"returned":[0.006681852498449088,0.40000001192092893,0.00038182014276832944],"yawUnchanged":true}
+···
+  4 skipped
+  34 passed (18.2m)

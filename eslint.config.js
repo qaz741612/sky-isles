@@ -5,6 +5,9 @@ const browserGlobals = {
   window: 'readonly',
   navigator: 'readonly',
   localStorage: 'readonly',
+  sessionStorage: 'readonly',
+  innerWidth: 'readonly',
+  innerHeight: 'readonly',
   matchMedia: 'readonly',
   requestAnimationFrame: 'readonly',
   cancelAnimationFrame: 'readonly',
@@ -37,7 +40,7 @@ export default [
   {
     files: ['test/**/*.js', 'playwright.config.js'],
     languageOptions: {
-      globals: { process: 'readonly', Buffer: 'readonly', window: 'readonly', localStorage: 'readonly', document: 'readonly', navigator: 'readonly' }
+      globals: { ...browserGlobals, process: 'readonly', Buffer: 'readonly' }
     }
   }
 ];

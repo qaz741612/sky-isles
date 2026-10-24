@@ -72,6 +72,7 @@ export function buildClouds(scene, rng) {
   return {
     sea,
     mesh,
+    setOverview(active) { sea.visible=sea2.visible=mesh.visible=!active; },
     update(t, dt, camera) {
       noise.offset.x = t * 0.004;
       noise.offset.y = t * 0.0025;
