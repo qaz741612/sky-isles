@@ -4,6 +4,7 @@ test('transport scene preserves policy picking, jumping, orbit and bounded train
   await page.goto('/');
   await page.waitForFunction(() => window.__skyisles);
   await page.locator('#title-screen .tap').click();
+  if (await page.locator('#touch-help').isVisible()) await page.locator('#help-close').click();
   await page.waitForTimeout(1500);
   const before = await page.evaluate(() => {
     const w = window.__skyisles.world;

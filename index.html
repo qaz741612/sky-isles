@@ -246,6 +246,34 @@
     #policy-dialog::backdrop { background:#38264c66; backdrop-filter:blur(4px); } #policy-close { float:right; padding:8px 12px; border:1px solid #cbbbdc; background:white; border-radius:20px; color:var(--ink); cursor:pointer; }
     .policy-eyebrow { font-size:12px; padding-top:48px; letter-spacing:.15em; } #policy-title { margin:8px 0 18px; font-size:30px; } #policy-content { white-space:pre-wrap; } #policy-content ul { padding-left:24px; } .empty-policy { padding:20px; background:#f0eafa; border-radius:14px; }
     @media(max-width:600px) { #policy-nav { top:12px; right:12px; width:190px; padding:12px; } .policy-brand { font-size:17px; } body.touch .controls-help { font-size:0; } body.touch .controls-help::after { content:'左側搖桿移動 · 拖曳轉動視角'; font-size:11px; } #hint { bottom:170px; } #policy-dialog { padding:24px; } }
+    /* Compact, collapsible policy entry and a dedicated control-safe HUD area. */
+    #policy-menu summary { list-style:none; display:flex; justify-content:space-between; align-items:center; min-height:44px; gap:16px; }
+    #policy-menu summary::-webkit-details-marker { display:none; }
+    #policy-menu[open] .menu-chevron { transform:rotate(180deg); }
+    #policy-list { max-height:calc(100dvh - 310px); overflow-y:auto; overscroll-behavior:contain; }
+    .home-policy { left:18px !important; top:auto !important; bottom:24px; transform:none; border-left:5px solid #527f80; padding:12px 16px; }
+    #touch-help { position:fixed; z-index:21; left:16px; right:16px; bottom:calc(230px + env(safe-area-inset-bottom)); max-width:360px; padding:14px 16px; background:#fff8eef2; border:1px solid white; border-radius:16px; color:var(--ink); font-size:13px; line-height:1.7; }
+    body:has(#policy-menu[open]) #touch-help { visibility:hidden; }
+    #help-close { float:right; border:1px solid #cbbbdc; border-radius:16px; padding:6px 10px; color:var(--ink); background:white; cursor:pointer; }
+    body.touch .home-policy { bottom:calc(176px + env(safe-area-inset-bottom)); }
+    @media(max-width:600px) {
+      #policy-nav { width:160px; padding:6px 12px; top:calc(10px + env(safe-area-inset-top)); right:12px; }
+      #policy-nav .policy-brand,#policy-nav .controls-help { display:none; }
+      #policy-nav:has(details[open]) { width:min(290px,calc(100vw - 24px)); }
+      #policy-list { max-height:calc(100dvh - 245px - env(safe-area-inset-top)); padding-bottom:8px; }
+      #policy-list button { font-size:14px; min-height:44px; }
+      .home-policy { left:16px !important; }
+      #hud .chip { font-size:11px; padding:7px 10px; gap:5px; }
+      #chime-dots { gap:3px; } #chime-dots .dot { width:7px; height:7px; }
+      #hint { bottom:calc(230px + env(safe-area-inset-bottom)); font-size:12px; }
+    }
+    @media(pointer:coarse) and (max-height:500px) {
+      #policy-nav { width:170px; padding:6px 12px; top:8px; right:12px; }
+      #policy-nav .policy-brand,#policy-nav .controls-help { display:none; }
+      #policy-nav:has(details[open]) { width:280px; }
+      #policy-list { max-height:calc(100dvh - 230px); }
+      #touch-help { bottom:calc(176px + env(safe-area-inset-bottom)); left:150px; right:110px; max-width:none; padding:8px 12px; }
+    }
   </style>
 </head>
 <body>
@@ -275,7 +303,8 @@
       <p>正在準備政策島</p>
     </div>
   </div>
-  <nav hidden id="policy-nav" aria-label="八項政策"><div class="policy-brand">苑裡政策島 <small>第一版</small></div><details id="policy-menu"><summary>探索八項政策</summary><div id="policy-list"></div></details><p class="controls-help">拖曳轉動視角 · WASD 移動 · 空白鍵跳躍</p></nav>
+  <nav hidden id="policy-nav" aria-label="八項政策"><div class="policy-brand">苑裡政策島 <small>第一版</small></div><details id="policy-menu"><summary>八大政策 <span aria-hidden="true" class="menu-chevron">⌄</span></summary><div id="policy-list"></div></details><p class="controls-help">拖曳轉動視角 · WASD 移動 · 空白鍵跳躍</p></nav>
+  <aside hidden id="touch-help" aria-label="操作說明"><button id="help-close" type="button" aria-label="關閉操作說明">知道了 ×</button><strong>探索小提示</strong><p>左側搖桿移動・右側按鈕跳躍<br>拖曳旋轉視角・雙指縮放</p></aside>
   <div id="island-labels" aria-label="島嶼政策標籤"></div>
   <dialog id="policy-dialog" aria-labelledby="policy-title"><button id="policy-close" type="button" aria-label="關閉政策介紹">關閉 ×</button><p class="policy-eyebrow">苑裡政策島 / 政策介紹</p><h2 id="policy-title"></h2><div id="policy-content"></div></dialog>
   <script type="module" src="/src/main.js"></script>

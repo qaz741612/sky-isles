@@ -1,5 +1,6 @@
 // DOM UI: loading/title overlays, HUD chips, hint toast, touch joystick
 // and jump button, keyboard + orbit-drag input.
+import { CAMERA_ZOOM } from './sim/camera-profile.js';
 import { CHIMES } from './sim/puzzle.js';
 
 export class UI {
@@ -23,10 +24,27 @@ export class UI {
     this._keys = new Set();
     this._hintTimer = 0;
 
+    this.help = document.getElementById('touch-help');
+    document.getElementById('help-close').addEventListener('click', () => {
+      this.help.hidden = true;
+      document.getElementById('help-close').blur();
+      try { sessionStorage.setItem('yuanli-help-dismissed', '1'); } catch { /* storage optional */ }
+      this.helpDismissed = true;
+    });
+    window.addEventListener('blur', () => {
+      this._keys.clear();
+      Object.assign(this.input, { x:0, z:0, jumpPressed:false, jumpHeld:false });
+    });
     this._buildDots();
     this._bindKeyboard();
     this._bindJoystick();
     this._bindJumpButton();
+  }
+
+  showInstructions() {
+    let dismissed = this.helpDismissed;
+    try { dismissed ||= sessionStorage.getItem('yuanli-help-dismissed') === '1'; } catch { /* storage optional */ }
+    this.help.hidden = !!dismissed;
   }
 
   _buildDots() {
@@ -60,6 +78,8 @@ export class UI {
 
   hideTitle() {
     this.title.classList.add('hidden');
+    this.title.inert = true;
+    if (this.title.contains(document.activeElement)) document.activeElement.blur();
   }
 
   onStart(cb) {
@@ -68,7 +88,7 @@ export class UI {
 
   _bindKeyboard() {
     window.addEventListener('keydown', (e) => {
-      if (e.repeat || document.getElementById('policy-dialog').open) return;
+      if (e.repeat || document.getElementById('policy-dialog').open || e.target.closest?.('button, summary')) return;
       this._keys.add(e.code);
       if (e.code === 'Space') {
         this.input.jumpPressed = true;
@@ -142,12 +162,20 @@ export class UI {
   // canvas drag = orbit, wheel = zoom, quick tap = interact ray
   bindCanvas(canvas) {
     let dragId = null;
+    const pointers = new Map();
+    let pinchDistance = 0;
+    const distance = () => {
+      const [a, b] = [...pointers.values()];
+      return Math.hypot(a.x - b.x, a.y - b.y);
+    };
     let lastX = 0;
     let lastY = 0;
     let downX = 0;
     let downY = 0;
     let downT = 0;
     canvas.addEventListener('pointerdown', (e) => {
+      pointers.set(e.pointerId, { x:e.clientX, y:e.clientY });
+      if (pointers.size === 2) { pinchDistance = distance(); downT = -Infinity; canvas.setPointerCapture(e.pointerId); return; }
       if (dragId !== null) return;
       dragId = e.pointerId;
       lastX = downX = e.clientX;
@@ -156,6 +184,14 @@ export class UI {
       canvas.setPointerCapture(e.pointerId);
     });
     canvas.addEventListener('pointermove', (e) => {
+      if (!pointers.has(e.pointerId)) return;
+      pointers.set(e.pointerId, { x:e.clientX, y:e.clientY });
+      if (pointers.size >= 2) {
+        const next = distance();
+        this.orbitDelta.zoom += (pinchDistance - next) * 0.035;
+        pinchDistance = next;
+        return;
+      }
       if (e.pointerId !== dragId) return;
       this.orbitDelta.yaw -= (e.clientX - lastX) * 0.005;
       this.orbitDelta.pitch -= (e.clientY - lastY) * 0.004;
@@ -163,10 +199,16 @@ export class UI {
       lastY = e.clientY;
     });
     const up = (e) => {
-      if (e.pointerId !== dragId) return;
+      pointers.delete(e.pointerId);
+      if (pointers.size) {
+        const [id, point] = [...pointers.entries()][0];
+        dragId = id; lastX = downX = point.x; lastY = downY = point.y; downT = -Infinity;
+        return;
+      }
+      if (e.pointerId !== dragId && dragId === null) return;
       dragId = null;
       const moved = Math.hypot(e.clientX - downX, e.clientY - downY);
-      if (moved < 8 && performance.now() - downT < 350 && this.onTap) {
+      if (e.type !== 'pointercancel' && moved < 8 && performance.now() - downT < 350 && this.onTap) {
         const rect = canvas.getBoundingClientRect();
         this.onTap(
           ((e.clientX - rect.left) / rect.width) * 2 - 1,
@@ -202,7 +244,7 @@ export class UI {
     }
     orbit.yaw += this.orbitDelta.yaw;
     orbit.pitch = Math.min(1.25, Math.max(0.05, orbit.pitch + this.orbitDelta.pitch));
-    orbit.dist = Math.min(16, Math.max(3.5, orbit.dist + this.orbitDelta.zoom));
+    orbit.dist = Math.min(CAMERA_ZOOM.max, Math.max(CAMERA_ZOOM.min, orbit.dist + this.orbitDelta.zoom));
     this.orbitDelta.yaw = 0;
     this.orbitDelta.pitch = 0;
     this.orbitDelta.zoom = 0;

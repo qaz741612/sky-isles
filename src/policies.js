@@ -41,7 +41,7 @@ export class PolicyUI {
       };
       list.append(makeButton());
       const label = makeButton();
-      label.className = 'island-label';
+      label.className = `island-label${island.name === 'home' ? ' home-policy' : ''}`;
       label.dataset.island = island.name;
       labels.append(label);
       this.labels.push({ element: label, island, position: island.pos.clone().add(new THREE.Vector3(0, 2.5, 0)) });
@@ -52,7 +52,9 @@ export class PolicyUI {
       if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) this.dialog.close();
     });
     this.dialog.addEventListener('close', () => {
-      if (this.previousFocus?.isConnected) this.previousFocus.focus();
+      const menu = document.getElementById('policy-menu');
+      const target = this.previousFocus?.closest('#policy-list') ? menu.querySelector('summary') : this.previousFocus;
+      if (target?.isConnected) target.focus();
     });
   }
 

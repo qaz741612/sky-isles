@@ -1,5 +1,6 @@
 // Sky Isles — boot, game loop, interactions, debug handle.
 import * as THREE from 'three';
+import { cameraProfile } from './sim/camera-profile.js';
 import { Rng } from './sim/rng.js';
 import { ChimePuzzle, CHIMES, MURAL_ORDER } from './sim/puzzle.js';
 import { AudioEngine } from './sim/audio.js';
@@ -51,14 +52,11 @@ const colliders = [
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
-// Frame the transport prototype on arrival; orbit controls remain unchanged.
-Object.assign(player.orbit, { yaw: 0.1, pitch: 0.58, dist: 15 });
-if (isMobile) {
-  // A slightly higher portrait view keeps the station and policy sign visible.
-  player.orbit.pitch = 0.62;
-  player.orbit.dist = 15;
-  player.orbit.yaw = 0.1; // face the transport station on load
-}
+// Separate portrait framing; both profiles retain the same orbit controller.
+const initialView = cameraProfile(innerWidth, innerHeight);
+Object.assign(player.orbit, initialView);
+camera.fov = initialView.fov;
+camera.updateProjectionMatrix();
 const ui = new UI();
 const policyUI = new PolicyUI(policyData, islands.islands, camera, ui);
 
@@ -129,12 +127,14 @@ ui.onStart(() => {
   audio.ensure();
   audio.startAmbient();
   started = true;
-  ui.hint('點選島嶼名稱或政策選單，閱讀政策介紹', 4200);
+  if (ui.isTouch) ui.showInstructions();
+  else ui.hint('拖曳旋轉・滾輪縮放・點選政策入口', 3200);
 });
 
 // ----- resize -----
 window.addEventListener('resize', () => {
   camera.aspect = window.innerWidth / window.innerHeight;
+  camera.fov = cameraProfile(innerWidth, innerHeight).fov;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
