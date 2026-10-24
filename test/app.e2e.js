@@ -70,7 +70,7 @@ test.describe('苑裡政策島', () => {
       await page.locator('#policy-list').getByRole('button', { name, exact: true }).click();
       await expect(page.getByRole('dialog')).toBeVisible();
       await expect(page.locator('#policy-title')).toHaveText(name);
-      await expect(page.locator('#policy-content')).toHaveText('政策內容尚未提供，待補充。');
+      await expect(page.locator('#policy-content')).toContainText('政策內容尚未提供，待補充。');
       await page.getByRole('button', { name: '關閉政策介紹' }).click();
       await expect(page.getByRole('dialog')).not.toBeVisible();
     }

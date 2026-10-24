@@ -85,6 +85,11 @@ export class PolicyUI {
       p.textContent = '政策內容尚未提供，待補充。';
       content.append(p);
     }
+    if (id === 'home') {
+      const note = document.createElement('p');
+      note.textContent = '場景設施為政策主題示意，不代表實際工程已核定或完成。';
+      content.append(note);
+    }
     this.ui._keys.clear();
     Object.assign(this.ui.input, { x: 0, z: 0, jumpPressed: false, jumpHeld: false });
     document.getElementById('policy-menu').open = false;

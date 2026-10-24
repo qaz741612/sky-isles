@@ -195,7 +195,11 @@ export function buildIslands(scene, rng) {
     isle.add(rock);
 
     if (def.name !== 'stepping') {
+      const before = isle.children.length;
       scatterProps(isle, def.r, rng, def.name === 'home' ? 0.6 : 1);
+      if (def.name === 'home') {
+        for (const prop of isle.children.slice(before)) isle.remove(prop);
+      }
     }
 
     group.add(isle);

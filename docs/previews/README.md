@@ -1,5 +1,14 @@
 # 苑裡政策島第一版預覽
 
+## 第二階段：交通島 3D 美術原型
+
+- [交通島桌面 PNG](transport-desktop.png)
+- [交通島手機 PNG](transport-mobile.png)
+- [原型說明、變更檔案、驗證與限制](transport.md)
+
+以下保留第一版的三張預覽圖。
+
+
 這三張圖片重新擷取自目前專案的 `dist/` 建置產物；未修改網站功能，未部署網站。
 
 - [桌面版](desktop.png)

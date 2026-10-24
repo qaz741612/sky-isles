@@ -11,6 +11,7 @@ import { buildBridges } from './world/bridges.js';
 import { buildClouds } from './world/clouds.js';
 import { buildProps } from './world/props.js';
 import { buildChimes } from './world/chimes.js';
+import { buildTransport } from './world/transport.js';
 import { PolicyUI, loadPolicies } from './policies.js';
 
 const policyData = await loadPolicies();
@@ -38,22 +39,25 @@ const bridges = buildBridges(scene, islands.islands, rng);
 const clouds = buildClouds(scene, rng);
 const props = buildProps(islands.islands, rng);
 const chimes = buildChimes(islands.islands);
+const transport = buildTransport(islands.islands[0]);
 
 const colliders = [
   ...islands.colliders,
-  ...bridges.colliders
+  ...bridges.colliders,
+  ...transport.colliders
 ];
 
 // ----- sim -----
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
+// Frame the transport prototype on arrival; orbit controls remain unchanged.
+Object.assign(player.orbit, { yaw: 0.1, pitch: 0.58, dist: 15 });
 if (isMobile) {
-  // portrait screens show too much empty sky at the default pitch —
-  // start a touch higher and closer so ground + nearby isles fill the frame
-  player.orbit.pitch = 0.58;
-  player.orbit.dist = 9;
-  player.orbit.yaw = -1.08; // face the tree isle + bridge on load
+  // A slightly higher portrait view keeps the station and policy sign visible.
+  player.orbit.pitch = 0.62;
+  player.orbit.dist = 15;
+  player.orbit.yaw = 0.1; // face the transport station on load
 }
 const ui = new UI();
 const policyUI = new PolicyUI(policyData, islands.islands, camera, ui);
@@ -163,7 +167,7 @@ window.__skyisles = {
       started = true;
     }
   },
-  world: { scene, camera, renderer, islands, bridges, chimes, player, puzzle }
+  world: { scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport }
 };
 
 // ----- main loop -----
@@ -189,6 +193,7 @@ function frame() {
   clouds.update(t, dt, camera);
   bridges.update(t);
   props.update(t, dt);
+  transport.update(t);
   updateJumpPads(islands.jumpPads, t, dt);
 
   renderer.render(scene, camera);
