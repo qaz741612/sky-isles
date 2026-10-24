@@ -1,0 +1,48 @@
+
+> sky-isles@1.0.0 test
+> node --test test/*.test.js
+
+✔ portrait camera has its own framing within controller zoom limits (0.887004ms)
+✔ ground jump then double jump, but no third jump (1.413996ms)
+✔ falling off a ledge still allows one air jump (but only one) (0.330147ms)
+✔ coyote time allows a jump just after leaving the ground (0.129064ms)
+✔ glide caps fall speed while jump is held (1.235448ms)
+✔ without holding jump, fall speed keeps growing past the glide cap (0.329085ms)
+✔ glide boosts forward speed (0.496787ms)
+✔ respawn triggers below the kill plane (0.208994ms)
+✔ gravity integration is stable and downward (0.121232ms)
+✔ orthographic panorama fits every actual footprint corner in landscape and portrait (2.199218ms)
+✔ transition is finite, pauses at the true ortho lens and returns to the saved camera pose (4.313228ms)
+✔ resizing during overview restores the current aspect without a final lens jump (0.469817ms)
+✔ seven thematic scenes reserve 4.8-wide bridge gates and island lanes, keep original terrain, and batch materials (468.89862ms)
+✔ retained chime highlight uses a small geometric ring, not an opaque sprite square (6.474099ms)
+✔ chime definitions are unique pentatonic notes with colors and symbols (1.668229ms)
+✔ correct full order opens the portal (0.211047ms)
+✔ wrong note resets progress (0.899794ms)
+✔ playing a duplicate note mid-sequence counts as wrong and resets (0.130747ms)
+✔ partial sequences do not open the portal (0.115504ms)
+✔ after the portal opens, further plays are replays and keep state (0.144277ms)
+✔ music layers grow one per unlocked chime (0.125339ms)
+✔ mulberry32 is deterministic for the same seed (1.411594ms)
+✔ different seeds produce different sequences (0.221934ms)
+✔ Rng helpers stay in range (4.377154ms)
+✔ Rng pick returns items from the list deterministically (0.172489ms)
+✔ transport theme stays in home, batches geometry and leaves movement physics separate (14.848161ms)
+✔ approved handwritten graph has 21 connected nodes, 22 real paths and eight distinct islands (1.300486ms)
+✔ actual Player walks every route in both directions without jumping dt=0.016666666666666666 (2171.973764ms)
+✔ actual Player walks every route in both directions without jumping dt=0.05 (722.778034ms)
+✔ guards prevent high-speed horizontal crossing from either side, including endpoints (118.818728ms)
+✔ released stick decelerates to rest quickly, with a bounded stopping distance (0.554915ms)
+✔ every actual outer rail blocks crossing and matches rendered guard coordinates (117.232388ms)
+✔ all actual collision triangles have finite horizontal surfaces and <=10% grade (84.434758ms)
+✔ near-zero X movement never falls through a cylinder cap triangle seam (99.624517ms)
+✔ every ordered junction turn stays walkable with actual transport decks present (2530.483908ms)
+✔ playable layout is exactly approved B without an additional coordinate or radius transform (14.326295ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7023.100414
