@@ -1,0 +1,1056 @@
+{
+  "status": "design only; not implemented or deployed",
+  "reference": "user supplied hand-drawn 苑; manually digitised; no font outlines",
+  "coordinateSystem": {
+    "units": "world units",
+    "up": "+y",
+    "drawingRight": "+x",
+    "drawingDown": "+z",
+    "referenceToWorld": {
+      "originPixel": [
+        170,
+        125
+      ],
+      "scale": 0.6
+    }
+  },
+  "walkway": {
+    "deckWidth": 4.8,
+    "outerWidthIncludingGuard": 5.0,
+    "railHeight": 1.3,
+    "railThickness": 0.16,
+    "playerRadius": 0.33
+  },
+  "nodes": [
+    {
+      "id": "F",
+      "reference": [
+        170,
+        125
+      ],
+      "x": 0.0,
+      "y": 0,
+      "z": 0.0,
+      "r": 9,
+      "island": "home",
+      "name": "交通大升級",
+      "flatMin": 11
+    },
+    {
+      "id": "A",
+      "reference": [
+        120,
+        69
+      ],
+      "x": -30.0,
+      "y": 0.8,
+      "z": -33.6,
+      "r": 7,
+      "island": "tree",
+      "name": "安心生養",
+      "flatMin": 9
+    },
+    {
+      "id": "B",
+      "reference": [
+        50,
+        121
+      ],
+      "x": -72.0,
+      "y": 0.6,
+      "z": -2.4,
+      "r": 8,
+      "island": "temple",
+      "name": "幸福養老",
+      "flatMin": 10
+    },
+    {
+      "id": "C",
+      "reference": [
+        112,
+        235
+      ],
+      "x": -34.8,
+      "y": 1.2,
+      "z": 66.0,
+      "r": 7,
+      "island": "koi",
+      "name": "產業青年",
+      "flatMin": 9
+    },
+    {
+      "id": "E",
+      "reference": [
+        246,
+        73
+      ],
+      "x": 45.6,
+      "y": 0.8,
+      "z": -31.2,
+      "r": 6,
+      "island": "meadow",
+      "name": "宜居環境",
+      "flatMin": 8
+    },
+    {
+      "id": "D",
+      "reference": [
+        18,
+        373
+      ],
+      "x": -91.2,
+      "y": 1.6,
+      "z": 148.8,
+      "r": 6,
+      "island": "windmill",
+      "name": "智慧公所",
+      "flatMin": 8
+    },
+    {
+      "id": "G",
+      "reference": [
+        298,
+        254
+      ],
+      "x": 76.8,
+      "y": 1.6,
+      "z": 77.4,
+      "r": 5,
+      "island": "crystal",
+      "name": "治水防災",
+      "flatMin": 7
+    },
+    {
+      "id": "H",
+      "reference": [
+        314,
+        377
+      ],
+      "x": 86.4,
+      "y": 2,
+      "z": 151.2,
+      "r": 5,
+      "island": "lookout",
+      "name": "教育發展",
+      "flatMin": 7
+    },
+    {
+      "id": "J1",
+      "reference": [
+        135,
+        123
+      ],
+      "x": -21.0,
+      "y": 0,
+      "z": -1.2,
+      "r": 3,
+      "island": null,
+      "name": null,
+      "flatMin": 8
+    },
+    {
+      "id": "J2",
+      "reference": [
+        213,
+        127
+      ],
+      "x": 25.8,
+      "y": 0,
+      "z": 1.2,
+      "r": 3,
+      "island": null,
+      "name": null,
+      "flatMin": 8
+    },
+    {
+      "id": "J3",
+      "reference": [
+        296,
+        143
+      ],
+      "x": 75.6,
+      "y": 0.5,
+      "z": 10.8,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "J4",
+      "reference": [
+        164,
+        328
+      ],
+      "x": -3.6,
+      "y": 1.4,
+      "z": 121.8,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "T1",
+      "reference": [
+        45,
+        58
+      ],
+      "x": -75.0,
+      "y": 0.8,
+      "z": -40.2,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "T2",
+      "reference": [
+        327,
+        76
+      ],
+      "x": 94.2,
+      "y": 0.8,
+      "z": -29.4,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "T3",
+      "reference": [
+        117,
+        19
+      ],
+      "x": -31.8,
+      "y": 0.8,
+      "z": -63.6,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "T4",
+      "reference": [
+        254,
+        31
+      ],
+      "x": 50.4,
+      "y": 0.8,
+      "z": -56.4,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "T5",
+      "reference": [
+        67,
+        104
+      ],
+      "x": -61.8,
+      "y": 0.6,
+      "z": -12.6,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "T6",
+      "reference": [
+        24,
+        165
+      ],
+      "x": -87.6,
+      "y": 0.6,
+      "z": 24.0,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "T7",
+      "reference": [
+        0,
+        388
+      ],
+      "x": -102.0,
+      "y": 1.6,
+      "z": 157.8,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "T8",
+      "reference": [
+        337,
+        311
+      ],
+      "x": 100.2,
+      "y": 2,
+      "z": 111.6,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    },
+    {
+      "id": "T9",
+      "reference": [
+        259,
+        232
+      ],
+      "x": 53.4,
+      "y": 1.6,
+      "z": 64.2,
+      "r": 0,
+      "island": null,
+      "name": null,
+      "flatMin": 2
+    }
+  ],
+  "edges": [
+    {
+      "id": "S01",
+      "from": "T1",
+      "to": "A",
+      "meaning": "艹：上橫左段",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -75.0,
+          -40.2
+        ],
+        [
+          -62.4,
+          -34.8
+        ],
+        [
+          -45.0,
+          -34.8
+        ],
+        [
+          -30.0,
+          -33.6
+        ]
+      ],
+      "length": 45.69,
+      "flatFrom": 2,
+      "flatTo": 9,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S02",
+      "from": "A",
+      "to": "E",
+      "meaning": "艹：上橫中段",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -30.0,
+          -33.6
+        ],
+        [
+          -5.4,
+          -31.8
+        ],
+        [
+          22.2,
+          -32.4
+        ],
+        [
+          45.6,
+          -31.2
+        ]
+      ],
+      "length": 75.646,
+      "flatFrom": 9,
+      "flatTo": 8,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S03",
+      "from": "E",
+      "to": "T2",
+      "meaning": "艹：上橫右段",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          45.6,
+          -31.2
+        ],
+        [
+          62.4,
+          -30.0
+        ],
+        [
+          78.0,
+          -29.4
+        ],
+        [
+          94.2,
+          -29.4
+        ]
+      ],
+      "length": 48.644,
+      "flatFrom": 8,
+      "flatTo": 2,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S04",
+      "from": "T3",
+      "to": "A",
+      "meaning": "艹：左豎上段",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -31.8,
+          -63.6
+        ],
+        [
+          -33.0,
+          -54.0
+        ],
+        [
+          -31.2,
+          -42.0
+        ],
+        [
+          -30.0,
+          -33.6
+        ]
+      ],
+      "length": 30.141,
+      "flatFrom": 2,
+      "flatTo": 9,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S05",
+      "from": "A",
+      "to": "J1",
+      "meaning": "艹：左豎接本體",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -30.0,
+          -33.6
+        ],
+        [
+          -27.6,
+          -24.6
+        ],
+        [
+          -27.0,
+          -6.0
+        ],
+        [
+          -21.0,
+          -1.2
+        ]
+      ],
+      "length": 34.079,
+      "flatFrom": 9,
+      "flatTo": 8.679,
+      "maxGrade": 0.073169,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S06",
+      "from": "T4",
+      "to": "E",
+      "meaning": "艹：右豎上段",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          50.4,
+          -56.4
+        ],
+        [
+          51.0,
+          -46.2
+        ],
+        [
+          49.2,
+          -38.4
+        ],
+        [
+          45.6,
+          -31.2
+        ]
+      ],
+      "length": 25.968,
+      "flatFrom": 2,
+      "flatTo": 8,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S07",
+      "from": "E",
+      "to": "J2",
+      "meaning": "艹：右撇接本體",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          45.6,
+          -31.2
+        ],
+        [
+          41.4,
+          -20.4
+        ],
+        [
+          33.0,
+          -10.2
+        ],
+        [
+          25.8,
+          1.2
+        ]
+      ],
+      "length": 38.044,
+      "flatFrom": 8,
+      "flatTo": 8.164,
+      "maxGrade": 0.054843,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S08",
+      "from": "B",
+      "to": "J1",
+      "meaning": "本體：中橫左段",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -72.0,
+          -2.4
+        ],
+        [
+          -54.0,
+          -2.4
+        ],
+        [
+          -33.6,
+          -2.4
+        ],
+        [
+          -21.0,
+          -1.2
+        ]
+      ],
+      "length": 51.03,
+      "flatFrom": 10.501,
+      "flatTo": 9.027,
+      "maxGrade": 0.02857,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S09",
+      "from": "J1",
+      "to": "F",
+      "meaning": "本體：中橫至交通島",
+      "kind": "line",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -21.0,
+          -1.2
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "length": 21.034,
+      "flatFrom": 8,
+      "flatTo": 11,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S10",
+      "from": "F",
+      "to": "J2",
+      "meaning": "本體：中橫右段",
+      "kind": "line",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          25.8,
+          1.2
+        ]
+      ],
+      "length": 25.828,
+      "flatFrom": 11,
+      "flatTo": 8,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S11",
+      "from": "J2",
+      "to": "J3",
+      "meaning": "本體：中橫轉右肩",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          25.8,
+          1.2
+        ],
+        [
+          49.8,
+          2.4
+        ],
+        [
+          69.6,
+          -1.2
+        ],
+        [
+          75.6,
+          10.8
+        ]
+      ],
+      "length": 52.83,
+      "flatFrom": 8.056,
+      "flatTo": 7.273,
+      "maxGrade": 0.019999,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S12",
+      "from": "T5",
+      "to": "B",
+      "meaning": "左側短撇上段",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -61.8,
+          -12.6
+        ],
+        [
+          -64.8,
+          -7.2
+        ],
+        [
+          -69.0,
+          -4.8
+        ],
+        [
+          -72.0,
+          -2.4
+        ]
+      ],
+      "length": 14.557,
+      "flatFrom": 2,
+      "flatTo": 10.371,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S13",
+      "from": "B",
+      "to": "T6",
+      "meaning": "左側短撇下段",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -72.0,
+          -2.4
+        ],
+        [
+          -79.2,
+          7.2
+        ],
+        [
+          -88.8,
+          16.2
+        ],
+        [
+          -87.6,
+          24.0
+        ]
+      ],
+      "length": 31.364,
+      "flatFrom": 11.443,
+      "flatTo": 2,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S14",
+      "from": "B",
+      "to": "C",
+      "meaning": "夕：左弧",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -72.0,
+          -2.4
+        ],
+        [
+          -76.2,
+          18.6
+        ],
+        [
+          -58.2,
+          46.2
+        ],
+        [
+          -34.8,
+          66.0
+        ]
+      ],
+      "length": 81.054,
+      "flatFrom": 11.186,
+      "flatTo": 9,
+      "maxGrade": 0.014786,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S15",
+      "from": "F",
+      "to": "C",
+      "meaning": "夕：內弧與斜撇上段",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -2.4,
+          24.0
+        ],
+        [
+          -18.0,
+          46.2
+        ],
+        [
+          -34.8,
+          66.0
+        ]
+      ],
+      "length": 75.75,
+      "flatFrom": 20.165,
+      "flatTo": 9,
+      "maxGrade": 0.03864,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S16",
+      "from": "C",
+      "to": "D",
+      "meaning": "夕：長斜撇",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -34.8,
+          66.0
+        ],
+        [
+          -57.0,
+          94.8
+        ],
+        [
+          -61.2,
+          121.8
+        ],
+        [
+          -91.2,
+          148.8
+        ]
+      ],
+      "length": 100.67,
+      "flatFrom": 9,
+      "flatTo": 8,
+      "maxGrade": 0.007171,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S17",
+      "from": "D",
+      "to": "T7",
+      "meaning": "夕：左下尾端",
+      "kind": "line",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -91.2,
+          148.8
+        ],
+        [
+          -102.0,
+          157.8
+        ]
+      ],
+      "length": 14.058,
+      "flatFrom": 8,
+      "flatTo": 2,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S18",
+      "from": "F",
+      "to": "J4",
+      "meaning": "右部：長豎彎",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          4.2,
+          36.0
+        ],
+        [
+          -3.0,
+          81.0
+        ],
+        [
+          -3.6,
+          121.8
+        ]
+      ],
+      "length": 121.991,
+      "flatFrom": 20.472,
+      "flatTo": 7.293,
+      "maxGrade": 0.022287,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S19",
+      "from": "J4",
+      "to": "H",
+      "meaning": "右部：底部大弧",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          -3.6,
+          121.8
+        ],
+        [
+          -3.9441,
+          145.2
+        ],
+        [
+          42.0,
+          153.6
+        ],
+        [
+          86.4,
+          151.2
+        ]
+      ],
+      "length": 102.346,
+      "flatFrom": 7.314,
+      "flatTo": 7.17,
+      "maxGrade": 0.010243,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S20",
+      "from": "H",
+      "to": "T8",
+      "meaning": "右部：右下上鉤",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          86.4,
+          151.2
+        ],
+        [
+          101.4,
+          151.8
+        ],
+        [
+          102.6,
+          142.8
+        ],
+        [
+          100.2,
+          111.6
+        ]
+      ],
+      "length": 48.966,
+      "flatFrom": 7.262,
+      "flatTo": 2,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S21",
+      "from": "J3",
+      "to": "G",
+      "meaning": "右部：內鉤外弧",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          75.6,
+          10.8
+        ],
+        [
+          81.6,
+          22.8
+        ],
+        [
+          90.6,
+          57.6
+        ],
+        [
+          76.8,
+          77.4
+        ]
+      ],
+      "length": 69.186,
+      "flatFrom": 7.215,
+      "flatTo": 7.201,
+      "maxGrade": 0.030126,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    },
+    {
+      "id": "S22",
+      "from": "G",
+      "to": "T9",
+      "meaning": "右部：內鉤收筆",
+      "kind": "cubic",
+      "width": 4.8,
+      "outerWidth": 5.0,
+      "controlPointsXZ": [
+        [
+          76.8,
+          77.4
+        ],
+        [
+          64.8,
+          79.8
+        ],
+        [
+          62.4,
+          69.6
+        ],
+        [
+          53.4,
+          64.2
+        ]
+      ],
+      "length": 28.217,
+      "flatFrom": 7.289,
+      "flatTo": 2,
+      "maxGrade": 0,
+      "heightInterpolation": "arc-length smoothstep, constant y in both endpoint flat zones"
+    }
+  ],
+  "futureOverview": {
+    "type": "orthographic",
+    "up": [
+      0,
+      0,
+      -1
+    ],
+    "positionDirection": [
+      0,
+      1,
+      0
+    ],
+    "fit": "union of real geometry footprints plus 10 percent margin"
+  },
+  "validation": {
+    "graphNodes": 21,
+    "graphEdges": 22,
+    "islands": 8,
+    "allGraphNodesConnected": true,
+    "graphCycleRank": 2,
+    "maxCenterlineGrade": 0.07316947107351689,
+    "maxCenterlineAngleDegrees": 4.184844280767021,
+    "minCurveRadiusOutsideNodeFootprints": 8.564183828100113,
+    "tightCurveWarnings": [],
+    "rasterWorldUnitsPerPixel": 0.125,
+    "playerGuardErosion": 0.41,
+    "islandCentreComponents": {
+      "home": 1,
+      "tree": 1,
+      "temple": 1,
+      "koi": 1,
+      "meadow": 1,
+      "windmill": 1,
+      "crystal": 1,
+      "lookout": 1
+    },
+    "allEightInSameErodedFootprint": true,
+    "erodedFootprintComponents": 3,
+    "erodedComponentAreasWorld2": [
+      4698.765625,
+      0.078125,
+      0.15625
+    ],
+    "sharedOverlapHeightError": 0.0,
+    "unexpectedNonsharedRoadContacts": [],
+    "notValidatedYet": [
+      "3D deck mesh triangle slopes",
+      "polygon union triangulation",
+      "real horizontal guard collisions",
+      "real one-finger traversal",
+      "actual panorama transition and device performance",
+      "human recognition of the unlabelled glyph"
+    ]
+  }
+}
