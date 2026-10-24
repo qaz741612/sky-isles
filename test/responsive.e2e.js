@@ -2,6 +2,8 @@ import { test, expect } from '@playwright/test';
 
 test('compact portrait and landscape menu remain usable with first-visit help', async ({ page, isMobile }) => {
   test.skip(!isMobile, 'touch layouts');
+  // Two full scene loads plus viewport/scroll assertions on software WebGL.
+  test.setTimeout(240_000);
   for (const viewport of [{width:320,height:568},{width:844,height:390}]) {
     await page.setViewportSize(viewport);
     await page.goto('/'); await page.waitForFunction(() => window.__skyisles);
