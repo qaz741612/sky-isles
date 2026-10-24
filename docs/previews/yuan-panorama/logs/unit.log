@@ -1,0 +1,45 @@
+
+> sky-isles@1.0.0 test
+> node --test test/*.test.js
+
+✔ portrait camera has its own framing within controller zoom limits (0.815036ms)
+✔ ground jump then double jump, but no third jump (1.273586ms)
+✔ falling off a ledge still allows one air jump (but only one) (0.140391ms)
+✔ coyote time allows a jump just after leaving the ground (0.104266ms)
+✔ glide caps fall speed while jump is held (0.941666ms)
+✔ without holding jump, fall speed keeps growing past the glide cap (0.231027ms)
+✔ glide boosts forward speed (0.460783ms)
+✔ respawn triggers below the kill plane (0.141153ms)
+✔ gravity integration is stable and downward (0.111588ms)
+✔ orthographic panorama fits every actual footprint corner in landscape and portrait (2.292678ms)
+✔ transition is finite, pauses at the true ortho lens and returns to the saved camera pose (4.424665ms)
+✔ resizing during overview restores the current aspect without a final lens jump (0.527623ms)
+✔ chime definitions are unique pentatonic notes with colors and symbols (1.423461ms)
+✔ correct full order opens the portal (0.227111ms)
+✔ wrong note resets progress (1.038522ms)
+✔ playing a duplicate note mid-sequence counts as wrong and resets (0.131268ms)
+✔ partial sequences do not open the portal (0.127582ms)
+✔ after the portal opens, further plays are replays and keep state (0.161443ms)
+✔ music layers grow one per unlocked chime (0.135273ms)
+✔ mulberry32 is deterministic for the same seed (1.022508ms)
+✔ different seeds produce different sequences (0.181102ms)
+✔ Rng helpers stay in range (1.809803ms)
+✔ Rng pick returns items from the list deterministically (0.173001ms)
+✔ transport theme stays in home, batches geometry and leaves movement physics separate (13.676252ms)
+✔ approved handwritten graph has 21 connected nodes, 22 real paths and eight distinct islands (1.131873ms)
+✔ actual Player walks every route in both directions without jumping dt=0.016666666666666666 (2101.799768ms)
+✔ actual Player walks every route in both directions without jumping dt=0.05 (926.74534ms)
+✔ guards prevent high-speed horizontal crossing from either side, including endpoints (150.118757ms)
+✔ released stick decelerates to rest quickly, with a bounded stopping distance (0.236105ms)
+✔ every actual outer rail blocks crossing and matches rendered guard coordinates (132.55359ms)
+✔ all actual collision triangles have finite horizontal surfaces and <=10% grade (104.733772ms)
+✔ near-zero X movement never falls through a cylinder cap triangle seam (146.087352ms)
+✔ every ordered junction turn stays walkable with actual transport decks present (2320.463147ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6435.428347

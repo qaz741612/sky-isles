@@ -1,7 +1,7 @@
 {
   "name": "sky-isles",
   "version": "1.0.0",
-  "description": "Dreamlike floating-islands browser game built with Three.js — MIT licensed, play at https://sky-isles.bles-software.com",
+  "description": "Dreamlike floating-islands browser game built with Three.js \u2014 MIT licensed, play at https://sky-isles.bles-software.com",
   "license": "MIT",
   "homepage": "https://sky-isles.bles-software.com",
   "type": "module",
@@ -12,7 +12,8 @@
     "lint": "eslint src test vite.config.js eslint.config.js playwright.config.js",
     "build": "vite build",
     "check": "npm run test && npm run lint && npm run build",
-    "validate": "npm run check && npm run test:e2e"
+    "validate": "npm run check && npm run test:e2e",
+    "generate:yuan": "node scripts/build-yuan-world.mjs"
   },
   "dependencies": {
     "three": "^0.179.1"
@@ -21,6 +22,7 @@
     "@eslint/js": "^9.34.0",
     "@playwright/test": "^1.61.1",
     "eslint": "^9.34.0",
+    "polygon-clipping": "^0.15.7",
     "vite": "^7.1.3"
   }
 }

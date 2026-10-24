@@ -102,6 +102,7 @@ export function buildSky(scene) {
 
   return {
     dome,
+    setOverview(active) { rayGroup.visible=!active; for(const w of wisps)w.sprite.visible=!active; },
     update(t, dt) {
       rayGroup.rotation.y = t * 0.02;
       for (const r of rays) {

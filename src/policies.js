@@ -98,19 +98,20 @@ export class PolicyUI {
     this.dialog.showModal();
   }
 
-  update(started, playerPosition) {
-    document.getElementById('policy-nav').hidden = !started;
+  update(started, playerPosition, panorama = false, labelled = false) {
+    document.getElementById('policy-nav').hidden = !started || panorama;
     for (const label of this.labels) {
       const anchor = label.position.clone();
       // Keep the current island's sign near the explorer on narrow screens.
       // Distant island signs remain anchored to their island centres.
-      if (Math.hypot(playerPosition.x - label.island.pos.x, playerPosition.z - label.island.pos.z) < label.island.r &&
+      if (!panorama && Math.hypot(playerPosition.x - label.island.pos.x, playerPosition.z - label.island.pos.z) < label.island.r &&
           Math.abs(playerPosition.y - label.island.pos.y) < 4) {
         anchor.x = THREE.MathUtils.lerp(anchor.x, playerPosition.x, 0.8);
         anchor.z = THREE.MathUtils.lerp(anchor.z, playerPosition.z, 0.8);
       }
       const p = anchor.project(this.camera);
-      const visible = started && p.z > -1 && p.z < 1 && Math.abs(p.x) < 0.92 && Math.abs(p.y) < 0.9;
+      label.element.classList.toggle('home-policy', label.island.name === 'home' && !panorama);
+      const visible = started && (!panorama || labelled) && p.z > -1 && p.z < 1 && Math.abs(p.x) < 0.92 && Math.abs(p.y) < 0.9;
       label.element.hidden = !visible;
       if (visible) {
         label.element.style.left = `${(p.x + 1) * 50}%`;

@@ -93,11 +93,11 @@ test.describe('苑裡政策島', () => {
 
   test('teleport moves the player and fall respawns at last ground', async ({ page }) => {
     await waitForWorld(page);
-    await page.evaluate(() => window.__skyisles.teleport(26, 6.5, -14)); // tree isle
+    const tree=await page.evaluate(()=>{const i=window.__skyisles.world.islands.islands.find(i=>i.name==='tree');window.__skyisles.teleport(i.pos.x,i.pos.y+1.5,i.pos.z);return{x:i.pos.x,z:i.pos.z};});
     await page.waitForTimeout(400);
     let state = await page.evaluate(() => window.__skyisles.getState());
-    expect(Math.abs(state.playerPos.x - 26)).toBeLessThan(1.5);
-    expect(Math.abs(state.playerPos.z - -14)).toBeLessThan(1.5);
+    expect(Math.abs(state.playerPos.x - tree.x)).toBeLessThan(1.5);
+    expect(Math.abs(state.playerPos.z - tree.z)).toBeLessThan(1.5);
 
     await expect.poll(() => page.evaluate(() => window.__skyisles.world.player.move.grounded)).toBe(true);
 
@@ -107,6 +107,6 @@ test.describe('苑裡政策島', () => {
       .poll(async () => page.evaluate(() => window.__skyisles.getState().playerPos.y), { timeout: 10_000 })
       .toBeGreaterThan(-40);
     state = await page.evaluate(() => window.__skyisles.getState());
-    expect(Math.abs(state.playerPos.x - 26)).toBeLessThan(3);
+    expect(Math.abs(state.playerPos.x - tree.x)).toBeLessThan(3);
   });
 });

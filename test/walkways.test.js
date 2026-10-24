@@ -3,8 +3,10 @@ import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import { ISLANDS } from '../src/world/islands.js';
 import { buildBridges } from '../src/world/bridges.js';
+import { buildTransport } from '../src/world/transport.js';
 import { Player } from '../src/sim/player.js';
 import { WALKWAY, planWalkways, moveWithGuards, nearestOnSegment } from '../src/sim/walkways.js';
+import { walkTour } from './helpers/walk-tour.js';
 import { createMoveState, stepHorizontal } from '../src/sim/movement.js';
 
 function fixture() {
@@ -15,66 +17,32 @@ function fixture() {
     return { name:d.name,r:d.r,pos:new THREE.Vector3(d.x,d.y,d.z) };
   });
   const bridges=buildBridges(scene,islands);
-  const player=new Player(scene,camera,[...colliders,...bridges.colliders]);
-  player.orbit.yaw=0;player.navigation={islands:ISLANDS,barriers:bridges.barriers};
+  const trafficHome={name:'home',group:new THREE.Group()};scene.add(trafficHome.group);
+  const transport=buildTransport(trafficHome,()=>new THREE.Group());
+  const player=new Player(scene,camera,[...colliders,...bridges.colliders,...transport.colliders]);
+  player.orbit.yaw=0;player.navigation={islands:ISLANDS,barriers:bridges.barriers,nearby:bridges.nearby};
   scene.updateMatrixWorld(true);
   return {scene,player,bridges};
 }
 
-export function tour(plans) {
-  const result=[],visited=new Set(['home']);
-  const dfs=(name) => {
-    for(const p of plans) {
-      const next=p.from===name?p.to:p.to===name?p.from:null;
-      if(!next || visited.has(next)) continue;
-      visited.add(next);
-      const points=p.from===name?p.points:[...p.points].reverse();
-      result.push({to:next,points});dfs(next);
-      result.push({to:name,points:[...points].reverse()});
-    }
-  };
-  dfs('home');return result;
-}
-
-test('eight islands share a seven-edge, wide, low-gradient network with overlapped entrances', () => {
-  const plans=planWalkways(ISLANDS),seen=new Set(['home']);
-  assert.equal(plans.length,7);assert.ok(WALKWAY.width>=3);
-  for(let repeat=0;repeat<8;repeat++) for(const p of plans) if(seen.has(p.from)||seen.has(p.to)){seen.add(p.from);seen.add(p.to);}
-  assert.equal(seen.size,8);
-  for(const plan of plans) {
-    for(let i=1;i<plan.points.length;i++) {
-      const a=plan.points[i-1],b=plan.points[i];
-      const grade=Math.abs(b.y-a.y)/Math.hypot(b.x-a.x,b.z-a.z);
-      assert.ok(grade<=WALKWAY.maxGrade+1e-9,`${plan.id}: ${grade}`);
-    }
-    assert.equal(plan.barriers.length,(plan.points.length-1)*2);
-    for(const [name,p] of [[plan.from,plan.points[0]],[plan.to,plan.points.at(-1)]]) {
-      const d=ISLANDS.find(i=>i.name===name);
-      assert.ok(Math.hypot(p.x-d.x,p.z-d.z)<d.r-1.5);
-      assert.equal(p.y,d.y);
-    }
-  }
+test('approved handwritten graph has 21 connected nodes, 22 real paths and eight distinct islands',()=>{
+ const plans=planWalkways(),seen=new Set(['F']);
+ for(let i=0;i<21;i++)for(const p of plans)if(seen.has(p.from)||seen.has(p.to)){seen.add(p.from);seen.add(p.to);}
+ assert.equal(plans.length,22);assert.equal(seen.size,21);assert.equal(ISLANDS.length,8);assert.equal(WALKWAY.width,4.8);
+ for(const plan of plans)assert.ok(plan.points.length>2);
 });
 
-for(const dt of [1/60,0.05]) test(`actual Player and mesh colliders walk all islands and return without jumping at dt=${dt}`, () => {
-  const {player,bridges}=fixture(),seen=new Set(['home']);let time=0;
-  const advance=(x,z)=> {time+=dt;player.update(dt,{x,z,jumpPressed:false,jumpHeld:false},time);};
-  for(let i=0;i<40;i++)advance(0,0);
-  for(const leg of tour(bridges.plans)) {
-    for(const target of leg.points) {
-      let remaining=2000;
-      while(Math.hypot(target.x-player.pos.x,target.z-player.pos.z)>0.22 && remaining-->0) {
-        const dx=target.x-player.pos.x,dz=target.z-player.pos.z,len=Math.hypot(dx,dz);
-        advance(dx/len,dz/len);
-        assert.ok(player.move.grounded,`airborne on ${leg.to} at ${JSON.stringify(player.pos)}`);
-      }
-      assert.ok(remaining>0,`stuck reaching ${leg.to}: ${JSON.stringify(target)} from ${JSON.stringify(player.pos)}`);
-      for(let i=0;i<30;i++)advance(0,0);
-      assert.ok(Math.abs(player.pos.y-target.y)<0.15,`unexpected surface on ${leg.to}`);
-    }
-    seen.add(leg.to);
+for(const dt of [1/60,.05])test(`actual Player walks every route in both directions without jumping dt=${dt}`,()=>{
+ const {player,bridges}=fixture();let time=0;const seen=new Set(['F']);
+ const step=(x,z)=>player.update(dt,{x,z,jumpPressed:false,jumpHeld:false},time+=dt);
+ player.teleport(0,.1,0);for(let i=0;i<30;i++)step(0,0);
+ for(const leg of walkTour(bridges.plans)){
+  for(const target of leg.points){let limit=600;while(Math.hypot(target.x-player.pos.x,target.z-player.pos.z)>.24&&limit-->0){const dx=target.x-player.pos.x,dz=target.z-player.pos.z,d=Math.hypot(dx,dz);step(dx/d,dz/d);assert.ok(player.move.grounded,`airborne ${leg.to}`);assert.equal(player.respawnCount,0);}
+   assert.ok(limit>0,`stuck ${leg.to}`);
   }
-  assert.equal(seen.size,8);
+  for(let i=0;i<30;i++)step(0,0);seen.add(leg.to);
+ }
+ assert.equal(seen.size,21);
 });
 
 test('guards prevent high-speed horizontal crossing from either side, including endpoints', () => {
@@ -103,36 +71,41 @@ test('released stick decelerates to rest quickly, with a bounded stopping distan
   assert.equal(m.vx,0);assert.equal(m.vz,0);assert.ok(distance<0.5);
 });
 
-test('mesh ground stays continuous while pushing both guards and right-angle landings', () => {
-  const {player,bridges}=fixture();let time=0;
-  for(const plan of bridges.plans) for(let i=1;i<plan.points.length-1;i++) for(const edge of ['left','right']) {
-    const c=plan.points[i],e=plan.edges[i][edge];
-    player.teleport(c.x,c.y+0.05,c.z);
-    for(let j=0;j<30;j++){time+=1/60;player.update(1/60,{x:0,z:0,jumpHeld:false,jumpPressed:false},time);}
-    const dx=e.x-c.x,dz=e.z-c.z,len=Math.hypot(dx,dz);
-    for(let j=0;j<100;j++) {
-      time+=1/60;player.update(1/60,{x:dx/len,z:dz/len,jumpHeld:false,jumpPressed:false},time);
-      assert.ok(player.move.grounded,`guard/corner dropped player: ${plan.id}/${i}/${edge}`);
-      for(const wall of bridges.barriers) {
-        const q=nearestOnSegment(player.pos,wall.a,wall.b);
-        if(player.pos.y>q.y+wall.height || player.pos.y+1.5<q.y-0.2)continue;
-        assert.ok(Math.hypot(player.pos.x-q.x,player.pos.z-q.z)>=WALKWAY.playerRadius+WALKWAY.railThickness/2-1e-4,`guard penetration ${plan.id}/${i}/${edge}`);
-      }
-    }
-  }
+test('every actual outer rail blocks crossing and matches rendered guard coordinates',()=>{
+ const {bridges}=fixture();
+ for(const w of bridges.barriers){const dx=w.b.x-w.a.x,dz=w.b.z-w.a.z,d=Math.hypot(dx,dz);if(d<.05)continue;
+  for(const side of [-1,1]){const nx=-dz/d*side,nz=dx/d*side,p={x:(w.a.x+w.b.x)/2+nx,y:0,z:(w.a.z+w.b.z)/2+nz};
+   moveWithGuards(p,-nx*2,-nz*2,[w]);const q=nearestOnSegment(p,w.a,w.b);assert.ok(Math.hypot(p.x-q.x,p.z-q.z)>=.4099);}
+ }
 });
 
-test('every rendered deck triangle is at most 16 percent grade, including all corner shoulders',()=>{
-  const {bridges}=fixture();
-  for(const mesh of bridges.colliders) {
-    const p=mesh.geometry.attributes.position,index=mesh.geometry.index;
-    for(let i=0;i<index.count;i+=3) {
-      const a=new THREE.Vector3().fromBufferAttribute(p,index.getX(i));
-      const b=new THREE.Vector3().fromBufferAttribute(p,index.getX(i+1));
-      const c=new THREE.Vector3().fromBufferAttribute(p,index.getX(i+2));
-      const n=b.sub(a).cross(c.sub(a));
-      assert.ok(Math.abs(n.y)>1e-6,`${mesh.name} has a degenerate surface`);
-      assert.ok(Math.hypot(n.x,n.z)/Math.abs(n.y)<=WALKWAY.maxGrade+1e-5,`${mesh.name} has a steep triangle`);
-    }
+test('all actual collision triangles have finite horizontal surfaces and <=10% grade',()=>{
+ const {bridges}=fixture();let count=0;
+ for(const mesh of bridges.colliders){const p=mesh.geometry.attributes.position,index=mesh.geometry.index;
+  for(let i=0;i<index.count;i+=3){const a=new THREE.Vector3().fromBufferAttribute(p,index.getX(i)),b=new THREE.Vector3().fromBufferAttribute(p,index.getX(i+1)),c=new THREE.Vector3().fromBufferAttribute(p,index.getX(i+2)),n=b.sub(a).cross(c.sub(a));
+   assert.ok(Math.abs(n.y)>1e-10);assert.ok(Number.isFinite(n.y));assert.ok(Math.hypot(n.x,n.z)/Math.abs(n.y)<=.1);count++;
   }
+ }
+ assert.ok(count>1000);
+});
+
+test('near-zero X movement never falls through a cylinder cap triangle seam',()=>{
+ const {player}=fixture();player.teleport(-3e-16,.1,3.5);
+ for(let i=0;i<30;i++)player.update(1/60,{x:0,z:0,jumpHeld:false,jumpPressed:false},i/60);
+ for(let i=0;i<80;i++){player.update(1/60,{x:1e-17,z:-.8,jumpHeld:false,jumpPressed:false},i/60);assert.ok(player.move.grounded,`cap seam at ${JSON.stringify(player.pos)}`);}
+});
+
+
+test('every ordered junction turn stays walkable with actual transport decks present',()=>{
+ const {player,bridges}=fixture();player.orbit.yaw=0;let time=0,turns=0;
+ const zero={x:0,z:0,jumpPressed:false,jumpHeld:false};
+ const walk=points=>{for(const t of points){let remaining=500;while(Math.hypot(t.x-player.pos.x,t.z-player.pos.z)>.23&&remaining-->0){const dx=t.x-player.pos.x,dz=t.z-player.pos.z,d=Math.hypot(dx,dz);player.update(1/60,{...zero,x:dx/d,z:dz/d},time+=1/60);assert.ok(player.move.grounded,`junction gap ${JSON.stringify(t)}`);}assert.ok(remaining>0,'blocked junction turn');}for(let i=0;i<30;i++)player.update(1/60,zero,time+=1/60);};
+ for(const node of bridges.nodes){const ports=bridges.plans.filter(p=>p.from===node.id||p.to===node.id).map(p=>(p.from===node.id?p.points:[...p.points].reverse()).slice(0,12));
+ if(ports.length<2)continue;
+ for(const incoming of ports)for(const outgoing of ports)if(incoming!==outgoing){
+  const a=incoming.at(-1);player.teleport(a.x,a.y+.1,a.z);for(let i=0;i<30;i++)player.update(1/60,zero,time+=1/60);
+  walk([...incoming].reverse());walk(outgoing);assert.equal(player.respawnCount,0);turns++;
+ }
+ }
+ assert.ok(turns>=60,`ordered port turns: ${turns}`);
 });

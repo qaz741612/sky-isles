@@ -74,13 +74,13 @@ export function buildTransport(home, makeSign = textSign) {
   box(C.stone, [2.6, 0.03, 3.1], [0, 0.02, 5.05]);
   for (let i = 0; i < 6; i++) box(C.cream, [0.65, 0.025, 0.2], [-2.1 + i * 0.84, 0.055, 0.8]);
   // A road viaduct across a shallow, rocky drainage landscape at the west edge.
-  box(0x778e92, [2.65, 0.03, 4.6], [-5.8, 0.025, 2.3]);
-  for (const z of [0.4, 4.2]) for (const x of [-6.5, -5.1]) box(C.stone, [0.3, 0.55, 0.4], [x, 0.29, z]);
+  box(0x778e92, [2.65, 0.03, 4.6], [-5.8, 0.025, 3.3]);
+  for (const z of [1.4, 5.2]) for (const x of [-6.5, -5.1]) box(C.stone, [0.3, 0.55, 0.4], [x, 0.29, z]);
   for (const x of [-6.65, -4.95]) {
-    box(C.cream, [0.08, 0.12, 5.5], [x, 1.05, 2.2]);
-    for (let i = 0; i < 9; i++) box(C.cream, [0.08, 0.5, 0.08], [x, 0.8, -0.4 + i * 0.65]);
+    box(C.cream, [0.08, 0.12, 5.5], [x, 1.05, 3.2]);
+    for (let i = 0; i < 9; i++) box(C.cream, [0.08, 0.5, 0.08], [x, 0.8, 0.6 + i * 0.65]);
   }
-  for (let i = 0; i < 8; i++) box(C.light, [0.08, 0.025, 0.35], [-5.8, 0.585, -0.2 + i * 0.65]);
+  for (let i = 0; i < 8; i++) box(C.light, [0.08, 0.025, 0.35], [-5.8, 0.585, 0.8 + i * 0.65]);
   // Lamps use coloured geometry rather than costly extra light sources.
   for (const [x, z] of [[-4.6, -2.4], [2.6, -2.4], [-4.4, 4.4], [3.7, 0.4]]) {
     box(C.dark, [0.09, 2.25, 0.09], [x, 1.15, z]);
@@ -101,7 +101,7 @@ export function buildTransport(home, makeSign = textSign) {
   const colliders = [];
   for (const [name, size, pos, color] of [
     ['station-platform', [7.2, 0.16, 1.35], [-1.3, 0.08, -2.5], C.cream],
-    ['road-viaduct', [1.8, 0.18, 5.7], [-5.8, 0.46, 2.2], C.road]
+    ['road-viaduct', [1.8, 0.18, 5.7], [-5.8, 0.46, 3.2], C.road]
   ]) {
     const deck = new THREE.Mesh(new THREE.BoxGeometry(...size), toonMaterial(color));
     deck.name = name; deck.position.set(...pos); group.add(deck); colliders.push(deck);

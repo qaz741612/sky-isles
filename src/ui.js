@@ -41,6 +41,15 @@ export class UI {
     this._bindJumpButton();
   }
 
+  resetInput() {
+    this._endStick?.();
+    this._keys.clear();
+    Object.assign(this.input,{x:0,z:0,jumpPressed:false,jumpHeld:false});
+    Object.assign(this.orbitDelta,{yaw:0,pitch:0,zoom:0});
+    this._joystickActive=false;
+    this.nub.style.transform='translate(-50%, -50%)';
+  }
+
   showInstructions() {
     let dismissed = this.helpDismissed;
     try { dismissed ||= sessionStorage.getItem('yuanli-help-dismissed') === '1'; } catch { /* storage optional */ }
@@ -110,6 +119,7 @@ export class UI {
       this.nub.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px))`;
     };
     this.joystick.addEventListener('pointerdown', (e) => {
+      if (this.suspended) return;
       if (active !== null) return;
       active = e.pointerId;
       this._joystickActive = true;
@@ -146,6 +156,7 @@ export class UI {
       this.input.x = 0;
       this.input.z = 0;
     };
+    this._endStick=()=>{ if(active!==null && this.joystick.hasPointerCapture(active))this.joystick.releasePointerCapture(active);active=null;this._joystickActive=false;setNub(0,0); };
     this.joystick.addEventListener('pointerup', end);
     this.joystick.addEventListener('pointercancel', end);
     this.joystick.addEventListener('lostpointercapture', end);
