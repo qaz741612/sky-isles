@@ -1,4 +1,4 @@
-// The nine floating isles: layered rock bases, mint grass tops, scattered
+// The eight floating isles: layered rock bases, mint grass tops, scattered
 // props, murals on the home isle, and glowing jump pads.
 import * as THREE from 'three';
 import { toonMaterial, addOutline } from './toon.js';
@@ -13,8 +13,7 @@ export const ISLANDS = [
   { name: 'meadow', x: -14, y: 3, z: 18, r: 6 },
   { name: 'windmill', x: -30, y: 8, z: 4, r: 6 },
   { name: 'crystal', x: 34, y: 13, z: 4, r: 5 },
-  { name: 'lookout', x: 2, y: 14, z: -30, r: 5 },
-  { name: 'stepping', x: 14, y: 11, z: -26, r: 3.5 }
+  { name: 'lookout', x: 2, y: 14, z: -30, r: 5 }
 ];
 
 const GRASS = 0x8fdcb4;
@@ -214,7 +213,7 @@ export function buildIslands(scene, rng) {
   const murals = buildMurals();
   home.group.add(murals.group);
 
-  // jump pads: home (toward koi), tree (toward stepping), koi (toward crystal)
+  // jump pads: home (toward koi), tree (toward lookout), koi (toward crystal)
   const padDefs = [
     { island: 'home', angle: Math.atan2(22, 18), dist: 6.2, strength: 16.5 },
     { island: 'tree', angle: Math.atan2(-12, -12), dist: 4.6, strength: 15 },

@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#cdb4f0" />
-  <title>Sky Isles</title>
-  <meta name="description" content="A dreamlike floating-islands world. Explore pastel sky isles, ring the five wind chimes in the mural's order, and open the portal to the star isle." />
+  <title>苑裡政策島</title>
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <meta name="description" content="苑裡政策島第一版：探索八座 3D 島嶼，認識八項政策主題。" />
   <style>
     :root {
       --mint: #a8e6cf;
@@ -80,9 +81,9 @@
     }
     #title-screen.hidden { opacity: 0; pointer-events: none; }
     #title-screen h1 {
-      font-size: clamp(44px, 9vw, 92px);
+      font-size: clamp(34px, 8vw, 86px);
       font-weight: 700;
-      letter-spacing: 0.3em;
+      letter-spacing: 0.12em;
       text-indent: 0.3em;
       color: #fdf6ea;
       text-shadow:
@@ -121,7 +122,7 @@
       animation: pulse 2.2s ease-in-out infinite;
       user-select: none;
     }
-    @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.05); opacity: 1; } }
+    @keyframes pulse { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; } }
 
     /* ---------- HUD ---------- */
     #hud {
@@ -232,6 +233,19 @@
     }
     body.touch #jump-btn { display: flex; }
     #jump-btn:active { transform: scale(0.94); }
+    #policy-nav { position:fixed; z-index:20; top:18px; right:18px; width:240px; padding:18px; background:var(--glass); border:1px solid white; border-radius:20px; backdrop-filter:blur(12px); }
+    .policy-brand { font-size:20px; font-weight:700; margin-bottom:12px; } .policy-brand small { font-size:11px; font-weight:400; }
+    #policy-menu summary { cursor:pointer; padding:10px 0; } #policy-list { display:grid; grid-template-columns:1fr 1fr; gap:8px; padding-top:8px; }
+    #policy-list button { white-space:nowrap; font-size:14px; padding:10px 4px !important; }
+    #policy-list button,.island-label { font:inherit; color:var(--ink); background:#fff8ee; border:1px solid #cbbbdc; border-radius:12px; padding:10px; cursor:pointer; }
+    button:focus-visible,summary:focus-visible { outline:3px solid #71559b; outline-offset:3px; }
+    .controls-help { font-size:11px; line-height:1.8; margin-top:10px; }
+    #island-labels { position:fixed; inset:0; pointer-events:none; z-index:12; }
+    .island-label { position:absolute; transform:translate(-50%,-100%); pointer-events:auto; white-space:nowrap; box-shadow:0 4px 16px #5a4a7a33; font-size:14px; font-weight:600; }
+    #policy-dialog { margin:auto; width:min(540px,calc(100vw - 32px)); max-height:80dvh; overflow:auto; padding:32px; border:1px solid white; border-radius:24px; background:#fffaf1; color:var(--ink); box-shadow:0 20px 100px #35244655; line-height:1.9; }
+    #policy-dialog::backdrop { background:#38264c66; backdrop-filter:blur(4px); } #policy-close { float:right; padding:8px 12px; border:1px solid #cbbbdc; background:white; border-radius:20px; color:var(--ink); cursor:pointer; }
+    .policy-eyebrow { font-size:12px; padding-top:48px; letter-spacing:.15em; } #policy-title { margin:8px 0 18px; font-size:30px; } #policy-content { white-space:pre-wrap; } #policy-content ul { padding-left:24px; } .empty-policy { padding:20px; background:#f0eafa; border-radius:14px; }
+    @media(max-width:600px) { #policy-nav { top:12px; right:12px; width:190px; padding:12px; } .policy-brand { font-size:17px; } body.touch .controls-help { font-size:0; } body.touch .controls-help::after { content:'左側搖桿移動 · 拖曳轉動視角'; font-size:11px; } #hint { bottom:170px; } #policy-dialog { padding:24px; } }
   </style>
 </head>
 <body>
@@ -239,17 +253,17 @@
   <div id="ui">
     <div id="hud">
       <div class="chip" id="chime-chip">
-        <span>Chimes</span>
+        <span>風鈴</span>
         <span id="chime-dots"></span>
       </div>
     </div>
     <div id="hint"></div>
     <div id="joystick" class="touch-only"><div class="nub"></div></div>
-    <button id="jump-btn" type="button">JUMP</button>
+    <button id="jump-btn" type="button">跳躍</button>
     <div id="title-screen">
-      <h1>SKY ISLES</h1>
-      <p class="subtitle">a dream above the clouds</p>
-      <div class="tap">tap to begin</div>
+      <h1>苑裡政策島</h1>
+      <p class="subtitle">八座島嶼・一起探索苑裡</p>
+      <button class="tap" type="button">開始探索</button>
       <div class="oss">
         MIT License &middot; Copyright (c) 2026 Stanislav Sorokin (Bles Software)<br>
         <a href="https://github.com/stas4000/sky-isles" target="_blank" rel="noopener">Source on GitHub</a>
@@ -258,9 +272,12 @@
     </div>
     <div id="loading">
       <div class="loading-isle"></div>
-      <p>gathering clouds</p>
+      <p>正在準備政策島</p>
     </div>
   </div>
+  <nav hidden id="policy-nav" aria-label="八項政策"><div class="policy-brand">苑裡政策島 <small>第一版</small></div><details id="policy-menu"><summary>探索八項政策</summary><div id="policy-list"></div></details><p class="controls-help">拖曳轉動視角 · WASD 移動 · 空白鍵跳躍</p></nav>
+  <div id="island-labels" aria-label="島嶼政策標籤"></div>
+  <dialog id="policy-dialog" aria-labelledby="policy-title"><button id="policy-close" type="button" aria-label="關閉政策介紹">關閉 ×</button><p class="policy-eyebrow">苑裡政策島 / 政策介紹</p><h2 id="policy-title"></h2><div id="policy-content"></div></dialog>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

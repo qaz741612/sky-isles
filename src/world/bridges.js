@@ -7,7 +7,7 @@ const BRIDGE_LINKS = [
   ['home', 'tree'],
   ['meadow', 'windmill'],
   ['temple', 'windmill'],
-  ['stepping', 'lookout']
+  ['tree', 'lookout']
 ];
 
 function buildBridge(a, b, rng) {

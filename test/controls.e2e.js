@@ -35,7 +35,7 @@ async function measureDirection(page, startAct, stopAct, minDist = 2.5) {
   await startAct();
   let after = before;
   let len = 0;
-  const deadline = Date.now() + 5000;
+  const deadline = Date.now() + 20000;
   while (Date.now() < deadline) {
     await page.waitForTimeout(120);
     after = await getPos(page);

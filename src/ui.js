@@ -63,12 +63,12 @@ export class UI {
   }
 
   onStart(cb) {
-    this.title.addEventListener('pointerdown', () => cb(), { once: true });
+    this.title.querySelector('.tap').addEventListener('click', () => cb(), { once: true });
   }
 
   _bindKeyboard() {
     window.addEventListener('keydown', (e) => {
-      if (e.repeat) return;
+      if (e.repeat || document.getElementById('policy-dialog').open) return;
       this._keys.add(e.code);
       if (e.code === 'Space') {
         this.input.jumpPressed = true;
