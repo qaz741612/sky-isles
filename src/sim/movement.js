@@ -73,9 +73,11 @@ export function stepHorizontal(state, wishX, wishZ, dt, cfg = MOVE) {
   const speedScale = state.gliding ? (cfg.walkSpeed + cfg.glideBoost) / cfg.walkSpeed : 1;
   const tx = wishX * speedScale;
   const tz = wishZ * speedScale;
-  const t = Math.min(1, cfg.accel * dt / cfg.walkSpeed);
+  const stopping = Math.hypot(wishX, wishZ) < 0.001;
+  const t = Math.min(1, (stopping ? 12 : cfg.accel / cfg.walkSpeed) * dt);
   state.vx += (tx - state.vx) * t;
   state.vz += (tz - state.vz) * t;
+  if (stopping && Math.hypot(state.vx,state.vz)<0.025) { state.vx=0;state.vz=0; }
   return state;
 }
 

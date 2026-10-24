@@ -221,7 +221,8 @@ export function buildIslands(scene, rng) {
   const padDefs = [
     { island: 'home', angle: Math.atan2(22, 18), dist: 6.2, strength: 16.5 },
     { island: 'tree', angle: Math.atan2(-12, -12), dist: 4.6, strength: 15 },
-    { island: 'koi', angle: Math.atan2(-18, 16), dist: 4.6, strength: 15 }
+    // Keep this optional spring off the new north-east walking entrance.
+    { island: 'koi', angle: Math.atan2(18, 16), dist: 4.6, strength: 15 }
   ];
   for (const pd of padDefs) {
     const isle = islands.find((i) => i.name === pd.island);
