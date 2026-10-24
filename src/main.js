@@ -11,7 +11,8 @@ import { buildSky } from './world/sky.js';
 import { ISLANDS, buildIslands, updateJumpPads } from './world/islands.js';
 import { buildBridges } from './world/bridges.js';
 import { buildClouds } from './world/clouds.js';
-import { buildProps } from './world/props.js';
+import { buildPolicyScenery } from './world/policy-scenery.js';
+import { guardIndex } from './sim/walkways.js';
 import { buildChimes } from './world/chimes.js';
 import { buildTransport } from './world/transport.js';
 import { PolicyUI, loadPolicies } from './policies.js';
@@ -39,21 +40,30 @@ const sky = buildSky(scene);
 const islands = buildIslands(scene, rng);
 const bridges = buildBridges(scene, islands.islands, rng);
 const clouds = buildClouds(scene, rng);
-const props = buildProps(islands.islands, rng);
+
 const chimes = buildChimes(islands.islands);
 const transport = buildTransport(islands.islands[0]);
+scene.updateMatrixWorld(true);
+const occupied={};
+for(const isle of islands.islands){
+ occupied[isle.name]=[...chimes.chimes.map(c=>c.worldPos),...islands.jumpPads.map(p=>p.group.getWorldPosition(new THREE.Vector3()))]
+ .map(p=>({x:p.x-isle.pos.x,z:p.z-isle.pos.z,radius:.95})).filter(p=>Math.hypot(p.x,p.z)<isle.r+1);
+}
+const props=buildPolicyScenery(islands.islands,occupied);
+const allBarriers=[...bridges.barriers,...props.barriers];
 
 const colliders = [
   ...islands.colliders,
   ...bridges.colliders,
-  ...transport.colliders
+  ...transport.colliders,
+  ...props.colliders
 ];
 
 // ----- sim -----
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
-player.navigation = { islands: ISLANDS, barriers: bridges.barriers, nearby: bridges.nearby };
+player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);
 Object.assign(player.orbit, initialView);
@@ -131,7 +141,7 @@ ui.onTap = (nx, ny) => {
     else ui.hint('靠近一點即可敲響風鈴', 1800);
     return;
   }
-  const islandHits = tapRay.intersectObjects(islands.colliders, false);
+  const islandHits = tapRay.intersectObjects([...islands.colliders,...props.colliders], false);
   if (islandHits.length && islandHits[0].object.userData.island) {
     policyUI.open(islandHits[0].object.userData.island);
     return;
@@ -191,7 +201,7 @@ window.__skyisles = {
       started = true;
     }
   },
-  world: { panorama, policyUI, scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, ui }
+  world: { props, panorama, policyUI, scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, ui }
 };
 
 // ----- main loop -----

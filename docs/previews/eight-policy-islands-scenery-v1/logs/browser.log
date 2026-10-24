@@ -1,0 +1,49 @@
+[WebServer] (node:53288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 40 tests using 2 workers
+(node:53310) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:53309) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+······°···°····{"device":"keyboard","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":81127,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.044360339851676235,1.1920928910669204e-8,0.002534876562953112]},"endpoint":[0.044360339851676235,1.1920928910669204e-8,0.002534876562953112],"returned":[0.044360339851676235,0.40000001192092893,0.002534876562953112],"yawUnchanged":true}
+··°(node:55178) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·°(node:55389) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·············T(node:57123) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·{"device":"single-pointer joystick","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":84731,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.05215915816516519,1.1920928910669204e-8,0.0029805233237238417]},"endpoint":[0.05215915816516519,1.1920928910669204e-8,0.0029805233237238417],"returned":[0.05215915816516519,0.40000001192092893,0.0029805233237238417],"yawUnchanged":true}
+·····
+
+  1) [mobile] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help 
+
+    Test timeout of 240000ms exceeded.
+
+    Error: page.evaluate: Test timeout of 240000ms exceeded.
+
+      28 |     await page.locator('#help-close').click();
+      29 |     await expect(page.locator('#touch-help')).not.toBeVisible();
+    > 30 |     await page.evaluate(() => sessionStorage.removeItem('yuanli-help-dismissed'));
+         |                ^
+      31 |   }
+      32 | });
+      33 |
+        at /workspace/sky-isles/test/responsive.e2e.js:30:16
+
+    Error Context: test-results/responsive.e2e.js-compact--754dd-sable-with-first-visit-help-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive.e2e.js-compact--754dd-sable-with-first-visit-help-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive.e2e.js-compact--754dd-sable-with-first-visit-help-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: [mobile] › test/app.e2e.js (5.7m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 failed
+    [mobile] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help 
+  4 skipped
+  35 passed (22.4m)

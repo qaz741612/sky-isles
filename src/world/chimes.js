@@ -72,15 +72,12 @@ function buildChime(index) {
   swing.add(sail);
 
   // soft glow halo shown when the player is near
-  const halo = new THREE.Sprite(new THREE.SpriteMaterial({
-    color: new THREE.Color(chime.color),
-    transparent: true,
-    opacity: 0,
-    blending: THREE.AdditiveBlending,
-    depthWrite: false
+  const halo = new THREE.Mesh(new THREE.RingGeometry(0.72, 0.88, 20), new THREE.MeshBasicMaterial({
+    color: new THREE.Color(chime.color), transparent: true, opacity: 0,
+    side: THREE.DoubleSide, depthWrite: false
   }));
-  halo.scale.set(2.4, 2.4, 1);
-  halo.position.y = 1.6;
+  halo.rotation.x = -Math.PI / 2;
+  halo.position.y = 0.035;
   group.add(halo);
 
   return { group, swing, tubes, sail, halo, index, chime };

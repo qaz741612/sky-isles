@@ -47,9 +47,17 @@ export class PolicyUI {
       this.labels.push({ element: label, island, position: island.pos.clone().add(new THREE.Vector3(0, 2.5, 0)) });
     }
     document.getElementById('policy-close').addEventListener('click', () => this.dialog.close());
+    // Opening from canvas pointerup can retarget the compatibility click to
+    // the new modal. Only a gesture that STARTED on its backdrop may close it.
+    this.dialog.addEventListener('pointerdown', (event) => {
+      const r=this.dialog.getBoundingClientRect();
+      this.backdropDown=event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom;
+    });
+    this.dialog.addEventListener('pointercancel',()=>{this.backdropDown=false;});
     this.dialog.addEventListener('click', (event) => {
       const rect = this.dialog.getBoundingClientRect();
-      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) this.dialog.close();
+      if (this.backdropDown && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) this.dialog.close();
+      this.backdropDown=false;
     });
     this.dialog.addEventListener('close', () => {
       const menu = document.getElementById('policy-menu');
@@ -63,6 +71,7 @@ export class PolicyUI {
   open(id) {
     const policy = this.policies.get(id);
     if (!policy || this.isOpen) return;
+    this.backdropDown=false;
     this.previousFocus = document.activeElement;
     document.getElementById('policy-title').textContent = policy.name;
     const content = document.getElementById('policy-content');

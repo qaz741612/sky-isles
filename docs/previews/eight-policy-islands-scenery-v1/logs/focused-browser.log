@@ -1,0 +1,67 @@
+[WebServer] (node:58115) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+(node:58132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+°·{"device":"keyboard","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":81127,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.044360339851676235,1.1920928910669204e-8,0.002534876562953112]},"endpoint":[0.044360339851676235,1.1920928910669204e-8,0.002534876562953112],"returned":[0.044360339851676235,0.40000001192092893,0.002534876562953112],"yawUnchanged":true}
+··°(node:58635) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·T(node:59766) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"device":"single-pointer joystick","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":84731,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.05215915816516519,1.1920928910669204e-8,0.0029805233237238417]},"endpoint":[0.05215915816516519,1.1920928910669204e-8,0.0029805233237238417],"returned":[0.05215915816516519,0.40000001192092893,0.0029805233237238417],"yawUnchanged":true}
+···
+
+  1) [mobile] › test/scenery.e2e.js:4:1 › each policy theme renders, leaves routes open and supports policy entry 
+
+    Test timeout of 360000ms exceeded.
+
+    Error: locator.click: Test timeout of 360000ms exceeded.
+    Call log:
+      - waiting for locator('#policy-close')
+        - locator resolved to <button type="button" id="policy-close" aria-label="關閉政策介紹">關閉 ×</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        241 × waiting for element to be visible, enabled and stable
+            - element is not visible
+          - retrying click action
+            - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      18 |  const target=await page.evaluate(()=>{const w=window.__skyisles.world,i=w.islands.islands.find(i=>i.name==='lookout'),p=w.props.plots.find(p=>p.island==='lookout');const v=i.pos.clone().set(i.pos.x+p.x,i.pos.y+p.radius*1.6,i.pos.z+p.z).project(w.camera);return{x:(v.x+1)*innerWidth/2,y:(1-v.y)*innerHeight/2};});
+      19 |  if(isMobile)await page.touchscreen.tap(target.x,target.y);else await page.mouse.click(target.x,target.y);
+    > 20 |  await expect(page.locator('#policy-title')).toHaveText('教育發展');await page.locator('#policy-close').click();
+         |                                                                                                     ^
+      21 |  await page.locator('#panorama-btn').click();await page.waitForFunction(()=>window.__skyisles.world.panorama.mode==='overview');
+      22 |  await page.screenshot({path:`${folder}/${isMobile?'mobile-panorama':'panorama-pure'}.png`});
+      23 |  if(!isMobile){await page.evaluate(()=>window.__skyisles.world.panorama.labelled=true);await expect(page.locator('.island-label:visible')).toHaveCount(8);await page.screenshot({path:`${folder}/panorama-labelled.png`});}
+        at /workspace/sky-isles/test/scenery.e2e.js:20:101
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/scenery.e2e.js-each-policy-eb455-n-and-supports-policy-entry-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/scenery.e2e.js-each-policy-eb455-n-and-supports-policy-entry-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/scenery.e2e.js-each-policy-eb455-n-and-supports-policy-entry-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/scenery.e2e.js-each-policy-eb455-n-and-supports-policy-entry-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: [mobile] › test/scenery.e2e.js (6.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 failed
+    [mobile] › test/scenery.e2e.js:4:1 › each policy theme renders, leaves routes open and supports policy entry 
+  2 skipped
+  7 passed (11.6m)

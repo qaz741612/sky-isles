@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import { ISLANDS } from '../src/world/islands.js';
 import { buildBridges } from '../src/world/bridges.js';
+import { buildPolicyScenery } from '../src/world/policy-scenery.js';
+import { guardIndex } from '../src/sim/walkways.js';
 import { buildTransport } from '../src/world/transport.js';
 import { Player } from '../src/sim/player.js';
 import { WALKWAY, planWalkways, moveWithGuards, nearestOnSegment } from '../src/sim/walkways.js';
@@ -14,13 +16,16 @@ function fixture() {
   const colliders=[],islands=ISLANDS.map(d=> {
     const grass=new THREE.Mesh(new THREE.CylinderGeometry(d.r,d.r*0.9,1.1,28),new THREE.MeshBasicMaterial());
     grass.position.set(d.x,d.y-0.55,d.z);grass.userData.island=d.name;scene.add(grass);colliders.push(grass);
-    return { name:d.name,r:d.r,pos:new THREE.Vector3(d.x,d.y,d.z) };
+    const group=new THREE.Group();group.position.set(d.x,d.y,d.z);scene.add(group);
+    return { name:d.name,r:d.r,pos:new THREE.Vector3(d.x,d.y,d.z),group };
   });
   const bridges=buildBridges(scene,islands);
   const trafficHome={name:'home',group:new THREE.Group()};scene.add(trafficHome.group);
   const transport=buildTransport(trafficHome,()=>new THREE.Group());
-  const player=new Player(scene,camera,[...colliders,...bridges.colliders,...transport.colliders]);
-  player.orbit.yaw=0;player.navigation={islands:ISLANDS,barriers:bridges.barriers,nearby:bridges.nearby};
+  const scenery=buildPolicyScenery(islands);
+  const barriers=[...bridges.barriers,...scenery.barriers];
+  const player=new Player(scene,camera,[...colliders,...bridges.colliders,...transport.colliders,...scenery.colliders]);
+  player.orbit.yaw=0;player.navigation={islands:ISLANDS,barriers,nearby:guardIndex(barriers)};
   scene.updateMatrixWorld(true);
   return {scene,player,bridges};
 }
