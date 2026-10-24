@@ -1,0 +1,17 @@
+✔ approved handwritten graph has 21 connected nodes, 22 real paths and eight distinct islands (4.546259ms)
+✔ actual Player walks every route in both directions without jumping dt=0.016666666666666666 (1539.249896ms)
+✔ actual Player walks every route in both directions without jumping dt=0.05 (714.381133ms)
+✔ guards prevent high-speed horizontal crossing from either side, including endpoints (123.405302ms)
+✔ released stick decelerates to rest quickly, with a bounded stopping distance (0.975478ms)
+✔ every actual outer rail blocks crossing and matches rendered guard coordinates (115.05841ms)
+✔ all actual collision triangles have finite horizontal surfaces and <=10% grade (76.7534ms)
+✔ near-zero X movement never falls through a cylinder cap triangle seam (97.742874ms)
+✔ every ordered junction turn stays walkable with actual transport decks present (1951.163881ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4638.609849

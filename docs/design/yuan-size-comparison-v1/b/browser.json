@@ -1,0 +1,14 @@
+{
+  "viewport": [
+    1440,
+    1100
+  ],
+  "pageErrors": [],
+  "renderer": "actual Three.js scene with sandbox candidate geometry",
+  "screenshots": [
+    "panorama-pure.png",
+    "panorama-labelled.png",
+    "panorama-oblique.png",
+    "shared-scale-pure.png"
+  ]
+}

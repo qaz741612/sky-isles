@@ -1,0 +1,1956 @@
+{
+  "referenceCommit": "860cf7a57a6d65771bbb445ea04493c219047a56",
+  "notes": "All distances use the PR #4 compiled centerline network as baseline; new XZ factors applied once to current plan coordinates, not to models.",
+  "baseline": {
+    "totalLength": 886.9168103366217,
+    "shortest": {
+      "home": {
+        "home": 0,
+        "tree": 42.98705205275083,
+        "temple": 56.20981579234423,
+        "koi": 59.084449742966335,
+        "meadow": 49.8202772531976,
+        "windmill": 137.60672761954706,
+        "crystal": 115.31551225076922,
+        "lookout": 174.98146742002234
+      },
+      "tree": {
+        "home": 42.98705205275083,
+        "tree": 0,
+        "temple": 66.3834257214775,
+        "koi": 102.07150179571717,
+        "meadow": 59.00400154674379,
+        "windmill": 180.5937796722979,
+        "crystal": 158.30256430352006,
+        "lookout": 217.96851947277315
+      },
+      "temple": {
+        "home": 56.20981579234423,
+        "tree": 66.3834257214775,
+        "temple": 0,
+        "koi": 63.22148207272592,
+        "meadow": 106.03009304554182,
+        "windmill": 141.74375994930665,
+        "crystal": 171.52532804311346,
+        "lookout": 231.19128321236656
+      },
+      "koi": {
+        "home": 59.084449742966335,
+        "tree": 102.07150179571717,
+        "temple": 63.22148207272592,
+        "koi": 0,
+        "meadow": 108.90472699616393,
+        "windmill": 78.52227787658072,
+        "crystal": 174.39996199373556,
+        "lookout": 234.06591716298868
+      },
+      "meadow": {
+        "home": 49.8202772531976,
+        "tree": 59.00400154674379,
+        "temple": 106.03009304554183,
+        "koi": 108.90472699616393,
+        "meadow": 0,
+        "windmill": 187.42700487274465,
+        "crystal": 124.844278139909,
+        "lookout": 224.8017446732199
+      },
+      "windmill": {
+        "home": 137.60672761954706,
+        "tree": 180.5937796722979,
+        "temple": 141.74375994930665,
+        "koi": 78.52227787658072,
+        "meadow": 187.42700487274467,
+        "windmill": 0,
+        "crystal": 252.92223987031628,
+        "lookout": 312.58819503956937
+      },
+      "crystal": {
+        "home": 115.31551225076922,
+        "tree": 158.30256430352006,
+        "temple": 171.52532804311346,
+        "koi": 174.39996199373556,
+        "meadow": 124.844278139909,
+        "windmill": 252.92223987031628,
+        "crystal": 0,
+        "lookout": 290.29697967079153
+      },
+      "lookout": {
+        "home": 174.98146742002234,
+        "tree": 217.96851947277318,
+        "temple": 231.19128321236656,
+        "koi": 234.06591716298868,
+        "meadow": 224.80174467321996,
+        "windmill": 312.5881950395694,
+        "crystal": 290.2969796707916,
+        "lookout": 0
+      }
+    },
+    "islandPairs": [
+      {
+        "from": "home",
+        "to": "tree",
+        "centerDistance": 35.13430323771912,
+        "edgeGap": 19.134303237719116
+      },
+      {
+        "from": "home",
+        "to": "temple",
+        "centerDistance": 56.1911913381448,
+        "edgeGap": 39.1911913381448
+      },
+      {
+        "from": "home",
+        "to": "koi",
+        "centerDistance": 58.197827588321545,
+        "edgeGap": 42.197827588321545
+      },
+      {
+        "from": "home",
+        "to": "meadow",
+        "centerDistance": 43.09667643798069,
+        "edgeGap": 28.09667643798069
+      },
+      {
+        "from": "home",
+        "to": "windmill",
+        "centerDistance": 136.12928631268144,
+        "edgeGap": 121.12928631268144
+      },
+      {
+        "from": "home",
+        "to": "crystal",
+        "centerDistance": 85.04861903640764,
+        "edgeGap": 71.04861903640764
+      },
+      {
+        "from": "home",
+        "to": "lookout",
+        "centerDistance": 135.83291854333396,
+        "edgeGap": 121.83291854333396
+      },
+      {
+        "from": "tree",
+        "to": "temple",
+        "centerDistance": 40.810029355539555,
+        "edgeGap": 25.810029355539555
+      },
+      {
+        "from": "tree",
+        "to": "koi",
+        "centerDistance": 77.77816454507008,
+        "edgeGap": 63.778164545070084
+      },
+      {
+        "from": "tree",
+        "to": "meadow",
+        "centerDistance": 58.99770680289192,
+        "edgeGap": 45.99770680289192
+      },
+      {
+        "from": "tree",
+        "to": "windmill",
+        "centerDistance": 150.06681072109183,
+        "edgeGap": 137.06681072109183
+      },
+      {
+        "from": "tree",
+        "to": "crystal",
+        "centerDistance": 120.1484615631844,
+        "edgeGap": 108.1484615631844
+      },
+      {
+        "from": "tree",
+        "to": "lookout",
+        "centerDistance": 170.35457140916412,
+        "edgeGap": 158.35457140916412
+      },
+      {
+        "from": "temple",
+        "to": "koi",
+        "centerDistance": 60.731903971471205,
+        "edgeGap": 45.731903971471205
+      },
+      {
+        "from": "temple",
+        "to": "meadow",
+        "centerDistance": 94.43864293815324,
+        "edgeGap": 80.43864293815324
+      },
+      {
+        "from": "temple",
+        "to": "windmill",
+        "centerDistance": 118.883054604094,
+        "edgeGap": 104.883054604094
+      },
+      {
+        "from": "temple",
+        "to": "crystal",
+        "centerDistance": 131.70105402767282,
+        "edgeGap": 118.70105402767282
+      },
+      {
+        "from": "temple",
+        "to": "lookout",
+        "centerDistance": 172.1018697399886,
+        "edgeGap": 159.1018697399886
+      },
+      {
+        "from": "koi",
+        "to": "meadow",
+        "centerDistance": 98.39136547482202,
+        "edgeGap": 85.39136547482202
+      },
+      {
+        "from": "koi",
+        "to": "windmill",
+        "centerDistance": 78.14338820399331,
+        "edgeGap": 65.14338820399331
+      },
+      {
+        "from": "koi",
+        "to": "crystal",
+        "centerDistance": 87.50098266876779,
+        "edgeGap": 75.50098266876779
+      },
+      {
+        "from": "koi",
+        "to": "lookout",
+        "centerDistance": 115.55715136675879,
+        "edgeGap": 103.55715136675879
+      },
+      {
+        "from": "meadow",
+        "to": "windmill",
+        "centerDistance": 176.34597703378435,
+        "edgeGap": 164.34597703378435
+      },
+      {
+        "from": "meadow",
+        "to": "crystal",
+        "centerDistance": 88.13447770311002,
+        "edgeGap": 77.13447770311002
+      },
+      {
+        "from": "meadow",
+        "to": "lookout",
+        "centerDistance": 145.7878217136123,
+        "edgeGap": 134.7878217136123
+      },
+      {
+        "from": "windmill",
+        "to": "crystal",
+        "centerDistance": 142.38356809688398,
+        "edgeGap": 131.38356809688398
+      },
+      {
+        "from": "windmill",
+        "to": "lookout",
+        "centerDistance": 138.540648071243,
+        "edgeGap": 127.540648071243
+      },
+      {
+        "from": "crystal",
+        "to": "lookout",
+        "centerDistance": 58.04898138641195,
+        "edgeGap": 48.04898138641195
+      }
+    ],
+    "minIslandEdgeGap": 19.134303237719116,
+    "width": 163.26815,
+    "height": 177.492,
+    "walkwayWidth": 4.8,
+    "unionComponents": 1,
+    "holes": 2,
+    "walkableArea": 4629.2458285361,
+    "guardSegments": 1721,
+    "collisionTriangles": 1801,
+    "nonSharedRoadOverlaps": [],
+    "foreignIslandOverlaps": [],
+    "minNonEndpointRoadToIslandGap": 5.0067210618087845,
+    "minNonSharedRoadBoundaryGap": 11.583553185635438,
+    "junctionOverlaps": [
+      {
+        "edges": [
+          "S01",
+          "S02"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 0.01779517470930614
+      },
+      {
+        "edges": [
+          "S01",
+          "S04"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 7.17539033100195
+      },
+      {
+        "edges": [
+          "S01",
+          "S05"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 4.155287640043412
+      },
+      {
+        "edges": [
+          "S02",
+          "S03"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 0.059453040150515335
+      },
+      {
+        "edges": [
+          "S02",
+          "S04"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 4.646672857969463
+      },
+      {
+        "edges": [
+          "S02",
+          "S05"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 7.8387561935967085
+      },
+      {
+        "edges": [
+          "S02",
+          "S06"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 3.8098105121303547
+      },
+      {
+        "edges": [
+          "S02",
+          "S07"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 8.198266456272222
+      },
+      {
+        "edges": [
+          "S03",
+          "S06"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 8.413035923992368
+      },
+      {
+        "edges": [
+          "S03",
+          "S07"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 4.190119204267717
+      },
+      {
+        "edges": [
+          "S04",
+          "S05"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 0.30082733826725416
+      },
+      {
+        "edges": [
+          "S05",
+          "S08"
+        ],
+        "sharedNodes": [
+          "J1"
+        ],
+        "overlapArea": 13.544369479396538
+      },
+      {
+        "edges": [
+          "S05",
+          "S09"
+        ],
+        "sharedNodes": [
+          "J1"
+        ],
+        "overlapArea": 2.0313962699674164
+      },
+      {
+        "edges": [
+          "S06",
+          "S07"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 0.2070594608900933
+      },
+      {
+        "edges": [
+          "S07",
+          "S10"
+        ],
+        "sharedNodes": [
+          "J2"
+        ],
+        "overlapArea": 3.3370656424155847
+      },
+      {
+        "edges": [
+          "S07",
+          "S11"
+        ],
+        "sharedNodes": [
+          "J2"
+        ],
+        "overlapArea": 10.048201528555639
+      },
+      {
+        "edges": [
+          "S08",
+          "S09"
+        ],
+        "sharedNodes": [
+          "J1"
+        ],
+        "overlapArea": 0.09950669398120837
+      },
+      {
+        "edges": [
+          "S08",
+          "S12"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 16.73766373493516
+      },
+      {
+        "edges": [
+          "S08",
+          "S13"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 2.856816409145914
+      },
+      {
+        "edges": [
+          "S08",
+          "S14"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 4.8277181225602614
+      },
+      {
+        "edges": [
+          "S09",
+          "S10"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 0.03053592110073137
+      },
+      {
+        "edges": [
+          "S09",
+          "S15"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 6.090754385212243
+      },
+      {
+        "edges": [
+          "S09",
+          "S18"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 4.860691795846871
+      },
+      {
+        "edges": [
+          "S10",
+          "S11"
+        ],
+        "sharedNodes": [
+          "J2"
+        ],
+        "overlapArea": 0.0015742835263630184
+      },
+      {
+        "edges": [
+          "S10",
+          "S15"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 5.3982300122795905
+      },
+      {
+        "edges": [
+          "S10",
+          "S18"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 6.742712003090011
+      },
+      {
+        "edges": [
+          "S11",
+          "S21"
+        ],
+        "sharedNodes": [
+          "J3"
+        ],
+        "overlapArea": 0.1169696789250736
+      },
+      {
+        "edges": [
+          "S12",
+          "S13"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 0.7499418697965154
+      },
+      {
+        "edges": [
+          "S12",
+          "S14"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 2.190727518235043
+      },
+      {
+        "edges": [
+          "S13",
+          "S14"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 19.846590578613586
+      },
+      {
+        "edges": [
+          "S14",
+          "S15"
+        ],
+        "sharedNodes": [
+          "C"
+        ],
+        "overlapArea": 5.799001716750922
+      },
+      {
+        "edges": [
+          "S14",
+          "S16"
+        ],
+        "sharedNodes": [
+          "C"
+        ],
+        "overlapArea": 5.442965469004321
+      },
+      {
+        "edges": [
+          "S15",
+          "S16"
+        ],
+        "sharedNodes": [
+          "C"
+        ],
+        "overlapArea": 0.14268959864773478
+      },
+      {
+        "edges": [
+          "S15",
+          "S18"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 41.56008980718711
+      },
+      {
+        "edges": [
+          "S16",
+          "S17"
+        ],
+        "sharedNodes": [
+          "D"
+        ],
+        "overlapArea": 0.1236641993050398
+      },
+      {
+        "edges": [
+          "S18",
+          "S19"
+        ],
+        "sharedNodes": [
+          "J4"
+        ],
+        "overlapArea": 0.06823175337957821
+      },
+      {
+        "edges": [
+          "S19",
+          "S20"
+        ],
+        "sharedNodes": [
+          "H"
+        ],
+        "overlapArea": 0.22116520074314394
+      },
+      {
+        "edges": [
+          "S21",
+          "S22"
+        ],
+        "sharedNodes": [
+          "G"
+        ],
+        "overlapArea": 2.497095156728392
+      }
+    ]
+  },
+  "a": {
+    "relativeScale": 0.85,
+    "totalLength": 753.8744602296975,
+    "shortest": {
+      "home": {
+        "home": 0,
+        "tree": 36.538582530105984,
+        "temple": 47.77833978546069,
+        "koi": 50.22170225640724,
+        "meadow": 42.34720547090201,
+        "windmill": 116.96559181848089,
+        "crystal": 98.0173963151692,
+        "lookout": 148.7338265635235
+      },
+      "tree": {
+        "home": 36.538582530105984,
+        "tree": 0,
+        "temple": 56.42549651049174,
+        "koi": 86.76028478651322,
+        "meadow": 50.15339920832218,
+        "windmill": 153.50417434858687,
+        "crystal": 134.55597884527518,
+        "lookout": 185.27240909362948
+      },
+      "temple": {
+        "home": 47.77833978546069,
+        "tree": 56.42549651049174,
+        "temple": 0,
+        "koi": 53.73804265378754,
+        "meadow": 90.1255452563627,
+        "windmill": 120.48193221586118,
+        "crystal": 145.79573610062988,
+        "lookout": 196.51216634898418
+      },
+      "koi": {
+        "home": 50.22170225640724,
+        "tree": 86.76028478651322,
+        "temple": 53.73804265378754,
+        "koi": 0,
+        "meadow": 92.56890772730925,
+        "windmill": 66.74388956207365,
+        "crystal": 148.23909857157645,
+        "lookout": 198.95552881993075
+      },
+      "meadow": {
+        "home": 42.34720547090201,
+        "tree": 50.15339920832218,
+        "temple": 90.1255452563627,
+        "koi": 92.56890772730925,
+        "meadow": 0,
+        "windmill": 159.3127972893829,
+        "crystal": 106.11681712662207,
+        "lookout": 191.0810320344255
+      },
+      "windmill": {
+        "home": 116.96559181848089,
+        "tree": 153.50417434858687,
+        "temple": 120.48193221586118,
+        "koi": 66.74388956207365,
+        "meadow": 159.3127972893829,
+        "windmill": 0,
+        "crystal": 214.98298813365005,
+        "lookout": 265.6994183820044
+      },
+      "crystal": {
+        "home": 98.0173963151692,
+        "tree": 134.55597884527518,
+        "temple": 145.79573610062988,
+        "koi": 148.23909857157645,
+        "meadow": 106.11681712662207,
+        "windmill": 214.9829881336501,
+        "crystal": 0,
+        "lookout": 246.7512228786927
+      },
+      "lookout": {
+        "home": 148.7338265635235,
+        "tree": 185.2724090936295,
+        "temple": 196.5121663489842,
+        "koi": 198.95552881993075,
+        "meadow": 191.08103203442553,
+        "windmill": 265.6994183820044,
+        "crystal": 246.75122287869272,
+        "lookout": 0
+      }
+    },
+    "islandPairs": [
+      {
+        "from": "home",
+        "to": "tree",
+        "centerDistance": 29.864157752061246,
+        "edgeGap": 13.864157752061246
+      },
+      {
+        "from": "home",
+        "to": "temple",
+        "centerDistance": 47.76251263742308,
+        "edgeGap": 30.76251263742308
+      },
+      {
+        "from": "home",
+        "to": "koi",
+        "centerDistance": 49.46815345007331,
+        "edgeGap": 33.46815345007331
+      },
+      {
+        "from": "home",
+        "to": "meadow",
+        "centerDistance": 36.632174972283586,
+        "edgeGap": 21.632174972283586
+      },
+      {
+        "from": "home",
+        "to": "windmill",
+        "centerDistance": 115.70989336577924,
+        "edgeGap": 100.70989336577924
+      },
+      {
+        "from": "home",
+        "to": "crystal",
+        "centerDistance": 72.2913261809465,
+        "edgeGap": 58.2913261809465
+      },
+      {
+        "from": "home",
+        "to": "lookout",
+        "centerDistance": 115.45798076183388,
+        "edgeGap": 101.45798076183388
+      },
+      {
+        "from": "tree",
+        "to": "temple",
+        "centerDistance": 34.688524952208624,
+        "edgeGap": 19.688524952208624
+      },
+      {
+        "from": "tree",
+        "to": "koi",
+        "centerDistance": 66.11143986330957,
+        "edgeGap": 52.11143986330957
+      },
+      {
+        "from": "tree",
+        "to": "meadow",
+        "centerDistance": 50.148050782458135,
+        "edgeGap": 37.148050782458135
+      },
+      {
+        "from": "tree",
+        "to": "windmill",
+        "centerDistance": 127.55678911292804,
+        "edgeGap": 114.55678911292804
+      },
+      {
+        "from": "tree",
+        "to": "crystal",
+        "centerDistance": 102.12619232870675,
+        "edgeGap": 90.12619232870675
+      },
+      {
+        "from": "tree",
+        "to": "lookout",
+        "centerDistance": 144.8013856977895,
+        "edgeGap": 132.8013856977895
+      },
+      {
+        "from": "temple",
+        "to": "koi",
+        "centerDistance": 51.622118375750524,
+        "edgeGap": 36.622118375750524
+      },
+      {
+        "from": "temple",
+        "to": "meadow",
+        "centerDistance": 80.27284649743024,
+        "edgeGap": 66.27284649743024
+      },
+      {
+        "from": "temple",
+        "to": "windmill",
+        "centerDistance": 101.0505964134799,
+        "edgeGap": 87.0505964134799
+      },
+      {
+        "from": "temple",
+        "to": "crystal",
+        "centerDistance": 111.94589592352192,
+        "edgeGap": 98.94589592352192
+      },
+      {
+        "from": "temple",
+        "to": "lookout",
+        "centerDistance": 146.28658927899028,
+        "edgeGap": 133.28658927899028
+      },
+      {
+        "from": "koi",
+        "to": "meadow",
+        "centerDistance": 83.6326606535987,
+        "edgeGap": 70.6326606535987
+      },
+      {
+        "from": "koi",
+        "to": "windmill",
+        "centerDistance": 66.42187997339431,
+        "edgeGap": 53.42187997339431
+      },
+      {
+        "from": "koi",
+        "to": "crystal",
+        "centerDistance": 74.37583526845262,
+        "edgeGap": 62.37583526845262
+      },
+      {
+        "from": "koi",
+        "to": "lookout",
+        "centerDistance": 98.22357866174497,
+        "edgeGap": 86.22357866174497
+      },
+      {
+        "from": "meadow",
+        "to": "windmill",
+        "centerDistance": 149.8940804787167,
+        "edgeGap": 137.8940804787167
+      },
+      {
+        "from": "meadow",
+        "to": "crystal",
+        "centerDistance": 74.91430604764354,
+        "edgeGap": 63.914306047643535
+      },
+      {
+        "from": "meadow",
+        "to": "lookout",
+        "centerDistance": 123.91964845657046,
+        "edgeGap": 112.91964845657046
+      },
+      {
+        "from": "windmill",
+        "to": "crystal",
+        "centerDistance": 121.02603288235137,
+        "edgeGap": 110.02603288235137
+      },
+      {
+        "from": "windmill",
+        "to": "lookout",
+        "centerDistance": 117.75955086055653,
+        "edgeGap": 106.75955086055653
+      },
+      {
+        "from": "crystal",
+        "to": "lookout",
+        "centerDistance": 49.341634178450164,
+        "edgeGap": 39.341634178450164
+      }
+    ],
+    "minIslandEdgeGap": 13.864157752061246,
+    "width": 139.49875,
+    "height": 151.5882,
+    "walkwayWidth": 4.8,
+    "unionComponents": 1,
+    "holes": 2,
+    "walkableArea": 3991.5679188934964,
+    "guardSegments": 1421,
+    "collisionTriangles": 1509,
+    "nonSharedRoadOverlaps": [],
+    "foreignIslandOverlaps": [],
+    "minNonEndpointRoadToIslandGap": 2.5457129025374656,
+    "minNonSharedRoadBoundaryGap": 9.126396446710654,
+    "junctionOverlaps": [
+      {
+        "edges": [
+          "S01",
+          "S02"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 0.01754769518359467
+      },
+      {
+        "edges": [
+          "S01",
+          "S04"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 7.170193491143863
+      },
+      {
+        "edges": [
+          "S01",
+          "S05"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 4.167989751470145
+      },
+      {
+        "edges": [
+          "S02",
+          "S03"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 0.05970219960875056
+      },
+      {
+        "edges": [
+          "S02",
+          "S04"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 4.6484460717082925
+      },
+      {
+        "edges": [
+          "S02",
+          "S05"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 7.806991453743024
+      },
+      {
+        "edges": [
+          "S02",
+          "S06"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 3.816683974706848
+      },
+      {
+        "edges": [
+          "S02",
+          "S07"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 8.237055217748832
+      },
+      {
+        "edges": [
+          "S03",
+          "S06"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 8.37974547014096
+      },
+      {
+        "edges": [
+          "S03",
+          "S07"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 4.181478175804443
+      },
+      {
+        "edges": [
+          "S04",
+          "S05"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 0.29499233386272294
+      },
+      {
+        "edges": [
+          "S05",
+          "S08"
+        ],
+        "sharedNodes": [
+          "J1"
+        ],
+        "overlapArea": 13.184714081411133
+      },
+      {
+        "edges": [
+          "S05",
+          "S09"
+        ],
+        "sharedNodes": [
+          "J1"
+        ],
+        "overlapArea": 2.0612875421626775
+      },
+      {
+        "edges": [
+          "S06",
+          "S07"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 0.1984148505431449
+      },
+      {
+        "edges": [
+          "S07",
+          "S10"
+        ],
+        "sharedNodes": [
+          "J2"
+        ],
+        "overlapArea": 3.3350534745785794
+      },
+      {
+        "edges": [
+          "S07",
+          "S11"
+        ],
+        "sharedNodes": [
+          "J2"
+        ],
+        "overlapArea": 10.078795616324506
+      },
+      {
+        "edges": [
+          "S08",
+          "S09"
+        ],
+        "sharedNodes": [
+          "J1"
+        ],
+        "overlapArea": 0.09778745579712478
+      },
+      {
+        "edges": [
+          "S08",
+          "S12"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 16.544493031769086
+      },
+      {
+        "edges": [
+          "S08",
+          "S13"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 2.853222999429045
+      },
+      {
+        "edges": [
+          "S08",
+          "S14"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 4.847569203215045
+      },
+      {
+        "edges": [
+          "S09",
+          "S10"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 0.030535921100731285
+      },
+      {
+        "edges": [
+          "S09",
+          "S15"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 6.105333322829148
+      },
+      {
+        "edges": [
+          "S09",
+          "S18"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 4.864398882914579
+      },
+      {
+        "edges": [
+          "S10",
+          "S11"
+        ],
+        "sharedNodes": [
+          "J2"
+        ],
+        "overlapArea": 0.0035822935835412295
+      },
+      {
+        "edges": [
+          "S10",
+          "S15"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 5.387404954775416
+      },
+      {
+        "edges": [
+          "S10",
+          "S18"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 6.736033419633319
+      },
+      {
+        "edges": [
+          "S11",
+          "S21"
+        ],
+        "sharedNodes": [
+          "J3"
+        ],
+        "overlapArea": 0.13787115386350024
+      },
+      {
+        "edges": [
+          "S12",
+          "S13"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 0.7524779066955887
+      },
+      {
+        "edges": [
+          "S12",
+          "S14"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 2.206109702633455
+      },
+      {
+        "edges": [
+          "S13",
+          "S14"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 19.354625923889436
+      },
+      {
+        "edges": [
+          "S14",
+          "S15"
+        ],
+        "sharedNodes": [
+          "C"
+        ],
+        "overlapArea": 5.807603583448952
+      },
+      {
+        "edges": [
+          "S14",
+          "S16"
+        ],
+        "sharedNodes": [
+          "C"
+        ],
+        "overlapArea": 5.432501258382445
+      },
+      {
+        "edges": [
+          "S15",
+          "S16"
+        ],
+        "sharedNodes": [
+          "C"
+        ],
+        "overlapArea": 0.14394813751755464
+      },
+      {
+        "edges": [
+          "S15",
+          "S18"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 40.419286423632826
+      },
+      {
+        "edges": [
+          "S16",
+          "S17"
+        ],
+        "sharedNodes": [
+          "D"
+        ],
+        "overlapArea": 0.12608681478923245
+      },
+      {
+        "edges": [
+          "S18",
+          "S19"
+        ],
+        "sharedNodes": [
+          "J4"
+        ],
+        "overlapArea": 0.07996638551259139
+      },
+      {
+        "edges": [
+          "S19",
+          "S20"
+        ],
+        "sharedNodes": [
+          "H"
+        ],
+        "overlapArea": 0.21277720591933758
+      },
+      {
+        "edges": [
+          "S21",
+          "S22"
+        ],
+        "sharedNodes": [
+          "G"
+        ],
+        "overlapArea": 2.5314458071045465
+      }
+    ]
+  },
+  "b": {
+    "relativeScale": 0.75,
+    "totalLength": 665.1790588296773,
+    "shortest": {
+      "home": {
+        "home": 0,
+        "tree": 32.23952068621366,
+        "temple": 42.157355847794506,
+        "koi": 44.313202560388724,
+        "meadow": 37.36514088256207,
+        "windmill": 103.20482601549747,
+        "crystal": 86.48529733749167,
+        "lookout": 131.23533721755683
+      },
+      "tree": {
+        "home": 32.23952068621366,
+        "tree": 0,
+        "temple": 49.786794941294986,
+        "koi": 76.55272324660238,
+        "meadow": 44.252997613510026,
+        "windmill": 135.44434670171114,
+        "crystal": 118.72481802370532,
+        "lookout": 163.4748579037705
+      },
+      "temple": {
+        "home": 42.157355847794506,
+        "tree": 49.786794941294986,
+        "temple": 0,
+        "koi": 47.41573128367139,
+        "meadow": 79.52249673035658,
+        "windmill": 106.30735473878015,
+        "crystal": 128.64265318528618,
+        "lookout": 173.39269306535135
+      },
+      "koi": {
+        "home": 44.313202560388724,
+        "tree": 76.55272324660238,
+        "temple": 47.41573128367139,
+        "koi": 0,
+        "meadow": 81.67834344295079,
+        "windmill": 58.89162345510876,
+        "crystal": 130.7984998978804,
+        "lookout": 175.54853977794556
+      },
+      "meadow": {
+        "home": 37.36514088256207,
+        "tree": 44.252997613510026,
+        "temple": 79.52249673035658,
+        "koi": 81.67834344295079,
+        "meadow": 0,
+        "windmill": 140.56996689805953,
+        "crystal": 93.63180469701038,
+        "lookout": 168.60047810011892
+      },
+      "windmill": {
+        "home": 103.20482601549747,
+        "tree": 135.44434670171114,
+        "temple": 106.30735473878015,
+        "koi": 58.89162345510876,
+        "meadow": 140.56996689805956,
+        "windmill": 0,
+        "crystal": 189.69012335298913,
+        "lookout": 234.44016323305434
+      },
+      "crystal": {
+        "home": 86.48529733749167,
+        "tree": 118.72481802370534,
+        "temple": 128.64265318528618,
+        "koi": 130.7984998978804,
+        "meadow": 93.63180469701038,
+        "windmill": 189.69012335298913,
+        "crystal": 0,
+        "lookout": 217.72063455504852
+      },
+      "lookout": {
+        "home": 131.23533721755683,
+        "tree": 163.4748579037705,
+        "temple": 173.39269306535135,
+        "koi": 175.54853977794556,
+        "meadow": 168.60047810011892,
+        "windmill": 234.4401632330543,
+        "crystal": 217.7206345550485,
+        "lookout": 0
+      }
+    },
+    "islandPairs": [
+      {
+        "from": "home",
+        "to": "tree",
+        "centerDistance": 26.350727428289336,
+        "edgeGap": 10.350727428289336
+      },
+      {
+        "from": "home",
+        "to": "temple",
+        "centerDistance": 42.1433935036086,
+        "edgeGap": 25.1433935036086
+      },
+      {
+        "from": "home",
+        "to": "koi",
+        "centerDistance": 43.64837069124116,
+        "edgeGap": 27.648370691241162
+      },
+      {
+        "from": "home",
+        "to": "meadow",
+        "centerDistance": 32.322507328485514,
+        "edgeGap": 17.322507328485514
+      },
+      {
+        "from": "home",
+        "to": "windmill",
+        "centerDistance": 102.09696473451109,
+        "edgeGap": 87.09696473451109
+      },
+      {
+        "from": "home",
+        "to": "crystal",
+        "centerDistance": 63.786464277305726,
+        "edgeGap": 49.786464277305726
+      },
+      {
+        "from": "home",
+        "to": "lookout",
+        "centerDistance": 101.87468890750047,
+        "edgeGap": 87.87468890750047
+      },
+      {
+        "from": "tree",
+        "to": "temple",
+        "centerDistance": 30.607522016654666,
+        "edgeGap": 15.607522016654666
+      },
+      {
+        "from": "tree",
+        "to": "koi",
+        "centerDistance": 58.33362340880257,
+        "edgeGap": 44.33362340880257
+      },
+      {
+        "from": "tree",
+        "to": "meadow",
+        "centerDistance": 44.24828010216894,
+        "edgeGap": 31.24828010216894
+      },
+      {
+        "from": "tree",
+        "to": "windmill",
+        "centerDistance": 112.55010804081887,
+        "edgeGap": 99.55010804081887
+      },
+      {
+        "from": "tree",
+        "to": "crystal",
+        "centerDistance": 90.11134617238831,
+        "edgeGap": 78.11134617238831
+      },
+      {
+        "from": "tree",
+        "to": "lookout",
+        "centerDistance": 127.76592855687309,
+        "edgeGap": 115.76592855687309
+      },
+      {
+        "from": "temple",
+        "to": "koi",
+        "centerDistance": 45.54892797860341,
+        "edgeGap": 30.54892797860341
+      },
+      {
+        "from": "temple",
+        "to": "meadow",
+        "centerDistance": 70.82898220361493,
+        "edgeGap": 56.82898220361493
+      },
+      {
+        "from": "temple",
+        "to": "windmill",
+        "centerDistance": 89.1622909530705,
+        "edgeGap": 75.1622909530705
+      },
+      {
+        "from": "temple",
+        "to": "crystal",
+        "centerDistance": 98.77579052075464,
+        "edgeGap": 85.77579052075464
+      },
+      {
+        "from": "temple",
+        "to": "lookout",
+        "centerDistance": 129.07640230499143,
+        "edgeGap": 116.07640230499143
+      },
+      {
+        "from": "koi",
+        "to": "meadow",
+        "centerDistance": 73.79352410611651,
+        "edgeGap": 60.79352410611651
+      },
+      {
+        "from": "koi",
+        "to": "windmill",
+        "centerDistance": 58.60754115299498,
+        "edgeGap": 45.60754115299498
+      },
+      {
+        "from": "koi",
+        "to": "crystal",
+        "centerDistance": 65.62573700157583,
+        "edgeGap": 53.62573700157583
+      },
+      {
+        "from": "koi",
+        "to": "lookout",
+        "centerDistance": 86.66786352506907,
+        "edgeGap": 74.66786352506907
+      },
+      {
+        "from": "meadow",
+        "to": "windmill",
+        "centerDistance": 132.25948277533828,
+        "edgeGap": 120.25948277533828
+      },
+      {
+        "from": "meadow",
+        "to": "crystal",
+        "centerDistance": 66.10085827733252,
+        "edgeGap": 55.10085827733252
+      },
+      {
+        "from": "meadow",
+        "to": "lookout",
+        "centerDistance": 109.34086628520922,
+        "edgeGap": 98.34086628520922
+      },
+      {
+        "from": "windmill",
+        "to": "crystal",
+        "centerDistance": 106.78767607266299,
+        "edgeGap": 95.78767607266299
+      },
+      {
+        "from": "windmill",
+        "to": "lookout",
+        "centerDistance": 103.90548605343223,
+        "edgeGap": 92.90548605343223
+      },
+      {
+        "from": "crystal",
+        "to": "lookout",
+        "centerDistance": 43.53673603980896,
+        "edgeGap": 33.53673603980896
+      }
+    ],
+    "minIslandEdgeGap": 10.350727428289336,
+    "width": 123.65189000000001,
+    "height": 134.319,
+    "walkwayWidth": 4.8,
+    "unionComponents": 1,
+    "holes": 2,
+    "walkableArea": 3566.440574067978,
+    "guardSegments": 1229,
+    "collisionTriangles": 1313,
+    "nonSharedRoadOverlaps": [],
+    "foreignIslandOverlaps": [],
+    "minNonEndpointRoadToIslandGap": 0.9050407963565896,
+    "minNonSharedRoadBoundaryGap": 7.487391612855393,
+    "junctionOverlaps": [
+      {
+        "edges": [
+          "S01",
+          "S02"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 0.017263310383469843
+      },
+      {
+        "edges": [
+          "S01",
+          "S04"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 7.165509876083121
+      },
+      {
+        "edges": [
+          "S01",
+          "S05"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 4.179542399971325
+      },
+      {
+        "edges": [
+          "S02",
+          "S03"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 0.0599064522821493
+      },
+      {
+        "edges": [
+          "S02",
+          "S04"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 4.649995886083701
+      },
+      {
+        "edges": [
+          "S02",
+          "S05"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 7.780141453153746
+      },
+      {
+        "edges": [
+          "S02",
+          "S06"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 3.8254207498960113
+      },
+      {
+        "edges": [
+          "S02",
+          "S07"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 8.273687114983517
+      },
+      {
+        "edges": [
+          "S03",
+          "S06"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 8.347339691897986
+      },
+      {
+        "edges": [
+          "S03",
+          "S07"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 4.171788218922018
+      },
+      {
+        "edges": [
+          "S04",
+          "S05"
+        ],
+        "sharedNodes": [
+          "A"
+        ],
+        "overlapArea": 0.2894232257072531
+      },
+      {
+        "edges": [
+          "S05",
+          "S08"
+        ],
+        "sharedNodes": [
+          "J1"
+        ],
+        "overlapArea": 12.905756718879152
+      },
+      {
+        "edges": [
+          "S05",
+          "S09"
+        ],
+        "sharedNodes": [
+          "J1"
+        ],
+        "overlapArea": 2.0901533648740767
+      },
+      {
+        "edges": [
+          "S06",
+          "S07"
+        ],
+        "sharedNodes": [
+          "E"
+        ],
+        "overlapArea": 0.18686323898572255
+      },
+      {
+        "edges": [
+          "S07",
+          "S10"
+        ],
+        "sharedNodes": [
+          "J2"
+        ],
+        "overlapArea": 3.3326378593988046
+      },
+      {
+        "edges": [
+          "S07",
+          "S11"
+        ],
+        "sharedNodes": [
+          "J2"
+        ],
+        "overlapArea": 10.105660093161214
+      },
+      {
+        "edges": [
+          "S08",
+          "S09"
+        ],
+        "sharedNodes": [
+          "J1"
+        ],
+        "overlapArea": 0.09649615796074507
+      },
+      {
+        "edges": [
+          "S08",
+          "S12"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 16.3583671824092
+      },
+      {
+        "edges": [
+          "S08",
+          "S13"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 2.8497436786401806
+      },
+      {
+        "edges": [
+          "S08",
+          "S14"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 4.865120052830278
+      },
+      {
+        "edges": [
+          "S09",
+          "S10"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 0.03053592110073146
+      },
+      {
+        "edges": [
+          "S09",
+          "S15"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 6.117877354197212
+      },
+      {
+        "edges": [
+          "S09",
+          "S18"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 4.867576447587384
+      },
+      {
+        "edges": [
+          "S10",
+          "S11"
+        ],
+        "sharedNodes": [
+          "J2"
+        ],
+        "overlapArea": 0.005075578438891171
+      },
+      {
+        "edges": [
+          "S10",
+          "S15"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 5.378360257305664
+      },
+      {
+        "edges": [
+          "S10",
+          "S18"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 6.730279790489132
+      },
+      {
+        "edges": [
+          "S11",
+          "S21"
+        ],
+        "sharedNodes": [
+          "J3"
+        ],
+        "overlapArea": 0.1541835591607139
+      },
+      {
+        "edges": [
+          "S12",
+          "S13"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 0.7529470408816863
+      },
+      {
+        "edges": [
+          "S12",
+          "S14"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 2.217866781701545
+      },
+      {
+        "edges": [
+          "S13",
+          "S14"
+        ],
+        "sharedNodes": [
+          "B"
+        ],
+        "overlapArea": 18.96998849499937
+      },
+      {
+        "edges": [
+          "S14",
+          "S15"
+        ],
+        "sharedNodes": [
+          "C"
+        ],
+        "overlapArea": 5.8151166577966364
+      },
+      {
+        "edges": [
+          "S14",
+          "S16"
+        ],
+        "sharedNodes": [
+          "C"
+        ],
+        "overlapArea": 5.423284691146591
+      },
+      {
+        "edges": [
+          "S15",
+          "S16"
+        ],
+        "sharedNodes": [
+          "C"
+        ],
+        "overlapArea": 0.1452036159802219
+      },
+      {
+        "edges": [
+          "S15",
+          "S18"
+        ],
+        "sharedNodes": [
+          "F"
+        ],
+        "overlapArea": 39.51392136762273
+      },
+      {
+        "edges": [
+          "S16",
+          "S17"
+        ],
+        "sharedNodes": [
+          "D"
+        ],
+        "overlapArea": 0.12832243475304494
+      },
+      {
+        "edges": [
+          "S18",
+          "S19"
+        ],
+        "sharedNodes": [
+          "J4"
+        ],
+        "overlapArea": 0.09069723831406407
+      },
+      {
+        "edges": [
+          "S19",
+          "S20"
+        ],
+        "sharedNodes": [
+          "H"
+        ],
+        "overlapArea": 0.20356834992071526
+      },
+      {
+        "edges": [
+          "S21",
+          "S22"
+        ],
+        "sharedNodes": [
+          "G"
+        ],
+        "overlapArea": 2.5571385874308135
+      }
+    ]
+  }
+}

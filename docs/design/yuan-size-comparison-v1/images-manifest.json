@@ -1,0 +1,74 @@
+[
+  {
+    "file": "a/panorama-labelled.png",
+    "sha256": "70aa78bb5bbd88e7340de37f7a52bd2617438e36df257ce29d0c3952046c9c1c",
+    "bytes": 202079,
+    "dimensions": [
+      1440,
+      1100
+    ]
+  },
+  {
+    "file": "a/panorama-oblique.png",
+    "sha256": "b054a87facc3ae86af38e84dd6abbac43375372fc7ba12208a3ffdac5b2951c9",
+    "bytes": 178595,
+    "dimensions": [
+      1440,
+      1100
+    ]
+  },
+  {
+    "file": "a/panorama-pure.png",
+    "sha256": "fc0bb9998f5cf207cf34fa2925df89c385d3becc8ebea1b14bc74aa2aed96f41",
+    "bytes": 175469,
+    "dimensions": [
+      1440,
+      1100
+    ]
+  },
+  {
+    "file": "a/shared-scale-pure.png",
+    "sha256": "38c3a1f98fbc0def7523e34049f22ee499e0e693af51e7e28962d998e7bf021e",
+    "bytes": 178860,
+    "dimensions": [
+      1440,
+      1100
+    ]
+  },
+  {
+    "file": "b/panorama-labelled.png",
+    "sha256": "b5d8ae0cf3d97b8d9d470da54be226568f8d0d5198889d85479a21ce126fc477",
+    "bytes": 201221,
+    "dimensions": [
+      1440,
+      1100
+    ]
+  },
+  {
+    "file": "b/panorama-oblique.png",
+    "sha256": "edb8161c528df165750115eb2725f829745b94682e83215bb09610d0557043b6",
+    "bytes": 173181,
+    "dimensions": [
+      1440,
+      1100
+    ]
+  },
+  {
+    "file": "b/panorama-pure.png",
+    "sha256": "a7bcfce31a3d41ae6d041a50848197b30971fd65b6ef690479c0919cd163447b",
+    "bytes": 173919,
+    "dimensions": [
+      1440,
+      1100
+    ]
+  },
+  {
+    "file": "b/shared-scale-pure.png",
+    "sha256": "5648d6c6fab5d580d02989249a4603136f9bd98c30b0aa10c3ed39ceec5e344f",
+    "bytes": 177089,
+    "dimensions": [
+      1440,
+      1100
+    ]
+  }
+]
