@@ -1,0 +1,195 @@
+
+Running 6 tests using 1 worker
+
+(node:64129) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle (16.7s)
+(node:64337) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [desktop] › test/transport-v3.e2e.js:43:1 › V3 portrait and landscape keep policy, panorama and existing input available (37.9s)
+  ✘  3 [desktop] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation (28.3s)
+(node:64700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [mobile] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle (22.2s)
+(node:64894) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [mobile] › test/transport-v3.e2e.js:43:1 › V3 portrait and landscape keep policy, panorama and existing input available (1.3m)
+(node:65262) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  6 [mobile] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation (7.7s)
+
+
+  1) [desktop] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle 
+
+    Error: page.evaluate: Error: edge leak {"x":8.569752775858708,"y":1.1920928910669204e-8,"z":-1.6396663967268035}
+        at eval (eval at evaluate (:303:30), <anonymous>:57:71)
+        at UtilityScript.evaluate (<anonymous>:305:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at eval (eval at evaluate (:303:30), <anonymous>:57:71)
+        at UtilityScript.evaluate (<anonymous>:305:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at /workspace/sky-isles/test/transport-v3.e2e.js:10:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/transport-v3.e2e.js-V3-act-7e0b6-l-mushroom-and-mural-puzzle-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/transport-v3.e2e.js-V3-act-7e0b6-l-mushroom-and-mural-puzzle-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/transport-v3.e2e.js-V3-act-7e0b6-l-mushroom-and-mural-puzzle-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/transport-v3.e2e.js-V3-act-7e0b6-l-mushroom-and-mural-puzzle-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation 
+
+    Error: expect(received).not.toBe(expected) // Object.is equality
+
+    Expected: not 0.16
+
+    Call Log:
+    - Timeout 10000ms exceeded while waiting on the predicate
+
+      24 |   await page.mouse.move(160, 420); await page.mouse.down();
+      25 |   await page.mouse.move(230, 450, { steps: 4 }); await page.mouse.up();
+    > 26 |   await expect.poll(() => page.evaluate(() => window.__skyisles.world.player.orbit.yaw)).not.toBe(before.yaw);
+         |                                                                                              ^
+      27 |   await expect(page.getByRole('dialog')).not.toBeVisible();
+      28 |   // Click station geometry's screen position. Existing ground picking still works underneath.
+      29 |   await page.evaluate(() => {
+        at /workspace/sky-isles/test/transport.e2e.js:26:94
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/transport.e2e.js-transport-0f10b-and-bounded-train-animation-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/transport.e2e.js-transport-0f10b-and-bounded-train-animation-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/transport.e2e.js-transport-0f10b-and-bounded-train-animation-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/transport.e2e.js-transport-0f10b-and-bounded-train-animation-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [mobile] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle 
+
+    Error: page.evaluate: Error: edge leak {"x":8.569752775858708,"y":1.1920928910669204e-8,"z":-1.6396663967268035}
+        at eval (eval at evaluate (:303:30), <anonymous>:57:71)
+        at UtilityScript.evaluate (<anonymous>:305:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at eval (eval at evaluate (:303:30), <anonymous>:57:71)
+        at UtilityScript.evaluate (<anonymous>:305:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at /workspace/sky-isles/test/transport-v3.e2e.js:10:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/transport-v3.e2e.js-V3-act-7e0b6-l-mushroom-and-mural-puzzle-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/transport-v3.e2e.js-V3-act-7e0b6-l-mushroom-and-mural-puzzle-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/transport-v3.e2e.js-V3-act-7e0b6-l-mushroom-and-mural-puzzle-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/transport-v3.e2e.js-V3-act-7e0b6-l-mushroom-and-mural-puzzle-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [mobile] › test/transport-v3.e2e.js:43:1 › V3 portrait and landscape keep policy, panorama and existing input available 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 4
+
+    @@ -3,14 +3,14 @@
+          0,
+          1.1920928910669204e-8,
+          3.5,
+        ],
+        "orbit": Object {
+    -     "dist": 22,
+    -     "fov": 58,
+    -     "pitch": 0.67,
+    -     "yaw": 0.12,
+    +     "dist": 18,
+    +     "fov": 55,
+    +     "pitch": 0.6,
+    +     "yaw": 0.16,
+        },
+        "pos": Array [
+          0,
+          1.1920928910669204e-8,
+          3.5,
+
+      50 |  for(const c of corners){expect(Math.abs(c[0])).toBeLessThan(1);expect(Math.abs(c[1])).toBeLessThan(1);}
+      51 |  await page.locator('#panorama-btn').click();await page.waitForFunction(()=>window.__skyisles.world.panorama.mode==='explore');
+    > 52 |  const after=await page.evaluate(()=>{const p=window.__skyisles.world.player;return{pos:p.pos.toArray(),orbit:{...p.orbit},checkpoint:p.lastGrounded.toArray()};});expect(after).toEqual(before);
+         |                                                                                                                                                                                  ^
+      53 |  if(isMobile){await expect(page.locator('#joystick')).toBeVisible();await expect(page.locator('#jump-btn')).toBeVisible();}
+      54 |  }
+      55 | });
+        at /workspace/sky-isles/test/transport-v3.e2e.js:52:178
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/transport-v3.e2e.js-V3-por-18818-nd-existing-input-available-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/transport-v3.e2e.js-V3-por-18818-nd-existing-input-available-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/transport-v3.e2e.js-V3-por-18818-nd-existing-input-available-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/transport-v3.e2e.js-V3-por-18818-nd-existing-input-available-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [mobile] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation 
+
+    Test was interrupted.
+
+    Error: locator.click: Test ended.
+    Call log:
+      - waiting for locator('#title-screen .tap')
+        - locator resolved to <button class="tap" type="button">開始探索</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+
+
+      4 |   await page.goto('/');
+      5 |   await page.waitForFunction(() => window.__skyisles);
+    > 6 |   await page.locator('#title-screen .tap').click();
+        |                                            ^
+      7 |   if (await page.locator('#touch-help').isVisible()) await page.locator('#help-close').click();
+      8 |   await page.waitForTimeout(1500);
+      9 |   const before = await page.evaluate(() => {
+        at /workspace/sky-isles/test/transport.e2e.js:6:44
+
+    Error Context: test-results/transport.e2e.js-transport-0f10b-and-bounded-train-animation-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/transport.e2e.js-transport-0f10b-and-bounded-train-animation-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/transport.e2e.js-transport-0f10b-and-bounded-train-animation-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [desktop] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle 
+    [desktop] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation 
+    [mobile] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle 
+    [mobile] › test/transport-v3.e2e.js:43:1 › V3 portrait and landscape keep policy, panorama and existing input available 
+  1 interrupted
+    [mobile] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation 
+  1 passed (3.3m)

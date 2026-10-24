@@ -50,7 +50,7 @@ for(const isle of islands.islands){
  .map(p=>({x:p.x-isle.pos.x,z:p.z-isle.pos.z,radius:.95})).filter(p=>Math.hypot(p.x,p.z)<isle.r+1);
 }
 const props=buildPolicyScenery(islands.islands,occupied);
-const allBarriers=[...bridges.barriers,...props.barriers];
+const allBarriers=[...bridges.barriers,...props.barriers,...transport.barriers];
 
 const colliders = [
   ...islands.colliders,
@@ -141,7 +141,7 @@ ui.onTap = (nx, ny) => {
     else ui.hint('靠近一點即可敲響風鈴', 1800);
     return;
   }
-  const islandHits = tapRay.intersectObjects([...islands.colliders,...props.colliders], false);
+  const islandHits = tapRay.intersectObjects([...islands.colliders,...props.colliders,...transport.colliders], false);
   if (islandHits.length && islandHits[0].object.userData.island) {
     policyUI.open(islandHits[0].object.userData.island);
     return;

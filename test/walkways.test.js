@@ -23,7 +23,7 @@ function fixture() {
   const trafficHome={name:'home',group:new THREE.Group()};scene.add(trafficHome.group);
   const transport=buildTransport(trafficHome,()=>new THREE.Group());
   const scenery=buildPolicyScenery(islands);
-  const barriers=[...bridges.barriers,...scenery.barriers];
+  const barriers=[...bridges.barriers,...scenery.barriers,...transport.barriers];
   const player=new Player(scene,camera,[...colliders,...bridges.colliders,...transport.colliders,...scenery.colliders]);
   player.orbit.yaw=0;player.navigation={islands:ISLANDS,barriers,nearby:guardIndex(barriers)};
   scene.updateMatrixWorld(true);

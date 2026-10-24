@@ -74,9 +74,9 @@ export function drawSymbol(ctx, symbol, cx, cy, r, color) {
 }
 
 // Mural panel: parchment-like panel with a painted symbol in the chime color.
-export function muralTexture(symbol, color) {
+export function muralTexture(symbol, color, background = '#f7ead2') {
   return canvasTexture(256, (ctx, s) => {
-    ctx.fillStyle = '#f7ead2';
+    ctx.fillStyle = background;
     ctx.fillRect(0, 0, s, s);
     // weathered edges
     ctx.strokeStyle = 'rgba(90,74,122,0.35)';

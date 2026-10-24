@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "notice": "交通政策願景示意・非核定或完工工程",
+  "station": {"center": [-1.4, 0, -4.45], "size": [4.4, 1.8], "entrance": [0.1, 0, -3.15], "canopyHeight": 2.4},
+  "platform": {"center": [-0.5, 0.06, -5.87], "size": [6.4, 0.12, 0.86], "access": [2.4, 0, -4.8]},
+  "rail": {"center": [0, 0, -7], "length": 6.6, "exclusion": [-3.55, -7.65, 3.55, -6.35], "trainHalfLength": 1.25, "travel": 1.65, "speed": 0.16},
+  "npcReservation": {"position": [4.1, 0, -4.2], "facingYaw": 0, "bodyRadius": 0.4, "interactionRadius": 1.8, "playerStop": [4.1, 0, -2.9], "cameraFrom": [5.2, 3.3, 2.8], "implemented": false},
+  "murals": {"x": [-3.25, -2.65, -2.05, -1.45, -0.85], "y": 1.24, "z": -3.28, "scale": 0.4, "orderUnchanged": true},
+  "visionDisplay": {"position": [-5.6, 0, -4.1], "topics": ["高鐵大甲設站及苑裡聯合開發願景", "苑裡火車站跨站月台", "車站西側停車改善", "苗140道路升級至西濱"]},
+  "roadExhibit": {"center": [-5.8, 0.06, 4.5], "size": [1.3, 0.12, 2.8]},
+  "stationSolids": [
+    {"name": "station-west-wing", "bounds": [-3.6, -5.35, -0.5, -3.55], "height": 2.2},
+    {"name": "station-east-jamb", "bounds": [0.7, -5.35, 0.8, -3.55], "height": 2.2},
+    {"name": "station-rear-wall", "bounds": [-0.5, -5.35, 0.7, -5.1], "height": 2.2},
+    {"name": "vision-display", "bounds": [-6.5, -4.35, -4.7, -4.1], "height": 1.5}
+  ],
+  "edgeSource": "Existing yuan-surface.domain exposed home-island boundary; no road or island outline edits",
+  "gateRoutes": ["S09", "S10", "S15", "S18"],
+  "spawnUnchanged": [0, 0.5, 3.5]
+}

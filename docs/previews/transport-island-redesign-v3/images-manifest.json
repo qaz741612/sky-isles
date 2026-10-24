@@ -1,0 +1,68 @@
+{
+  "sourceBuild": "work/transport-v3-final-dist",
+  "images": [
+    {
+      "file": "island-oblique.png",
+      "bytes": 637237,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "b8d045d957a395466f865e61281086530110ec4675f1d2392209bee7cfb2ebfc"
+    },
+    {
+      "file": "island-top.png",
+      "bytes": 423334,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "c1d189c7e8047439e6849d7f9ef172cdf0fb2718ae0dcdf7e0a282a9318dadff"
+    },
+    {
+      "file": "mobile-landscape.png",
+      "bytes": 1352914,
+      "width": 2796,
+      "height": 1290,
+      "sha256": "e9f725930e5098e43e178af09364c0c893e82b73c4fe00190e9c53e67cf9d75b"
+    },
+    {
+      "file": "mobile-portrait.png",
+      "bytes": 740605,
+      "width": 1290,
+      "height": 2217,
+      "sha256": "a126270e0e513892413dc3351d5fa453334a01fd7d5b926b0de6ed354709926b"
+    },
+    {
+      "file": "npc-reservation.png",
+      "bytes": 302500,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "f5fdab27ab869eada488a769ccaa76b1c8bf1a93ac6211ebda2f074ba382ebd2"
+    },
+    {
+      "file": "platform-train.png",
+      "bytes": 369561,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "d2603c6758d182f41a24facf06b0d2d5b0d7e089d4b29eb00a89774d27dbbf8e"
+    },
+    {
+      "file": "spawn-view.png",
+      "bytes": 514532,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "7ced96e916e442b0e31308eeb6ccbe9cc194960bc454071bbfe16c12a38e04e5"
+    },
+    {
+      "file": "station-front.png",
+      "bytes": 311460,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "2103442f4a1740acfeb8c70354b163990b8fbe4bb9168c92b6044ca53d402688"
+    },
+    {
+      "file": "yuan-panorama.png",
+      "bytes": 155599,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "7920f9a9a5dda94073043457fd0f4e6269e85c52536cc9dd3e4e1d1911eb3fa1"
+    }
+  ]
+}

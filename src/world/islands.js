@@ -3,6 +3,7 @@
 import * as THREE from 'three';
 import { toonMaterial, addOutline } from './toon.js';
 import { CHIMES, MURAL_ORDER } from '../sim/puzzle.js';
+import transportPlan from '../data/transport-v3.json' with { type: 'json' };
 import { muralTexture } from './textures.js';
 
 import layout from '../data/yuan-layout.json' with { type: 'json' };
@@ -141,12 +142,14 @@ function buildMurals() {
     const chime = CHIMES[chimeIdx];
     const panel = new THREE.Mesh(
       new THREE.BoxGeometry(1.25, 1.5, 0.14),
-      new THREE.MeshBasicMaterial({ map: muralTexture(chime.symbol, chime.color) })
+      new THREE.MeshBasicMaterial({ map: muralTexture(chime.symbol, chime.color, '#35585e') })
     );
     addOutline(panel, 0.03);
-    const a = -0.55 + i * 0.275; // gentle arc
-    panel.position.set(Math.sin(a) * 6.4, 1.05, -Math.cos(a) * 6.4);
-    panel.lookAt(0, 1.05, 0);
+    const placement = transportPlan.murals;
+    panel.scale.setScalar(placement.scale);
+    panel.position.set(placement.x[i], placement.y, placement.z);
+    panel.userData.muralOrderIndex = i;
+    panel.userData.chimeIndex = chimeIdx;
     group.add(panel);
     // small stone plinth under each panel
     const plinth = new THREE.Mesh(
@@ -154,7 +157,9 @@ function buildMurals() {
       toonMaterial(ROCK_A)
     );
     plinth.position.copy(panel.position);
-    plinth.position.y = 0.17;
+    plinth.position.y = .068;
+    plinth.position.z = -3.8; // Original bases embedded in the new cultural wall.
+    plinth.scale.setScalar(transportPlan.murals.scale);
     group.add(plinth);
     panels.push(panel);
   });
