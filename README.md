@@ -1,61 +1,36 @@
-# Sky Isles ☁️🏝️
+# 苑裡政策島（第一版）
 
-A complete, dreamlike **floating-islands browser game** built with Three.js — 9 grass-topped sky islands at different altitudes, rope bridges, jump pads, an ancient glowing tree, hidden temples, and an endless animated cloud sea below.
+以 MIT 授權的 Sky Isles 為基礎，保留 Three.js 島嶼、動畫、第三人稱移動、雙重跳躍、滑翔、鏡頭拖曳與手機搖桿。
 
-**▶ Play it live:** https://sky-isles.bles-software.com
+八座政策島：交通大升級、安心生養、幸福養老、產業青年、宜居環境、智慧公所、治水防災、教育發展。點選浮動名稱、島嶼地面或右上角政策選單可開啟介紹。保留風鈴互動，第一版不啟用額外獎勵島。
 
-![Sky Isles](shots/desktop-home.png)
+## 修改政策
 
-## Why this repo matters
+編輯 `public/data/policies.json`，不必修改 JavaScript。八筆資料的 `id` 對應場景，請保持不變；`name` 是顯示名稱，`introduction` 是純文字介紹（尚未提供時為 `null`），`items` 是純文字條列陣列（尚未提供時為 `[]`）。所有內容都以純文字顯示。此版未填入任何未提供的政策說明。
 
-This is not a demo scene — it's a **full, playable game** with movement physics, collectibles, puzzles, touch controls, and a real test suite. And it's **MIT licensed**: fork it, reskin it, ship it, monetize it. Ad-wrap it, sell skins, turn it into a client deliverable — the license says yes.
-
-Built 100% by an AI agent (Kimi K3 via the Teleclaudious autonomous stack): world generation, shading, gameplay, QA tests, deploy, and this repo.
-
-## Features
-
-- **9 floating islands** at different altitudes, connected by rope bridges and jump pads
-- **Third-person controller** with double-jump and a glide cape (hold jump mid-air)
-- **Toon shading + outline pass**, god-rays through drifting cloud wisps
-- **Soft pastel palette** — mint, lavender, cream
-- **Collectibles & puzzles**: shell/star collecting, ancient tree, hidden temple, koi waterfall
-- **Full touch support** — virtual joystick with deadzone, camera drag, mobile-tested
-- **Zero binary assets** — geometry, textures and effects generated procedurally in code
-- **Real QA**: unit tests + Playwright browser tests on desktop and mobile viewports
-
-## Controls
-
-| Input | Desktop | Mobile |
-|---|---|---|
-| Move | WASD / arrows | Virtual joystick |
-| Camera | Mouse drag | Touch drag |
-| Jump / double-jump | Space | Jump button |
-| Glide | Hold Space mid-air | Hold jump mid-air |
-
-## Run it
-
-```bash
-npm install
-npm run dev        # local dev server
-npm run build      # production bundle in dist/
-npm test           # unit tests
-npm run test:e2e   # browser tests (Playwright, desktop + mobile)
+```json
+{
+  "id": "home",
+  "name": "交通大升級",
+  "introduction": null,
+  "items": []
+}
 ```
 
-## Screenshots
+開發時修改 JSON 後重新整理即可；交付靜態版本請重新執行 `npm run build`。也可直接修改建置目錄的 `data/policies.json`，重新整理後生效。
 
-| Ancient tree | Temple | Koi waterfall |
-|---|---|---|
-| ![tree](shots/desktop-tree.png) | ![temple](shots/desktop-temple.png) | ![koi](shots/desktop-koi-waterfall.png) |
+## 執行與驗證
 
-## Stack
+- `npm ci`：安裝依賴。
+- `npm run dev`：啟動本機預覽。
+- `npm test`：執行移動、謎題與亂數單元測試。
+- `npm run test:e2e`：桌面與手機瀏覽器測試（需 Playwright Chromium）。
+- `npm run build`：產生 `dist/` 靜態網站。
 
-Three.js (WebGL), Vite, vanilla JS. No engine, no build magic, no assets pipeline — read the source in `src/` and you'll understand the whole game in an afternoon.
+鍵盤 WASD／方向鍵移動，空白鍵跳躍，按住空白鍵滑翔；拖曳旋轉鏡頭、滾輪縮放。手機使用左下搖桿、右下跳躍鍵與手指拖曳。政策視窗可按關閉或 Escape 離開。
 
-## License
+此版為抽象浮島場景，不代表苑裡真實地理位置，未製作額外建築模型，未進行正式部署。
 
-MIT — see [LICENSE](LICENSE). Yes, you can use this commercially.
+## 開源授權
 
----
-
-Built autonomously by [Teleclaudious](https://bles-software.com) — an AI operator that designs, codes, tests, deploys and open-sources complete games from a single prompt.
+原作 Sky Isles：Copyright (c) 2026 Stanislav Sorokin (Bles Software)。原始碼：https://github.com/stas4000/sky-isles 。完整 MIT 授權保留在 `LICENSE`、`public/LICENSE`，並在入口頁提供連結。Three.js、Vite 等第三方依賴授權另見 `THIRD_PARTY_NOTICES.txt`。

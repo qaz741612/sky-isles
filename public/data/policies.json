@@ -1,0 +1,54 @@
+{
+  "title": "苑裡政策島",
+  "version": 1,
+  "policies": [
+    {
+      "id": "home",
+      "name": "交通大升級",
+      "introduction": null,
+      "items": []
+    },
+    {
+      "id": "tree",
+      "name": "安心生養",
+      "introduction": null,
+      "items": []
+    },
+    {
+      "id": "temple",
+      "name": "幸福養老",
+      "introduction": null,
+      "items": []
+    },
+    {
+      "id": "koi",
+      "name": "產業青年",
+      "introduction": null,
+      "items": []
+    },
+    {
+      "id": "meadow",
+      "name": "宜居環境",
+      "introduction": null,
+      "items": []
+    },
+    {
+      "id": "windmill",
+      "name": "智慧公所",
+      "introduction": null,
+      "items": []
+    },
+    {
+      "id": "crystal",
+      "name": "治水防災",
+      "introduction": null,
+      "items": []
+    },
+    {
+      "id": "lookout",
+      "name": "教育發展",
+      "introduction": null,
+      "items": []
+    }
+  ]
+}

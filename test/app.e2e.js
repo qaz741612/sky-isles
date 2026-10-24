@@ -8,7 +8,7 @@ async function waitForWorld(page) {
   await page.waitForTimeout(1500);
 }
 
-test.describe('Sky Isles', () => {
+test.describe('苑裡政策島', () => {
   test('loads without console errors and renders non-uniform pixels', async ({ page }) => {
     const errors = [];
     page.on('console', (msg) => {
@@ -56,40 +56,39 @@ test.describe('Sky Isles', () => {
     await waitForWorld(page);
     const state = await page.evaluate(() => window.__skyisles.getState());
     expect(state.chimesUnlocked).toBe(0);
-    expect(state.portalOpen).toBe(false);
-    expect(state.onBonusIsland).toBe(false);
+    expect(state.islandCount).toBe(8);
     expect(typeof state.playerPos.x).toBe('number');
     expect(state.playerPos.y).toBeGreaterThan(-40);
     expect(state.muralOrder).toHaveLength(5);
   });
 
-  test('playing all 5 chimes in mural order opens the portal', async ({ page }) => {
+  test('all eight policies open from the menu and have no invented content', async ({ page }) => {
     await waitForWorld(page);
-    const order = await page.evaluate(() => window.__skyisles.getState().muralOrder);
-
-    // a wrong note first: progress resets, portal stays shut
-    await page.evaluate((idx) => window.__skyisles.playChime(idx), (order[0] + 1) % 5);
-    let state = await page.evaluate(() => window.__skyisles.getState());
-    expect(state.portalOpen).toBe(false);
-    expect(state.chimesUnlocked).toBe(0);
-
-    for (const idx of order) {
-      await page.evaluate((i) => window.__skyisles.playChime(i), idx);
+    const names = ['交通大升級','安心生養','幸福養老','產業青年','宜居環境','智慧公所','治水防災','教育發展'];
+    for (const name of names) {
+      await page.locator('#policy-menu summary').click();
+      await page.locator('#policy-list').getByRole('button', { name, exact: true }).click();
+      await expect(page.getByRole('dialog')).toBeVisible();
+      await expect(page.locator('#policy-title')).toHaveText(name);
+      await expect(page.locator('#policy-content')).toContainText('政策內容尚未提供，待補充。');
+      await page.getByRole('button', { name: '關閉政策介紹' }).click();
+      await expect(page.getByRole('dialog')).not.toBeVisible();
     }
-    state = await page.evaluate(() => window.__skyisles.getState());
-    expect(state.chimesUnlocked).toBe(5);
-    expect(state.portalOpen).toBe(true);
+    const response = await page.request.get('/favicon.ico');
+    expect(response.status()).toBe(200);
+    expect(response.headers()['content-type']).toMatch(/image/);
+    const icon = await response.body();
+    expect([...icon.subarray(0, 4)]).toEqual([0, 0, 1, 0]);
+  });
 
-    // walk into the portal -> bonus star island
-    await page.evaluate(() => {
-      const s = window.__skyisles.getState();
-      window.__skyisles.teleport(s.portalPos.x, s.portalPos.y, s.portalPos.z);
-    });
-    await expect
-      .poll(async () => page.evaluate(() => window.__skyisles.getState().onBonusIsland), { timeout: 10_000 })
-      .toBe(true);
-    const bonus = await page.evaluate(() => window.__skyisles.getState());
-    expect(bonus.playerPos.y).toBeGreaterThan(80);
+  test('world label opens matching policy and Escape closes the dialog', async ({ page }) => {
+    await waitForWorld(page);
+    const label = page.locator('.island-label:visible').first();
+    const name = await label.textContent();
+    await label.click();
+    await expect(page.locator('#policy-title')).toHaveText(name);
+    await page.keyboard.press('Escape');
+    await expect(page.getByRole('dialog')).not.toBeVisible();
   });
 
   test('teleport moves the player and fall respawns at last ground', async ({ page }) => {
