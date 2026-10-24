@@ -4,6 +4,8 @@ import * as THREE from 'three';
 import { toonMaterial, addOutline } from '../world/toon.js';
 import { MOVE, createMoveState, stepVertical, stepHorizontal, shouldRespawn } from './movement.js';
 
+import { moveWithGuards, isSafeCheckpoint } from './walkways.js';
+
 const HOME_SPAWN = new THREE.Vector3(0, 0.5, 3.5);
 
 function buildCharacter() {
@@ -83,14 +85,15 @@ export class Player {
     this._camTarget = new THREE.Vector3();
     this._camPos = new THREE.Vector3();
 
+    this.navigation = null;
+    this.respawnCount = 0;
     this.onJumpPad = null; // callback set by main
     this._padCooldown = 0;
   }
 
   teleport(x, y, z) {
     this.pos.set(x, y, z);
-    // only checkpoint sensible spots — never the void below the kill plane
-    if (y > MOVE.respawnY + 5) this.lastGrounded.set(x, y, z);
+    // Teleports and airborne positions must not overwrite a verified safe checkpoint.
     this.move.vx = 0;
     this.move.vy = 0;
     this.move.vz = 0;
@@ -98,6 +101,7 @@ export class Player {
   }
 
   respawn() {
+    this.respawnCount++;
     this.teleport(this.lastGrounded.x, this.lastGrounded.y + 0.4, this.lastGrounded.z);
   }
 
@@ -118,8 +122,15 @@ export class Player {
     const events = stepVertical(m, input, dt);
 
     // integrate
-    this.pos.x += m.vx * dt;
-    this.pos.z += m.vz * dt;
+    if (this.navigation) {
+      const x=this.pos.x,z=this.pos.z;
+      if (moveWithGuards(this.pos,m.vx*dt,m.vz*dt,this.navigation.barriers)) {
+        m.vx=(this.pos.x-x)/(dt||1);m.vz=(this.pos.z-z)/(dt||1);
+      }
+    } else {
+      this.pos.x += m.vx * dt;
+      this.pos.z += m.vz * dt;
+    }
     this.pos.y += m.vy * dt;
 
     // ground detection: raycast down from waist height
@@ -137,10 +148,12 @@ export class Player {
         this.pos.y = groundY;
         m.vy = 0;
         m.grounded = true;
-        this.lastGrounded.copy(this.pos);
+        if (!this.navigation || isSafeCheckpoint(this.pos,hit.object,this.navigation.islands,this.navigation.barriers)) {
+          this.lastGrounded.copy(this.pos);
+        }
         // jump pad?
         const pad = hit.object.userData.jumpPad;
-        if (pad && this._padCooldown <= 0) {
+        if (pad && input.jumpHeld && this._padCooldown <= 0) {
           m.vy = pad.strength;
           m.grounded = false;
           m.jumpsUsed = 1; // still allow one air jump after the bounce

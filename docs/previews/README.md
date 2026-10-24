@@ -1,5 +1,12 @@
 # 苑裡政策島第一版預覽
 
+## 第四階段：觀光步道（獨立本機開發分支，未發布）
+
+[八島連接圖](skywalk-network.svg) · [路線資料](skywalk-routes.json) · [桌面](skywalk-desktop.png) · [手機](skywalk-mobile.png) · [手機步道轉角](skywalk-mobile-path.png) · [八島 3D 總覽](skywalk-overview.png)
+
+[實作、測試範圍與限制](skywalk.md) · [驗證紀錄](skywalk-validation.json)
+
+
 ## 第三階段：鏡頭與 UI/UX
 
 [桌面預覽](ux-desktop.png) · [手機預覽](ux-mobile.png) · [手機展開選單](ux-mobile-menu.png) · [手機首次提示](ux-mobile-help.png)

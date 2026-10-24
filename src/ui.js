@@ -99,6 +99,7 @@ export class UI {
     });
     window.addEventListener('keyup', (e) => {
       this._keys.delete(e.code);
+      if (!this._keys.size && this.isTouch && !this._joystickActive) { this.input.x=0;this.input.z=0; }
       if (e.code === 'Space') this.input.jumpHeld = false;
     });
   }
@@ -109,7 +110,9 @@ export class UI {
       this.nub.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px))`;
     };
     this.joystick.addEventListener('pointerdown', (e) => {
+      if (active !== null) return;
       active = e.pointerId;
+      this._joystickActive = true;
       this.joystick.setPointerCapture(e.pointerId);
     });
     this.joystick.addEventListener('pointermove', (e) => {
@@ -138,12 +141,14 @@ export class UI {
     const end = (e) => {
       if (e.pointerId !== active) return;
       active = null;
+      this._joystickActive = false;
       setNub(0, 0);
       this.input.x = 0;
       this.input.z = 0;
     };
     this.joystick.addEventListener('pointerup', end);
     this.joystick.addEventListener('pointercancel', end);
+    this.joystick.addEventListener('lostpointercapture', end);
   }
 
   _bindJumpButton() {

@@ -7,7 +7,7 @@ import { AudioEngine } from './sim/audio.js';
 import { Player } from './sim/player.js';
 import { UI } from './ui.js';
 import { buildSky } from './world/sky.js';
-import { buildIslands, updateJumpPads } from './world/islands.js';
+import { ISLANDS, buildIslands, updateJumpPads } from './world/islands.js';
 import { buildBridges } from './world/bridges.js';
 import { buildClouds } from './world/clouds.js';
 import { buildProps } from './world/props.js';
@@ -52,6 +52,7 @@ const colliders = [
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
+player.navigation = { islands: ISLANDS, barriers: bridges.barriers };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);
 Object.assign(player.orbit, initialView);
@@ -145,6 +146,8 @@ window.__skyisles = {
     return {
       chimesUnlocked: puzzle.unlocked,
       islandCount: islands.islands.length,
+      respawnCount: player.respawnCount,
+      checkpoint: player.lastGrounded.toArray(),
       playerPos: { x: player.pos.x, y: player.pos.y, z: player.pos.z },
       started,
       muralOrder: [...MURAL_ORDER]
@@ -167,7 +170,7 @@ window.__skyisles = {
       started = true;
     }
   },
-  world: { scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport }
+  world: { scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, ui }
 };
 
 // ----- main loop -----

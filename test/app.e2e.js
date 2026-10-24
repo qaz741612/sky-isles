@@ -99,6 +99,8 @@ test.describe('苑裡政策島', () => {
     expect(Math.abs(state.playerPos.x - 26)).toBeLessThan(1.5);
     expect(Math.abs(state.playerPos.z - -14)).toBeLessThan(1.5);
 
+    await expect.poll(() => page.evaluate(() => window.__skyisles.world.player.move.grounded)).toBe(true);
+
     // drop into the void -> respawn back near the tree isle (last grounded)
     await page.evaluate(() => window.__skyisles.teleport(0, -50, 0));
     await expect
