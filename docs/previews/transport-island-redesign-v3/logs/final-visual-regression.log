@@ -1,0 +1,19 @@
+
+Running 8 tests using 1 worker
+
+(node:67978) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"platformY":0.11999999865889549,"buildingStop":-3.1399899999999996,"railStop":-5.93999,"edges":23,"passive":0,"bounce":16.5,"murals":[{"order":0,"chime":2,"position":[-3.25,1.24,-3.28]},{"order":1,"chime":4,"position":[-2.65,1.24,-3.28]},{"order":2,"chime":0,"position":[-2.05,1.24,-3.28]},{"order":3,"chime":3,"position":[-1.45,1.24,-3.28]},{"order":4,"chime":1,"position":[-0.85,1.24,-3.28]}],"chimes":5,"order":[2,4,0,3,1],"progress":5,"checkpoint":[4.1,1.1920928910669204e-8,-2.9],"returned":[4.1,0.40000001192092893,-2.9],"respawns":1}
+  ✓  1 [desktop] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle (34.4s)
+  ✓  2 [desktop] › test/transport-v3.e2e.js:43:1 › V3 portrait and landscape keep policy, panorama and existing input available (1.8m)
+  ✓  3 [desktop] › test/transport-v3.e2e.js:57:1 › original home chime responds to native keyboard or touchscreen interaction (28.8s)
+  ✓  4 [desktop] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation (1.0m)
+(node:68969) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"platformY":0.11999999865889549,"buildingStop":-3.1399899999999996,"railStop":-5.93999,"edges":23,"passive":0,"bounce":16.5,"murals":[{"order":0,"chime":2,"position":[-3.25,1.24,-3.28]},{"order":1,"chime":4,"position":[-2.65,1.24,-3.28]},{"order":2,"chime":0,"position":[-2.05,1.24,-3.28]},{"order":3,"chime":3,"position":[-1.45,1.24,-3.28]},{"order":4,"chime":1,"position":[-0.85,1.24,-3.28]}],"chimes":5,"order":[2,4,0,3,1],"progress":5,"checkpoint":[4.1,1.1920928910669204e-8,-2.9],"returned":[4.1,0.40000001192092893,-2.9],"respawns":1}
+  ✓  5 [mobile] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle (34.0s)
+  ✓  6 [mobile] › test/transport-v3.e2e.js:43:1 › V3 portrait and landscape keep policy, panorama and existing input available (3.5m)
+  ✓  7 [mobile] › test/transport-v3.e2e.js:57:1 › original home chime responds to native keyboard or touchscreen interaction (43.7s)
+  ✓  8 [mobile] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation (1.1m)
+
+  8 passed (10.0m)

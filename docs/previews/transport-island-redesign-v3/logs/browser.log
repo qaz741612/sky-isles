@@ -1,0 +1,58 @@
+
+Running 44 tests using 1 worker
+
+(node:65673) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › test/app.e2e.js:12:3 › 苑裡政策島 › loads without console errors and renders non-uniform pixels (20.6s)
+  ✓   2 [desktop] › test/app.e2e.js:55:3 › 苑裡政策島 › getState exposes the core game state (8.0s)
+  ✓   3 [desktop] › test/app.e2e.js:65:3 › 苑裡政策島 › all eight policies open from the menu and have no invented content (1.4m)
+  ✓   4 [desktop] › test/app.e2e.js:84:3 › 苑裡政策島 › world label opens matching policy and Escape closes the dialog (14.1s)
+  ✓   5 [desktop] › test/app.e2e.js:94:3 › 苑裡政策島 › teleport moves the player and fall respawns at last ground (14.1s)
+  ✓   6 [desktop] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyW moves the character along the camera-relative forward direction (31.9s)
+  ✓   7 [desktop] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyS moves the character along the camera-relative back direction (41.4s)
+  ✓   8 [desktop] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyA moves the character along the camera-relative left direction (28.2s)
+  ✓   9 [desktop] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyD moves the character along the camera-relative right direction (39.4s)
+  -  10 [desktop] › test/controls.e2e.js:77:3 › controls point where the player expects › touch joystick up moves the character forward
+  ✓  11 [desktop] › test/panorama.e2e.js:5:1 › real 3D panorama fits, locks movement, preserves progress and returns the exploration camera (51.7s)
+  -  12 [desktop] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help
+  ✓  13 [desktop] › test/scenery.e2e.js:4:1 › each policy theme renders, leaves routes open and supports policy entry (2.7m)
+{"platformY":0.11999999865889549,"buildingStop":-3.1399899999999996,"railStop":-5.93999,"edges":23,"passive":0,"bounce":16.5,"murals":[{"order":0,"chime":2,"position":[-3.25,1.24,-3.28]},{"order":1,"chime":4,"position":[-2.65,1.24,-3.28]},{"order":2,"chime":0,"position":[-2.05,1.24,-3.28]},{"order":3,"chime":3,"position":[-1.45,1.24,-3.28]},{"order":4,"chime":1,"position":[-0.85,1.24,-3.28]}],"chimes":5,"order":[2,4,0,3,1],"progress":5,"checkpoint":[4.1,1.1920928910669204e-8,-2.9],"returned":[4.1,0.40000001192092893,-2.9],"respawns":1}
+  ✓  14 [desktop] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle (11.3s)
+  ✓  15 [desktop] › test/transport-v3.e2e.js:43:1 › V3 portrait and landscape keep policy, panorama and existing input available (34.8s)
+  ✓  16 [desktop] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation (51.5s)
+  ✓  17 [desktop] › test/ux.e2e.js:10:1 › menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry (1.3m)
+  ✓  18 [desktop] › test/ux.e2e.js:41:1 › camera zoom remains stable, follows movement and keeps world scale intact (34.9s)
+  -  19 [desktop] › test/ux.e2e.js:64:1 › mobile instructions dismiss once; pinch zoom does not open policy
+{"device":"keyboard","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":81127,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.044360339851676235,0.014000000216066948,0.002534876562953112]},"endpoint":[0.044360339851676235,0.014000000216066948,0.002534876562953112],"returned":[0.044360339851676235,0.414000000216067,0.002534876562953112],"yawUnchanged":true}
+  ✓  20 [desktop] › test/walkways.e2e.js:16:1 › walk every island without jumping through keyboard or a single joystick pointer (55.0s)
+  ✓  21 [desktop] › test/walkways.e2e.js:71:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker (19.8s)
+  -  22 [desktop] › test/walkways.e2e.js:94:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+(node:68823) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  23 [mobile] › test/app.e2e.js:12:3 › 苑裡政策島 › loads without console errors and renders non-uniform pixels (39.9s)
+  ✓  24 [mobile] › test/app.e2e.js:55:3 › 苑裡政策島 › getState exposes the core game state (21.0s)
+  ✓  25 [mobile] › test/app.e2e.js:65:3 › 苑裡政策島 › all eight policies open from the menu and have no invented content (3.0m)
+  ✓  26 [mobile] › test/app.e2e.js:84:3 › 苑裡政策島 › world label opens matching policy and Escape closes the dialog (26.1s)
+  ✓  27 [mobile] › test/app.e2e.js:94:3 › 苑裡政策島 › teleport moves the player and fall respawns at last ground (30.8s)
+  ✓  28 [mobile] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyW moves the character along the camera-relative forward direction (38.0s)
+  ✓  29 [mobile] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyS moves the character along the camera-relative back direction (34.7s)
+  ✓  30 [mobile] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyA moves the character along the camera-relative left direction (16.9s)
+  ✓  31 [mobile] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyD moves the character along the camera-relative right direction (19.7s)
+  ✓  32 [mobile] › test/controls.e2e.js:77:3 › controls point where the player expects › touch joystick up moves the character forward (23.8s)
+  ✓  33 [mobile] › test/panorama.e2e.js:5:1 › real 3D panorama fits, locks movement, preserves progress and returns the exploration camera (51.9s)
+  ✓  34 [mobile] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help (2.1m)
+  ✓  35 [mobile] › test/scenery.e2e.js:4:1 › each policy theme renders, leaves routes open and supports policy entry (42.9s)
+{"platformY":0.11999999865889549,"buildingStop":-3.1399899999999996,"railStop":-5.93999,"edges":23,"passive":0,"bounce":16.5,"murals":[{"order":0,"chime":2,"position":[-3.25,1.24,-3.28]},{"order":1,"chime":4,"position":[-2.65,1.24,-3.28]},{"order":2,"chime":0,"position":[-2.05,1.24,-3.28]},{"order":3,"chime":3,"position":[-1.45,1.24,-3.28]},{"order":4,"chime":1,"position":[-0.85,1.24,-3.28]}],"chimes":5,"order":[2,4,0,3,1],"progress":5,"checkpoint":[4.1,1.1920928910669204e-8,-2.9],"returned":[4.1,0.40000001192092893,-2.9],"respawns":1}
+  ✓  36 [mobile] › test/transport-v3.e2e.js:8:1 › V3 actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle (19.1s)
+  ✓  37 [mobile] › test/transport-v3.e2e.js:43:1 › V3 portrait and landscape keep policy, panorama and existing input available (1.2m)
+  ✓  38 [mobile] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation (34.7s)
+  ✓  39 [mobile] › test/ux.e2e.js:10:1 › menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry (55.8s)
+  ✓  40 [mobile] › test/ux.e2e.js:41:1 › camera zoom remains stable, follows movement and keeps world scale intact (27.7s)
+  ✓  41 [mobile] › test/ux.e2e.js:64:1 › mobile instructions dismiss once; pinch zoom does not open policy (34.3s)
+{"device":"single-pointer joystick","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":84731,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.05215915816516519,0.014000000216066948,0.0029805233237238417]},"endpoint":[0.05215915816516519,0.014000000216066948,0.0029805233237238417],"returned":[0.05215915816516519,0.414000000216067,0.0029805233237238417],"yawUnchanged":true}
+  ✓  42 [mobile] › test/walkways.e2e.js:16:1 › walk every island without jumping through keyboard or a single joystick pointer (34.8s)
+  ✓  43 [mobile] › test/walkways.e2e.js:71:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker (18.8s)
+  ✓  44 [mobile] › test/walkways.e2e.js:94:1 › native single-finger release and cancellation reset the stick and stop without camera turning (23.9s)
+
+  4 skipped
+  40 passed (29.2m)
