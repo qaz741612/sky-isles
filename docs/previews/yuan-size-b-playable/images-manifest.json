@@ -1,0 +1,47 @@
+[
+  {
+    "file": "desktop-explore.png",
+    "bytes": 485148,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "sha256": "9bdc9dfd870adde09fcf72103e32b8e3354cc374a68e047fae3700130ab35997"
+  },
+  {
+    "file": "mobile-explore.png",
+    "bytes": 686366,
+    "dimensions": [
+      1290,
+      2217
+    ],
+    "sha256": "1ba2483a4f81fe92a5c45adf03afd4b6bf2c1e33bad4dc2f5a517ecc45a89b3b"
+  },
+  {
+    "file": "mobile-portrait-panorama.png",
+    "bytes": 212268,
+    "dimensions": [
+      1290,
+      2217
+    ],
+    "sha256": "6c5df8b3d375a1ff7f12d51632d4319b27ff01c20aee61e9ee3372f2867c3c2e"
+  },
+  {
+    "file": "panorama-labelled.png",
+    "bytes": 183659,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "sha256": "60be692b95c03c46e7ddfc1c19247f5a5ae44327215d42531171901cd81884da"
+  },
+  {
+    "file": "panorama-pure.png",
+    "bytes": 157353,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "sha256": "c4f9cbc6492eb2d9bf5100a1d2e4e1e1ea6268a3325f343253a0763dd3d57857"
+  }
+]
