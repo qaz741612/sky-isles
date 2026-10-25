@@ -1,4 +1,21 @@
 {
+  "fullPrototypeGLBBounds": {
+    "min": [
+      -12,
+      -4.468082427978516,
+      -9
+    ],
+    "max": [
+      12.000000004152445,
+      5.287500885204661,
+      12.20304012298584
+    ]
+  },
+  "fullPrototypeGLBSizeXYZ": [
+    24.000000004152447,
+    9.755583313183177,
+    21.20304012298584
+  ],
   "config": {
     "url": "/prototypes/transport-station/transport-station.glb",
     "sourceBranch": "codex/transport-station-blender-prototype-v1",

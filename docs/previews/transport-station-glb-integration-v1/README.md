@@ -5,11 +5,15 @@
 來源：`codex/transport-station-blender-prototype-v1`，`6acf7bee301173fda1a5075186295cdfe5fdcdf2`。
 開發：`codex/transport-station-glb-integration-v1`。本分支供人工檢視，不合併、不更新 Production。
 
+**[開啟可操作的自動公開 Preview](https://c5e551b2.sky-isles.pages.dev)** · [PR #10](https://github.com/qaz741612/sky-isles/pull/10)
+
+**已確認上傳：**[GitHub 下載核對 11／11 檔案](github-media-verification.json)，含 8 張 PNG、完整 MP4、原 GLB 與 Blend；大小及 SHA256 全部相符。Preview 由既有 Cloudflare Git 整合自動建立，沒有手動部署或更新 Production。
+
 [原始 GLB](../../../public/prototypes/transport-station/transport-station.glb) · [Blender 原始檔](../../design/transport-station-blender-prototype/transport-station.blend) · [尺寸與配置稽核](geometry-audit.json) · [測試與限制](TESTS.md) · [逐鏡頭渲染數據](render-stats.json) · [玩家實際走動影片](native-operation.mp4) · [操作紀錄](operation-log.json) · [媒體清單](media-manifest.json)
 
 ## 既有模型與比例
 
-GLB 本身是完整原型展示場景，含示意島、展示列車及比例人偶。本輪只實例化**原站房全部 Architecture 幾何、地板、入口導引、附屬雨棚與支柱、站名字樣**；其餘展示場景不載入遊戲世界，保留遊戲原本的列車、鐵道、文化解謎與景觀。這不是裁切站房或刪除建築細節。
+GLB 本身是完整原型展示場景，含示意島、展示列車及比例人偶。完整 GLB 及被選取建築各自的精確包圍盒，均列於 `geometry-audit.json`。本輪只實例化**原站房全部 Architecture 幾何、地板、入口導引、附屬雨棚與支柱、站名字樣**；其餘展示場景不載入遊戲世界，保留遊戲原本的列車、鐵道、文化解謎與景觀。這不是裁切站房或刪除建築細節。
 
 `.blend` 與 `.glb` 均未修改。原 GLB SHA256：
 `56a8d8f511242ae3c825e60af5b752b831f8287d372845b9ed06858602a6c6e4`。

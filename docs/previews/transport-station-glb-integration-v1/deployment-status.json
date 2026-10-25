@@ -1,0 +1,10 @@
+{
+  "pullRequest": "https://github.com/qaz741612/sky-isles/pull/10",
+  "sourceImplementationCommit": "7be0efe8f39b2ded7b27820a143515c733db6f0b",
+  "automaticCloudflarePreview": "https://c5e551b2.sky-isles.pages.dev",
+  "branchPreview": "https://codex-transport-station-glb.sky-isles.pages.dev",
+  "providerCheck": "Cloudflare Pages completed, success",
+  "deploymentMethod": "Existing Git integration automatically creates a PUBLIC Preview after branch push; no manual deploy/config changes",
+  "productionBranchUnchanged": "codex/yuanli-policy-islands-v1 @ 8adc89ed23d1f74151ca70bab2b3bd730c6e54a5",
+  "browserTests": "Local final production build; public Preview status confirmed by provider check, not a second remote browser test"
+}
