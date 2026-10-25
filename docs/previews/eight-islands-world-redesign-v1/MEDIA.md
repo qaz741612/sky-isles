@@ -12,4 +12,4 @@
 
 QA 特製相機、固定光學位置對照及正常探索鏡頭均分別標記。所有原圖來自真正 Three.js 運行場景；縮圖總覽只排列原始截圖，未使用 AI 概念圖。
 
-GitHub 下載比對結果會於媒體上傳後另存 `github-media-verification.json`，不以 HTTP 成功代替尺寸／雜湊核對。
+**GitHub 上傳後下載核對已完成：90／90 大小與 SHA256 全部相符**，包含完整 MP4；[逐檔結果](github-media-verification.json)。已直接讀取遠端檔案位元組，不以 HTTP 成功代替核對。核對的媒體提交為 `9e460a8685a4f1e2e0e618ef8480524a128c0726`。

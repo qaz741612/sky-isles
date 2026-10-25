@@ -41,6 +41,6 @@
 
 `npm run generate:yuan` → `npm run lint` → `npm test` → `npm run build` → `npm run test:e2e -- --workers=1 --retries=0`。
 
-測試／捕圖工具在驗收環境使用 `/usr/bin/chromium`；錄影與 MP4 轉檔需要 Playwright FFmpeg／系統 ffmpeg，這不是網站運行的新依賴。
+測試／捕圖工具在驗收環境使用 `/usr/bin/chromium`；錄影與 MP4 轉檔需要 Playwright FFmpeg／系統 ffmpeg，媒體整理使用環境既有的 Python Pillow；這些不是網站運行的新依賴。
 
 未改正式政策 JSON、人物、速度、音樂／音效系統、遊戲任務或 Cloudflare 設定；MIT 與既有第三方授權保留。

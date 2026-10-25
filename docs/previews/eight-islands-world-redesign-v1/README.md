@@ -2,6 +2,10 @@
 
 以交通島 V4 為基礎，完成同一個可玩世界中的八島重製。八島半徑皆為 9；島中心、22 段路線與 4.8 路寬未變，中心線總長仍為 **665.179**。本分支供整體人工美術與遊玩驗收，沒有合併或更新 Production。
 
+**可操作的自動 Preview：[開啟八島重製世界](https://176213e5.sky-isles.pages.dev)**（既有 Cloudflare Git 整合自動建立的公開 Preview，非 Production）。
+
+**上傳已驗證：**[90／90 媒體 GitHub 下載雜湊核對](github-media-verification.json)，包含 89 張 PNG 及完整 MP4。
+
 [設計取捨與逐島限制](DESIGN.md) · [建置／測試報告](TESTS.md) · [效能報告](PERFORMANCE.md) · [實際操作影片](normal-operation.mp4) · [操作紀錄](operation-log.json) · [媒體來源與 SHA256](MEDIA.md)
 
 ## 最終遊戲全景

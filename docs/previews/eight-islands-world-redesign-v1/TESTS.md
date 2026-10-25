@@ -51,3 +51,9 @@
 錄影初次嘗試在政策選單關閉後仍由 summary 持有鍵盤焦點，錄影腳本補上原生畫布拖曳返回探索；沒有修改前端或直接寫入角色位置。失敗嘗試只保留在 `work/`，交付影片必須通過完整八島、來源建置及零意外復位核對。
 
 初輪回歸在舊預覽目錄產生的五張本機變更保留未提交；後續測試截圖已改寫 `work/`。本 PR 的圖片全部集中在本輪新目錄，舊交付目錄不納入變更。
+
+## GitHub 與自動 Preview
+
+90／90 媒體已從 GitHub 下載並核對大小／SHA256，包含 MP4。[下載核對紀錄](github-media-verification.json)。
+
+Cloudflare Pages Git 整合回報提交 `9e460a8` 部署成功：[固定 Preview](https://176213e5.sky-isles.pages.dev)、[分支 Preview](https://codex-eight-islands-world-re.sky-isles.pages.dev)。未執行 Cloudflare 設定變更或手動部署。前述瀏覽器測試針對本機最終建置；公開網址未另行執行遠端瀏覽器測試。

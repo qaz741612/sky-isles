@@ -1,0 +1,17 @@
+{
+  "repository": "qaz741612/sky-isles",
+  "branch": "codex/eight-islands-world-redesign-v1",
+  "mediaCommit": "9e460a8685a4f1e2e0e618ef8480524a128c0726",
+  "check": "Cloudflare Pages",
+  "status": "completed",
+  "conclusion": "success",
+  "previewUrl": "https://176213e5.sky-isles.pages.dev",
+  "branchPreviewUrl": "https://codex-eight-islands-world-re.sky-isles.pages.dev",
+  "trigger": "Existing Git integration automatically after authorized new-branch push",
+  "cloudflareSettingsChanged": false,
+  "manualDeploymentExecuted": false,
+  "remoteBrowserTested": false,
+  "productionBranch": "codex/yuanli-policy-islands-v1",
+  "productionRefBefore": "8adc89ed23d1f74151ca70bab2b3bd730c6e54a5",
+  "baseV4Ref": "08e70ce0247c1421aedf72447e56c276d4d50e89"
+}
