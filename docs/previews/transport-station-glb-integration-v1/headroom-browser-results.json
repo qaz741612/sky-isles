@@ -1,0 +1,178 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/sky-isles/node_modules/.bin/playwright",
+      "test",
+      "test/station-headroom.e2e.js",
+      "--retries=0",
+      "--reporter=json"
+    ],
+    "configFile": "/workspace/sky-isles/playwright.config.js",
+    "rootDir": "/workspace/sky-isles/test",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/sky-isles/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/sky-isles/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/workspace/sky-isles/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/workspace/sky-isles/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --port 4185 --strictPort",
+      "url": "http://127.0.0.1:4185",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "station-headroom.e2e.js",
+      "file": "station-headroom.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10157,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"records\":[{\"name\":\"lintel\",\"floor\":1.1920929021691506e-8,\"ceiling\":1.9129000902175903,\"maxFoot\":0.30790009021759024},{\"name\":\"canopy\",\"floor\":0.11999999865889549,\"ceiling\":2.064599567402035,\"maxFoot\":0.4595995542270924},{\"name\":\"open-air\",\"floor\":1.1920928910669204e-8,\"maxFoot\":1.5183333452542631}],\"baseline\":1.5183333452542631,\"respawns\":0}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:50:39.721Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d98421aa2ef603ad808-9f5143cc43554f816443",
+          "file": "station-headroom.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20214,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"records\":[{\"name\":\"lintel\",\"floor\":1.1920929021691506e-8,\"ceiling\":1.9129000902175903,\"maxFoot\":0.30790009021759024},{\"name\":\"canopy\",\"floor\":0.11999999865889549,\"ceiling\":2.064599567402035,\"maxFoot\":0.4595995542270924},{\"name\":\"open-air\",\"floor\":1.1920928910669204e-8,\"maxFoot\":1.5183333452542631}],\"baseline\":1.5183333452542631,\"respawns\":0}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:50:50.720Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d98421aa2ef603ad808-2571198c4ab764794c84",
+          "file": "station-headroom.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T16:50:39.255Z",
+    "duration": 32117.173,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

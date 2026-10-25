@@ -86,6 +86,7 @@ export class Player {
     this._camPos = new THREE.Vector3();
 
     this.navigation = null;
+    this.ceilingConstraint = null; // Optional imported-building headroom, local to its bounds.
     this.cameraConstraint = null; // Optional local scene obstruction constraint.
     this.respawnCount = 0;
     this.onJumpPad = null; // callback set by main
@@ -132,7 +133,9 @@ export class Player {
       this.pos.x += m.vx * dt;
       this.pos.z += m.vz * dt;
     }
+    const previousY=this.pos.y;
     this.pos.y += m.vy * dt;
+    this.ceilingConstraint?.(this.pos,previousY,m);
 
     // ground detection: raycast down from waist height
     this._origin.copy(this.pos);

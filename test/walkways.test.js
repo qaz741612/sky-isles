@@ -5,7 +5,7 @@ import { ISLANDS } from '../src/world/islands.js';
 import { buildBridges } from '../src/world/bridges.js';
 import { buildPolicyScenery } from '../src/world/policy-scenery.js';
 import { guardIndex } from '../src/sim/walkways.js';
-import { buildTransport } from '../src/world/transport.js';
+import { buildTransport } from './helpers/station-fixture.js';
 import { Player } from '../src/sim/player.js';
 import { WALKWAY, planWalkways, moveWithGuards, nearestOnSegment } from '../src/sim/walkways.js';
 import { walkTour } from './helpers/walk-tour.js';

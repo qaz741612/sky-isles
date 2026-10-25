@@ -1,11 +1,14 @@
-// Original procedural models, MIT. Theme illustration, not an approved project.
+// MIT. Supplied Blender station plus retained procedural transport scenery.
+// Theme illustration, not an approved project.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { canvasTexture } from './toon.js';
-import plan from '../data/transport.json' with { type: 'json' };
+import authoredPlan from '../data/transport.json' with { type: 'json' };
 import surface from '../data/yuan-surface.json' with { type: 'json' };
 import {placeKit,placeMaterial,PALETTE} from './place-kit.js';
 import places from '../data/island-places.json' with {type:'json'};
+import {buildStationModel,STATION_MODEL} from './station-model.js';
+const plan={...authoredPlan,station:{...authoredPlan.station,entrance:STATION_MODEL.entrance,entryRecess:STATION_MODEL.entryRecess}};
 
 export const TRANSPORT_NOTICE = '交通政策願景示意，非實際工程核定或完工資訊';
 export const TRANSPORT_PLAN = plan;
@@ -63,7 +66,7 @@ export function transportEdgeSegments() {
   return surface.barriers.filter(wall=>wall.island==='home');
 }
 
-export function buildTransport(home, makeSign = textSign) {
+export function buildTransport(home, makeSign = textSign, stationSource) {
   if (home.name !== 'home') throw new Error('Transport scene belongs only to the home policy island');
   const group = new THREE.Group(); group.name = 'transport-theme';
   group.userData.notice = TRANSPORT_NOTICE; group.userData.plan = plan;
@@ -82,67 +85,14 @@ export function buildTransport(home, makeSign = textSign) {
   function sign(text, w, h, x, y, z, yaw=0) {
     const mesh = makeSign(text, w, h); mesh.position.set(x,y,z);mesh.rotation.y=yaw; mesh.userData.island = 'home'; group.add(mesh);
   }
-  // West-set compact station leaves a real view corridor to the northern train.
-  // Solids and all freestanding elements share explicit horizontal collision.
-  for (const solid of plan.stationSolids) {
-    const [x0,z0,x1,z1]=solid.bounds;
-    box(C.cream,[x1-x0,solid.height,z1-z0],[(x0+x1)/2,solid.height/2,(z0+z1)/2]);
-    boundary(solid.collisionBounds||solid.bounds,solid.height,solid.name);
-    shell([x1-x0,solid.height,z1-z0],[(x0+x1)/2,solid.height/2,(z0+z1)/2]);
-  }
+  const station=buildStationModel(stationSource);group.add(station.group);
+  barriers.push(...station.barriers);colliders.push(...station.colliders);cameraObstacles.push(...station.cameraObstacles);
   deck('station-platform',plan.platform.size,plan.platform.center,C.cream);
-  deck('entrance-floor',[1.7,.04,2.15],[-1.8,.02,-4.35],C.wood);
-  const roof=plan.station.roofProfile;
-  for(let i=1;i<roof.length;i++){
-    const [x,y]=roof[i-1],[xx,yy]=roof[i],angle=Math.atan2(yy-y,xx-x);
-    box(C.teal,[Math.hypot(xx-x,yy-y)+.025,.16,plan.station.roofDepth],[(x+xx)/2,(y+yy)/2,plan.station.roofZ],angle);
-    const roofShell=shell([Math.hypot(xx-x,yy-y)+.025,.16,plan.station.roofDepth],[(x+xx)/2,(y+yy)/2,plan.station.roofZ]);roofShell.rotation.z=angle;colliders.push(roofShell);
-    for(const z of [-5.93,-3.36])beam(C.wood,[x,y-.12,z],[xx,yy-.12,z],.1,.14);
-  }
-  // A restrained folded fascia, supported at two real columns, no second roof.
-  for(const [x,z]of plan.station.columns){
-    box(C.teal,[.1,2.52,.1],[x,1.26,z]);
-    boundary([x-.05,z-.05,x+.05,z+.05],2.52,'canopy-column');
-  }
-  for(const x of [-2.61,-.99])box(C.wood,[.09,2.25,.18],[x,1.125,-3.58]);
-  box(C.coral,[1.7,.14,.23],[-1.8,2.28,-3.55]);
-  box(C.wood,[1.58,1.9,.035],[-1.8,1.0,-4.77]);
-  box(C.blue,[1.35,.8,.045],[-1.8,1.55,-4.74]);
-  // Front, west, east and rear receive layered apertures and trim.
-  box(C.dark,[1.7,1.2,.055],[-3.7,1.35,-3.61]);
-  box(C.blue,[1.5,.95,.06],[-3.7,1.4,-3.57]);
-  box(C.blue,[.05,1.03,.95],[-4.825,1.4,-4.35]);
-  box(C.blue,[.055,1.02,.95],[-.72,1.4,-4.35]);
-  box(C.dark,[3.7,.7,.055],[-2.8,1.4,-5.09]);
-  box(C.blue,[3.5,.52,.06],[-2.8,1.42,-5.09]);
-  for(const x of [-4.4,-3.65,-2.9,-2.15,-1.4]){
-    box(C.wood,[.065,.68,.1],[x,1.4,-5.08]);
-  }
-  for(const z of [-4.8,-4.35,-3.9])box(C.wood,[.1,1.12,.055],[-.73,1.4,z]);
-  box(C.stone,[plan.station.size[0],.18,plan.station.size[1]],[plan.station.center[0],.09,plan.station.center[2]]);
-  // Two sides of one corner screen. Alternating normal offsets make an actual
-  // over/under weave with thick, coarse strips rather than repeated triangles.
-  function weave(spec,west=false){
-    const {origin,span,height}=spec,pitch=plan.weave.pitch;
-    const point=(u,y,depth)=>west?[origin[0]-depth,origin[1]+y,origin[2]+u]:[origin[0]+u,origin[1]+y,origin[2]+depth];
-    const cols=Math.round(span/pitch),rows=Math.round(height/pitch),du=span/cols,dy=height/rows;
-    for(let j=0;j<=rows;j++)for(let i=0;i<cols;i++){
-      const d=((i+j)%2?1:-1)*plan.weave.depthOffset;
-      beam(C.wood,point(i*du,j*dy,d),point((i+1)*du,j*dy,d),.05,plan.weave.stripWidth);
-    }
-    for(let i=0;i<=cols;i++)for(let j=0;j<rows;j++){
-      const d=((i+j)%2?-1:1)*plan.weave.depthOffset;
-      beam(C.rush,point(i*du,j*dy,d),point(i*du,(j+1)*dy,d),west?.05:plan.weave.stripWidth,west?plan.weave.stripWidth:.05);
-    }
-  }
-  weave(plan.weave.front);weave(plan.weave.west,true);
-  sign('苑裡交通願景',1.65,.24,-1.8,2.64,-3.23);
   // Unified arrival court: all four gates remain direct, open grass/deck links.
   const court=new THREE.Shape();plan.plazaOutline.forEach(([x,z],i)=>i?court.lineTo(x,-z):court.moveTo(x,-z));court.closePath();
   const paving=new THREE.ShapeGeometry(court);paving.rotateX(-Math.PI/2);paving.translate(0,.012,0);b.add(C.stone,paving);
   // Broad stone bands guide the eye to the recessed entrance, not arrow decals.
   for(const z of [-2.5,-1.7,-.9])box(C.cream,[8.2,.006,.035],[-.3,.016,z]);
-  for(const x of [-2.7,-.8])box(C.wood,[.1,.008,3.4],[x,.018,-1.7]);
   // Lower independent culture wall is a place to pause, separate from the door.
   const mb=plan.murals.baseBounds;boundary(mb,1.44,'culture-wall');
   box(C.cream,[mb[2]-mb[0],.55,mb[3]-mb[1]],[(mb[0]+mb[2])/2,.275,(mb[1]+mb[3])/2]);
@@ -182,7 +132,7 @@ export function buildTransport(home, makeSign = textSign) {
     const n=Math.ceil(Math.hypot(w.b.x-w.a.x,w.b.z-w.a.z)/1.45);
     for(let i=0;i<=n;i++){const t=i/n;box(C.teal,[.045,1.24,.045],[w.a.x+(w.b.x-w.a.x)*t,.62,w.a.z+(w.b.z-w.a.z)*t]);}
   }
-  for(let i=0;i<25;i++)box(C.light,[.14,.008,.065],[-2.3+i*.28,.125,-6.22]);
+  for(let i=0;i<12;i++)box(C.light,[.14,.008,.065],[1.45+i*.28,.125,-6.81]);
   // A single east-side viewing seat, facing west: off the continuous platform access lane.
   const eb=plan.bench.bounds;boundary(eb,plan.bench.height,'viewing-seat');
   box(C.wood,[.5,.12,1.3],[5.7,.47,-5.55]);box(C.wood,[.07,.46,1.3],[5.93,.73,-5.55]);
@@ -191,12 +141,11 @@ export function buildTransport(home, makeSign = textSign) {
   // No copied home fences, and no double barriers at any gate.
   const edgeBarriers=[];
   shell([3.2,1.44,.24],[-5.5,.72,3.5]);
-  // Side platform canopy continues the station into the railway, leaving the
-  // actual platform access lane open at both ends.
+  // The imported model owns its original side canopy. Keep the existing
+  // courtyard and benches without creating a second procedural roof.
   const garden=new THREE.Group();garden.name='station-courtyard';group.add(garden);
   const kit=placeKit(home,garden);
-  kit.roof([[.2,2.4],[4.55,2.58]],-5.7,1.25,PALETTE.teal);
-  for(const x of[.4,4.3])kit.column(x,-5.25,2.34);
+
   for(const[x,z,r]of places.home.trees)kit.tree(x,z,r,1);
   for(const[x,z,yaw]of places.home.benches)kit.bench(x,z,yaw);
   for(const path of places.home.paths)kit.paving(path);
@@ -222,5 +171,5 @@ export function buildTransport(home, makeSign = textSign) {
   for(const [kind,size,pos]of [['vision',[2,1.5],[plan.visionDisplay.position[0],.8,plan.visionDisplay.position[2]+.215]],['mural',[3.3,1.44],[-5.5,.8,3.32]]]){
     const hit=new THREE.Mesh(new THREE.PlaneGeometry(...size),new THREE.MeshBasicMaterial({visible:false,side:THREE.DoubleSide}));hit.position.set(...pos);hit.userData.transportInfo=kind;group.add(hit);interactives.push(hit);
   }
-  return {group,train,colliders,barriers,edgeBarriers,cameraObstacles,pickMeshes,plan,interactives,update(time){train.position.x=plan.rail.center[0]+Math.sin(time*plan.rail.speed)*plan.rail.travel;}};
+  return {group,station,train,colliders,barriers,edgeBarriers,cameraObstacles,pickMeshes,plan,interactives,update(time){train.position.x=plan.rail.center[0]+Math.sin(time*plan.rail.speed)*plan.rail.travel;}};
 }

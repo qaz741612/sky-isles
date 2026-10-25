@@ -15,6 +15,7 @@ import { buildClouds } from './world/clouds.js';
 import { buildPolicyScenery } from './world/policy-scenery.js';
 import { guardIndex } from './sim/walkways.js';
 import { buildChimes } from './world/chimes.js';
+import { loadStationModel } from './world/station-model.js';
 import { buildTransport, TRANSPORT_NOTICE } from './world/transport.js';
 import { PolicyUI, loadPolicies } from './policies.js';
 
@@ -43,7 +44,9 @@ const bridges = buildBridges(scene, islands.islands, rng);
 const clouds = buildClouds(scene, rng);
 
 const chimes = buildChimes(islands.islands);
-const transport = buildTransport(islands.islands[0]);
+let stationSource;
+try { stationSource=await loadStationModel(); } catch(error) { document.getElementById('loading').textContent='車站模型載入失敗，請重新整理重試'; throw error; }
+const transport = buildTransport(islands.islands[0],undefined,stationSource);
 scene.updateMatrixWorld(true);
 const props=buildPolicyScenery(islands.islands);
 const allBarriers=[...bridges.barriers,...props.barriers,...transport.barriers];
@@ -59,6 +62,7 @@ const colliders = [
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
+player.ceilingConstraint=transport.station.constrainHead;
 scene.updateMatrixWorld(true);
 player.cameraConstraint = worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]);
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };

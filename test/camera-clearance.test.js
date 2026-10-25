@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import {homeCameraConstraint} from '../src/sim/camera-clearance.js';
 import {ISLANDS} from '../src/world/islands.js';
-import {buildTransport} from '../src/world/transport.js';
+import {buildTransport} from './helpers/station-fixture.js';
 
 test('actual station roof no longer blocks the local target; other seven islands are unaffected',()=>{
  const s=buildTransport({name:'home',group:new THREE.Group()},()=>new THREE.Group());s.group.updateMatrixWorld(true);

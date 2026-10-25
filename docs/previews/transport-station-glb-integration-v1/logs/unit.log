@@ -1,0 +1,61 @@
+
+> sky-isles@1.0.0 test
+> node --test test/*.test.js
+
+✔ actual station roof no longer blocks the local target; other seven islands are unaffected (179.698924ms)
+✔ portrait camera has its own framing within controller zoom limits (0.931167ms)
+✔ ground jump then double jump, but no third jump (1.14595ms)
+✔ falling off a ledge still allows one air jump (but only one) (0.17333ms)
+✔ coyote time allows a jump just after leaving the ground (0.132048ms)
+✔ glide caps fall speed while jump is held (1.853412ms)
+✔ without holding jump, fall speed keeps growing past the glide cap (0.291037ms)
+✔ glide boosts forward speed (1.059069ms)
+✔ respawn triggers below the kill plane (0.35915ms)
+✔ gravity integration is stable and downward (0.171697ms)
+✔ orthographic panorama fits every actual footprint corner in landscape and portrait (2.819392ms)
+✔ transition is finite, pauses at the true ortho lens and returns to the saved camera pose (6.545015ms)
+✔ resizing during overview restores the current aspect without a final lens jump (0.603035ms)
+✔ seven distinct authored places use bounded material batches, explicit solids and no decoration ground colliders (337.123604ms)
+✔ all scenery preserves the 3.9-wide player-centre corridor along every fixed B route (869.846773ms)
+✔ every island has independent exposed union edges and an accessible future NPC reservation (134.080613ms)
+✔ retained chime highlight uses a small geometric ring, not an opaque sprite square (5.633225ms)
+✔ chime definitions are unique pentatonic notes with colors and symbols (35.590244ms)
+✔ correct full order opens the portal (0.380322ms)
+✔ wrong note resets progress (1.375339ms)
+✔ playing a duplicate note mid-sequence counts as wrong and resets (0.128103ms)
+✔ partial sequences do not open the portal (0.158238ms)
+✔ after the portal opens, further plays are replays and keep state (0.12686ms)
+✔ music layers grow one per unlocked chime (0.134853ms)
+✔ mulberry32 is deterministic for the same seed (2.21307ms)
+✔ different seeds produce different sequences (0.218008ms)
+✔ Rng helpers stay in range (3.133374ms)
+✔ Rng pick returns items from the list deterministically (0.171468ms)
+✔ supplied GLB is unchanged; full station architecture, canopy and lettering retain original materials (135.069955ms)
+✔ station fits radius 9 without changing source proportions; original doorway clears the unchanged player (60.091277ms)
+✔ retained animated train swept volume never intersects any actual imported station triangle (151.76606ms)
+✔ actual GLB lintel and canopy undersides stop rising heads without changing movement outside the station (80.633813ms)
+✔ transport stays home, bounded north train, low material batches and no extra lights (126.026374ms)
+✔ all visible island safety segments block either direction and southern shared gate has no fence (99.451543ms)
+✔ NPC reservation, interaction stop and approach stay outside physical solids (85.249427ms)
+✔ full 4.8-wide home approaches keep a 3.9-wide player-centre band unobstructed (271.922578ms)
+✔ every actual home structure, column, culture base, viewing seat and rail blocks swept crossing (36.44512ms)
+✔ compound facade collision protects the actual front and side woven surfaces, not only the cream wall (92.379794ms)
+✔ approved handwritten graph has 21 connected nodes, 22 real paths and eight distinct islands (7.011802ms)
+✔ actual Player walks every route in both directions without jumping dt=0.016666666666666666 (3292.136898ms)
+✔ actual Player walks every route in both directions without jumping dt=0.05 (2238.595265ms)
+✔ guards prevent high-speed horizontal crossing from either side, including endpoints (379.708002ms)
+✔ released stick decelerates to rest quickly, with a bounded stopping distance (0.898932ms)
+✔ every actual outer rail blocks crossing and matches rendered guard coordinates (415.489269ms)
+✔ all actual collision triangles have finite horizontal surfaces and <=10% grade (313.316058ms)
+✔ near-zero X movement never falls through a cylinder cap triangle seam (455.872464ms)
+✔ every ordered junction turn stays walkable with actual transport decks present (6794.896026ms)
+✔ all six covered policy places support an actual falling Player; the open park pergola has no fake roof (745.990804ms)
+✔ expanded islands retain the approved B centres, exact curves and 4.8 width without repeated scaling (28.875183ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 49
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19730.550608

@@ -1,0 +1,214 @@
+[
+  {
+    "method": "Native normal-speed keyboard/mouse, read-only game state monitoring. Silent software-GPU browser recording, not human handheld footage."
+  },
+  {
+    "bundle": "/assets/index-CvzgTfWg.js"
+  },
+  {
+    "walk": [
+      0,
+      0
+    ],
+    "state": {
+      "x": -0.08023156199676448,
+      "y": 1.1920928910669204e-8,
+      "z": 0.13063748777850515,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "walk": [
+      -1.277,
+      -2.72
+    ],
+    "state": {
+      "x": -1.1110241360638207,
+      "y": 1.1920928910669204e-8,
+      "z": -2.7480662956274484,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "walk": [
+      -1.277,
+      -4.77
+    ],
+    "state": {
+      "x": -1.4310210175213964,
+      "y": 0.24790000915527344,
+      "z": -4.680244978394599,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "walk": [
+      -1.277,
+      -2.72
+    ],
+    "state": {
+      "x": -1.2477985146464274,
+      "y": 1.1920928910669204e-8,
+      "z": -2.901674054259959,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "walk": [
+      4.9,
+      -2.5
+    ],
+    "state": {
+      "x": 5.071521080792431,
+      "y": 1.1920928910669204e-8,
+      "z": -2.238341894560911,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "walk": [
+      4.9,
+      -6.35
+    ],
+    "state": {
+      "x": 4.7224428454247205,
+      "y": 1.1920928910669204e-8,
+      "z": -6.298529564468437,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "walk": [
+      3.3,
+      -6.35
+    ],
+    "state": {
+      "x": 3.437493208770677,
+      "y": 0.11999999865889549,
+      "z": -6.629516471159592,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyA",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "walk": [
+      4.9,
+      -6.35
+    ],
+    "state": {
+      "x": 5.077045753781848,
+      "y": 1.1920928910669204e-8,
+      "z": -6.370332998352785,
+      "yaw": -0.99,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "walk": [
+      4.9,
+      -2.5
+    ],
+    "state": {
+      "x": 4.6274261138015405,
+      "y": 1.1920928910669204e-8,
+      "z": -2.538364506869814,
+      "yaw": -0.99,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyD",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "walk": [
+      0,
+      0
+    ],
+    "state": {
+      "x": 0.2691081716587672,
+      "y": 1.1920928910669204e-8,
+      "z": -0.11220456301877779,
+      "yaw": -0.99,
+      "respawns": 0,
+      "controlFocus": false,
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "policy": "交通大升級"
+  },
+  {
+    "final": {
+      "chimesUnlocked": 0,
+      "islandCount": 8,
+      "respawnCount": 0,
+      "checkpoint": [
+        -0.17249395592407987,
+        1.1920928910669204e-8,
+        0.10766883765415251
+      ],
+      "playerPos": {
+        "x": -0.17249395592407987,
+        "y": 1.1920928910669204e-8,
+        "z": 0.10766883765415251
+      },
+      "panoramaMode": "explore",
+      "started": true,
+      "muralOrder": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ]
+    }
+  }
+]
