@@ -18,7 +18,7 @@
       "x": -17.549999999999997,
       "y": 0,
       "z": -19.656,
-      "r": 7,
+      "r": 9,
       "island": "tree",
       "name": "安心生養"
     },
@@ -27,7 +27,7 @@
       "x": -42.12,
       "y": 0,
       "z": -1.4040000000000001,
-      "r": 8,
+      "r": 9,
       "island": "temple",
       "name": "幸福養老"
     },
@@ -36,7 +36,7 @@
       "x": -20.357999999999997,
       "y": 0,
       "z": 38.61,
-      "r": 7,
+      "r": 9,
       "island": "koi",
       "name": "產業青年"
     },
@@ -45,7 +45,7 @@
       "x": 26.676,
       "y": 0,
       "z": -18.252,
-      "r": 6,
+      "r": 9,
       "island": "meadow",
       "name": "宜居環境"
     },
@@ -54,7 +54,7 @@
       "x": -53.352,
       "y": 0,
       "z": 87.048,
-      "r": 6,
+      "r": 9,
       "island": "windmill",
       "name": "智慧公所"
     },
@@ -63,7 +63,7 @@
       "x": 44.928000000000004,
       "y": 0,
       "z": 45.278999999999996,
-      "r": 5,
+      "r": 9,
       "island": "crystal",
       "name": "治水防災"
     },
@@ -72,7 +72,7 @@
       "x": 50.544,
       "y": 0,
       "z": 88.452,
-      "r": 5,
+      "r": 9,
       "island": "lookout",
       "name": "教育發展"
     },
@@ -769,6 +769,7 @@
   "review": {
     "baseCommit": "860cf7a57a6d65771bbb445ea04493c219047a56",
     "relativeScaleXZ": 0.75,
-    "radiiAndModelsUnchanged": true
+    "radiiAndModelsUnchanged": false,
+    "islandRadiusRevision": "All eight policy island radii 9; centres, control points and 4.8 width retained from V4"
   }
 }

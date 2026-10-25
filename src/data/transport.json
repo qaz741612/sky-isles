@@ -107,22 +107,23 @@
   },
   "murals": {
     "x": [
-      0.55,
-      1.4,
-      2.25,
-      3.1,
-      3.95
+      -4.2,
+      -4.85,
+      -5.5,
+      -6.15,
+      -6.8
     ],
-    "y": 1.15,
-    "z": -4.15,
-    "scale": 0.56,
+    "y": 1.04,
+    "z": 3.5,
+    "scale": 0.43,
     "orderUnchanged": true,
     "baseBounds": [
-      0.1,
-      -4.5,
-      4.4,
-      -4.1
-    ]
+      -7.1,
+      3.38,
+      -3.9,
+      3.62
+    ],
+    "yaw": 3.141592653589793
   },
   "visionDisplay": {
     "position": [
@@ -188,7 +189,7 @@
       "height": 2.4
     }
   ],
-  "edgeSource": "Existing yuan-surface.domain exposed home-island boundary; no road or island outline edits",
+  "edgeSource": "Shared world island+road union: single external boundary owned by bridges",
   "gateRoutes": [
     "S09",
     "S10",

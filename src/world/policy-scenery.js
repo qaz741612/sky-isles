@@ -1,113 +1,133 @@
-// Policy facilities are illustrative scenery, not approved construction projects.
-// Native geometry, shared palette, per-island material batches. No new textures/NPCs.
+// Eight places share components, not a repeated house. Layouts are hand authored
+// in island-places.json; routing/occupied-point audits validate, never place them.
 import * as THREE from 'three';
-import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { toonMaterial } from './toon.js';
-import layout from '../data/yuan-layout.json' with { type:'json' };
-import { nearestOnSegment } from '../sim/walkways.js';
-
-const C={cream:0xffedcf,teal:0x527f80,dark:0x38555e,coral:0xd98670,stone:0xc7bbad,leaf:0x719e83,mint:0x9ab78f,blue:0x83bed0,white:0xfff7df,gold:0xe8bd76};
-export const THEMES={tree:['family-house','playground','stroller'],temple:['care-home','gazebo','rest-garden'],koi:['startup-studio','market','workbench'],meadow:['park-trees','pet-agility','picnic'],windmill:['civic-office','digital-kiosk','service-plaza'],crystal:['sluice-channel','drainage','warning-beacon'],lookout:['school-library','open-book','playfield']};
-const segments=layout.paths.flatMap(p=>p.points.slice(1).map((v,i)=>[p.points[i],v]));
-
-// Conservative circular footprints stay within the island and outside the entire
-// 4.8-wide bridge gates, tapering to >=2.2-wide island walking lanes + foot clearance.
-const planCache=new Map();
-export function planScenery(island,occupied=[]) {
- const key=JSON.stringify([island,occupied]);
- if(planCache.has(key))return planCache.get(key).map(p=>({...p}));
- // Roads beyond this envelope cannot be the closest road to any point in
- // the island; pruning them preserves placements while reducing startup work.
- const nearSegments=segments.filter(([a,b])=>{const q=nearestOnSegment(island,a,b);return Math.hypot(q.x-island.x,q.z-island.z)<=2*island.r+5;});
- const placed=[],radii=island.r<=5?[1.3,.75,.65,.5,.45]:[1.8,1.05,.85,.7,.6,.5,.45];
- for(const radius of radii){let best=null;
- for(let x=-island.r;x<=island.r;x+=.25)for(let z=-island.r;z<=island.r;z+=.25){
-  if(Math.hypot(x,z)+radius>island.r-.22)continue;
-  const p={x:x+island.x,z:z+island.z};let clearance=Infinity;
-  for(const [a,b] of nearSegments){const q=nearestOnSegment(p,a,b);const gate=Math.hypot(q.x-island.x,q.z-island.z);
-  const half=1.1+1.3*Math.max(0,Math.min(1,(gate-(island.r-3))/1.5));
-  clearance=Math.min(clearance,Math.hypot(p.x-q.x,p.z-q.z)-half);}
-  if(clearance<radius+.42)continue;
-  if([...placed,...occupied].some(v=>Math.hypot(x-v.x,z-v.z)<radius+v.radius+.22))continue;
-  const score=Math.min(clearance-radius,.8)-.1*Math.hypot(x,z);
-  if(!best||score>best.score)best={x,z,radius,clearance,score};
- }
- if(best)placed.push(best);
- }
- if(placed.length<3)throw new Error(`Insufficient safe scenery plots on ${island.name}: ${placed.length}`);
- planCache.set(key,placed);
- return placed.map(p=>({...p}));
+import places from '../data/island-places.json' with {type:'json'};
+import {placeKit,PALETTE as C} from './place-kit.js';
+export const PLACE_PLAN=places;
+export const THEMES={tree:['family-hall','shaded-court','caregiver'],temple:['community-veranda','garden-walk','rest'],koi:['open-workshop','exhibit-shed','work-yard'],meadow:['canopy-garden','pergola','park'],windmill:['public-hall','service-porch','waiting-court'],crystal:['rain-garden','continuous-water','observatory'],lookout:['reading-hall','book-veranda','learning-court']};
+// Closed rooms are clearly glazed shells; their usable entrance is a real open
+// porch. Workshops, verandas and pavilions instead have individual wall/post guards.
+function hall(k,s,{roof='fold',accent=C.wood,porch=1,posts}={}){
+ const[x,z,w,d,h]=s;
+ k.solid(C.cream,[w,h,d],[x,h/2,z],'hall-shell');k.shadow(x,z+d/2,w+1,d+1.8);
+ k.box(C.stone,[w+.12,.18,d+.12],[x,.09,z]);
+ k.glazing(x,z+d/2+.035,w*.78,h*.45,h*.56);
+ k.glazing(x,z-d/2-.05,w*.76,h*.34,h*.58,false,-1);
+ for(const xx of[x-w/2-.04,x+w/2+.04])k.glazing(xx,z,d*.63,h*.36,h*.58,true);
+ k.box(accent,[w,.12,.12],[x,h*.25,z+d/2+.08]);
+ const profile=roof==='butterfly'?[[x-w/2-.25,h+.5],[x,h+.18],[x+w/2+.25,h+.65]]:roof==='flat'?[[x-w/2-.25,h+.22],[x+w/2+.25,h+.22]]:[[x-w/2-.25,h+.18],[x-w*.05,h+.8],[x+w/2+.25,h+.35]];
+ k.roof(profile,z,d+.5);
+ if(porch){const front=z+d/2+porch;k.pad(x,z+d/2+porch/2,w+.45,porch+.2);k.roof([[x-w/2-.22,h-.08],[x+w/2+.22,h+.04]],front-porch/2,porch+.35,C.woodLight);for(const xx of posts||[x-w/2+.12,x+w/2-.12])k.column(xx,front-.1,h-.12);}
 }
-
-export function buildPolicyScenery(islands,occupied={}) {
- const groups=[],barriers=[],plots=[],colliders=[];
- for(const isle of islands){if(isle.name==='home')continue;
- const group=new THREE.Group();group.name=`policy-scenery-${isle.name}`;group.userData.theme=THEMES[isle.name];
- const slots=planScenery({name:isle.name,x:isle.pos.x,z:isle.pos.z,r:isle.r},occupied[isle.name]);
- const batches=new Map();
- const add=(g,color)=>{if(!batches.has(color))batches.set(color,[]);batches.get(color).push(g);};
- // A low, walkable central plaza, with the original grass/rock silhouette intact.
- const plaza=new THREE.CircleGeometry(isle.r*.28,28);plaza.rotateX(-Math.PI/2);plaza.translate(0,.006,0);add(plaza,C.stone);
- for(const [a,b] of segments){const x=(a.x+b.x)/2-isle.pos.x,z=(a.z+b.z)/2-isle.pos.z;if(Math.hypot(x,z)>isle.r-1.1)continue;const g=new THREE.PlaneGeometry(1.8,Math.hypot(b.x-a.x,b.z-a.z)+.04);g.rotateX(-Math.PI/2);g.rotateY(Math.atan2(b.x-a.x,b.z-a.z));g.translate(x,.008,z);add(g,C.stone);}
- slots.forEach((p,index)=>{
-  const s=p.radius,kind=THEMES[isle.name][Math.min(index,2)];plots.push({...p,island:isle.name,kind});
-  const box=(color,w,h,d,x=0,y=h/2,z=0,rz=0)=>{const g=new THREE.BoxGeometry(w*s,h*s,d*s);g.rotateZ(rz);g.translate(p.x+x*s,y*s,p.z+z*s);add(g,C[color]);};
-  const ball=(color,r,x,y,z)=>{const g=new THREE.SphereGeometry(r*s,8,5);g.translate(p.x+x*s,y*s,p.z+z*s);add(g,C[color]);};
-  const ring=(color,r,t,x,y,z,flat=false)=>{const g=new THREE.TorusGeometry(r*s,t*s,5,12);if(flat)g.rotateX(-Math.PI/2);g.translate(p.x+x*s,y*s,p.z+z*s);add(g,C[color]);};
-  const bench=(x=0,z=0)=>{box('coral',1.1,.12,.4,x,.48,z);box('teal',1.1,.45,.1,x,.72,z+.22);for(const dx of [-.4,.4])box('dark',.1,.45,.3,x+dx,.23,z);};
-  const building=(roof='teal')=>{
-   box('cream',1.35,1.55,1.1);box(roof,1.5,.18,1.3,0,1.63);box('dark',.3,.85,.04,0,.43,.57);
-   for(const x of [-.43,.43])box('blue',.32,.4,.04,x,1.02,.57);
-   box('stone',1.5,.08,1.3,0,.04);box('white',.1,1.5,.1,-.61,.8,.56);box('white',.1,1.5,.1,.61,.8,.56);
-  };
-  if(index===0){
-   if(isle.name==='tree'){
-    building('coral');box('coral',.8,.16,1.3,-.38,1.83,0,.3);box('coral',.8,.16,1.3,.38,1.83,0,-.3);
-    for(const x of [-.23,.23])ball('gold',.16,x,1.48,.61);
-   }else if(isle.name==='temple'){
-    building();box('leaf',.12,.55,.05,0,1.45,.66);box('leaf',.45,.12,.05,0,1.45,.66);box('coral',1.3,.1,.3,0,1.15,.6);
-   }else if(isle.name==='koi'){
-    building();box('teal',.75,.9,.9,.25,1.95,-.1);box('blue',1.05,.05,.65,-.15,1.8,-.1);for(const x of [-.5,-.15,.2])box('white',.025,.025,.65,x,1.84,-.1);
-   }else if(isle.name==='meadow'){
-    for(const [x,z] of [[-.4,-.2],[.4,.25]]){box('coral',.18,1.05,.18,x,.55,z);ball('leaf',.48,x,1.3,z);ball('mint',.36,x+.12,1.66,z);}
-   }else if(isle.name==='windmill'){
-    building();box('teal',1.4,.2,.3,0,1.35,.6);box('blue',.7,.45,.05,0,1.65,.68);for(const x of [-.55,.55])box('white',.09,1.3,.09,x,.65,.7);box('gold',.3,.12,.04,0,2,.01);
-   }else if(isle.name==='crystal'){
-    box('blue',1.2,.07,1.2,0,.065);for(const x of [-.65,.65])box('stone',.18,.35,1.35,x,.18);for(const x of [-.55,.55])box('teal',.12,1.25,.14,x,.64,0);
-    box('teal',1.3,.12,.18,0,1.3);box('stone',1,.65,.12,0,.4,0);ring('coral',.25,.04,0,1.55,0);
-   }else if(isle.name==='lookout'){
-    building('coral');box('teal',.1,.8,.1,.4,2.1,0);box('gold',.45,.3,.04,.62,2.25,0);box('white',.55,.28,.05,0,1.5,.65);
-   }
-  }else if(index===1){
-   if(isle.name==='tree'){
-    for(const x of [-.55,.55])box('teal',.1,1.1,.1,x,.55,-.3);box('teal',1.4,.12,.16,0,1.1,-.3);for(const x of [-.3,.3])box('gold',.04,.6,.04,x,.72,-.3);box('coral',.8,.12,.4,0,.42,-.3);box('blue',.6,.12,1.3,.5,.4,.25,.5);
-   }else if(isle.name==='temple'){
-    for(const x of [-.6,.6])for(const z of [-.5,.5])box('cream',.1,1.25,.1,x,.63,z);box('teal',1.55,.2,1.45,0,1.35);bench();
-   }else if(isle.name==='koi'){
-    box('cream',1.2,.85,.8);box('teal',1.4,.15,1.1,0,1);for(const x of [-.45,0,.45])box('coral',.22,.1,.6,x,.9,.62);box('gold',1,.12,.25,0,.6,.55);
-   }else if(isle.name==='meadow'){
-    ring('coral',.55,.12,0,.65,0);for(const x of [-.6,.6])box('teal',.12,.65,.35,x,.33);for(const x of [-.2,.2])ball('gold',.15,x,.04,.7);
-   }else if(isle.name==='windmill'){
-    box('teal',.6,1.3,.45,0,.65);box('blue',.48,.65,.05,0,.9,.26);for(const x of [-.12,.12])for(const y of [.75,1])box('white',.12,.12,.02,x,y,.3);box('gold',.4,.08,.3,0,.47,.32);
-   }else if(isle.name==='crystal'){
-    box('blue',1.4,.06,.55,0,.05);for(const z of [-.4,.4])box('stone',1.5,.2,.2,0,.12,z);for(const x of [-.4,0,.4])box('teal',.12,.05,.8,x,.27);
-   }else if(isle.name==='lookout'){
-    box('coral',1.45,.12,.95,0,.25);box('white',.7,.13,.85,-.36,.38,0,-.2);box('white',.7,.13,.85,.36,.38,0,.2);box('teal',.06,.6,.12,0,.35);for(const z of [-.22,0,.22])box('gold',.6,.02,.025,-.38,.48,z);
-   }
-  }else{
-   if(index>2){box('cream',1,.22,.9);ball('leaf',.45,0,.5,0);ball('coral',.15,.2,.84,.1);}
-   else if(isle.name==='tree'){box('coral',.7,.6,.7,0,.6);box('cream',.8,.16,.8,0,1);for(const x of [-.4,.4])for(const z of [-.32,.32])ball('dark',.14,x,.2,z);}
-   else if(isle.name==='crystal'){box('teal',.18,1.4,.18);box('gold',.5,.4,.5,0,1.5);box('coral',.38,.1,.38,0,1.77);}
-   else if(isle.name==='lookout'){ring('coral',.65,.12,0,.04,0,true);box('mint',.65,.03,.6,0,.03);}
-   else if(isle.name==='koi'){box('teal',1.3,.12,.85,0,.75);for(const x of [-.5,.5])box('cream',.12,.7,.7,x,.35);box('gold',.4,.4,.35,0,1);}
-   else bench();
-  }
-  // Obstacles use a conservative square within the reserved circular plot.
-  const half=s*.72,points=[[-half,-half],[half,-half],[half,half],[-half,half]];
-  for(let i=0;i<4;i++){const a=points[i],b=points[(i+1)%4];barriers.push({a:{x:isle.pos.x+p.x+a[0],y:0,z:isle.pos.z+p.z+a[1]},b:{x:isle.pos.x+p.x+b[0],y:0,z:isle.pos.z+p.z+b[1]},height:(index===0?(isle.name==='crystal'?.4:1.55):1.1)*s,scenery:isle.name});}
- });
- for(const [color,parts] of batches){const mesh=new THREE.Mesh(mergeGeometries(parts),toonMaterial(color));mesh.userData.island=isle.name;group.add(mesh);colliders.push(mesh);parts.forEach(g=>g.dispose());}
- isle.group.add(group);groups.push(group);
+function pergola(k,[x,z,w,d,h],solidRoof=false){
+ k.pad(x,z,w+.35,d+.35,C.woodLight);
+ for(const xx of[x-w/2+.12,x+w/2-.12])for(const zz of[z-d/2+.12,z+d/2-.12])k.column(xx,zz,h);
+ for(const zz of[z-d/2,z+d/2])k.beam(C.wood,[x-w/2-.15,h,zz],[x+w/2+.15,h,zz],.13,.17);
+ if(solidRoof)k.roof([[x-w/2-.2,h+.17],[x+w/2+.2,h+.32]],z,d+.4);
+ else for(let i=0;i<=7;i++)k.box(C.woodLight,[.13,.1,d+.35],[x-w/2+i*w/7,h+.14,z]);
+}
+function family(k,p){
+ hall(k,p.building,{roof:'butterfly',accent:C.coral,porch:.55});hall(k,p.wing,{roof:'flat',accent:C.coral,porch:0});
+ // Paired fabric-like low-poly shade above the caregiver/play garden, away from the four gates.
+ k.pad(4.65,3.7,3.5,2.6);k.roof([[3,2.25],[4.7,2.65],[6.4,2.2]],3.8,2.8,C.woodLight);for(const x of[4.5,6.1])k.column(x,4.9,2.2);
+ k.solid(C.coral,[1.25,.35,.9],[4.4,.175,4.1],'play-low-step');
+ for(const x of[4,4.5,5])k.box(C.cream,[.18,.04,.65],[x,.38,4.1]);
+ // Complete small play bridge: low deck, hand holds and adjacent caregiver seats.
+ for(const z of[3.65,4.55])k.beam(C.teal,[3.8,.92,z],[5,.92,z],.05);
+ k.planter(-5.9,4.2,1,.75);
+}
+function community(k,p){
+ hall(k,p.building,{roof:'flat',porch:1.05,posts:[-5.8,-2.1]});
+ // Long veranda rhythm, not a temple: horizontal clerestory, paired window bays.
+ const[x,z,w,d,h]=p.building;
+ for(const xx of[-4.8,-3.3,-1.8])k.column(xx,z+d/2+.88,h-.1);
+ k.box(C.glass,[w*.68,.3,.07],[x,h-.18,z+d/2+.06]);
+ k.pad(-3.5,-.65,4.3,1.1);k.planter(-6.7,-3.7,.5,2.7);k.planter(.65,-5.55,1.4,.6);
+ // A continuous garden promenade has open centre and deliberate resting edges.
+ k.paving([[-7.1,-.8],[-5.3,-.8],[-5.3,1.2],[-6.8,2.2],[-7.7,.4]],C.woodLight);
+ k.bench(-6.3,.4,Math.PI/2,1.3);
+ k.paving([[2.5,2.7],[5.7,2.8],[6.9,4.9],[4.7,6.8],[2.6,5.7],[1.7,4.2]],C.edge);
+ k.planter(5.9,5.2,.6,1.4);k.bench(4.2,5.7,Math.PI,1.7);
+}
+function workshop(k,p){
+ const[x,z,w,d,h]=p.building;
+ k.pad(x-.3,z,w+1,d+.5);
+ // Working hall opens west into the shared yard; no proxy box across its mouth.
+ k.solid(C.cream,[w,h,.18],[x,h/2,z-d/2+.09],'workshop-rear');
+ for(const xx of[x-w/2+.09,x+w/2-.09]){k.solid(C.cream,[.18,h,d-.18],[xx,h/2,z+.05],'workshop-side');k.column(xx,z+d/2,h-.1);k.glazing(xx+(xx<x?-.11:.11),z,d*.6,.85,1.65,true);}
+ k.roof([[x-w/2-.3,h+.18],[x+.35,h+.8],[x+w/2+.3,h+.25]],z,d+.6);
+ k.glazing(x,z-d/2-.025,w*.6,.8,1.6,false,-1);
+ k.shadow(x,z+.8,w+1,d+1.5);
+ k.table(x,z,1.1,.7);for(const xx of[x-.3,x+.05,x+.3])k.box(C.woodLight,[.18,.24,.35],[xx,1.04,z]);
+ const[sx,sz,sw,sd,sh]=p.shed;
+ pergola(k,[sx,sz,sw,sd,sh],true);k.solid(C.cream,[sw,.95,.16],[sx,.475,sz-sd/2],'exhibit-back');
+ k.table(sx,sz,.95,.65);k.box(C.coral,[.32,.3,.32],[sx,.98,sz]);
+ // Open side display shelving is architectural infill with real side collision.
+ for(const yy of[.45,.95,1.45])k.box(C.woodLight,[.35,.08,1.2],[5.4,yy,.4]);
+}
+function garden(k,p){
+ pergola(k,p.pergola);k.planter(6,4.4,.55,1.6);k.planter(-3.9,-5.8,1.4,.65);
+ // A garden terrace, lawn and raised herb bed; paths surround, never bisect, tree trunks.
+ k.pad(3.7,5.4,2.2,1,C.woodLight);k.planter(3.7,5.9,1.8,.45);
+ k.paving([[-6.8,-4.5],[-4.5,-5.8],[-2.6,-5.4],[-3,-3.1],[-5.1,-2.6]],C.lawn);
+ // Modest pet-friendly play arch, off the travel spine; no giant pet monument.
+ for(const x of[3.1,4.4])k.column(x,3.15,.75);
+ k.beam(C.coral,[3.1,.75,3.15],[4.4,.75,3.15],.09);
+}
+function services(k,p){
+ const[x,z,w,d,h]=p.building;
+ k.pad(x,z+.6,w+.6,d+1.8);k.shadow(x,z+1,w+1,d+2);
+ k.solid(C.cream,[w,h,.18],[x,h/2,z-d/2+.09],'service-back');
+ for(const xx of[x-w/2+.09,x+w/2-.09]){k.solid(C.cream,[.18,h,d],[xx,h/2,z],'service-side');k.glazing(xx+(xx<x?-.11:.11),z,d*.7,1.05,1.4,true);}
+ k.glazing(x,z-d/2-.035,w*.75,.85,1.45,false,-1);
+ // Separate glazed bays frame a genuine open covered entry to a public counter.
+ for(const xx of[x-1.5,x+1.5]){k.solid(C.cream,[1.05,2.05,.2],[xx,1.025,z+d/2],'service-bay');k.glazing(xx,z+d/2+.03,.95,1.1,1.3);}
+ k.roof([[x-w/2-.4,h+.15],[x+w/2+.7,h+.15]],z+.45,d+1.7);
+ for(const xx of[-5.58,-2.2])k.column(xx,-2.1,h);
+ k.box(C.cream,[w*.64,.55,1.5],[x-.35,h+.42,z-.25]);k.glazing(x-.35,z+.52,w*.54,.27,h+.45);k.glazing(x-.35,z-1.035,w*.54,.27,h+.45,false,-1);
+ k.solid(C.stone,[1.55,.85,.42],[x,.425,z-.15],'service-counter');k.box(C.woodLight,[1.7,.08,.55],[x,.89,z-.15]);
+ k.planter(-5.8,-.8,1.2,.5);k.planter(.1,-5.1,.6,1.3);
+}
+function waterGarden(k,p){
+ pergola(k,p.pergola,true);
+ k.solid(C.cream,[1.7,.8,.18],[4.6,.4,.2],'observation-display');
+ // A connected watercourse reads from a headbox in the east to a southern rain garden.
+ for(let i=1;i<p.water.length;i++){
+  const a=p.water[i-1],b=p.water[i],retention=i===p.water.length-1,waterWidth=retention?p.retentionWidth:p.waterWidth,bank=waterWidth/2+.17;k.beam(C.stone,[a[0],.08,a[1]],[b[0],.08,b[1]],waterWidth+.28,.14);k.beam(C.water,[a[0],.16,a[1]],[b[0],.16,b[1]],waterWidth,.035);
+  // Low curbs visibly mark the same horizontal safety boundary.
+  const dx=b[0]-a[0],dz=b[1]-a[1],len=Math.hypot(dx,dz),nx=-dz/len*bank,nz=dx/len*bank;
+  for(const sign of[-1,1])for(const [t0,t1]of(i===1?[[0,.45],[.8,1]]:[[0,1]])){const aa=[a[0]+dx*t0+nx*sign,a[1]+dz*t0+nz*sign],bb=[a[0]+dx*t1+nx*sign,a[1]+dz*t1+nz*sign];k.beam(C.cream,[aa[0],.23,aa[1]],[bb[0],.23,bb[1]],.11,.3);k.guard(aa,bb,.38,'water-edge');}
+  if(retention){const endA=[b[0]+nx,b[1]+nz],endB=[b[0]-nx,b[1]-nz];k.beam(C.cream,[endA[0],.23,endA[1]],[endB[0],.23,endB[1]],.11,.3);k.guard(endA,endB,.38,'retention-bank');}
  }
- return {groups,barriers,plots,colliders,update(){}};
+ k.planter(-3.6,5.55,1.3,.6);
+ // A real supported crossing opens both water curbs and returns to dry land.
+ k.walkable([1.7,.16,1.2],[6,.16,1],C.woodLight);
+ for(const x of[5.35,5.65,5.95,6.25,6.55])k.box(C.wood,[.035,.007,1.18],[x,.244,1]);
+ for(const z of[.4,1.6]){k.guard([5.15,z],[6.85,z],1.3,'water-crossing-rail');k.beam(C.teal,[5.15,1.2,z],[6.85,1.2,z],.045);for(const x of[5.15,6.85])k.column(x,z,1.2);}
+ const[hx,hz]=p.water[0];k.solid(C.teal,[.62,.65,.7],[hx,.325,hz],'water-headbox');k.box(C.stone,[.22,.12,.55],[hx,.35,hz+.38]);k.box(C.waterLight,[.14,.23,.05],[hx,.2,hz+.65]);
+}
+function reading(k,p){
+ hall(k,p.building,{roof:'fold',accent:C.wood,porch:.85});
+ const[x,z,w,d,h]=p.wing;
+ // Book veranda is usable half-outdoor architecture, with a rear book wall.
+ k.pad(x,z,w+.3,d+.4);for(const yy of[.25,1,1.8])k.box(C.wood,[w,.05,.07],[x,yy,z-d/2-.025]);k.solid(C.cream,[w,h,.18],[x,h/2,z-d/2+.09],'book-wall');
+ k.roof([[x-w/2-.2,h+.2],[x+w/2+.2,h+.4]],z,d+.5);
+ for(const xx of[x-w/2+.12,x+w/2-.12])k.column(xx,z+d/2-.1,h+.1);
+ for(const yy of[.55,1.1,1.65]){k.box(C.wood,[w-.35,.09,.35],[x,yy,z-d/2+.3]);for(let i=0;i<9;i++)k.box(i%3?C.woodLight:C.coral,[.17,.3,.18],[x-w*.4+i*w*.1,yy+.2,z-d/2+.3]);}
+ k.table(.8,-3.7,1,.5);
+ // Open outdoor reading table in the southern shade, clear of the retained chime.
+ k.pad(3.6,3,2.3,2);k.table(3.6,3.1,1.5,.8);k.bench(3.6,4.1,0);
+}
+const BUILD={tree:family,temple:community,koi:workshop,meadow:garden,windmill:services,crystal:waterGarden,lookout:reading};
+export function buildPolicyScenery(islands){
+ const groups=[],barriers=[],colliders=[],cameraObstacles=[],pickMeshes=[],plots=[],layouts=[];
+ for(const island of islands){if(island.name==='home')continue;const p=places[island.name],group=new THREE.Group();group.name=`policy-place-${island.name}`;group.userData.theme=THEMES[island.name];group.userData.layout=p;island.group.add(group);
+  const k=placeKit(island,group);for(const path of p.paths)k.paving(path);BUILD[island.name](k,p);
+  for(const[x,z,r]of p.trees)k.tree(x,z,r,island.name==='meadow'?0:1);
+  for(const[x,z,yaw]of p.benches)k.bench(x,z,yaw);
+  const built=k.finish();pickMeshes.push(...group.children.filter(m=>m.isMesh&&m.visible));groups.push(group);barriers.push(...built.barriers);colliders.push(...built.colliders);cameraObstacles.push(...built.cameraObstacles);layouts.push({island:island.name,...p,solids:built.solids});
+  // Compatibility metadata for picking/QA: descriptive authored landmark, not a slot solver.
+  const anchor=p.building||p.pergola;plots.push({island:island.name,x:anchor[0],z:anchor[1],radius:1,authored:true});
+ }
+ return{groups,barriers,colliders,cameraObstacles,pickMeshes,plots,layouts,update(){}};
 }
