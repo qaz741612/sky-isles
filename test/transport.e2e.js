@@ -14,7 +14,7 @@ test('transport scene preserves policy picking, jumping, orbit and bounded train
       owners: w.islands.islands.filter((i) => i.group.getObjectByName('transport-theme')).map((i) => i.name) };
   });
   expect(before.owners).toEqual(['home']);
-  expect(before.colliders).toEqual(expect.arrayContaining(['station-platform', 'road-viaduct']));
+  expect(before.colliders).toEqual(expect.arrayContaining(['station-platform', 'entrance-floor']));
   expect(before.notice).toContain('非實際工程');
   await expect.poll(() => page.evaluate(() => window.__skyisles.world.transport.train.position.x)).not.toBe(before.train);
   await page.keyboard.down('Space');
@@ -34,7 +34,7 @@ test('transport scene preserves policy picking, jumping, orbit and bounded train
   await page.waitForTimeout(1800);
   const xy = await page.evaluate(() => {
     const w = window.__skyisles.world;
-    const p = w.islands.islands[0].pos.clone().set(-1.4, 1.1, -3.2).project(w.camera);
+    const p = w.islands.islands[0].pos.clone().set(-3.7, 1.3, -3.45).project(w.camera);
     return { x: (p.x + 1) * innerWidth / 2, y: (1 - p.y) * innerHeight / 2 };
   });
   await page.mouse.click(xy.x, xy.y);

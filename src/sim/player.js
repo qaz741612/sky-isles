@@ -86,6 +86,7 @@ export class Player {
     this._camPos = new THREE.Vector3();
 
     this.navigation = null;
+    this.cameraConstraint = null; // Optional local scene obstruction constraint.
     this.respawnCount = 0;
     this.onJumpPad = null; // callback set by main
     this._padCooldown = 0;
@@ -227,6 +228,7 @@ export class Player {
       this._camTarget.z + Math.cos(o.yaw) * cp * o.dist
     );
     this.camera.position.lerp(this._camPos, Math.min(1, dt * 8));
+    this.cameraConstraint?.(this._camTarget, this.camera.position);
     this.camera.lookAt(this._camTarget);
 
     return events;

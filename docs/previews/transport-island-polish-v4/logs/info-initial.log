@@ -1,0 +1,53 @@
+
+Running 4 tests using 1 worker
+
+(node:78154) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › test/transport-v4.e2e.js:5:1 › native scene information and five clues use the readable existing modal; close resumes exploration (1.2m)
+(node:78538) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"device":"desktop","phases":[6,6,6,6,6,6,5,6,6,6,6,6,6,6,6,5,5,4,3,4,5,5,6,6,6],"rotations":[{"x":0,"z":3.5,"yaw":0,"blocked":false},{"x":0,"z":3.5,"yaw":0.8,"blocked":false},{"x":0,"z":3.5,"yaw":1.6,"blocked":false},{"x":0,"z":3.5,"yaw":2.4,"blocked":false},{"x":0,"z":3.5,"yaw":3.2,"blocked":false},{"x":0,"z":3.5,"yaw":4,"blocked":false},{"x":0,"z":3.5,"yaw":4.8,"blocked":false},{"x":0,"z":3.5,"yaw":5.6,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":0,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":0.8,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":1.6,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":2.4,"blocked":true},{"x":-1.8,"z":-2.5,"yaw":3.2,"blocked":true},{"x":-1.8,"z":-2.5,"yaw":4,"blocked":true},{"x":-1.8,"z":-2.5,"yaw":4.8,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":5.6,"blocked":false},{"x":5,"z":-5.8,"yaw":0,"blocked":false},{"x":5,"z":-5.8,"yaw":0.8,"blocked":false},{"x":5,"z":-5.8,"yaw":1.6,"blocked":false},{"x":5,"z":-5.8,"yaw":2.4,"blocked":false},{"x":5,"z":-5.8,"yaw":3.2,"blocked":false},{"x":5,"z":-5.8,"yaw":4,"blocked":false},{"x":5,"z":-5.8,"yaw":4.8,"blocked":false},{"x":5,"z":-5.8,"yaw":5.6,"blocked":false}]}
+  ✓  2 [desktop] › test/transport-v4.e2e.js:22:1 › default arrival sees actual train surfaces throughout motion; orbit checks record real occlusion (28.4s)
+(node:78720) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [mobile] › test/transport-v4.e2e.js:5:1 › native scene information and five clues use the readable existing modal; close resumes exploration (1.0m)
+{"device":"mobile","phases":[6,6,6,6,6,6,5,6,6,6,6,6,6,6,6,5,4,4,3,4,4,5,6,6,6],"rotations":[{"x":0,"z":3.5,"yaw":0,"blocked":false},{"x":0,"z":3.5,"yaw":0.8,"blocked":false},{"x":0,"z":3.5,"yaw":1.6,"blocked":false},{"x":0,"z":3.5,"yaw":2.4,"blocked":false},{"x":0,"z":3.5,"yaw":3.2,"blocked":false},{"x":0,"z":3.5,"yaw":4,"blocked":false},{"x":0,"z":3.5,"yaw":4.8,"blocked":false},{"x":0,"z":3.5,"yaw":5.6,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":0,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":0.8,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":1.6,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":2.4,"blocked":true},{"x":-1.8,"z":-2.5,"yaw":3.2,"blocked":true},{"x":-1.8,"z":-2.5,"yaw":4,"blocked":true},{"x":-1.8,"z":-2.5,"yaw":4.8,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":5.6,"blocked":false},{"x":5,"z":-5.8,"yaw":0,"blocked":false},{"x":5,"z":-5.8,"yaw":0.8,"blocked":false},{"x":5,"z":-5.8,"yaw":1.6,"blocked":false},{"x":5,"z":-5.8,"yaw":2.4,"blocked":false},{"x":5,"z":-5.8,"yaw":3.2,"blocked":false},{"x":5,"z":-5.8,"yaw":4,"blocked":false},{"x":5,"z":-5.8,"yaw":4.8,"blocked":false},{"x":5,"z":-5.8,"yaw":5.6,"blocked":false}]}
+  ✓  4 [mobile] › test/transport-v4.e2e.js:22:1 › default arrival sees actual train surfaces throughout motion; orbit checks record real occlusion (16.4s)
+
+
+  1) [desktop] › test/transport-v4.e2e.js:5:1 › native scene information and five clues use the readable existing modal; close resumes exploration 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 1
+    Received:   0
+
+    Call Log:
+    - Timeout 10000ms exceeded while waiting on the predicate
+
+      17 |  await page.locator('#policy-close').click();await expect(page.getByRole('dialog')).not.toBeVisible();
+      18 |  }
+    > 19 |  await page.keyboard.down('ArrowRight');await expect.poll(()=>page.evaluate(()=>window.__skyisles.world.player.move.vx)).toBeGreaterThan(1);await page.keyboard.up('ArrowRight');
+         |                                                                                                                          ^
+      20 | });
+      21 |
+      22 | test('default arrival sees actual train surfaces throughout motion; orbit checks record real occlusion',async({page,isMobile})=>{
+        at /workspace/sky-isles/test/transport-v4.e2e.js:19:122
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    work/transport-v4-info-results/transport-v4.e2e.js-native-cc281-l-close-resumes-exploration-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: work/transport-v4-info-results/transport-v4.e2e.js-native-cc281-l-close-resumes-exploration-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    work/transport-v4-info-results/transport-v4.e2e.js-native-cc281-l-close-resumes-exploration-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace work/transport-v4-info-results/transport-v4.e2e.js-native-cc281-l-close-resumes-exploration-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › test/transport-v4.e2e.js:5:1 › native scene information and five clues use the readable existing modal; close resumes exploration 
+  3 passed (3.2m)

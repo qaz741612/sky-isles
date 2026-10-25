@@ -1,0 +1,143 @@
+{
+  "baselineCommit": "70091a429bdbecafa053c3b8964dd34863ba5641",
+  "afterBuild": "index-2zaL7Num.js",
+  "images": [
+    {
+      "file": "after/island-oblique.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 596083,
+      "sha256": "35bc08f627ae5e6e886841c08e5c937ddda161428a5d2f985db3ab5a7714cce3"
+    },
+    {
+      "file": "after/island-top.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 414240,
+      "sha256": "6c83c9bed503d510ef68cd03107661577e421beb19be69d7598f7e612d93b843"
+    },
+    {
+      "file": "after/mobile-landscape.png",
+      "width": 2796,
+      "height": 1290,
+      "bytes": 1299023,
+      "sha256": "7ffc2801df70eff9b97d77773be7e6f6ec450c1444f36017ad92e347b51273d6"
+    },
+    {
+      "file": "after/mobile-portrait.png",
+      "width": 1290,
+      "height": 2217,
+      "bytes": 691277,
+      "sha256": "9fe1e56fe2b6c9974d714eb5a465f20ca62c7931dbad63fe5e7b2352b211d99f"
+    },
+    {
+      "file": "after/platform-train.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 415675,
+      "sha256": "a0bce8c9d4582f200b050ce7dce54dcc7305ff8efd33969c8aa82737514c9fa2"
+    },
+    {
+      "file": "after/spawn-view.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 474665,
+      "sha256": "eb095f0c7f6ece54ea360c3ed146eb94d664c00c86c1e3336a1df1f71c1c33dd"
+    },
+    {
+      "file": "after/station-front.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 248186,
+      "sha256": "6846aa566258786c137320bf89ac6bea2f60f188552b8bb3e30b3b6e0491f632"
+    },
+    {
+      "file": "after/station-rear.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 248537,
+      "sha256": "6a12d5676f2f02fe76e6ce437f2734711601be236854cca6a516f958f2a989b1"
+    },
+    {
+      "file": "after/yuan-panorama.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 155537,
+      "sha256": "1e67eb6aeaed90e595f6def854841c0e0b87920a1e29b69c8725953b903eba5d"
+    },
+    {
+      "file": "before/island-oblique.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 642618,
+      "sha256": "4403d9d87d19381b42c7725d5cdc087cebbcc04210ab08dfd293aefae02891bd"
+    },
+    {
+      "file": "before/island-top.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 420787,
+      "sha256": "3b12adf4533c908b86c540ee0e11a3e61fc5d5decb90c9b602f292036b8afa2a"
+    },
+    {
+      "file": "before/mobile-landscape.png",
+      "width": 2796,
+      "height": 1290,
+      "bytes": 1346981,
+      "sha256": "35bf16bbd2a48d5e1cc261e5d5321f18500f688037c1cd243bda1e938bd11f66"
+    },
+    {
+      "file": "before/mobile-portrait.png",
+      "width": 1290,
+      "height": 2217,
+      "bytes": 742194,
+      "sha256": "feadd02101ff6f61a2c80e18135fca414499c8c5ca450409b329c4f2f957ad12"
+    },
+    {
+      "file": "before/platform-train.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 374539,
+      "sha256": "e4017c953df3c9d18c64a7fefd1e99495ca531ee8468ae51e763956a17510ca8"
+    },
+    {
+      "file": "before/spawn-view.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 515461,
+      "sha256": "d121a94c88ef24d31fa51d53e4789645d747c16f093d83b2f131ad36160c4e17"
+    },
+    {
+      "file": "before/station-front.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 303512,
+      "sha256": "b4b6b822b3a2a679abefbb8cedc0189120f9d7a7f350dda38a26d842f0697a42"
+    },
+    {
+      "file": "before/station-rear.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 270285,
+      "sha256": "503d53b417ef5076805e66b0cadf948e2a0bc88305b49f4c4f474d36669f4f84"
+    },
+    {
+      "file": "before/yuan-panorama.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 155528,
+      "sha256": "5728a34b593ad27f50ebd119abd64d2c57607f404500addac053fb81bf444dfc"
+    }
+  ],
+  "videos": [
+    {
+      "file": "exploration.mp4",
+      "width": 1280,
+      "height": 800,
+      "durationSeconds": 129.4,
+      "codec": "H.264",
+      "bytes": 8859266,
+      "sha256": "8b873f290f8db9e2664866cc4b6461cb02c40da93fcccf6c13fc4af1515b7a4e"
+    }
+  ]
+}

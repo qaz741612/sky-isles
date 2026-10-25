@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { toonMaterial, addOutline } from './toon.js';
 import { CHIMES, MURAL_ORDER } from '../sim/puzzle.js';
-import transportPlan from '../data/transport-v3.json' with { type: 'json' };
+import transportPlan from '../data/transport.json' with { type: 'json' };
 import { muralTexture } from './textures.js';
 
 import layout from '../data/yuan-layout.json' with { type: 'json' };
@@ -151,16 +151,7 @@ function buildMurals() {
     panel.userData.muralOrderIndex = i;
     panel.userData.chimeIndex = chimeIdx;
     group.add(panel);
-    // small stone plinth under each panel
-    const plinth = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.42, 0.52, 0.34, 8),
-      toonMaterial(ROCK_A)
-    );
-    plinth.position.copy(panel.position);
-    plinth.position.y = .068;
-    plinth.position.z = -3.8; // Original bases embedded in the new cultural wall.
-    plinth.scale.setScalar(transportPlan.murals.scale);
-    group.add(plinth);
+    // The continuous transport culture-wall base now replaces five separate stone feet.
     panels.push(panel);
   });
   return { group, panels };

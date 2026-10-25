@@ -1,0 +1,99 @@
+
+Running 50 tests using 1 worker
+
+(node:79132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › test/app.e2e.js:12:3 › 苑裡政策島 › loads without console errors and renders non-uniform pixels (34.8s)
+  ✓   2 [desktop] › test/app.e2e.js:55:3 › 苑裡政策島 › getState exposes the core game state (15.7s)
+  ✓   3 [desktop] › test/app.e2e.js:65:3 › 苑裡政策島 › all eight policies open from the menu and have no invented content (1.9m)
+  ✓   4 [desktop] › test/app.e2e.js:84:3 › 苑裡政策島 › world label opens matching policy and Escape closes the dialog (12.9s)
+  ✓   5 [desktop] › test/app.e2e.js:94:3 › 苑裡政策島 › teleport moves the player and fall respawns at last ground (11.9s)
+  ✓   6 [desktop] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyW moves the character along the camera-relative forward direction (18.9s)
+  ✓   7 [desktop] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyS moves the character along the camera-relative back direction (19.5s)
+  ✓   8 [desktop] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyA moves the character along the camera-relative left direction (17.6s)
+  ✓   9 [desktop] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyD moves the character along the camera-relative right direction (29.3s)
+  -  10 [desktop] › test/controls.e2e.js:77:3 › controls point where the player expects › touch joystick up moves the character forward
+  ✓  11 [desktop] › test/panorama.e2e.js:5:1 › real 3D panorama fits, locks movement, preserves progress and returns the exploration camera (1.9m)
+  -  12 [desktop] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help
+  ✓  13 [desktop] › test/scenery.e2e.js:4:1 › each policy theme renders, leaves routes open and supports policy entry (1.3m)
+  ✓  14 [desktop] › test/transport-v4.e2e.js:5:1 › native scene information and five clues use the readable existing modal; close resumes exploration (31.5s)
+{"device":"desktop","phases":[6,6,6,6,6,6,5,6,6,6,6,6,6,6,6,5,5,4,3,4,5,5,6,6,6],"rotations":[{"x":0,"z":3.5,"yaw":0,"blocked":false},{"x":0,"z":3.5,"yaw":0.8,"blocked":false},{"x":0,"z":3.5,"yaw":1.6,"blocked":false},{"x":0,"z":3.5,"yaw":2.4,"blocked":false},{"x":0,"z":3.5,"yaw":3.2,"blocked":false},{"x":0,"z":3.5,"yaw":4,"blocked":false},{"x":0,"z":3.5,"yaw":4.8,"blocked":false},{"x":0,"z":3.5,"yaw":5.6,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":0,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":0.8,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":1.6,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":2.4,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":3.2,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":4,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":4.8,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":5.6,"blocked":false},{"x":5,"z":-5.8,"yaw":0,"blocked":false},{"x":5,"z":-5.8,"yaw":0.8,"blocked":false},{"x":5,"z":-5.8,"yaw":1.6,"blocked":false},{"x":5,"z":-5.8,"yaw":2.4,"blocked":false},{"x":5,"z":-5.8,"yaw":3.2,"blocked":false},{"x":5,"z":-5.8,"yaw":4,"blocked":false},{"x":5,"z":-5.8,"yaw":4.8,"blocked":false},{"x":5,"z":-5.8,"yaw":5.6,"blocked":false}]}
+  ✓  15 [desktop] › test/transport-v4.e2e.js:22:1 › default arrival sees actual train surfaces throughout motion; orbit checks record real occlusion (8.2s)
+{"platformY":0.11999999865889538,"buildingStop":-3.2399899999999997,"railStop":-5.93999,"edges":23,"passive":0,"bounce":16.5,"murals":[{"order":0,"chime":2,"position":[0.55,1.15,-4.15]},{"order":1,"chime":4,"position":[1.4,1.15,-4.15]},{"order":2,"chime":0,"position":[2.25,1.15,-4.15]},{"order":3,"chime":3,"position":[3.1,1.15,-4.15]},{"order":4,"chime":1,"position":[3.95,1.15,-4.15]}],"chimes":5,"order":[2,4,0,3,1],"progress":5,"checkpoint":[5.6,0.01200000010430824,-2.65],"returned":[5.6,0.41200000010430826,-2.65],"respawns":1}
+  ✓  16 [desktop] › test/transport-walk.e2e.js:8:1 › transport actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle (7.9s)
+  ✓  17 [desktop] › test/transport-walk.e2e.js:47:1 › transport portrait and landscape keep policy, panorama and existing input available (34.8s)
+  ✓  18 [desktop] › test/transport-walk.e2e.js:61:1 › original home chime responds to native keyboard or touchscreen interaction (9.7s)
+  ✓  19 [desktop] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and bounded train animation (47.2s)
+  ✓  20 [desktop] › test/ux.e2e.js:10:1 › menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry (1.7m)
+  ✓  21 [desktop] › test/ux.e2e.js:41:1 › camera zoom remains stable, follows movement and keeps world scale intact (28.1s)
+  -  22 [desktop] › test/ux.e2e.js:64:1 › mobile instructions dismiss once; pinch zoom does not open policy
+{"device":"keyboard","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":81127,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.044360339851676235,0.012000000104308128,0.002534876562953112]},"endpoint":[0.044360339851676235,0.012000000104308128,0.002534876562953112],"returned":[0.044360339851676235,0.41200000010430815,0.002534876562953112],"yawUnchanged":true}
+  ✓  23 [desktop] › test/walkways.e2e.js:16:1 › walk every island without jumping through keyboard or a single joystick pointer (21.8s)
+  ✓  24 [desktop] › test/walkways.e2e.js:71:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker (9.8s)
+  -  25 [desktop] › test/walkways.e2e.js:94:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+(node:82036) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  26 [mobile] › test/app.e2e.js:12:3 › 苑裡政策島 › loads without console errors and renders non-uniform pixels (17.9s)
+  ✓  27 [mobile] › test/app.e2e.js:55:3 › 苑裡政策島 › getState exposes the core game state (10.7s)
+  ✓  28 [mobile] › test/app.e2e.js:65:3 › 苑裡政策島 › all eight policies open from the menu and have no invented content (1.6m)
+  ✓  29 [mobile] › test/app.e2e.js:84:3 › 苑裡政策島 › world label opens matching policy and Escape closes the dialog (16.0s)
+  ✓  30 [mobile] › test/app.e2e.js:94:3 › 苑裡政策島 › teleport moves the player and fall respawns at last ground (15.5s)
+  ✓  31 [mobile] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyW moves the character along the camera-relative forward direction (17.1s)
+  ✓  32 [mobile] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyS moves the character along the camera-relative back direction (29.7s)
+  ✓  33 [mobile] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyA moves the character along the camera-relative left direction (49.1s)
+  ✓  34 [mobile] › test/controls.e2e.js:55:5 › controls point where the player expects › KeyD moves the character along the camera-relative right direction (44.2s)
+  ✓  35 [mobile] › test/controls.e2e.js:77:3 › controls point where the player expects › touch joystick up moves the character forward (59.9s)
+  ✓  36 [mobile] › test/panorama.e2e.js:5:1 › real 3D panorama fits, locks movement, preserves progress and returns the exploration camera (46.8s)
+  ✓  37 [mobile] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help (1.9m)
+  ✓  38 [mobile] › test/scenery.e2e.js:4:1 › each policy theme renders, leaves routes open and supports policy entry (53.5s)
+  ✓  39 [mobile] › test/transport-v4.e2e.js:5:1 › native scene information and five clues use the readable existing modal; close resumes exploration (38.7s)
+{"device":"mobile","phases":[6,6,6,6,6,6,5,6,6,6,6,6,6,6,6,5,4,4,3,4,4,5,6,6,6],"rotations":[{"x":0,"z":3.5,"yaw":0,"blocked":false},{"x":0,"z":3.5,"yaw":0.8,"blocked":false},{"x":0,"z":3.5,"yaw":1.6,"blocked":false},{"x":0,"z":3.5,"yaw":2.4,"blocked":false},{"x":0,"z":3.5,"yaw":3.2,"blocked":false},{"x":0,"z":3.5,"yaw":4,"blocked":false},{"x":0,"z":3.5,"yaw":4.8,"blocked":false},{"x":0,"z":3.5,"yaw":5.6,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":0,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":0.8,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":1.6,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":2.4,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":3.2,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":4,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":4.8,"blocked":false},{"x":-1.8,"z":-2.5,"yaw":5.6,"blocked":false},{"x":5,"z":-5.8,"yaw":0,"blocked":false},{"x":5,"z":-5.8,"yaw":0.8,"blocked":false},{"x":5,"z":-5.8,"yaw":1.6,"blocked":false},{"x":5,"z":-5.8,"yaw":2.4,"blocked":false},{"x":5,"z":-5.8,"yaw":3.2,"blocked":false},{"x":5,"z":-5.8,"yaw":4,"blocked":false},{"x":5,"z":-5.8,"yaw":4.8,"blocked":false},{"x":5,"z":-5.8,"yaw":5.6,"blocked":false}]}
+  ✓  40 [mobile] › test/transport-v4.e2e.js:22:1 › default arrival sees actual train surfaces throughout motion; orbit checks record real occlusion (17.5s)
+{"platformY":0.11999999865889538,"buildingStop":-3.2399899999999997,"railStop":-5.93999,"edges":23,"passive":0,"bounce":16.5,"murals":[{"order":0,"chime":2,"position":[0.55,1.15,-4.15]},{"order":1,"chime":4,"position":[1.4,1.15,-4.15]},{"order":2,"chime":0,"position":[2.25,1.15,-4.15]},{"order":3,"chime":3,"position":[3.1,1.15,-4.15]},{"order":4,"chime":1,"position":[3.95,1.15,-4.15]}],"chimes":5,"order":[2,4,0,3,1],"progress":5,"checkpoint":[5.6,0.01200000010430824,-2.65],"returned":[5.6,0.41200000010430826,-2.65],"respawns":1}
+  ✓  41 [mobile] › test/transport-walk.e2e.js:8:1 › transport actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle (18.4s)
+  ✘  42 [mobile] › test/transport-walk.e2e.js:47:1 › transport portrait and landscape keep policy, panorama and existing input available (16.1s)
+
+
+  1) [mobile] › test/transport-walk.e2e.js:47:1 › transport portrait and landscape keep policy, panorama and existing input available 
+
+    Test was interrupted.
+
+    Error: locator.click: Test ended.
+    Call log:
+      - waiting for locator('.home-policy')
+        - locator resolved to <button type="button" data-island="home" aria-haspopup="dialog" class="island-label home-policy">交通大升級</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+
+
+      48 |  test.setTimeout(240000);await enter(page);
+      49 |  for(const size of isMobile?[{width:430,height:932},{width:932,height:430}]:[{width:1440,height:900}]){
+    > 50 |  await page.setViewportSize(size);await page.locator('.home-policy').click();await expect(page.getByRole('dialog')).toBeVisible();await expect(page.locator('#policy-title')).toHaveText('交通大升級');await page.locator('#policy-close').click();
+         |                                                                      ^
+      51 |  const before=await page.evaluate(()=>{const p=window.__skyisles.world.player;return{pos:p.pos.toArray(),orbit:{...p.orbit},checkpoint:p.lastGrounded.toArray()};});
+      52 |  await page.locator('#panorama-btn').click();await page.waitForFunction(()=>window.__skyisles.world.panorama.mode==='overview');
+      53 |  const corners=await page.evaluate(()=>{const w=window.__skyisles.world,b=w.bridges.bounds;return[[b.minX,b.minZ],[b.maxX,b.maxZ]].map(([x,z])=>w.player.pos.clone().set(x,0,z).project(w.panorama.camera).toArray());});
+        at /workspace/sky-isles/test/transport-walk.e2e.js:50:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/transport-walk.e2e.js-tran-b1fa2-nd-existing-input-available-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/transport-walk.e2e.js-tran-b1fa2-nd-existing-input-available-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/transport-walk.e2e.js-tran-b1fa2-nd-existing-input-available-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/transport-walk.e2e.js-tran-b1fa2-nd-existing-input-available-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 interrupted
+    [mobile] › test/transport-walk.e2e.js:47:1 › transport portrait and landscape keep policy, panorama and existing input available 
+  4 skipped
+  8 did not run
+  37 passed (23.9m)

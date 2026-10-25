@@ -5,6 +5,7 @@ import { cameraProfile } from './sim/camera-profile.js';
 import { Rng } from './sim/rng.js';
 import { ChimePuzzle, CHIMES, MURAL_ORDER } from './sim/puzzle.js';
 import { AudioEngine } from './sim/audio.js';
+import { homeCameraConstraint } from './sim/camera-clearance.js';
 import { Player } from './sim/player.js';
 import { UI } from './ui.js';
 import { buildSky } from './world/sky.js';
@@ -14,7 +15,7 @@ import { buildClouds } from './world/clouds.js';
 import { buildPolicyScenery } from './world/policy-scenery.js';
 import { guardIndex } from './sim/walkways.js';
 import { buildChimes } from './world/chimes.js';
-import { buildTransport } from './world/transport.js';
+import { buildTransport, TRANSPORT_NOTICE } from './world/transport.js';
 import { PolicyUI, loadPolicies } from './policies.js';
 
 const policyData = await loadPolicies();
@@ -63,6 +64,7 @@ const colliders = [
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
+player.cameraConstraint = homeCameraConstraint([...transport.colliders,...islands.murals]);
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);
@@ -142,6 +144,16 @@ ui.onTap = (nx, ny) => {
     return;
   }
   const islandHits = tapRay.intersectObjects([...islands.colliders,...props.colliders,...transport.colliders], false);
+  const info = tapRay.intersectObjects(transport.interactives, false)[0];
+  if (info && (!islandHits.length || info.distance <= islandHits[0].distance + .12)) {
+    if (info.object.userData.transportInfo === 'vision') {
+      policyUI.openSupplement('home', '交通政策願景', transport.plan.visionDisplay.topics, TRANSPORT_NOTICE);
+    } else {
+      const names = ['月', '星', '日', '浪', '葉'];
+      policyUI.openSupplement('home', '風鈴文化牆', MURAL_ORDER.map(i => names[i]), '依文化牆由左至右的順序，尋找並敲響原有五座風鈴。');
+    }
+    return;
+  }
   if (islandHits.length && islandHits[0].object.userData.island) {
     policyUI.open(islandHits[0].object.userData.island);
     return;
