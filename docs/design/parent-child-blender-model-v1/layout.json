@@ -1,0 +1,113 @@
+{
+  "designBasis": "User supplied parent-child centre reference image in the 2026-10-26 task; exact source image file not available yet",
+  "units": "metres for modelling scale only, not an approved building plan",
+  "siteRadius": 9.2,
+  "mainRoof": {
+    "x0": -1.65,
+    "x1": 4.6,
+    "y0": 0.65,
+    "y1": 5.65,
+    "left": 3.55,
+    "right": 3.05,
+    "rise": 1.65
+  },
+  "upperLeftRoof": {
+    "x0": -5.7,
+    "x1": -1.0,
+    "y0": 2.15,
+    "y1": 4.2,
+    "left": 4.0,
+    "right": 3.8,
+    "rise": 0.65
+  },
+  "leftWing": {
+    "x0": -7.1,
+    "x1": -1.25,
+    "y0": 1.15,
+    "y1": 5.05
+  },
+  "rightWing": {
+    "x0": 4.2,
+    "x1": 7.0,
+    "y0": 1.45,
+    "y1": 4.65
+  },
+  "entrance": [
+    1.1,
+    0.6
+  ],
+  "playhouse": [
+    -6.17,
+    -2.7
+  ],
+  "sandbox": [
+    -2.35,
+    -3.25
+  ],
+  "treeCourt": [
+    4.5,
+    -3.7
+  ],
+  "trees": [
+    [
+      -8.3,
+      1.0,
+      4.5,
+      1.1
+    ],
+    [
+      -7.8,
+      -0.3,
+      2.7,
+      0.88
+    ],
+    [
+      4.5,
+      -3.7,
+      3.05,
+      1.2
+    ],
+    [
+      8.4,
+      0.3,
+      3.4,
+      1.25
+    ]
+  ],
+  "bridgeStubs": [
+    {
+      "angle": 190,
+      "width": 3.5,
+      "length": 3.1
+    },
+    {
+      "angle": 225,
+      "width": 3.5,
+      "length": 3.1
+    },
+    {
+      "angle": 278,
+      "width": 3.5,
+      "length": 3.3
+    },
+    {
+      "angle": 352,
+      "width": 3.5,
+      "length": 3.1
+    }
+  ],
+  "scope": "Standalone editable Blender art model and GLB only; no game code, map, island radii or navigation changes",
+  "heroCamera": {
+    "position": [
+      17.25,
+      -27.4,
+      19.47
+    ],
+    "target": [
+      -0.75,
+      0.1,
+      1.25
+    ],
+    "orthoScale": 22.8
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "test": "Offline comparison document content injected into blank browser page; managed browser blocks file://. No server or game integration",
+  "referenceBytesAvailable": false,
+  "testInput": "Final Blender hero render used ONLY as engineering test input; this is not the original reference.",
+  "localInputLoaded": [
+    1600,
+    1096
+  ],
+  "exportPNG": [
+    3200,
+    1166
+  ],
+  "exportBytes": 3986992,
+  "mobileWidth": 390,
+  "horizontalOverflow": false,
+  "pageErrors": [],
+  "passed": true
+}

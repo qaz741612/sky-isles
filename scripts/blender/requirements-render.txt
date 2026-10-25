@@ -1,0 +1,6 @@
+# Optional isolated Python rendering environment: CPython 3.11.
+# Official Blender 4.3 GUI/CLI can also execute the modelling scripts directly.
+bpy==4.3.0
+numpy==1.26.4
+# Only the media-manifest/contact-sheet script needs Pillow (not the game).
+Pillow>=10

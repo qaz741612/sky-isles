@@ -1,0 +1,84 @@
+{
+  "sourceBlendSHA256": "24a45378caa981ef6b69de1650424ef98aa9d39fe5ad09f8809e68955536b86f",
+  "source": "Actual Blender Cycles renders; no image-generation models used. Original 2D file is selected locally in the offline comparison document.",
+  "files": [
+    {
+      "path": "parent-child-centre.blend",
+      "bytes": 1114882,
+      "sha256": "24a45378caa981ef6b69de1650424ef98aa9d39fe5ad09f8809e68955536b86f"
+    },
+    {
+      "path": "parent-child-centre.glb",
+      "bytes": 19713568,
+      "sha256": "b0957d8d217e36be1fa7781557a175c21c83fcd55c35b69df823d24791d6ebf9"
+    },
+    {
+      "path": "eight-views.png",
+      "bytes": 888721,
+      "sha256": "cd3e4d7911bc81e90837890be2c3f95fe07131d23404cbf5ff0193046dcee95d",
+      "width": 1600,
+      "height": 636
+    },
+    {
+      "path": "comparison.html",
+      "bytes": 3200923,
+      "sha256": "71c7eb59c47ca357920ebb5a1bf1b8620f13adcbd66cfb6b250176773a08fd95"
+    },
+    {
+      "path": "renders/hero.png",
+      "bytes": 2397878,
+      "sha256": "737c46db0e401767bf9c5a090247230f892ebf17155db1d3af6235b254c57e71",
+      "width": 1600,
+      "height": 1096
+    },
+    {
+      "path": "renders/front.png",
+      "bytes": 1652455,
+      "sha256": "194839ec720836defcacf63ab63ad2ae55c66fdad3af26b1420b6f41394da92e",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/back.png",
+      "bytes": 1552133,
+      "sha256": "e1c658e9737f270ffb7d25b12de177181e5348cb3405d3b30bdd6b758e753482",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/left.png",
+      "bytes": 1585347,
+      "sha256": "c9713b264d951482e0720f46cf3ba9816720c0ae6174019c8d80e8f3cb6b6fe3",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/right.png",
+      "bytes": 1578087,
+      "sha256": "1ba917d59914bccb51c2496f61b0b690120b278dffc444068690b5e55e66cd6d",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/top.png",
+      "bytes": 1528717,
+      "sha256": "ef095d00f3ea2394c65d9a74c09a34277e29c3750eaa66f1371a22ae892a1ab4",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/eaves.png",
+      "bytes": 1608671,
+      "sha256": "dd240fe0e3901348318c1b00d7c0534cb01481bdae5760388f69f9fdf43343df",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/player.png",
+      "bytes": 1696158,
+      "sha256": "2de2db11f9ae9022f185df65f31c5ec38c6b2853e60c15e4b25a69199ddfdd98",
+      "width": 1400,
+      "height": 959
+    }
+  ]
+}
