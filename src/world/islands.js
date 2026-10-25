@@ -148,6 +148,7 @@ function buildMurals() {
     const placement = transportPlan.murals;
     panel.scale.setScalar(placement.scale);
     panel.position.set(placement.x[i], placement.y, placement.z);
+    panel.rotation.y=placement.yaw||0;
     panel.userData.muralOrderIndex = i;
     panel.userData.chimeIndex = chimeIdx;
     group.add(panel);

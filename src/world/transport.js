@@ -1,13 +1,15 @@
 // Original procedural models, MIT. Theme illustration, not an approved project.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { toonMaterial, canvasTexture } from './toon.js';
+import { canvasTexture } from './toon.js';
 import plan from '../data/transport.json' with { type: 'json' };
 import surface from '../data/yuan-surface.json' with { type: 'json' };
+import {placeKit,placeMaterial,PALETTE} from './place-kit.js';
+import places from '../data/island-places.json' with {type:'json'};
 
 export const TRANSPORT_NOTICE = '交通政策願景示意，非實際工程核定或完工資訊';
 export const TRANSPORT_PLAN = plan;
-const C = { cream: 0xffedcf, teal: 0x527f80, dark: 0x38555e, coral: 0xd98670, stone: 0xc7bbad, road: 0x70818a, leaf: 0x719e83, light: 0xffdca0, wood: 0xb88d64, rush: 0xd7bd91, blue: 0x82b7be };
+const C = {...PALETTE,road:0x70818a,light:0xffdca0,rush:0xd7bd91,blue:PALETTE.glass};
 
 function batchBuilder(parent) {
   const batches = new Map();
@@ -30,7 +32,7 @@ function batchBuilder(parent) {
   };
   return { box, beam, add, finish() {
     for (const [color, parts] of batches) {
-      const mesh = new THREE.Mesh(mergeGeometries(parts), toonMaterial(color));
+      const mesh = new THREE.Mesh(mergeGeometries(parts), placeMaterial(color));
       mesh.userData.island = 'home'; parent.add(mesh); parts.forEach(p => p.dispose());
     }
   } };
@@ -57,32 +59,28 @@ function textSign(text, width, height) {
 // Exact exposed boundary from the EXISTING union: gates are already cut out and
 // the nearby southern routes are a single shared open region, with no middle fence.
 export function transportEdgeSegments() {
-  const walls = [];
-  for (const polygon of surface.domain) for (const ring of polygon) for (let i = 1; i < ring.length; i++) {
-    const a = ring[i - 1], b = ring[i], mx = (a[0] + b[0]) / 2, mz = (a[1] + b[1]) / 2;
-    if (Math.hypot(...a) > 9.001 || Math.hypot(...b) > 9.001 || Math.hypot(mx, mz) < 8.8) continue;
-    walls.push({ a: { x: a[0], y: 0, z: a[1] }, b: { x: b[0], y: 0, z: b[1] }, height: 1.3, kind: 'island-edge' });
-  }
-  return walls;
+  // Compatibility audit view only: the shared world owns rendering/collision.
+  return surface.barriers.filter(wall=>wall.island==='home');
 }
 
 export function buildTransport(home, makeSign = textSign) {
   if (home.name !== 'home') throw new Error('Transport scene belongs only to the home policy island');
   const group = new THREE.Group(); group.name = 'transport-theme';
   group.userData.notice = TRANSPORT_NOTICE; group.userData.plan = plan;
-  const b = batchBuilder(group), { box, beam } = b, barriers = [], colliders = [];
+  const b = batchBuilder(group), { box, beam } = b, barriers = [], colliders = [], cameraObstacles=[];
+  const shell=(size,p)=>{const mesh=new THREE.Mesh(new THREE.BoxGeometry(...size),placeMaterial(C.cream));mesh.position.set(...p);mesh.visible=false;group.add(mesh);cameraObstacles.push(mesh);return mesh;};
   const wall = (a, z, c, d, height, kind, base = 0) => barriers.push({ a: { x: a, y: base, z }, b: { x: c, y: base, z: d }, height, kind });
   const boundary = (bounds, height, kind) => {
     const [x0, z0, x1, z1] = bounds;
     wall(x0,z0,x1,z0,height,kind); wall(x1,z0,x1,z1,height,kind); wall(x1,z1,x0,z1,height,kind); wall(x0,z1,x0,z0,height,kind);
   };
   function deck(name, size, pos, color) {
-    const mesh = new THREE.Mesh(new THREE.BoxGeometry(...size), toonMaterial(color));
+    const mesh = new THREE.Mesh(new THREE.BoxGeometry(...size), placeMaterial(color));
     mesh.name = name; mesh.position.set(...pos); mesh.userData.island = 'home'; group.add(mesh); colliders.push(mesh);
     return mesh;
   }
-  function sign(text, w, h, x, y, z) {
-    const mesh = makeSign(text, w, h); mesh.position.set(x,y,z); mesh.userData.island = 'home'; group.add(mesh);
+  function sign(text, w, h, x, y, z, yaw=0) {
+    const mesh = makeSign(text, w, h); mesh.position.set(x,y,z);mesh.rotation.y=yaw; mesh.userData.island = 'home'; group.add(mesh);
   }
   // West-set compact station leaves a real view corridor to the northern train.
   // Solids and all freestanding elements share explicit horizontal collision.
@@ -90,6 +88,7 @@ export function buildTransport(home, makeSign = textSign) {
     const [x0,z0,x1,z1]=solid.bounds;
     box(C.cream,[x1-x0,solid.height,z1-z0],[(x0+x1)/2,solid.height/2,(z0+z1)/2]);
     boundary(solid.collisionBounds||solid.bounds,solid.height,solid.name);
+    shell([x1-x0,solid.height,z1-z0],[(x0+x1)/2,solid.height/2,(z0+z1)/2]);
   }
   deck('station-platform',plan.platform.size,plan.platform.center,C.cream);
   deck('entrance-floor',[1.7,.04,2.15],[-1.8,.02,-4.35],C.wood);
@@ -97,6 +96,7 @@ export function buildTransport(home, makeSign = textSign) {
   for(let i=1;i<roof.length;i++){
     const [x,y]=roof[i-1],[xx,yy]=roof[i],angle=Math.atan2(yy-y,xx-x);
     box(C.teal,[Math.hypot(xx-x,yy-y)+.025,.16,plan.station.roofDepth],[(x+xx)/2,(y+yy)/2,plan.station.roofZ],angle);
+    const roofShell=shell([Math.hypot(xx-x,yy-y)+.025,.16,plan.station.roofDepth],[(x+xx)/2,(y+yy)/2,plan.station.roofZ]);roofShell.rotation.z=angle;colliders.push(roofShell);
     for(const z of [-5.93,-3.36])beam(C.wood,[x,y-.12,z],[xx,yy-.12,z],.1,.14);
   }
   // A restrained folded fascia, supported at two real columns, no second roof.
@@ -106,7 +106,8 @@ export function buildTransport(home, makeSign = textSign) {
   }
   for(const x of [-2.61,-.99])box(C.wood,[.09,2.25,.18],[x,1.125,-3.58]);
   box(C.coral,[1.7,.14,.23],[-1.8,2.28,-3.55]);
-  box(C.dark,[1.58,1.9,.035],[-1.8,1.0,-4.77]);
+  box(C.wood,[1.58,1.9,.035],[-1.8,1.0,-4.77]);
+  box(C.blue,[1.35,.8,.045],[-1.8,1.55,-4.74]);
   // Front, west, east and rear receive layered apertures and trim.
   box(C.dark,[1.7,1.2,.055],[-3.7,1.35,-3.61]);
   box(C.blue,[1.5,.95,.06],[-3.7,1.4,-3.57]);
@@ -143,13 +144,13 @@ export function buildTransport(home, makeSign = textSign) {
   for(const z of [-2.5,-1.7,-.9])box(C.cream,[8.2,.006,.035],[-.3,.016,z]);
   for(const x of [-2.7,-.8])box(C.wood,[.1,.008,3.4],[x,.018,-1.7]);
   // Lower independent culture wall is a place to pause, separate from the door.
-  const mb=plan.murals.baseBounds;boundary(mb,1.6,'culture-wall');
+  const mb=plan.murals.baseBounds;boundary(mb,1.44,'culture-wall');
   box(C.cream,[mb[2]-mb[0],.55,mb[3]-mb[1]],[(mb[0]+mb[2])/2,.275,(mb[1]+mb[3])/2]);
   // Blank wooden backs prevent the original box texture showing the clue order in reverse.
-  for(const x of plan.murals.x)box(C.wood,[.73,.87,.035],[x,plan.murals.y,plan.murals.z-.08]);
-  for(const y of [.62,1.66])beam(C.wood,[mb[0],y,-4.28],[mb[2],y,-4.28],.08);
-  for(const x of [mb[0],mb[2]])box(C.teal,[.07,1.68,.07],[x,.84,-4.28]);
-  sign('五音線索・點選閱讀',2.2,.21,2.25,.35,-4.14);
+  for(const x of plan.murals.x)box(C.wood,[.56,.65,.035],[x,plan.murals.y,plan.murals.z+.065]);
+  for(const y of [.66,1.43])beam(C.wood,[mb[0],y,plan.murals.z],[mb[2],y,plan.murals.z],.065);
+  for(const x of [mb[0],mb[2]])box(C.teal,[.065,1.46,.065],[x,.73,plan.murals.z]);
+  sign('五音線索・點選閱讀',2.2,.21,-5.5,.35,3.34,Math.PI);
   // Short titles and geometric transport icons; long topics are read in the
   // existing responsive modal, never tiny paragraphs on a 3D board.
   const vb=plan.visionDisplay.bounds,[vx,,vz]=plan.visionDisplay.position;
@@ -186,18 +187,21 @@ export function buildTransport(home, makeSign = textSign) {
   const eb=plan.bench.bounds;boundary(eb,plan.bench.height,'viewing-seat');
   box(C.wood,[.5,.12,1.3],[5.7,.47,-5.55]);box(C.wood,[.07,.46,1.3],[5.93,.73,-5.55]);
   for(const z of [-6,-5.1])box(C.teal,[.4,.38,.07],[5.7,.2,z]);
-  // Exact V3 island boundary retained, with fewer, lighter lines and posts.
-  const edgeBarriers=transportEdgeSegments();barriers.push(...edgeBarriers);
-  const posts=new Set();
-  for(const w of edgeBarriers){
-    const north=(w.a.z+w.b.z)/2 < -2.5;
-    beam(C.cream,[w.a.x,.3,w.a.z],[w.b.x,.3,w.b.z],.21,.6);
-    beam(C.wood,[w.a.x,.62,w.a.z],[w.b.x,.62,w.b.z],.22,.055);
-    beam(C.teal,[w.a.x,1.2,w.a.z],[w.b.x,1.2,w.b.z],.04);
-    // Green is grouped in a few rim patches; never scattered through the court.
-    if(!north&&(w.a.x+w.b.x)/2>3.7)beam(C.leaf,[w.a.x,.79,w.a.z],[w.b.x,.79,w.b.z],.21,.3);
-    for(const p of [w.a,w.b]){const key=`${p.x.toFixed(4)},${p.z.toFixed(4)}`;if(posts.has(key))continue;posts.add(key);box(C.teal,[.045,1.27,.045],[p.x,.635,p.z]);}
-  }
+  // All exposed island edges now belong to the shared union renderer/collider.
+  // No copied home fences, and no double barriers at any gate.
+  const edgeBarriers=[];
+  shell([3.2,1.44,.24],[-5.5,.72,3.5]);
+  // Side platform canopy continues the station into the railway, leaving the
+  // actual platform access lane open at both ends.
+  const garden=new THREE.Group();garden.name='station-courtyard';group.add(garden);
+  const kit=placeKit(home,garden);
+  kit.roof([[.2,2.4],[4.55,2.58]],-5.7,1.25,PALETTE.teal);
+  for(const x of[.4,4.3])kit.column(x,-5.25,2.34);
+  for(const[x,z,r]of places.home.trees)kit.tree(x,z,r,1);
+  for(const[x,z,yaw]of places.home.benches)kit.bench(x,z,yaw);
+  for(const path of places.home.paths)kit.paving(path);
+  kit.planter(-6.6,2.9,1.3,.55);
+  const landscape=kit.finish();barriers.push(...landscape.barriers);cameraObstacles.push(...landscape.cameraObstacles);colliders.push(...landscape.colliders);
   b.finish();
   // Rounded chamfered car ends rather than stacked box-shaped carriages.
   const train=new THREE.Group();train.name='slow-train';const t=batchBuilder(train);
@@ -211,13 +215,12 @@ export function buildTransport(home, makeSign = textSign) {
   }
   for(const x of [-1.22,1.22]){t.box(C.dark,[.025,.26,.45],[x,.7,0]);for(const z of [-.25,.25])t.box(C.light,[.03,.08,.09],[x,.46,z]);}
   t.finish();train.position.set(plan.rail.center[0],.1,plan.rail.center[2]);group.add(train);home.group.add(group);
-  // All solid roofs can support a deliberate jump; lower geometry remains ground
-  // picking. Horizontal walls are explicit, never inferred from raycast meshes.
-  const staticMeshes=group.children.filter(o=>o.isMesh);
-  for(const mesh of staticMeshes)if(!colliders.includes(mesh) && mesh.material.type==='MeshToonMaterial')colliders.push(mesh);
+  // Floor/roof support, horizontal solids and camera shells are deliberately
+  // separate. Decorative lattice, foliage, signs and paving are not ray obstacles.
+  const pickMeshes=[];group.traverse(o=>{if(o.isMesh&&o.visible)pickMeshes.push(o);});
   const interactives=[];
-  for(const [kind,size,pos]of [['vision',[2,1.5],[plan.visionDisplay.position[0],.8,plan.visionDisplay.position[2]+.215]],['mural',[4.35,1.5],[2.25,.95,-4.08]]]){
+  for(const [kind,size,pos]of [['vision',[2,1.5],[plan.visionDisplay.position[0],.8,plan.visionDisplay.position[2]+.215]],['mural',[3.3,1.44],[-5.5,.8,3.32]]]){
     const hit=new THREE.Mesh(new THREE.PlaneGeometry(...size),new THREE.MeshBasicMaterial({visible:false,side:THREE.DoubleSide}));hit.position.set(...pos);hit.userData.transportInfo=kind;group.add(hit);interactives.push(hit);
   }
-  return {group,train,colliders,barriers,edgeBarriers,plan,interactives,update(time){train.position.x=plan.rail.center[0]+Math.sin(time*plan.rail.speed)*plan.rail.travel;}};
+  return {group,train,colliders,barriers,edgeBarriers,cameraObstacles,pickMeshes,plan,interactives,update(time){train.position.x=plan.rail.center[0]+Math.sin(time*plan.rail.speed)*plan.rail.travel;}};
 }

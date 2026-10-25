@@ -1,0 +1,224 @@
+{
+  "base": "08e70ce0247c1421aedf72447e56c276d4d50e89",
+  "comparison": "V4 vs this redesign. Centre-to-centre shortest paths are unchanged; larger islands provide more ground beside those same paths, not a claim of shorter routes.",
+  "totalLengthBefore": 665.1790588296773,
+  "totalLengthAfter": 665.1790588296773,
+  "shortestBefore": {
+    "home": {
+      "home": 0,
+      "tree": 32.24,
+      "temple": 42.157,
+      "koi": 44.313,
+      "meadow": 37.365,
+      "windmill": 103.205,
+      "crystal": 86.485,
+      "lookout": 131.235
+    },
+    "tree": {
+      "home": 32.24,
+      "tree": 0,
+      "temple": 49.787,
+      "koi": 76.553,
+      "meadow": 44.253,
+      "windmill": 135.444,
+      "crystal": 118.725,
+      "lookout": 163.475
+    },
+    "temple": {
+      "home": 42.157,
+      "tree": 49.787,
+      "temple": 0,
+      "koi": 47.416,
+      "meadow": 79.522,
+      "windmill": 106.307,
+      "crystal": 128.643,
+      "lookout": 173.393
+    },
+    "koi": {
+      "home": 44.313,
+      "tree": 76.553,
+      "temple": 47.416,
+      "koi": 0,
+      "meadow": 81.678,
+      "windmill": 58.892,
+      "crystal": 130.798,
+      "lookout": 175.549
+    },
+    "meadow": {
+      "home": 37.365,
+      "tree": 44.253,
+      "temple": 79.522,
+      "koi": 81.678,
+      "meadow": 0,
+      "windmill": 140.57,
+      "crystal": 93.632,
+      "lookout": 168.6
+    },
+    "windmill": {
+      "home": 103.205,
+      "tree": 135.444,
+      "temple": 106.307,
+      "koi": 58.892,
+      "meadow": 140.57,
+      "windmill": 0,
+      "crystal": 189.69,
+      "lookout": 234.44
+    },
+    "crystal": {
+      "home": 86.485,
+      "tree": 118.725,
+      "temple": 128.643,
+      "koi": 130.798,
+      "meadow": 93.632,
+      "windmill": 189.69,
+      "crystal": 0,
+      "lookout": 217.721
+    },
+    "lookout": {
+      "home": 131.235,
+      "tree": 163.475,
+      "temple": 173.393,
+      "koi": 175.549,
+      "meadow": 168.6,
+      "windmill": 234.44,
+      "crystal": 217.721,
+      "lookout": 0
+    }
+  },
+  "shortestAfter": {
+    "home": {
+      "home": 0,
+      "tree": 32.24,
+      "temple": 42.157,
+      "koi": 44.313,
+      "meadow": 37.365,
+      "windmill": 103.205,
+      "crystal": 86.485,
+      "lookout": 131.235
+    },
+    "tree": {
+      "home": 32.24,
+      "tree": 0,
+      "temple": 49.787,
+      "koi": 76.553,
+      "meadow": 44.253,
+      "windmill": 135.444,
+      "crystal": 118.725,
+      "lookout": 163.475
+    },
+    "temple": {
+      "home": 42.157,
+      "tree": 49.787,
+      "temple": 0,
+      "koi": 47.416,
+      "meadow": 79.522,
+      "windmill": 106.307,
+      "crystal": 128.643,
+      "lookout": 173.393
+    },
+    "koi": {
+      "home": 44.313,
+      "tree": 76.553,
+      "temple": 47.416,
+      "koi": 0,
+      "meadow": 81.678,
+      "windmill": 58.892,
+      "crystal": 130.798,
+      "lookout": 175.549
+    },
+    "meadow": {
+      "home": 37.365,
+      "tree": 44.253,
+      "temple": 79.522,
+      "koi": 81.678,
+      "meadow": 0,
+      "windmill": 140.57,
+      "crystal": 93.632,
+      "lookout": 168.6
+    },
+    "windmill": {
+      "home": 103.205,
+      "tree": 135.444,
+      "temple": 106.307,
+      "koi": 58.892,
+      "meadow": 140.57,
+      "windmill": 0,
+      "crystal": 189.69,
+      "lookout": 234.44
+    },
+    "crystal": {
+      "home": 86.485,
+      "tree": 118.725,
+      "temple": 128.643,
+      "koi": 130.798,
+      "meadow": 93.632,
+      "windmill": 189.69,
+      "crystal": 0,
+      "lookout": 217.721
+    },
+    "lookout": {
+      "home": 131.235,
+      "tree": 163.475,
+      "temple": 173.393,
+      "koi": 175.549,
+      "meadow": 168.6,
+      "windmill": 234.44,
+      "crystal": 217.721,
+      "lookout": 0
+    }
+  },
+  "boundsBefore": {
+    "minX": -63.07,
+    "maxX": 62.58189,
+    "minZ": -40.606,
+    "maxZ": 95.713
+  },
+  "boundsAfter": {
+    "minX": -63.352,
+    "maxX": 62.58189,
+    "minZ": -40.606,
+    "maxZ": 98.452
+  },
+  "radii": [
+    {
+      "island": "home",
+      "before": 9,
+      "after": 9
+    },
+    {
+      "island": "tree",
+      "before": 7,
+      "after": 9
+    },
+    {
+      "island": "temple",
+      "before": 8,
+      "after": 9
+    },
+    {
+      "island": "koi",
+      "before": 7,
+      "after": 9
+    },
+    {
+      "island": "meadow",
+      "before": 6,
+      "after": 9
+    },
+    {
+      "island": "windmill",
+      "before": 6,
+      "after": 9
+    },
+    {
+      "island": "crystal",
+      "before": 5,
+      "after": 9
+    },
+    {
+      "island": "lookout",
+      "before": 5,
+      "after": 9
+    }
+  ]
+}

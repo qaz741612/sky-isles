@@ -1,6 +1,6 @@
 import { test,expect } from '@playwright/test';
 import fs from 'node:fs';
-const folder='docs/previews/yuan-panorama';
+const folder='work/world-regression-panorama';
 
 test('real 3D panorama fits, locks movement, preserves progress and returns the exploration camera',async({page,isMobile})=>{
  const errors=[];page.on('pageerror',e=>errors.push(String(e)));

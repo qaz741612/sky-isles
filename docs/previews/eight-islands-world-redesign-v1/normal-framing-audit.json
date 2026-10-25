@@ -1,0 +1,101 @@
+{
+  "role": "Normal exploration audit; do not claim identical optical positions for these frames",
+  "views": [
+    {
+      "view": "desktop-crystal-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.7381488631862452,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "desktop-home-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.011999962502807918,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "desktop-koi-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.10806610013964818,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "desktop-lookout-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 1.0147520119984463,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "desktop-meadow-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 1.3861190363404461e-05,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "desktop-temple-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.007990563453757664,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "desktop-tree-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.007990565893036816,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "desktop-windmill-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 1.0959904960887523,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "mobile-crystal-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.7381578151514244,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "mobile-home-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.011999988169284492,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "mobile-koi-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.10806738226310852,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "mobile-lookout-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 1.0147418500650627,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "mobile-meadow-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 6.59028138727544e-08,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "mobile-temple-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.007999988459062024,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "mobile-tree-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 0.007999990898380105,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    },
+    {
+      "view": "mobile-windmill-explore",
+      "viewportIdentical": true,
+      "cameraPositionDelta": 1.095989213023259,
+      "explanation": "Both use the default orbit; the old scene may push the nominal test observer out of scenery. Strict same-optics QA images are provided separately."
+    }
+  ]
+}

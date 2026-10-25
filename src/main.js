@@ -5,7 +5,7 @@ import { cameraProfile } from './sim/camera-profile.js';
 import { Rng } from './sim/rng.js';
 import { ChimePuzzle, CHIMES, MURAL_ORDER } from './sim/puzzle.js';
 import { AudioEngine } from './sim/audio.js';
-import { homeCameraConstraint } from './sim/camera-clearance.js';
+import { worldCameraConstraint } from './sim/camera-clearance.js';
 import { Player } from './sim/player.js';
 import { UI } from './ui.js';
 import { buildSky } from './world/sky.js';
@@ -45,12 +45,7 @@ const clouds = buildClouds(scene, rng);
 const chimes = buildChimes(islands.islands);
 const transport = buildTransport(islands.islands[0]);
 scene.updateMatrixWorld(true);
-const occupied={};
-for(const isle of islands.islands){
- occupied[isle.name]=[...chimes.chimes.map(c=>c.worldPos),...islands.jumpPads.map(p=>p.group.getWorldPosition(new THREE.Vector3()))]
- .map(p=>({x:p.x-isle.pos.x,z:p.z-isle.pos.z,radius:.95})).filter(p=>Math.hypot(p.x,p.z)<isle.r+1);
-}
-const props=buildPolicyScenery(islands.islands,occupied);
+const props=buildPolicyScenery(islands.islands);
 const allBarriers=[...bridges.barriers,...props.barriers,...transport.barriers];
 
 const colliders = [
@@ -64,7 +59,8 @@ const colliders = [
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
-player.cameraConstraint = homeCameraConstraint([...transport.colliders,...islands.murals]);
+scene.updateMatrixWorld(true);
+player.cameraConstraint = worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]);
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);
@@ -143,7 +139,7 @@ ui.onTap = (nx, ny) => {
     else ui.hint('靠近一點即可敲響風鈴', 1800);
     return;
   }
-  const islandHits = tapRay.intersectObjects([...islands.colliders,...props.colliders,...transport.colliders], false);
+  const islandHits = tapRay.intersectObjects([...islands.colliders,...props.pickMeshes,...transport.pickMeshes], false);
   const info = tapRay.intersectObjects(transport.interactives, false)[0];
   if (info && (!islandHits.length || info.distance <= islandHits[0].distance + .12)) {
     if (info.object.userData.transportInfo === 'vision') {

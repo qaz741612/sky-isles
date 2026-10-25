@@ -1,0 +1,27 @@
+{
+  "runtimeAsset": "dist/assets/index-BJC2BLzt.js",
+  "build": "passed",
+  "lint": "passed",
+  "unit": {
+    "passed": 45,
+    "failed": 0
+  },
+  "browser": {
+    "passed": 48,
+    "skipped": 4,
+    "failed": 0,
+    "workers": 1,
+    "retries": 0,
+    "time": "27.5m"
+  },
+  "routeCount": 22,
+  "directedRouteLegs": 44,
+  "connectedNodes": 21,
+  "islands": 8,
+  "orderedJunctionTurns": 76,
+  "routeCentreBandSamples": 6750,
+  "maxRouteTriangleGrade": 0,
+  "generalWalkIslandBoundaryProbesPerDevice": 189,
+  "cameraOrbitProbesPerDevice": 64,
+  "note": "Skipped cases are device-specific, not failures. Human art/real-device acceptance remains pending."
+}

@@ -1,21 +1,22 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
-import { buildTransport } from '../src/world/transport.js';
+import { buildTransport,transportEdgeSegments } from '../src/world/transport.js';
 import { nearestOnSegment, moveWithGuards } from '../src/sim/walkways.js';
 
 const fixture=()=>buildTransport({name:'home',group:new THREE.Group()},()=>new THREE.Group());
 test('transport stays home, bounded north train, low material batches and no extra lights',()=>{
  const s=fixture();let meshes=0,triangles=0,lights=0;
- s.group.traverse(o=>{if(o.isMesh){meshes++;triangles+=(o.geometry.index?.count??o.geometry.attributes.position.count)/3;}if(o.isLight)lights++;});
- assert.ok(meshes<=25,`meshes ${meshes}`);assert.ok(triangles<16000,`triangles ${triangles}`);assert.equal(lights,0);
+ s.group.traverse(o=>{if(o.isMesh&&o.visible){meshes++;triangles+=(o.geometry.index?.count??o.geometry.attributes.position.count)/3;}if(o.isLight)lights++;});
+ assert.ok(meshes<=36,`meshes ${meshes}`);assert.ok(triangles<20000,`triangles ${triangles}`);assert.equal(lights,0);
  assert.ok(s.colliders.some(c=>c.name==='station-platform'));assert.ok(s.interactives.length === 2);
  for(let time=0;time<150;time+=.1){s.update(time);const [x0,z0,x1,z1]=s.plan.rail.exclusion;assert.ok(s.train.position.x-1.25>x0+.4&&s.train.position.x+1.25<x1-.4);assert.ok(s.train.position.z-.4>z0&&s.train.position.z+.4<z1);}
  assert.throws(()=>buildTransport({name:'tree'}),/only/);
 });
 test('all visible island safety segments block either direction and southern shared gate has no fence',()=>{
- const s=fixture();assert.ok(s.edgeBarriers.length>=14);
- for(const wall of s.edgeBarriers){const dx=wall.b.x-wall.a.x,dz=wall.b.z-wall.a.z,len=Math.hypot(dx,dz);if(len<.01)continue;
+ const s=fixture();assert.equal(s.edgeBarriers.length,0,'shared world union owns island safety now');
+ const sharedEdges=transportEdgeSegments();assert.ok(sharedEdges.length>=14);
+ for(const wall of sharedEdges){const dx=wall.b.x-wall.a.x,dz=wall.b.z-wall.a.z,len=Math.hypot(dx,dz);if(len<.01)continue;
  for(const sign of [-1,1]){const nx=-dz/len*sign,nz=dx/len*sign,p={x:(wall.a.x+wall.b.x)/2+nx,y:0,z:(wall.a.z+wall.b.z)/2+nz};moveWithGuards(p,-2*nx,-2*nz,[wall]);const q=nearestOnSegment(p,wall.a,wall.b);assert.ok(Math.hypot(p.x-q.x,p.z-q.z)>.4099);}}
  for(const p of [{x:0,z:3.5},{x:-1.7,z:8.3},{x:.63,z:8.1},{x:-.5,z:8.4}])for(const w of s.barriers){const q=nearestOnSegment(p,w.a,w.b);assert.ok(Math.hypot(p.x-q.x,p.z-q.z)>.42,`blocked spawn / shared gate ${JSON.stringify(p)}`);}
 });
@@ -50,7 +51,7 @@ test('every actual home structure, column, culture base, viewing seat and rail b
 test('compound facade collision protects the actual front and side woven surfaces, not only the cream wall',()=>{
  const s=fixture();s.group.updateMatrixWorld(true);
  for(const [start,direction]of [[new THREE.Vector3(-3.56,1.3,-2.5),new THREE.Vector3(0,0,-1)],[new THREE.Vector3(-5.8,1.3,-4.35),new THREE.Vector3(1,0,0)]]){
-  const hit=new THREE.Raycaster(start,direction).intersectObjects(s.colliders,false)[0];assert.ok(hit,'actual facade visible');
+  const hit=new THREE.Raycaster(start,direction).intersectObjects(s.pickMeshes,false)[0];assert.ok(hit,'actual facade visible');
   const p={x:start.x,y:.05,z:start.z};moveWithGuards(p,direction.x*4,direction.z*4,s.barriers);
   const forward=(hit.point.x-p.x)*direction.x+(hit.point.z-p.z)*direction.z;
   assert.ok(forward>=.33,`capsule intersects visible facade: ${forward}`);

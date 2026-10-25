@@ -27,6 +27,8 @@ const snap=p=>JSON.parse(JSON.stringify(p,(_k,v)=>typeof v==='number'?Math.round
 const operands=snap([...roads,...nodes.filter(n=>n.r>0).map(n=>circle(n))]);
 let union=operands[0];for(const operand of operands.slice(1))union=polygon.union(union,operand);
 const decks=polygon.difference(union,polygon.union(...snap(islePolys)));
+const roadOperands=snap(roads);let roadDomain=roadOperands[0];for(const part of roadOperands.slice(1))roadDomain=polygon.union(roadDomain,part);
+const islandPaving=nodes.filter(n=>n.island).map(n=>({island:n.island,domain:polygon.intersection(roadDomain,snap(circle(n)))}));
 function height(){ return plan.heightDatum; }
 const positions=[],indices=[];
 for(const rings of decks){
@@ -42,9 +44,10 @@ for(const p of paths)for(const v of p.points)v.y=height(v.x,v.z);
 const barriers=[];
 for(const rings of union)for(const ring of rings)for(let i=1;i<ring.length;i++){
  const a=ring[i-1],b=ring[i],mx=(a[0]+b[0])/2,mz=(a[1]+b[1])/2;
- // Only shared domain boundary; island cliffs retain their original appearance.
- if(nodes.some(n=>n.island&&Math.hypot(mx-n.x,mz-n.z)<n.r+.015))continue;
- barriers.push({a:{x:a[0],y:height(a[0],a[1]),z:a[1]},b:{x:b[0],y:height(b[0],b[1]),z:b[1]},height:1.3});
+ // Keep every exposed edge of the shared domain, including enlarged islands.
+ // Classify for landscape treatment only; there are never internal gate fences.
+ const owner=nodes.find(n=>n.island&&Math.hypot(mx-n.x,mz-n.z)<n.r+.015);
+ barriers.push({a:{x:a[0],y:height(a[0],a[1]),z:a[1]},b:{x:b[0],y:height(b[0],b[1]),z:b[1]},height:1.3,kind:owner?'island-edge':'bridge-edge',island:owner?.island??null});
 }
 // height() now sees scaled path/node heights, so boundary heights match the scaled deck.
 const bounds={minX:Math.min(...union.flat(2).map(p=>p[0]))-1,maxX:Math.max(...union.flat(2).map(p=>p[0]))+1,minZ:Math.min(...union.flat(2).map(p=>p[1]))-1,maxZ:Math.max(...union.flat(2).map(p=>p[1]))+1};
@@ -55,10 +58,10 @@ for(const edge of source.edges){const cp=edge.controlPointsXZ;
 }
 const baselineBounds={width:Math.max(...beforePoints.map(p=>p[0]))-Math.min(...beforePoints.map(p=>p[0]))+plan.width+2,height:Math.max(...beforePoints.map(p=>p[1]))-Math.min(...beforePoints.map(p=>p[1]))+plan.width+2};
 const baselineEdges=source.edges.map(e=>{const cp=e.controlPointsXZ;let length=0,previous=cp[0];for(let i=1;i<=1000;i++){const t=i/1000,p=cp.length===2?cp[0].map((v,j)=>v+(cp[1][j]-v)*t):cp[0].map((v,j)=>(1-t)**3*v+3*(1-t)**2*t*cp[1][j]+3*(1-t)*t*t*cp[2][j]+t**3*cp[3][j]);length+=Math.hypot(p[0]-previous[0],p[1]-previous[1]);previous=p;}return {...e,length};});
-const report={scaleXZ:scale,islandRadiiUnchanged:true,heightFactor,rawTriangleGrade:rawGrade,levelDatum:plan.heightDatum,baselineHeightRange:[0,2],maxTriangleGrade:maxGrade(),deckTriangles:indices.length/3,boundarySegments:barriers.length,unionComponents:union.length,totalLengthBefore:baselineEdges.reduce((s,e)=>s+e.length,0),totalLengthAfter:paths.reduce((s,e)=>s+e.length,0),shortestBefore:distances(baselineEdges),shortestAfter:distances(paths),boundsBefore:baselineBounds,boundsAfter:{width:bounds.maxX-bounds.minX,height:bounds.maxZ-bounds.minZ},bounds};
+const report={comparisonReference:'Original design A reference (not V4); V4-to-current invariants and distances are in layout-audit.json and v4-network-comparison.json',scaleXZ:scale,islandRadii:nodes.filter(n=>n.island).map(n=>({island:n.island,r:n.r})),heightFactor,rawTriangleGrade:rawGrade,levelDatum:plan.heightDatum,baselineHeightRange:[0,2],maxTriangleGrade:maxGrade(),deckTriangles:indices.length/3,boundarySegments:barriers.length,unionComponents:union.length,totalLengthBefore:baselineEdges.reduce((s,e)=>s+e.length,0),totalLengthAfter:paths.reduce((s,e)=>s+e.length,0),shortestBefore:distances(baselineEdges),shortestAfter:distances(paths),boundsBefore:baselineBounds,boundsAfter:{width:bounds.maxX-bounds.minX,height:bounds.maxZ-bounds.minZ},bounds};
 const layout={reference:'Manually traced approved plan A; real walkable geometry, no font outlines',width:plan.width,nodes,paths:paths.map(({outline,...p})=>p),bounds};
 fs.writeFileSync('src/data/yuan-layout.json',JSON.stringify(layout));
-fs.writeFileSync('src/data/yuan-surface.json',JSON.stringify({positions,indices,barriers,domain:union}));
-fs.mkdirSync('docs/previews/yuan-panorama',{recursive:true});
-fs.writeFileSync('docs/previews/yuan-panorama/network-comparison.json',JSON.stringify(report,null,2));
+fs.writeFileSync('src/data/yuan-surface.json',JSON.stringify({positions,indices,barriers,domain:union,islandPaving}));
+fs.mkdirSync('docs/previews/eight-islands-world-redesign-v1',{recursive:true});
+fs.writeFileSync('docs/previews/eight-islands-world-redesign-v1/network-comparison.json',JSON.stringify(report,null,2));
 console.log(report);

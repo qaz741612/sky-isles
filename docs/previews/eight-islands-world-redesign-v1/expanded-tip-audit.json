@@ -1,0 +1,18 @@
+{
+  "note": "Radius9 changes the island union at these existing tips; centres/curves were not moved.",
+  "contacts": [
+    {
+      "island": "temple",
+      "strokeTip": "T5",
+      "centreDistance": 8.438612326680257,
+      "insideIsland": true
+    },
+    {
+      "island": "windmill",
+      "strokeTip": "T7",
+      "centreDistance": 8.224192908729712,
+      "insideIsland": true
+    }
+  ],
+  "totalRouteLength": 665.1790588296773
+}

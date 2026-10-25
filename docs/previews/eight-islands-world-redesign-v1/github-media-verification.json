@@ -1,0 +1,550 @@
+{
+  "repository": "qaz741612/sky-isles",
+  "mediaCommit": "9e460a8685a4f1e2e0e618ef8480524a128c0726",
+  "manifestSha256": "2582ed6eb5810d1732537139137b5dcec129e0cbd694a2452c29a4cd9e337315",
+  "checkedFrom": "raw.githubusercontent.com, downloaded bytes (not HTTP status alone)",
+  "verifiedCount": 90,
+  "allMatch": true,
+  "files": [
+    {
+      "path": "after/desktop-crystal-explore.png",
+      "bytes": 579371,
+      "sha256": "138a0b3689244cdd1e4da4e3c789b22a79de33ed8cde51de9d5f87ff4bdc840b",
+      "matches": true
+    },
+    {
+      "path": "after/desktop-home-explore.png",
+      "bytes": 467637,
+      "sha256": "fa4967dab50c6dfbe54f1960e1d28188284783356f840ae589fcbb1a1e5aa159",
+      "matches": true
+    },
+    {
+      "path": "after/desktop-koi-explore.png",
+      "bytes": 540040,
+      "sha256": "ef470a366d7deafb201ef59e3f20e2fda25b50d9a3e0a4f891db1c65e2429141",
+      "matches": true
+    },
+    {
+      "path": "after/desktop-lookout-explore.png",
+      "bytes": 515705,
+      "sha256": "432a995c74294fb4b848d2da6658203e004cbdf2883394e13c994ed3771baf64",
+      "matches": true
+    },
+    {
+      "path": "after/desktop-meadow-explore.png",
+      "bytes": 482802,
+      "sha256": "12bda07f2ba6bebe45b91f83c689ec6783b54e5851b2e965af6501069b90ccef",
+      "matches": true
+    },
+    {
+      "path": "after/desktop-temple-explore.png",
+      "bytes": 473509,
+      "sha256": "dc70ad2cb5aad788b7333a47fd5981a6ddb62b4078148261db785d7eeb3a134e",
+      "matches": true
+    },
+    {
+      "path": "after/desktop-tree-explore.png",
+      "bytes": 504339,
+      "sha256": "6bc74c64b8caeb86e44fc4dc3dcb891d0ec9af72f80dc7b2470e553001125de3",
+      "matches": true
+    },
+    {
+      "path": "after/desktop-windmill-explore.png",
+      "bytes": 517598,
+      "sha256": "ab12e4211bb2c04cbf8a3c441dc235df988f54d581ecf7bb842038099e9d9446",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-crystal-explore.png",
+      "bytes": 737001,
+      "sha256": "88eec6c9435790eacffbc9a11ab2bb1833da91e315adcd3d78b680af0a223c32",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-home-explore.png",
+      "bytes": 674742,
+      "sha256": "76155d8046426cc61e4a5eba70c011666bdd4af9310ee3aa5d69ae3c43953f6c",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-koi-explore.png",
+      "bytes": 735805,
+      "sha256": "e6f16ba89110fc45db41c59c0603fb584afc4e9961c86154c8ded266dc35a428",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-landscape-home.png",
+      "bytes": 1226343,
+      "sha256": "e0eb7e30c5fcd8151f790e068f85a957f35c0bc87c79c557b41b21f5954b8d91",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-lookout-explore.png",
+      "bytes": 674755,
+      "sha256": "761b10976455fdfffeb85b1d732307050b1559bba2ceb51c0c09be32fa1e5451",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-meadow-explore.png",
+      "bytes": 670641,
+      "sha256": "c123470d20944261d18a83a7765e751d4fe97c002232c3f430b55876579ab870",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-panorama.png",
+      "bytes": 275388,
+      "sha256": "f0c2eb0fea34eed1611604d09020bf920cab938b4709883dacbec62721e7f2ff",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-temple-explore.png",
+      "bytes": 636346,
+      "sha256": "cc66a1be56a0b2e722d247fca5a96ae8daaf0d496f009b19524bec28f74ec3d0",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-tree-explore.png",
+      "bytes": 629374,
+      "sha256": "162a61a0c8243724003e75d194a9674a06a8a8e0c669cdfcdde2cfec4f0b7894",
+      "matches": true
+    },
+    {
+      "path": "after/mobile-windmill-explore.png",
+      "bytes": 593582,
+      "sha256": "44640df5cfaf8f14c26cc1b727f9651684fc4d9d3af5ad7dcfd1727902ddc92e",
+      "matches": true
+    },
+    {
+      "path": "after/panorama-pure.png",
+      "bytes": 181655,
+      "sha256": "48243323df279a094b2d47157a8c893561a20925bfd65370ff7d1c1f90dc6369",
+      "matches": true
+    },
+    {
+      "path": "after/qa-crystal-back.png",
+      "bytes": 195455,
+      "sha256": "f00fbd1b2688b8658361173b77fc5688ea4fb5faec07fa4531a1e16ccd81dcce",
+      "matches": true
+    },
+    {
+      "path": "after/qa-crystal-front.png",
+      "bytes": 289313,
+      "sha256": "7920eab41d96a38afbea5b6a32eaceef9e344f7babc2c29dd08291eb597e6b32",
+      "matches": true
+    },
+    {
+      "path": "after/qa-crystal-side.png",
+      "bytes": 277791,
+      "sha256": "5fc7c6a503463c6a379efdccfa32e1bbf51fa1a747295623c5091d8789b997f7",
+      "matches": true
+    },
+    {
+      "path": "after/qa-crystal-top.png",
+      "bytes": 435856,
+      "sha256": "a6a54809f9230e2fab72b877d95a87c2e122ee9ad8e51d8835d8340210c3b909",
+      "matches": true
+    },
+    {
+      "path": "after/qa-home-back.png",
+      "bytes": 293773,
+      "sha256": "d98b7467c63302406436c877c151f2017a0561e287c8353c6386591d447bce17",
+      "matches": true
+    },
+    {
+      "path": "after/qa-home-front.png",
+      "bytes": 227479,
+      "sha256": "facad6bbd22ad98c9605ea92556cb4bcc4f066eb111af6e96ce39920c1eb686a",
+      "matches": true
+    },
+    {
+      "path": "after/qa-home-side.png",
+      "bytes": 274043,
+      "sha256": "5a05d0a5bab3d77cdfe2edc27a3f4bc832c230adec0b10627846f48f10adbc20",
+      "matches": true
+    },
+    {
+      "path": "after/qa-home-top.png",
+      "bytes": 376495,
+      "sha256": "aefb80b9896adf6b65de8b871b7e19f3bef9a30b5a2bd68fe04e6d8a11effecd",
+      "matches": true
+    },
+    {
+      "path": "after/qa-koi-back.png",
+      "bytes": 193986,
+      "sha256": "2895b1564439be71d2dd023f3006e01b8a9d5850512d0df2d8d99997912d60fb",
+      "matches": true
+    },
+    {
+      "path": "after/qa-koi-front.png",
+      "bytes": 301614,
+      "sha256": "125064cc097540bc09c5d0acbef60f1da9b4221a2241320059f2061fca487c11",
+      "matches": true
+    },
+    {
+      "path": "after/qa-koi-side.png",
+      "bytes": 190273,
+      "sha256": "83427e6e3505e1f32389ee4fc4c23d9f014d6cf6eb1ef2cb1520a5299e6e7bc5",
+      "matches": true
+    },
+    {
+      "path": "after/qa-koi-top.png",
+      "bytes": 406610,
+      "sha256": "7bac9b2f30e688c6c0da2febfc6af1ecdc51cecb0a73da8e9b4d617ecd68ce7e",
+      "matches": true
+    },
+    {
+      "path": "after/qa-lookout-back.png",
+      "bytes": 153123,
+      "sha256": "d0dcdbcb62343d107fd55daefacf05fb9ebaf7e4e3f3c13d5e7f6ff43bfc3264",
+      "matches": true
+    },
+    {
+      "path": "after/qa-lookout-front.png",
+      "bytes": 266501,
+      "sha256": "004cfa6d2a94f056c6f3c7eba9a28e5e41cada7c6c75cd68d317f7320c8d21df",
+      "matches": true
+    },
+    {
+      "path": "after/qa-lookout-side.png",
+      "bytes": 239865,
+      "sha256": "901185d13a4df6bcea6f43fd2c39bfd4e7bf9c891138c260b478bd9612c651d1",
+      "matches": true
+    },
+    {
+      "path": "after/qa-lookout-top.png",
+      "bytes": 405560,
+      "sha256": "f74467d8393304be33701dc8177a5ea8ae5fc6c13998753593586418d314aee8",
+      "matches": true
+    },
+    {
+      "path": "after/qa-meadow-back.png",
+      "bytes": 267064,
+      "sha256": "efa382455bcfcfc6217db73c597f05b4de58d006b1561740802b1d812471cb9c",
+      "matches": true
+    },
+    {
+      "path": "after/qa-meadow-front.png",
+      "bytes": 216853,
+      "sha256": "b3640102a08741dd8acafbf22a291d5f7075aaaecb5001854f5dacb77b6a8d13",
+      "matches": true
+    },
+    {
+      "path": "after/qa-meadow-side.png",
+      "bytes": 312135,
+      "sha256": "35093633ca707b950d0dad1ec1fdcafb49f4a80b01f416f4c7d2510f5b7103dd",
+      "matches": true
+    },
+    {
+      "path": "after/qa-meadow-top.png",
+      "bytes": 332234,
+      "sha256": "b51949725eb9bddae984e60bed4e57f2a7893d598003b27c58cc168cb2493dee",
+      "matches": true
+    },
+    {
+      "path": "after/qa-panorama-labelled.png",
+      "bytes": 212068,
+      "sha256": "8bd85cde982015f4c14eefd127cbf2401cdb7dbdf5fdc16f3a1b45d708a74ed6",
+      "matches": true
+    },
+    {
+      "path": "after/qa-temple-back.png",
+      "bytes": 235087,
+      "sha256": "b96aa42a4ada13554676bce891c37f201195b9b85026ca145a0038e3a32dbf06",
+      "matches": true
+    },
+    {
+      "path": "after/qa-temple-front.png",
+      "bytes": 223175,
+      "sha256": "22bfe85b63937346eba918ecd773386a0c8086375bd5f0f406408522e87544e2",
+      "matches": true
+    },
+    {
+      "path": "after/qa-temple-side.png",
+      "bytes": 184491,
+      "sha256": "64ab78780f531e2701431afec1b32bcf36732dcfd5f4f619636f1e7bad4205cb",
+      "matches": true
+    },
+    {
+      "path": "after/qa-temple-top.png",
+      "bytes": 427087,
+      "sha256": "479ea30dec4b00e49f7896885cc7cc57ba7b49df8eeabafd5b00003d49ba6cd0",
+      "matches": true
+    },
+    {
+      "path": "after/qa-tree-back.png",
+      "bytes": 297583,
+      "sha256": "37083392f61cbc0ddd5b861c69030873db1e9c7c966a10f83c92d364b6b96b46",
+      "matches": true
+    },
+    {
+      "path": "after/qa-tree-front.png",
+      "bytes": 230428,
+      "sha256": "3976f6821302fe1b69c1d2a9aec4d4dfa0f01825ac0427e056326f630d0425cd",
+      "matches": true
+    },
+    {
+      "path": "after/qa-tree-side.png",
+      "bytes": 237201,
+      "sha256": "9f931b421120424f7e926789d7d9da9cc6a0f9091feec1dc2f97a55291703f0a",
+      "matches": true
+    },
+    {
+      "path": "after/qa-tree-top.png",
+      "bytes": 415082,
+      "sha256": "957221b7510e080ced9c72a973086b25821fde401ef2120f33ac97d3d2b19ca6",
+      "matches": true
+    },
+    {
+      "path": "after/qa-windmill-back.png",
+      "bytes": 147590,
+      "sha256": "b4447fadb3c954b6335005f0732152b3b8bb108e38f3109803cf4146d4199eb9",
+      "matches": true
+    },
+    {
+      "path": "after/qa-windmill-front.png",
+      "bytes": 274035,
+      "sha256": "1a28a2daa6e88e970c5d246b9d016ddf915763ee8a7d5b4edb7b2b86c62eb7b2",
+      "matches": true
+    },
+    {
+      "path": "after/qa-windmill-side.png",
+      "bytes": 173468,
+      "sha256": "c9e5416a870afbec9704622916314fe3517fad4aa616be5ff321fe8b55c2ad0d",
+      "matches": true
+    },
+    {
+      "path": "after/qa-windmill-top.png",
+      "bytes": 437235,
+      "sha256": "80aa63b4b92adf3260db084f1f803b6160e5550b55dde282f319cc6c9981d9ee",
+      "matches": true
+    },
+    {
+      "path": "architecture-contact-sheet.png",
+      "bytes": 1708864,
+      "sha256": "3f33253ff1dcd0a03b0fe12c690d5bdd4667c514020791a559abdbe23b5927ff",
+      "matches": true
+    },
+    {
+      "path": "before/desktop-crystal-explore.png",
+      "bytes": 668089,
+      "sha256": "b40116f4f9b46e5e98a49155555046f4451bd03b49710437b6a6f860ca5de760",
+      "matches": true
+    },
+    {
+      "path": "before/desktop-home-explore.png",
+      "bytes": 486716,
+      "sha256": "a87093045c2cc1effd116abe3c1ceb6a8dd3a74d6ac2b714d10d362942d8e558",
+      "matches": true
+    },
+    {
+      "path": "before/desktop-koi-explore.png",
+      "bytes": 617617,
+      "sha256": "54b78e39096a1030bc9c6ce2797737200cc93a7df1d675d162d231be32a9d059",
+      "matches": true
+    },
+    {
+      "path": "before/desktop-lookout-explore.png",
+      "bytes": 615731,
+      "sha256": "e9de272b9a47f49670dad11f6dbe73ff9a9c2e893726e45f122c87ebbd70ef6a",
+      "matches": true
+    },
+    {
+      "path": "before/desktop-meadow-explore.png",
+      "bytes": 517763,
+      "sha256": "5d7e5cbb347ea9b1a2f81b4ab9bf3ba83d028f1157a07fd435dc37bbf9fe32fc",
+      "matches": true
+    },
+    {
+      "path": "before/desktop-temple-explore.png",
+      "bytes": 461423,
+      "sha256": "4a21ba3ee996609fba27a631787de749d2aa365bca8ce32ae618759614b1bda1",
+      "matches": true
+    },
+    {
+      "path": "before/desktop-tree-explore.png",
+      "bytes": 517827,
+      "sha256": "5a4970fd593dc8670501c518fa5f2a3d765b1cdf4ed42a3955cd9c049078f1f8",
+      "matches": true
+    },
+    {
+      "path": "before/desktop-windmill-explore.png",
+      "bytes": 596612,
+      "sha256": "a3e1cbe7f1f6bbb96d3605654bdb432397beb69d413828d5bf3fc81fc702bb18",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-crystal-explore.png",
+      "bytes": 831753,
+      "sha256": "f1cfcf4429a0858b2cc3bff727509c0f6ecf7b1a2bcd3ece09d1b5d02fe80e23",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-home-explore.png",
+      "bytes": 692645,
+      "sha256": "a54e839d25032658e55182605239092d13150b1cc53454ea14e11b64814b3df5",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-koi-explore.png",
+      "bytes": 811592,
+      "sha256": "9131448f00a8174f4749a8a73095dfe8c1b18bc8c6917e2676be15b07d817b5e",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-landscape-home.png",
+      "bytes": 1311831,
+      "sha256": "7badd9b4445a88ff19748da5eeac1867f397af77f8d816e211801f8f5bf2eb23",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-lookout-explore.png",
+      "bytes": 731668,
+      "sha256": "86ec8f90107529dd70be57001aba91b676d8bde2faea6cb07331719be34db4ae",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-meadow-explore.png",
+      "bytes": 702021,
+      "sha256": "7cbee39cdfefa622e7d47b0653b56034c5a810ea4bf5551208c5fc381d84c3ea",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-panorama.png",
+      "bytes": 221426,
+      "sha256": "afab0c47f866e258aa1453e354c5a0be2d7e41be3f3fad2da7af23615ebf6d81",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-temple-explore.png",
+      "bytes": 633765,
+      "sha256": "c8ba19789f953c15599558ea35284872d6813a09dda6a993c060189eb5e72deb",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-tree-explore.png",
+      "bytes": 639459,
+      "sha256": "a6e336191edb3786967accb387423bf5443bc4f00b9108c83052e2f975738ef6",
+      "matches": true
+    },
+    {
+      "path": "before/mobile-windmill-explore.png",
+      "bytes": 665234,
+      "sha256": "af10602aacd9123d08c8181bf276e873fc128a7c0110837a5186ff099373d813",
+      "matches": true
+    },
+    {
+      "path": "before/panorama-pure.png",
+      "bytes": 155772,
+      "sha256": "377a1536c3f1411caeae7a315c37db0d11499bc782832efde51c491eec047b61",
+      "matches": true
+    },
+    {
+      "path": "before/qa-panorama-labelled.png",
+      "bytes": 186460,
+      "sha256": "c315c9bbee388a2b3f1c4dd83f6678a41d6307effc2fd89288d46bd937e531fb",
+      "matches": true
+    },
+    {
+      "path": "comparison/after-crystal.png",
+      "bytes": 559567,
+      "sha256": "64e45f1d0ac50e0600c673e7e379f35bdc4e52d4419ad5c8fcbefdc24fe73fe7",
+      "matches": true
+    },
+    {
+      "path": "comparison/after-home.png",
+      "bytes": 445115,
+      "sha256": "80f5dd7cb49feb67bf0774e939fdf2fe64198e89e256e75b830fc35368ce2d5d",
+      "matches": true
+    },
+    {
+      "path": "comparison/after-koi.png",
+      "bytes": 546523,
+      "sha256": "4351ec02a360ea0831f0575d59d33c6ce21de224f0d56bae5abf2866badad302",
+      "matches": true
+    },
+    {
+      "path": "comparison/after-lookout.png",
+      "bytes": 490978,
+      "sha256": "8b46a6bd42599552beb719254ab439083e9f31e37152a5eb24543952ce5499c3",
+      "matches": true
+    },
+    {
+      "path": "comparison/after-meadow.png",
+      "bytes": 443352,
+      "sha256": "54ce70f82d7e27990876e8be6e6291199b5deb4dec35537534d8873d343b6f1d",
+      "matches": true
+    },
+    {
+      "path": "comparison/after-temple.png",
+      "bytes": 441700,
+      "sha256": "65cea50468c6435489f3412fb584a5972850fc109361903dba3997a766ff3bb5",
+      "matches": true
+    },
+    {
+      "path": "comparison/after-tree.png",
+      "bytes": 461394,
+      "sha256": "c156a3e50f57bebf6688959133ecb72f571550dc95d846ae41a07fabca08152a",
+      "matches": true
+    },
+    {
+      "path": "comparison/after-windmill.png",
+      "bytes": 503629,
+      "sha256": "8098b07f18520011c931b810e70ddf85a309d3a2ef00cad2d1776fff1c12ced6",
+      "matches": true
+    },
+    {
+      "path": "comparison/before-crystal.png",
+      "bytes": 658509,
+      "sha256": "f8165cf134922df9509fd2583c8e5d58d9090c59724237c120099f4dcdc9b6d9",
+      "matches": true
+    },
+    {
+      "path": "comparison/before-home.png",
+      "bytes": 460544,
+      "sha256": "c684e42ce89393afb644dec4d04a9ebea3f711254fa8e516cf7877bc3b1fbc28",
+      "matches": true
+    },
+    {
+      "path": "comparison/before-koi.png",
+      "bytes": 670149,
+      "sha256": "6bd8f27e48d9fa2c1b6c558213a78eae3a0621ffce4e893d40473069e4816fd1",
+      "matches": true
+    },
+    {
+      "path": "comparison/before-lookout.png",
+      "bytes": 598925,
+      "sha256": "9c2ee6a33fd275fa380a143f4abe10faabf5c46cf5cfd722fe326b250a008554",
+      "matches": true
+    },
+    {
+      "path": "comparison/before-meadow.png",
+      "bytes": 492226,
+      "sha256": "f59a7f9225348e5019ecef8a600d4ccadb43ee20bce733e66ddc8fd5aebf76a2",
+      "matches": true
+    },
+    {
+      "path": "comparison/before-temple.png",
+      "bytes": 452657,
+      "sha256": "56078f9f370ff2825b7d10320064033e30974eb620d4784d272b51a286f54c31",
+      "matches": true
+    },
+    {
+      "path": "comparison/before-tree.png",
+      "bytes": 504289,
+      "sha256": "909f6cd2258153602564aefac092c515815795e6d00a06ce1295c3c105dd6042",
+      "matches": true
+    },
+    {
+      "path": "comparison/before-windmill.png",
+      "bytes": 572304,
+      "sha256": "594d22aa111a6e3763b462359c11f82a9dd4efce35f52cf08c8a384ec2d9986c",
+      "matches": true
+    },
+    {
+      "path": "normal-operation.mp4",
+      "bytes": 64531811,
+      "sha256": "a9842361860ad217cc622be054a55e4d7a7ae35927c72bfcb3c630fa9027eedc",
+      "matches": true
+    }
+  ]
+}

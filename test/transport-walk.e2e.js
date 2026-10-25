@@ -24,7 +24,7 @@ test('transport actual Player: station recess, platform, NPC space, safe edge, o
   // Rail fences isolate the entire swept animated train volume from walking.
   land(3.5,-5.85);for(let i=0;i<90;i++)tick(0,-1);const railStop=p.pos.z;
   let edges=0;
-  for(const wall of w.transport.edgeBarriers){const mx=(wall.a.x+wall.b.x)/2,mz=(wall.a.z+wall.b.z)/2,len=Math.hypot(mx,mz);land(mx*(len-.9)/len,mz*(len-.9)/len);
+  for(const wall of w.bridges.barriers.filter(w=>w.island==='home')){const mx=(wall.a.x+wall.b.x)/2,mz=(wall.a.z+wall.b.z)/2,len=Math.hypot(mx,mz);land(mx*(len-.9)/len,mz*(len-.9)/len);
     for(let i=0;i<80;i++){tick(mx/len,mz/len);if(!p.move.grounded)throw Error(`edge ground loss ${JSON.stringify(p.pos)}`);}
     if(p.respawnCount)throw Error(`edge leak ${JSON.stringify(p.pos)}`);edges++;
   }
