@@ -1,0 +1,105 @@
+{
+  "note": "Latest verified outcome for each final station case. Initial two open-air height assertions were incorrect, corrected to paired actual-Player controls. Raw runs retained. No product code changed for the correction.",
+  "passed": 14,
+  "unresolvedFailures": 0,
+  "cases": [
+    {
+      "project": "desktop",
+      "case": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+      "status": "expected",
+      "report": "headroom-browser-results.json",
+      "durationMS": 10157
+    },
+    {
+      "project": "mobile",
+      "case": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+      "status": "expected",
+      "report": "headroom-browser-results.json",
+      "durationMS": 20214
+    },
+    {
+      "project": "desktop",
+      "case": "native scene information and five clues use the readable existing modal; close resumes exploration",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 43725
+    },
+    {
+      "project": "desktop",
+      "case": "retained train is visible from the accessible east viewing point; orbit checks record real occlusion",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 9962
+    },
+    {
+      "project": "mobile",
+      "case": "native scene information and five clues use the readable existing modal; close resumes exploration",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 104771
+    },
+    {
+      "project": "mobile",
+      "case": "retained train is visible from the accessible east viewing point; orbit checks record real occlusion",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 17487
+    },
+    {
+      "project": "desktop",
+      "case": "transport actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 13873
+    },
+    {
+      "project": "desktop",
+      "case": "transport portrait and landscape keep policy, panorama and existing input available",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 31688
+    },
+    {
+      "project": "desktop",
+      "case": "original home chime responds to native keyboard or touchscreen interaction",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 16284
+    },
+    {
+      "project": "mobile",
+      "case": "transport actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 20026
+    },
+    {
+      "project": "mobile",
+      "case": "transport portrait and landscape keep policy, panorama and existing input available",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 77410
+    },
+    {
+      "project": "mobile",
+      "case": "original home chime responds to native keyboard or touchscreen interaction",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 27658
+    },
+    {
+      "project": "desktop",
+      "case": "transport scene preserves policy picking, jumping, orbit and bounded train animation",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 29115
+    },
+    {
+      "project": "mobile",
+      "case": "transport scene preserves policy picking, jumping, orbit and bounded train animation",
+      "status": "expected",
+      "report": "station-browser-initial-results.json",
+      "durationMS": 44072
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import {buildPolicyScenery,THEMES,PLACE_PLAN} from '../src/world/policy-scenery.js';
 import {ISLANDS} from '../src/world/islands.js';
-import {buildTransport} from '../src/world/transport.js';
+import {buildTransport} from './helpers/station-fixture.js';
 import layout from '../src/data/yuan-layout.json' with {type:'json'};
 import surface from '../src/data/yuan-surface.json' with {type:'json'};
 import {moveWithGuards,nearestOnSegment} from '../src/sim/walkways.js';

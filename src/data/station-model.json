@@ -1,0 +1,48 @@
+{
+  "url": "/prototypes/transport-station/transport-station.glb",
+  "sourceBranch": "codex/transport-station-blender-prototype-v1",
+  "sourceCommit": "6acf7bee301173fda1a5075186295cdfe5fdcdf2",
+  "sha256": "56a8d8f511242ae3c825e60af5b752b831f8287d372845b9ed06858602a6c6e4",
+  "scale": 0.74,
+  "position": [
+    -0.5,
+    -0.0259,
+    -3.2
+  ],
+  "yaw": 0,
+  "capsuleHeight": 1.6,
+  "guardBaseBias": 0.1,
+  "entrance": [
+    -1.277,
+    0,
+    -2.72
+  ],
+  "entryRecess": [
+    -1.277,
+    0.2479,
+    -4.77
+  ],
+  "platformWalk": [
+    [
+      4.9,
+      -2.5
+    ],
+    [
+      4.9,
+      -6.35
+    ],
+    [
+      3.3,
+      -6.35
+    ],
+    [
+      3.3,
+      -5.3
+    ],
+    [
+      1.9,
+      -5.3
+    ]
+  ],
+  "selectionNote": "Only original station architecture, entrance guides, platform canopy/supports and station name lettering; exclude the prototype terrain/train/landscape/scale figure/culture placeholders. No source model edits."
+}

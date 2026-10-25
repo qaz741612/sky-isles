@@ -1,0 +1,701 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/sky-isles/node_modules/.bin/playwright",
+      "test",
+      "test/transport-walk.e2e.js",
+      "test/transport-v4.e2e.js",
+      "test/transport.e2e.js",
+      "test/station-headroom.e2e.js",
+      "--retries=0",
+      "--reporter=json"
+    ],
+    "configFile": "/workspace/sky-isles/playwright.config.js",
+    "rootDir": "/workspace/sky-isles/test",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/sky-isles/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/sky-isles/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/workspace/sky-isles/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/workspace/sky-isles/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --port 4185 --strictPort",
+      "url": "http://127.0.0.1:4185",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "station-headroom.e2e.js",
+      "file": "station-headroom.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 14983,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m1.5183333452542631\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m1.5183333452542631\u001b[39m\n    at /workspace/sky-isles/test/station-headroom.e2e.js:14:251",
+                    "location": {
+                      "file": "/workspace/sky-isles/test/station-headroom.e2e.js",
+                      "column": 251,
+                      "line": 14
+                    },
+                    "snippet": "  12 |   }return{records,respawns:p.respawnCount};\n  13 |  });\n> 14 |  expect(result.respawns).toBe(0);for(const r of result.records.slice(0,2)){expect(r.ceiling).toBeGreaterThan(1.8);expect(r.maxFoot).toBeGreaterThanOrEqual(r.floor);expect(r.maxFoot+1.6).toBeLessThan(r.ceiling+.001);}expect(result.records[2].maxFoot).toBeGreaterThan(2);console.log(JSON.stringify(result));\n     |                                                                                                                                                                                                                                                           ^\n  15 | });\n  16 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/sky-isles/test/station-headroom.e2e.js",
+                        "column": 251,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m1.5183333452542631\u001b[39m\n\n  12 |   }return{records,respawns:p.respawnCount};\n  13 |  });\n> 14 |  expect(result.respawns).toBe(0);for(const r of result.records.slice(0,2)){expect(r.ceiling).toBeGreaterThan(1.8);expect(r.maxFoot).toBeGreaterThanOrEqual(r.floor);expect(r.maxFoot+1.6).toBeLessThan(r.ceiling+.001);}expect(result.records[2].maxFoot).toBeGreaterThan(2);console.log(JSON.stringify(result));\n     |                                                                                                                                                                                                                                                           ^\n  15 | });\n  16 |\n    at /workspace/sky-isles/test/station-headroom.e2e.js:14:251"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:42:32.550Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/sky-isles/test-results/station-headroom.e2e.js-im-98bf5-en-air-jump-stays-unchanged-desktop/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/sky-isles/test-results/station-headroom.e2e.js-im-98bf5-en-air-jump-stays-unchanged-desktop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/sky-isles/test-results/station-headroom.e2e.js-im-98bf5-en-air-jump-stays-unchanged-desktop/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/sky-isles/test/station-headroom.e2e.js",
+                    "column": 251,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5d98421aa2ef603ad808-9f5143cc43554f816443",
+          "file": "station-headroom.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 19997,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m1.5183333452542631\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m1.5183333452542631\u001b[39m\n    at /workspace/sky-isles/test/station-headroom.e2e.js:14:251",
+                    "location": {
+                      "file": "/workspace/sky-isles/test/station-headroom.e2e.js",
+                      "column": 251,
+                      "line": 14
+                    },
+                    "snippet": "  12 |   }return{records,respawns:p.respawnCount};\n  13 |  });\n> 14 |  expect(result.respawns).toBe(0);for(const r of result.records.slice(0,2)){expect(r.ceiling).toBeGreaterThan(1.8);expect(r.maxFoot).toBeGreaterThanOrEqual(r.floor);expect(r.maxFoot+1.6).toBeLessThan(r.ceiling+.001);}expect(result.records[2].maxFoot).toBeGreaterThan(2);console.log(JSON.stringify(result));\n     |                                                                                                                                                                                                                                                           ^\n  15 | });\n  16 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/sky-isles/test/station-headroom.e2e.js",
+                        "column": 251,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m2\u001b[39m\nReceived:   \u001b[31m1.5183333452542631\u001b[39m\n\n  12 |   }return{records,respawns:p.respawnCount};\n  13 |  });\n> 14 |  expect(result.respawns).toBe(0);for(const r of result.records.slice(0,2)){expect(r.ceiling).toBeGreaterThan(1.8);expect(r.maxFoot).toBeGreaterThanOrEqual(r.floor);expect(r.maxFoot+1.6).toBeLessThan(r.ceiling+.001);}expect(result.records[2].maxFoot).toBeGreaterThan(2);console.log(JSON.stringify(result));\n     |                                                                                                                                                                                                                                                           ^\n  15 | });\n  16 |\n    at /workspace/sky-isles/test/station-headroom.e2e.js:14:251"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:45:14.098Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/sky-isles/test-results/station-headroom.e2e.js-im-98bf5-en-air-jump-stays-unchanged-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/sky-isles/test-results/station-headroom.e2e.js-im-98bf5-en-air-jump-stays-unchanged-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/sky-isles/test-results/station-headroom.e2e.js-im-98bf5-en-air-jump-stays-unchanged-mobile/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/sky-isles/test/station-headroom.e2e.js",
+                    "column": 251,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5d98421aa2ef603ad808-2571198c4ab764794c84",
+          "file": "station-headroom.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "transport-v4.e2e.js",
+      "file": "transport-v4.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "native scene information and five clues use the readable existing modal; close resumes exploration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 43725,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:42:48.490Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "432cf3bed89f8441cd81-8316ac440393f0cb2625",
+          "file": "transport-v4.e2e.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "retained train is visible from the accessible east viewing point; orbit checks record real occlusion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9962,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"device\":\"desktop\",\"phases\":[0,0,1,1,1,2,3,2,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"platformPhases\":[6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6],\"rotations\":[{\"x\":0,\"z\":3.5,\"yaw\":0,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":0.8,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":1.6,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":2.4,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":3.2,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":4,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":4.8,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":5.6,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":0,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":0.8,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":1.6,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":2.4,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":3.2,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":4,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":4.8,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":5.6,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":0,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":0.8,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":1.6,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":2.4,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":3.2,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":4,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":4.8,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":5.6,\"blocked\":false}]}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:43:32.431Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "432cf3bed89f8441cd81-e08e989f84cf6b51067f",
+          "file": "transport-v4.e2e.js",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "native scene information and five clues use the readable existing modal; close resumes exploration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 104771,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:45:35.467Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "432cf3bed89f8441cd81-1e8a334fd51c2f970545",
+          "file": "transport-v4.e2e.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "retained train is visible from the accessible east viewing point; orbit checks record real occlusion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17487,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"device\":\"mobile\",\"phases\":[0,0,1,1,1,2,3,2,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"platformPhases\":[6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,4,4,4,4,4,5,6,6,6],\"rotations\":[{\"x\":0,\"z\":3.5,\"yaw\":0,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":0.8,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":1.6,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":2.4,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":3.2,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":4,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":4.8,\"blocked\":false},{\"x\":0,\"z\":3.5,\"yaw\":5.6,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":0,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":0.8,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":1.6,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":2.4,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":3.2,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":4,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":4.8,\"blocked\":false},{\"x\":-1.277,\"z\":-2.5,\"yaw\":5.6,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":0,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":0.8,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":1.6,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":2.4,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":3.2,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":4,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":4.8,\"blocked\":false},{\"x\":4.9,\"z\":-6.35,\"yaw\":5.6,\"blocked\":false}]}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:47:20.469Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "432cf3bed89f8441cd81-419794eed9b2f866feee",
+          "file": "transport-v4.e2e.js",
+          "line": 32,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "transport-walk.e2e.js",
+      "file": "transport-walk.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "transport actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13873,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"platformY\":0.11999999865889549,\"buildingStop\":-3.4744900267028807,\"railStop\":-6.63999,\"edges\":23,\"passive\":0,\"bounce\":16.5,\"murals\":[{\"order\":0,\"chime\":2,\"position\":[-4.2,1.04,3.5]},{\"order\":1,\"chime\":4,\"position\":[-4.85,1.04,3.5]},{\"order\":2,\"chime\":0,\"position\":[-5.5,1.04,3.5]},{\"order\":3,\"chime\":3,\"position\":[-6.15,1.04,3.5]},{\"order\":4,\"chime\":1,\"position\":[-6.8,1.04,3.5]}],\"chimes\":5,\"order\":[2,4,0,3,1],\"progress\":5,\"checkpoint\":[5.6,1.1920929021691506e-8,-2.65],\"returned\":[5.6,0.40000001192092904,-2.65],\"respawns\":1}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:43:42.446Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-36f78b231358c650828d",
+          "file": "transport-walk.e2e.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "transport portrait and landscape keep policy, panorama and existing input available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31688,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:43:56.336Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-c0bad9a03fd011fdec8d",
+          "file": "transport-walk.e2e.js",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "original home chime responds to native keyboard or touchscreen interaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16284,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:44:28.061Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-12782cf0d718a1d2adb5",
+          "file": "transport-walk.e2e.js",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "transport actual Player: station recess, platform, NPC space, safe edge, original mushroom and mural puzzle",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20026,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"platformY\":0.11999999865889549,\"buildingStop\":-3.4744900267028807,\"railStop\":-6.63999,\"edges\":23,\"passive\":0,\"bounce\":16.5,\"murals\":[{\"order\":0,\"chime\":2,\"position\":[-4.2,1.04,3.5]},{\"order\":1,\"chime\":4,\"position\":[-4.85,1.04,3.5]},{\"order\":2,\"chime\":0,\"position\":[-5.5,1.04,3.5]},{\"order\":3,\"chime\":3,\"position\":[-6.15,1.04,3.5]},{\"order\":4,\"chime\":1,\"position\":[-6.8,1.04,3.5]}],\"chimes\":5,\"order\":[2,4,0,3,1],\"progress\":5,\"checkpoint\":[5.6,1.1920929021691506e-8,-2.65],\"returned\":[5.6,0.40000001192092904,-2.65],\"respawns\":1}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:47:38.061Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-a1e9739c70983bd506b8",
+          "file": "transport-walk.e2e.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "transport portrait and landscape keep policy, panorama and existing input available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 77410,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:47:58.155Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-f1cbd3572b9c50466b46",
+          "file": "transport-walk.e2e.js",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "original home chime responds to native keyboard or touchscreen interaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 27658,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:49:15.587Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-3d0aed152b926ad4c0c7",
+          "file": "transport-walk.e2e.js",
+          "line": 61,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "transport.e2e.js",
+      "file": "transport.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "transport scene preserves policy picking, jumping, orbit and bounded train animation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 29115,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:44:44.379Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4665add15f7e581af58d-7b183dd23c267d42375c",
+          "file": "transport.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "transport scene preserves policy picking, jumping, orbit and bounded train animation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 44072,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T16:49:43.331Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4665add15f7e581af58d-a8240f362b427a31f998",
+          "file": "transport.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T16:42:32.091Z",
+    "duration": 475724.326,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

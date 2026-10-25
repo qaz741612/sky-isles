@@ -1,0 +1,96 @@
+{
+  "commit": "7be0efe8f39b2ded7b27820a143515c733db6f0b",
+  "verified": 11,
+  "total": 11,
+  "method": "Downloaded committed raw GitHub files and compared exact byte count and SHA256. Includes all 8 PNGs, native MP4 and both original model files.",
+  "files": [
+    {
+      "path": "docs/previews/transport-station-glb-integration-v1/arrival-player.png",
+      "bytes": 484403,
+      "sha256": "15ef534a06881a4406fdb76be189cea95c5a2a2f0ed1b045cc0b1ad4517356b4",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/previews/transport-station-glb-integration-v1/arrival-player.png",
+      "downloadedBytes": 484403,
+      "verified": true
+    },
+    {
+      "path": "docs/previews/transport-station-glb-integration-v1/arrival-south-walkway.png",
+      "bytes": 512646,
+      "sha256": "5465565842d30b8748b2570dfd19b45587cafcacd17a2654fbf3c75646f63be2",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/previews/transport-station-glb-integration-v1/arrival-south-walkway.png",
+      "downloadedBytes": 512646,
+      "verified": true
+    },
+    {
+      "path": "docs/previews/transport-station-glb-integration-v1/island-45.png",
+      "bytes": 617491,
+      "sha256": "b1c3f34603574ac63b22c84bdb83feba902864d7e897144e3defa81080c248da",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/previews/transport-station-glb-integration-v1/island-45.png",
+      "downloadedBytes": 617491,
+      "verified": true
+    },
+    {
+      "path": "docs/previews/transport-station-glb-integration-v1/island-top.png",
+      "bytes": 414728,
+      "sha256": "2a0d34ed51d510a745435c5aa20411ac891f3c6ab76101148ba3ff5bc9c895ff",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/previews/transport-station-glb-integration-v1/island-top.png",
+      "downloadedBytes": 414728,
+      "verified": true
+    },
+    {
+      "path": "docs/previews/transport-station-glb-integration-v1/mobile-portrait.png",
+      "bytes": 699470,
+      "sha256": "badbf77d6acf00edc4d29e01a98894a7fa82e29ee8140ff73d3f677a2ffb86b8",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/previews/transport-station-glb-integration-v1/mobile-portrait.png",
+      "downloadedBytes": 699470,
+      "verified": true
+    },
+    {
+      "path": "docs/previews/transport-station-glb-integration-v1/native-operation.mp4",
+      "bytes": 6847252,
+      "sha256": "9691497443a6ab522928faa997eacc964138f4f6cf084a5a276f7243a2b08b86",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/previews/transport-station-glb-integration-v1/native-operation.mp4",
+      "downloadedBytes": 6847252,
+      "verified": true
+    },
+    {
+      "path": "docs/previews/transport-station-glb-integration-v1/station-front.png",
+      "bytes": 250028,
+      "sha256": "bf80cb3c995c28791fb96f408c7c9f815e9fce03f76fd24a9dc6b96667403b35",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/previews/transport-station-glb-integration-v1/station-front.png",
+      "downloadedBytes": 250028,
+      "verified": true
+    },
+    {
+      "path": "docs/previews/transport-station-glb-integration-v1/station-side-train.png",
+      "bytes": 404610,
+      "sha256": "221a5d8fee9cf7f999ef6657c4df6c9260ad4cab2840c2723384015f83b039b5",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/previews/transport-station-glb-integration-v1/station-side-train.png",
+      "downloadedBytes": 404610,
+      "verified": true
+    },
+    {
+      "path": "docs/previews/transport-station-glb-integration-v1/yuan-panorama.png",
+      "bytes": 181668,
+      "sha256": "d56433094bb9add22bc2b26477aebae9d076e4702cb95afa59bef564324df09f",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/previews/transport-station-glb-integration-v1/yuan-panorama.png",
+      "downloadedBytes": 181668,
+      "verified": true
+    },
+    {
+      "path": "public/prototypes/transport-station/transport-station.glb",
+      "bytes": 1610992,
+      "sha256": "56a8d8f511242ae3c825e60af5b752b831f8287d372845b9ed06858602a6c6e4",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/public/prototypes/transport-station/transport-station.glb",
+      "downloadedBytes": 1610992,
+      "verified": true
+    },
+    {
+      "path": "docs/design/transport-station-blender-prototype/transport-station.blend",
+      "bytes": 387120,
+      "sha256": "80a6c0199c39602c6fbef8820ec05df35bd0c50dc63bccd606a14577dee9c652",
+      "url": "https://raw.githubusercontent.com/qaz741612/sky-isles/7be0efe8f39b2ded7b27820a143515c733db6f0b/docs/design/transport-station-blender-prototype/transport-station.blend",
+      "downloadedBytes": 387120,
+      "verified": true
+    }
+  ]
+}

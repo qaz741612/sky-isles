@@ -1,0 +1,365 @@
+{
+  "views": {
+    "arrival-player": {
+      "kind": "default player camera, original spawn; no teleport or custom camera",
+      "sourceAsset": "/assets/index-CvzgTfWg.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        2.082653820769478,
+        10.495325353658773,
+        16.49098189421875
+      ],
+      "calls": 170,
+      "triangles": 39789,
+      "textures": 15,
+      "station": {
+        "bounds": {
+          "isBox3": true,
+          "min": {
+            "x": -5.9278998374938965,
+            "y": -2.646446173315553e-9,
+            "z": -7.236700057983398
+          },
+          "max": {
+            "x": 4.254499912261963,
+            "y": 3.886850595474243,
+            "z": -2.052999973297119
+          }
+        },
+        "triangles": 5368,
+        "meshes": 16,
+        "barriers": 319
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      }
+    },
+    "arrival-south-walkway": {
+      "kind": "engineering-positioned on the existing shared south gate; unchanged player follow/orbit camera, not a first-person mode",
+      "sourceAsset": "/assets/index-CvzgTfWg.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        0.6238197278431087,
+        10.533625304718358,
+        20.713853479692354
+      ],
+      "calls": 165,
+      "triangles": 39169,
+      "textures": 15,
+      "station": {
+        "bounds": {
+          "isBox3": true,
+          "min": {
+            "x": -5.9278998374938965,
+            "y": -2.646446173315553e-9,
+            "z": -7.236700057983398
+          },
+          "max": {
+            "x": 4.254499912261963,
+            "y": 3.886850595474243,
+            "z": -2.052999973297119
+          }
+        },
+        "triangles": 5368,
+        "meshes": 16,
+        "barriers": 319
+      },
+      "player": [
+        -1.7,
+        1.1920929021691506e-8,
+        8.3
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      }
+    },
+    "island-top": {
+      "kind": "QA camera in actual game, frozen train phase; not default exploration",
+      "sourceAsset": "/assets/index-CvzgTfWg.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        0,
+        28,
+        0
+      ],
+      "calls": 152,
+      "triangles": 41718,
+      "textures": 15,
+      "station": {
+        "bounds": {
+          "isBox3": true,
+          "min": {
+            "x": -5.9278998374938965,
+            "y": -2.646446173315553e-9,
+            "z": -7.236700057983398
+          },
+          "max": {
+            "x": 4.254499912261963,
+            "y": 3.886850595474243,
+            "z": -2.052999973297119
+          }
+        },
+        "triangles": 5368,
+        "meshes": 16,
+        "barriers": 319
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      }
+    },
+    "island-45": {
+      "kind": "QA camera in actual game, frozen train phase; not default exploration",
+      "sourceAsset": "/assets/index-CvzgTfWg.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        13,
+        18,
+        17
+      ],
+      "calls": 182,
+      "triangles": 44123,
+      "textures": 15,
+      "station": {
+        "bounds": {
+          "isBox3": true,
+          "min": {
+            "x": -5.9278998374938965,
+            "y": -2.646446173315553e-9,
+            "z": -7.236700057983398
+          },
+          "max": {
+            "x": 4.254499912261963,
+            "y": 3.886850595474243,
+            "z": -2.052999973297119
+          }
+        },
+        "triangles": 5368,
+        "meshes": 16,
+        "barriers": 319
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      }
+    },
+    "station-front": {
+      "kind": "QA camera in actual game, frozen train phase; not default exploration",
+      "sourceAsset": "/assets/index-CvzgTfWg.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -0.8,
+        4.5,
+        3.6
+      ],
+      "calls": 98,
+      "triangles": 29088,
+      "textures": 15,
+      "station": {
+        "bounds": {
+          "isBox3": true,
+          "min": {
+            "x": -5.9278998374938965,
+            "y": -2.646446173315553e-9,
+            "z": -7.236700057983398
+          },
+          "max": {
+            "x": 4.254499912261963,
+            "y": 3.886850595474243,
+            "z": -2.052999973297119
+          }
+        },
+        "triangles": 5368,
+        "meshes": 16,
+        "barriers": 319
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      }
+    },
+    "station-side-train": {
+      "kind": "QA camera in actual game, frozen train phase; not default exploration",
+      "sourceAsset": "/assets/index-CvzgTfWg.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        9,
+        5.2,
+        -9
+      ],
+      "calls": 194,
+      "triangles": 50794,
+      "textures": 15,
+      "station": {
+        "bounds": {
+          "isBox3": true,
+          "min": {
+            "x": -5.9278998374938965,
+            "y": -2.646446173315553e-9,
+            "z": -7.236700057983398
+          },
+          "max": {
+            "x": 4.254499912261963,
+            "y": 3.886850595474243,
+            "z": -2.052999973297119
+          }
+        },
+        "triangles": 5368,
+        "meshes": 16,
+        "barriers": 319
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      }
+    },
+    "yuan-panorama": {
+      "kind": "actual built-in panorama mode",
+      "sourceAsset": "/assets/index-CvzgTfWg.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -0.3850549999999977,
+        240,
+        28.923
+      ],
+      "calls": 356,
+      "triangles": 82656,
+      "textures": 15,
+      "station": {
+        "bounds": {
+          "isBox3": true,
+          "min": {
+            "x": -5.9278998374938965,
+            "y": -2.646446173315553e-9,
+            "z": -7.236700057983398
+          },
+          "max": {
+            "x": 4.254499912261963,
+            "y": 3.886850595474243,
+            "z": -2.052999973297119
+          }
+        },
+        "triangles": 5368,
+        "meshes": 16,
+        "barriers": 319
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      }
+    },
+    "mobile-portrait": {
+      "kind": "default player camera, original spawn; no teleport or custom camera",
+      "sourceAsset": "/assets/index-CvzgTfWg.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        2.0643252106654733,
+        15.161686511344081,
+        20.620062921295077
+      ],
+      "calls": 141,
+      "triangles": 33951,
+      "textures": 15,
+      "station": {
+        "bounds": {
+          "isBox3": true,
+          "min": {
+            "x": -5.9278998374938965,
+            "y": -2.646446173315553e-9,
+            "z": -7.236700057983398
+          },
+          "max": {
+            "x": 4.254499912261963,
+            "y": 3.886850595474243,
+            "z": -2.052999973297119
+          }
+        },
+        "triangles": 5368,
+        "meshes": 16,
+        "barriers": 319
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      }
+    }
+  },
+  "errors": []
+}

@@ -15,14 +15,14 @@ test('transport actual Player: station recess, platform, NPC space, safe edge, o
   const entrance=w.transport.plan.station.entrance,recess=w.transport.plan.station.entryRecess;
   land(0,3.5);walk(entrance[0],-2.5);walk(...[recess[0],recess[2]]);walk(entrance[0],-2.5);
   // Reach the north platform around the culture wall's open east end.
-  walk(5,-2.5);walk(5,-5.7);walk(-4.9,-5.7);walk(3.5,-5.7);
+  walk(4.9,-2.5);walk(4.9,-6.35);walk(3.3,-6.35);
   const platformY=p.pos.y;
-  walk(5,-5.85);walk(5,-2.5);
+  walk(4.9,-6.35);walk(4.9,-2.5);
   const reserve=w.transport.plan.npcReservation;walk(reserve.position[0],reserve.position[2]);walk(reserve.playerStop[0],reserve.playerStop[2]);
   // Walk directly into the west wing: explicit side collision must stop us.
   land(-3.7,-2.7);for(let i=0;i<90;i++)tick(0,-1);const buildingStop=p.pos.z;
   // Rail fences isolate the entire swept animated train volume from walking.
-  land(3.5,-5.85);for(let i=0;i<90;i++)tick(0,-1);const railStop=p.pos.z;
+  land(2.8,-6.35);for(let i=0;i<90;i++)tick(0,-1);const railStop=p.pos.z;
   let edges=0;
   for(const wall of w.bridges.barriers.filter(w=>w.island==='home')){const mx=(wall.a.x+wall.b.x)/2,mz=(wall.a.z+wall.b.z)/2,len=Math.hypot(mx,mz);land(mx*(len-.9)/len,mz*(len-.9)/len);
     for(let i=0;i<80;i++){tick(mx/len,mz/len);if(!p.move.grounded)throw Error(`edge ground loss ${JSON.stringify(p.pos)}`);}
@@ -37,7 +37,7 @@ test('transport actual Player: station recess, platform, NPC space, safe edge, o
   land(reserve.playerStop[0],reserve.playerStop[2]);const checkpoint=p.lastGrounded.toArray();p.teleport(100,-50,100);tick();
   return{platformY,buildingStop,railStop,edges,passive,bounce,murals,chimes:w.chimes.chimes.length,order,progress:w.puzzle.unlocked,checkpoint,returned:p.pos.toArray(),respawns:p.respawnCount};
  });
- expect(result.platformY).toBeCloseTo(.12,2);expect(result.buildingStop).toBeGreaterThan(-3.25);expect(result.railStop).toBeGreaterThan(-5.95);
+ expect(result.platformY).toBeCloseTo(.12,2);expect(result.buildingStop).toBeGreaterThan(-3.5);expect(result.railStop).toBeGreaterThan(-6.7);
  expect(result.edges).toBeGreaterThan(14);expect(result.passive).toBe(0);expect(result.bounce).toBeGreaterThan(12);
  expect(result.chimes).toBe(5);expect(result.murals.map(m=>m.chime)).toEqual(result.order);expect(result.progress).toBe(5);
  expect(result.respawns).toBe(1);expect(Math.hypot(result.returned[0]-result.checkpoint[0],result.returned[2]-result.checkpoint[2])).toBeLessThan(.01);

@@ -1,0 +1,131 @@
+{
+  "fullPrototypeGLBBounds": {
+    "min": [
+      -12,
+      -4.468082427978516,
+      -9
+    ],
+    "max": [
+      12.000000004152445,
+      5.287500885204661,
+      12.20304012298584
+    ]
+  },
+  "fullPrototypeGLBSizeXYZ": [
+    24.000000004152447,
+    9.755583313183177,
+    21.20304012298584
+  ],
+  "config": {
+    "url": "/prototypes/transport-station/transport-station.glb",
+    "sourceBranch": "codex/transport-station-blender-prototype-v1",
+    "sourceCommit": "6acf7bee301173fda1a5075186295cdfe5fdcdf2",
+    "sha256": "56a8d8f511242ae3c825e60af5b752b831f8287d372845b9ed06858602a6c6e4",
+    "scale": 0.74,
+    "position": [
+      -0.5,
+      -0.0259,
+      -3.2
+    ],
+    "yaw": 0,
+    "capsuleHeight": 1.6,
+    "guardBaseBias": 0.1,
+    "entrance": [
+      -1.277,
+      0,
+      -2.72
+    ],
+    "entryRecess": [
+      -1.277,
+      0.2479,
+      -4.77
+    ],
+    "platformWalk": [
+      [
+        4.9,
+        -2.5
+      ],
+      [
+        4.9,
+        -6.35
+      ],
+      [
+        3.3,
+        -6.35
+      ],
+      [
+        3.3,
+        -5.3
+      ],
+      [
+        1.9,
+        -5.3
+      ]
+    ],
+    "selectionNote": "Only original station architecture, entrance guides, platform canopy/supports and station name lettering; exclude the prototype terrain/train/landscape/scale figure/culture placeholders. No source model edits."
+  },
+  "originalSelectedStationSizeXYZ": [
+    13.759999661832243,
+    5.2525008082712015,
+    7.005000114440918
+  ],
+  "integratedSizeXYZ": [
+    10.18239974975586,
+    3.8868505981206893,
+    5.183700084686279
+  ],
+  "bounds": {
+    "min": [
+      -5.9278998374938965,
+      -2.646446173315553e-9,
+      -7.236700057983398
+    ],
+    "max": [
+      4.254499912261963,
+      3.886850595474243,
+      -2.052999973297119
+    ]
+  },
+  "maxVertexRadius": 8.830888577639177,
+  "doorClearHeight": 1.6650000902175903,
+  "playerCharacterSHA256": "604a07f30c6a7b0acde91c339de64655734dfc04914f3e14f7461de06b87307b",
+  "ceilingHookScope": "Optional Player callback, only while ascending within this station bounds; actual undersides, no changes to movement constants or character geometry",
+  "floorHeight": 0.24789999999999998,
+  "triangles": 5368,
+  "meshes": 16,
+  "barriers": 319,
+  "includedOriginalMeshes": [
+    "Terrain__Woven_timber",
+    "Architecture__Light_cut_stone",
+    "Station_interior_floor",
+    "Architecture__Warm_limestone_plaster",
+    "Architecture__Blue_green_glazing",
+    "Architecture__Woven_timber",
+    "Architecture__Oiled_oak",
+    "Architecture__Roof_panel_highlight",
+    "Architecture__Dark_teal_metal",
+    "Architecture__Standing_seam_blue_teal",
+    "Architecture__Glazing_reflection",
+    "Platform__Oiled_oak",
+    "Attached_platform_roof",
+    "Platform__Woven_timber",
+    "Wayfinding__Train_blue_stripe",
+    "Wayfinding__Dark_teal_metal"
+  ],
+  "unchangedSHA256": {
+    "src/data/yuan-plan.json": "244c3d8ba3b870536a9ca1059e29f31eda4fbdaf912ff930a52cf2fa11927059",
+    "src/data/yuan-layout.json": "1f93df62da9c038f616d817d9e65f696572d5a6656f90a37ffffec409eae4ba0",
+    "src/data/yuan-surface.json": "9300a0ff39797345e2bcc215dc4c5e18527302659ecfe04de08a260d0b6f78d2",
+    "src/data/island-places.json": "32cfa7113115ff3022a5ccf6e1c5e3f16ffc667986e8de22fedcaa16b923b02d",
+    "src/world/policy-scenery.js": "d77799845df2bff1effd70ec6ed1d6a52f15394e733081ff181d88353f760e57",
+    "src/world/islands.js": "6542eea9a3a798cc23d74a8ac650535106e0828a393835f1519b1c4b7e0eb32b",
+    "src/world/bridges.js": "2cb6df067f95c0e3c13f67fd3cdfe4819734a539aab8f296adaa943fbce3756d",
+    "src/sim/movement.js": "1aa6f30fffc45466484ceeee974af3e8372740dbf1a8f22433d8075862d2882a",
+    "src/ui.js": "87274f58d0075208b15622f9dbc5f5305abc75e3607cbce39491970eea3f5dc2",
+    "src/policies.js": "fd27ff981b817066fc0ab650599c164a17b2a155c169ce35712f861701b04701",
+    "public/data/policies.json": "83e6373ff9808bf8c65148b37e835a03fb32ac5041005229c15058de3e3c56ce",
+    "docs/design/transport-station-blender-prototype/transport-station.blend": "80a6c0199c39602c6fbef8820ec05df35bd0c50dc63bccd606a14577dee9c652",
+    "public/prototypes/transport-station/transport-station.glb": "56a8d8f511242ae3c825e60af5b752b831f8287d372845b9ed06858602a6c6e4"
+  },
+  "note": "Original full GLB is a diorama. Only station architecture/canopy/entrance/title are selected intact; its prototype terrain, train and scale figure are not instantiated. Existing game train, policies and puzzles remain."
+}

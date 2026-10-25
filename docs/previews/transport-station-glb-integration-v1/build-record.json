@@ -1,0 +1,51 @@
+{
+  "sourceBase": "6acf7bee301173fda1a5075186295cdfe5fdcdf2",
+  "branch": "codex/transport-station-glb-integration-v1",
+  "builtAsset": "/assets/index-CvzgTfWg.js",
+  "assetSHA256": "3708dc2d4eb9cd6ca41f7c5bad34fbbdec15dd79a006f56f98637830755af24c",
+  "assetBytes": 1023162,
+  "gzipBytes": 275457,
+  "node": "v24.19.0",
+  "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "allPNGsAndMovieUseSameBuiltAsset": true,
+  "media": "8 PNG + native-input MP4; no teleports or speed changes in movie",
+  "build": "passed",
+  "lint": "passed",
+  "unit": {
+    "passed": 49,
+    "failed": 0
+  },
+  "fullBrowser": {
+    "startTime": "2026-10-25T16:10:45.300Z",
+    "duration": 1904643.527,
+    "expected": 48,
+    "skipped": 4,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "finalStationValidatedCases": 14,
+  "headroomControlRun": {
+    "startTime": "2026-10-25T16:50:39.255Z",
+    "duration": 32117.173,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "performance": {
+    "historicalSamePanoramaPose": true,
+    "baselineRef": "d0dac231ff9c018bf5d9ed557822ba832b5ad63a (same src as model source 6acf7bee)",
+    "calls": [
+      345,
+      356
+    ],
+    "triangles": [
+      79006,
+      82656
+    ],
+    "textures": [
+      16,
+      15
+    ]
+  }
+}
