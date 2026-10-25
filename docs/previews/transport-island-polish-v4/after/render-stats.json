@@ -1,0 +1,365 @@
+{
+  "views": {
+    "spawn-view": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        2.103855840356414,
+        10.534279574320566,
+        16.536701391686947
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605668,
+        0.023616406877047625,
+        0.9522810424535579
+      ],
+      "calls": 137,
+      "triangles": 45294,
+      "transportMeshes": 24,
+      "transportTriangles": 4445,
+      "transportTextures": [
+        [
+          512,
+          74
+        ],
+        [
+          512,
+          49
+        ],
+        [
+          512,
+          65
+        ],
+        [
+          512,
+          43
+        ]
+      ],
+      "worldTextures": 15
+    },
+    "station-front": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -0.7,
+        3.8,
+        3
+      ],
+      "quaternion": [
+        -0.17429492363929042,
+        0.027704553921035935,
+        0.004905826502097158,
+        0.9842914558970537
+      ],
+      "calls": 86,
+      "triangles": 33264,
+      "transportMeshes": 24,
+      "transportTriangles": 4445,
+      "transportTextures": [
+        [
+          512,
+          74
+        ],
+        [
+          512,
+          49
+        ],
+        [
+          512,
+          65
+        ],
+        [
+          512,
+          43
+        ]
+      ],
+      "worldTextures": 15
+    },
+    "platform-train": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        6,
+        4.2,
+        -2.8
+      ],
+      "quaternion": [
+        -0.20480980005093263,
+        0.4788581108263595,
+        0.11596133830741498,
+        0.8457545882328161
+      ],
+      "calls": 112,
+      "triangles": 47038,
+      "transportMeshes": 24,
+      "transportTriangles": 4445,
+      "transportTextures": [
+        [
+          512,
+          74
+        ],
+        [
+          512,
+          49
+        ],
+        [
+          512,
+          65
+        ],
+        [
+          512,
+          43
+        ]
+      ],
+      "worldTextures": 15
+    },
+    "station-rear": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -5.7,
+        4.2,
+        -9
+      ],
+      "quaternion": [
+        0.0684666707626536,
+        0.9308397448348187,
+        0.23451753500462158,
+        -0.27175579148545154
+      ],
+      "calls": 171,
+      "triangles": 67732,
+      "transportMeshes": 24,
+      "transportTriangles": 4445,
+      "transportTextures": [
+        [
+          512,
+          74
+        ],
+        [
+          512,
+          49
+        ],
+        [
+          512,
+          65
+        ],
+        [
+          512,
+          43
+        ]
+      ],
+      "worldTextures": 15
+    },
+    "island-oblique": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        12,
+        16,
+        20
+      ],
+      "quaternion": [
+        -0.26830677090674854,
+        0.2419256760451618,
+        0.0698077091920027,
+        0.9298442491584544
+      ],
+      "calls": 145,
+      "triangles": 50478,
+      "transportMeshes": 24,
+      "transportTriangles": 4445,
+      "transportTextures": [
+        [
+          512,
+          74
+        ],
+        [
+          512,
+          49
+        ],
+        [
+          512,
+          65
+        ],
+        [
+          512,
+          43
+        ]
+      ],
+      "worldTextures": 15
+    },
+    "island-top": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        0,
+        28,
+        0
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 125,
+      "triangles": 49402,
+      "transportMeshes": 24,
+      "transportTriangles": 4445,
+      "transportTextures": [
+        [
+          512,
+          74
+        ],
+        [
+          512,
+          49
+        ],
+        [
+          512,
+          65
+        ],
+        [
+          512,
+          43
+        ]
+      ],
+      "worldTextures": 15
+    },
+    "yuan-panorama": {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -0.24405499999999947,
+        240,
+        27.553499999999996
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 301,
+      "triangles": 99066,
+      "transportMeshes": 24,
+      "transportTriangles": 4445,
+      "transportTextures": [
+        [
+          512,
+          74
+        ],
+        [
+          512,
+          49
+        ],
+        [
+          512,
+          65
+        ],
+        [
+          512,
+          43
+        ]
+      ],
+      "worldTextures": 15
+    },
+    "mobile-portrait": {
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        2.064326478356435,
+        15.161691714804313,
+        20.620068214829157
+      ],
+      "quaternion": [
+        -0.3281775628821791,
+        0.056630625926066096,
+        0.019714316632560354,
+        0.9427108809956776
+      ],
+      "calls": 117,
+      "triangles": 38888,
+      "transportMeshes": 24,
+      "transportTriangles": 4445,
+      "transportTextures": [
+        [
+          512,
+          74
+        ],
+        [
+          512,
+          49
+        ],
+        [
+          512,
+          65
+        ],
+        [
+          512,
+          43
+        ]
+      ],
+      "worldTextures": 15
+    },
+    "mobile-landscape": {
+      "viewport": [
+        932,
+        430
+      ],
+      "camera": [
+        2.3668378204009657,
+        11.663564521110636,
+        18.166289065647817
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605669,
+        0.02361640687704763,
+        0.9522810424535577
+      ],
+      "calls": 172,
+      "triangles": 51144,
+      "transportMeshes": 24,
+      "transportTriangles": 4445,
+      "transportTextures": [
+        [
+          512,
+          74
+        ],
+        [
+          512,
+          49
+        ],
+        [
+          512,
+          65
+        ],
+        [
+          512,
+          43
+        ]
+      ],
+      "worldTextures": 15
+    }
+  },
+  "errors": []
+}

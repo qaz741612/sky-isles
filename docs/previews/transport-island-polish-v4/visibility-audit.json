@@ -1,0 +1,16 @@
+[
+  {
+    "device": "desktop",
+    "animationSamples": 25,
+    "minimumVisibleTrainSamples": 3,
+    "rotationSamples": 24,
+    "blockedRotations": 0
+  },
+  {
+    "device": "mobile",
+    "animationSamples": 25,
+    "minimumVisibleTrainSamples": 3,
+    "rotationSamples": 24,
+    "blockedRotations": 0
+  }
+]

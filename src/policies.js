@@ -46,7 +46,7 @@ export class PolicyUI {
       labels.append(label);
       this.labels.push({ element: label, island, position: island.pos.clone().add(new THREE.Vector3(0, 2.5, 0)) });
     }
-    document.getElementById('policy-close').addEventListener('click', () => this.dialog.close());
+    document.getElementById('policy-close').addEventListener('click', () => { this.dialog.close(); this.restoreFocus(); });
     // Opening from canvas pointerup can retarget the compatibility click to
     // the new modal. Only a gesture that STARTED on its backdrop may close it.
     this.dialog.addEventListener('pointerdown', (event) => {
@@ -56,14 +56,21 @@ export class PolicyUI {
     this.dialog.addEventListener('pointercancel',()=>{this.backdropDown=false;});
     this.dialog.addEventListener('click', (event) => {
       const rect = this.dialog.getBoundingClientRect();
-      if (this.backdropDown && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) this.dialog.close();
+      if (this.backdropDown && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) { this.dialog.close(); this.restoreFocus(); }
       this.backdropDown=false;
     });
-    this.dialog.addEventListener('close', () => {
-      const menu = document.getElementById('policy-menu');
-      const target = this.previousFocus?.closest('#policy-list') ? menu.querySelector('summary') : this.previousFocus;
-      if (target?.isConnected) target.focus();
-    });
+    this.dialog.addEventListener('close', () => this.restoreFocus());
+  }
+
+  restoreFocus() {
+    const menu = document.getElementById('policy-menu');
+    const target = this.previousFocus?.closest('#policy-list') ? menu.querySelector('summary') : this.previousFocus;
+    if (target?.isConnected && target !== document.body && !this.dialog.contains(target)) target.focus();
+    if (!target || document.activeElement !== target || this.dialog.contains(target) || target === document.body) {
+      const canvas = document.getElementById('scene');
+      canvas.tabIndex = -1;
+      canvas.focus({ preventScroll: true });
+    }
   }
 
   get isOpen() { return this.dialog.open; }
@@ -105,6 +112,21 @@ export class PolicyUI {
     Object.assign(this.ui.input, { x: 0, z: 0, jumpPressed: false, jumpHeld: false });
     document.getElementById('policy-menu').open = false;
     this.dialog.showModal();
+  }
+
+  // Reuse the same accessible modal for user-supplied scene topics/clues.
+  // This does not mutate or supplement the formal policy JSON itself.
+  openSupplement(id, heading, items, notice) {
+    if (this.isOpen) return;
+    this.open(id);
+    if (!this.isOpen) return;
+    document.getElementById('policy-title').textContent = heading;
+    const content = document.getElementById('policy-content');
+    content.replaceChildren();
+    const note = document.createElement('p'); note.textContent = notice; content.append(note);
+    const list = document.createElement('ol');
+    for (const text of items) { const li = document.createElement('li'); li.textContent = text; list.append(li); }
+    content.append(list);
   }
 
   update(started, playerPosition, panorama = false, labelled = false) {

@@ -1,0 +1,9 @@
+file:///workspace/sky-isles/scripts/record-transport-v4.mjs:13
+ await keys([]);await page.waitForTimeout(200);if(Math.hypot(x-state.x,z-state.z)>.5)throw Error(`native walk stuck: ${JSON.stringify({x,z,state})}`);log.push({target:[x,z],state});
+                                                                                           ^
+
+Error: native walk stuck: {"x":2.25,"z":-2.6,"state":{"x":-5.80100640290026,"z":-2.536903124404375,"y":0.012000000104308128,"yaw":0.16,"respawns":0}}
+    at walk (file:///workspace/sky-isles/scripts/record-transport-v4.mjs:13:92)
+    at async file:///workspace/sky-isles/scripts/record-transport-v4.mjs:19:2
+
+Node.js v24.19.0

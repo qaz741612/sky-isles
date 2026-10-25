@@ -1,0 +1,182 @@
+[
+  {
+    "target": [
+      -1.8,
+      -2.5
+    ],
+    "state": {
+      "x": -1.7901001326760775,
+      "z": -2.2452405263496615,
+      "y": 0.012000000104308128,
+      "yaw": 0.16,
+      "respawns": 0,
+      "focus": "",
+      "keys": [
+        "KeyW"
+      ],
+      "modal": false
+    }
+  },
+  {
+    "target": [
+      -1.8,
+      -4.1
+    ],
+    "state": {
+      "x": -1.8730104058886217,
+      "z": -3.8298583482721815,
+      "y": 0.18000000715255737,
+      "yaw": 0.16,
+      "respawns": 0,
+      "focus": "",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ],
+      "modal": false
+    }
+  },
+  {
+    "target": [
+      -1.8,
+      -2.5
+    ],
+    "state": {
+      "x": -1.80523401615704,
+      "z": -2.813453141490777,
+      "y": 0.012000000104308128,
+      "yaw": 0.16,
+      "respawns": 0,
+      "focus": "",
+      "keys": [
+        "KeyS"
+      ],
+      "modal": false
+    }
+  },
+  {
+    "target": [
+      -5.8,
+      -2.5
+    ],
+    "state": {
+      "x": -5.471876509559872,
+      "z": -2.49544709957999,
+      "y": 0.012000000104308128,
+      "yaw": 0.16,
+      "respawns": 0,
+      "focus": "",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ],
+      "modal": false
+    }
+  },
+  {
+    "modal": "交通政策願景",
+    "visible": true
+  },
+  {
+    "target": [
+      2.25,
+      -2.6
+    ],
+    "state": {
+      "x": 2.1235427914469205,
+      "z": -2.4740457799891917,
+      "y": 0.012000000104308128,
+      "yaw": 0.16,
+      "respawns": 0,
+      "focus": "scene",
+      "keys": [
+        "KeyD"
+      ],
+      "modal": false
+    }
+  },
+  {
+    "target": [
+      5,
+      -2.5
+    ],
+    "state": {
+      "x": 4.75517429719563,
+      "z": -2.5619489082119715,
+      "y": 0.012000000104308017,
+      "yaw": 0.16,
+      "respawns": 0,
+      "focus": "scene",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ],
+      "modal": false
+    }
+  },
+  {
+    "target": [
+      5,
+      -5.85
+    ],
+    "state": {
+      "x": 4.887846429430939,
+      "z": -5.546904091711698,
+      "y": 0.012000000104308128,
+      "yaw": 0.16,
+      "respawns": 0,
+      "focus": "scene",
+      "keys": [
+        "KeyW"
+      ],
+      "modal": false
+    }
+  },
+  {
+    "target": [
+      3.5,
+      -5.85
+    ],
+    "state": {
+      "x": 3.697334662843553,
+      "z": -5.697704851827488,
+      "y": 0.11999999865889549,
+      "yaw": 0.16,
+      "respawns": 0,
+      "focus": "scene",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ],
+      "modal": false
+    }
+  },
+  {
+    "final": {
+      "chimesUnlocked": 0,
+      "islandCount": 8,
+      "respawnCount": 0,
+      "checkpoint": [
+        3.2843681203769006,
+        0.11999999865889549,
+        -5.81408378744003
+      ],
+      "playerPos": {
+        "x": 3.2843681203769006,
+        "y": 0.11999999865889549,
+        "z": -5.81408378744003
+      },
+      "panoramaMode": "explore",
+      "started": true,
+      "muralOrder": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ]
+    },
+    "sourceAsset": "/assets/index-2zaL7Num.js",
+    "description": "Native keyboard/mouse automated operation; silent browser recording, not human handheld footage."
+  }
+]

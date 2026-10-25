@@ -1,0 +1,47 @@
+
+Running 50 tests using 1 worker
+
+(node:84416) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › test/app.e2e.js:12:3 › 苑裡政策島 › loads without console errors and renders non-uniform pixels (28.4s)
+  ✓   2 [desktop] › test/app.e2e.js:55:3 › 苑裡政策島 › getState exposes the core game state (25.1s)
+  ✓   3 [desktop] › test/app.e2e.js:65:3 › 苑裡政策島 › all eight policies open from the menu and have no invented content (3.5m)
+  ✓   4 [desktop] › test/app.e2e.js:84:3 › 苑裡政策島 › world label opens matching policy and Escape closes the dialog (33.0s)
+  ✘   5 [desktop] › test/app.e2e.js:94:3 › 苑裡政策島 › teleport moves the player and fall respawns at last ground (11.7s)
+
+
+  1) [desktop] › test/app.e2e.js:94:3 › 苑裡政策島 › teleport moves the player and fall respawns at last ground 
+
+    Test was interrupted.
+
+    Error: page.evaluate: Test ended.
+
+      94 |   test('teleport moves the player and fall respawns at last ground', async ({ page }) => {
+      95 |     await waitForWorld(page);
+    > 96 |     const tree=await page.evaluate(()=>{const i=window.__skyisles.world.islands.islands.find(i=>i.name==='tree');window.__skyisles.teleport(i.pos.x,i.pos.y+1.5,i.pos.z);return{x:i.pos.x,z:i.pos.z};});
+         |                           ^
+      97 |     await page.waitForTimeout(400);
+      98 |     let state = await page.evaluate(() => window.__skyisles.getState());
+      99 |     expect(Math.abs(state.playerPos.x - tree.x)).toBeLessThan(1.5);
+        at /workspace/sky-isles/test/app.e2e.js:96:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/app.e2e.js-苑裡政策島-teleport--146e8-all-respawns-at-last-ground-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/app.e2e.js-苑裡政策島-teleport--146e8-all-respawns-at-last-ground-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/app.e2e.js-苑裡政策島-teleport--146e8-all-respawns-at-last-ground-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/app.e2e.js-苑裡政策島-teleport--146e8-all-respawns-at-last-ground-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: [desktop] › test/app.e2e.js (5.1m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 interrupted
+    [desktop] › test/app.e2e.js:94:3 › 苑裡政策島 › teleport moves the player and fall respawns at last ground 
+  45 did not run
+  4 passed (5.1m)
