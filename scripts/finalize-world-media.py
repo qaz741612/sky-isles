@@ -25,6 +25,11 @@ for row,name in enumerate(names):
 sheet.save(root/'architecture-contact-sheet.png')
 video=root/'normal-operation.mp4'
 probe=json.loads(subprocess.check_output(['ffprobe','-v','quiet','-print_format','json','-show_format','-show_streams',str(video)]))
+raw=Path('work/world-recording/normal-operation.webm')
+if raw.exists():
+    raw_probe=json.loads(subprocess.check_output(['ffprobe','-v','quiet','-print_format','json','-show_format','-show_streams',str(raw)]))
+    assert abs(float(raw_probe['format']['duration'])-float(probe['format']['duration']))<.1, 'Video time base changed'
+    probe['sourceWebm']={'retainedInWork':True,'bytes':raw.stat().st_size,'sha256':hashlib.sha256(raw.read_bytes()).hexdigest(),'durationSeconds':float(raw_probe['format']['duration'])}
 (root/'video-metadata.json').write_text(json.dumps(probe,indent=2))
 stream=next(s for s in probe['streams'] if s['codec_type']=='video')
 files=[]
@@ -32,13 +37,15 @@ for p in sorted(root.rglob('*')):
     if p.suffix.lower() not in ['.png','.mp4']:continue
     item={'path':p.relative_to(root).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
     if p.suffix.lower()=='.png':
-        with Image.open(p) as im:item.update(width=im.width,height=im.height)
+        with Image.open(p) as im:
+            item.update(width=im.width,height=im.height);im.verify()
         if p.name=='architecture-contact-sheet.png':item.update(role='QA collage of final native frames',sourceAsset=asset)
-        elif p.parent.name=='before':item.update(role='V4 native comparison frame',sourceCommit=record['base'])
+        elif p.parent.name=='before':item.update(role='V4 normal exploration frame; physical collision may adjust observer position',sourceCommit=record['base'])
+        elif p.parent.name=='comparison':item.update(role='Same-optics QA comparison, avatar/UI hidden',sourceCommit=record['base'] if p.name.startswith('before-') else record.get('sourceCommit'),sourceAsset='/assets/index-2zaL7Num.js' if p.name.startswith('before-') else asset)
         else:item.update(role='Final QA camera' if p.name.startswith('qa-') else 'Final normal exploration/panorama camera',sourceAsset=asset)
     else:item.update(width=stream['width'],height=stream['height'],durationSeconds=float(probe['format']['duration']),role='Normal-speed native automated keyboard/mouse game operation; no teleport or sim stepping; silent',sourceAsset=asset)
     files.append(item)
-manifest={'runtimeAsset':record['runtimeAsset'],'sourceCommitForBefore':record['base'],'files':files,'count':len(files),'totalBytes':sum(f['bytes'] for f in files)}
+manifest={'runtimeSourceCommit':record.get('sourceCommit'),'runtimeAsset':record['runtimeAsset'],'sourceCommitForBefore':record['base'],'files':files,'count':len(files),'totalBytes':sum(f['bytes'] for f in files)}
 (root/'media-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 (root/'SHA256SUMS').write_text(''.join(f"{f['sha256']}  {f['path']}\n" for f in files))
 print(json.dumps({'mediaCount':len(files),'totalBytes':manifest['totalBytes'],'videoSeconds':float(probe['format']['duration'])}))

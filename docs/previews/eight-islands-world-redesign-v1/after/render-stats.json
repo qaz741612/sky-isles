@@ -1,0 +1,1721 @@
+{
+  "views": {
+    "desktop-home-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        2.1038558325986276,
+        10.5342795719882,
+        16.536701374958255
+      ],
+      "quaternion": [
+        -0.2945750461995873,
+        0.0763454229872924,
+        0.02361640681719876,
+        0.9522810424840175
+      ],
+      "calls": 159,
+      "triangles": 36139,
+      "textures": 16,
+      "cameraQueryCPUms": 0.015833333258827527,
+      "cameraIndex": {
+        "queries": 231,
+        "candidates": 231,
+        "maxCandidates": 1
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ]
+    },
+    "qa-home-front": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        0,
+        6,
+        13
+      ],
+      "quaternion": [
+        -0.1891075211549513,
+        0,
+        0,
+        0.9819563867314217
+      ],
+      "calls": 156,
+      "triangles": 33665,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0016666666915019354,
+      "cameraIndex": {
+        "queries": 351,
+        "candidates": 351,
+        "maxCandidates": 1
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ]
+    },
+    "qa-home-side": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        13,
+        6,
+        0
+      ],
+      "quaternion": [
+        -0.13371921058204456,
+        0.6943480198872283,
+        0.13371921058204456,
+        0.6943480198872283
+      ],
+      "calls": 161,
+      "triangles": 42568,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333334078391393,
+      "cameraIndex": {
+        "queries": 471,
+        "candidates": 471,
+        "maxCandidates": 1
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ]
+    },
+    "qa-home-back": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        0,
+        6,
+        -13
+      ],
+      "quaternion": [
+        0,
+        0.9819563867314217,
+        0.18910752115495127,
+        0
+      ],
+      "calls": 261,
+      "triangles": 64457,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 591,
+        "candidates": 951,
+        "maxCandidates": 4
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ]
+    },
+    "qa-home-top": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        0,
+        26,
+        0
+      ],
+      "quaternion": [
+        -0.7071067811865474,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 137,
+      "triangles": 34269,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0016666666915019354,
+      "cameraIndex": {
+        "queries": 711,
+        "candidates": 1071,
+        "maxCandidates": 4
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ]
+    },
+    "desktop-tree-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -15.44613474010978,
+        10.534289017713498,
+        -3.1192967060688153
+      ],
+      "quaternion": [
+        -0.29457521307693474,
+        0.07634574319984043,
+        0.023616521236581235,
+        0.9522809623533512
+      ],
+      "calls": 65,
+      "triangles": 20656,
+      "textures": 16,
+      "cameraQueryCPUms": 0.005833333358168602,
+      "cameraIndex": {
+        "queries": 931,
+        "candidates": 4616,
+        "maxCandidates": 21
+      },
+      "player": [
+        -17.549999999999997,
+        1.1920928910669204e-8,
+        -16.156
+      ]
+    },
+    "qa-tree-front": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -17.549999999999997,
+        6,
+        -6.655999999999999
+      ],
+      "quaternion": [
+        -0.1891075211549513,
+        0,
+        0,
+        0.9819563867314217
+      ],
+      "calls": 68,
+      "triangles": 25676,
+      "textures": 16,
+      "cameraQueryCPUms": 0,
+      "cameraIndex": {
+        "queries": 1051,
+        "candidates": 4856,
+        "maxCandidates": 21
+      },
+      "player": [
+        -17.549999999999997,
+        1.1920928910669204e-8,
+        -16.156
+      ]
+    },
+    "qa-tree-side": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -4.549999999999997,
+        6,
+        -19.656
+      ],
+      "quaternion": [
+        -0.13371921058204456,
+        0.6943480198872283,
+        0.13371921058204456,
+        0.6943480198872283
+      ],
+      "calls": 95,
+      "triangles": 31805,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0191666666418314,
+      "cameraIndex": {
+        "queries": 1171,
+        "candidates": 6176,
+        "maxCandidates": 21
+      },
+      "player": [
+        -17.549999999999997,
+        1.1920928910669204e-8,
+        -16.156
+      ]
+    },
+    "qa-tree-back": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -17.549999999999997,
+        6,
+        -32.656
+      ],
+      "quaternion": [
+        0,
+        0.9819563867314217,
+        0.18910752115495127,
+        0
+      ],
+      "calls": 292,
+      "triangles": 68250,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333334078391393,
+      "cameraIndex": {
+        "queries": 1291,
+        "candidates": 6296,
+        "maxCandidates": 21
+      },
+      "player": [
+        -17.549999999999997,
+        1.1920928910669204e-8,
+        -16.156
+      ]
+    },
+    "qa-tree-top": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -17.549999999999997,
+        26,
+        -19.656
+      ],
+      "quaternion": [
+        -0.7071067811865474,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 107,
+      "triangles": 31136,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 1411,
+        "candidates": 6296,
+        "maxCandidates": 21
+      },
+      "player": [
+        -17.549999999999997,
+        1.1920928910669204e-8,
+        -16.156
+      ]
+    },
+    "desktop-temple-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -40.01613045909786,
+        10.534289017713498,
+        15.132680176466806
+      ],
+      "quaternion": [
+        -0.2945755780270968,
+        0.07634601915924527,
+        0.023616639280595795,
+        0.9522808244092852
+      ],
+      "calls": 81,
+      "triangles": 26620,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0024999999751647312,
+      "cameraIndex": {
+        "queries": 1631,
+        "candidates": 6502,
+        "maxCandidates": 21
+      },
+      "player": [
+        -42.12,
+        1.1920928910669204e-8,
+        2.096
+      ]
+    },
+    "qa-temple-front": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -42.12,
+        6,
+        11.596
+      ],
+      "quaternion": [
+        -0.1891075211549513,
+        0,
+        0,
+        0.9819563867314217
+      ],
+      "calls": 81,
+      "triangles": 21635,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 1751,
+        "candidates": 6502,
+        "maxCandidates": 21
+      },
+      "player": [
+        -42.12,
+        1.1920928910669204e-8,
+        2.096
+      ]
+    },
+    "qa-temple-side": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -29.119999999999997,
+        6,
+        -1.4040000000000001
+      ],
+      "quaternion": [
+        -0.13371921058204456,
+        0.6943480198872283,
+        0.13371921058204456,
+        0.6943480198872283
+      ],
+      "calls": 58,
+      "triangles": 22801,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0049999999503294625,
+      "cameraIndex": {
+        "queries": 1871,
+        "candidates": 8062,
+        "maxCandidates": 21
+      },
+      "player": [
+        -42.12,
+        1.1920928910669204e-8,
+        2.096
+      ]
+    },
+    "qa-temple-back": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -42.12,
+        6,
+        -14.404
+      ],
+      "quaternion": [
+        0,
+        0.9819563867314217,
+        0.18910752115495127,
+        0
+      ],
+      "calls": 137,
+      "triangles": 40739,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0033333332588275275,
+      "cameraIndex": {
+        "queries": 1991,
+        "candidates": 9382,
+        "maxCandidates": 21
+      },
+      "player": [
+        -42.12,
+        1.1920928910669204e-8,
+        2.096
+      ]
+    },
+    "qa-temple-top": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -42.12,
+        26,
+        -1.4040000000000001
+      ],
+      "quaternion": [
+        -0.7071067811865474,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 73,
+      "triangles": 24522,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0025000000993410745,
+      "cameraIndex": {
+        "queries": 2111,
+        "candidates": 10582,
+        "maxCandidates": 21
+      },
+      "player": [
+        -42.12,
+        1.1920928910669204e-8,
+        2.096
+      ]
+    },
+    "desktop-koi-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -18.254158713776544,
+        10.534289017713498,
+        55.146666905329845
+      ],
+      "quaternion": [
+        -0.2945758968665569,
+        0.07634508230310161,
+        0.023616375459074145,
+        0.9522808074321211
+      ],
+      "calls": 203,
+      "triangles": 47312,
+      "textures": 16,
+      "cameraQueryCPUms": 0,
+      "cameraIndex": {
+        "queries": 2331,
+        "candidates": 11335,
+        "maxCandidates": 21
+      },
+      "player": [
+        -20.357999999999997,
+        1.1920928910669204e-8,
+        42.11
+      ]
+    },
+    "qa-koi-front": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -20.357999999999997,
+        6,
+        51.61
+      ],
+      "quaternion": [
+        -0.1891075211549513,
+        0,
+        0,
+        0.9819563867314217
+      ],
+      "calls": 233,
+      "triangles": 52147,
+      "textures": 16,
+      "cameraQueryCPUms": 0,
+      "cameraIndex": {
+        "queries": 2451,
+        "candidates": 11695,
+        "maxCandidates": 21
+      },
+      "player": [
+        -20.357999999999997,
+        1.1920928910669204e-8,
+        42.11
+      ]
+    },
+    "qa-koi-side": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -7.357999999999997,
+        6,
+        38.61
+      ],
+      "quaternion": [
+        -0.13371921058204456,
+        0.6943480198872283,
+        0.13371921058204456,
+        0.6943480198872283
+      ],
+      "calls": 67,
+      "triangles": 25851,
+      "textures": 16,
+      "cameraQueryCPUms": 0.02749999997516473,
+      "cameraIndex": {
+        "queries": 2571,
+        "candidates": 12775,
+        "maxCandidates": 21
+      },
+      "player": [
+        -20.357999999999997,
+        1.1920928910669204e-8,
+        42.11
+      ]
+    },
+    "qa-koi-back": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -20.357999999999997,
+        6,
+        25.61
+      ],
+      "quaternion": [
+        0,
+        0.9819563867314217,
+        0.18910752115495127,
+        0
+      ],
+      "calls": 103,
+      "triangles": 29226,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0024999999751647312,
+      "cameraIndex": {
+        "queries": 2691,
+        "candidates": 13255,
+        "maxCandidates": 21
+      },
+      "player": [
+        -20.357999999999997,
+        1.1920928910669204e-8,
+        42.11
+      ]
+    },
+    "qa-koi-top": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -20.357999999999997,
+        26,
+        38.61
+      ],
+      "quaternion": [
+        -0.7071067811865474,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 68,
+      "triangles": 25109,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 2811,
+        "candidates": 13735,
+        "maxCandidates": 21
+      },
+      "player": [
+        -20.357999999999997,
+        1.1920928910669204e-8,
+        42.11
+      ]
+    },
+    "desktop-meadow-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        28.77982587458053,
+        10.534289017713498,
+        -1.7152740167056306
+      ],
+      "quaternion": [
+        -0.29457498013145067,
+        0.07634421762149561,
+        0.023616025519368727,
+        0.9522811690120654
+      ],
+      "calls": 73,
+      "triangles": 21850,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0033333332588275275,
+      "cameraIndex": {
+        "queries": 3031,
+        "candidates": 14916,
+        "maxCandidates": 29
+      },
+      "player": [
+        26.676,
+        1.1920928910669204e-8,
+        -14.751999999999999
+      ]
+    },
+    "qa-meadow-front": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        26.676,
+        6,
+        -5.251999999999999
+      ],
+      "quaternion": [
+        -0.1891075211549513,
+        0,
+        0,
+        0.9819563867314217
+      ],
+      "calls": 68,
+      "triangles": 16616,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0033333332588275275,
+      "cameraIndex": {
+        "queries": 3151,
+        "candidates": 15516,
+        "maxCandidates": 29
+      },
+      "player": [
+        26.676,
+        1.1920928910669204e-8,
+        -14.751999999999999
+      ]
+    },
+    "qa-meadow-side": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        39.676,
+        6,
+        -18.252
+      ],
+      "quaternion": [
+        -0.1337192105820445,
+        0.6943480198872284,
+        0.1337192105820445,
+        0.6943480198872284
+      ],
+      "calls": 205,
+      "triangles": 48754,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0024999999751647312,
+      "cameraIndex": {
+        "queries": 3271,
+        "candidates": 16596,
+        "maxCandidates": 29
+      },
+      "player": [
+        26.676,
+        1.1920928910669204e-8,
+        -14.751999999999999
+      ]
+    },
+    "qa-meadow-back": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        26.676,
+        6,
+        -31.252
+      ],
+      "quaternion": [
+        0,
+        0.9819563867314217,
+        0.18910752115495127,
+        0
+      ],
+      "calls": 266,
+      "triangles": 59708,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 3391,
+        "candidates": 17316,
+        "maxCandidates": 29
+      },
+      "player": [
+        26.676,
+        1.1920928910669204e-8,
+        -14.751999999999999
+      ]
+    },
+    "qa-meadow-top": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        26.676,
+        26,
+        -18.252
+      ],
+      "quaternion": [
+        -0.7071067811865474,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 90,
+      "triangles": 29314,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 3511,
+        "candidates": 17916,
+        "maxCandidates": 29
+      },
+      "player": [
+        26.676,
+        1.1920928910669204e-8,
+        -14.751999999999999
+      ]
+    },
+    "desktop-windmill-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -51.24809663910368,
+        10.534289017713498,
+        103.58462709191899
+      ],
+      "quaternion": [
+        -0.2945763306626068,
+        0.07634750837523183,
+        0.023617169352425377,
+        0.9522804590508132
+      ],
+      "calls": 173,
+      "triangles": 44076,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 3731,
+        "candidates": 18161,
+        "maxCandidates": 54
+      },
+      "player": [
+        -53.352,
+        1.1920928910669204e-8,
+        90.548
+      ]
+    },
+    "qa-windmill-front": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -53.352,
+        6,
+        100.048
+      ],
+      "quaternion": [
+        -0.1891075211549513,
+        0,
+        0,
+        0.9819563867314217
+      ],
+      "calls": 274,
+      "triangles": 58274,
+      "textures": 16,
+      "cameraQueryCPUms": 0,
+      "cameraIndex": {
+        "queries": 3851,
+        "candidates": 18161,
+        "maxCandidates": 54
+      },
+      "player": [
+        -53.352,
+        1.1920928910669204e-8,
+        90.548
+      ]
+    },
+    "qa-windmill-side": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -40.352,
+        6,
+        87.048
+      ],
+      "quaternion": [
+        -0.13371921058204456,
+        0.6943480198872283,
+        0.13371921058204456,
+        0.6943480198872283
+      ],
+      "calls": 56,
+      "triangles": 10097,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0024999999751647312,
+      "cameraIndex": {
+        "queries": 3971,
+        "candidates": 19241,
+        "maxCandidates": 54
+      },
+      "player": [
+        -53.352,
+        1.1920928910669204e-8,
+        90.548
+      ]
+    },
+    "qa-windmill-back": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -53.352,
+        6,
+        74.048
+      ],
+      "quaternion": [
+        0,
+        0.9819563867314217,
+        0.18910752115495127,
+        0
+      ],
+      "calls": 55,
+      "triangles": 10061,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0033333333830038708,
+      "cameraIndex": {
+        "queries": 4091,
+        "candidates": 20201,
+        "maxCandidates": 54
+      },
+      "player": [
+        -53.352,
+        1.1920928910669204e-8,
+        90.548
+      ]
+    },
+    "qa-windmill-top": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -53.352,
+        26,
+        87.048
+      ],
+      "quaternion": [
+        -0.7071067811865474,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 56,
+      "triangles": 10097,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333334078391393,
+      "cameraIndex": {
+        "queries": 4211,
+        "candidates": 21161,
+        "maxCandidates": 54
+      },
+      "player": [
+        -53.352,
+        1.1920928910669204e-8,
+        90.548
+      ]
+    },
+    "desktop-crystal-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        47.03179462319352,
+        10.534289017713498,
+        61.81571677911873
+      ],
+      "quaternion": [
+        -0.29457524274970726,
+        0.07634315220678312,
+        0.023615716708378018,
+        0.9522811808465149
+      ],
+      "calls": 210,
+      "triangles": 51140,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333334078391393,
+      "cameraIndex": {
+        "queries": 4431,
+        "candidates": 21831,
+        "maxCandidates": 54
+      },
+      "player": [
+        44.928000000000004,
+        1.1920928910669204e-8,
+        48.778999999999996
+      ]
+    },
+    "qa-crystal-front": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        44.928000000000004,
+        6,
+        58.278999999999996
+      ],
+      "quaternion": [
+        -0.1891075211549513,
+        0,
+        0,
+        0.9819563867314217
+      ],
+      "calls": 175,
+      "triangles": 41405,
+      "textures": 16,
+      "cameraQueryCPUms": 0,
+      "cameraIndex": {
+        "queries": 4551,
+        "candidates": 22191,
+        "maxCandidates": 54
+      },
+      "player": [
+        44.928000000000004,
+        1.1920928910669204e-8,
+        48.778999999999996
+      ]
+    },
+    "qa-crystal-side": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        57.928000000000004,
+        6,
+        45.278999999999996
+      ],
+      "quaternion": [
+        -0.13371921058204456,
+        0.6943480198872283,
+        0.13371921058204456,
+        0.6943480198872283
+      ],
+      "calls": 223,
+      "triangles": 59064,
+      "textures": 16,
+      "cameraQueryCPUms": 0.005833333358168602,
+      "cameraIndex": {
+        "queries": 4671,
+        "candidates": 23751,
+        "maxCandidates": 54
+      },
+      "player": [
+        44.928000000000004,
+        1.1920928910669204e-8,
+        48.778999999999996
+      ]
+    },
+    "qa-crystal-back": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        44.928000000000004,
+        6,
+        32.278999999999996
+      ],
+      "quaternion": [
+        0,
+        0.9819563867314217,
+        0.18910752115495127,
+        0
+      ],
+      "calls": 107,
+      "triangles": 24428,
+      "textures": 16,
+      "cameraQueryCPUms": 0.007500000049670537,
+      "cameraIndex": {
+        "queries": 4791,
+        "candidates": 24231,
+        "maxCandidates": 54
+      },
+      "player": [
+        44.928000000000004,
+        1.1920928910669204e-8,
+        48.778999999999996
+      ]
+    },
+    "qa-crystal-top": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        44.928000000000004,
+        26,
+        45.278999999999996
+      ],
+      "quaternion": [
+        -0.7071067811865474,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 71,
+      "triangles": 23815,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 4911,
+        "candidates": 24591,
+        "maxCandidates": 54
+      },
+      "player": [
+        44.928000000000004,
+        1.1920928910669204e-8,
+        48.778999999999996
+      ]
+    },
+    "desktop-lookout-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        52.64785113255087,
+        10.534289017713498,
+        104.98866497887448
+      ],
+      "quaternion": [
+        -0.2945758934979927,
+        0.0763454437219334,
+        0.02361648775111528,
+        0.9522807767140226
+      ],
+      "calls": 215,
+      "triangles": 62656,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 5131,
+        "candidates": 25126,
+        "maxCandidates": 54
+      },
+      "player": [
+        50.544,
+        1.1920928910669204e-8,
+        91.952
+      ]
+    },
+    "qa-lookout-front": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        50.544,
+        6,
+        101.452
+      ],
+      "quaternion": [
+        -0.1891075211549513,
+        0,
+        0,
+        0.9819563867314217
+      ],
+      "calls": 265,
+      "triangles": 59331,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 5251,
+        "candidates": 25366,
+        "maxCandidates": 54
+      },
+      "player": [
+        50.544,
+        1.1920928910669204e-8,
+        91.952
+      ]
+    },
+    "qa-lookout-side": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        63.544,
+        6,
+        88.452
+      ],
+      "quaternion": [
+        -0.13371921058204456,
+        0.6943480198872283,
+        0.13371921058204456,
+        0.6943480198872283
+      ],
+      "calls": 151,
+      "triangles": 41219,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 5371,
+        "candidates": 25606,
+        "maxCandidates": 54
+      },
+      "player": [
+        50.544,
+        1.1920928910669204e-8,
+        91.952
+      ]
+    },
+    "qa-lookout-back": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        50.544,
+        6,
+        75.452
+      ],
+      "quaternion": [
+        0,
+        0.9819563867314217,
+        0.18910752115495127,
+        0
+      ],
+      "calls": 60,
+      "triangles": 10613,
+      "textures": 16,
+      "cameraQueryCPUms": 0.005833333233992258,
+      "cameraIndex": {
+        "queries": 5491,
+        "candidates": 27046,
+        "maxCandidates": 54
+      },
+      "player": [
+        50.544,
+        1.1920928910669204e-8,
+        91.952
+      ]
+    },
+    "qa-lookout-top": {
+      "qaArchitectureUIHidden": true,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        50.544,
+        26,
+        88.452
+      ],
+      "quaternion": [
+        -0.7071067811865474,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 61,
+      "triangles": 14449,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333334078391393,
+      "cameraIndex": {
+        "queries": 5611,
+        "candidates": 27286,
+        "maxCandidates": 54
+      },
+      "player": [
+        50.544,
+        1.1920928910669204e-8,
+        91.952
+      ]
+    },
+    "panorama-pure": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -0.3850549999999977,
+        240,
+        28.923
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 345,
+      "triangles": 79006,
+      "textures": 16,
+      "cameraQueryCPUms": 0,
+      "cameraIndex": {
+        "queries": 5731,
+        "candidates": 27526,
+        "maxCandidates": 54
+      },
+      "player": [
+        50.544,
+        1.1920928910669204e-8,
+        91.952
+      ]
+    },
+    "qa-panorama-labelled": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "camera": [
+        -0.3850549999999977,
+        240,
+        28.923
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 345,
+      "triangles": 79006,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 5851,
+        "candidates": 27766,
+        "maxCandidates": 54
+      },
+      "player": [
+        50.544,
+        1.1920928910669204e-8,
+        91.952
+      ]
+    },
+    "mobile-home-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        2.0643264783562683,
+        15.161691726724554,
+        20.620068214828457
+      ],
+      "quaternion": [
+        -0.328177562882177,
+        0.0566306259260639,
+        0.019714316632559452,
+        0.9427108809956785
+      ],
+      "calls": 130,
+      "triangles": 30301,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0025000000993410745,
+      "cameraIndex": {
+        "queries": 252,
+        "candidates": 252,
+        "maxCandidates": 1
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ]
+    },
+    "mobile-tree-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        -15.485662819113758,
+        15.161691726725236,
+        0.9640802016625388
+      ],
+      "quaternion": [
+        -0.328177382246977,
+        0.05663088081233872,
+        0.019714393551474394,
+        0.9427109269584384
+      ],
+      "calls": 67,
+      "triangles": 20972,
+      "textures": 16,
+      "cameraQueryCPUms": 0.004166666666666667,
+      "cameraIndex": {
+        "queries": 472,
+        "candidates": 3812,
+        "maxCandidates": 24
+      },
+      "player": [
+        -17.549999999999997,
+        1.1920928910669204e-8,
+        -16.156
+      ]
+    },
+    "mobile-temple-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        -40.055658538095315,
+        15.161691726725236,
+        19.216057084205474
+      ],
+      "quaternion": [
+        -0.32817767677755344,
+        0.05663106639298496,
+        0.01971447826358242,
+        0.9427108115063046
+      ],
+      "calls": 58,
+      "triangles": 22801,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333332836627961,
+      "cameraIndex": {
+        "queries": 692,
+        "candidates": 3938,
+        "maxCandidates": 24
+      },
+      "player": [
+        -42.12,
+        1.1920928910669204e-8,
+        2.096
+      ]
+    },
+    "mobile-koi-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        -18.293686792771382,
+        15.161691726725236,
+        59.23004381305443
+      ],
+      "quaternion": [
+        -0.3281779122071375,
+        0.056630338443064865,
+        0.01971423968652764,
+        0.9427107782669987
+      ],
+      "calls": 140,
+      "triangles": 40856,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333334078391393,
+      "cameraIndex": {
+        "queries": 912,
+        "candidates": 4668,
+        "maxCandidates": 24
+      },
+      "player": [
+        -20.357999999999997,
+        1.1920928910669204e-8,
+        42.11
+      ]
+    },
+    "mobile-meadow-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        28.74029779556847,
+        15.161691726725236,
+        2.3681028910108424
+      ],
+      "quaternion": [
+        -0.32817716917604994,
+        0.05662974269473473,
+        0.0197139813884144,
+        0.942711078120831
+      ],
+      "calls": 72,
+      "triangles": 17376,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0024999999751647312,
+      "cameraIndex": {
+        "queries": 1132,
+        "candidates": 5841,
+        "maxCandidates": 31
+      },
+      "player": [
+        26.676,
+        1.1920928910669204e-8,
+        -14.751999999999999
+      ]
+    },
+    "mobile-windmill-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        -51.287624718125144,
+        15.161691726725236,
+        107.6680039996715
+      ],
+      "quaternion": [
+        -0.328178301283651,
+        0.056632144364724975,
+        0.01971489712889223,
+        0.9427105205854167
+      ],
+      "calls": 92,
+      "triangles": 28298,
+      "textures": 16,
+      "cameraQueryCPUms": 0,
+      "cameraIndex": {
+        "queries": 1352,
+        "candidates": 6005,
+        "maxCandidates": 31
+      },
+      "player": [
+        -53.352,
+        1.1920928910669204e-8,
+        90.548
+      ]
+    },
+    "mobile-crystal-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        46.99232248801993,
+        15.161682530816723,
+        65.89905779637152
+      ],
+      "quaternion": [
+        -0.3281775539756653,
+        0.05663055194773769,
+        0.019714290174764445,
+        0.9427108890935487
+      ],
+      "calls": 111,
+      "triangles": 30083,
+      "textures": 16,
+      "cameraQueryCPUms": 0.004166666666666667,
+      "cameraIndex": {
+        "queries": 1572,
+        "candidates": 6672,
+        "maxCandidates": 31
+      },
+      "player": [
+        44.928000000000004,
+        1.1920928910669204e-8,
+        48.778999999999996
+      ]
+    },
+    "mobile-lookout-explore": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "camera": [
+        52.60832305354445,
+        15.161691726719633,
+        109.07204188659948
+      ],
+      "quaternion": [
+        -0.32817791625141024,
+        0.05663061175013782,
+        0.01971433548823083,
+        0.9427107584375736
+      ],
+      "calls": 144,
+      "triangles": 42409,
+      "textures": 16,
+      "cameraQueryCPUms": 0.015833333258827527,
+      "cameraIndex": {
+        "queries": 1792,
+        "candidates": 7166,
+        "maxCandidates": 31
+      },
+      "player": [
+        50.544,
+        1.1920928910669204e-8,
+        91.952
+      ]
+    },
+    "mobile-landscape-home": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        932,
+        430
+      ],
+      "camera": [
+        2.366868459203992,
+        11.663566666297122,
+        18.16634450277197
+      ],
+      "quaternion": [
+        -0.2945741854564194,
+        0.07634613045608513,
+        0.02361655154800278,
+        0.9522812484345421
+      ],
+      "calls": 196,
+      "triangles": 41661,
+      "textures": 16,
+      "cameraQueryCPUms": 0.0008333334078391393,
+      "cameraIndex": {
+        "queries": 2012,
+        "candidates": 7409,
+        "maxCandidates": 31
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ]
+    },
+    "mobile-panorama": {
+      "qaArchitectureUIHidden": false,
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "viewport": [
+        430,
+        932
+      ],
+      "camera": [
+        -0.3850549999999977,
+        240,
+        28.923
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "calls": 345,
+      "triangles": 79006,
+      "textures": 16,
+      "cameraQueryCPUms": 0,
+      "cameraIndex": {
+        "queries": 2132,
+        "candidates": 7529,
+        "maxCandidates": 31
+      },
+      "player": [
+        0,
+        1.1920928910669204e-8,
+        3.5
+      ]
+    }
+  },
+  "errors": []
+}

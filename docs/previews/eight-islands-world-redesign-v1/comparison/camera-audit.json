@@ -1,0 +1,326 @@
+{
+  "before": {
+    "home": {
+      "sourceAsset": "/assets/index-2zaL7Num.js",
+      "camera": [
+        2.103855840356414,
+        10.534279574320566,
+        16.536701391686947
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605668,
+        0.023616406877047625,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "tree": {
+      "sourceAsset": "/assets/index-2zaL7Num.js",
+      "camera": [
+        -15.446144159643584,
+        10.534279574320566,
+        -3.1192986083130503
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605665,
+        0.02361640687704761,
+        0.9522810424535577
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "temple": {
+      "sourceAsset": "/assets/index-2zaL7Num.js",
+      "camera": [
+        -40.01614415964358,
+        10.534279574320566,
+        15.132701391686949
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605678,
+        0.02361640687704765,
+        0.9522810424535577
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "koi": {
+      "sourceAsset": "/assets/index-2zaL7Num.js",
+      "camera": [
+        -18.254144159643584,
+        10.534279574320566,
+        55.146701391686946
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605665,
+        0.023616406877047618,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "meadow": {
+      "sourceAsset": "/assets/index-2zaL7Num.js",
+      "camera": [
+        28.77985584035641,
+        10.534279574320566,
+        -1.7152986083130504
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605665,
+        0.02361640687704761,
+        0.9522810424535577
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "windmill": {
+      "sourceAsset": "/assets/index-2zaL7Num.js",
+      "camera": [
+        -51.24814415964358,
+        10.534279574320566,
+        103.58470139168695
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605679,
+        0.02361640687704766,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "crystal": {
+      "sourceAsset": "/assets/index-2zaL7Num.js",
+      "camera": [
+        47.03185584035642,
+        10.534279574320566,
+        61.81570139168694
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605679,
+        0.02361640687704766,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "lookout": {
+      "sourceAsset": "/assets/index-2zaL7Num.js",
+      "camera": [
+        52.647855840356414,
+        10.534279574320566,
+        104.98870139168694
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605679,
+        0.02361640687704766,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    }
+  },
+  "after": {
+    "home": {
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "camera": [
+        2.103855840356414,
+        10.534279574320566,
+        16.536701391686947
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605668,
+        0.023616406877047625,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "tree": {
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "camera": [
+        -15.446144159643584,
+        10.534279574320566,
+        -3.1192986083130503
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605665,
+        0.02361640687704761,
+        0.9522810424535577
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "temple": {
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "camera": [
+        -40.01614415964358,
+        10.534279574320566,
+        15.132701391686949
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605678,
+        0.02361640687704765,
+        0.9522810424535577
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "koi": {
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "camera": [
+        -18.254144159643584,
+        10.534279574320566,
+        55.146701391686946
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605665,
+        0.023616406877047618,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "meadow": {
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "camera": [
+        28.77985584035641,
+        10.534279574320566,
+        -1.7152986083130504
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605665,
+        0.02361640687704761,
+        0.9522810424535577
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "windmill": {
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "camera": [
+        -51.24814415964358,
+        10.534279574320566,
+        103.58470139168695
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605679,
+        0.02361640687704766,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "crystal": {
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "camera": [
+        47.03185584035642,
+        10.534279574320566,
+        61.81570139168694
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605679,
+        0.02361640687704766,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    },
+    "lookout": {
+      "sourceAsset": "/assets/index-BJC2BLzt.js",
+      "camera": [
+        52.647855840356414,
+        10.534279574320566,
+        104.98870139168694
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605679,
+        0.02361640687704766,
+        0.9522810424535579
+      ],
+      "fov": 55,
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Same default optical orbit at fixed nominal explorer point, avatar/UI hidden for QA; not normal player camera behavior"
+    }
+  }
+}

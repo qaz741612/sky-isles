@@ -1,0 +1,25 @@
+{
+  "base": "08e70ce0247c1421aedf72447e56c276d4d50e89",
+  "runtimeAsset": {
+    "path": "dist/assets/index-BJC2BLzt.js",
+    "bytes": 931138,
+    "sha256": "fe201b9c6167eb9d1812aaa20b68d6eeb1e7968b4fe3338a42d8d3e158184343"
+  },
+  "sources": {
+    "src/data/island-places.json": "32cfa7113115ff3022a5ccf6e1c5e3f16ffc667986e8de22fedcaa16b923b02d",
+    "src/data/yuan-plan.json": "244c3d8ba3b870536a9ca1059e29f31eda4fbdaf912ff930a52cf2fa11927059",
+    "src/data/yuan-layout.json": "1f93df62da9c038f616d817d9e65f696572d5a6656f90a37ffffec409eae4ba0",
+    "src/data/yuan-surface.json": "9300a0ff39797345e2bcc215dc4c5e18527302659ecfe04de08a260d0b6f78d2",
+    "src/data/transport.json": "3f5466f13bd389e367b744445412b0f903b1913024b5ce49244f7e17c2272815",
+    "src/world/place-kit.js": "f40a7850f5b35397f5b599941ac148bdc44f446c026eda06fc898b25bfb8ddee",
+    "src/world/policy-scenery.js": "d77799845df2bff1effd70ec6ed1d6a52f15394e733081ff181d88353f760e57",
+    "src/world/transport.js": "3c7f7354ff4fb6445e3abf35e84687364aa7064bbf391bd626dbd592223d021c",
+    "src/world/bridges.js": "2cb6df067f95c0e3c13f67fd3cdfe4819734a539aab8f296adaa943fbce3756d",
+    "src/world/islands.js": "6542eea9a3a798cc23d74a8ac650535106e0828a393835f1519b1c4b7e0eb32b",
+    "src/sim/camera-clearance.js": "9e75cefd34bbdd53c99f0b01e095a4b5144cbc58f5efafead6b3e69bc4f3d523",
+    "src/main.js": "8e984203f0d881c41e8eb3eca567c2feabb04d58445ee9dc2e1ae7961653f1d1",
+    "package-lock.json": "31b673b8d064007438e8a0af06a53c66a15d8d0da59c53ed144d68753ad6ab06",
+    "public/data/policies.json": "83e6373ff9808bf8c65148b37e835a03fb32ac5041005229c15058de3e3c56ce"
+  },
+  "sourceCommit": "ecb92f4caa60a77ddcd478c38fb9fe4bd598fb4c"
+}

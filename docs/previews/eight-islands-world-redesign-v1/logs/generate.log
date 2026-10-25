@@ -1,0 +1,195 @@
+
+> sky-isles@1.0.0 generate:yuan
+> node scripts/build-yuan-world.mjs
+
+{
+  comparisonReference: 'Original design A reference (not V4); V4-to-current invariants and distances are in layout-audit.json and v4-network-comparison.json',
+  scaleXZ: 0.585,
+  islandRadii: [
+    { island: 'home', r: 9 },
+    { island: 'tree', r: 9 },
+    { island: 'temple', r: 9 },
+    { island: 'koi', r: 9 },
+    { island: 'meadow', r: 9 },
+    { island: 'windmill', r: 9 },
+    { island: 'crystal', r: 9 },
+    { island: 'lookout', r: 9 }
+  ],
+  heightFactor: 1,
+  rawTriangleGrade: 0,
+  levelDatum: 0,
+  baselineHeightRange: [ 0, 2 ],
+  maxTriangleGrade: 0,
+  deckTriangles: 1160,
+  boundarySegments: 1291,
+  unionComponents: 1,
+  totalLengthBefore: 1137.0921395172427,
+  totalLengthAfter: 665.1790588296773,
+  shortestBefore: {
+    home: {
+      home: 0,
+      tree: 55.113,
+      temple: 72.064,
+      koi: 75.75,
+      meadow: 63.872,
+      windmill: 176.419,
+      crystal: 147.843,
+      lookout: 224.337
+    },
+    tree: {
+      home: 55.113,
+      tree: 0,
+      temple: 85.109,
+      koi: 130.863,
+      meadow: 75.646,
+      windmill: 231.533,
+      crystal: 202.957,
+      lookout: 279.45
+    },
+    temple: {
+      home: 72.064,
+      tree: 85.109,
+      temple: 0,
+      koi: 81.054,
+      meadow: 135.936,
+      windmill: 181.724,
+      crystal: 219.907,
+      lookout: 296.401
+    },
+    koi: {
+      home: 75.75,
+      tree: 130.863,
+      temple: 81.054,
+      koi: 0,
+      meadow: 139.622,
+      windmill: 100.67,
+      crystal: 223.593,
+      lookout: 300.087
+    },
+    meadow: {
+      home: 63.872,
+      tree: 75.646,
+      temple: 135.936,
+      koi: 139.622,
+      meadow: 0,
+      windmill: 240.292,
+      crystal: 160.06,
+      lookout: 288.209
+    },
+    windmill: {
+      home: 176.419,
+      tree: 231.533,
+      temple: 181.724,
+      koi: 100.67,
+      meadow: 240.292,
+      windmill: 0,
+      crystal: 324.263,
+      lookout: 400.756
+    },
+    crystal: {
+      home: 147.843,
+      tree: 202.957,
+      temple: 219.907,
+      koi: 223.593,
+      meadow: 160.06,
+      windmill: 324.263,
+      crystal: 0,
+      lookout: 372.18
+    },
+    lookout: {
+      home: 224.337,
+      tree: 279.45,
+      temple: 296.401,
+      koi: 300.087,
+      meadow: 288.209,
+      windmill: 400.756,
+      crystal: 372.18,
+      lookout: 0
+    }
+  },
+  shortestAfter: {
+    home: {
+      home: 0,
+      tree: 32.24,
+      temple: 42.157,
+      koi: 44.313,
+      meadow: 37.365,
+      windmill: 103.205,
+      crystal: 86.485,
+      lookout: 131.235
+    },
+    tree: {
+      home: 32.24,
+      tree: 0,
+      temple: 49.787,
+      koi: 76.553,
+      meadow: 44.253,
+      windmill: 135.444,
+      crystal: 118.725,
+      lookout: 163.475
+    },
+    temple: {
+      home: 42.157,
+      tree: 49.787,
+      temple: 0,
+      koi: 47.416,
+      meadow: 79.522,
+      windmill: 106.307,
+      crystal: 128.643,
+      lookout: 173.393
+    },
+    koi: {
+      home: 44.313,
+      tree: 76.553,
+      temple: 47.416,
+      koi: 0,
+      meadow: 81.678,
+      windmill: 58.892,
+      crystal: 130.798,
+      lookout: 175.549
+    },
+    meadow: {
+      home: 37.365,
+      tree: 44.253,
+      temple: 79.522,
+      koi: 81.678,
+      meadow: 0,
+      windmill: 140.57,
+      crystal: 93.632,
+      lookout: 168.6
+    },
+    windmill: {
+      home: 103.205,
+      tree: 135.444,
+      temple: 106.307,
+      koi: 58.892,
+      meadow: 140.57,
+      windmill: 0,
+      crystal: 189.69,
+      lookout: 234.44
+    },
+    crystal: {
+      home: 86.485,
+      tree: 118.725,
+      temple: 128.643,
+      koi: 130.798,
+      meadow: 93.632,
+      windmill: 189.69,
+      crystal: 0,
+      lookout: 217.721
+    },
+    lookout: {
+      home: 131.235,
+      tree: 163.475,
+      temple: 173.393,
+      koi: 175.549,
+      meadow: 168.6,
+      windmill: 234.44,
+      crystal: 217.721,
+      lookout: 0
+    }
+  },
+  boundsBefore: { width: 209.96579672540003, height: 228.20000000000002 },
+  boundsAfter: { width: 125.93388999999999, height: 139.058 },
+  bounds: { minX: -63.352, maxX: 62.58189, minZ: -40.606, maxZ: 98.452 }
+}

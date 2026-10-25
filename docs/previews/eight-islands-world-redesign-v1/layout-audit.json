@@ -1,0 +1,2503 @@
+{
+  "base": "08e70ce0247c1421aedf72447e56c276d4d50e89",
+  "expandedTips": [
+    {
+      "island": "temple",
+      "strokeTip": "T5",
+      "centreDistance": 8.438612326680257,
+      "insideIsland": true
+    },
+    {
+      "island": "windmill",
+      "strokeTip": "T7",
+      "centreDistance": 8.224192908729712,
+      "insideIsland": true
+    }
+  ],
+  "source": "src/data/yuan-plan.json",
+  "authoredPlaces": "src/data/island-places.json",
+  "constraints": {
+    "centresUnchanged": true,
+    "curvesUnchanged": true,
+    "width": 4.8,
+    "scaleMetadataUnchanged": true,
+    "allIslandRadii9": true
+  },
+  "totalCentrelineLength": 665.1790588296773,
+  "routes": 22,
+  "unionComponents": 1,
+  "boundarySegments": 1291,
+  "bridgeBoundarySegments": 1102,
+  "corridorProbes": 6750,
+  "clashes": [],
+  "pairs": [
+    {
+      "a": "home",
+      "b": "tree",
+      "centreDistance": 26.350727428289336,
+      "edgeGap": 8.350727428289336
+    },
+    {
+      "a": "tree",
+      "b": "temple",
+      "centreDistance": 30.607522016654663,
+      "edgeGap": 12.607522016654663
+    },
+    {
+      "a": "home",
+      "b": "meadow",
+      "centreDistance": 32.322507328485514,
+      "edgeGap": 14.322507328485514
+    },
+    {
+      "a": "home",
+      "b": "temple",
+      "centreDistance": 42.1433935036086,
+      "edgeGap": 24.1433935036086
+    },
+    {
+      "a": "crystal",
+      "b": "lookout",
+      "centreDistance": 43.53673603980896,
+      "edgeGap": 25.536736039808957
+    },
+    {
+      "a": "home",
+      "b": "koi",
+      "centreDistance": 43.648370691241155,
+      "edgeGap": 25.648370691241155
+    },
+    {
+      "a": "tree",
+      "b": "meadow",
+      "centreDistance": 44.24828010216894,
+      "edgeGap": 26.24828010216894
+    },
+    {
+      "a": "temple",
+      "b": "koi",
+      "centreDistance": 45.54892797860341,
+      "edgeGap": 27.54892797860341
+    },
+    {
+      "a": "tree",
+      "b": "koi",
+      "centreDistance": 58.33362340880257,
+      "edgeGap": 40.33362340880257
+    },
+    {
+      "a": "koi",
+      "b": "windmill",
+      "centreDistance": 58.60754115299498,
+      "edgeGap": 40.60754115299498
+    },
+    {
+      "a": "home",
+      "b": "crystal",
+      "centreDistance": 63.78646427730573,
+      "edgeGap": 45.78646427730573
+    },
+    {
+      "a": "koi",
+      "b": "crystal",
+      "centreDistance": 65.62573700157584,
+      "edgeGap": 47.62573700157584
+    },
+    {
+      "a": "meadow",
+      "b": "crystal",
+      "centreDistance": 66.10085827733252,
+      "edgeGap": 48.10085827733252
+    },
+    {
+      "a": "temple",
+      "b": "meadow",
+      "centreDistance": 70.82898220361491,
+      "edgeGap": 52.82898220361491
+    },
+    {
+      "a": "koi",
+      "b": "meadow",
+      "centreDistance": 73.79352410611651,
+      "edgeGap": 55.79352410611651
+    },
+    {
+      "a": "koi",
+      "b": "lookout",
+      "centreDistance": 86.66786352506907,
+      "edgeGap": 68.66786352506907
+    },
+    {
+      "a": "temple",
+      "b": "windmill",
+      "centreDistance": 89.16229095307051,
+      "edgeGap": 71.16229095307051
+    },
+    {
+      "a": "tree",
+      "b": "crystal",
+      "centreDistance": 90.11134617238831,
+      "edgeGap": 72.11134617238831
+    },
+    {
+      "a": "temple",
+      "b": "crystal",
+      "centreDistance": 98.77579052075463,
+      "edgeGap": 80.77579052075463
+    },
+    {
+      "a": "home",
+      "b": "lookout",
+      "centreDistance": 101.87468890750047,
+      "edgeGap": 83.87468890750047
+    },
+    {
+      "a": "home",
+      "b": "windmill",
+      "centreDistance": 102.09696473451109,
+      "edgeGap": 84.09696473451109
+    },
+    {
+      "a": "windmill",
+      "b": "lookout",
+      "centreDistance": 103.90548605343221,
+      "edgeGap": 85.90548605343221
+    },
+    {
+      "a": "windmill",
+      "b": "crystal",
+      "centreDistance": 106.78767607266299,
+      "edgeGap": 88.78767607266299
+    },
+    {
+      "a": "meadow",
+      "b": "lookout",
+      "centreDistance": 109.3408662852092,
+      "edgeGap": 91.3408662852092
+    },
+    {
+      "a": "tree",
+      "b": "windmill",
+      "centreDistance": 112.55010804081887,
+      "edgeGap": 94.55010804081887
+    },
+    {
+      "a": "tree",
+      "b": "lookout",
+      "centreDistance": 127.76592855687309,
+      "edgeGap": 109.76592855687309
+    },
+    {
+      "a": "temple",
+      "b": "lookout",
+      "centreDistance": 129.07640230499143,
+      "edgeGap": 111.07640230499143
+    },
+    {
+      "a": "meadow",
+      "b": "windmill",
+      "centreDistance": 132.25948277533826,
+      "edgeGap": 114.25948277533826
+    }
+  ],
+  "places": [
+    {
+      "island": "home",
+      "centre": [
+        0,
+        0,
+        0
+      ],
+      "radius": 9,
+      "design": {
+        "name": "交通大升級",
+        "kind": "station-courtyard",
+        "arrival": [
+          0,
+          3.5
+        ],
+        "npc": {
+          "position": [
+            5.6,
+            0,
+            -3.9
+          ],
+          "playerStop": [
+            5.6,
+            0,
+            -2.65
+          ],
+          "facingYaw": 0,
+          "interactionRadius": 1.8,
+          "implemented": false
+        },
+        "trees": [
+          [
+            -6.6,
+            4.2,
+            1.35
+          ],
+          [
+            6.2,
+            4.1,
+            1.3
+          ]
+        ],
+        "benches": [
+          [
+            -4.8,
+            5.7,
+            0
+          ]
+        ],
+        "paths": [
+          [
+            [
+              -7.2,
+              2.5
+            ],
+            [
+              -3.8,
+              2.5
+            ],
+            [
+              -3.5,
+              5.8
+            ],
+            [
+              -5.9,
+              6.2
+            ],
+            [
+              -7.3,
+              4.9
+            ]
+          ]
+        ]
+      },
+      "solids": [
+        {
+          "name": "station-west-wing",
+          "bounds": [
+            -4.8,
+            -5.05,
+            -2.65,
+            -3.65
+          ],
+          "height": 2.4,
+          "collisionBounds": [
+            -4.94,
+            -5.05,
+            -2.56,
+            -3.42
+          ]
+        },
+        {
+          "name": "station-east-jamb",
+          "bounds": [
+            -0.95,
+            -5.05,
+            -0.75,
+            -3.65
+          ],
+          "height": 2.4,
+          "collisionBounds": [
+            -1.04,
+            -5.05,
+            -0.65,
+            -3.48
+          ]
+        },
+        {
+          "name": "station-rear-wall",
+          "bounds": [
+            -2.65,
+            -5.05,
+            -0.95,
+            -4.8
+          ],
+          "height": 2.4
+        }
+      ],
+      "exposedEdges": 23,
+      "additionalGroundMeshes": 0,
+      "npcClearance": {
+        "position": {
+          "centreToVisibleBoundary": 1.0000000000000004,
+          "nearestKind": "viewing-seat",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        },
+        "playerStop": {
+          "centreToVisibleBoundary": 2.2500000000000004,
+          "nearestKind": "viewing-seat",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        }
+      }
+    },
+    {
+      "island": "tree",
+      "centre": [
+        -17.549999999999997,
+        0,
+        -19.656
+      ],
+      "radius": 9,
+      "design": {
+        "name": "安心生養",
+        "kind": "folded-family-court",
+        "arrival": [
+          0,
+          3.5
+        ],
+        "building": [
+          4.3,
+          -4.9,
+          3.1,
+          1.65,
+          2.05
+        ],
+        "wing": [
+          5.65,
+          -3.55,
+          1.05,
+          1.1,
+          1.8
+        ],
+        "court": [
+          4.1,
+          -2.6,
+          3.35,
+          1.1
+        ],
+        "npc": {
+          "position": [
+            -3.8,
+            0,
+            4.2
+          ],
+          "playerStop": [
+            -3.8,
+            0,
+            5.5
+          ],
+          "facingYaw": 0,
+          "interactionRadius": 1.65,
+          "implemented": false
+        },
+        "trees": [
+          [
+            -5.2,
+            4.6,
+            1.55
+          ],
+          [
+            5.2,
+            3.9,
+            1.55
+          ],
+          [
+            -5.7,
+            -5.1,
+            1.2
+          ]
+        ],
+        "benches": [
+          [
+            5,
+            3.2,
+            0
+          ],
+          [
+            -5.8,
+            3.3,
+            0
+          ]
+        ],
+        "paths": [
+          [
+            [
+              2.5,
+              -6.15
+            ],
+            [
+              5.8,
+              -6.15
+            ],
+            [
+              6.5,
+              -3.5
+            ],
+            [
+              5.3,
+              -2.4
+            ],
+            [
+              2.4,
+              -2.4
+            ]
+          ]
+        ]
+      },
+      "solids": [
+        {
+          "bounds": [
+            2.75,
+            -5.7250000000000005,
+            5.85,
+            -4.075
+          ],
+          "height": 2.05,
+          "kind": "hall-shell"
+        },
+        {
+          "bounds": [
+            2.81,
+            -3.6850000000000005,
+            2.93,
+            -3.5650000000000004
+          ],
+          "height": 1.9299999999999997,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            5.67,
+            -3.6850000000000005,
+            5.789999999999999,
+            -3.5650000000000004
+          ],
+          "height": 1.9299999999999997,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            5.125,
+            -4.1,
+            6.175000000000001,
+            -3
+          ],
+          "height": 1.8,
+          "kind": "hall-shell"
+        },
+        {
+          "bounds": [
+            4.44,
+            4.840000000000001,
+            4.56,
+            4.96
+          ],
+          "height": 2.2,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            6.04,
+            4.840000000000001,
+            6.159999999999999,
+            4.96
+          ],
+          "height": 2.2,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            3.7750000000000004,
+            3.6499999999999995,
+            5.025,
+            4.55
+          ],
+          "height": 0.35,
+          "kind": "play-low-step"
+        },
+        {
+          "bounds": [
+            -6.4,
+            3.825,
+            -5.4,
+            4.575
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            -5.3100000000000005,
+            4.489999999999999,
+            -5.09,
+            4.71
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            5.09,
+            3.79,
+            5.3100000000000005,
+            4.01
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            -5.8100000000000005,
+            -5.21,
+            -5.59,
+            -4.989999999999999
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        }
+      ],
+      "exposedEdges": 25,
+      "additionalGroundMeshes": 17,
+      "npcClearance": {
+        "position": {
+          "centreToVisibleBoundary": 1.3221951444472926,
+          "nearestKind": "tree-trunk",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        },
+        "playerStop": {
+          "centreToVisibleBoundary": 1.512679741386126,
+          "nearestKind": "tree-trunk",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        }
+      }
+    },
+    {
+      "island": "temple",
+      "centre": [
+        -42.12,
+        0,
+        -1.4040000000000001
+      ],
+      "radius": 9,
+      "design": {
+        "name": "幸福養老",
+        "kind": "garden-community-veranda",
+        "arrival": [
+          0,
+          3.5
+        ],
+        "building": [
+          -3.35,
+          -4.3,
+          5.3,
+          1.9,
+          2.15
+        ],
+        "court": [
+          -3.35,
+          -2.45,
+          5.8,
+          1.8
+        ],
+        "npc": {
+          "position": [
+            -3.5,
+            0,
+            -1.2
+          ],
+          "playerStop": [
+            -2.2,
+            0,
+            -1.2
+          ],
+          "facingYaw": 1.57,
+          "interactionRadius": 1.7,
+          "implemented": false
+        },
+        "trees": [
+          [
+            -6.7,
+            -1.4,
+            1.35
+          ],
+          [
+            -1.2,
+            -6.9,
+            1.25
+          ],
+          [
+            1.2,
+            -5.1,
+            1.4
+          ],
+          [
+            5.6,
+            4.8,
+            1.6
+          ],
+          [
+            2.9,
+            6.1,
+            1.2
+          ]
+        ],
+        "benches": [
+          [
+            -4.7,
+            -1.6,
+            0
+          ],
+          [
+            -5,
+            -6.2,
+            0
+          ]
+        ],
+        "paths": [
+          [
+            [
+              -6.2,
+              -5.8
+            ],
+            [
+              -0.3,
+              -5.8
+            ],
+            [
+              1.6,
+              -4.3
+            ],
+            [
+              1.6,
+              -2.1
+            ],
+            [
+              -1.6,
+              -1.6
+            ],
+            [
+              -6.4,
+              -1.6
+            ],
+            [
+              -7,
+              -3.4
+            ]
+          ]
+        ]
+      },
+      "solids": [
+        {
+          "bounds": [
+            -6,
+            -5.25,
+            -0.7000000000000002,
+            -3.3499999999999996
+          ],
+          "height": 2.15,
+          "kind": "hall-shell"
+        },
+        {
+          "bounds": [
+            -5.859999999999999,
+            -2.46,
+            -5.74,
+            -2.34
+          ],
+          "height": 2.03,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -2.16,
+            -2.46,
+            -2.04,
+            -2.34
+          ],
+          "height": 2.03,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -4.859999999999999,
+            -2.53,
+            -4.74,
+            -2.4099999999999997
+          ],
+          "height": 2.05,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -3.36,
+            -2.53,
+            -3.2399999999999998,
+            -2.4099999999999997
+          ],
+          "height": 2.05,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -1.86,
+            -2.53,
+            -1.74,
+            -2.4099999999999997
+          ],
+          "height": 2.05,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -6.95,
+            -5.050000000000001,
+            -6.45,
+            -2.35
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            -0.04999999999999993,
+            -5.85,
+            1.35,
+            -5.25
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            5.6000000000000005,
+            4.5,
+            6.2,
+            5.9
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            -6.8100000000000005,
+            -1.51,
+            -6.59,
+            -1.2899999999999998
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            -1.31,
+            -7.010000000000001,
+            -1.0899999999999999,
+            -6.79
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            1.0899999999999999,
+            -5.21,
+            1.31,
+            -4.989999999999999
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            5.489999999999999,
+            4.6899999999999995,
+            5.71,
+            4.91
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            2.79,
+            5.989999999999999,
+            3.01,
+            6.21
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        }
+      ],
+      "exposedEdges": 21,
+      "additionalGroundMeshes": 16,
+      "npcClearance": {
+        "position": {
+          "centreToVisibleBoundary": 0.4775981574503849,
+          "nearestKind": "bench",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        },
+        "playerStop": {
+          "centreToVisibleBoundary": 1.1407015385279355,
+          "nearestKind": "column",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        }
+      }
+    },
+    {
+      "island": "koi",
+      "centre": [
+        -20.357999999999997,
+        0,
+        38.61
+      ],
+      "radius": 9,
+      "design": {
+        "name": "產業青年",
+        "kind": "open-workshop-yard",
+        "arrival": [
+          0,
+          3.5
+        ],
+        "building": [
+          5,
+          1,
+          2.4,
+          2.5,
+          2.8
+        ],
+        "shed": [
+          -5.9,
+          1.5,
+          2.2,
+          1.7,
+          1.95
+        ],
+        "court": [
+          0.5,
+          0.4,
+          5.3,
+          3.3
+        ],
+        "npc": {
+          "position": [
+            1,
+            0,
+            4.8
+          ],
+          "playerStop": [
+            1,
+            0,
+            3.4
+          ],
+          "facingYaw": 3.14159,
+          "interactionRadius": 1.6,
+          "implemented": false
+        },
+        "trees": [
+          [
+            -5.8,
+            2.7,
+            1.5
+          ],
+          [
+            6.6,
+            3.4,
+            1.2
+          ],
+          [
+            -7.2,
+            -0.1,
+            1.3
+          ]
+        ],
+        "benches": [
+          [
+            -6.7,
+            3.7,
+            0
+          ]
+        ],
+        "paths": [
+          [
+            [
+              -6,
+              -1.8
+            ],
+            [
+              -3,
+              -1.8
+            ],
+            [
+              -1.4,
+              -1.8
+            ],
+            [
+              3.3,
+              -1.8
+            ],
+            [
+              6.2,
+              -1.8
+            ],
+            [
+              6.2,
+              2.1
+            ],
+            [
+              3.4,
+              2.1
+            ],
+            [
+              2,
+              1.6
+            ],
+            [
+              -1.4,
+              1.6
+            ],
+            [
+              -3,
+              1.1
+            ],
+            [
+              -6,
+              1.1
+            ]
+          ]
+        ]
+      },
+      "solids": [
+        {
+          "bounds": [
+            3.8,
+            -0.25,
+            6.2,
+            -0.07
+          ],
+          "height": 2.8,
+          "kind": "workshop-rear"
+        },
+        {
+          "bounds": [
+            3.8,
+            -0.10999999999999988,
+            3.9799999999999995,
+            2.21
+          ],
+          "height": 2.8,
+          "kind": "workshop-side"
+        },
+        {
+          "bounds": [
+            3.8299999999999996,
+            2.19,
+            3.9499999999999997,
+            2.31
+          ],
+          "height": 2.6999999999999997,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            6.0200000000000005,
+            -0.10999999999999988,
+            6.2,
+            2.21
+          ],
+          "height": 2.8,
+          "kind": "workshop-side"
+        },
+        {
+          "bounds": [
+            6.050000000000001,
+            2.19,
+            6.17,
+            2.31
+          ],
+          "height": 2.6999999999999997,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            4.45,
+            0.65,
+            5.55,
+            1.35
+          ],
+          "height": 0.12,
+          "kind": "table"
+        },
+        {
+          "bounds": [
+            -6.9399999999999995,
+            0.71,
+            -6.82,
+            0.8300000000000001
+          ],
+          "height": 1.95,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -6.9399999999999995,
+            2.17,
+            -6.82,
+            2.29
+          ],
+          "height": 1.95,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -4.98,
+            0.71,
+            -4.860000000000001,
+            0.8300000000000001
+          ],
+          "height": 1.95,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -4.98,
+            2.17,
+            -4.860000000000001,
+            2.29
+          ],
+          "height": 1.95,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -7,
+            0.5700000000000001,
+            -4.800000000000001,
+            0.73
+          ],
+          "height": 0.95,
+          "kind": "exhibit-back"
+        },
+        {
+          "bounds": [
+            -6.375,
+            1.175,
+            -5.425000000000001,
+            1.825
+          ],
+          "height": 0.12,
+          "kind": "table"
+        },
+        {
+          "bounds": [
+            -5.91,
+            2.5900000000000003,
+            -5.6899999999999995,
+            2.81
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            6.489999999999999,
+            3.29,
+            6.71,
+            3.51
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            -7.3100000000000005,
+            -0.21000000000000002,
+            -7.09,
+            0.009999999999999995
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        }
+      ],
+      "exposedEdges": 24,
+      "additionalGroundMeshes": 18,
+      "npcClearance": {
+        "position": {
+          "centreToVisibleBoundary": 3.769482723133237,
+          "nearestKind": "column",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        },
+        "playerStop": {
+          "centreToVisibleBoundary": 3.0326556019436137,
+          "nearestKind": "column",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        }
+      }
+    },
+    {
+      "island": "meadow",
+      "centre": [
+        26.676,
+        0,
+        -18.252
+      ],
+      "radius": 9,
+      "design": {
+        "name": "宜居環境",
+        "kind": "canopy-garden-pergola",
+        "arrival": [
+          0,
+          3.5
+        ],
+        "pergola": [
+          4.6,
+          4.1,
+          3,
+          2.2,
+          2.45
+        ],
+        "npc": {
+          "position": [
+            2.9,
+            0,
+            4.6
+          ],
+          "playerStop": [
+            1.6,
+            0,
+            4.6
+          ],
+          "facingYaw": -1.5708,
+          "interactionRadius": 1.7,
+          "implemented": false
+        },
+        "trees": [
+          [
+            -4.8,
+            -4.9,
+            1.85
+          ],
+          [
+            -5.7,
+            -2.9,
+            1.25
+          ],
+          [
+            -2.1,
+            -6,
+            1.3
+          ],
+          [
+            5.6,
+            -4.2,
+            1.5
+          ],
+          [
+            -5.8,
+            3.6,
+            1.7
+          ]
+        ],
+        "benches": [
+          [
+            4.6,
+            4.5,
+            0
+          ],
+          [
+            -3.4,
+            -4.5,
+            0
+          ]
+        ],
+        "paths": [
+          [
+            [
+              -7,
+              -5.3
+            ],
+            [
+              -4.6,
+              -6.8
+            ],
+            [
+              -1.1,
+              -6.8
+            ],
+            [
+              -1.1,
+              -5.6
+            ],
+            [
+              -4,
+              -4.7
+            ],
+            [
+              -5.8,
+              -2.1
+            ],
+            [
+              -7,
+              -2.1
+            ]
+          ],
+          [
+            [
+              2.4,
+              1.8
+            ],
+            [
+              6.3,
+              1.8
+            ],
+            [
+              6.7,
+              4.3
+            ],
+            [
+              3.5,
+              6.1
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        ]
+      },
+      "solids": [
+        {
+          "bounds": [
+            3.1599999999999997,
+            3.0599999999999996,
+            3.28,
+            3.1799999999999997
+          ],
+          "height": 2.45,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            3.1599999999999997,
+            5.02,
+            3.28,
+            5.139999999999999
+          ],
+          "height": 2.45,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            5.92,
+            3.0599999999999996,
+            6.039999999999999,
+            3.1799999999999997
+          ],
+          "height": 2.45,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            5.92,
+            5.02,
+            6.039999999999999,
+            5.139999999999999
+          ],
+          "height": 2.45,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            5.725,
+            3.6000000000000005,
+            6.275,
+            5.2
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            -4.6,
+            -6.125,
+            -3.2,
+            -5.475
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            2.8000000000000003,
+            5.675000000000001,
+            4.6000000000000005,
+            6.125
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            3.04,
+            3.09,
+            3.16,
+            3.21
+          ],
+          "height": 0.75,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            4.340000000000001,
+            3.09,
+            4.46,
+            3.21
+          ],
+          "height": 0.75,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -4.91,
+            -5.010000000000001,
+            -4.6899999999999995,
+            -4.79
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            -5.8100000000000005,
+            -3.01,
+            -5.59,
+            -2.79
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            -2.21,
+            -6.11,
+            -1.99,
+            -5.89
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            5.489999999999999,
+            -4.3100000000000005,
+            5.71,
+            -4.09
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            -5.91,
+            3.49,
+            -5.6899999999999995,
+            3.71
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        }
+      ],
+      "exposedEdges": 22,
+      "additionalGroundMeshes": 14,
+      "npcClearance": {
+        "position": {
+          "centreToVisibleBoundary": 0.49396356140913955,
+          "nearestKind": "column",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        },
+        "playerStop": {
+          "centreToVisibleBoundary": 1.6110943485718026,
+          "nearestKind": "planter",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        }
+      }
+    },
+    {
+      "island": "windmill",
+      "centre": [
+        -53.352,
+        0,
+        87.048
+      ],
+      "radius": 9,
+      "design": {
+        "name": "智慧公所",
+        "kind": "open-service-hall",
+        "arrival": [
+          0,
+          3.5
+        ],
+        "building": [
+          -3.3,
+          -4.15,
+          4.8,
+          2.2,
+          2.45
+        ],
+        "court": [
+          -3.2,
+          -1.9,
+          5.1,
+          2.2
+        ],
+        "npc": {
+          "position": [
+            -3,
+            0,
+            -1.6
+          ],
+          "playerStop": [
+            -1.7,
+            0,
+            -1.6
+          ],
+          "facingYaw": 1.57,
+          "interactionRadius": 1.6,
+          "implemented": false
+        },
+        "trees": [
+          [
+            -6.4,
+            -1.8,
+            1.5
+          ],
+          [
+            0.2,
+            -6.3,
+            1.4
+          ],
+          [
+            5.9,
+            2.8,
+            1.5
+          ]
+        ],
+        "benches": [
+          [
+            -4.8,
+            -1.2,
+            0
+          ],
+          [
+            4.8,
+            3.5,
+            0
+          ]
+        ],
+        "paths": [
+          [
+            [
+              -6.2,
+              -5.5
+            ],
+            [
+              -0.5,
+              -5.5
+            ],
+            [
+              -0.5,
+              -3
+            ],
+            [
+              -0.9,
+              -0.6
+            ],
+            [
+              -5.5,
+              -0.6
+            ],
+            [
+              -6.4,
+              -2.8
+            ]
+          ]
+        ]
+      },
+      "solids": [
+        {
+          "bounds": [
+            -5.699999999999999,
+            -5.25,
+            -0.8999999999999999,
+            -5.07
+          ],
+          "height": 2.45,
+          "kind": "service-back"
+        },
+        {
+          "bounds": [
+            -5.699999999999999,
+            -5.25,
+            -5.52,
+            -3.0500000000000003
+          ],
+          "height": 2.45,
+          "kind": "service-side"
+        },
+        {
+          "bounds": [
+            -1.0799999999999998,
+            -5.25,
+            -0.8999999999999999,
+            -3.0500000000000003
+          ],
+          "height": 2.45,
+          "kind": "service-side"
+        },
+        {
+          "bounds": [
+            -5.325,
+            -3.1500000000000004,
+            -4.2749999999999995,
+            -2.95
+          ],
+          "height": 2.05,
+          "kind": "service-bay"
+        },
+        {
+          "bounds": [
+            -2.3249999999999997,
+            -3.1500000000000004,
+            -1.275,
+            -2.95
+          ],
+          "height": 2.05,
+          "kind": "service-bay"
+        },
+        {
+          "bounds": [
+            -5.64,
+            -2.16,
+            -5.5200000000000005,
+            -2.04
+          ],
+          "height": 2.45,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -2.2600000000000002,
+            -2.16,
+            -2.14,
+            -2.04
+          ],
+          "height": 2.45,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -4.075,
+            -4.510000000000001,
+            -2.525,
+            -4.090000000000001
+          ],
+          "height": 0.85,
+          "kind": "service-counter"
+        },
+        {
+          "bounds": [
+            -6.3999999999999995,
+            -1.05,
+            -5.2,
+            -0.55
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            -0.19999999999999998,
+            -5.75,
+            0.4,
+            -4.449999999999999
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            -6.510000000000001,
+            -1.9100000000000001,
+            -6.29,
+            -1.69
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            0.09000000000000001,
+            -6.41,
+            0.31,
+            -6.1899999999999995
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            5.79,
+            2.69,
+            6.010000000000001,
+            2.9099999999999997
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        }
+      ],
+      "exposedEdges": 25,
+      "additionalGroundMeshes": 14,
+      "npcClearance": {
+        "position": {
+          "centreToVisibleBoundary": 0.8609297300012432,
+          "nearestKind": "column",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        },
+        "playerStop": {
+          "centreToVisibleBoundary": 0.6222539674441687,
+          "nearestKind": "column",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        }
+      }
+    },
+    {
+      "island": "crystal",
+      "centre": [
+        44.928000000000004,
+        0,
+        45.278999999999996
+      ],
+      "radius": 9,
+      "design": {
+        "name": "治水防災",
+        "kind": "rain-garden-observatory",
+        "arrival": [
+          0,
+          3.5
+        ],
+        "pergola": [
+          4.6,
+          1.3,
+          2.6,
+          2.5,
+          2.65
+        ],
+        "water": [
+          [
+            6,
+            -1.5
+          ],
+          [
+            6,
+            2.5
+          ],
+          [
+            4.8,
+            5.4
+          ],
+          [
+            1.6,
+            6.4
+          ],
+          [
+            -1,
+            5.6
+          ],
+          [
+            -3.8,
+            4.7
+          ]
+        ],
+        "npc": {
+          "position": [
+            -0.3,
+            0,
+            3.6
+          ],
+          "playerStop": [
+            -0.3,
+            0,
+            2.2
+          ],
+          "facingYaw": 3.14159,
+          "interactionRadius": 1.7,
+          "implemented": false
+        },
+        "trees": [
+          [
+            -5.8,
+            2.6,
+            1.45
+          ],
+          [
+            -3.9,
+            6,
+            1.3
+          ],
+          [
+            -1.8,
+            -5.6,
+            1.1
+          ]
+        ],
+        "benches": [
+          [
+            1.6,
+            4.4,
+            0
+          ]
+        ],
+        "paths": [
+          [
+            [
+              3,
+              -0.3
+            ],
+            [
+              5.8,
+              -0.3
+            ],
+            [
+              5.8,
+              2.8
+            ],
+            [
+              3,
+              3.1
+            ]
+          ],
+          [
+            [
+              0.3,
+              3.6
+            ],
+            [
+              3.6,
+              3.6
+            ],
+            [
+              4.4,
+              5.4
+            ],
+            [
+              1.6,
+              6.5
+            ],
+            [
+              -0.5,
+              5.7
+            ]
+          ]
+        ],
+        "waterWidth": 0.64,
+        "retentionWidth": 1.7
+      },
+      "solids": [
+        {
+          "bounds": [
+            3.36,
+            0.11000000000000004,
+            3.48,
+            0.23000000000000004
+          ],
+          "height": 2.65,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            3.36,
+            2.3699999999999997,
+            3.48,
+            2.4899999999999998
+          ],
+          "height": 2.65,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            5.72,
+            0.11000000000000004,
+            5.839999999999999,
+            0.23000000000000004
+          ],
+          "height": 2.65,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            5.72,
+            2.3699999999999997,
+            5.839999999999999,
+            2.4899999999999998
+          ],
+          "height": 2.65,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            3.7499999999999996,
+            0.11000000000000001,
+            5.449999999999999,
+            0.29000000000000004
+          ],
+          "height": 0.8,
+          "kind": "observation-display"
+        },
+        {
+          "bounds": [
+            -4.25,
+            5.25,
+            -2.95,
+            5.85
+          ],
+          "height": 0.24,
+          "kind": "planter"
+        },
+        {
+          "bounds": [
+            5.090000000000001,
+            0.34,
+            5.21,
+            0.46
+          ],
+          "height": 1.2,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            6.79,
+            0.34,
+            6.909999999999999,
+            0.46
+          ],
+          "height": 1.2,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            5.090000000000001,
+            1.54,
+            5.21,
+            1.6600000000000001
+          ],
+          "height": 1.2,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            6.79,
+            1.54,
+            6.909999999999999,
+            1.6600000000000001
+          ],
+          "height": 1.2,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            5.69,
+            -1.85,
+            6.31,
+            -1.15
+          ],
+          "height": 0.65,
+          "kind": "water-headbox"
+        },
+        {
+          "bounds": [
+            -5.91,
+            2.49,
+            -5.6899999999999995,
+            2.71
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            -4.01,
+            5.89,
+            -3.79,
+            6.11
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            -1.9100000000000001,
+            -5.71,
+            -1.69,
+            -5.489999999999999
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        }
+      ],
+      "exposedEdges": 25,
+      "additionalGroundMeshes": 16,
+      "npcClearance": {
+        "position": {
+          "centreToVisibleBoundary": 1.0996100946818332,
+          "nearestKind": "water-edge",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        },
+        "playerStop": {
+          "centreToVisibleBoundary": 2.272465621302107,
+          "nearestKind": "bench",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        }
+      }
+    },
+    {
+      "island": "lookout",
+      "centre": [
+        50.544,
+        0,
+        88.452
+      ],
+      "radius": 9,
+      "design": {
+        "name": "教育發展",
+        "kind": "reading-hall-book-veranda",
+        "arrival": [
+          0,
+          3.5
+        ],
+        "building": [
+          -3.5,
+          -4.2,
+          4.2,
+          2.25,
+          2.5
+        ],
+        "wing": [
+          0.8,
+          -4.45,
+          4.3,
+          1.9,
+          2.05
+        ],
+        "court": [
+          -1.2,
+          -2.3,
+          7.2,
+          1.5
+        ],
+        "npc": {
+          "position": [
+            1.4,
+            0,
+            4.5
+          ],
+          "playerStop": [
+            0.1,
+            0,
+            4.5
+          ],
+          "facingYaw": -1.5708,
+          "interactionRadius": 1.65,
+          "implemented": false
+        },
+        "trees": [
+          [
+            -6.6,
+            2.8,
+            1.5
+          ],
+          [
+            4.5,
+            3.9,
+            1.6
+          ],
+          [
+            1.3,
+            -6.6,
+            1.25
+          ],
+          [
+            -5.2,
+            4,
+            1.25
+          ]
+        ],
+        "benches": [
+          [
+            -4.8,
+            3.7,
+            0
+          ]
+        ],
+        "paths": [
+          [
+            [
+              -5.9,
+              -5.7
+            ],
+            [
+              3.2,
+              -5.7
+            ],
+            [
+              3.2,
+              -3.2
+            ],
+            [
+              2.3,
+              -1.1
+            ],
+            [
+              -5.7,
+              -1.1
+            ]
+          ]
+        ]
+      },
+      "solids": [
+        {
+          "bounds": [
+            -5.6,
+            -5.325,
+            -1.4,
+            -3.075
+          ],
+          "height": 2.5,
+          "kind": "hall-shell"
+        },
+        {
+          "bounds": [
+            -5.539999999999999,
+            -2.3850000000000002,
+            -5.42,
+            -2.265
+          ],
+          "height": 2.38,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -1.58,
+            -2.3850000000000002,
+            -1.46,
+            -2.265
+          ],
+          "height": 2.38,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            -1.3499999999999999,
+            -5.4,
+            2.95,
+            -5.220000000000001
+          ],
+          "height": 2.05,
+          "kind": "book-wall"
+        },
+        {
+          "bounds": [
+            -1.29,
+            -3.66,
+            -1.17,
+            -3.54
+          ],
+          "height": 2.15,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            2.77,
+            -3.66,
+            2.89,
+            -3.54
+          ],
+          "height": 2.15,
+          "kind": "column"
+        },
+        {
+          "bounds": [
+            0.30000000000000004,
+            -3.95,
+            1.3,
+            -3.45
+          ],
+          "height": 0.12,
+          "kind": "table"
+        },
+        {
+          "bounds": [
+            2.85,
+            2.7,
+            4.35,
+            3.5
+          ],
+          "height": 0.12,
+          "kind": "table"
+        },
+        {
+          "bounds": [
+            -6.71,
+            2.69,
+            -6.489999999999999,
+            2.9099999999999997
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            4.39,
+            3.79,
+            4.61,
+            4.01
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            1.19,
+            -6.71,
+            1.4100000000000001,
+            -6.489999999999999
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        },
+        {
+          "bounds": [
+            -5.3100000000000005,
+            3.89,
+            -5.09,
+            4.11
+          ],
+          "height": 2.3,
+          "kind": "tree-trunk"
+        }
+      ],
+      "exposedEdges": 24,
+      "additionalGroundMeshes": 16,
+      "npcClearance": {
+        "position": {
+          "centreToVisibleBoundary": 1.4588008774332457,
+          "nearestKind": "bench",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        },
+        "playerStop": {
+          "centreToVisibleBoundary": 2.754650613054222,
+          "nearestKind": "bench",
+          "note": "Spatial reservation only; no NPC body/dialogue was created or tested"
+        }
+      }
+    }
+  ],
+  "transport": {
+    "version": 4,
+    "notice": "交通政策願景示意・非核定或完工工程",
+    "station": {
+      "center": [
+        -2.775,
+        0,
+        -4.35
+      ],
+      "size": [
+        4.05,
+        1.4
+      ],
+      "entrance": [
+        -1.8,
+        0,
+        -3.2
+      ],
+      "entryRecess": [
+        -1.8,
+        0,
+        -4.1
+      ],
+      "canopyHeight": 2.55,
+      "roofProfile": [
+        [
+          -5.1,
+          2.55
+        ],
+        [
+          -3.9,
+          3.25
+        ],
+        [
+          -0.4,
+          2.65
+        ]
+      ],
+      "roofZ": -4.65,
+      "roofDepth": 2.7,
+      "columns": [
+        [
+          -4.8,
+          -3.4
+        ],
+        [
+          -0.8,
+          -3.4
+        ]
+      ]
+    },
+    "platform": {
+      "center": [
+        1,
+        0.06,
+        -5.87
+      ],
+      "size": [
+        7,
+        0.12,
+        0.86
+      ],
+      "access": [
+        4.9,
+        0,
+        -5.8
+      ]
+    },
+    "rail": {
+      "center": [
+        1,
+        0,
+        -7
+      ],
+      "length": 6.6,
+      "exclusion": [
+        -2.55,
+        -7.65,
+        4.55,
+        -6.35
+      ],
+      "trainHalfLength": 1.25,
+      "travel": 1.35,
+      "speed": 0.16
+    },
+    "npcReservation": {
+      "position": [
+        5.6,
+        0,
+        -3.9
+      ],
+      "facingYaw": 0,
+      "bodyRadius": 0.4,
+      "interactionRadius": 1.8,
+      "playerStop": [
+        5.6,
+        0,
+        -2.65
+      ],
+      "cameraFrom": [
+        6.2,
+        3.3,
+        2.8
+      ],
+      "implemented": false,
+      "note": "Unused V3 reservation relocated within home to keep culture wall and approach open; no NPC created"
+    },
+    "murals": {
+      "x": [
+        -4.2,
+        -4.85,
+        -5.5,
+        -6.15,
+        -6.8
+      ],
+      "y": 1.04,
+      "z": 3.5,
+      "scale": 0.43,
+      "orderUnchanged": true,
+      "baseBounds": [
+        -7.1,
+        3.38,
+        -3.9,
+        3.62
+      ],
+      "yaw": 3.141592653589793
+    },
+    "visionDisplay": {
+      "position": [
+        -5.8,
+        0,
+        -3.65
+      ],
+      "bounds": [
+        -6.75,
+        -3.85,
+        -4.85,
+        -3.52
+      ],
+      "topics": [
+        "高鐵大甲設站及苑裡聯合開發願景",
+        "苑裡火車站跨站月台",
+        "車站西側停車改善",
+        "苗140道路升級至西濱"
+      ]
+    },
+    "roadExhibit": null,
+    "stationSolids": [
+      {
+        "name": "station-west-wing",
+        "bounds": [
+          -4.8,
+          -5.05,
+          -2.65,
+          -3.65
+        ],
+        "height": 2.4,
+        "collisionBounds": [
+          -4.94,
+          -5.05,
+          -2.56,
+          -3.42
+        ]
+      },
+      {
+        "name": "station-east-jamb",
+        "bounds": [
+          -0.95,
+          -5.05,
+          -0.75,
+          -3.65
+        ],
+        "height": 2.4,
+        "collisionBounds": [
+          -1.04,
+          -5.05,
+          -0.65,
+          -3.48
+        ]
+      },
+      {
+        "name": "station-rear-wall",
+        "bounds": [
+          -2.65,
+          -5.05,
+          -0.95,
+          -4.8
+        ],
+        "height": 2.4
+      }
+    ],
+    "edgeSource": "Shared world island+road union: single external boundary owned by bridges",
+    "gateRoutes": [
+      "S09",
+      "S10",
+      "S15",
+      "S18"
+    ],
+    "spawnUnchanged": [
+      0,
+      0.5,
+      3.5
+    ],
+    "plazaOutline": [
+      [
+        -7,
+        -1.2
+      ],
+      [
+        -6.5,
+        -2.4
+      ],
+      [
+        -4.8,
+        -3.1
+      ],
+      [
+        -4.8,
+        -4.8
+      ],
+      [
+        -0.7,
+        -4.8
+      ],
+      [
+        0,
+        -5.7
+      ],
+      [
+        5.8,
+        -5.7
+      ],
+      [
+        6.3,
+        -3.1
+      ],
+      [
+        6.8,
+        -1.4
+      ],
+      [
+        6.8,
+        1.1
+      ],
+      [
+        3.6,
+        1.8
+      ],
+      [
+        1.8,
+        4.1
+      ],
+      [
+        -1.9,
+        4.1
+      ],
+      [
+        -3.5,
+        2.2
+      ],
+      [
+        -6.5,
+        1.2
+      ]
+    ],
+    "bench": {
+      "bounds": [
+        5.45,
+        -6.2,
+        5.95,
+        -4.9
+      ],
+      "height": 0.9
+    },
+    "weave": {
+      "front": {
+        "origin": [
+          -4.7,
+          0.65,
+          -3.49
+        ],
+        "span": 1.9,
+        "height": 1.7
+      },
+      "west": {
+        "origin": [
+          -4.87,
+          0.65,
+          -4.95
+        ],
+        "span": 1.46,
+        "height": 1.7
+      },
+      "pitch": 0.4,
+      "stripWidth": 0.16,
+      "depthOffset": 0.035
+    }
+  },
+  "physicsLimits": {
+    "playerRadius": 0.33,
+    "guardThickness": 0.16,
+    "guardHeight": 1.3,
+    "edgeWalkTest": "actual Player in spaces-desktop/mobile.json; forced jumping beyond rail height is not enclosed",
+    "waterCrossingTop": 0.24
+  },
+  "licence": "Original MIT procedural models; polygon-clipping/Three.js remain under existing third-party notices"
+}

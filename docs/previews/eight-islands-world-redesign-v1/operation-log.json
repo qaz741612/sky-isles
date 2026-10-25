@@ -1,0 +1,5065 @@
+[
+  {
+    "type": "method",
+    "description": "Native normal-speed automated input, silent browser recording; not human handheld footage. Reads state only, no game state writes.",
+    "itinerary": {
+      "length": 614.9044125611415,
+      "order": [
+        "F",
+        "C",
+        "D",
+        "B",
+        "A",
+        "E",
+        "G",
+        "H"
+      ]
+    }
+  },
+  {
+    "type": "asset",
+    "source": "/assets/index-BJC2BLzt.js"
+  },
+  {
+    "type": "policy",
+    "name": "home",
+    "title": "交通大升級"
+  },
+  {
+    "type": "focus-return",
+    "method": "Native canvas drag after menu control focus"
+  },
+  {
+    "type": "walk",
+    "target": [
+      0,
+      0
+    ],
+    "state": {
+      "x": -0.08023156199676448,
+      "z": 0.13063748777850515,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "BODY",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.8,
+      -2.5
+    ],
+    "state": {
+      "x": -1.9021270163847208,
+      "z": -2.260094230553044,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "BODY",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.8,
+      -4.1
+    ],
+    "state": {
+      "x": -1.6782819431889244,
+      "z": -3.779248840353154,
+      "y": 0.03999999955296517,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "BODY",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.8,
+      -2.5
+    ],
+    "state": {
+      "x": -1.785932593154001,
+      "z": -2.804570442887883,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "BODY",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -5.8,
+      -2.5
+    ],
+    "state": {
+      "x": -5.721927887331402,
+      "z": -2.6289716322243524,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "BODY",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "vision",
+    "title": "交通政策願景"
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.8,
+      -2.5
+    ],
+    "state": {
+      "x": -1.979053310275826,
+      "z": -2.563641636330876,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      5,
+      -2.5
+    ],
+    "state": {
+      "x": 4.730482308708471,
+      "z": -2.549423299195114,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      5,
+      -5.7
+    ],
+    "state": {
+      "x": 4.920550812239422,
+      "z": -5.458372575530002,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -4.9,
+      -5.7
+    ],
+    "state": {
+      "x": -4.826439774224836,
+      "z": -5.775553472982557,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      5,
+      -5.7
+    ],
+    "state": {
+      "x": 4.730476975290868,
+      "z": -5.7336948351180546,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      5,
+      -2.5
+    ],
+    "state": {
+      "x": 5.157424424759876,
+      "z": -2.562258614530827,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      4.6,
+      3.6
+    ],
+    "state": {
+      "x": 4.5301184477274745,
+      "z": 3.470506751286161,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "chime",
+    "state": {
+      "chimesUnlocked": 0,
+      "islandCount": 8,
+      "respawnCount": 0,
+      "checkpoint": [
+        4.4963064951169995,
+        1.1920928799646902e-8,
+        3.6271976533814807
+      ],
+      "playerPos": {
+        "x": 4.4963064951169995,
+        "y": 1.1920928799646902e-8,
+        "z": 3.6271976533814807
+      },
+      "panoramaMode": "explore",
+      "started": true,
+      "muralOrder": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0,
+      0
+    ],
+    "state": {
+      "x": 0.008320827969057684,
+      "z": 0.32119565531451916,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -0.4816281600000001,
+      3.3492026879999997
+    ],
+    "state": {
+      "x": -0.48054247774719633,
+      "z": 3.104005170146456,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.23821568,
+      6.656891903999998
+    ],
+    "state": {
+      "x": -1.2899358587039575,
+      "z": 6.434564317496872,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -2.24819712,
+      9.921989376
+    ],
+    "state": {
+      "x": -2.1749652741364365,
+      "z": 9.756641791943451,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -3.49000704,
+      13.143416832
+    ],
+    "state": {
+      "x": -3.6804077524820444,
+      "z": 12.931888023394508,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -4.94208,
+      16.320096
+    ],
+    "state": {
+      "x": -5.031139103269133,
+      "z": 16.143803902475355,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -6.58285056,
+      19.450948607999997
+    ],
+    "state": {
+      "x": -6.874215473155146,
+      "z": 19.239037932973392,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -8.390753280000002,
+      22.534896384000003
+    ],
+    "state": {
+      "x": -8.45623348769121,
+      "z": 22.396140765521835,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -10.344222720000001,
+      25.570861056000005
+    ],
+    "state": {
+      "x": -10.448712879609657,
+      "z": 25.45596744365324,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -12.421693439999999,
+      28.557764352
+    ],
+    "state": {
+      "x": -12.162855228407587,
+      "z": 28.747228696951233,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -14.6016,
+      31.494528000000003
+    ],
+    "state": {
+      "x": -14.297945151282422,
+      "z": 31.269310685672927,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -16.862376959999995,
+      34.380073728
+    ],
+    "state": {
+      "x": -16.695487880420067,
+      "z": 34.47393949599912,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -19.182458879999995,
+      37.213323263999996
+    ],
+    "state": {
+      "x": -18.99594269525784,
+      "z": 37.29093853620663,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -20.357999999999997,
+      38.61
+    ],
+    "state": {
+      "x": -20.27001533765573,
+      "z": 38.498663383125404,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S15"
+  },
+  {
+    "type": "island",
+    "name": "koi"
+  },
+  {
+    "type": "policy",
+    "name": "koi",
+    "title": "產業青年"
+  },
+  {
+    "type": "focus-return",
+    "method": "Native canvas drag after menu control focus"
+  },
+  {
+    "type": "walk",
+    "target": [
+      -20.357999999999997,
+      38.61
+    ],
+    "state": {
+      "x": -20.585674906740515,
+      "z": 38.89242858462058,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": []
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -18.357999999999997,
+      40.11
+    ],
+    "state": {
+      "x": -18.45176878094219,
+      "z": 40.35916519924895,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -17.257999999999996,
+      41.01
+    ],
+    "state": {
+      "x": -17.450144098133713,
+      "z": 40.79992026417896,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -15.457999999999997,
+      41.81
+    ],
+    "state": {
+      "x": -15.730971453351703,
+      "z": 41.96069314778481,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -15.457999999999997,
+      40.61
+    ],
+    "state": {
+      "x": -15.555682214037283,
+      "z": 40.65214826592578,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -15.457999999999997,
+      41.81
+    ],
+    "state": {
+      "x": -15.296954446887877,
+      "z": 41.49957493264571,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -17.257999999999996,
+      41.01
+    ],
+    "state": {
+      "x": -17.062084410302422,
+      "z": 41.329015785734505,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -18.357999999999997,
+      40.11
+    ],
+    "state": {
+      "x": -18.27010234577113,
+      "z": 40.40117476799181,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -20.357999999999997,
+      38.61
+    ],
+    "state": {
+      "x": -20.37818600074829,
+      "z": 38.77492672459303,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -22.608943651389932,
+      41.661903831705494
+    ],
+    "state": {
+      "x": -22.813859947885152,
+      "z": 41.551881859067215,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -24.662045078888053,
+      44.692007513148006
+    ],
+    "state": {
+      "x": -24.52746815012565,
+      "z": 44.375515087399,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -26.551528174305027,
+      47.701717505634846
+    ],
+    "state": {
+      "x": -26.633535319701593,
+      "z": 47.408186359721576,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -28.31161682945154,
+      50.69244027047332
+    ],
+    "state": {
+      "x": -28.537040764567887,
+      "z": 50.78342983092868,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -29.976534936138243,
+      53.6655822689707
+    ],
+    "state": {
+      "x": -29.963640220682766,
+      "z": 53.388694109980726,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -31.580506386175806,
+      56.62254996243426
+    ],
+    "state": {
+      "x": -31.810191469411652,
+      "z": 56.4831046200549,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -33.1577550713749,
+      59.56474981217129
+    ],
+    "state": {
+      "x": -32.994215500148975,
+      "z": 59.440193198431906,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -34.74250488354621,
+      62.4935882794891
+    ],
+    "state": {
+      "x": -35.08196913126494,
+      "z": 62.477440622778936,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -36.36897971450037,
+      65.41047182569497
+    ],
+    "state": {
+      "x": -36.627680308606934,
+      "z": 65.34881216016227,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -38.07140345604808,
+      68.31680691209615
+    ],
+    "state": {
+      "x": -38.27737633321974,
+      "z": 68.1955400973875,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -39.88399999999999,
+      71.214
+    ],
+    "state": {
+      "x": -39.98786301556751,
+      "z": 71.02786112147223,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -41.84099323816679,
+      74.10345755071376
+    ],
+    "state": {
+      "x": -41.91242727436172,
+      "z": 73.80944742472792,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -43.97660706235912,
+      76.98658602554471
+    ],
+    "state": {
+      "x": -43.70002070038824,
+      "z": 76.91783048346716,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -46.32506536438768,
+      79.86479188580016
+    ],
+    "state": {
+      "x": -46.14397119513048,
+      "z": 80.03613288157852,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -48.920592036063105,
+      82.73948159278737
+    ],
+    "state": {
+      "x": -48.901214327766894,
+      "z": 82.6579552659783,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -51.04996346731781,
+      84.8940374718257
+    ],
+    "state": {
+      "x": -50.75689835130421,
+      "z": 85.10493828815922,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -53.352,
+      87.048
+    ],
+    "state": {
+      "x": -53.20069652313699,
+      "z": 87.14401321396939,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S16"
+  },
+  {
+    "type": "island",
+    "name": "windmill"
+  },
+  {
+    "type": "policy",
+    "name": "windmill",
+    "title": "智慧公所"
+  },
+  {
+    "type": "focus-return",
+    "method": "Native canvas drag after menu control focus"
+  },
+  {
+    "type": "walk",
+    "target": [
+      -53.352,
+      87.048
+    ],
+    "state": {
+      "x": -53.38674521299817,
+      "z": 87.20236122076847,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": []
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -56.651999999999994,
+      87.048
+    ],
+    "state": {
+      "x": -56.40981934035225,
+      "z": 87.04939308687548,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -56.651999999999994,
+      85.548
+    ],
+    "state": {
+      "x": -56.7686332174139,
+      "z": 85.79472423238778,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -56.651999999999994,
+      84.248
+    ],
+    "state": {
+      "x": -56.766867232217486,
+      "z": 84.46113323725277,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -56.651999999999994,
+      83.748
+    ],
+    "state": {
+      "x": -56.62868128329789,
+      "z": 84.11952130909246,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": []
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -56.651999999999994,
+      85.548
+    ],
+    "state": {
+      "x": -56.66180935380432,
+      "z": 85.33154792049785,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -56.651999999999994,
+      87.048
+    ],
+    "state": {
+      "x": -56.70769028699904,
+      "z": 86.93717582681514,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -53.352,
+      87.048
+    ],
+    "state": {
+      "x": -53.562937708624744,
+      "z": 86.9997392249321,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -51.04996346731781,
+      84.8940374718257
+    ],
+    "state": {
+      "x": -51.12226983866954,
+      "z": 84.67698962718957,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -48.920592036063105,
+      82.73948159278737
+    ],
+    "state": {
+      "x": -49.07255918765479,
+      "z": 82.56411050400403,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -46.32506536438768,
+      79.86479188580016
+    ],
+    "state": {
+      "x": -46.704918134054495,
+      "z": 79.85683510538071,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -43.97660706235912,
+      76.98658602554471
+    ],
+    "state": {
+      "x": -43.945464039602285,
+      "z": 77.23843441450367,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -41.84099323816679,
+      74.10345755071376
+    ],
+    "state": {
+      "x": -41.76080442919289,
+      "z": 74.23369980026001,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -39.88399999999999,
+      71.214
+    ],
+    "state": {
+      "x": -39.82767838685764,
+      "z": 71.45434492718212,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -38.07140345604808,
+      68.31680691209615
+    ],
+    "state": {
+      "x": -38.26390142535187,
+      "z": 68.29292511499945,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -36.36897971450037,
+      65.41047182569497
+    ],
+    "state": {
+      "x": -36.463791329353235,
+      "z": 65.7761800021561,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -34.74250488354621,
+      62.4935882794891
+    ],
+    "state": {
+      "x": -34.45918753782257,
+      "z": 62.719226717655104,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -33.1577550713749,
+      59.56474981217129
+    ],
+    "state": {
+      "x": -33.03096249152145,
+      "z": 59.820011880964266,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -31.580506386175806,
+      56.62254996243426
+    ],
+    "state": {
+      "x": -31.402688208708632,
+      "z": 56.72114729474758,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -29.976534936138243,
+      53.6655822689707
+    ],
+    "state": {
+      "x": -30.13356920927502,
+      "z": 53.374704359554975,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -28.31161682945154,
+      50.69244027047332
+    ],
+    "state": {
+      "x": -28.17248397514412,
+      "z": 50.9981595443651,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -26.551528174305027,
+      47.701717505634846
+    ],
+    "state": {
+      "x": -26.501894818954273,
+      "z": 47.87805681315625,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -24.662045078888053,
+      44.692007513148006
+    ],
+    "state": {
+      "x": -24.507522463998068,
+      "z": 44.81902090979551,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -22.608943651389932,
+      41.661903831705494
+    ],
+    "state": {
+      "x": -22.79214085059821,
+      "z": 41.987867198637176,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -20.357999999999997,
+      38.61
+    ],
+    "state": {
+      "x": -20.441287972958328,
+      "z": 38.71863673304428,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S16"
+  },
+  {
+    "type": "walk",
+    "target": [
+      -22.650400599152313,
+      36.60074384894913
+    ],
+    "state": {
+      "x": -22.501434426965545,
+      "z": 36.74067528275233,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -24.87137852052365,
+      34.512935483654296
+    ],
+    "state": {
+      "x": -24.84967436414383,
+      "z": 34.84517849938847,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -27.010239459419516,
+      32.35574145099646
+    ],
+    "state": {
+      "x": -27.217258457874596,
+      "z": 32.60487873867945,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -29.056289111145436,
+      30.138328297856617
+    ],
+    "state": {
+      "x": -29.040908438198983,
+      "z": 30.364730809930933,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -31.621498216648643,
+      27.10394665394923
+    ],
+    "state": {
+      "x": -31.62962138027016,
+      "z": 27.250450283301483,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -33.97734791808002,
+      24.00053299032087
+    ],
+    "state": {
+      "x": -34.24112796051497,
+      "z": 24.150228401590873,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -36.098488752460085,
+      20.849815418096817
+    ],
+    "state": {
+      "x": -35.954423409324114,
+      "z": 21.16897661218087,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -37.959571256809305,
+      17.673522048402372
+    ],
+    "state": {
+      "x": -37.80490482493432,
+      "z": 17.935839951832264,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -39.535245968148196,
+      14.493380992362827
+    ],
+    "state": {
+      "x": -39.49442318278824,
+      "z": 14.603417247089071,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -40.80016342349725,
+      11.331120361103462
+    ],
+    "state": {
+      "x": -40.68430462190342,
+      "z": 11.635815200702806,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -41.72897415987695,
+      8.208468265749579
+    ],
+    "state": {
+      "x": -41.609033502732416,
+      "z": 8.504660417188136,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -42.29632871430779,
+      5.147152817426466
+    ],
+    "state": {
+      "x": -42.11402356209095,
+      "z": 5.451104828857515,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -42.45860582897291,
+      1.4398645862020323
+    ],
+    "state": {
+      "x": -42.58398711132844,
+      "z": 1.513757260495442,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -42.12,
+      -1.4040000000000001
+    ],
+    "state": {
+      "x": -41.9759126997905,
+      "z": -1.2854851991615792,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S14"
+  },
+  {
+    "type": "island",
+    "name": "temple"
+  },
+  {
+    "type": "policy",
+    "name": "temple",
+    "title": "幸福養老"
+  },
+  {
+    "type": "focus-return",
+    "method": "Native canvas drag after menu control focus"
+  },
+  {
+    "type": "walk",
+    "target": [
+      -42.12,
+      -1.4040000000000001
+    ],
+    "state": {
+      "x": -41.952199398550434,
+      "z": -1.6877104807564178,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -44.72,
+      -1.4040000000000001
+    ],
+    "state": {
+      "x": -44.62697378405343,
+      "z": -1.352051637911474,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -44.72,
+      -2.604
+    ],
+    "state": {
+      "x": -44.92534098451654,
+      "z": -2.3116341294044185,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -44.72,
+      -3.8040000000000003
+    ],
+    "state": {
+      "x": -44.737322587294436,
+      "z": -3.677703029242663,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -44.72,
+      -2.604
+    ],
+    "state": {
+      "x": -44.59674388448882,
+      "z": -2.8876540424355985,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -44.72,
+      -1.4040000000000001
+    ],
+    "state": {
+      "x": -44.54304704845719,
+      "z": -1.7315326623466374,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -42.12,
+      -1.4040000000000001
+    ],
+    "state": {
+      "x": -42.370695305343475,
+      "z": -1.4336849959895546,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -38.354948096885806,
+      -1.4028569102381436
+    ],
+    "state": {
+      "x": -38.586452690853534,
+      "z": -1.5371318441968504,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -34.53159861591694,
+      -1.3948552819051494
+    ],
+    "state": {
+      "x": -34.46539494834003,
+      "z": -1.5611655481867746,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -30.708249134948087,
+      -1.37313657642988
+    ],
+    "state": {
+      "x": -30.955077525786226,
+      "z": -1.4698043709201563,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -26.94319723183391,
+      -1.3308422552411971
+    ],
+    "state": {
+      "x": -27.14166835452982,
+      "z": -1.4151440019290904,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -23.294740484429063,
+      -1.2611137797679628
+    ],
+    "state": {
+      "x": -23.60511747924396,
+      "z": -1.4342252003548046,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -19.821176470588235,
+      -1.1570926114390394
+    ],
+    "state": {
+      "x": -20.10838125741913,
+      "z": -1.2853064864422397,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -16.58080276816609,
+      -1.0119202116832895
+    ],
+    "state": {
+      "x": -16.9357237725446,
+      "z": -1.0108857469718995,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -12.94707223183391,
+      -0.7621372379401589
+    ],
+    "state": {
+      "x": -13.15418399020675,
+      "z": -0.8217455732546837,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -12.285,
+      -0.7020000000000001
+    ],
+    "state": {
+      "x": -12.592235849139072,
+      "z": -0.7089852256515684,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S08"
+  },
+  {
+    "type": "walk",
+    "target": [
+      -14.169529875893812,
+      -3.5372330073148675
+    ],
+    "state": {
+      "x": -13.973957308887023,
+      "z": -3.3754686507442706,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -15.206692035834633,
+      -6.886546724747266
+    ],
+    "state": {
+      "x": -15.16124060287817,
+      "z": -6.66885124330282,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -15.96967781704611,
+      -10.728824032218297
+    ],
+    "state": {
+      "x": -16.123919336580975,
+      "z": -10.395292814199541,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -16.5914212213364,
+      -14.632029423851398
+    ],
+    "state": {
+      "x": -16.606960436931324,
+      "z": -14.331045269976688,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -17.204856250513682,
+      -18.164127393770034
+    ],
+    "state": {
+      "x": -17.19717224844191,
+      "z": -18.002871206700977,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -17.549999999999997,
+      -19.656
+    ],
+    "state": {
+      "x": -17.444072706873875,
+      "z": -19.533061993147744,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S05"
+  },
+  {
+    "type": "island",
+    "name": "tree"
+  },
+  {
+    "type": "policy",
+    "name": "tree",
+    "title": "安心生養"
+  },
+  {
+    "type": "focus-return",
+    "method": "Native canvas drag after menu control focus"
+  },
+  {
+    "type": "walk",
+    "target": [
+      -17.549999999999997,
+      -19.656
+    ],
+    "state": {
+      "x": -17.476860900415833,
+      "z": -19.736252542869572,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": []
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -13.549999999999997,
+      -19.656
+    ],
+    "state": {
+      "x": -13.879365447332377,
+      "z": -19.547287215360164,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -13.549999999999997,
+      -22.256
+    ],
+    "state": {
+      "x": -13.61308286222857,
+      "z": -22.010884886971134,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -13.549999999999997,
+      -23.156
+    ],
+    "state": {
+      "x": -13.69152312186524,
+      "z": -22.891487955291762,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -13.549999999999997,
+      -22.256
+    ],
+    "state": {
+      "x": -13.566219581325596,
+      "z": -22.44250596271551,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -13.549999999999997,
+      -19.656
+    ],
+    "state": {
+      "x": -13.596020830401397,
+      "z": -19.771274507290602,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -17.549999999999997,
+      -19.656
+    ],
+    "state": {
+      "x": -17.26637725973549,
+      "z": -19.684625304353553,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -14.064620543999997,
+      -19.428978816
+    ],
+    "state": {
+      "x": -14.4101999053788,
+      "z": -19.37958095496983,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -10.524788351999996,
+      -19.248323327999994
+    ],
+    "state": {
+      "x": -10.618218822759083,
+      "z": -19.285377069469032,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -6.943442688,
+      -19.106485632000002
+    ],
+    "state": {
+      "x": -7.155898898393687,
+      "z": -18.99202168188933,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -3.3335228159999977,
+      -18.995917823999996
+    ],
+    "state": {
+      "x": -3.63125580578024,
+      "z": -18.960874107004567,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.2920320000000003,
+      -18.909072
+    ],
+    "state": {
+      "x": 0.23150133773957793,
+      "z": -19.114434826343032,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      3.9202824959999987,
+      -18.838400256
+    ],
+    "state": {
+      "x": 3.705822859192733,
+      "z": -18.870936217988838,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      7.538289408000002,
+      -18.776354687999998
+    ],
+    "state": {
+      "x": 7.229160378385864,
+      "z": -18.83426294652012,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      11.133113472000002,
+      -18.715387392
+    ],
+    "state": {
+      "x": 11.05005419808912,
+      "z": -18.81117901209928,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      14.691815423999998,
+      -18.647950464
+    ],
+    "state": {
+      "x": 14.54126133039353,
+      "z": -18.638930039236328,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      18.201456,
+      -18.566496
+    ],
+    "state": {
+      "x": 18.05752321050778,
+      "z": -18.57240077078786,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      21.649095936,
+      -18.463476095999997
+    ],
+    "state": {
+      "x": 21.302713052114875,
+      "z": -18.604033772967785,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      25.021795967999992,
+      -18.331342848
+    ],
+    "state": {
+      "x": 24.77205511002734,
+      "z": -18.33952407494168,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      26.676,
+      -18.252
+    ],
+    "state": {
+      "x": 26.630346383506446,
+      "z": -18.030678554202023,
+      "y": 1.1920929021691506e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S02"
+  },
+  {
+    "type": "island",
+    "name": "meadow"
+  },
+  {
+    "type": "policy",
+    "name": "meadow",
+    "title": "宜居環境"
+  },
+  {
+    "type": "focus-return",
+    "method": "Native canvas drag after menu control focus"
+  },
+  {
+    "type": "walk",
+    "target": [
+      26.676,
+      -18.252
+    ],
+    "state": {
+      "x": 26.999196124021438,
+      "z": -18.2714544349015,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": []
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      28.676,
+      -18.252
+    ],
+    "state": {
+      "x": 28.402328349983893,
+      "z": -18.437009455750687,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      28.676,
+      -14.251999999999999
+    ],
+    "state": {
+      "x": 28.73633482239888,
+      "z": -14.417326483767093,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      29.976,
+      -14.251999999999999
+    ],
+    "state": {
+      "x": 29.63374241835489,
+      "z": -14.2937034781449,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      28.676,
+      -14.251999999999999
+    ],
+    "state": {
+      "x": 28.82960493152264,
+      "z": -14.147528785801958,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      28.676,
+      -18.252
+    ],
+    "state": {
+      "x": 28.64464358901956,
+      "z": -17.909245767105308,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      26.676,
+      -18.252
+    ],
+    "state": {
+      "x": 26.920178833275862,
+      "z": -18.212061337334696,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      25.320881663999995,
+      -15.242003711999997
+    ],
+    "state": {
+      "x": 25.20324956771382,
+      "z": -15.507003513708327,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      23.666003711999995,
+      -12.260042495999999
+    ],
+    "state": {
+      "x": 23.71689840214205,
+      "z": -12.63517266241958,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      21.789001728000002,
+      -9.280237824000002
+    ],
+    "state": {
+      "x": 21.726827062842222,
+      "z": -9.57517934792596,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      19.767511296,
+      -6.276711168
+    ],
+    "state": {
+      "x": 19.832393925342206,
+      "z": -6.492125105482613,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      17.679168,
+      -3.2235839999999993
+    ],
+    "state": {
+      "x": 17.66068645869426,
+      "z": -3.4747742718424326,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      15.601607424000001,
+      -0.09497779200000078
+    ],
+    "state": {
+      "x": 15.364876315589912,
+      "z": -0.19249889355670508,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      15.093,
+      0.7020000000000001
+    ],
+    "state": {
+      "x": 15.175778074885006,
+      "z": 0.6456934937345861,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S07"
+  },
+  {
+    "type": "walk",
+    "target": [
+      18.645594822157435,
+      0.8281389620991255
+    ],
+    "state": {
+      "x": 18.60361015267081,
+      "z": 0.6215788998876547,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      22.068661434402326,
+      0.8755884314868804
+    ],
+    "state": {
+      "x": 21.80330804692373,
+      "z": 0.752643579033399,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      25.34098019825073,
+      0.8894401399416911
+    ],
+    "state": {
+      "x": 25.020536255555673,
+      "z": 0.8381344924494812,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      28.44133147521866,
+      0.9147858192419824
+    ],
+    "state": {
+      "x": 28.49835334964239,
+      "z": 1.066857790967525,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      32.27095227988339,
+      1.0443958950437318
+    ],
+    "state": {
+      "x": 32.073576523009194,
+      "z": 0.8845965212222024,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      35.706830903790085,
+      1.3814868804664722
+    ],
+    "state": {
+      "x": 35.49110513569889,
+      "z": 1.3677355130841247,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      38.69866894460641,
+      2.0329428804664724
+    ],
+    "state": {
+      "x": 38.54892398856913,
+      "z": 2.1267233421030514,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      41.73740795335277,
+      3.452169935860059
+    ],
+    "state": {
+      "x": 41.535349289527986,
+      "z": 3.1869596717445754,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      43.9055032303207,
+      5.738356758017493
+    ],
+    "state": {
+      "x": 43.88552790843494,
+      "z": 5.413134820921054,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      44.226,
+      6.318
+    ],
+    "state": {
+      "x": 44.05460391320629,
+      "z": 5.981484376160415,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S11"
+  },
+  {
+    "type": "walk",
+    "target": [
+      45.44029629629629,
+      9.121666666666664
+    ],
+    "state": {
+      "x": 45.49155690226288,
+      "z": 8.92136524150549,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      46.660370370370366,
+      12.73133333333333
+    ],
+    "state": {
+      "x": 46.5684616389959,
+      "z": 12.620235815792707,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      47.557112296296296,
+      16.077082666666666
+    ],
+    "state": {
+      "x": 47.62100155943031,
+      "z": 15.954832962234113,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      48.314448,
+      19.729008
+    ],
+    "state": {
+      "x": 48.23892835626258,
+      "z": 19.42041582637752,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      48.8687757037037,
+      23.593925333333328
+    ],
+    "state": {
+      "x": 48.63685485025571,
+      "z": 23.69023719897389,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      49.15649362962963,
+      27.578650666666665
+    ],
+    "state": {
+      "x": 49.060604943714935,
+      "z": 27.48502651601228,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      49.15905896296296,
+      30.589762666666665
+    ],
+    "state": {
+      "x": 49.176292620899446,
+      "z": 30.373136506447963,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      48.827168,
+      34.55992799999999
+    ],
+    "state": {
+      "x": 48.9093436438173,
+      "z": 34.419262695720114,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      48.05376237037038,
+      38.39364533333333
+    ],
+    "state": {
+      "x": 48.00427093760095,
+      "z": 38.031005254725855,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      46.7752402962963,
+      41.99773066666666
+    ],
+    "state": {
+      "x": 46.654151451015615,
+      "z": 41.831735726497584,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      44.928000000000004,
+      45.278999999999996
+    ],
+    "state": {
+      "x": 45.18576606180656,
+      "z": 45.015768585609734,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S21"
+  },
+  {
+    "type": "island",
+    "name": "crystal"
+  },
+  {
+    "type": "policy",
+    "name": "crystal",
+    "title": "治水防災"
+  },
+  {
+    "type": "focus-return",
+    "method": "Native canvas drag after menu control focus"
+  },
+  {
+    "type": "walk",
+    "target": [
+      44.928000000000004,
+      45.278999999999996
+    ],
+    "state": {
+      "x": 45.06916052631934,
+      "z": 45.18355406978087,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": []
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      46.928000000000004,
+      45.278999999999996
+    ],
+    "state": {
+      "x": 46.728872978365224,
+      "z": 45.081662302983624,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      46.928000000000004,
+      46.278999999999996
+    ],
+    "state": {
+      "x": 46.9493250246767,
+      "z": 45.92755619727877,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      49.428000000000004,
+      46.278999999999996
+    ],
+    "state": {
+      "x": 49.29432444278598,
+      "z": 46.2811549812126,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      51.528000000000006,
+      46.278999999999996
+    ],
+    "state": {
+      "x": 51.202645404316456,
+      "z": 46.13308316469784,
+      "y": 0.23999999821186066,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      49.428000000000004,
+      46.278999999999996
+    ],
+    "state": {
+      "x": 49.61478449928382,
+      "z": 46.261498605103554,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      46.928000000000004,
+      46.278999999999996
+    ],
+    "state": {
+      "x": 47.112928251084206,
+      "z": 46.40504439357818,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      46.928000000000004,
+      45.278999999999996
+    ],
+    "state": {
+      "x": 46.80728974896478,
+      "z": 45.48517782949179,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      44.928000000000004,
+      45.278999999999996
+    ],
+    "state": {
+      "x": 45.167421604504206,
+      "z": 45.48377088794833,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      46.7752402962963,
+      41.99773066666666
+    ],
+    "state": {
+      "x": 47.01002285448975,
+      "z": 41.98086504078382,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      48.05376237037038,
+      38.39364533333333
+    ],
+    "state": {
+      "x": 48.210305607320706,
+      "z": 38.49077752408032,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      48.827168,
+      34.55992799999999
+    ],
+    "state": {
+      "x": 49.02134225105541,
+      "z": 34.85656714674428,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      49.15905896296296,
+      30.589762666666665
+    ],
+    "state": {
+      "x": 49.148870343719246,
+      "z": 30.769403288157797,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      49.15649362962963,
+      27.578650666666665
+    ],
+    "state": {
+      "x": 49.34638515801382,
+      "z": 27.872891627562694,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      48.96818429629629,
+      24.58251466666666
+    ],
+    "state": {
+      "x": 48.880549075363604,
+      "z": 24.819136234305915,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      48.47454637037037,
+      20.678909333333333
+    ],
+    "state": {
+      "x": 48.412215502631355,
+      "z": 20.881780348082867,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      47.76200000000001,
+      16.965
+    ],
+    "state": {
+      "x": 47.879465578604965,
+      "z": 17.132440091717537,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      46.894146962962964,
+      13.533970666666665
+    ],
+    "state": {
+      "x": 46.745171794978475,
+      "z": 13.73455107644189,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      45.93458903703704,
+      10.479005333333335
+    ],
+    "state": {
+      "x": 45.94939553465894,
+      "z": 10.695773462341906,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      44.703074962962965,
+      7.3310986666666675
+    ],
+    "state": {
+      "x": 44.87344090657452,
+      "z": 7.332260030415635,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      44.226,
+      6.318
+    ],
+    "state": {
+      "x": 44.067893049860146,
+      "z": 6.483295128039953,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S21"
+  },
+  {
+    "type": "walk",
+    "target": [
+      42.243822157434394,
+      3.83337026239067
+    ],
+    "state": {
+      "x": 42.30761666286476,
+      "z": 3.915175377689841,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      39.3713527696793,
+      2.2574518950437317
+    ],
+    "state": {
+      "x": 39.495571144432745,
+      "z": 2.038556250208231,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      35.706830903790085,
+      1.3814868804664722
+    ],
+    "state": {
+      "x": 35.836813066663,
+      "z": 1.3563028298056965,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      32.27095227988339,
+      1.0443958950437318
+    ],
+    "state": {
+      "x": 32.347026465951174,
+      "z": 1.1784448879706042,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      28.44133147521866,
+      0.9147858192419824
+    ],
+    "state": {
+      "x": 28.5277578210893,
+      "z": 1.1485117289908637,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      25.34098019825073,
+      0.8894401399416911
+    ],
+    "state": {
+      "x": 25.60102235321211,
+      "z": 1.0783751015955418,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      22.068661434402326,
+      0.8755884314868804
+    ],
+    "state": {
+      "x": 22.067993399896093,
+      "z": 1.0825953041054162,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      18.645594822157435,
+      0.8281389620991255
+    ],
+    "state": {
+      "x": 18.872667946402448,
+      "z": 0.9038231403893298,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      15.093,
+      0.7020000000000001
+    ],
+    "state": {
+      "x": 15.392788575527971,
+      "z": 0.6837761374261861,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S11"
+  },
+  {
+    "type": "walk",
+    "target": [
+      11.54170588235294,
+      0.5368235294117647
+    ],
+    "state": {
+      "x": 11.644249872043469,
+      "z": 0.566959436140751,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      7.9904117647058825,
+      0.37164705882352944
+    ],
+    "state": {
+      "x": 7.84351106055264,
+      "z": 0.480694283039281,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      4.439117647058824,
+      0.20647058823529416
+    ],
+    "state": {
+      "x": 4.334048843741285,
+      "z": 0.38581064544656335,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.8878235294117647,
+      0.04129411764705883
+    ],
+    "state": {
+      "x": 1.177042499264301,
+      "z": 0.045356317773893096,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0,
+      0
+    ],
+    "state": {
+      "x": 0.32533557786099276,
+      "z": -0.08671656736113093,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S10"
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.31984874999999996,
+      3.1975222499999996
+    ],
+    "state": {
+      "x": 0.25593798604753487,
+      "z": 3.0978699337498306,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.5475599999999999,
+      6.468228
+    ],
+    "state": {
+      "x": 0.7320625112317087,
+      "z": 6.4371278925167115,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.6910312499999999,
+      9.806325749999997
+    ],
+    "state": {
+      "x": 0.6670192167442847,
+      "z": 9.659074259195233,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.7581600000000002,
+      13.206024000000003
+    ],
+    "state": {
+      "x": 0.8746664816028734,
+      "z": 12.945968337772706,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.7568437499999999,
+      16.66153125
+    ],
+    "state": {
+      "x": 0.8713948724563861,
+      "z": 16.477221500998045,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.6949799999999999,
+      20.167055999999995
+    ],
+    "state": {
+      "x": 0.6511934659975965,
+      "z": 19.95706427324299,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.58046625,
+      23.716806749999996
+    ],
+    "state": {
+      "x": 0.8336368676018828,
+      "z": 23.532330739874496,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.42120000000000024,
+      27.304992
+    ],
+    "state": {
+      "x": 0.4259555608073738,
+      "z": 26.96774223988964,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.22507875000000013,
+      30.925820250000005
+    ],
+    "state": {
+      "x": 0.25020902730052685,
+      "z": 30.75245621080101,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0,
+      34.573499999999996
+    ],
+    "state": {
+      "x": -0.023031780912885144,
+      "z": 34.21972906349714,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -0.24613875000000013,
+      38.24223975
+    ],
+    "state": {
+      "x": -0.15632122721215588,
+      "z": 38.01450503390639,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -0.5054399999999999,
+      41.926248
+    ],
+    "state": {
+      "x": -0.3160542839914529,
+      "z": 41.8030140742724,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -0.77000625,
+      45.619733249999996
+    ],
+    "state": {
+      "x": -0.5955897697956536,
+      "z": 45.563130870611126,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.0319399999999996,
+      49.316903999999994
+    ],
+    "state": {
+      "x": -1.006708436701832,
+      "z": 48.99772774301352,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.2833437499999998,
+      53.011968749999994
+    ],
+    "state": {
+      "x": -1.2103940924933794,
+      "z": 52.775820359213974,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.5163200000000001,
+      56.699136
+    ],
+    "state": {
+      "x": -1.529798899891535,
+      "z": 56.52648843638136,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.7229712499999998,
+      60.37261425
+    ],
+    "state": {
+      "x": -1.5453360864299153,
+      "z": 60.34917077664557,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.8954,
+      64.026612
+    ],
+    "state": {
+      "x": -2.0258071770053347,
+      "z": 64.06166739724272,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -2.0257087499999997,
+      67.65533775
+    ],
+    "state": {
+      "x": -1.8648075200742784,
+      "z": 67.33751612999737,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      -2.106,
+      71.253
+    ],
+    "state": {
+      "x": -1.9137744204998246,
+      "z": 71.15227588803876,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S18"
+  },
+  {
+    "type": "walk",
+    "target": [
+      -1.5286972165226438,
+      74.72129028171683
+    ],
+    "state": {
+      "x": -1.5733414905008645,
+      "z": 74.58367158868008,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      0.23098810475357678,
+      77.77793575340053
+    ],
+    "state": {
+      "x": 0.29699218247271364,
+      "z": 77.45155909070866,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      2.5136124232369013,
+      80.0183276400355
+    ],
+    "state": {
+      "x": 2.4754171235695948,
+      "z": 79.8090530378116,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      5.463825728148077,
+      81.98633429311451
+    ],
+    "state": {
+      "x": 5.222746419071028,
+      "z": 81.81597195153475,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      8.257770115596001,
+      83.36873953578066
+    ],
+    "state": {
+      "x": 8.061515155222986,
+      "z": 83.49742081635979,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      11.398588037142204,
+      84.58387643759374
+    ],
+    "state": {
+      "x": 11.293191305095787,
+      "z": 84.76471878271298,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      14.850553529579772,
+      85.63488198016378
+    ],
+    "state": {
+      "x": 14.940567275857136,
+      "z": 85.5199683948188,
+      "y": -1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      18.577940629701786,
+      86.52489314510096
+    ],
+    "state": {
+      "x": 18.254471915068876,
+      "z": 86.44035368309389,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      21.532734985094574,
+      87.0886360489821
+    ],
+    "state": {
+      "x": 21.353699228468653,
+      "z": 87.02461653607111,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      24.607286249778067,
+      87.56490758171716
+    ],
+    "state": {
+      "x": 24.704528371959054,
+      "z": 87.78919713390442,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      27.786522533024346,
+      87.95503115742297
+    ],
+    "state": {
+      "x": 27.640732579158822,
+      "z": 87.81938008886635,
+      "y": 1.1102230246251565e-16,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      31.055371944105495,
+      88.26033019021622
+    ],
+    "state": {
+      "x": 30.790751100772667,
+      "z": 88.18932701456202,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      34.39876259229359,
+      88.48212809421372
+    ],
+    "state": {
+      "x": 34.24743191434621,
+      "z": 88.50726143748203,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      37.801622586860745,
+      88.62174828353221
+    ],
+    "state": {
+      "x": 37.49772738132826,
+      "z": 88.45408500530677,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      41.24888003707903,
+      88.68051417228848
+    ],
+    "state": {
+      "x": 41.03236114881716,
+      "z": 88.44309321796487,
+      "y": 0,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      44.72546305222052,
+      88.65974917459927
+    ],
+    "state": {
+      "x": 44.50544674253753,
+      "z": 88.69180688794542,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      48.21629974155731,
+      88.56077670458134
+    ],
+    "state": {
+      "x": 47.976159603677004,
+      "z": 88.75104962392868,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      50.544,
+      88.452
+    ],
+    "state": {
+      "x": 50.32265820821204,
+      "z": 88.29821987020365,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD",
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "route",
+    "id": "S19"
+  },
+  {
+    "type": "island",
+    "name": "lookout"
+  },
+  {
+    "type": "policy",
+    "name": "lookout",
+    "title": "教育發展"
+  },
+  {
+    "type": "focus-return",
+    "method": "Native canvas drag after menu control focus"
+  },
+  {
+    "type": "walk",
+    "target": [
+      50.544,
+      88.452
+    ],
+    "state": {
+      "x": 50.51289100856656,
+      "z": 88.3048837721673,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": []
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      52.443999999999996,
+      88.452
+    ],
+    "state": {
+      "x": 52.11428135754867,
+      "z": 88.44908490335214,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      52.443999999999996,
+      86.05199999999999
+    ],
+    "state": {
+      "x": 52.31023516576504,
+      "z": 86.29657153647624,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW",
+        "KeyD"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      52.443999999999996,
+      84.652
+    ],
+    "state": {
+      "x": 52.437341700154974,
+      "z": 84.83568979405516,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      52.443999999999996,
+      86.05199999999999
+    ],
+    "state": {
+      "x": 52.60748559076309,
+      "z": 86.15614632639345,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS",
+        "KeyA"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      52.443999999999996,
+      88.452
+    ],
+    "state": {
+      "x": 52.46837340196731,
+      "z": 88.30106083416878,
+      "y": 1.1920928910669204e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyS"
+      ]
+    }
+  },
+  {
+    "type": "walk",
+    "target": [
+      50.544,
+      88.452
+    ],
+    "state": {
+      "x": 50.64712942849399,
+      "z": 88.53497060214652,
+      "y": 1.1920928799646902e-8,
+      "yaw": 0.16,
+      "respawns": 0,
+      "controlFocus": false,
+      "focus": "CANVAS",
+      "keys": [
+        "KeyA",
+        "KeyW"
+      ]
+    }
+  },
+  {
+    "type": "final",
+    "state": {
+      "chimesUnlocked": 0,
+      "islandCount": 8,
+      "respawnCount": 0,
+      "checkpoint": [
+        50.07500624027314,
+        1.1920928910669204e-8,
+        88.1037703392517
+      ],
+      "playerPos": {
+        "x": 50.07500624027314,
+        "y": 1.1920928910669204e-8,
+        "z": 88.1037703392517
+      },
+      "panoramaMode": "explore",
+      "started": true,
+      "muralOrder": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ]
+    }
+  }
+]
