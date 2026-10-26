@@ -1,0 +1,211 @@
+{
+  "policyName": "幸福養老",
+  "id": "senior",
+  "reference": "docs/references/policy-islands/senior-reference.png",
+  "referenceSHA256": "652650f6c4c0a7e44ec0c8badbb674c1e8af8753c7ad8440fe8a36817fec0407",
+  "approvedBaselineSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "blenderVersion": "4.3.0",
+  "phase": "complete",
+  "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
+  "sourceScripts": {
+    "scripts/blender/build_policy_assets.py": "70e6693976c505b1688a5c3458f84c42a0d5413cf0efa404a911bacac6ff56bc",
+    "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
+    "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
+    "scripts/blender/policy_assets/recipes.py": "73b85f379f73f81d2a9f6fd1e760d50dc835ebaff3beac6a304dfcde2cde73c0",
+    "scripts/blender/policy_assets/kit.py": "91eb7746e95c11180c5331963cad21d00790f2930d877ebc159b7cc0e3b6835a"
+  },
+  "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
+  "bounds": {
+    "min": [
+      -13.993513107299805,
+      -13.985925674438477,
+      -0.46000000834465027
+    ],
+    "max": [
+      13.985925674438477,
+      11.824999809265137,
+      4.836880207061768
+    ]
+  },
+  "sizeXYZ": [
+    27.97943878173828,
+    25.810925483703613,
+    5.296880215406418
+  ],
+  "evaluatedTriangles": 182776,
+  "meshObjects": 2643,
+  "materials": [
+    "Clear warm architectural glazing",
+    "Muted blue court",
+    "Muted clay court",
+    "WarmLimestonePaver0",
+    "WarmLimestonePaver1",
+    "WarmLimestonePaver2",
+    "coral",
+    "cream",
+    "floor",
+    "greenCloth",
+    "leaf",
+    "leafDark",
+    "leafLight",
+    "petal",
+    "petalPink",
+    "rail",
+    "roof",
+    "seam",
+    "slide",
+    "soil",
+    "stone",
+    "tealCloth",
+    "trim",
+    "wood",
+    "woodDark",
+    "woodLight"
+  ],
+  "materialCount": 26,
+  "collections": {
+    "Architecture": {
+      "objects": 253,
+      "triangles": 51500
+    },
+    "Furniture": {
+      "objects": 78,
+      "triangles": 14664
+    },
+    "Interior": {
+      "objects": 102,
+      "triangles": 19176
+    },
+    "Landscape": {
+      "objects": 1519,
+      "triangles": 67852
+    },
+    "Site": {
+      "objects": 691,
+      "triangles": 29584
+    }
+  },
+  "recommendedPlatform": {
+    "shape": "circle",
+    "radius": 11.8,
+    "derivedFromActualContentRadius": 10.694369039858495,
+    "minimumOuterClearance": 1.0,
+    "radiusOver12": false,
+    "reviewBridgeArmsExcludedFromRadiusMeasurement": true,
+    "actualWorldNotChanged": true
+  },
+  "rooms": [
+    {
+      "name": "CommunityLifeHall",
+      "footprint": [
+        -4.8,
+        1.3,
+        4.6,
+        5.75
+      ],
+      "door": [
+        0.3,
+        1.3
+      ],
+      "peak": 4.035397944580075
+    }
+  ],
+  "npcReservations": [
+    {
+      "positionBlenderXYZ": [
+        2.7,
+        -1.9,
+        0.03
+      ],
+      "positionGLTFXYZ": [
+        2.7,
+        0.03,
+        1.9
+      ],
+      "bodyRadius": 0.35,
+      "reservationRadius": 0.65,
+      "playerStopBlenderXYZ": [
+        2.7,
+        -3.2,
+        0.03
+      ],
+      "interactionRadius": 1.4,
+      "implemented": false
+    }
+  ],
+  "npcClearanceChecks": [
+    {
+      "kind": "future_npc",
+      "position": [
+        2.7,
+        -1.9,
+        0.03
+      ],
+      "radius": 0.35,
+      "intersectingObjects": []
+    },
+    {
+      "kind": "player_stop",
+      "position": [
+        2.7,
+        -3.2,
+        0.03
+      ],
+      "radius": 0.33,
+      "intersectingObjects": []
+    }
+  ],
+  "reviewConnections": [
+    {
+      "angleDegrees": 190,
+      "width": 4.8,
+      "startRadius": 11.513354491228945,
+      "endRadius": 13.763354491228945,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 225,
+      "width": 4.8,
+      "startRadius": 11.513354491228945,
+      "endRadius": 13.763354491228945,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 278,
+      "width": 4.8,
+      "startRadius": 11.513354491228945,
+      "endRadius": 13.763354491228945,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 352,
+      "width": 4.8,
+      "startRadius": 11.513354491228945,
+      "endRadius": 13.763354491228945,
+      "reviewOnly": true
+    }
+  ],
+  "geometryAudit": {
+    "checkedMeshes": 2643,
+    "issues": [],
+    "note": "Per-component closed solids; intentional assembly intersections are not boolean-unioned. Not an engineering or runtime collision certification."
+  },
+  "complexityCap": {
+    "baselineEvaluatedTriangles": 381520,
+    "baselineGLBTriangles": 380999,
+    "baselineMaterials": 29,
+    "trianglesWithinCap": true,
+    "materialsWithinCap": true
+  },
+  "webExport": {
+    "sourceMeshObjects": 2643,
+    "meshPrimitives": 58,
+    "assemblyGroups": 9,
+    "triangles": 182776,
+    "textures": 0,
+    "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
+  },
+  "blendSHA256": "960e5c40ac7c071596fe3639be4c5ef86b84a107632753022b2f9be6be729512",
+  "glbSHA256": "403f860682e0fd6b3b606cb0f2b1fc89d48cbcab3b77bb2ac2fc8e8fccd1c3a0",
+  "buildSeconds": 12.27
+}
