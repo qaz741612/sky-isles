@@ -1,0 +1,237 @@
+{
+  "policyName": "智慧公所",
+  "id": "digital",
+  "reference": "docs/references/policy-islands/digital-reference.png",
+  "referenceSHA256": "c05ec749d91ece108350b84a411f7abc3e9c1778a69b97910f470ce90045f713",
+  "approvedBaselineSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "blenderVersion": "4.3.0",
+  "phase": "complete",
+  "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
+  "sourceScripts": {
+    "scripts/blender/build_policy_assets.py": "70e6693976c505b1688a5c3458f84c42a0d5413cf0efa404a911bacac6ff56bc",
+    "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
+    "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
+    "scripts/blender/policy_assets/recipes.py": "73b85f379f73f81d2a9f6fd1e760d50dc835ebaff3beac6a304dfcde2cde73c0",
+    "scripts/blender/policy_assets/kit.py": "91eb7746e95c11180c5331963cad21d00790f2930d877ebc159b7cc0e3b6835a"
+  },
+  "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
+  "bounds": {
+    "min": [
+      -13.590875625610352,
+      -13.581055641174316,
+      -0.46000000834465027
+    ],
+    "max": [
+      13.581055641174316,
+      11.425000190734863,
+      4.8470001220703125
+    ]
+  },
+  "sizeXYZ": [
+    27.171931266784668,
+    25.00605583190918,
+    5.307000130414963
+  ],
+  "evaluatedTriangles": 186596,
+  "meshObjects": 2383,
+  "materials": [
+    "Clear warm architectural glazing",
+    "Muted blue court",
+    "Muted clay court",
+    "WarmLimestonePaver0",
+    "WarmLimestonePaver1",
+    "WarmLimestonePaver2",
+    "coral",
+    "cream",
+    "floor",
+    "greenCloth",
+    "leaf",
+    "leafDark",
+    "leafLight",
+    "petal",
+    "petalPink",
+    "rail",
+    "roof",
+    "seam",
+    "slide",
+    "soil",
+    "stone",
+    "tealCloth",
+    "trim",
+    "wood",
+    "woodDark",
+    "woodLight"
+  ],
+  "materialCount": 26,
+  "collections": {
+    "Architecture": {
+      "objects": 361,
+      "triangles": 74848
+    },
+    "Furniture": {
+      "objects": 42,
+      "triangles": 7896
+    },
+    "Interior": {
+      "objects": 83,
+      "triangles": 15604
+    },
+    "Landscape": {
+      "objects": 1226,
+      "triangles": 56648
+    },
+    "Site": {
+      "objects": 658,
+      "triangles": 29156
+    },
+    "ThemeFacilities": {
+      "objects": 13,
+      "triangles": 2444
+    }
+  },
+  "recommendedPlatform": {
+    "shape": "circle",
+    "radius": 11.4,
+    "derivedFromActualContentRadius": 10.3943456582103,
+    "minimumOuterClearance": 1.0,
+    "radiusOver12": false,
+    "reviewBridgeArmsExcludedFromRadiusMeasurement": true,
+    "actualWorldNotChanged": true
+  },
+  "rooms": [
+    {
+      "name": "CivicServiceHall",
+      "footprint": [
+        -4.8,
+        1.1,
+        5.1,
+        6.2
+      ],
+      "door": [
+        0.2,
+        1.1
+      ],
+      "peak": 4.34060282511658
+    },
+    {
+      "name": "WestServiceWing",
+      "footprint": [
+        -7.8,
+        1.4,
+        -4.4,
+        5.4
+      ],
+      "door": null,
+      "peak": 3.0455750707987606
+    },
+    {
+      "name": "InformationKiosk",
+      "footprint": [
+        -8.0,
+        -1.5,
+        -5.65,
+        0.5
+      ],
+      "door": null,
+      "peak": 2.5
+    }
+  ],
+  "npcReservations": [
+    {
+      "positionBlenderXYZ": [
+        1.5,
+        -2.2,
+        0.03
+      ],
+      "positionGLTFXYZ": [
+        1.5,
+        0.03,
+        2.2
+      ],
+      "bodyRadius": 0.35,
+      "reservationRadius": 0.65,
+      "playerStopBlenderXYZ": [
+        1.5,
+        -3.5,
+        0.03
+      ],
+      "interactionRadius": 1.4,
+      "implemented": false
+    }
+  ],
+  "npcClearanceChecks": [
+    {
+      "kind": "future_npc",
+      "position": [
+        1.5,
+        -2.2,
+        0.03
+      ],
+      "radius": 0.35,
+      "intersectingObjects": []
+    },
+    {
+      "kind": "player_stop",
+      "position": [
+        1.5,
+        -3.5,
+        0.03
+      ],
+      "radius": 0.33,
+      "intersectingObjects": []
+    }
+  ],
+  "reviewConnections": [
+    {
+      "angleDegrees": 190,
+      "width": 4.8,
+      "startRadius": 11.104505372604027,
+      "endRadius": 13.354505372604027,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 225,
+      "width": 4.8,
+      "startRadius": 11.104505372604027,
+      "endRadius": 13.354505372604027,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 278,
+      "width": 4.8,
+      "startRadius": 11.104505372604027,
+      "endRadius": 13.354505372604027,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 352,
+      "width": 4.8,
+      "startRadius": 11.104505372604027,
+      "endRadius": 13.354505372604027,
+      "reviewOnly": true
+    }
+  ],
+  "geometryAudit": {
+    "checkedMeshes": 2383,
+    "issues": [],
+    "note": "Per-component closed solids; intentional assembly intersections are not boolean-unioned. Not an engineering or runtime collision certification."
+  },
+  "complexityCap": {
+    "baselineEvaluatedTriangles": 381520,
+    "baselineGLBTriangles": 380999,
+    "baselineMaterials": 29,
+    "trianglesWithinCap": true,
+    "materialsWithinCap": true
+  },
+  "webExport": {
+    "sourceMeshObjects": 2383,
+    "meshPrimitives": 73,
+    "assemblyGroups": 11,
+    "triangles": 186596,
+    "textures": 0,
+    "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
+  },
+  "blendSHA256": "6d2f50368e1eaf027ada09fcf0f9af9345d8fcc2815a3602fc7b78af0a78cd02",
+  "glbSHA256": "0a6454822d05c8e5012db8a9e673e577a6ff6868c7cadcd504fbcd46da6e29f8",
+  "buildSeconds": 9.87
+}
