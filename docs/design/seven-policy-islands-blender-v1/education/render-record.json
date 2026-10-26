@@ -1,0 +1,33 @@
+{
+  "blenderVersion": "4.3.0",
+  "engine": "Cycles CPU with OpenImageDenoise",
+  "geometryEditedDuringRender": false,
+  "asset": "education",
+  "views": [
+    {
+      "view": "hero",
+      "file": "renders/hero.png",
+      "camera": "01_Hero_CommonScale",
+      "cameraPositionXYZ": [
+        22.0,
+        -30.0,
+        24.0
+      ],
+      "cameraRotationRadians": [
+        1.0170702934265137,
+        -1.9113457483399543e-08,
+        0.6327489614486694
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 33.79999923706055,
+      "size": [
+        1280,
+        960
+      ],
+      "samples": 64,
+      "seconds": 107.83,
+      "sourceBlendSHA256": "c984e3e2803e8a353b46a1a88baef3732b224f61dd580e4e67f8090ce79db5e9",
+      "imageSHA256": "073936f6befc624a492a21bfe3ed74a4ad3d561d87e58d59155cdd640f5dd984"
+    }
+  ]
+}
