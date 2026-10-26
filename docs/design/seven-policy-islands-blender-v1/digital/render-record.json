@@ -25,9 +25,9 @@
         960
       ],
       "samples": 64,
-      "seconds": 112.07,
-      "sourceBlendSHA256": "6d2f50368e1eaf027ada09fcf0f9af9345d8fcc2815a3602fc7b78af0a78cd02",
-      "imageSHA256": "948a8fc8bad5b6f0f79d4f858e2b4873ea87aa077e4d153f7e137ae28fe2842c"
+      "seconds": 122.8,
+      "sourceBlendSHA256": "03974e41502ef6c619454244a21afeb3e68ffbb65cc7bd22e757b906eff50c54",
+      "imageSHA256": "4731dafd1ec451077052958c93a21fa9ceae91b87acf10f41e47746e0d32994c"
     }
   ]
 }
