@@ -1,0 +1,206 @@
+{
+  "policyName": "宜居環境",
+  "id": "environment",
+  "reference": "docs/references/policy-islands/environment-reference.png",
+  "referenceSHA256": "3a512542f56689ecd3a8457795154c32f9acf69e243e4edd0967e8bcf2fe9a1c",
+  "approvedBaselineSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "blenderVersion": "4.3.0",
+  "phase": "complete",
+  "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
+  "sourceScripts": {
+    "scripts/blender/build_policy_assets.py": "9b2e9f773835479ec99f020a87a323a300f14dda1dce2a141affb4cef0954497",
+    "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
+    "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
+    "scripts/blender/policy_assets/recipes.py": "523efe7a69499a5efd992ef1641e38c188e110fee435e4c226413b05a7433388",
+    "scripts/blender/policy_assets/kit.py": "0362ea64bebcef5eaa625bb4ee583ed4a52136341d90e52b7755e4ed97ad0e38"
+  },
+  "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
+  "bounds": {
+    "min": [
+      -13.993513107299805,
+      -13.985925674438477,
+      -0.5199999809265137
+    ],
+    "max": [
+      13.985925674438477,
+      11.824999809265137,
+      5.201760292053223
+    ]
+  },
+  "sizeXYZ": [
+    27.97943878173828,
+    25.810925483703613,
+    5.721760272979736
+  ],
+  "evaluatedTriangles": 185384,
+  "meshObjects": 2196,
+  "materials": [
+    "Clear turquoise water",
+    "Meadow lawn",
+    "WarmLimestonePaver0",
+    "WarmLimestonePaver1",
+    "WarmLimestonePaver2",
+    "cream",
+    "floor",
+    "gray",
+    "leaf",
+    "leafDark",
+    "leafLight",
+    "petal",
+    "petalPink",
+    "rail",
+    "roof",
+    "seam",
+    "slide",
+    "soil",
+    "stone",
+    "tealCloth",
+    "trim",
+    "wood",
+    "woodDark",
+    "woodLight"
+  ],
+  "materialCount": 24,
+  "collections": {
+    "Architecture": {
+      "objects": 23,
+      "triangles": 6860
+    },
+    "Furniture": {
+      "objects": 54,
+      "triangles": 10152
+    },
+    "Landscape": {
+      "objects": 1355,
+      "triangles": 67860
+    },
+    "Site": {
+      "objects": 692,
+      "triangles": 86096
+    },
+    "ThemeFacilities": {
+      "objects": 72,
+      "triangles": 14416
+    }
+  },
+  "recommendedPlatform": {
+    "shape": "circle",
+    "radius": 11.8,
+    "derivedFromActualContentRadius": 10.7940082488399,
+    "minimumOuterClearance": 1.0,
+    "radiusOver12": false,
+    "reviewBridgeArmsExcludedFromRadiusMeasurement": true,
+    "actualWorldNotChanged": true
+  },
+  "rooms": [
+    {
+      "name": "OpenGardenPavilion",
+      "footprint": [
+        0.4,
+        2.7,
+        6.4,
+        5.8
+      ],
+      "door": null,
+      "peak": 3.4251730801124647
+    }
+  ],
+  "npcReservations": [
+    {
+      "positionBlenderXYZ": [
+        1.4,
+        1.0,
+        0.03
+      ],
+      "positionGLTFXYZ": [
+        1.4,
+        0.03,
+        -1.0
+      ],
+      "bodyRadius": 0.35,
+      "reservationRadius": 0.65,
+      "playerStopBlenderXYZ": [
+        1.4,
+        -0.30000000000000004,
+        0.03
+      ],
+      "interactionRadius": 1.4,
+      "implemented": false
+    }
+  ],
+  "npcClearanceChecks": [
+    {
+      "kind": "future_npc",
+      "position": [
+        1.4,
+        1.0,
+        0.03
+      ],
+      "radius": 0.35,
+      "intersectingObjects": []
+    },
+    {
+      "kind": "player_stop",
+      "position": [
+        1.4,
+        -0.30000000000000004,
+        0.03
+      ],
+      "radius": 0.33,
+      "intersectingObjects": []
+    }
+  ],
+  "reviewConnections": [
+    {
+      "angleDegrees": 190,
+      "width": 4.8,
+      "startRadius": 11.513354491228945,
+      "endRadius": 13.763354491228945,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 225,
+      "width": 4.8,
+      "startRadius": 11.513354491228945,
+      "endRadius": 13.763354491228945,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 278,
+      "width": 4.8,
+      "startRadius": 11.513354491228945,
+      "endRadius": 13.763354491228945,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 352,
+      "width": 4.8,
+      "startRadius": 11.513354491228945,
+      "endRadius": 13.763354491228945,
+      "reviewOnly": true
+    }
+  ],
+  "geometryAudit": {
+    "checkedMeshes": 2196,
+    "issues": [],
+    "note": "Per-component closed solids; intentional assembly intersections are not boolean-unioned. Not an engineering or runtime collision certification."
+  },
+  "complexityCap": {
+    "baselineEvaluatedTriangles": 381520,
+    "baselineGLBTriangles": 380999,
+    "baselineMaterials": 29,
+    "trianglesWithinCap": true,
+    "materialsWithinCap": true
+  },
+  "webExport": {
+    "sourceMeshObjects": 2196,
+    "meshPrimitives": 40,
+    "assemblyGroups": 6,
+    "triangles": 185356,
+    "textures": 0,
+    "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
+  },
+  "blendSHA256": "46e99d4e9a4a820845627488ea6c88b65e44be6b3e1ede9828e1a90edfb81ce4",
+  "glbSHA256": "85e5954c9ce553c57a89feb26811dfe62691f337b832b638589901fb2aaf3924",
+  "buildSeconds": 8.89
+}
