@@ -1,0 +1,19 @@
+
+Running 5 tests using 1 worker
+
+
+(node:166584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/5] [mobile] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+[mobile] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+{"gateCount":4,"cameraCases":60,"minimumCameraDistance":3.457619779731386,"head":[{"x":1.1,"z":0.4,"floor":0.125,"ceiling":2.7100000381469727,"maxHead":2.7050000381469728},{"x":7.5,"z":-3,"floor":0.10999999940395355,"ceiling":2.640000104904175,"maxHead":2.635000104904175}],"sourceTriangles":380999,"selectedTriangles":356223,"runtimeMeshes":60,"npc":"reservation only; no NPC body/dialogue to test","errors":[]}
+
+[2/5] [mobile] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help
+[3/5] [mobile] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+[mobile] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+{"device":"single-pointer joystick","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":84346,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.030636857165119796,1.1920928910669204e-8,0.0017506775522923874]},"endpoint":[0.030636857165119796,1.1920928910669204e-8,0.0017506775522923874],"returned":[0.030636857165119796,0.40000001192092893,0.0017506775522923874],"yawUnchanged":true}
+
+[4/5] [mobile] › test/walkways.e2e.js:75:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker
+[5/5] [mobile] › test/walkways.e2e.js:98:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+  5 passed (4.0m)

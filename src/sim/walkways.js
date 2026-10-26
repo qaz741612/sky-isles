@@ -22,12 +22,13 @@ export function nearestOnSegment(p, a, b) {
 export function moveWithGuards(position, dx, dz, barriers, radius=WALKWAY.playerRadius) {
   // Substeps prevent tunnelling even at the game's maximum dt and glide speed.
   const steps=Math.max(1,Math.ceil(Math.hypot(dx,dz)/0.1));
-  const clearance=radius+WALKWAY.railThickness/2;
+
   let blocked=false;
   for(let step=0;step<steps;step++) {
     const previous={x:position.x,z:position.z};
     position.x+=dx/steps; position.z+=dz/steps;
     for(let iteration=0;iteration<4;iteration++) for(const wall of barriers) {
+      const clearance=radius+(wall.thickness??WALKWAY.railThickness)/2;
       const p=nearestOnSegment(position,wall.a,wall.b);
       if(position.y>p.y+wall.height || position.y+1.5<p.y-0.2) continue;
       const ox=position.x-p.x,oz=position.z-p.z,d=Math.hypot(ox,oz);

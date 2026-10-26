@@ -1,0 +1,220 @@
+{
+  "method": "Cold page per case; same local camera/character position; 2.5s plus 10 rendered-frame warmup then >=12s rAF sample, >=6 intervals. Whole game live. Local HTTP transfer. Shared CPU-only container; no concurrent test or rendering jobs. Mobile is Chromium device emulation, NOT a physical iPhone.",
+  "realDeviceTested": false,
+  "results": [
+    {
+      "profile": "desktop",
+      "version": "baseline",
+      "url": "http://127.0.0.1:4186",
+      "readyWallMs": 4963,
+      "frames": 31,
+      "elapsed": 12266.099999999999,
+      "fps": 2.5272906628838836,
+      "p50FrameMs": 383.40000000000146,
+      "p95FrameMs": 483.3999999999978,
+      "minFrameMs": 316.7000000000007,
+      "maxFrameMs": 499.8999999999978,
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": [
+        1440,
+        900
+      ],
+      "pixelRatio": 1,
+      "calls": 74,
+      "trianglesIncludingTransmissionPass": 26836,
+      "textures": 15,
+      "geometries": 144,
+      "transmissionResolutionScale": 1,
+      "family": null,
+      "modelResource": [],
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "cpuMemory": {
+        "usedJSHeapSize": 19958678,
+        "totalJSHeapSize": 27841262
+      }
+    },
+    {
+      "profile": "desktop",
+      "version": "integrated",
+      "url": "http://127.0.0.1:4187",
+      "readyWallMs": 2299,
+      "frames": 6,
+      "elapsed": 32115.300000000003,
+      "fps": 0.18682683954376883,
+      "p50FrameMs": 5599.800000000003,
+      "p95FrameMs": 5716.300000000003,
+      "minFrameMs": 4883.099999999991,
+      "maxFrameMs": 5716.300000000003,
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": [
+        1440,
+        900
+      ],
+      "pixelRatio": 1,
+      "calls": 220,
+      "trianglesIncludingTransmissionPass": 761248,
+      "textures": 17,
+      "geometries": 188,
+      "transmissionResolutionScale": 1,
+      "family": {
+        "sourceTriangles": 380999,
+        "selectedTriangles": 356223,
+        "runtimeVertices": 786272,
+        "runtimeMeshes": 60,
+        "sourceMeshes": 207,
+        "selectedSourceMeshes": 206,
+        "excluded": [
+          {
+            "name": "SiteAndBridgeStubs_Components__rail",
+            "reason": "Display-only perimeter/bridge rails replaced by actual shared-domain safety boundary"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          }
+        ],
+        "sourceLoadMilliseconds": 238.19999998807907,
+        "buildMilliseconds": 397.90000000596046,
+        "firstFrameMilliseconds": 2289.300000011921
+      },
+      "modelResource": [
+        {
+          "duration": 185.2999999821186,
+          "transferSize": 20239360,
+          "encodedBodySize": 20239060,
+          "decodedBodySize": 20239060
+        }
+      ],
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "cpuMemory": {
+        "usedJSHeapSize": 95606643,
+        "totalJSHeapSize": 97626559
+      }
+    },
+    {
+      "profile": "mobile",
+      "version": "baseline",
+      "url": "http://127.0.0.1:4186",
+      "readyWallMs": 2498,
+      "frames": 52,
+      "elapsed": 12016.100000000002,
+      "fps": 4.327527234293989,
+      "p50FrameMs": 216.70000000000073,
+      "p95FrameMs": 283.40000000000146,
+      "minFrameMs": 183.29999999999927,
+      "maxFrameMs": 316.7000000000007,
+      "viewport": [
+        430,
+        739
+      ],
+      "canvas": [
+        645,
+        1108
+      ],
+      "pixelRatio": 1.5,
+      "calls": 66,
+      "trianglesIncludingTransmissionPass": 19268,
+      "textures": 15,
+      "geometries": 123,
+      "transmissionResolutionScale": 1,
+      "family": null,
+      "modelResource": [],
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "cpuMemory": {
+        "usedJSHeapSize": 24534686,
+        "totalJSHeapSize": 46977758
+      }
+    },
+    {
+      "profile": "mobile",
+      "version": "integrated",
+      "url": "http://127.0.0.1:4187",
+      "readyWallMs": 2082,
+      "frames": 6,
+      "elapsed": 21599.100000000006,
+      "fps": 0.27778935233412494,
+      "p50FrameMs": 3683.100000000006,
+      "p95FrameMs": 3799.800000000003,
+      "minFrameMs": 3316.600000000006,
+      "maxFrameMs": 3799.800000000003,
+      "viewport": [
+        430,
+        739
+      ],
+      "canvas": [
+        645,
+        1108
+      ],
+      "pixelRatio": 1.5,
+      "calls": 197,
+      "trianglesIncludingTransmissionPass": 744304,
+      "textures": 17,
+      "geometries": 166,
+      "transmissionResolutionScale": 1,
+      "family": {
+        "sourceTriangles": 380999,
+        "selectedTriangles": 356223,
+        "runtimeVertices": 786272,
+        "runtimeMeshes": 60,
+        "sourceMeshes": 207,
+        "selectedSourceMeshes": 206,
+        "excluded": [
+          {
+            "name": "SiteAndBridgeStubs_Components__rail",
+            "reason": "Display-only perimeter/bridge rails replaced by actual shared-domain safety boundary"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          }
+        ],
+        "sourceLoadMilliseconds": 203.90000000596046,
+        "buildMilliseconds": 320.80000001192093,
+        "firstFrameMilliseconds": 2068.2000000178814
+      },
+      "modelResource": [
+        {
+          "duration": 148.40000000596046,
+          "transferSize": 20239360,
+          "encodedBodySize": 20239060,
+          "decodedBodySize": 20239060
+        }
+      ],
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "cpuMemory": {
+        "usedJSHeapSize": 91234218,
+        "totalJSHeapSize": 93170170
+      }
+    }
+  ]
+}

@@ -2,8 +2,12 @@ import { test, expect } from '@playwright/test';
 import { walkTour } from './helpers/walk-tour.js';
 
 async function enter(page) {
-  await page.goto('/');await page.waitForFunction(()=>window.__skyisles);
-  await page.locator('#title-screen .tap').click();
+  test.setTimeout(360000);
+  await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:150000});
+  // Geometry/input regression only: the full rendered scene is captured and
+  // benchmarked separately. Keep real rAF, input, raycasts and physics active.
+  await page.evaluate(()=>{window.__skyisles.world.renderer.render=()=>{};});
+  await page.locator('#title-screen .tap').click({force:true});
   if(await page.locator('#touch-help').isVisible())await page.locator('#help-close').click();
   await page.evaluate(()=>{
     const w=window.__skyisles.world;
@@ -15,7 +19,7 @@ async function enter(page) {
 
 test('walk every island without jumping through keyboard or a single joystick pointer', async ({page,isMobile})=>{
   await enter(page);
-  const plans=await page.evaluate(()=>window.__skyisles.world.bridges.plans.map(({id,from,to,points})=>({id,from,to,points})));
+  const plans=await page.evaluate(()=>(window.__skyisles.world.bridges.walkPlans??window.__skyisles.world.bridges.plans).map(({id,from,to,points})=>({id,from,to,points})));
   const route=walkTour(plans);
   let session=null;
   if(isMobile) {

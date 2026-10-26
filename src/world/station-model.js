@@ -8,7 +8,7 @@ export async function loadStationModel(){return(await new GLTFLoader().loadAsync
 
 // Source meshes are merged by material, not by purpose. Split touching vertices
 // to select entire disconnected source parts (e.g. canopy posts, not sleepers).
-function components(geometry){
+export function components(geometry){
  const p=geometry.attributes.position,idx=geometry.index,triCount=(idx?.count??p.count)/3,parent=Array.from({length:triCount},(_,i)=>i),first=new Map();
  const root=i=>{while(parent[i]!==i){parent[i]=parent[parent[i]];i=parent[i];}return i;};
  const vertex=i=>idx?idx.getX(i):i;

@@ -1,0 +1,43 @@
+{
+  "build": "pass",
+  "lint": "pass",
+  "unitFilesPassed": 12,
+  "unitFilesFailed": 0,
+  "productionBundle": "index-9F6Uh_WJ.js",
+  "browser": {
+    "selectedDistinctPassed": 12,
+    "intentionalDeviceSpecificSkips": 2,
+    "method": "Combined initial successful cases and explicit targeted reruns of all five timed-out cases; final mobile rerun 5 passed, desktop rerun 1 passed. No runtime changes between these runs.",
+    "initial": {
+      "passed": 7,
+      "failedTimeouts": 5,
+      "skipped": 2
+    },
+    "finalMobile": {
+      "passed": 5,
+      "failed": 0
+    },
+    "finalDesktop": {
+      "passed": 1,
+      "failed": 0
+    },
+    "profile": "Functional geometry/input: desktop 960x640 and mobile CSS 430x739 at DPR1. Full DPR rendered captures/FPS measured separately. Pure DOM/accelerated-physics cases stop redundant renderer.render calls after initial real world render, preserving actual game input/physics/camera state."
+  },
+  "network": {
+    "edges": 22,
+    "bothDirections": true,
+    "allEightIslands": true,
+    "desktopPhysicsTicks": 80657,
+    "mobileSinglePointerTicks": 84346,
+    "unexpectedFalls": 0
+  },
+  "npc": {
+    "model": false,
+    "dialogue": false,
+    "reservationTests": "pass",
+    "actualNpcCollision": "N/A per user instruction"
+  },
+  "hardwarePerformanceAccepted": false,
+  "visualManualAccepted": false,
+  "remoteBrowserVerified": false
+}

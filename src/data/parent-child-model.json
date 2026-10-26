@@ -1,0 +1,232 @@
+{
+  "url": "/models/parent-child-centre/parent-child-centre.glb",
+  "sourcePR": 11,
+  "sourceCommit": "ac433fd5d23f00d3aab9470d96349114e1a37b24",
+  "sourcePath": "docs/design/parent-child-blender-refinement-v2/parent-child-centre.glb",
+  "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44",
+  "sourceBlendSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "island": "tree",
+  "radius": 10.2,
+  "scale": 1,
+  "yaw": 0,
+  "position": [
+    0,
+    0,
+    0
+  ],
+  "capsuleHeight": 1.6,
+  "arrival": [
+    0,
+    0
+  ],
+  "porch": [
+    1.1,
+    0.4
+  ],
+  "playArea": [
+    -2,
+    2.8
+  ],
+  "restArea": [
+    -2.5,
+    6.0
+  ],
+  "npc": {
+    "position": [
+      -0.2,
+      0.03,
+      3
+    ],
+    "playerStop": [
+      1.1,
+      0.03,
+      3
+    ],
+    "facingYaw": 1.5707963267948966,
+    "interactionRadius": 1.4,
+    "bodyRadius": 0.35,
+    "reservationRadius": 0.65,
+    "implemented": false,
+    "collision": "No invisible NPC blocker: reservation only, as confirmed by user"
+  },
+  "access": {
+    "S01": [
+      [
+        -11.6,
+        -0.8
+      ],
+      [
+        -10.2,
+        -0.7
+      ],
+      [
+        -9.6,
+        1.1
+      ],
+      [
+        -8.4,
+        1.8
+      ],
+      [
+        -6.5,
+        1.2
+      ],
+      [
+        -3.1,
+        1.15
+      ],
+      [
+        -1.1,
+        1.7
+      ],
+      [
+        1.1,
+        1.7
+      ],
+      [
+        1.1,
+        0.4
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "S02": [
+      [
+        11.6,
+        0.6
+      ],
+      [
+        10.05,
+        0.65
+      ],
+      [
+        9.7,
+        1.4
+      ],
+      [
+        8.6,
+        1.4
+      ],
+      [
+        7.5,
+        1.3
+      ],
+      [
+        6.3,
+        0.95
+      ],
+      [
+        4,
+        1.05
+      ],
+      [
+        3.2,
+        1.6
+      ],
+      [
+        1.1,
+        1.7
+      ],
+      [
+        1.1,
+        0.4
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "S04": [
+      [
+        -1.3,
+        -11.5
+      ],
+      [
+        -1.1,
+        -9.4
+      ],
+      [
+        3,
+        -8.6
+      ],
+      [
+        6.6,
+        -7.0
+      ],
+      [
+        7.5,
+        -6
+      ],
+      [
+        7.5,
+        -0.4
+      ],
+      [
+        7.5,
+        1.3
+      ],
+      [
+        6.3,
+        0.95
+      ],
+      [
+        4,
+        1.05
+      ],
+      [
+        3.2,
+        1.6
+      ],
+      [
+        1.1,
+        1.7
+      ],
+      [
+        1.1,
+        0.4
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "S05": [
+      [
+        2,
+        11.5
+      ],
+      [
+        1.4,
+        10
+      ],
+      [
+        1.1,
+        8.2
+      ],
+      [
+        1.1,
+        5.5
+      ],
+      [
+        1.1,
+        2.7
+      ],
+      [
+        1.1,
+        1.7
+      ],
+      [
+        1.1,
+        0.4
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "selection": "Keep all approved architecture, interior, play and landscape unchanged. Exclude only display bridge arms and display perimeter rails; keep original circular plinth and pavers. Real four gates use shared game union.",
+  "optimisation": "Merge identical opaque materials within semantic roles, preserving all triangles and original materials. Keep glass meshes separate. No decimation or texture/material changes."
+}

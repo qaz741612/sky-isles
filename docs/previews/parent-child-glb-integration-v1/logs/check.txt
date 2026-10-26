@@ -1,0 +1,44 @@
+
+> sky-isles@1.0.0 check
+> npm run test && npm run lint && npm run build
+
+
+> sky-isles@1.0.0 test
+> node --test test/*.test.js
+
+✔ test/camera-clearance.test.js (403.855646ms)
+✔ test/camera-profile.test.js (99.045659ms)
+✔ test/movement.test.js (154.879616ms)
+✔ test/panorama.test.js (137.679397ms)
+✔ test/parent-child-model.test.js (6997.37086ms)
+✔ test/policy-scenery.test.js (1813.884764ms)
+✔ test/puzzle.test.js (174.808682ms)
+✔ test/rng.test.js (186.457859ms)
+✔ test/station-model.test.js (902.761062ms)
+✔ test/transport.test.js (1012.284426ms)
+✔ test/walkways.test.js (10620.316487ms)
+✔ test/yuan-size-b.test.js (349.997746ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 22877.38542
+
+> sky-isles@1.0.0 lint
+> eslint src test vite.config.js eslint.config.js playwright.config.js
+
+
+> sky-isles@1.0.0 build
+> vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 38 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   14.90 kB │ gzip:   4.42 kB
+dist/assets/index-9F6Uh_WJ.js  2,063.03 kB │ gzip: 426.07 kB │ map: 3,317.84 kB
+✓ built in 7.96s
