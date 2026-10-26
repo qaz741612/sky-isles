@@ -1,0 +1,88 @@
+{
+  "dimensionsOrder": "Blender source XYZ = width/depth/height; Three.js GLB XYZ = width/height/depth",
+  "standaloneSiteRadius": {
+    "before": 9.2,
+    "after": 10.2,
+    "difference": 1.0,
+    "percent": 10.87
+  },
+  "circularSiteArea": {
+    "before": 265.90440219984004,
+    "after": 326.85129967948205,
+    "difference": 60.94689747964202,
+    "percent": 22.921
+  },
+  "sourceEvaluatedTriangles": {
+    "before": 370116,
+    "after": 381520,
+    "difference": 11404,
+    "percent": 3.081
+  },
+  "glbTriangles": {
+    "before": 369608,
+    "after": 380999,
+    "difference": 11391,
+    "percent": 3.082
+  },
+  "editableMeshObjects": {
+    "before": 1757,
+    "after": 1872,
+    "difference": 115,
+    "percent": 6.545
+  },
+  "glbMeshBatches": {
+    "before": 197,
+    "after": 207,
+    "difference": 10,
+    "percent": 5.076
+  },
+  "glbBytes": {
+    "before": 19713568,
+    "after": 20239060,
+    "difference": 525492,
+    "percent": 2.666
+  },
+  "sourceSizeXYZ": {
+    "before": [
+      24.45835590362549,
+      21.655052185058594,
+      5.382128149271011
+    ],
+    "after": [
+      26.46647357940674,
+      23.661887168884277,
+      5.172938734292984
+    ]
+  },
+  "glbMaterials": {
+    "before": 29,
+    "after": 29,
+    "difference": 0,
+    "percent": 0.0
+  },
+  "sourceBlendSHA256": {
+    "before": "24a45378caa981ef6b69de1650424ef98aa9d39fe5ad09f8809e68955536b86f",
+    "after": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0"
+  },
+  "materials": {
+    "glassRoughness": {
+      "before": 0.14,
+      "after": 0.045,
+      "difference": -0.09500000000000001,
+      "percent": -67.857
+    },
+    "glassTransmission": {
+      "before": 0.82,
+      "after": 1,
+      "difference": 0.18000000000000005,
+      "percent": 21.951
+    },
+    "roofSeamNominalSpacing": {
+      "before": 0.43,
+      "after": 1.1,
+      "difference": 0.6700000000000002,
+      "percent": 155.814
+    }
+  },
+  "note": "Whole isolated model, including standalone plinth and four bridge stubs. No game map size changes. Rendering triangle counts with transmission passes are separate from model triangle count."
+}

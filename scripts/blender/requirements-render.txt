@@ -4,3 +4,6 @@ bpy==4.3.0
 numpy==1.26.4
 # Only the media-manifest/contact-sheet script needs Pillow (not the game).
 Pillow>=10
+
+# Stage-two conservative model-space clearance audit (tooling only).
+shapely>=2,<3

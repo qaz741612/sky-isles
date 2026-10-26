@@ -1,7 +1,8 @@
 """Render all eight final views from the saved editable Blender file. MIT."""
 import bpy,bmesh,sys,json,hashlib,time
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/design/parent-child-blender-model-v1';SOURCE=OUT/'parent-child-centre.blend'
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/(sys.argv[sys.argv.index('--out')+1] if '--out' in sys.argv else 'docs/design/parent-child-blender-model-v1');SOURCE=OUT/'parent-child-centre.blend'
 bpy.ops.wm.open_mainfile(filepath=str(SOURCE));source_sha=hashlib.sha256(SOURCE.read_bytes()).hexdigest();scene=bpy.context.scene
 model=bpy.data.objects['ParentChildCentre_MODEL'];deps=bpy.context.evaluated_depsgraph_get();audit=[]
 for obj in model.children_recursive:
@@ -18,7 +19,7 @@ records=json.loads((OUT/'render-record.json').read_text())['views'] if only and 
 for name,camera,width,samples in views:
     if only and name!=only:continue
     scene.camera=bpy.data.objects[camera];scene.render.resolution_x=width;scene.render.resolution_y=round(width*741/1082);scene.cycles.samples=samples;scene.cycles.use_denoising=True
-    if name=='top':
+    if name=='top' and '--fixed-framing' not in sys.argv:
         bounds=json.loads((OUT/'model-report.json').read_text())['bounds'];a,b=bounds['min'],bounds['max'];scene.camera.location.x=(a[0]+b[0])/2;scene.camera.location.y=(a[1]+b[1])/2;scene.camera.data.ortho_scale=max((b[0]-a[0])*1.08,(b[1]-a[1])*scene.render.resolution_x/scene.render.resolution_y*1.08)
     records=[r for r in records if r['file']!='renders/'+name+'.png']
     path=OUT/'renders'/(name+'.png');scene.render.filepath=str(path);started=time.time();bpy.ops.render.render(write_still=True)

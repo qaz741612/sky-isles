@@ -1,0 +1,10 @@
+{
+  "connectedOutdoorPlayerCentreArea": 185.16095072469085,
+  "playerAuditRadius": 0.35,
+  "gamePlayerRadiusForReference": 0.33,
+  "headHeightSlab": [
+    0.22,
+    1.78
+  ],
+  "note": "Conservative plan-space design audit only; no live-game integration."
+}

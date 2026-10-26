@@ -1,0 +1,15 @@
+{
+  "allEightCamerasRetainOriginalPositionsAnglesAndLenses": true,
+  "allEightRendersFromFinalBlend": true,
+  "twoMatchedFramingBeforeAfterComparisons": true,
+  "fourRoutesPlayerClear": true,
+  "fourRoutesCorridorsWithoutObstacleOverlap": true,
+  "npcReservationClearOfGeometryAndRoutes": true,
+  "retainedEntranceGeometryIdentical": true,
+  "solidGeometryIssues": 0,
+  "khronosErrors": 0,
+  "khronosWarnings": 0,
+  "threeWebglError": 0,
+  "sourceBlendSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "note": "Engineering and artifact checks only; not an artistic pass, live-game collision certification or real-device performance result."
+}

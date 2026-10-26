@@ -1,0 +1,78 @@
+{
+  "npcActivityOverlappingRoutes": [],
+  "sourceBlendSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "method": "Conservative convex XY hull of each evaluated solid clipped to height slab 0.22..1.78; low finishes <=0.22 are treated as stepping surfaces. Overhead pieces are excluded. This is a clearance design audit, not game physics or accessibility-code certification.",
+  "siteRadius": 10.2,
+  "obstacleComponents": 1086,
+  "routes": [
+    {
+      "id": "west",
+      "centrelineLength": 13.55336313841247,
+      "proposedWidth": 1.2,
+      "minimumCentrelineObstacleDistance": 0.4227313352658338,
+      "corridorOverlapArea": 0.0,
+      "corridorContacts": [],
+      "playerRadius": 0.35,
+      "playerContacts": [],
+      "playerClear": true
+    },
+    {
+      "id": "southwest",
+      "centrelineLength": 17.94636517567447,
+      "proposedWidth": 1.2,
+      "minimumCentrelineObstacleDistance": 0.4227313352658338,
+      "corridorOverlapArea": 0.0,
+      "corridorContacts": [],
+      "playerRadius": 0.35,
+      "playerContacts": [],
+      "playerClear": true
+    },
+    {
+      "id": "south",
+      "centrelineLength": 10.47747170418092,
+      "proposedWidth": 1.2,
+      "minimumCentrelineObstacleDistance": 0.4227313352658338,
+      "corridorOverlapArea": 0.0,
+      "corridorContacts": [],
+      "playerRadius": 0.35,
+      "playerContacts": [],
+      "playerClear": true
+    },
+    {
+      "id": "east",
+      "centrelineLength": 11.279947466821847,
+      "proposedWidth": 1.2,
+      "minimumCentrelineObstacleDistance": 0.4227313352658338,
+      "corridorOverlapArea": 0.0,
+      "corridorContacts": [],
+      "playerRadius": 0.35,
+      "playerContacts": [],
+      "playerClear": true
+    }
+  ],
+  "npcReservation": {
+    "position": [
+      -0.2,
+      -3,
+      0.03
+    ],
+    "bodyRadius": 0.35,
+    "activityRadius": 0.65,
+    "facingXY": [
+      1,
+      0
+    ],
+    "playerApproach": [
+      1.1,
+      -3,
+      0.03
+    ],
+    "interactionRadius": 1.4,
+    "note": "Reserved data and clear area only; no NPC geometry or system",
+    "nearestObstacleDistance": 1.1481693952367824,
+    "activityContacts": [],
+    "approachContacts": [],
+    "clear": true
+  },
+  "allRoutesPlayerClear": true
+}
