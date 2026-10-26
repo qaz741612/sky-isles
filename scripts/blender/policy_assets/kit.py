@@ -4,7 +4,7 @@ No live game source is imported or modified. Blender coordinates: +Y rear, +Z up
 import bpy, math, random, sys
 from pathlib import Path
 from mathutils import Vector
-from shapely.geometry import Polygon, Point, box as sbox
+from shapely.geometry import Polygon, Point, LineString, box as sbox
 from shapely.ops import triangulate, unary_union
 from shapely.geometry.polygon import orient
 from shapely import constrained_delaunay_triangles, set_precision
@@ -25,6 +25,8 @@ class Kit:
   self.M['white']=G.material('Soft white markings','F4EEDC',.70)
   self.M['courtBlue']=G.material('Muted blue court','86AEB6',.87)
   self.M['courtCoral']=G.material('Muted clay court','DCA790',.88)
+  self.M['pathSage']=G.material('Soft sage stone inlay','CFDCC7',.85)
+  self.M['pathPeach']=G.material('Warm peach stone inlay','E7D3BA',.85)
   G.collection('00_ASSET_ROOT');self.root=G.empty(key+'_MODEL');self.root['role']='Standalone editable artwork; NOT live-game integration';self.root['units']='World-scale metres, Z up';self.groups={}
   for n in ['Architecture','Interior','Landscape','Furniture','ThemeFacilities','Site']:
    G.collection(n);self.groups[n]=G.empty(n,self.root)
@@ -218,7 +220,7 @@ class Kit:
  def emblem(self,kind,x,y,z,size=.7):
   self.use('Architecture');p=self.group(kind+'_ReliefEmblem')
   outline=[(x-size,z-size*.45),(x+size,z-size*.45)]+[(x+size*math.cos(j*math.pi/32),z-size*.45+size*math.sin(j*math.pi/32))for j in range(1,32)]
-  G.prism_xz(kind+'_ThickArchPlaque',outline,y,.13,self.M['trim'],p)
+  if kind!='clock':G.prism_xz(kind+'_ThickArchPlaque',outline,y,.13,self.M['trim'],p)
   front=y-.085
   if kind=='clock':
    o=self.cyl('ClockRim',(x,front,z+.10),size*.53,.07,'rail',p,48);o.rotation_euler.x=math.pi/2
@@ -246,6 +248,13 @@ class Kit:
  def reserve(self,x,y):
   self.use('Furniture');o=self.group('NPC_RESERVED_NO_MODEL');o.location=(x,y,.03);o.empty_display_type='CIRCLE';o.empty_display_size=.65;o['implemented']=False;o['body_radius']=.35;o['interaction_radius']=1.4;o['facing_blender_yaw']=0.0
   self.reservations.append({'positionBlenderXYZ':[x,y,.03],'positionGLTFXYZ':[x,.03,-y],'bodyRadius':.35,'reservationRadius':.65,'playerStopBlenderXYZ':[x,y-1.3,.03],'interactionRadius':1.4,'implemented':False})
+ def garden_ribbon(self,n,points,width=.72):
+  self.use('Landscape');p=self.group(n);line=LineString(points);bed=line.buffer(width/2,resolution=12);inner=bed.buffer(-.10)
+  self.solid(n+'_ClosedStoneEdge',bed.difference(inner),.025,.32,'cream',p)
+  self.solid(n+'_PlantingSoil',inner,.05,.24,'soil',p)
+  for j in range(max(2,round(line.length/.53))):
+   pt=line.interpolate((j+.5)/max(2,round(line.length/.53)),normalized=True);self.shrub(n+'_Flowers',pt.x,pt.y,.32,.34,True,p)
+  self.exclusions.append(bed);return p
  def site(self):
   # Build buildings/landscape FIRST, then infer a platform from measured real geometry.
   bpy.context.view_layer.update();points=[];deps=bpy.context.evaluated_depsgraph_get()

@@ -29,14 +29,16 @@ def garden_edges(k,points):
 
 def court_rings(k,x,y,r=3.3):
  k.use('Landscape');k.exclusions.append(Point(x,y).buffer(r+.1,resolution=48))
- for a,b,m in [(0,r*.62,'paver0'),(r*.62,r*.83,'courtCoral'),(r*.83,r,'courtBlue')]:
+ for a,b,m in [(0,r*.62,'paver0'),(r*.62,r*.83,'pathPeach'),(r*.83,r,'pathSage')]:
   # paver material registered before use; the centre is genuine stone, not a decal.
   if m=='paver0':m='stone'
   k.cyl('CourtyardCentreStone',(x,y,.0245),b,.025,m,v=96)if a==0 else k.arc('CourtyardStoneInlay',x,y,a,b,.012,.025,m,steps=96)
 
 def station(k):
  k.hall('ModernYuanliStation',-5.9,5.6,1.25,5.1,3.05,2.93,1.48,0)
- furnish(k,-5.9,5.6,1.25,5.1,'station');k.emblem('clock',0,.25,3.40,.76)
+ furnish(k,-5.9,5.6,1.25,5.1,'station');k.emblem('clock',0,1.12,3.58,.91)
+ k.bench('FrontHallWaitingSeat',3.0,2.45,2.1)
+ k.use('Interior');k.box('FrontTicketDesk',(-3.4,2.20,.74),(1.7,.64,1.0),'woodLight');k.box('TicketDeskTop',(-3.4,2.20,1.28),(1.82,.73,.10),'trim')
  k.use('Architecture');k.box('RightScreen',(5.38,1.12,1.64),(.18,.20,2.9),'wood')
  # Long, side-open platform canopy and full short train behind station.
  p=k.pergola('SidePlatformCanopy',0,7.1,15.4,2.15,3.15,True)
@@ -65,7 +67,7 @@ def station(k):
  # Waiting shelter and forecourt stay outside central arrival.
  k.pergola('SmallWaitingShelter',-7.5,.1,2.6,1.4,2.45,True);k.bench('ShelterWaitingBench',-7.5,.20,2.0);k.board('StationRouteMap',-8.2,.70,1.0,False)
  court_rings(k,-.6,-4.2,3.65);k.treecourt('StationForecourtTree',-.6,-4.2)
- garden_edges(k,[(-3.9,.7,2.9),(3.9,.7,2.5),(-7,-5.9,1.1),(6.4,-5.2,1.8)])
+ garden_edges(k,[(-3.9,.7,2.9),(3.9,.7,2.5),(-7,-5.9,1.1),(6.4,-5.2,1.8),(-6.8,-3.5,2.4),(4.2,-6.7,2.3)])
  for n,(x,y,h,r)in enumerate([(-8.8,3.4,4.2,1.1),(8.0,-1.0,3.9,1.05)]):k.tree('StationShadeTree'+str(n),x,y,h,r)
  k.board('TransportVisionInfo',6.5,-2.9,1.2,False)
  for x,y in [(-6.4,-1.0),(7.8,-4.1),(-2.6,-7.8)]:k.lamp('StationLantern',x,y)
@@ -109,7 +111,10 @@ def greenhouse(k,x,y,w=3.6,d=4.8):
  k.exclusions.append(box(x-w/2,y-d/2,x+w/2,y+d/2))
  for xx in [x-w*.28,x+w*.28]:
   k.planter('GreenhouseRaisedBed',xx,y, .72,d-.55,.50,False)
-  for j in range(6):k.pot('SeedlingPot',xx,y-d*.35+j*d*.14)
+  for j in range(6):
+   pot=k.pot('SeedlingPot',xx,y-d*.35+j*d*.14);pot.location.z=.42
+   k.shrub('GreenhouseCropFoliage',xx,y-d*.35+j*d*.14,.65,.27,False)
+ k.rooms.append({'name':'AgriculturalGlasshouse','footprint':[x-w/2,y-d/2,x+w/2,y+d/2],'door':None,'peak':peak})
  return p
 
 def industry(k):
@@ -141,6 +146,8 @@ def park_bridge(k,x,y):
  for xx in xs:
   t=(xx-x+1.7)/3.4;z=.15+.48*math.sin(math.pi*t);k.box('BridgeDeckBoard',(xx,y,z),(.155,1.30,.09),'woodLight',p,.012)
  for side in [-1,1]:
+  k.box('BridgeStoneAbutment',(x+side*1.7,y,-.18),(.45,1.5,.48),'stone',p,.035)
+  k.tube('BridgeStructuralStringer',[(xx,y+side*.48,.075+.48*math.sin(math.pi*(xx-x+1.7)/3.4))for xx in xs],.065,'wood',p)
   for j in range(6):
    t=j/5;xx=x-1.7+3.4*t;z=.15+.48*math.sin(math.pi*t);k.beam('BridgeHandrailPost',(xx,y+side*.70,z),(xx,y+side*.70,z+.85),.07,'wood',p)
   for offset in [.50,.90]:k.tube('CurvedFootbridgeHandrail',[(xx,y+side*.70,.15+.48*math.sin(math.pi*(xx-x+1.7)/3.4)+offset)for xx in xs],.035,'woodLight',p)
@@ -151,11 +158,16 @@ def park(k):
  p=k.groups['Architecture'].children[0]
  for o in list(p.children_recursive):
   if any(s in o.name for s in ['Glass','Sill','Transom','TimberMullion','SidePost','ArchHeader']):bpy.data.objects.remove(o,do_unlink=True)
+ for o in p.children_recursive:
+  if 'CornerPier'in o.name:
+   o.data.materials.clear();o.data.materials.append(k.M['wood'])
+ k.use('Architecture')
+ for j in range(12):k.box('PavilionRearSunScreen',(1.0+j*.44,5.70,1.42),(.065,.095,2.30),'woodLight',p,.012)
  k.bench('PavilionRestBench',3.4,4.85,3.0)
  lawn=Point(-3.7,-1.6).buffer(3.9,resolution=64);k.use('Landscape');k.solid('PetFriendlyGrass',lawn,.025,.07,'grass');k.exclusions.append(lawn.buffer(.22))
  k.solid('CurvedGardenPathBorder',lawn.buffer(.45).difference(lawn.buffer(.18)),.015,.035,'trim')
  pond=Point(4,-3.3).buffer(3.0,resolution=64);pond=affinity.scale(pond,1.22,1.0,origin=(4,-3.3));k.water_shapes.append(pond);k.solid('RealPondWater',pond,-.16,.10,'water');k.solid('PondStoneBank',pond.buffer(.20).difference(pond),-.12,.37,'cream')
- park_bridge(k,5.2,-5.1)
+ park_bridge(k,4.0,-6.0)
  k.use('ThemeFacilities');p=k.group('PetFriendlyLowPlay')
  for j in range(8):k.box('DogRampSlat',(-5.6+j*.19,-1.0,.10+j*.08),(.19,.90,.08),'woodLight',p,.015)
  for xx in [-5.7,-4.2]:k.beam('LowRampSafetyHandrail',(xx,-1.5,.15),(xx,-1.5,1.0),.055,'wood',p)
@@ -250,7 +262,7 @@ def education(k):
  k.hall('WestClassroomWing',-7.5,-3.6,2.0,5.75,2.75,2.90,.20,None,False)
  k.hall('LibraryReadingWing',3.4,7.8,.5,5.7,2.85,2.85,.57,None,False)
  furnish(k,-3.8,3.7,1.8,6.1,'reading');furnish(k,3.4,7.8,.5,5.7,'reading')
- k.emblem('clock',-.1,.80,3.75,.72);k.emblem('book',5.7,.1,2.66,.65)
+ k.emblem('clock',-.1,1.66,3.82,.92);k.emblem('book',5.7,.1,2.66,.65)
  # Real scaled half court (not a complete school squeezed into a toy island).
  court=box(-7.5,-6.6,.3,-1.2);k.exclusions.append(court.buffer(.18));k.use('ThemeFacilities');p=k.group('OutdoorActivityHalfCourt')
  k.solid('CourtCreamBorder',court.buffer(.17),.028,.055,'trim',p)
@@ -275,3 +287,21 @@ def education(k):
  k.reserve(1.7,-1.6)
 
 RECIPES={'transport':station,'senior':senior,'industry':industry,'environment':park,'digital':digital,'water':water,'education':education}
+
+
+def finish_gardens(k,key):
+ # Authored bed centre-lines establish courtyard edges; no vacancy search/random placement.
+ beds={
+ 'transport':[('WestArrivalFlowers',[(-8.8,-.4),(-9.0,1.0),(-8.9,2.0)]),('WaitingCourtBorder',[(-6.3,-5.2),(-5.7,-5.4),(-4.8,-5.6)]),('StationFrontGarden',[(2.0,-7.6),(3.6,-7.4),(5.0,-6.8)])],
+ 'senior':[('QuietGardenWest',[(-7.7,-1.6),(-7.9,-3.0),(-7.1,-4.4)]),('RestCourtFlowers',[(2.8,-6.5),(3.7,-5.8),(4.3,-4.8)]),('BackGalleryGarden',[(3.5,6.6),(5.1,6.4),(6.3,5.8)]),('WestShelterGarden',[(-7.7,4.7),(-6.7,5.5),(-5.5,5.9)])],
+ 'industry':[('MakerForecourtGarden',[(-7.7,-2.4),(-7.8,-3.6),(-7.1,-5.0)]),('GreenhouseVisitorBorder',[(6.7,-3.9),(6.0,-4.5),(4.8,-5.1)]),('ProductiveGardenEdge',[(1.5,-7.4),(2.5,-7.2),(3.2,-6.8)])],
+ 'environment':[('WoodlandBackBorder',[(-7.7,2.4),(-6.5,3.7),(-4.6,4.6),(-2.3,5.8)]),('LawnGardenCrescent',[(-7.5,-3.4),(-6.6,-4.4),(-5.1,-5.2),(-3.4,-5.6)]),('ReedAndFlowerBank',[(.6,-1.0),(.8,-2.0),(1.1,-2.8)]),('PondFlowerBorder',[(6.8,-.9),(7.6,-2.2),(7.7,-3.2)]),('PavilionPlantedEdge',[(6.8,1.7),(7.2,2.8),(7.2,3.8)])],
+ 'digital':[('WestServiceCourtGreen',[(-8.0,-3.1),(-7.5,-4.3),(-6.6,-5.2)]),('WaitingGardenFront',[(.8,-6.9),(2.0,-7.3),(3.5,-7.0)]),('EastServiceGarden',[(8.0,1.5),(8.0,3.0),(7.8,4.0)])],
+ 'water':[('RainGardenBack',[(-1.3,6.5),(-1.2,7.3),(.0,7.5)]),('BasinGardenWest',[(-9.3,-3.5),(-8.9,-4.9),(-7.8,-5.8)]),('EastRainGarden',[(8.6,-4.9),(8.9,-3.6),(8.9,-2.7)])],
+ 'education':[('ClassroomGardenEdge',[(-8.7,1.1),(-8.8,2.4),(-8.2,4.0)]),('LibraryGardenFlowers',[(8.5,-2.0),(8.6,-3.2),(8.1,-4.0)]),('ReadingCourtBorder',[(3.7,-7.5),(5.3,-7.5),(6.8,-6.9)])]
+ }
+ for n,pts in beds[key]:k.garden_ribbon(n,pts,.75)
+ if key=='industry':
+  k.use('Landscape');p=k.group('WorkshopClimbingGarden')
+  for j in range(5):
+   k.shrub('WorkshopFacadeClimber',-5.38+(.1 if j%2 else 0),1.06,.55+j*.38,.24,False,p)
