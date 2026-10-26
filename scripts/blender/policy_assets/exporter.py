@@ -12,6 +12,8 @@ def export(model,path,key):
   chain.reverse();role=chain[0].name
   # Retain building/vehicle assembly boundaries, merge repeated small garden components.
   assembly=chain[1].name if role in ['Architecture','ThemeFacilities']and len(chain)>2 and chain[1].type=='EMPTY'else role+'_Components'
+  # A future moving train must remain separate from the fixed track/platform.
+  if any(v.name.startswith('TrainRollingStock')for v in chain):assembly='TrainRollingStock'
   e=o.evaluated_get(deps);g=e.to_mesh();g.calc_loop_triangles();normal=o.matrix_world.to_3x3().inverted().transposed()
   for t in g.loop_triangles:
    mat=g.materials[t.material_index];b=batches.setdefault((role,assembly,mat.name),{'material':mat,'vertices':[],'normals':[],'faces':[],'index':{}});face=[]

@@ -43,10 +43,10 @@ def station(k):
  # Long, side-open platform canopy and full short train behind station.
  p=k.pergola('SidePlatformCanopy',0,7.1,15.4,2.15,3.15,True)
  k.use('ThemeFacilities');platform=k.group('PlatformAndDisplayTrack')
- k.box('RaisedPassengerPlatform',(0,6.20,.19),(15.6,1.8,.36),'stone',platform,.04)
- for j in range(42):k.box('PlatformTactileBlock',(-7.45+j*.36,5.46,.39),(.28,.15,.018),'slide',platform,.006)
- for y in [7.5,8.18]:k.beam('SteelDisplayRail',(-8.1,y,.20),(8.1,y,.20),.06,'gray',platform)
- for j in range(34):k.box('TimberTrackSleeper',(-7.8+j*.47,7.84,.11),(.12,1.10,.12),'woodDark',platform,.01)
+ k.box('RaisedPassengerPlatform',(0,5.90,.19),(15.6,1.8,.36),'stone',platform,.04)
+ for j in range(42):k.box('PlatformTactileBlock',(-7.45+j*.36,6.64,.39),(.28,.15,.018),'slide',platform,.006)
+ for y in [7.31,8.41]:k.beam('SteelDisplayRail',(-8.1,y,.20),(8.1,y,.20),.06,'gray',platform)
+ for j in range(34):k.box('TimberTrackSleeper',(-7.5+j*15/33,7.86,.11),(.12,1.70,.12),'woodDark',platform,.01)
  train=k.group('TrainRollingStock',platform);train.location.x=1.9
  for c in [-1,1]:
   cx=c*2.55;car=k.group('EditableCarriage',train)
@@ -54,10 +54,10 @@ def station(k):
   k.box('CarriageTealBelt',(cx,7.12,.86),(4.65,.045,.25),'rail',car,.025)
   k.box('CarriageRoof',(cx,7.86,2.01),(4.74,1.47,.19),'gray',car,.11)
   for y in [7.12,8.60]:
-   for j in range(7):k.box('PassengerWindow',(cx-1.9+j*.63,y,1.50),(.46,.035,.50),'glass',car,.05)
+   for j in range(7):k.box('PassengerWindow',(cx-1.9+j*.63,y+(-.012 if y<7.86 else .012),1.50),(.46,.035,.50),'trainGlass',car,.05)
    for xx in [cx-1.35,cx+1.35]:k.box('TrainDoor',(xx,y,1.18),(.48,.035,1.14),'trim',car,.03)
   for xx in [cx-1.5,cx+1.5]:
-   for y in [7.16,8.56]:o=k.cyl('TrainWheel',(xx,y,.40),.26,.12,'gray',car,20);o.rotation_euler.x=math.pi/2
+   for y in [7.31,8.41]:o=k.cyl('TrainWheel',(xx,y,.49),.26,.12,'gray',car,20);o.rotation_euler.x=math.pi/2
   # Distinct sloped cab at the outer end; real front glass and paired headlights.
   sign=c;xx=cx+sign*2.52
   outline=[(xx-sign*.1,.55),(xx+sign*.32,.65),(xx+sign*.36,1.3),(xx-sign*.08,1.91)]

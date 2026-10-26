@@ -9,10 +9,11 @@
   "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
   "sourceScripts": {
     "scripts/blender/build_policy_assets.py": "c105d6540077630b6c1c3b118144efe65bd52b376d68dde693375d34ca3f9e0e",
-    "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
+    "scripts/blender/policy_assets/exporter.py": "c50a4706c05dc86a04d188b1557e65c1c27949cd3a653e7fffad1e886db2a2a4",
     "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
-    "scripts/blender/policy_assets/recipes.py": "7a02b2025803b2741583a265fd338d1fa2136736bf17f940c1c7ee7034ca024c",
-    "scripts/blender/policy_assets/kit.py": "8f02ff25e2663b88793fc92150742d59c57ac0d151bd2f5315b4a8b8e7c4f949"
+    "scripts/blender/policy_assets/recipes.py": "05be37cc605d6ef5fcf0550afc0cdb387e833d1f0178a26f6869dd617030e043",
+    "scripts/blender/policy_assets/kit.py": "7a0d1dbee067b52a739a3a71a4f693cd69e0ed6f877c43205b6e19f3b2e248fd",
+    "scripts/blender/finish_transport_track.py": "4e77c46c2ceabf3377f36c7a6c251f19914dc65fb735f7d9866098750c011627"
   },
   "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
   "bounds": {
@@ -36,6 +37,7 @@
   "meshObjects": 3550,
   "materials": [
     "Clear warm architectural glazing",
+    "Smoked vehicle glazing",
     "Soft sage stone inlay",
     "Warm peach stone inlay",
     "WarmLimestonePaver0",
@@ -61,7 +63,7 @@
     "woodDark",
     "woodLight"
   ],
-  "materialCount": 25,
+  "materialCount": 26,
   "collections": {
     "Architecture": {
       "objects": 351,
@@ -202,13 +204,30 @@
   },
   "webExport": {
     "sourceMeshObjects": 3550,
-    "meshPrimitives": 66,
-    "assemblyGroups": 11,
+    "meshPrimitives": 67,
+    "assemblyGroups": 12,
     "triangles": 225508,
     "textures": 0,
     "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
   },
-  "blendSHA256": "95772f605542fb8072f017ba51ac4930d543cec637ce8111f20b4ddb380ec6b5",
-  "glbSHA256": "f8009ddfb2cfc0fe12e0f656a14723b1cf22f1ccc7982844c2054885b00bf012",
-  "buildSeconds": 15.38
+  "blendSHA256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb",
+  "glbSHA256": "ed1f1f90e84c8e6a600e88a7bbb8e14b37d9093517c3d6aac1e40156293dd407",
+  "buildSeconds": 15.38,
+  "gltfReexportNote": "Local track, wheel contact and tactile-edge correction on the same saved station; architecture/materials/cameras unchanged. TrainRollingStock remains independent.",
+  "trackGeometry": {
+    "gauge": 1.1,
+    "railCentreY": [
+      7.31,
+      8.41
+    ],
+    "railTopZ": 0.23,
+    "wheelRadius": 0.26,
+    "wheelCentreZ": 0.49,
+    "wheelBottomZ": 0.23,
+    "sleeperLength": 1.7,
+    "platformBackEdgeY": 6.8,
+    "tactileLineY": 6.64,
+    "trainGeometrySeparateFromTrack": true,
+    "animationImplemented": false
+  }
 }

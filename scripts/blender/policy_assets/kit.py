@@ -20,6 +20,7 @@ class Kit:
   wanted=['cream','stone','trim','roof','seam','wood','woodLight','woodDark','rail','leaf','leafLight','leafDark','soil','sand','coral','slide','petal','petalPink','greenCloth','tealCloth','floor','gray','Clear warm architectural glazing']
   with bpy.data.libraries.load(str(BASELINE),link=False)as(src,dst):dst.materials=[n for n in wanted if n in src.materials]
   self.M={n:bpy.data.materials[n]for n in wanted};self.M['glass']=self.M['Clear warm architectural glazing']
+  self.M['trainGlass']=G.material('Smoked vehicle glazing','47747B',.18,.05,.15)
   self.M['grass']=G.material('Meadow lawn','A8BE79',.95)
   self.M['water']=G.material('Clear turquoise water','80C5CD',.16,0,.30)
   self.M['white']=G.material('Soft white markings','F4EEDC',.70)
