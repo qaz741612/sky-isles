@@ -7,6 +7,7 @@ from mathutils import Vector
 from shapely.geometry import Polygon, Point, box as sbox
 from shapely.ops import triangulate, unary_union
 from shapely.geometry.polygon import orient
+from shapely import constrained_delaunay_triangles, set_precision
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import parent_child_geometry as G
 ROOT=Path(__file__).resolve().parents[3]
@@ -36,6 +37,7 @@ class Kit:
  def sphere(self,n,p,scale,m='leaf',parent=None,sub=2):return G.sphere(n,p,scale,self.M[m],parent or self.parent,sub)
  def tube(self,n,points,r=.025,m='rail',parent=None,sides=8):return G.tube(n,points,r,self.M[m],parent or self.parent,sides)
  def solid(self,n,poly,z,h,m='stone',parent=None,bev=0):
+  poly=set_precision(poly,1e-5)
   if poly.is_empty:return None
   if poly.geom_type=='MultiPolygon':
    return [self.solid(n,p,z,h,m,parent,bev)for p in poly.geoms if p.area>.0001]
@@ -44,8 +46,8 @@ class Kit:
    key=(round(x,7),round(y,7),round(zz,7))
    if key not in lookup:lookup[key]=len(verts);verts.append(key)
    return lookup[key]
-  for tri in triangulate(poly):
-   if not poly.covers(tri.representative_point()):continue
+  for tri in constrained_delaunay_triangles(poly).geoms:
+   if not poly.covers(tri):continue
    pts=list(orient(tri,1).exterior.coords)[:3];faces.append(tuple(idx(x,y,z+h)for x,y in pts));faces.append(tuple(idx(x,y,z)for x,y in reversed(pts)))
   for ring in [poly.exterior,*poly.interiors]:
    pts=list(ring.coords)
@@ -264,7 +266,7 @@ class Kit:
    for col in range(-cols,cols+1):
     x=col*1.06+(.53 if row%2 else 0);tile=sbox(x-.521,y-.416,x+.521,y+.416).intersection(pave)
     if tile.is_empty or tile.area<.025:continue
-    self.solid('EditableStonePaver',tile,.003,.026,materials[(row+col)%3],p,.004);tiles+=1
+    self.solid('EditableStonePaver',tile,.003,.026,materials[(row+col)%3],p,0);tiles+=1
   self.tile_count=tiles;self.arc('PlinthMoulding',0,0,radius-.09,radius+.025,-.13,.15,'cream',p,steps=128)
   self.ports=[]
   for j,angle in enumerate([190,225,278,352]):

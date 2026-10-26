@@ -243,7 +243,7 @@ def water(k):
  for n,(x,y,h,r)in enumerate([(-.8,7.1,4.4,1.2),(9.0,4.2,4.5,1.25)]):k.tree('WaterGardenTree'+str(n),x,y,h,r)
  k.bench('WaterObservationBench',5.6,-.9,2.0)
  for x,y in [(-9.2,2),(8.8,-3.4),(8.2,6.6)]:k.lamp('WaterLantern',x,y)
- k.reserve(5.4,.0)
+ k.reserve(7.8,.2)
 
 def education(k):
  k.hall('LearningHall',-3.8,3.7,1.8,6.1,3.45,3.45,1.3,-.1)
