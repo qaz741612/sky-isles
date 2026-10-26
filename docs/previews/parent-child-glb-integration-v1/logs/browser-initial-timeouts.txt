@@ -1,0 +1,202 @@
+
+Running 14 tests using 1 worker
+
+
+(node:162617) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/14] [desktop] › test/panorama.e2e.js:5:1 › real 3D panorama fits, locks movement, preserves progress and returns the exploration camera
+[2/14] [desktop] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+[desktop] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+{"gateCount":4,"cameraCases":60,"minimumCameraDistance":3.4576197436245772,"head":[{"x":1.1,"z":0.4,"floor":0.125,"ceiling":2.7100000381469727,"maxHead":2.7050000381469728},{"x":7.5,"z":-3,"floor":0.10999999940395355,"ceiling":2.640000104904175,"maxHead":2.635000104904175}],"sourceTriangles":380999,"selectedTriangles":356223,"runtimeMeshes":60,"npc":"reservation only; no NPC body/dialogue to test","errors":[]}
+
+  1) [desktop] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+
+    Test timeout of 300000ms exceeded.
+
+    Error Context: test-results/parent-child.e2e.js-approv-05b6a-ility-policies-and-panorama-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/parent-child.e2e.js-approv-05b6a-ility-policies-and-panorama-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/parent-child.e2e.js-approv-05b6a-ility-policies-and-panorama-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:163571) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/14] [desktop] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help
+[4/14] [desktop] › test/station-headroom.e2e.js:2:1 › imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged
+[desktop] › test/station-headroom.e2e.js:2:1 › imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged
+{"records":[{"name":"lintel","floor":1.1920929021691506e-8,"ceiling":1.9129000902175903,"maxFoot":0.30790009021759024},{"name":"canopy","floor":0.11999999865889549,"ceiling":2.064599567402035,"maxFoot":0.4595995542270924},{"name":"open-air","floor":1.1920928910669204e-8,"maxFoot":1.5183333452542631}],"baseline":1.5183333452542631,"respawns":0}
+
+[5/14] [desktop] › test/walkways.e2e.js:16:1 › walk every island without jumping through keyboard or a single joystick pointer
+[desktop] › test/walkways.e2e.js:16:1 › walk every island without jumping through keyboard or a single joystick pointer
+{"device":"keyboard","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":80657,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.1209782489550835,1.1920928910669204e-8,0.006913042797433928]},"endpoint":[0.1209782489550835,1.1920928910669204e-8,0.006913042797433928],"returned":[0.1209782489550835,0.40000001192092893,0.006913042797433928],"yawUnchanged":true}
+
+[6/14] [desktop] › test/walkways.e2e.js:71:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker
+[7/14] [desktop] › test/walkways.e2e.js:94:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+
+(node:164050) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[8/14] [mobile] › test/panorama.e2e.js:5:1 › real 3D panorama fits, locks movement, preserves progress and returns the exploration camera
+[9/14] [mobile] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+[mobile] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+{"gateCount":4,"cameraCases":60,"minimumCameraDistance":3.457619779731386,"head":[{"x":1.1,"z":0.4,"floor":0.125,"ceiling":2.7100000381469727,"maxHead":2.7050000381469728},{"x":7.5,"z":-3,"floor":0.10999999940395355,"ceiling":2.640000104904175,"maxHead":2.635000104904175}],"sourceTriangles":380999,"selectedTriangles":356223,"runtimeMeshes":60,"npc":"reservation only; no NPC body/dialogue to test","errors":[]}
+
+[10/14] [mobile] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help
+  2) [mobile] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help
+
+    Test timeout of 240000ms exceeded.
+
+    Error: locator.boundingBox: Test timeout of 240000ms exceeded.
+    Call log:
+      - waiting for locator('#jump-btn')
+
+
+      20 |     expect(nav.x+nav.width).toBeLessThanOrEqual(viewport.width);
+      21 |     for (const id of ['#joystick','#jump-btn']) {
+    > 22 |       const c = await page.locator(id).boundingBox();
+         |                                        ^
+      23 |       const overlap = nav.x<c.x+c.width && nav.x+nav.width>c.x && nav.y<c.y+c.height && nav.y+nav.height>c.y;
+      24 |       expect(overlap).toBe(false);
+      25 |     }
+        at /workspace/sky-isles/test/responsive.e2e.js:22:40
+
+    Error Context: test-results/responsive.e2e.js-compact--754dd-sable-with-first-visit-help-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive.e2e.js-compact--754dd-sable-with-first-visit-help-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive.e2e.js-compact--754dd-sable-with-first-visit-help-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:164874) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[11/14] [mobile] › test/station-headroom.e2e.js:2:1 › imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged
+[mobile] › test/station-headroom.e2e.js:2:1 › imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged
+{"records":[{"name":"lintel","floor":1.1920929021691506e-8,"ceiling":1.9129000902175903,"maxFoot":0.30790009021759024},{"name":"canopy","floor":0.11999999865889549,"ceiling":2.064599567402035,"maxFoot":0.4595995542270924},{"name":"open-air","floor":1.1920928910669204e-8,"maxFoot":1.5183333452542631}],"baseline":1.5183333452542631,"respawns":0}
+
+[12/14] [mobile] › test/walkways.e2e.js:16:1 › walk every island without jumping through keyboard or a single joystick pointer
+  3) [mobile] › test/walkways.e2e.js:16:1 › walk every island without jumping through keyboard or a single joystick pointer
+
+    Test timeout of 120000ms exceeded.
+
+    Error: locator.click: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for locator('#help-close')
+
+
+       5 |   await page.goto('/');await page.waitForFunction(()=>window.__skyisles);
+       6 |   await page.locator('#title-screen .tap').click();
+    >  7 |   if(await page.locator('#touch-help').isVisible())await page.locator('#help-close').click();
+         |                                                                                      ^
+       8 |   await page.evaluate(()=>{
+       9 |     const w=window.__skyisles.world;
+      10 |     w.tourStep=w.player.update.bind(w.player);
+        at enter (/workspace/sky-isles/test/walkways.e2e.js:7:86)
+        at /workspace/sky-isles/test/walkways.e2e.js:17:3
+
+    Error Context: test-results/walkways.e2e.js-walk-every-e1f96-r-a-single-joystick-pointer-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/walkways.e2e.js-walk-every-e1f96-r-a-single-joystick-pointer-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/walkways.e2e.js-walk-every-e1f96-r-a-single-joystick-pointer-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:165564) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[13/14] [mobile] › test/walkways.e2e.js:71:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker
+  4) [mobile] › test/walkways.e2e.js:71:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker
+
+    Test timeout of 120000ms exceeded.
+
+    Error: locator.click: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for locator('#help-close')
+        - locator resolved to <button type="button" id="help-close" aria-label="關閉操作說明">知道了 ×</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+
+
+       5 |   test.setTimeout(360000);
+       6 |   await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:150000});
+    >  7 |   await page.locator('#title-screen .tap').click();
+         |                                                    ^
+       8 |   // Geometry/input regression only: the full rendered scene is captured and
+       9 |   // benchmarked separately. Keep real rAF, input, raycasts and physics active.
+      10 |   await page.evaluate(()=>{window.__skyisles.world.renderer.render=()=>{};});
+        at enter (/workspace/sky-isles/test/walkways.e2e.js:7:86)
+        at /workspace/sky-isles/test/walkways.e2e.js:72:3
+
+    Error Context: test-results/walkways.e2e.js-guards-blo-2c69e-oom-never-launches-a-walker-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/walkways.e2e.js-guards-blo-2c69e-oom-never-launches-a-walker-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/walkways.e2e.js-guards-blo-2c69e-oom-never-launches-a-walker-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:165889) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[14/14] [mobile] › test/walkways.e2e.js:94:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+  5) [mobile] › test/walkways.e2e.js:94:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+
+    Test timeout of 120000ms exceeded.
+
+    Error: cdpSession.send: Target page, context or browser has been closed
+
+       98 | test('native single-finger release and cancellation reset the stick and stop without camera turning',async({page,isMobile})=>{
+       99 |   test.skip(!isMobile,'native touch input');
+    > 100 |   await enter(page);
+          |                   ^
+      101 |   const box=await page.locator('#joystick').boundingBox(),cx=box.x+box.width/2,cy=box.y+box.height/2;
+      102 |   const session=await page.context().newCDPSession(page);
+      103 |   for(const end of ['touchEnd','touchCancel']) {
+        at /workspace/sky-isles/test/walkways.e2e.js:100:19
+
+    Error Context: test-results/walkways.e2e.js-native-sin-9388b-stop-without-camera-turning-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/walkways.e2e.js-native-sin-9388b-stop-without-camera-turning-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/walkways.e2e.js-native-sin-9388b-stop-without-camera-turning-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  Slow test file: [desktop] › test/parent-child.e2e.js (5.3m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  5 failed
+    [desktop] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+    [mobile] › test/responsive.e2e.js:3:1 › compact portrait and landscape menu remain usable with first-visit help
+    [mobile] › test/walkways.e2e.js:16:1 › walk every island without jumping through keyboard or a single joystick pointer
+    [mobile] › test/walkways.e2e.js:71:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker
+    [mobile] › test/walkways.e2e.js:94:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+  2 skipped
+  7 passed (32.4m)

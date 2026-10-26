@@ -1,0 +1,62 @@
+{
+  "sourceFrames": 712,
+  "encodedFrames": 713,
+  "sourceCaptureSeconds": 237.03277897834778,
+  "originalTimestampsStrictlyIncreasing": true,
+  "maximumEncodedTimestampRoundingErrorSeconds": 0.019983882904051953,
+  "encoderTimestampGridSeconds": 0.04,
+  "endPosterHoldSeconds": 1,
+  "extraFrame": "One duplicate final frame for the explicit 1-second still tail, no interpolated animation frames.",
+  "nativeWaypointsReached": [
+    [
+      1.4,
+      10
+    ],
+    [
+      1.1,
+      8.2
+    ],
+    [
+      1.1,
+      5.5
+    ],
+    [
+      1.1,
+      2.7
+    ],
+    [
+      1.1,
+      1.7
+    ],
+    [
+      1.1,
+      0.4
+    ]
+  ],
+  "error": null,
+  "unexpectedRespawns": 0,
+  "final": {
+    "chimesUnlocked": 0,
+    "islandCount": 8,
+    "respawnCount": 0,
+    "checkpoint": [
+      -16.44970771170266,
+      0.125,
+      -19.568664068394344
+    ],
+    "playerPos": {
+      "x": -16.44970771170266,
+      "y": 0.125,
+      "z": -19.568664068394344
+    },
+    "panoramaMode": "explore",
+    "started": true,
+    "muralOrder": [
+      2,
+      4,
+      0,
+      3,
+      1
+    ]
+  }
+}

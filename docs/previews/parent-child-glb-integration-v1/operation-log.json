@@ -1,0 +1,147 @@
+{
+  "method": "Native keyboard and mouse; initial placement outside clip is documented; no direct state writes during clip. Every 15th compositor frame, original timestamps, no interpolation or retiming.",
+  "silent": true,
+  "error": null,
+  "frames": 712,
+  "captureSeconds": 237.03277897834778,
+  "events": [
+    {
+      "method": "Before recording only: engineering placement at actual S05 south entrance. During recording: native keyboard/mouse only, no teleports, speed/position writes, simulation stepping or special camera. Actual game speed; every 15th compositor frame captured with original timestamps (no interpolation or time remapping); silent CPU-GPU browser footage.",
+      "bundle": "/assets/index-9F6Uh_WJ.js",
+      "recordingStart": 1792999380565
+    },
+    {
+      "at": 1792999416843,
+      "reached": [
+        1.4,
+        10
+      ],
+      "state": {
+        "x": 1.4954877246897738,
+        "y": 0,
+        "z": 10.25189610825332,
+        "yaw": 0.16000000000000003,
+        "respawns": 0,
+        "keys": [
+          "KeyW",
+          "KeyA"
+        ]
+      }
+    },
+    {
+      "at": 1792999441457,
+      "reached": [
+        1.1,
+        8.2
+      ],
+      "state": {
+        "x": 0.9911603760852117,
+        "y": 0.02999999999999814,
+        "z": 8.374517396049933,
+        "yaw": 0.16000000000000003,
+        "respawns": 0,
+        "keys": [
+          "KeyW",
+          "KeyD"
+        ]
+      }
+    },
+    {
+      "at": 1792999485848,
+      "reached": [
+        1.1,
+        5.5
+      ],
+      "state": {
+        "x": 0.9820520727840716,
+        "y": 0.02999999999999867,
+        "z": 5.488555986863293,
+        "yaw": 0.16000000000000003,
+        "respawns": 0,
+        "keys": [
+          "KeyW",
+          "KeyD"
+        ]
+      }
+    },
+    {
+      "at": 1792999528907,
+      "reached": [
+        1.1,
+        2.7
+      ],
+      "state": {
+        "x": 1.083559991855477,
+        "y": 0.02999999999999922,
+        "z": 2.99726344039318,
+        "yaw": 0.16000000000000003,
+        "respawns": 0,
+        "keys": [
+          "KeyW"
+        ]
+      }
+    },
+    {
+      "at": 1792999559619,
+      "reached": [
+        1.1,
+        1.7
+      ],
+      "state": {
+        "x": 0.9491501040883428,
+        "y": 0.029999999999999614,
+        "z": 1.7374248717580087,
+        "yaw": 0.16000000000000003,
+        "respawns": 0,
+        "keys": [
+          "KeyW",
+          "KeyD"
+        ]
+      }
+    },
+    {
+      "at": 1792999594223,
+      "reached": [
+        1.1,
+        0.4
+      ],
+      "state": {
+        "x": 1.1586952827612116,
+        "y": 0.125,
+        "z": 0.503123579243713,
+        "yaw": 0.16000000000000003,
+        "respawns": 0,
+        "keys": [
+          "KeyW"
+        ]
+      }
+    },
+    {
+      "recordingEnd": 1792999613109,
+      "final": {
+        "chimesUnlocked": 0,
+        "islandCount": 8,
+        "respawnCount": 0,
+        "checkpoint": [
+          -16.44970771170266,
+          0.125,
+          -19.568664068394344
+        ],
+        "playerPos": {
+          "x": -16.44970771170266,
+          "y": 0.125,
+          "z": -19.568664068394344
+        },
+        "panoramaMode": "explore",
+        "started": true,
+        "muralOrder": [
+          2,
+          4,
+          0,
+          3,
+          1
+        ]
+      }
+    }
+  ]
+}

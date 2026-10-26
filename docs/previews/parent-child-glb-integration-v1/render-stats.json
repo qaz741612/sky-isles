@@ -1,0 +1,384 @@
+{
+  "url": "http://127.0.0.1:4187",
+  "views": {
+    "desktop-explore": {
+      "kind": "Actual default player-follow camera; engineering-positioned in family court before capture.",
+      "bundle": "/assets/index-9F6Uh_WJ.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "dpr": 1,
+      "renderPixelRatio": 1,
+      "camera": [
+        -14.346118984225601,
+        10.564279525362512,
+        -1.1192715890195974
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        -16.449999999999996,
+        0.029999999999998778,
+        -14.155999999999999
+      ],
+      "family": {
+        "sourceTriangles": 380999,
+        "selectedTriangles": 356223,
+        "runtimeVertices": 786272,
+        "runtimeMeshes": 60,
+        "sourceMeshes": 207,
+        "selectedSourceMeshes": 206,
+        "excluded": [
+          {
+            "name": "SiteAndBridgeStubs_Components__rail",
+            "reason": "Display-only perimeter/bridge rails replaced by actual shared-domain safety boundary"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          }
+        ],
+        "sourceLoadMilliseconds": 548.8000000119209,
+        "buildMilliseconds": 1043,
+        "firstFrameMilliseconds": 6228.4000000059605
+      },
+      "calls": 216,
+      "triangles": 760880,
+      "textures": 17,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    "island-45": {
+      "kind": "QA camera in the actual running game; policy labels hidden for architecture review. No meshes hidden, no model/material changes.",
+      "bundle": "/assets/index-9F6Uh_WJ.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "dpr": 1,
+      "renderPixelRatio": 1,
+      "camera": [
+        -1.5499999999999972,
+        25,
+        -1.7674561800016804
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        -16.449999999999996,
+        0.029999999999998778,
+        -14.155999999999999
+      ],
+      "family": {
+        "sourceTriangles": 380999,
+        "selectedTriangles": 356223,
+        "runtimeVertices": 786272,
+        "runtimeMeshes": 60,
+        "sourceMeshes": 207,
+        "selectedSourceMeshes": 206,
+        "excluded": [
+          {
+            "name": "SiteAndBridgeStubs_Components__rail",
+            "reason": "Display-only perimeter/bridge rails replaced by actual shared-domain safety boundary"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          }
+        ],
+        "sourceLoadMilliseconds": 548.8000000119209,
+        "buildMilliseconds": 1043,
+        "firstFrameMilliseconds": 6228.4000000059605
+      },
+      "calls": 265,
+      "triangles": 773358,
+      "textures": 17,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    "island-top": {
+      "kind": "QA camera in the actual running game; policy labels hidden for architecture review. No meshes hidden, no model/material changes.",
+      "bundle": "/assets/index-9F6Uh_WJ.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "dpr": 1,
+      "renderPixelRatio": 1,
+      "camera": [
+        -17.549999999999997,
+        31,
+        -19.656
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        -16.449999999999996,
+        0.029999999999998778,
+        -14.155999999999999
+      ],
+      "family": {
+        "sourceTriangles": 380999,
+        "selectedTriangles": 356223,
+        "runtimeVertices": 786272,
+        "runtimeMeshes": 60,
+        "sourceMeshes": 207,
+        "selectedSourceMeshes": 206,
+        "excluded": [
+          {
+            "name": "SiteAndBridgeStubs_Components__rail",
+            "reason": "Display-only perimeter/bridge rails replaced by actual shared-domain safety boundary"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          }
+        ],
+        "sourceLoadMilliseconds": 548.8000000119209,
+        "buildMilliseconds": 1043,
+        "firstFrameMilliseconds": 6228.4000000059605
+      },
+      "calls": 328,
+      "triangles": 786524,
+      "textures": 17,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    "yuan-panorama": {
+      "kind": "Actual built-in panorama, unlabelled; all eight islands and fixed Yuan bridge network.",
+      "bundle": "/assets/index-9F6Uh_WJ.js",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "dpr": 1,
+      "renderPixelRatio": 1,
+      "camera": [
+        -0.3850549999999977,
+        240,
+        28.923
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        -16.449999999999996,
+        0.029999999999998778,
+        -14.155999999999999
+      ],
+      "family": {
+        "sourceTriangles": 380999,
+        "selectedTriangles": 356223,
+        "runtimeVertices": 786272,
+        "runtimeMeshes": 60,
+        "sourceMeshes": 207,
+        "selectedSourceMeshes": 206,
+        "excluded": [
+          {
+            "name": "SiteAndBridgeStubs_Components__rail",
+            "reason": "Display-only perimeter/bridge rails replaced by actual shared-domain safety boundary"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          }
+        ],
+        "sourceLoadMilliseconds": 548.8000000119209,
+        "buildMilliseconds": 1043,
+        "firstFrameMilliseconds": 6228.4000000059605
+      },
+      "calls": 782,
+      "triangles": 871682,
+      "textures": 18,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    "mobile-portrait": {
+      "kind": "Actual default player-follow camera; engineering-positioned in family court before capture. Native touch UI and original orbit/zoom.",
+      "bundle": "/assets/index-9F6Uh_WJ.js",
+      "viewport": [
+        430,
+        739
+      ],
+      "dpr": 3,
+      "renderPixelRatio": 1.5,
+      "camera": [
+        -14.385648344554957,
+        15.191691668879884,
+        2.964095237720769
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "player": [
+        -16.449999999999996,
+        0.029999999999998778,
+        -14.155999999999999
+      ],
+      "family": {
+        "sourceTriangles": 380999,
+        "selectedTriangles": 356223,
+        "runtimeVertices": 786272,
+        "runtimeMeshes": 60,
+        "sourceMeshes": 207,
+        "selectedSourceMeshes": 206,
+        "excluded": [
+          {
+            "name": "SiteAndBridgeStubs_Components__rail",
+            "reason": "Display-only perimeter/bridge rails replaced by actual shared-domain safety boundary"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          }
+        ],
+        "sourceLoadMilliseconds": 392.5,
+        "buildMilliseconds": 488.5,
+        "firstFrameMilliseconds": 4157.700000017881
+      },
+      "calls": 197,
+      "triangles": 744304,
+      "textures": 17,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    "mobile-landscape": {
+      "kind": "Actual default player-follow camera; engineering-positioned in family court before capture. Native touch UI and original orbit/zoom.",
+      "bundle": "/assets/index-9F6Uh_WJ.js",
+      "viewport": [
+        932,
+        430
+      ],
+      "dpr": 3,
+      "renderPixelRatio": 1.5,
+      "camera": [
+        -14.083137002509757,
+        11.693564475191899,
+        0.5103160885445385
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "player": [
+        -16.449999999999996,
+        0.029999999999998778,
+        -14.155999999999999
+      ],
+      "family": {
+        "sourceTriangles": 380999,
+        "selectedTriangles": 356223,
+        "runtimeVertices": 786272,
+        "runtimeMeshes": 60,
+        "sourceMeshes": 207,
+        "selectedSourceMeshes": 206,
+        "excluded": [
+          {
+            "name": "SiteAndBridgeStubs_Components__rail",
+            "reason": "Display-only perimeter/bridge rails replaced by actual shared-domain safety boundary"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          },
+          {
+            "name": "SiteAndBridgeStubs_Components__stone",
+            "reason": "Display bridge arm; actual game bridges stay in place"
+          }
+        ],
+        "sourceLoadMilliseconds": 234.69999998807907,
+        "buildMilliseconds": 319.2000000178814,
+        "firstFrameMilliseconds": 1949.0999999940395
+      },
+      "calls": 269,
+      "triangles": 769830,
+      "textures": 17,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    }
+  },
+  "errors": []
+}

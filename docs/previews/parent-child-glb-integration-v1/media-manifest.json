@@ -1,0 +1,80 @@
+{
+  "source": "Final running Three.js production build. QA screenshots labelled separately from player-follow cameras. Video from actual native keyboard input and CDP frames with original timestamps; no AI concept images.",
+  "files": [
+    {
+      "path": "desktop-explore.png",
+      "repoPath": "docs/previews/parent-child-glb-integration-v1/desktop-explore.png",
+      "bytes": 758156,
+      "sha256": "adaba959f7b939e787c7a0b4ca8b4442e79d759e6136860ebcd849a804f5edc7",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "path": "island-45.png",
+      "repoPath": "docs/previews/parent-child-glb-integration-v1/island-45.png",
+      "bytes": 857618,
+      "sha256": "c7be70c9c27db2f2bd5437a62d1a26b2c7ffaaf6bf594a4862cef2367f1155a8",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "path": "island-top.png",
+      "repoPath": "docs/previews/parent-child-glb-integration-v1/island-top.png",
+      "bytes": 569767,
+      "sha256": "6b532175f791dc3fbda948290f37d4e93e90d9d885248e544cd362b51260a160",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "path": "mobile-landscape.png",
+      "repoPath": "docs/previews/parent-child-glb-integration-v1/mobile-landscape.png",
+      "bytes": 1363518,
+      "sha256": "b4b6675d94f1c3ad050a45d739ccdd7770c47ffa88741a62c5db2f4492806b88",
+      "width": 2796,
+      "height": 1290
+    },
+    {
+      "path": "mobile-portrait.png",
+      "repoPath": "docs/previews/parent-child-glb-integration-v1/mobile-portrait.png",
+      "bytes": 1123166,
+      "sha256": "8a8afa79211200f9921ddc78cb0da8e3316df54eed3b7a435a254f55318facdc",
+      "width": 1290,
+      "height": 2217
+    },
+    {
+      "path": "native-operation.mp4",
+      "repoPath": "docs/previews/parent-child-glb-integration-v1/native-operation.mp4",
+      "bytes": 7497317,
+      "sha256": "b9262edfba6ab0bb910b9f069ab0278708355a73e756f2cc55cfed961a7f40d4",
+      "width": 960,
+      "height": 640,
+      "duration": 238.08,
+      "codec": "h264",
+      "containerFrameRate": "575/192",
+      "audioTracks": 0
+    },
+    {
+      "path": "operation-poster.png",
+      "repoPath": "docs/previews/parent-child-glb-integration-v1/operation-poster.png",
+      "bytes": 421128,
+      "sha256": "daf3f9fc4f658b804728c1b6a1c9c5d05ee456de697e234d767395b962059a18",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "path": "yuan-panorama.png",
+      "repoPath": "docs/previews/parent-child-glb-integration-v1/yuan-panorama.png",
+      "bytes": 191425,
+      "sha256": "a3e5fc19894924b9545ccbbeaaf84647240a724e635e34dc2f09739179713b3b",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "path": "public/models/parent-child-centre/parent-child-centre.glb",
+      "repoPath": "public/models/parent-child-centre/parent-child-centre.glb",
+      "bytes": 20239060,
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44",
+      "kind": "Approved PR11 GLB, unchanged copy"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "pullRequest": "https://github.com/qaz741612/sky-isles/pull/12",
+  "headBranch": "codex/parent-child-glb-integration-v1",
+  "baseBranch": "codex/parent-child-blender-model-v1",
+  "runtimeCommit": "657ec0aa7ec984b5e0f71a168ec85f6a1b116ba0",
+  "cloudflareCheck": {
+    "name": "Cloudflare Pages",
+    "status": "completed",
+    "conclusion": "success",
+    "title": "Deployed successfully"
+  },
+  "previewURL": "https://34a8b999.sky-isles.pages.dev",
+  "branchPreviewURL": "https://codex-parent-child-glb-integ.sky-isles.pages.dev",
+  "origin": "Existing GitHub integration automatically created a public branch Preview after the authorized new development branch push. No manual deployment or Cloudflare setting change.",
+  "remoteBrowserVerified": false,
+  "remoteProbe": "The execution environment egress proxy rejected CONNECT to pages.dev with HTTP 403. This is not a response from the preview site; Cloudflare GitHub check reports successful deployment. Functional/browser/media tests use the identical local production build index-9F6Uh_WJ.js.",
+  "productionBranch": "codex/yuanli-policy-islands-v1",
+  "productionSHA": "8adc89ed23d1f74151ca70bab2b3bd730c6e54a5",
+  "mainSHA": "a8a1c07ea1ed1d9d2fe259a97a64d08fcec8f2d1",
+  "merged": false
+}

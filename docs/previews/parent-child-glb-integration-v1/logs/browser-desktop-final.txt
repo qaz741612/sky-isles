@@ -1,0 +1,12 @@
+
+Running 1 test using 1 worker
+
+
+(node:167282) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] [desktop] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+[desktop] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+{"gateCount":4,"cameraCases":60,"minimumCameraDistance":3.4576197436245772,"head":[{"x":1.1,"z":0.4,"floor":0.125,"ceiling":2.7100000381469727,"maxHead":2.7050000381469728},{"x":7.5,"z":-3,"floor":0.10999999940395355,"ceiling":2.640000104904175,"maxHead":2.635000104904175}],"sourceTriangles":380999,"selectedTriangles":356223,"runtimeMeshes":60,"npc":"reservation only; no NPC body/dialogue to test","errors":[]}
+
+  1 passed (54.3s)
