@@ -8,10 +8,10 @@
   "phase": "complete",
   "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
   "sourceScripts": {
-    "scripts/blender/build_policy_assets.py": "ba4bd8e9660eab7720d3086afb20983b8b168cfec29d9b8713174462260a972e",
+    "scripts/blender/build_policy_assets.py": "c105d6540077630b6c1c3b118144efe65bd52b376d68dde693375d34ca3f9e0e",
     "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
     "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
-    "scripts/blender/policy_assets/recipes.py": "04efa362d275c5c39644817760462975c505f9d5686ff01973c80efa0824a351",
+    "scripts/blender/policy_assets/recipes.py": "7a02b2025803b2741583a265fd338d1fa2136736bf17f940c1c7ee7034ca024c",
     "scripts/blender/policy_assets/kit.py": "8f02ff25e2663b88793fc92150742d59c57ac0d151bd2f5315b4a8b8e7c4f949"
   },
   "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
@@ -32,8 +32,8 @@
     25.810925483703613,
     5.721760272979736
   ],
-  "evaluatedTriangles": 180772,
-  "meshObjects": 3782,
+  "evaluatedTriangles": 181812,
+  "meshObjects": 3786,
   "materials": [
     "Clear turquoise water",
     "Meadow lawn",
@@ -79,8 +79,8 @@
       "triangles": 36264
     },
     "ThemeFacilities": {
-      "objects": 72,
-      "triangles": 14416
+      "objects": 76,
+      "triangles": 15456
     }
   },
   "recommendedPlatform": {
@@ -181,7 +181,7 @@
     }
   ],
   "geometryAudit": {
-    "checkedMeshes": 3782,
+    "checkedMeshes": 3786,
     "issues": [],
     "note": "Per-component closed solids; intentional assembly intersections are not boolean-unioned. Not an engineering or runtime collision certification."
   },
@@ -193,14 +193,14 @@
     "materialsWithinCap": true
   },
   "webExport": {
-    "sourceMeshObjects": 3782,
-    "meshPrimitives": 41,
+    "sourceMeshObjects": 3786,
+    "meshPrimitives": 42,
     "assemblyGroups": 6,
-    "triangles": 180772,
+    "triangles": 181812,
     "textures": 0,
     "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
   },
-  "blendSHA256": "a956aae7cf14e6113feae5662e0b99b694ae8cd361086a8115bb932137393f6a",
-  "glbSHA256": "9f39c3c04f57a812b0418eb317d1726cef145b635ed542102c07b2d8e60fe02c",
-  "buildSeconds": 12.21
+  "blendSHA256": "bbcf309631276cac8e391cce3f2da3ed8ed925537a0f9d1a37c1c5b0055e9c39",
+  "glbSHA256": "4a49d0a4a7b85af46e7196710d92a9815efa3b2f468e68d738683f8b055d1a05",
+  "buildSeconds": 10.49
 }
