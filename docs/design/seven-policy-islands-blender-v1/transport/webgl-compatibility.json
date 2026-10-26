@@ -1,0 +1,13 @@
+{
+  "id": "transport",
+  "loadedSHA256": "ed1f1f90e84c8e6a600e88a7bbb8e14b37d9093517c3d6aac1e40156293dd407",
+  "webglError": 0,
+  "pixelColors": 578,
+  "drawCalls": 134,
+  "renderedTriangles": 450992,
+  "textures": 1,
+  "meshes": 67,
+  "missingMaterials": 0,
+  "evidenceScreenshotWorkspace": "work/seven-asset-viewer/compatibility/transport.png",
+  "scope": "Isolated Three.js asset viewer with original GLB materials; not a Blender art render, no game integration or mobile FPS certification."
+}

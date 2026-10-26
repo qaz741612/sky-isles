@@ -1,0 +1,9 @@
+{
+  "id": "senior",
+  "sourceBlendSHA256": "b24029e020a12e0b1167a99681f45a94b2d39ff920be7bae86c719b5b2f3d045",
+  "checkedObjects": 3626,
+  "evaluatedTriangles": 210900,
+  "nonClosedOrNegativeVolumeIssues": [],
+  "externalImageDependencies": [],
+  "passed": true
+}

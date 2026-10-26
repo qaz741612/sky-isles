@@ -1,0 +1,9 @@
+{
+  "id": "digital",
+  "sourceBlendSHA256": "03974e41502ef6c619454244a21afeb3e68ffbb65cc7bd22e757b906eff50c54",
+  "checkedObjects": 3082,
+  "evaluatedTriangles": 206608,
+  "nonClosedOrNegativeVolumeIssues": [],
+  "externalImageDependencies": [],
+  "passed": true
+}

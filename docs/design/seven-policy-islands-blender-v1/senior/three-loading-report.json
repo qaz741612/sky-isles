@@ -1,0 +1,41 @@
+{
+  "id": "senior",
+  "file": "docs/design/seven-policy-islands-blender-v1/senior/senior.glb",
+  "bytes": 12474812,
+  "sha256": "3f5ca62b220308beb5d5ae5fe2fd490c33149c6ff9f465387cd2a7e803314ffa",
+  "meshes": 58,
+  "triangles": 210879,
+  "materials": 26,
+  "missingMaterials": 0,
+  "badNormals": 0,
+  "bounds": {
+    "min": [
+      -13.993513107299805,
+      -0.46000000834465027,
+      -11.824999809265137
+    ],
+    "max": [
+      13.985925674438477,
+      4.836880207061768,
+      13.985925674438477
+    ]
+  },
+  "sizeGLTF_XYZ": [
+    27.97943878173828,
+    5.296880215406418,
+    25.810925483703613
+  ],
+  "coordinateSystem": "Blender +Z up exported to Three.js +Y up; model front +Z, source front -Y.",
+  "transmissionMaterials": [
+    {
+      "name": "Clear warm architectural glazing",
+      "transmission": 1,
+      "roughness": 0.04500000178813934,
+      "ior": 1.4500000476837158
+    }
+  ],
+  "khronosErrors": 0,
+  "khronosWarnings": 0,
+  "complexityWithinApprovedBaseline": true,
+  "scope": "Standalone GLTFLoader parsing and material validation; no game integration, physics or hardware FPS certification."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "industry",
+  "sourceBlendSHA256": "285440bb130bc6fad8e91eb59b5003b67d757c1d1d3b0d90783767e8c91c3086",
+  "checkedObjects": 3454,
+  "evaluatedTriangles": 233172,
+  "nonClosedOrNegativeVolumeIssues": [],
+  "externalImageDependencies": [],
+  "passed": true
+}

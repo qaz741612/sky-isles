@@ -1,0 +1,970 @@
+{
+  "modellingReferences": "REFERENCES.md",
+  "allArtworkRenders": "Actual Blender Cycles files; overview/contact sheets only arrange those real renders.",
+  "files": [
+    {
+      "path": "README.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/README.md",
+      "bytes": 3696,
+      "sha256": "b8fdff84a03b6d6d38c92fb551ee7c5cf4e66d975f3f5d8e97a10b56cedbdb65"
+    },
+    {
+      "path": "REFERENCES.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/REFERENCES.md",
+      "bytes": 1829,
+      "sha256": "8fc3a04ae7f776f1f6d08a9f43d4626f6251515e962734e5a198d9b7a137ff92"
+    },
+    {
+      "path": "SITE-PLANNING.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/SITE-PLANNING.md",
+      "bytes": 3770,
+      "sha256": "80f2759c62d20569bd5b959e7fbd670aee3f94eda17f655c08947a139e981e5e"
+    },
+    {
+      "path": "VALIDATION.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/VALIDATION.md",
+      "bytes": 5602,
+      "sha256": "382c47b386808706f24dc020eef173c6b38efe8cbf93f331c91649f7e6ab8aba"
+    },
+    {
+      "path": "WORKFLOW.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/WORKFLOW.md",
+      "bytes": 3923,
+      "sha256": "0da9345109dde990e0f3c1c90332915bddd684df983fb958474c9e5e82aaa34a"
+    },
+    {
+      "path": "camera-fit-summary.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/camera-fit-summary.json",
+      "bytes": 489,
+      "sha256": "1cd2e76f1415124be6ce529593174e00fb259ff060f00b158f4890cecf21d8d9"
+    },
+    {
+      "path": "content-footprints.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/content-footprints.json",
+      "bytes": 23477,
+      "sha256": "f45c1ab3816dad985ae5207bd7a0cf5fbad7cbcd6edcf84a8b61cb703762c2ee"
+    },
+    {
+      "path": "digital/README.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/README.md",
+      "bytes": 2201,
+      "sha256": "ca0e467f737812d064e710a28692f0af7315509e76268dfdc276cb2c5810121e"
+    },
+    {
+      "path": "digital/camera-fit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/camera-fit.json",
+      "bytes": 1823,
+      "sha256": "aaa91351ab884cd4eb9595c952257fb538ef0bb44d56490b9d49a0dd686f10ba"
+    },
+    {
+      "path": "digital/digital.blend",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/digital.blend",
+      "bytes": 807300,
+      "sha256": "03974e41502ef6c619454244a21afeb3e68ffbb65cc7bd22e757b906eff50c54"
+    },
+    {
+      "path": "digital/digital.glb",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/digital.glb",
+      "bytes": 11537708,
+      "sha256": "1880c9f0d7fed481a56113a18a944b53141685643d57793d8f575a2602acfe44"
+    },
+    {
+      "path": "digital/gltf-validation.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/gltf-validation.json",
+      "bytes": 998,
+      "sha256": "bda2d66ffe2be5bf8607902d58888005730b872b5648d358aa680d4f507f54c6"
+    },
+    {
+      "path": "digital/model-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/model-report.json",
+      "bytes": 5734,
+      "sha256": "85f918477f9ce842f2016b3e9045f08efb30f4632c5b1ddec6aa1c77f4bffc10"
+    },
+    {
+      "path": "digital/render-record.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/render-record.json",
+      "bytes": 3888,
+      "sha256": "98c8e077123af3e154f0014677154c6ba664a7bf9acc8ee998fc8ebd7047c83d"
+    },
+    {
+      "path": "digital/renders/back.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/renders/back.png",
+      "bytes": 971425,
+      "sha256": "02656b453ba174f717fa6a1d78769f94c3bad981ff17398e5a3e6da55ad1789c",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "digital/renders/front.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/renders/front.png",
+      "bytes": 993730,
+      "sha256": "339db4bd0b721f23019ec3722597ec91582e4c4055386ce6716b3d01ce07249b",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "digital/renders/hero.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/renders/hero.png",
+      "bytes": 1478664,
+      "sha256": "4731dafd1ec451077052958c93a21fa9ceae91b87acf10f41e47746e0d32994c",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "path": "digital/renders/left.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/renders/left.png",
+      "bytes": 961147,
+      "sha256": "21367056828a3c47aea59d3748771d1004b009d7811004569cac7770a8fddbde",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "digital/renders/right.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/renders/right.png",
+      "bytes": 964796,
+      "sha256": "f53f434f468fc5b4b9be084a2099431a30871b57e32783fa410b1b18f99659a2",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "digital/renders/top.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/renders/top.png",
+      "bytes": 1174976,
+      "sha256": "e57cb8e2ddb9f2ecc8dd1c61cba824723665d3521992ee751483b1fa7dbb681e",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "digital/site-planning.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/site-planning.json",
+      "bytes": 44021,
+      "sha256": "be4437ede1f65b1698cfad6aa81c6c3991c4ca8a1743a5fa2faf602eb491ade5"
+    },
+    {
+      "path": "digital/six-views.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/six-views.png",
+      "bytes": 538720,
+      "sha256": "550fb51efbf0e41d26eba81e62b1abef94d096e752b25434df853eef252f419f",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "path": "digital/source-audit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/source-audit.json",
+      "bytes": 265,
+      "sha256": "ea367400304323691e4a91bf58bca56000f4e90c43d81726bc279ef5bf427a95"
+    },
+    {
+      "path": "digital/three-loading-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/three-loading-report.json",
+      "bytes": 1124,
+      "sha256": "5001a18ea069da1a33ad5ee751c6706cca39e89cbe5c5891f0453f3af499750f"
+    },
+    {
+      "path": "digital/webgl-compatibility.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/digital/webgl-compatibility.json",
+      "bytes": 493,
+      "sha256": "fda6af1f317d2c3e409ed37c2148b93c31dbc6b46531c9c50cad06d0f7e68f36"
+    },
+    {
+      "path": "education/README.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/README.md",
+      "bytes": 2255,
+      "sha256": "35f8a1cdadf7de9862feb79ee0ecc88a980e1539ad025c09cea032a2286d9f92"
+    },
+    {
+      "path": "education/camera-fit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/camera-fit.json",
+      "bytes": 1821,
+      "sha256": "a0adba0c240eb52635b575be6bd96f7da235854189db62933533a4ac4db767e4"
+    },
+    {
+      "path": "education/education.blend",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/education.blend",
+      "bytes": 847591,
+      "sha256": "328d83a66b99d1bbcd146eb866e1f41b09cc9a71d192791816e102ae357bc75d"
+    },
+    {
+      "path": "education/education.glb",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/education.glb",
+      "bytes": 12787024,
+      "sha256": "6fb18eaa5df6c1f418f48741ba5211291a292a29ba1a220a59608f1b239a4f62"
+    },
+    {
+      "path": "education/gltf-validation.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/gltf-validation.json",
+      "bytes": 1000,
+      "sha256": "564d04e5b3dddb6d7fa433f55022df1a294f2ccdd1becb4fdd45005954ce4247"
+    },
+    {
+      "path": "education/model-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/model-report.json",
+      "bytes": 5773,
+      "sha256": "141e84edfcee6a0b640db37e56d1dcbd227979ecf3b5645682d3541e3477f6d6"
+    },
+    {
+      "path": "education/render-record.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/render-record.json",
+      "bytes": 3893,
+      "sha256": "f3fbbbc0da655706b5dc01718ff7d933f942d63bf2bc4a1cf6765f4d91254e89"
+    },
+    {
+      "path": "education/renders/back.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/renders/back.png",
+      "bytes": 987963,
+      "sha256": "f35b8d62663f3e49eeeecb5611c6b2463ab31f7994263e8c3a0688d45adf5d99",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "education/renders/front.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/renders/front.png",
+      "bytes": 1009476,
+      "sha256": "52c67485459d80e51c0d548b784625d0e9573756752c8bb38eb3b8d1530b43cc",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "education/renders/hero.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/renders/hero.png",
+      "bytes": 1515836,
+      "sha256": "55b9aba99027b434e8fd60b3fb1d44cb76d623084a71ebd850eeebf0be0acf45",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "path": "education/renders/left.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/renders/left.png",
+      "bytes": 971853,
+      "sha256": "10c004b2301de6303bd58da5503a11245ba4e914bce923aab8bc07711265ffbc",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "education/renders/right.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/renders/right.png",
+      "bytes": 966618,
+      "sha256": "28a2d5c95c81dbf7246f05dad3113f88df9071b9051e2d9d8a65b4053e151cd5",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "education/renders/top.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/renders/top.png",
+      "bytes": 1182097,
+      "sha256": "9f1313256a43db54d62d856a04b1cc9820d38236bc007579ce38ef0dcb4035de",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "education/site-planning.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/site-planning.json",
+      "bytes": 43637,
+      "sha256": "c6b0544f10a14f1212dc091e4c38c2a0c48ec17d89af8bc476002b198c353666"
+    },
+    {
+      "path": "education/six-views.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/six-views.png",
+      "bytes": 550941,
+      "sha256": "b8d9110a7d0dea2c3748c9165c35d872ff1c33ddba59beeba7026438c83d0c36",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "path": "education/source-audit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/source-audit.json",
+      "bytes": 267,
+      "sha256": "a2b52b9684b04a1f92a4302e7cd96b550b7725a8f1fbf144b3a1a9d1bebd0acd"
+    },
+    {
+      "path": "education/three-loading-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/three-loading-report.json",
+      "bytes": 1129,
+      "sha256": "faf8c38c33a302069a8a2cb0d99c46c30d1a3b54454f91f665145ef3cb664587"
+    },
+    {
+      "path": "education/webgl-compatibility.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/education/webgl-compatibility.json",
+      "bytes": 497,
+      "sha256": "d0ab42a0ed2b8b3dfe0ba9a1931b02d83d3791280dc7b56f4fc50fa02a433051"
+    },
+    {
+      "path": "environment/README.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/README.md",
+      "bytes": 2264,
+      "sha256": "da5f3451048ee956bba61ae8ac6cdb7c8a2fd15569240e3585aaa9a2362fb5c4"
+    },
+    {
+      "path": "environment/camera-fit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/camera-fit.json",
+      "bytes": 1820,
+      "sha256": "18193e81584d5a7dd7fbd9ef136e76a80b4aac5f0453b26e273901c5e9a1c72d"
+    },
+    {
+      "path": "environment/environment.blend",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/environment.blend",
+      "bytes": 942654,
+      "sha256": "bbcf309631276cac8e391cce3f2da3ed8ed925537a0f9d1a37c1c5b0055e9c39"
+    },
+    {
+      "path": "environment/environment.glb",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/environment.glb",
+      "bytes": 11224268,
+      "sha256": "4a49d0a4a7b85af46e7196710d92a9815efa3b2f468e68d738683f8b055d1a05"
+    },
+    {
+      "path": "environment/gltf-validation.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/gltf-validation.json",
+      "bytes": 970,
+      "sha256": "442c7d732fa7829b7a63762b868655b2ca5d53152a176d3cfac556f362cbf731"
+    },
+    {
+      "path": "environment/model-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/model-report.json",
+      "bytes": 5251,
+      "sha256": "5eef4d78c794835924633fa10ab409f666aa51e4bb2e26820d1dc2041e26362c"
+    },
+    {
+      "path": "environment/render-record.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/render-record.json",
+      "bytes": 3892,
+      "sha256": "7301fa32aa12007eb3bb6c1dbd89e2594069f07b6bcd9caee028dc3ed5f6bffa"
+    },
+    {
+      "path": "environment/renders/back.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/renders/back.png",
+      "bytes": 979689,
+      "sha256": "8978ac7d54553051fe25f867bd57d024603b9ec694c0929c226ca1fe8012d618",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "environment/renders/front.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/renders/front.png",
+      "bytes": 1002614,
+      "sha256": "21cf1811c011906d4b2ac84d7b771dd554340a7b94855e8fed5906d8474a4aaf",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "environment/renders/hero.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/renders/hero.png",
+      "bytes": 1493962,
+      "sha256": "93a791bf1a220b8fe930091222c907b64edd69b6e51ba97201cc6fb09dae6730",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "path": "environment/renders/left.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/renders/left.png",
+      "bytes": 979559,
+      "sha256": "0e7aef57223feb2b9d4201dffb93d2c3d1a3de63397a9c5eac73f624782c87d3",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "environment/renders/right.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/renders/right.png",
+      "bytes": 980104,
+      "sha256": "53f6a9f2298e1080633a7f04c5326e7d8ad0b4145ff0a708c9568b25a3003e81",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "environment/renders/top.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/renders/top.png",
+      "bytes": 1222363,
+      "sha256": "0c410bae69902b7a095b7a5476bb421d9c3ceba97d9e37ecddb90c0b2105a687",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "environment/site-planning.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/site-planning.json",
+      "bytes": 43975,
+      "sha256": "8203b3db8bde5fa9449a62eb1245c821e807e653c8c3c9225030f9cf19f12fa1"
+    },
+    {
+      "path": "environment/six-views.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/six-views.png",
+      "bytes": 552509,
+      "sha256": "08f77b80c4631e4c70c1bea08f383a34a0ea73f621933f8e217c1f3761365e95",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "path": "environment/source-audit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/source-audit.json",
+      "bytes": 269,
+      "sha256": "8c3ae41ecac4bcc0cf8dce7592e7b28e6a3de35f9d361e3f1107d78a05afd6a2"
+    },
+    {
+      "path": "environment/three-loading-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/three-loading-report.json",
+      "bytes": 1140,
+      "sha256": "5a1121c81a74df8e3c5aac6bee5847130f58c4d8a950aa75ff275517915fd06a"
+    },
+    {
+      "path": "environment/webgl-compatibility.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/environment/webgl-compatibility.json",
+      "bytes": 500,
+      "sha256": "4b5b4c6ce132dea9e30dc447207cb1f00e5e7a01273d355bc2fd3462ee872329"
+    },
+    {
+      "path": "existing-game-sanity.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/existing-game-sanity.json",
+      "bytes": 524,
+      "sha256": "9fb6d2ed1202f31cf91c816e451fad7ce688f11e83dcf61e33a683cacf1b2c9e"
+    },
+    {
+      "path": "industry/README.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/README.md",
+      "bytes": 2278,
+      "sha256": "98e2e64ed71c7cd8caeef70cdbcb0f0c615b3baaa449c4e2a01c04339366102f"
+    },
+    {
+      "path": "industry/camera-fit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/camera-fit.json",
+      "bytes": 1821,
+      "sha256": "d6fcb82a2db14447320b0c4ca49fba118ec43357b011a65b712dec4a96971781"
+    },
+    {
+      "path": "industry/gltf-validation.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/gltf-validation.json",
+      "bytes": 999,
+      "sha256": "b3f0503431e4387ebb9b99c9483c529e4e0a2a61c9acc45ca88a81c9b96cffa9"
+    },
+    {
+      "path": "industry/industry.blend",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/industry.blend",
+      "bytes": 890485,
+      "sha256": "285440bb130bc6fad8e91eb59b5003b67d757c1d1d3b0d90783767e8c91c3086"
+    },
+    {
+      "path": "industry/industry.glb",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/industry.glb",
+      "bytes": 13328448,
+      "sha256": "fbf726d84fa8999c2c9845b1a4b02088c5fdd55dc841ed9afd7684b8024b3003"
+    },
+    {
+      "path": "industry/model-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/model-report.json",
+      "bytes": 5544,
+      "sha256": "24e03d23ccf8032f32186adb869391ca115bcdde705763f53958878eaae4b203"
+    },
+    {
+      "path": "industry/render-record.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/render-record.json",
+      "bytes": 3891,
+      "sha256": "4a050744f9b424010bf8cc1225d063ff8faec648f1630919785012362c883ad3"
+    },
+    {
+      "path": "industry/renders/back.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/renders/back.png",
+      "bytes": 987695,
+      "sha256": "b27fc32f6634ac487bc5ed0b240a646cc8b2e76c6c91d8aeff40610d824308ff",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "industry/renders/front.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/renders/front.png",
+      "bytes": 1005730,
+      "sha256": "f1e88dc0e595e97bcadbd30192f23ea977beeb56a9ccad3dd7a2bc8c2d0c85ef",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "industry/renders/hero.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/renders/hero.png",
+      "bytes": 1536468,
+      "sha256": "efa0c685e3cce11ec9f16da08af32b1ca1690849a3f7944feb9ca4cf908c4f34",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "path": "industry/renders/left.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/renders/left.png",
+      "bytes": 976519,
+      "sha256": "2ec9f0609745dd31d416a50aa4cc8063a873aa6c2053016b28021896369b1274",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "industry/renders/right.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/renders/right.png",
+      "bytes": 980025,
+      "sha256": "1d30f113761652a6027c31a735a58eb7df7ad63fb92512384eaff3ecd66138a2",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "industry/renders/top.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/renders/top.png",
+      "bytes": 1218349,
+      "sha256": "70ddcc1e56481fd83e72a63163909786db5d03128b088ffd62785f652169bf44",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "industry/site-planning.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/site-planning.json",
+      "bytes": 44214,
+      "sha256": "4635ca8e3fbbb02f556b805df3996588d19f3a3a894a60370e3aa78a4fb49fe4"
+    },
+    {
+      "path": "industry/six-views.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/six-views.png",
+      "bytes": 565522,
+      "sha256": "a8f804a1355b1bfd425567f5fff149fbb5faf3fbaa725febd45abe1a134c3e51",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "path": "industry/source-audit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/source-audit.json",
+      "bytes": 266,
+      "sha256": "876d20eae677acce837b2f150e1104a35d20ced750c26c3fea6815ae2a383bbf"
+    },
+    {
+      "path": "industry/three-loading-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/three-loading-report.json",
+      "bytes": 1127,
+      "sha256": "862a5126f177747aec8b3b78a340432aac6fbb092f0389c863c43d1a66112af9"
+    },
+    {
+      "path": "industry/webgl-compatibility.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/industry/webgl-compatibility.json",
+      "bytes": 495,
+      "sha256": "b429b62f1e6c7b3356cf125b9dc21d30c4290cbbd1c5f3c59082a5fb29f482ce"
+    },
+    {
+      "path": "legacy-transport-backup/README.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/legacy-transport-backup/README.md",
+      "bytes": 237,
+      "sha256": "897584ea334842940834b2ee9a8cada75d9f25c4e6c93441753472d31bf78ab8"
+    },
+    {
+      "path": "legacy-transport-backup/manifest.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/legacy-transport-backup/manifest.json",
+      "bytes": 732,
+      "sha256": "3e27f0fcfff4ab7e1df944a1128588a0c90cdd4bc60d149a77fc0af8804e6a1c"
+    },
+    {
+      "path": "legacy-transport-backup/transport-station.blend",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/legacy-transport-backup/transport-station.blend",
+      "bytes": 387120,
+      "sha256": "80a6c0199c39602c6fbef8820ec05df35bd0c50dc63bccd606a14577dee9c652"
+    },
+    {
+      "path": "legacy-transport-backup/transport-station.glb",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/legacy-transport-backup/transport-station.glb",
+      "bytes": 1610992,
+      "sha256": "56a8d8f511242ae3c825e60af5b752b831f8287d372845b9ed06858602a6c6e4"
+    },
+    {
+      "path": "senior/README.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/README.md",
+      "bytes": 2201,
+      "sha256": "a1c2ce71addbb1be43e9518fbef96d195c52811e49910165f55838a04cc8e8f0"
+    },
+    {
+      "path": "senior/camera-fit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/camera-fit.json",
+      "bytes": 1819,
+      "sha256": "f07a9f958409227ea3d2fae51e3385994aa0b9097d897b0ab49193131b6ec2b1"
+    },
+    {
+      "path": "senior/gltf-validation.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/gltf-validation.json",
+      "bytes": 997,
+      "sha256": "714795ab10bbc5d815d5af6dacbe28b3b6f6944f6ba6563937f8135c4dc84ec9"
+    },
+    {
+      "path": "senior/model-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/model-report.json",
+      "bytes": 5308,
+      "sha256": "5c4c946ec39ac08508153568d42c70f04e32956f15e12786dd064c06e616715b"
+    },
+    {
+      "path": "senior/render-record.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/render-record.json",
+      "bytes": 3889,
+      "sha256": "05890d2cf33f160bc5e6c786d5292992a28d79f2b5066fd35e27ed493c17c7c4"
+    },
+    {
+      "path": "senior/renders/back.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/renders/back.png",
+      "bytes": 983137,
+      "sha256": "ace34709128afedf159e86afb4d2492b08054741bc881384c8a5f5fe8adc3af7",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "senior/renders/front.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/renders/front.png",
+      "bytes": 999473,
+      "sha256": "190e224c1e055ffbcae5d4995c3071166820c27f631d47260744f20db6272559",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "senior/renders/hero.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/renders/hero.png",
+      "bytes": 1503396,
+      "sha256": "32348a297f7c568b4d660e23aff32cb236fc6cfdb1b52491f84260e5e1c4961e",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "path": "senior/renders/left.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/renders/left.png",
+      "bytes": 971986,
+      "sha256": "519d687c43742470f94a09020e136e6d2b98e9b62a3ba3b7404672ec3ab4019e",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "senior/renders/right.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/renders/right.png",
+      "bytes": 971333,
+      "sha256": "312e08c44524c69824f045f61e44d21928e3402bb86271d6c3221f1a883f8da7",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "senior/renders/top.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/renders/top.png",
+      "bytes": 1198111,
+      "sha256": "84f4b41cebaf4ab321afc1d5e47939e6aec33107837e037992f0c0d1b5f3a2f4",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "senior/senior.blend",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/senior.blend",
+      "bytes": 826324,
+      "sha256": "b24029e020a12e0b1167a99681f45a94b2d39ff920be7bae86c719b5b2f3d045"
+    },
+    {
+      "path": "senior/senior.glb",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/senior.glb",
+      "bytes": 12474812,
+      "sha256": "3f5ca62b220308beb5d5ae5fe2fd490c33149c6ff9f465387cd2a7e803314ffa"
+    },
+    {
+      "path": "senior/site-planning.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/site-planning.json",
+      "bytes": 44390,
+      "sha256": "c2879643eaa0230657103e63dce0e12dd0129f70f0d96e5b235c2f92740df03f"
+    },
+    {
+      "path": "senior/six-views.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/six-views.png",
+      "bytes": 549679,
+      "sha256": "caf2a5edd822d4da45130dca17f737a234d529bd2d987a8bd19613161d11b8a6",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "path": "senior/source-audit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/source-audit.json",
+      "bytes": 264,
+      "sha256": "907dd558e59c399badc65d1fb712edc6ad4389ec8cc191d1eda534c97fe686a7"
+    },
+    {
+      "path": "senior/three-loading-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/three-loading-report.json",
+      "bytes": 1120,
+      "sha256": "80bae69721a12e0e21f6617ef2910ec5bf4ebc08c263bf932b1f922b5b3f73a7"
+    },
+    {
+      "path": "senior/webgl-compatibility.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/senior/webgl-compatibility.json",
+      "bytes": 491,
+      "sha256": "2d4804f1ef243c43186db6917735412b1def58c4b49aa36e8ff9385592c23428"
+    },
+    {
+      "path": "seven-islands-overview.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/seven-islands-overview.png",
+      "bytes": 2067361,
+      "sha256": "0c9a037a7d900d760cb78869032e228bfcf6ce96da55d5ff5b126e9c876278b9",
+      "width": 2560,
+      "height": 1070
+    },
+    {
+      "path": "site-planning-summary.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/site-planning-summary.json",
+      "bytes": 379786,
+      "sha256": "d419c4de6ecba2af3059b856face0ad6658b81f6d59a9110d6493e7208340c83"
+    },
+    {
+      "path": "source-audit-summary.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/source-audit-summary.json",
+      "bytes": 2681,
+      "sha256": "2aea1f23648e61d87150bde96fefade3281e442f4706bd881f60e2ac86287035"
+    },
+    {
+      "path": "source-preservation.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/source-preservation.json",
+      "bytes": 2343,
+      "sha256": "99334af69ff8e7e48d6ea7dbf8776cf72c19721f7b8ddf6a93cf9c07b1c69c6e"
+    },
+    {
+      "path": "transport/README.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/README.md",
+      "bytes": 2299,
+      "sha256": "93259a9f57cd0bbac2402e54231908f09fc8635e84981f68109300756c61ebb7"
+    },
+    {
+      "path": "transport/camera-fit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/camera-fit.json",
+      "bytes": 1821,
+      "sha256": "2f07d7d312181d29b6006ddafcb34592cd1f26b12d4f1118b645926569ae39f0"
+    },
+    {
+      "path": "transport/gltf-validation.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/gltf-validation.json",
+      "bytes": 1000,
+      "sha256": "13371ea01f31cefa3988d5dec4f201540f3797890a942b7418dc9cebb6cb7f08"
+    },
+    {
+      "path": "transport/model-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/model-report.json",
+      "bytes": 6039,
+      "sha256": "2d58c658958cea73a46e3625dc97bc74a62b5dbb7ab05972c08baadb5abc3476"
+    },
+    {
+      "path": "transport/render-record.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/render-record.json",
+      "bytes": 3893,
+      "sha256": "28c2c6f45741d7ce25d1393cc4d7795923f99b1f36ec1adf480514ddffcfcf45"
+    },
+    {
+      "path": "transport/renders/back.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/renders/back.png",
+      "bytes": 984686,
+      "sha256": "b7659578a6f9c3f57703fc2f28640ec1d0f61acb98a93641cc0ed04e6dd9f82f",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "transport/renders/front.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/renders/front.png",
+      "bytes": 1009394,
+      "sha256": "127f84aaa61168a7d1721f816deab1f313ddb5fe3d01430c5934d83fe7bf7e6f",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "transport/renders/hero.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/renders/hero.png",
+      "bytes": 1535174,
+      "sha256": "33686d1b1abd1f72ea456abf4680f7b4b1f2894a08e2f1ee4db2d7d0a3be38cb",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "path": "transport/renders/left.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/renders/left.png",
+      "bytes": 976964,
+      "sha256": "83fd746755f3527a8a9b26dd79cbeff1c8a18a69b77b81f070aea8e3f88bae58",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "transport/renders/right.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/renders/right.png",
+      "bytes": 972021,
+      "sha256": "75fd700cac9934dff5aaca7192e040408bdbce406ced589dfe56525a449dee32",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "transport/renders/top.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/renders/top.png",
+      "bytes": 1200931,
+      "sha256": "e475a4a33df4a1d0a1742fd2ed5f6bb0f85072d9823d5cd4075b860d4f2bcb15",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "transport/site-planning.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/site-planning.json",
+      "bytes": 40571,
+      "sha256": "a27d3e50bbcaa74fce131659ca9691acff66dbdacad83a7e1d39bd8ee9893ed2"
+    },
+    {
+      "path": "transport/six-views.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/six-views.png",
+      "bytes": 562179,
+      "sha256": "a082b25739048472d413dc2216b989fca555c0fe7cec37244a0f34bd2e0d38ae",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "path": "transport/source-audit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/source-audit.json",
+      "bytes": 710,
+      "sha256": "30d1cf890dc6e2b128c23673a779c6fcbde5a857cafce949c75328be14cbc09d"
+    },
+    {
+      "path": "transport/three-loading-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/three-loading-report.json",
+      "bytes": 1283,
+      "sha256": "b188f5a84b372e115c8f70d57fcd4763226c2ad5fd6cf0a6ddcd916ec4142c7b"
+    },
+    {
+      "path": "transport/transport.blend",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/transport.blend",
+      "bytes": 718849,
+      "sha256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb"
+    },
+    {
+      "path": "transport/transport.glb",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/transport.glb",
+      "bytes": 12953324,
+      "sha256": "ed1f1f90e84c8e6a600e88a7bbb8e14b37d9093517c3d6aac1e40156293dd407"
+    },
+    {
+      "path": "transport/webgl-compatibility.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/transport/webgl-compatibility.json",
+      "bytes": 497,
+      "sha256": "22c42928c053e4ce0b76d1131dc698c83dc1de8abfd3395c9d48a649b7fc6659"
+    },
+    {
+      "path": "validation-summary.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/validation-summary.json",
+      "bytes": 9533,
+      "sha256": "5ccfd5d06d57ac82870a3b064608b7eb056d6f8299a1092b27bcaf86b72dd9a2"
+    },
+    {
+      "path": "water/README.md",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/README.md",
+      "bytes": 2281,
+      "sha256": "2e868248fde9069116927478b98c72ac6e43058dfd7929a8f4f5deb75f9e37df"
+    },
+    {
+      "path": "water/camera-fit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/camera-fit.json",
+      "bytes": 1819,
+      "sha256": "52cc228120a7128df4ae94b1b2beadfb848c233dcd4f64473703f523571fe58d"
+    },
+    {
+      "path": "water/gltf-validation.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/gltf-validation.json",
+      "bytes": 995,
+      "sha256": "8682e72b941d0e2e7cc12fff0e21cb4c9451f4874979059eff662f86c663ac3d"
+    },
+    {
+      "path": "water/model-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/model-report.json",
+      "bytes": 5829,
+      "sha256": "8290abc11cd1dec6e6f3ab24173ab7f499afcee65f5a500cbf0bd9f47873eb83"
+    },
+    {
+      "path": "water/render-record.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/render-record.json",
+      "bytes": 3888,
+      "sha256": "44798eb4fad4d3449b4cd848444254360c2d793278637eae456c032b6e573bf7"
+    },
+    {
+      "path": "water/renders/back.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/renders/back.png",
+      "bytes": 976224,
+      "sha256": "b3c53d9370f1249d82b371c61e5c6a170e555ae598706f47ea79fb1ca2e7ebaf",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "water/renders/front.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/renders/front.png",
+      "bytes": 1003667,
+      "sha256": "1d1642ad446c696aa8ac4281da6717d05b823a24f53fec57e4eeca42cc5712eb",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "water/renders/hero.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/renders/hero.png",
+      "bytes": 1495464,
+      "sha256": "95a94913ff350573ef3ad90f01985ecd898d882adfb212618c57293196b55d51",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "path": "water/renders/left.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/renders/left.png",
+      "bytes": 967772,
+      "sha256": "786057dc42e2b2cc8fddbc10df92e1894ac6e448a4edb573bb7f2a993a2d1ceb",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "water/renders/right.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/renders/right.png",
+      "bytes": 965287,
+      "sha256": "4c9359cae7dc07729fe06564804aa6ff1496339ba7d88b342ec35f90c8a20905",
+      "width": 1100,
+      "height": 825
+    },
+    {
+      "path": "water/renders/top.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/renders/top.png",
+      "bytes": 1188440,
+      "sha256": "81ff6d01aa203537f4542756018036c01fbcf84b1f55da31c488091e51ac9f5b",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "path": "water/site-planning.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/site-planning.json",
+      "bytes": 44077,
+      "sha256": "29e42c27b55d3ae7737823bf03afed5f3c96dcb611114091a166a079f5a2b884"
+    },
+    {
+      "path": "water/six-views.png",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/six-views.png",
+      "bytes": 548695,
+      "sha256": "77362877ace62d9c396dd9ebb6c2d052261fa5df6c632d467caa231e77528d66",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "path": "water/source-audit.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/source-audit.json",
+      "bytes": 263,
+      "sha256": "47afe7b3459b64004c761ac8e4a48e05862fed990c005850b6c42a513f119964"
+    },
+    {
+      "path": "water/three-loading-report.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/three-loading-report.json",
+      "bytes": 1278,
+      "sha256": "c2e0b3e5a0acf604b84baf2f52ce41da37dadc90a7a131596e15608a9b21bab7"
+    },
+    {
+      "path": "water/water.blend",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/water.blend",
+      "bytes": 759089,
+      "sha256": "2e77644f2f335b712381d433cee0e33fef47c46a56d7cea503289d748882a4e4"
+    },
+    {
+      "path": "water/water.glb",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/water.glb",
+      "bytes": 9492344,
+      "sha256": "7fcdafd5fc697c760e6862229b4ff19bbcb838be89b3f7b429d4dc9c2d70f528"
+    },
+    {
+      "path": "water/webgl-compatibility.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/water/webgl-compatibility.json",
+      "bytes": 489,
+      "sha256": "5e02016abc7fafc07a8d3c5212b365f9ade99e20579463bd583a22d34b68f933"
+    },
+    {
+      "path": "webgl-summary.json",
+      "repoPath": "docs/design/seven-policy-islands-blender-v1/webgl-summary.json",
+      "bytes": 2185,
+      "sha256": "42c1797daa109e87db5df7fe383cb850be53bf4d962373b6f5b630b97a0a3519"
+    }
+  ]
+}

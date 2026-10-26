@@ -1,0 +1,9 @@
+{
+  "id": "water",
+  "sourceBlendSHA256": "2e77644f2f335b712381d433cee0e33fef47c46a56d7cea503289d748882a4e4",
+  "checkedObjects": 2363,
+  "evaluatedTriangles": 176496,
+  "nonClosedOrNegativeVolumeIssues": [],
+  "externalImageDependencies": [],
+  "passed": true
+}

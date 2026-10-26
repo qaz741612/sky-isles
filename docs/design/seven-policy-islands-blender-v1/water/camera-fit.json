@@ -1,0 +1,84 @@
+{
+  "method": "Project all actual GLB vertices, including review arms and tree crowns, into saved Blender camera poses. Blender X/Y/Z converted to GLTF X/Z/-Y, no scene or camera changes.",
+  "allSixPassed": true,
+  "results": [
+    {
+      "view": "hero",
+      "vertices": 353911,
+      "minNDC": [
+        -0.8639713113423496,
+        -0.6585549762339306
+      ],
+      "maxNDC": [
+        0.7351964437265734,
+        0.5362473175762152
+      ],
+      "entireModelWithinFrame": true
+    },
+    {
+      "view": "front",
+      "vertices": 353911,
+      "minNDC": [
+        -0.834079088483538,
+        -0.29812153843418393
+      ],
+      "maxNDC": [
+        0.8338365282331194,
+        0.3916926298768862
+      ],
+      "entireModelWithinFrame": true
+    },
+    {
+      "view": "back",
+      "vertices": 353911,
+      "minNDC": [
+        -0.8338365282331194,
+        -0.28021052821214626
+      ],
+      "maxNDC": [
+        0.834079088483538,
+        0.244220173063568
+      ],
+      "entireModelWithinFrame": true
+    },
+    {
+      "view": "left",
+      "vertices": 353911,
+      "minNDC": [
+        -0.7100000108991353,
+        -0.29817011147326755
+      ],
+      "maxNDC": [
+        0.8338365282331187,
+        0.425115531216461
+      ],
+      "entireModelWithinFrame": true
+    },
+    {
+      "view": "right",
+      "vertices": 353911,
+      "minNDC": [
+        -0.8338365282331187,
+        -0.29812153843418393
+      ],
+      "maxNDC": [
+        0.7100000108991353,
+        0.3007278218794613
+      ],
+      "entireModelWithinFrame": true
+    },
+    {
+      "view": "top",
+      "vertices": 353911,
+      "minNDC": [
+        -0.6789015836493913,
+        -0.9049388678498977
+      ],
+      "maxNDC": [
+        0.6787041508874228,
+        0.7705426474874327
+      ],
+      "entireModelWithinFrame": true
+    }
+  ]
+}

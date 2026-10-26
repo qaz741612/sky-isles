@@ -1,0 +1,42 @@
+{
+  "uri": "environment.glb",
+  "mimeType": "model/gltf-binary",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "validatedAt": "2026-10-26T14:53:29.366Z",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  },
+  "info": {
+    "version": "2.0",
+    "generator": "Khronos glTF Blender I/O v4.3.47",
+    "extensionsUsed": [
+      "KHR_materials_transmission",
+      "KHR_materials_ior"
+    ],
+    "resources": [
+      {
+        "pointer": "/buffers/0",
+        "mimeType": "application/gltf-buffer",
+        "storage": "glb",
+        "byteLength": 11188920
+      }
+    ],
+    "animationCount": 0,
+    "materialCount": 24,
+    "hasMorphTargets": false,
+    "hasSkins": false,
+    "hasTextures": false,
+    "hasDefaultScene": true,
+    "drawCallCount": 42,
+    "totalVertexCount": 415083,
+    "totalTriangleCount": 181784,
+    "maxUVs": 0,
+    "maxInfluences": 0,
+    "maxAttributes": 2
+  }
+}
