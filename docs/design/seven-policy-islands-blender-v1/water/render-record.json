@@ -1,0 +1,33 @@
+{
+  "blenderVersion": "4.3.0",
+  "engine": "Cycles CPU with OpenImageDenoise",
+  "geometryEditedDuringRender": false,
+  "asset": "water",
+  "views": [
+    {
+      "view": "hero",
+      "file": "renders/hero.png",
+      "camera": "01_Hero_CommonScale",
+      "cameraPositionXYZ": [
+        22.0,
+        -30.0,
+        24.0
+      ],
+      "cameraRotationRadians": [
+        1.0170702934265137,
+        -1.9113457483399543e-08,
+        0.6327489614486694
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 33.79999923706055,
+      "size": [
+        1280,
+        960
+      ],
+      "samples": 64,
+      "seconds": 118.87,
+      "sourceBlendSHA256": "8349b041b5370c6f754d0154952ba4d31b9a295817fa90a3f72832a22dcd8f7f",
+      "imageSHA256": "8c52157ada79a8b9cf7a5f7216713d3864f43ec33aa91181f4c1c5fa2c5b4eea"
+    }
+  ]
+}
