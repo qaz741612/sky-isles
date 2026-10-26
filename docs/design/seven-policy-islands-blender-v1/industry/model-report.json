@@ -8,11 +8,11 @@
   "phase": "complete",
   "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
   "sourceScripts": {
-    "scripts/blender/build_policy_assets.py": "9b2e9f773835479ec99f020a87a323a300f14dda1dce2a141affb4cef0954497",
+    "scripts/blender/build_policy_assets.py": "70e6693976c505b1688a5c3458f84c42a0d5413cf0efa404a911bacac6ff56bc",
     "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
     "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
-    "scripts/blender/policy_assets/recipes.py": "523efe7a69499a5efd992ef1641e38c188e110fee435e4c226413b05a7433388",
-    "scripts/blender/policy_assets/kit.py": "0362ea64bebcef5eaa625bb4ee583ed4a52136341d90e52b7755e4ed97ad0e38"
+    "scripts/blender/policy_assets/recipes.py": "73b85f379f73f81d2a9f6fd1e760d50dc835ebaff3beac6a304dfcde2cde73c0",
+    "scripts/blender/policy_assets/kit.py": "91eb7746e95c11180c5331963cad21d00790f2930d877ebc159b7cc0e3b6835a"
   },
   "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
   "bounds": {
@@ -32,7 +32,7 @@
     27.820634841918945,
     5.296880215406418
   ],
-  "evaluatedTriangles": 264880,
+  "evaluatedTriangles": 211120,
   "meshObjects": 2828,
   "materials": [
     "Clear warm architectural glazing",
@@ -82,7 +82,7 @@
     },
     "Site": {
       "objects": 788,
-      "triangles": 84820
+      "triangles": 31060
     },
     "ThemeFacilities": {
       "objects": 28,
@@ -205,11 +205,11 @@
     "sourceMeshObjects": 2828,
     "meshPrimitives": 65,
     "assemblyGroups": 10,
-    "triangles": 264864,
+    "triangles": 211120,
     "textures": 0,
     "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
   },
-  "blendSHA256": "6a08c1faa7b424d61992f6ae2c77d1f33ba1a7cd4e329d229ce33230e7b2dde2",
-  "glbSHA256": "df7393b1b9ad49b11d2e97d837719ef42294ac0e1c9793f8ef4d7e9e31ae3925",
-  "buildSeconds": 14.22
+  "blendSHA256": "c879225e5c63c4be83388bcb0c63d835477c755f193866c2a53cb3023173dec3",
+  "glbSHA256": "6e10d3d6205614119612ae54fd78a6bf32848578f5b42ff0a94bf6511a3eae1d",
+  "buildSeconds": 15.71
 }
