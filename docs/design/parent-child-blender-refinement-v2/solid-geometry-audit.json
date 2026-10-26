@@ -1,0 +1,6 @@
+{
+  "sourceBlendSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "checkedMeshObjects": 1872,
+  "issues": [],
+  "note": "Evaluated editable solid components; flowers and structural joints may overlap intentionally. Not a building-code or game-collision certification."
+}

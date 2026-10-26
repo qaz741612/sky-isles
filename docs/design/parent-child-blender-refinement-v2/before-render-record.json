@@ -1,0 +1,52 @@
+{
+  "engine": "Blender Cycles CPU + OpenImageDenoise",
+  "note": "Original PR11 geometry/materials/light sources; only framing matches the new counterpart. No original BLEND saved or modified.",
+  "views": [
+    {
+      "file": "before/hero.png",
+      "sourceBlendSHA256": "24a45378caa981ef6b69de1650424ef98aa9d39fe5ad09f8809e68955536b86f",
+      "imageSHA256": "d91c44b9ae5e33399cc3033663705cca89d34cbec8746c9e44bd4ee85561d82c",
+      "camera": "01_ReferenceHero",
+      "cameraPositionXYZ": [
+        17.25,
+        -27.399999618530273,
+        19.469999313354492
+      ],
+      "cameraRotationRadians": [
+        1.0646175146102905,
+        -2.0164758751661793e-09,
+        0.579564094543457
+      ],
+      "orthoScale": 25.8,
+      "size": [
+        1600,
+        1096
+      ],
+      "samples": 96,
+      "seconds": 235.61
+    },
+    {
+      "file": "before/top.png",
+      "sourceBlendSHA256": "24a45378caa981ef6b69de1650424ef98aa9d39fe5ad09f8809e68955536b86f",
+      "imageSHA256": "7c397f54aaa012ec4717d007bbb5a99edf380b87772e6bfc7543e0fbb783b869",
+      "camera": "06_Top",
+      "cameraPositionXYZ": [
+        0.0028204917907714844,
+        -1.6025257110595703,
+        32.0
+      ],
+      "cameraRotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orthoScale": 40.0,
+      "size": [
+        1400,
+        959
+      ],
+      "samples": 64,
+      "seconds": 119.53
+    }
+  ]
+}

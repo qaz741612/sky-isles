@@ -1,0 +1,137 @@
+{
+  "sourceBlendSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "files": [
+    {
+      "path": "parent-child-centre.blend",
+      "bytes": 1051289,
+      "sha256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+      "kind": "editable or exchange 3D model"
+    },
+    {
+      "path": "parent-child-centre.glb",
+      "bytes": 20239060,
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44",
+      "kind": "editable or exchange 3D model"
+    },
+    {
+      "path": "before/hero.png",
+      "bytes": 2287107,
+      "sha256": "d91c44b9ae5e33399cc3033663705cca89d34cbec8746c9e44bd4ee85561d82c",
+      "kind": "actual Blender Cycles render",
+      "width": 1600,
+      "height": 1096
+    },
+    {
+      "path": "before/top.png",
+      "bytes": 1483308,
+      "sha256": "7c397f54aaa012ec4717d007bbb5a99edf380b87772e6bfc7543e0fbb783b869",
+      "kind": "actual Blender Cycles render",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "comparison-hero.png",
+      "bytes": 3256159,
+      "sha256": "e68b56a6ae12476d53ca130e9d7f072636c41838cdbd3adcaa89ee675fe98f22",
+      "kind": "actual-render composite",
+      "width": 3200,
+      "height": 1166
+    },
+    {
+      "path": "comparison-top.png",
+      "bytes": 2007211,
+      "sha256": "9e62a6ea39b2c6fecf5f55a525a9b48f2e29f8a17416aba61703de6f70f598b2",
+      "kind": "actual-render composite",
+      "width": 2800,
+      "height": 1029
+    },
+    {
+      "path": "eight-views.png",
+      "bytes": 861361,
+      "sha256": "975e05c93b19af8516793c733d8a7652d84617f809fba5a86732ac10b76f3a4d",
+      "kind": "actual-render composite",
+      "width": 1600,
+      "height": 636
+    },
+    {
+      "path": "renders/back.png",
+      "bytes": 1582581,
+      "sha256": "2020674a9374c2746544e0eebc7fa529477db908b13442d38e980d57293533f2",
+      "kind": "actual Blender Cycles render",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/eaves.png",
+      "bytes": 1635357,
+      "sha256": "0d95e901983125a5124f6b2738d56f17c4328eb02fb2812ef84a5767ac6c7415",
+      "kind": "actual Blender Cycles render",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/front.png",
+      "bytes": 1622434,
+      "sha256": "2f588c9b97ace42309b15a036b7588ff05881add1f02d28636b33e508b89df0a",
+      "kind": "actual Blender Cycles render",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/hero.png",
+      "bytes": 2297672,
+      "sha256": "085f73ea9870ec5fd7b2c3cd663ec8a025c8fe9a1770b690e517aeb84c42d758",
+      "kind": "actual Blender Cycles render",
+      "width": 1600,
+      "height": 1096
+    },
+    {
+      "path": "renders/left.png",
+      "bytes": 1548068,
+      "sha256": "9c78f35d12d2c7b3173dc63888e4720b7273c4692b92033fdb7ba27db942a86f",
+      "kind": "actual Blender Cycles render",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/player.png",
+      "bytes": 1735320,
+      "sha256": "d03b7c4eca49e5aa1eaaaf3e3f6692afc5503553196775221be34e422fe69b4b",
+      "kind": "actual Blender Cycles render",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/right.png",
+      "bytes": 1543598,
+      "sha256": "310cd223c1cd90154793647ebd56ba98d179ec8795f895539f193d865d1b0c27",
+      "kind": "actual Blender Cycles render",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "renders/top.png",
+      "bytes": 1486190,
+      "sha256": "e9872040c32931b0a995aba3df2621735d430f521b275619c02067c045da77a6",
+      "kind": "actual Blender Cycles render",
+      "width": 1400,
+      "height": 959
+    },
+    {
+      "path": "three-webgl-validation.png",
+      "bytes": 290074,
+      "sha256": "79a9484b697659b0b168f389fbc959b6688390c7feadb673bc08e98852c9379a",
+      "kind": "actual Three.js WebGL screenshot",
+      "width": 1120,
+      "height": 768
+    },
+    {
+      "path": "walkable-space.png",
+      "bytes": 129098,
+      "sha256": "7affde3f5121f5ab4b7ac4c6da8f4a5913a0ec5f96b1aafab8e9cfad96dd635c",
+      "kind": "measured geometry planning diagram",
+      "width": 1600,
+      "height": 1500
+    }
+  ]
+}

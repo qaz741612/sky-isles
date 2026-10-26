@@ -1,0 +1,357 @@
+{
+  "blenderVersion": "4.3.0",
+  "phase": "complete",
+  "renderEngine": "Cycles CPU",
+  "samples": 96,
+  "referenceSource": "User image visible in conversation; no local original image file supplied",
+  "collections": {
+    "00_MODEL_ROOT": {
+      "objects": 0,
+      "triangles": 0
+    },
+    "10_ARCHITECTURE": {
+      "objects": 348,
+      "triangles": 91080
+    },
+    "20_INTERIOR": {
+      "objects": 295,
+      "triangles": 60692
+    },
+    "30_SITE_AND_PAVING": {
+      "objects": 752,
+      "triangles": 68076
+    },
+    "40_PLAYGROUND": {
+      "objects": 69,
+      "triangles": 22708
+    },
+    "50_LANDSCAPE": {
+      "objects": 252,
+      "triangles": 121604
+    },
+    "60_SITE_FURNITURE": {
+      "objects": 41,
+      "triangles": 5956
+    }
+  },
+  "materials": [
+    {
+      "name": "Clear warm architectural glazing",
+      "baseColorLinear": [
+        0.68668532371521,
+        0.7912979125976562,
+        0.7011018991470337,
+        1.0
+      ],
+      "transparent": true
+    },
+    {
+      "name": "LimestonePaver_0",
+      "baseColorLinear": [
+        0.7529422044754028,
+        0.715693473815918,
+        0.6307571530342102,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "LimestonePaver_1",
+      "baseColorLinear": [
+        0.8148465752601624,
+        0.7681511640548706,
+        0.672443151473999,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "LimestonePaver_2",
+      "baseColorLinear": [
+        0.7304607629776001,
+        0.6938717365264893,
+        0.6172065734863281,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "LimestonePaver_3",
+      "baseColorLinear": [
+        0.7835378050804138,
+        0.7379103899002075,
+        0.6444796919822693,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "coral",
+      "baseColorLinear": [
+        0.7379103899002075,
+        0.34191441535949707,
+        0.20507873594760895,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "cream",
+      "baseColorLinear": [
+        0.8227857351303101,
+        0.7379103899002075,
+        0.5840784311294556,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "floor",
+      "baseColorLinear": [
+        0.7304607629776001,
+        0.6583748459815979,
+        0.520995557308197,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "greenCloth",
+      "baseColorLinear": [
+        0.423267662525177,
+        0.533276379108429,
+        0.3762621283531189,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "leaf",
+      "baseColorLinear": [
+        0.2917706370353699,
+        0.42869049310684204,
+        0.12213877588510513,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "leafDark",
+      "baseColorLinear": [
+        0.16202937066555023,
+        0.2746773064136505,
+        0.06480326503515244,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "leafLight",
+      "baseColorLinear": [
+        0.46207699179649353,
+        0.5906188488006592,
+        0.20507873594760895,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "petal",
+      "baseColorLinear": [
+        0.9386857151985168,
+        0.8796223998069763,
+        0.7083757519721985,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "petalPink",
+      "baseColorLinear": [
+        0.7230551242828369,
+        0.4019777774810791,
+        0.3613067865371704,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "rail",
+      "baseColorLinear": [
+        0.04970656707882881,
+        0.2158605009317398,
+        0.22696587443351746,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "roof",
+      "baseColorLinear": [
+        0.13286831974983215,
+        0.31854677200317383,
+        0.3277781009674072,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "rubber",
+      "baseColorLinear": [
+        0.47353148460388184,
+        0.5972017645835876,
+        0.46207699179649353,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "rubberBlue",
+      "baseColorLinear": [
+        0.34191441535949707,
+        0.5028864741325378,
+        0.5457244515419006,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "rubberOchre",
+      "baseColorLinear": [
+        0.8069522380828857,
+        0.6444796919822693,
+        0.27049779891967773,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "sand",
+      "baseColorLinear": [
+        0.8069522380828857,
+        0.6239603757858276,
+        0.3277781009674072,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "seam",
+      "baseColorLinear": [
+        0.07036009430885315,
+        0.2462013214826584,
+        0.2961382567882538,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "slide",
+      "baseColorLinear": [
+        0.7991027235984802,
+        0.520995557308197,
+        0.14702726900577545,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "soil",
+      "baseColorLinear": [
+        0.1441284716129303,
+        0.11953842639923096,
+        0.05780543014407158,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "stone",
+      "baseColorLinear": [
+        0.7304607629776001,
+        0.7011018991470337,
+        0.6239603757858276,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "tealCloth",
+      "baseColorLinear": [
+        0.19806931912899017,
+        0.37123769521713257,
+        0.35640013217926025,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "trim",
+      "baseColorLinear": [
+        0.9046611785888672,
+        0.8069522380828857,
+        0.6172065734863281,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "wood",
+      "baseColorLinear": [
+        0.5647115111351013,
+        0.3277781009674072,
+        0.11697066575288773,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "woodDark",
+      "baseColorLinear": [
+        0.28314873576164246,
+        0.1384316086769104,
+        0.04970656707882881,
+        1.0
+      ],
+      "transparent": false
+    },
+    {
+      "name": "woodLight",
+      "baseColorLinear": [
+        0.7304607629776001,
+        0.4910208582878113,
+        0.21223075687885284,
+        1.0
+      ],
+      "transparent": false
+    }
+  ],
+  "role": "Standalone modelling, NOT game integration",
+  "webExport": {
+    "method": "Original saved Blender source stays independent; web export batches evaluated surfaces per logical assembly and PBR material, preserving custom normals.",
+    "meshPrimitives": 197,
+    "assemblyGroups": 36,
+    "triangles": 370116,
+    "originalSourceObjects": 1757,
+    "textures": 0
+  },
+  "bounds": {
+    "min": [
+      -12.226357460021973,
+      -12.430051803588867,
+      -0.4000000059604645
+    ],
+    "max": [
+      12.231998443603516,
+      9.225000381469727,
+      4.982128143310547
+    ]
+  },
+  "sizeXYZ": [
+    24.45835590362549,
+    21.655052185058594,
+    5.382128149271011
+  ],
+  "triangles": 370116,
+  "meshObjects": 1757
+}

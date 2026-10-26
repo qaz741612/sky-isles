@@ -1,0 +1,38 @@
+{
+  "file": "docs/design/parent-child-blender-model-v1/parent-child-centre.glb",
+  "bytes": 19713568,
+  "meshes": 197,
+  "triangles": 369608,
+  "materials": 29,
+  "missingMaterials": 0,
+  "bounds": {
+    "min": [
+      -12.226357460021973,
+      -0.4000000059604645,
+      -9.225000381469727
+    ],
+    "max": [
+      12.231998443603516,
+      4.982128143310547,
+      12.430051803588867
+    ]
+  },
+  "sizeXYZ": [
+    24.45835590362549,
+    5.382128149271011,
+    21.655052185058594
+  ],
+  "coordinateSystem": "GLTF Y up; source Blender Z up. Model front is GLTF +Z / Blender -Y.",
+  "transmissionMaterials": [
+    {
+      "name": "Clear warm architectural glazing",
+      "transmission": 0.8199999928474426,
+      "roughness": 0.14000000059604645,
+      "ior": 1.4500000476837158
+    }
+  ],
+  "khronosErrors": 0,
+  "khronosWarnings": 0,
+  "gameFilesUnchanged": true,
+  "note": "Loading/geometry validation only. No live-game integration, collision, LOD or mobile FPS certification."
+}
