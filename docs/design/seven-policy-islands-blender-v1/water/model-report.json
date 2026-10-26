@@ -8,10 +8,10 @@
   "phase": "complete",
   "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
   "sourceScripts": {
-    "scripts/blender/build_policy_assets.py": "ba4bd8e9660eab7720d3086afb20983b8b168cfec29d9b8713174462260a972e",
+    "scripts/blender/build_policy_assets.py": "c105d6540077630b6c1c3b118144efe65bd52b376d68dde693375d34ca3f9e0e",
     "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
     "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
-    "scripts/blender/policy_assets/recipes.py": "04efa362d275c5c39644817760462975c505f9d5686ff01973c80efa0824a351",
+    "scripts/blender/policy_assets/recipes.py": "7a02b2025803b2741583a265fd338d1fa2136736bf17f940c1c7ee7034ca024c",
     "scripts/blender/policy_assets/kit.py": "8f02ff25e2663b88793fc92150742d59c57ac0d151bd2f5315b4a8b8e7c4f949"
   },
   "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
@@ -235,7 +235,7 @@
     "textures": 0,
     "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
   },
-  "blendSHA256": "499a419f78c9f1c33b13c66b15fa49ff51993358715e93394ab017c7f58b596e",
+  "blendSHA256": "2e77644f2f335b712381d433cee0e33fef47c46a56d7cea503289d748882a4e4",
   "glbSHA256": "7fcdafd5fc697c760e6862229b4ff19bbcb838be89b3f7b429d4dc9c2d70f528",
-  "buildSeconds": 7.95
+  "buildSeconds": 7.72
 }
