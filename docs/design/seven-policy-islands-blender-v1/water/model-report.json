@@ -8,11 +8,11 @@
   "phase": "complete",
   "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
   "sourceScripts": {
-    "scripts/blender/build_policy_assets.py": "9b2e9f773835479ec99f020a87a323a300f14dda1dce2a141affb4cef0954497",
+    "scripts/blender/build_policy_assets.py": "70e6693976c505b1688a5c3458f84c42a0d5413cf0efa404a911bacac6ff56bc",
     "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
     "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
-    "scripts/blender/policy_assets/recipes.py": "523efe7a69499a5efd992ef1641e38c188e110fee435e4c226413b05a7433388",
-    "scripts/blender/policy_assets/kit.py": "0362ea64bebcef5eaa625bb4ee583ed4a52136341d90e52b7755e4ed97ad0e38"
+    "scripts/blender/policy_assets/recipes.py": "73b85f379f73f81d2a9f6fd1e760d50dc835ebaff3beac6a304dfcde2cde73c0",
+    "scripts/blender/policy_assets/kit.py": "91eb7746e95c11180c5331963cad21d00790f2930d877ebc159b7cc0e3b6835a"
   },
   "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
   "bounds": {
@@ -32,7 +32,7 @@
     27.017139434814453,
     5.5169997215271
   ],
-  "evaluatedTriangles": 200948,
+  "evaluatedTriangles": 158580,
   "meshObjects": 1756,
   "materials": [
     "Clear turquoise water",
@@ -84,7 +84,7 @@
     },
     "Site": {
       "objects": 670,
-      "triangles": 72760
+      "triangles": 30392
     },
     "ThemeFacilities": {
       "objects": 104,
@@ -143,20 +143,20 @@
   "npcReservations": [
     {
       "positionBlenderXYZ": [
-        5.4,
-        0.0,
+        7.8,
+        0.2,
         0.03
       ],
       "positionGLTFXYZ": [
-        5.4,
+        7.8,
         0.03,
-        -0.0
+        -0.2
       ],
       "bodyRadius": 0.35,
       "reservationRadius": 0.65,
       "playerStopBlenderXYZ": [
-        5.4,
-        -1.3,
+        7.8,
+        -1.1,
         0.03
       ],
       "interactionRadius": 1.4,
@@ -167,28 +167,22 @@
     {
       "kind": "future_npc",
       "position": [
-        5.4,
-        0.0,
+        7.8,
+        0.2,
         0.03
       ],
       "radius": 0.35,
-      "intersectingObjects": [
-        "DisasterManagementCentre_Entry_OakColumn.002"
-      ]
+      "intersectingObjects": []
     },
     {
       "kind": "player_stop",
       "position": [
-        5.4,
-        -1.3,
+        7.8,
+        -1.1,
         0.03
       ],
       "radius": 0.33,
-      "intersectingObjects": [
-        "WaterObservationBench_SeatSlat",
-        "WaterObservationBench_SeatSlat.001",
-        "ContinuousFloodBasinCoping"
-      ]
+      "intersectingObjects": []
     }
   ],
   "reviewConnections": [
@@ -237,11 +231,11 @@
     "sourceMeshObjects": 1756,
     "meshPrimitives": 77,
     "assemblyGroups": 12,
-    "triangles": 200948,
+    "triangles": 158580,
     "textures": 0,
     "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
   },
-  "blendSHA256": "15b9d18a5e42eed06aca736c5fff686d0dfb95cb68473f23ee4175cf337b044d",
-  "glbSHA256": "3004915392b8ce972c6d9159806a733e6866284e2a0c1d5486c7bfcfa6b49e14",
-  "buildSeconds": 7.5
+  "blendSHA256": "8349b041b5370c6f754d0154952ba4d31b9a295817fa90a3f72832a22dcd8f7f",
+  "glbSHA256": "02741642d07cabce9814c9036618e3400f08690712954a36d703e434df373737",
+  "buildSeconds": 7.41
 }
