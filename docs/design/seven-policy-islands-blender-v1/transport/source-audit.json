@@ -1,0 +1,28 @@
+{
+  "id": "transport",
+  "sourceBlendSHA256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb",
+  "checkedObjects": 3550,
+  "evaluatedTriangles": 225508,
+  "nonClosedOrNegativeVolumeIssues": [],
+  "externalImageDependencies": [],
+  "passed": true,
+  "wheelRailContact": {
+    "wheelBottomZ": [
+      0.23000001907348633,
+      0.23000001907348633,
+      0.23000001907348633,
+      0.23000001907348633,
+      0.23000001907348633,
+      0.23000001907348633,
+      0.23000001907348633,
+      0.23000001907348633
+    ],
+    "railTopZ": [
+      0.23000000417232513,
+      0.23000000417232513
+    ],
+    "maximumVerticalMismatch": 1.4901161193847656e-08,
+    "gauge": 1.1,
+    "passed": true
+  }
+}

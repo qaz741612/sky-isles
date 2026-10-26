@@ -1,0 +1,226 @@
+{
+  "policyName": "產業青年",
+  "id": "industry",
+  "reference": "docs/references/policy-islands/industry-reference.png",
+  "referenceSHA256": "b33ea8225cd1ea25ee7941ee7f8ba8d40689b2d2cd6f89a260601c4ffcd1bb26",
+  "approvedBaselineSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "blenderVersion": "4.3.0",
+  "phase": "complete",
+  "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
+  "sourceScripts": {
+    "scripts/blender/build_policy_assets.py": "c105d6540077630b6c1c3b118144efe65bd52b376d68dde693375d34ca3f9e0e",
+    "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
+    "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
+    "scripts/blender/policy_assets/recipes.py": "7a02b2025803b2741583a265fd338d1fa2136736bf17f940c1c7ee7034ca024c",
+    "scripts/blender/policy_assets/kit.py": "8f02ff25e2663b88793fc92150742d59c57ac0d151bd2f5315b4a8b8e7c4f949"
+  },
+  "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
+  "bounds": {
+    "min": [
+      -14.997654914855957,
+      -14.995635032653809,
+      -0.46000000834465027
+    ],
+    "max": [
+      14.995635032653809,
+      12.824999809265137,
+      4.836880207061768
+    ]
+  },
+  "sizeXYZ": [
+    29.993289947509766,
+    27.820634841918945,
+    5.296880215406418
+  ],
+  "evaluatedTriangles": 233172,
+  "meshObjects": 3454,
+  "materials": [
+    "Clear warm architectural glazing",
+    "Soft sage stone inlay",
+    "Warm peach stone inlay",
+    "WarmLimestonePaver0",
+    "WarmLimestonePaver1",
+    "WarmLimestonePaver2",
+    "coral",
+    "cream",
+    "floor",
+    "gray",
+    "leaf",
+    "leafDark",
+    "leafLight",
+    "petal",
+    "petalPink",
+    "rail",
+    "roof",
+    "seam",
+    "slide",
+    "soil",
+    "stone",
+    "tealCloth",
+    "trim",
+    "wood",
+    "woodDark",
+    "woodLight"
+  ],
+  "materialCount": 26,
+  "collections": {
+    "Architecture": {
+      "objects": 277,
+      "triangles": 55448
+    },
+    "Furniture": {
+      "objects": 47,
+      "triangles": 11372
+    },
+    "Interior": {
+      "objects": 55,
+      "triangles": 10340
+    },
+    "Landscape": {
+      "objects": 2259,
+      "triangles": 118848
+    },
+    "Site": {
+      "objects": 788,
+      "triangles": 31708
+    },
+    "ThemeFacilities": {
+      "objects": 28,
+      "triangles": 5456
+    }
+  },
+  "recommendedPlatform": {
+    "shape": "circle",
+    "radius": 12.8,
+    "derivedFromActualContentRadius": 11.71215196611486,
+    "minimumOuterClearance": 1.0,
+    "radiusOver12": true,
+    "reviewBridgeArmsExcludedFromRadiusMeasurement": true,
+    "actualWorldNotChanged": true
+  },
+  "rooms": [
+    {
+      "name": "YouthInnovationWorkshop",
+      "footprint": [
+        -5.5,
+        1.25,
+        3.3,
+        5.75
+      ],
+      "door": [
+        -1.0,
+        1.25
+      ],
+      "peak": 4.57
+    },
+    {
+      "name": "AgriculturalGlasshouse",
+      "footprint": [
+        4.25,
+        0.0,
+        7.75,
+        4.7
+      ],
+      "door": null,
+      "peak": 3.25
+    }
+  ],
+  "npcReservations": [
+    {
+      "positionBlenderXYZ": [
+        2,
+        -2.0,
+        0.03
+      ],
+      "positionGLTFXYZ": [
+        2,
+        0.03,
+        2.0
+      ],
+      "bodyRadius": 0.35,
+      "reservationRadius": 0.65,
+      "playerStopBlenderXYZ": [
+        2,
+        -3.3,
+        0.03
+      ],
+      "interactionRadius": 1.4,
+      "implemented": false
+    }
+  ],
+  "npcClearanceChecks": [
+    {
+      "kind": "future_npc",
+      "position": [
+        2,
+        -2.0,
+        0.03
+      ],
+      "radius": 0.35,
+      "intersectingObjects": []
+    },
+    {
+      "kind": "player_stop",
+      "position": [
+        2,
+        -3.3,
+        0.03
+      ],
+      "radius": 0.33,
+      "intersectingObjects": []
+    }
+  ],
+  "reviewConnections": [
+    {
+      "angleDegrees": 190,
+      "width": 4.8,
+      "startRadius": 12.532986916401372,
+      "endRadius": 14.782986916401372,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 225,
+      "width": 4.8,
+      "startRadius": 12.532986916401372,
+      "endRadius": 14.782986916401372,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 278,
+      "width": 4.8,
+      "startRadius": 12.532986916401372,
+      "endRadius": 14.782986916401372,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 352,
+      "width": 4.8,
+      "startRadius": 12.532986916401372,
+      "endRadius": 14.782986916401372,
+      "reviewOnly": true
+    }
+  ],
+  "geometryAudit": {
+    "checkedMeshes": 3454,
+    "issues": [],
+    "note": "Per-component closed solids; intentional assembly intersections are not boolean-unioned. Not an engineering or runtime collision certification."
+  },
+  "complexityCap": {
+    "baselineEvaluatedTriangles": 381520,
+    "baselineGLBTriangles": 380999,
+    "baselineMaterials": 29,
+    "trianglesWithinCap": true,
+    "materialsWithinCap": true
+  },
+  "webExport": {
+    "sourceMeshObjects": 3454,
+    "meshPrimitives": 65,
+    "assemblyGroups": 10,
+    "triangles": 233172,
+    "textures": 0,
+    "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
+  },
+  "blendSHA256": "285440bb130bc6fad8e91eb59b5003b67d757c1d1d3b0d90783767e8c91c3086",
+  "glbSHA256": "fbf726d84fa8999c2c9845b1a4b02088c5fdd55dc841ed9afd7684b8024b3003",
+  "buildSeconds": 16.53
+}

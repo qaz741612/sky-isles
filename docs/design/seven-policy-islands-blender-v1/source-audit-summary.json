@@ -1,0 +1,87 @@
+{
+  "allPassed": true,
+  "assets": [
+    {
+      "id": "transport",
+      "sourceBlendSHA256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb",
+      "checkedObjects": 3550,
+      "evaluatedTriangles": 225508,
+      "nonClosedOrNegativeVolumeIssues": [],
+      "externalImageDependencies": [],
+      "passed": true,
+      "wheelRailContact": {
+        "wheelBottomZ": [
+          0.23000001907348633,
+          0.23000001907348633,
+          0.23000001907348633,
+          0.23000001907348633,
+          0.23000001907348633,
+          0.23000001907348633,
+          0.23000001907348633,
+          0.23000001907348633
+        ],
+        "railTopZ": [
+          0.23000000417232513,
+          0.23000000417232513
+        ],
+        "maximumVerticalMismatch": 1.4901161193847656e-08,
+        "gauge": 1.1,
+        "passed": true
+      }
+    },
+    {
+      "id": "senior",
+      "sourceBlendSHA256": "b24029e020a12e0b1167a99681f45a94b2d39ff920be7bae86c719b5b2f3d045",
+      "checkedObjects": 3626,
+      "evaluatedTriangles": 210900,
+      "nonClosedOrNegativeVolumeIssues": [],
+      "externalImageDependencies": [],
+      "passed": true
+    },
+    {
+      "id": "industry",
+      "sourceBlendSHA256": "285440bb130bc6fad8e91eb59b5003b67d757c1d1d3b0d90783767e8c91c3086",
+      "checkedObjects": 3454,
+      "evaluatedTriangles": 233172,
+      "nonClosedOrNegativeVolumeIssues": [],
+      "externalImageDependencies": [],
+      "passed": true
+    },
+    {
+      "id": "environment",
+      "sourceBlendSHA256": "bbcf309631276cac8e391cce3f2da3ed8ed925537a0f9d1a37c1c5b0055e9c39",
+      "checkedObjects": 3786,
+      "evaluatedTriangles": 181812,
+      "nonClosedOrNegativeVolumeIssues": [],
+      "externalImageDependencies": [],
+      "passed": true
+    },
+    {
+      "id": "digital",
+      "sourceBlendSHA256": "03974e41502ef6c619454244a21afeb3e68ffbb65cc7bd22e757b906eff50c54",
+      "checkedObjects": 3082,
+      "evaluatedTriangles": 206608,
+      "nonClosedOrNegativeVolumeIssues": [],
+      "externalImageDependencies": [],
+      "passed": true
+    },
+    {
+      "id": "water",
+      "sourceBlendSHA256": "2e77644f2f335b712381d433cee0e33fef47c46a56d7cea503289d748882a4e4",
+      "checkedObjects": 2363,
+      "evaluatedTriangles": 176496,
+      "nonClosedOrNegativeVolumeIssues": [],
+      "externalImageDependencies": [],
+      "passed": true
+    },
+    {
+      "id": "education",
+      "sourceBlendSHA256": "328d83a66b99d1bbcd146eb866e1f41b09cc9a71d192791816e102ae357bc75d",
+      "checkedObjects": 3246,
+      "evaluatedTriangles": 231388,
+      "nonClosedOrNegativeVolumeIssues": [],
+      "externalImageDependencies": [],
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": "npm run check",
+  "exitCode": 0,
+  "unitTests": {
+    "passed": 50,
+    "failed": 0,
+    "skipped": 0
+  },
+  "lint": "passed (existing game lint targets)",
+  "viteBuild": "passed",
+  "scope": "Unchanged existing game only. These 50 checks are not physics/art acceptance of the seven new standalone assets. No game browser regression or mobile FPS claim.",
+  "gameSourceBaseline": "75e3af5bb5205e52247011cfe5b59cbbc784e4ed",
+  "logSHA256": "6be9abd7ff5dc867d7ac58af399f212a2dcfc4c5657204eca5554006bfd080b4"
+}

@@ -1,0 +1,241 @@
+{
+  "policyName": "治水防災",
+  "id": "water",
+  "reference": "docs/references/policy-islands/water-reference.png",
+  "referenceSHA256": "8e6c3f48352822de71f43bd2a43f5806a060792db9000d8f0779f429948d88fc",
+  "approvedBaselineSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "blenderVersion": "4.3.0",
+  "phase": "complete",
+  "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
+  "sourceScripts": {
+    "scripts/blender/build_policy_assets.py": "c105d6540077630b6c1c3b118144efe65bd52b376d68dde693375d34ca3f9e0e",
+    "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
+    "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
+    "scripts/blender/policy_assets/recipes.py": "7a02b2025803b2741583a265fd338d1fa2136736bf17f940c1c7ee7034ca024c",
+    "scripts/blender/policy_assets/kit.py": "8f02ff25e2663b88793fc92150742d59c57ac0d151bd2f5315b4a8b8e7c4f949"
+  },
+  "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
+  "bounds": {
+    "min": [
+      -14.596384048461914,
+      -14.59213924407959,
+      -0.5199999809265137
+    ],
+    "max": [
+      14.59213924407959,
+      12.425000190734863,
+      4.996999740600586
+    ]
+  },
+  "sizeXYZ": [
+    29.188523292541504,
+    27.017139434814453,
+    5.5169997215271
+  ],
+  "evaluatedTriangles": 176496,
+  "meshObjects": 2363,
+  "materials": [
+    "Clear turquoise water",
+    "Clear warm architectural glazing",
+    "Muted blue court",
+    "Soft white markings",
+    "WarmLimestonePaver0",
+    "WarmLimestonePaver1",
+    "WarmLimestonePaver2",
+    "coral",
+    "cream",
+    "floor",
+    "gray",
+    "greenCloth",
+    "leaf",
+    "leafDark",
+    "leafLight",
+    "petal",
+    "petalPink",
+    "rail",
+    "roof",
+    "seam",
+    "slide",
+    "soil",
+    "stone",
+    "tealCloth",
+    "trim",
+    "wood",
+    "woodDark",
+    "woodLight"
+  ],
+  "materialCount": 28,
+  "collections": {
+    "Architecture": {
+      "objects": 296,
+      "triangles": 62800
+    },
+    "Furniture": {
+      "objects": 53,
+      "triangles": 12500
+    },
+    "Interior": {
+      "objects": 81,
+      "triangles": 15228
+    },
+    "Landscape": {
+      "objects": 1156,
+      "triangles": 40816
+    },
+    "Site": {
+      "objects": 673,
+      "triangles": 30996
+    },
+    "ThemeFacilities": {
+      "objects": 104,
+      "triangles": 14156
+    }
+  },
+  "recommendedPlatform": {
+    "shape": "circle",
+    "radius": 12.4,
+    "derivedFromActualContentRadius": 11.329487070512284,
+    "minimumOuterClearance": 1.0,
+    "radiusOver12": true,
+    "reviewBridgeArmsExcludedFromRadiusMeasurement": true,
+    "actualWorldNotChanged": true
+  },
+  "rooms": [
+    {
+      "name": "DisasterManagementCentre",
+      "footprint": [
+        0.15,
+        1.9,
+        8.3,
+        6.8
+      ],
+      "door": [
+        3.6,
+        1.9
+      ],
+      "peak": 4.1102714470386195
+    },
+    {
+      "name": "UpperObservationRoom",
+      "footprint": [
+        0.5,
+        4.4,
+        3.5,
+        6.2
+      ],
+      "door": null,
+      "peak": 4.9799999999999995,
+      "base": 3.4
+    },
+    {
+      "name": "FloodgateControlBooth",
+      "footprint": [
+        -3.7,
+        2.6,
+        -2.1,
+        4.3
+      ],
+      "door": null,
+      "peak": 3.8499999999999996,
+      "base": 1.8
+    }
+  ],
+  "npcReservations": [
+    {
+      "positionBlenderXYZ": [
+        7.8,
+        0.2,
+        0.03
+      ],
+      "positionGLTFXYZ": [
+        7.8,
+        0.03,
+        -0.2
+      ],
+      "bodyRadius": 0.35,
+      "reservationRadius": 0.65,
+      "playerStopBlenderXYZ": [
+        7.8,
+        -1.1,
+        0.03
+      ],
+      "interactionRadius": 1.4,
+      "implemented": false
+    }
+  ],
+  "npcClearanceChecks": [
+    {
+      "kind": "future_npc",
+      "position": [
+        7.8,
+        0.2,
+        0.03
+      ],
+      "radius": 0.35,
+      "intersectingObjects": []
+    },
+    {
+      "kind": "player_stop",
+      "position": [
+        7.8,
+        -1.1,
+        0.03
+      ],
+      "radius": 0.33,
+      "intersectingObjects": []
+    }
+  ],
+  "reviewConnections": [
+    {
+      "angleDegrees": 190,
+      "width": 4.8,
+      "startRadius": 12.125525060596441,
+      "endRadius": 14.375525060596441,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 225,
+      "width": 4.8,
+      "startRadius": 12.125525060596441,
+      "endRadius": 14.375525060596441,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 278,
+      "width": 4.8,
+      "startRadius": 12.125525060596441,
+      "endRadius": 14.375525060596441,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 352,
+      "width": 4.8,
+      "startRadius": 12.125525060596441,
+      "endRadius": 14.375525060596441,
+      "reviewOnly": true
+    }
+  ],
+  "geometryAudit": {
+    "checkedMeshes": 2363,
+    "issues": [],
+    "note": "Per-component closed solids; intentional assembly intersections are not boolean-unioned. Not an engineering or runtime collision certification."
+  },
+  "complexityCap": {
+    "baselineEvaluatedTriangles": 381520,
+    "baselineGLBTriangles": 380999,
+    "baselineMaterials": 29,
+    "trianglesWithinCap": true,
+    "materialsWithinCap": true
+  },
+  "webExport": {
+    "sourceMeshObjects": 2363,
+    "meshPrimitives": 77,
+    "assemblyGroups": 12,
+    "triangles": 176496,
+    "textures": 0,
+    "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
+  },
+  "blendSHA256": "2e77644f2f335b712381d433cee0e33fef47c46a56d7cea503289d748882a4e4",
+  "glbSHA256": "7fcdafd5fc697c760e6862229b4ff19bbcb838be89b3f7b429d4dc9c2d70f528",
+  "buildSeconds": 7.72
+}

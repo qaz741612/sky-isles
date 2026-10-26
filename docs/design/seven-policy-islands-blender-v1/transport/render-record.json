@@ -1,0 +1,158 @@
+{
+  "blenderVersion": "4.3.0",
+  "engine": "Cycles CPU with OpenImageDenoise",
+  "geometryEditedDuringRender": false,
+  "asset": "transport",
+  "views": [
+    {
+      "view": "hero",
+      "file": "renders/hero.png",
+      "camera": "01_Hero_CommonScale",
+      "cameraPositionXYZ": [
+        22.0,
+        -30.0,
+        24.0
+      ],
+      "cameraRotationRadians": [
+        1.0170702934265137,
+        -1.9113457483399543e-08,
+        0.6327489614486694
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 33.79999923706055,
+      "size": [
+        1280,
+        960
+      ],
+      "samples": 64,
+      "seconds": 106.35,
+      "sourceBlendSHA256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb",
+      "imageSHA256": "33686d1b1abd1f72ea456abf4680f7b4b1f2894a08e2f1ee4db2d7d0a3be38cb"
+    },
+    {
+      "view": "front",
+      "file": "renders/front.png",
+      "camera": "02_Front",
+      "cameraPositionXYZ": [
+        0.0,
+        -38.0,
+        8.0
+      ],
+      "cameraRotationRadians": [
+        1.3886280059814453,
+        -0.0,
+        0.0
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 35.0,
+      "size": [
+        1100,
+        825
+      ],
+      "samples": 40,
+      "seconds": 62.67,
+      "sourceBlendSHA256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb",
+      "imageSHA256": "127f84aaa61168a7d1721f816deab1f313ddb5fe3d01430c5934d83fe7bf7e6f"
+    },
+    {
+      "view": "back",
+      "file": "renders/back.png",
+      "camera": "03_Back",
+      "cameraPositionXYZ": [
+        0.0,
+        38.0,
+        8.0
+      ],
+      "cameraRotationRadians": [
+        1.3886280059814453,
+        8.59762110394513e-08,
+        3.1415927410125732
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 35.0,
+      "size": [
+        1100,
+        825
+      ],
+      "samples": 40,
+      "seconds": 62.01,
+      "sourceBlendSHA256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb",
+      "imageSHA256": "b7659578a6f9c3f57703fc2f28640ec1d0f61acb98a93641cc0ed04e6dd9f82f"
+    },
+    {
+      "view": "left",
+      "file": "renders/left.png",
+      "camera": "04_Left",
+      "cameraPositionXYZ": [
+        -38.0,
+        0.0,
+        8.0
+      ],
+      "cameraRotationRadians": [
+        1.3886280059814453,
+        -0.0,
+        -1.5707963705062866
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 35.0,
+      "size": [
+        1100,
+        825
+      ],
+      "samples": 40,
+      "seconds": 51.79,
+      "sourceBlendSHA256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb",
+      "imageSHA256": "83fd746755f3527a8a9b26dd79cbeff1c8a18a69b77b81f070aea8e3f88bae58"
+    },
+    {
+      "view": "right",
+      "file": "renders/right.png",
+      "camera": "05_Right",
+      "cameraPositionXYZ": [
+        38.0,
+        0.0,
+        8.0
+      ],
+      "cameraRotationRadians": [
+        1.3886280059814453,
+        -0.0,
+        1.5707963705062866
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 35.0,
+      "size": [
+        1100,
+        825
+      ],
+      "samples": 40,
+      "seconds": 53.06,
+      "sourceBlendSHA256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb",
+      "imageSHA256": "75fd700cac9934dff5aaca7192e040408bdbce406ced589dfe56525a449dee32"
+    },
+    {
+      "view": "top",
+      "file": "renders/top.png",
+      "camera": "06_Top",
+      "cameraPositionXYZ": [
+        0.0,
+        0.0,
+        45.0
+      ],
+      "cameraRotationRadians": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 43.0,
+      "size": [
+        1200,
+        900
+      ],
+      "samples": 48,
+      "seconds": 82.58,
+      "sourceBlendSHA256": "18d3f54df000b719815ede0248d783d8c6cc80baf01b6ad98e42ae0fc9f35afb",
+      "imageSHA256": "e475a4a33df4a1d0a1742fd2ed5f6bb0f85072d9823d5cd4075b860d4f2bcb15"
+    }
+  ]
+}

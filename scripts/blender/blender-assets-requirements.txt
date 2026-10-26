@@ -1,0 +1,4 @@
+# Offline asset-production environment only; not game runtime.
+bpy==4.3.0
+shapely==2.2.0
+Pillow==13.0.0

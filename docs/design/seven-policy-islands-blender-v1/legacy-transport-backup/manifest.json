@@ -1,0 +1,17 @@
+{
+  "role": "Immutable backup of old transport asset; not reused for the new station",
+  "files": [
+    {
+      "source": "docs/design/transport-station-blender-prototype/transport-station.blend",
+      "backup": "docs/design/seven-policy-islands-blender-v1/legacy-transport-backup/transport-station.blend",
+      "bytes": 387120,
+      "sha256": "80a6c0199c39602c6fbef8820ec05df35bd0c50dc63bccd606a14577dee9c652"
+    },
+    {
+      "source": "public/prototypes/transport-station/transport-station.glb",
+      "backup": "docs/design/seven-policy-islands-blender-v1/legacy-transport-backup/transport-station.glb",
+      "bytes": 1610992,
+      "sha256": "56a8d8f511242ae3c825e60af5b752b831f8287d372845b9ed06858602a6c6e4"
+    }
+  ]
+}

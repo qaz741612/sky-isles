@@ -1,0 +1,9 @@
+{
+  "id": "education",
+  "sourceBlendSHA256": "328d83a66b99d1bbcd146eb866e1f41b09cc9a71d192791816e102ae357bc75d",
+  "checkedObjects": 3246,
+  "evaluatedTriangles": 231388,
+  "nonClosedOrNegativeVolumeIssues": [],
+  "externalImageDependencies": [],
+  "passed": true
+}

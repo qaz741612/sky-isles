@@ -1,0 +1,33 @@
+{
+  "allPassed": true,
+  "assets": [
+    {
+      "id": "transport",
+      "allSixPassed": true
+    },
+    {
+      "id": "senior",
+      "allSixPassed": true
+    },
+    {
+      "id": "industry",
+      "allSixPassed": true
+    },
+    {
+      "id": "environment",
+      "allSixPassed": true
+    },
+    {
+      "id": "digital",
+      "allSixPassed": true
+    },
+    {
+      "id": "water",
+      "allSixPassed": true
+    },
+    {
+      "id": "education",
+      "allSixPassed": true
+    }
+  ]
+}

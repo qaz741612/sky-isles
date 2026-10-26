@@ -1,0 +1,41 @@
+{
+  "id": "education",
+  "file": "docs/design/seven-policy-islands-blender-v1/education/education.glb",
+  "bytes": 12787024,
+  "sha256": "6fb18eaa5df6c1f418f48741ba5211291a292a29ba1a220a59608f1b239a4f62",
+  "meshes": 74,
+  "triangles": 231381,
+  "materials": 27,
+  "missingMaterials": 0,
+  "badNormals": 0,
+  "bounds": {
+    "min": [
+      -13.993513107299805,
+      -0.46000000834465027,
+      -11.824999809265137
+    ],
+    "max": [
+      13.985925674438477,
+      4.836880207061768,
+      13.985925674438477
+    ]
+  },
+  "sizeGLTF_XYZ": [
+    27.97943878173828,
+    5.296880215406418,
+    25.810925483703613
+  ],
+  "coordinateSystem": "Blender +Z up exported to Three.js +Y up; model front +Z, source front -Y.",
+  "transmissionMaterials": [
+    {
+      "name": "Clear warm architectural glazing",
+      "transmission": 1,
+      "roughness": 0.04500000178813934,
+      "ior": 1.4500000476837158
+    }
+  ],
+  "khronosErrors": 0,
+  "khronosWarnings": 0,
+  "complexityWithinApprovedBaseline": true,
+  "scope": "Standalone GLTFLoader parsing and material validation; no game integration, physics or hardware FPS certification."
+}

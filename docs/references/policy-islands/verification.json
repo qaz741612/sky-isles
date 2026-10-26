@@ -1,0 +1,123 @@
+{
+  "verifiedAt": "2026-10-26T21:21:35+08:00",
+  "timezone": "Asia/Taipei",
+  "expectedImages": 8,
+  "savedImages": 8,
+  "passedImages": 8,
+  "failedImages": 0,
+  "uniqueImageHashes": 8,
+  "method": "Read final saved originals with Pillow verify(), reopen and load() all pixels, compare byte size and SHA256 to original ZIP members or existing approved baseline. No recompression, cropping or image generation of archived files.",
+  "archiveCRCVerified": true,
+  "sourceCounts": {
+    "uploadedZIP": 7,
+    "existingApprovedBaseline": 1
+  },
+  "modellingStarted": false,
+  "gameSceneModified": false,
+  "files": [
+    {
+      "policyName": "交通大升級",
+      "file": "transport-reference.png",
+      "projectPath": "docs/references/policy-islands/transport-reference.png",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 2066611,
+      "sha256": "811dccf98b9ab2e2c2228d9ad6939f8764ff9b4bbeaced524f7519b6eb829c3c",
+      "headerIntegrityVerified": true,
+      "fullPixelDecodeVerified": true,
+      "sourceByteEqualityVerified": true
+    },
+    {
+      "policyName": "安心生養",
+      "file": "family-reference.png",
+      "projectPath": "docs/references/policy-islands/family-reference.png",
+      "format": "PNG",
+      "width": 1600,
+      "height": 1096,
+      "bytes": 2297672,
+      "sha256": "085f73ea9870ec5fd7b2c3cd663ec8a025c8fe9a1770b690e517aeb84c42d758",
+      "headerIntegrityVerified": true,
+      "fullPixelDecodeVerified": true,
+      "sourceByteEqualityVerified": true
+    },
+    {
+      "policyName": "幸福養老",
+      "file": "senior-reference.png",
+      "projectPath": "docs/references/policy-islands/senior-reference.png",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 2136066,
+      "sha256": "652650f6c4c0a7e44ec0c8badbb674c1e8af8753c7ad8440fe8a36817fec0407",
+      "headerIntegrityVerified": true,
+      "fullPixelDecodeVerified": true,
+      "sourceByteEqualityVerified": true
+    },
+    {
+      "policyName": "產業青年",
+      "file": "industry-reference.png",
+      "projectPath": "docs/references/policy-islands/industry-reference.png",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 2220283,
+      "sha256": "b33ea8225cd1ea25ee7941ee7f8ba8d40689b2d2cd6f89a260601c4ffcd1bb26",
+      "headerIntegrityVerified": true,
+      "fullPixelDecodeVerified": true,
+      "sourceByteEqualityVerified": true
+    },
+    {
+      "policyName": "宜居環境",
+      "file": "environment-reference.png",
+      "projectPath": "docs/references/policy-islands/environment-reference.png",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 2135925,
+      "sha256": "3a512542f56689ecd3a8457795154c32f9acf69e243e4edd0967e8bcf2fe9a1c",
+      "headerIntegrityVerified": true,
+      "fullPixelDecodeVerified": true,
+      "sourceByteEqualityVerified": true
+    },
+    {
+      "policyName": "智慧公所",
+      "file": "digital-reference.png",
+      "projectPath": "docs/references/policy-islands/digital-reference.png",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 2138788,
+      "sha256": "c05ec749d91ece108350b84a411f7abc3e9c1778a69b97910f470ce90045f713",
+      "headerIntegrityVerified": true,
+      "fullPixelDecodeVerified": true,
+      "sourceByteEqualityVerified": true
+    },
+    {
+      "policyName": "治水防災",
+      "file": "water-reference.png",
+      "projectPath": "docs/references/policy-islands/water-reference.png",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 2140822,
+      "sha256": "8e6c3f48352822de71f43bd2a43f5806a060792db9000d8f0779f429948d88fc",
+      "headerIntegrityVerified": true,
+      "fullPixelDecodeVerified": true,
+      "sourceByteEqualityVerified": true
+    },
+    {
+      "policyName": "教育發展",
+      "file": "education-reference.png",
+      "projectPath": "docs/references/policy-islands/education-reference.png",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 2046421,
+      "sha256": "b09e0b5a1fae8002d9f6539c90e36e119b67f49c6f7c09a48ab6ecc7accfa1c6",
+      "headerIntegrityVerified": true,
+      "fullPixelDecodeVerified": true,
+      "sourceByteEqualityVerified": true
+    }
+  ]
+}

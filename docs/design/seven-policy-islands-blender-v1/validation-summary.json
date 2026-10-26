@@ -1,0 +1,307 @@
+{
+  "assets": 7,
+  "allPassed": true,
+  "gameFilesUnchanged": true,
+  "approvedFamilyAssetsUnchanged": true,
+  "results": [
+    {
+      "id": "transport",
+      "file": "docs/design/seven-policy-islands-blender-v1/transport/transport.glb",
+      "bytes": 12953324,
+      "sha256": "ed1f1f90e84c8e6a600e88a7bbb8e14b37d9093517c3d6aac1e40156293dd407",
+      "meshes": 67,
+      "triangles": 225496,
+      "materials": 26,
+      "missingMaterials": 0,
+      "badNormals": 0,
+      "bounds": {
+        "min": [
+          -14.797080039978027,
+          -0.46000000834465027,
+          -12.625
+        ],
+        "max": [
+          14.79394817352295,
+          4.836880207061768,
+          14.79394817352295
+        ]
+      },
+      "sizeGLTF_XYZ": [
+        29.591028213500977,
+        5.296880215406418,
+        27.41894817352295
+      ],
+      "coordinateSystem": "Blender +Z up exported to Three.js +Y up; model front +Z, source front -Y.",
+      "transmissionMaterials": [
+        {
+          "name": "Clear warm architectural glazing",
+          "transmission": 1,
+          "roughness": 0.04500000178813934,
+          "ior": 1.4500000476837158
+        },
+        {
+          "name": "Smoked vehicle glazing",
+          "transmission": 0.15000000596046448,
+          "roughness": 0.18000000715255737,
+          "ior": 1.4500000476837158
+        }
+      ],
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "complexityWithinApprovedBaseline": true,
+      "scope": "Standalone GLTFLoader parsing and material validation; no game integration, physics or hardware FPS certification."
+    },
+    {
+      "id": "senior",
+      "file": "docs/design/seven-policy-islands-blender-v1/senior/senior.glb",
+      "bytes": 12474812,
+      "sha256": "3f5ca62b220308beb5d5ae5fe2fd490c33149c6ff9f465387cd2a7e803314ffa",
+      "meshes": 58,
+      "triangles": 210879,
+      "materials": 26,
+      "missingMaterials": 0,
+      "badNormals": 0,
+      "bounds": {
+        "min": [
+          -13.993513107299805,
+          -0.46000000834465027,
+          -11.824999809265137
+        ],
+        "max": [
+          13.985925674438477,
+          4.836880207061768,
+          13.985925674438477
+        ]
+      },
+      "sizeGLTF_XYZ": [
+        27.97943878173828,
+        5.296880215406418,
+        25.810925483703613
+      ],
+      "coordinateSystem": "Blender +Z up exported to Three.js +Y up; model front +Z, source front -Y.",
+      "transmissionMaterials": [
+        {
+          "name": "Clear warm architectural glazing",
+          "transmission": 1,
+          "roughness": 0.04500000178813934,
+          "ior": 1.4500000476837158
+        }
+      ],
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "complexityWithinApprovedBaseline": true,
+      "scope": "Standalone GLTFLoader parsing and material validation; no game integration, physics or hardware FPS certification."
+    },
+    {
+      "id": "industry",
+      "file": "docs/design/seven-policy-islands-blender-v1/industry/industry.glb",
+      "bytes": 13328448,
+      "sha256": "fbf726d84fa8999c2c9845b1a4b02088c5fdd55dc841ed9afd7684b8024b3003",
+      "meshes": 65,
+      "triangles": 233109,
+      "materials": 26,
+      "missingMaterials": 0,
+      "badNormals": 0,
+      "bounds": {
+        "min": [
+          -14.997654914855957,
+          -0.46000000834465027,
+          -12.824999809265137
+        ],
+        "max": [
+          14.995635032653809,
+          4.836880207061768,
+          14.995635032653809
+        ]
+      },
+      "sizeGLTF_XYZ": [
+        29.993289947509766,
+        5.296880215406418,
+        27.820634841918945
+      ],
+      "coordinateSystem": "Blender +Z up exported to Three.js +Y up; model front +Z, source front -Y.",
+      "transmissionMaterials": [
+        {
+          "name": "Clear warm architectural glazing",
+          "transmission": 1,
+          "roughness": 0.04500000178813934,
+          "ior": 1.4500000476837158
+        }
+      ],
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "complexityWithinApprovedBaseline": true,
+      "scope": "Standalone GLTFLoader parsing and material validation; no game integration, physics or hardware FPS certification."
+    },
+    {
+      "id": "environment",
+      "file": "docs/design/seven-policy-islands-blender-v1/environment/environment.glb",
+      "bytes": 11224268,
+      "sha256": "4a49d0a4a7b85af46e7196710d92a9815efa3b2f468e68d738683f8b055d1a05",
+      "meshes": 42,
+      "triangles": 181784,
+      "materials": 24,
+      "missingMaterials": 0,
+      "badNormals": 0,
+      "bounds": {
+        "min": [
+          -13.993513107299805,
+          -0.5199999809265137,
+          -11.824999809265137
+        ],
+        "max": [
+          13.985925674438477,
+          5.201760292053223,
+          13.985925674438477
+        ]
+      },
+      "sizeGLTF_XYZ": [
+        27.97943878173828,
+        5.721760272979736,
+        25.810925483703613
+      ],
+      "coordinateSystem": "Blender +Z up exported to Three.js +Y up; model front +Z, source front -Y.",
+      "transmissionMaterials": [
+        {
+          "name": "Clear turquoise water",
+          "transmission": 0.30000001192092896,
+          "roughness": 0.1599999964237213,
+          "ior": 1.4500000476837158
+        }
+      ],
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "complexityWithinApprovedBaseline": true,
+      "scope": "Standalone GLTFLoader parsing and material validation; no game integration, physics or hardware FPS certification."
+    },
+    {
+      "id": "digital",
+      "file": "docs/design/seven-policy-islands-blender-v1/digital/digital.glb",
+      "bytes": 11537708,
+      "sha256": "1880c9f0d7fed481a56113a18a944b53141685643d57793d8f575a2602acfe44",
+      "meshes": 73,
+      "triangles": 206567,
+      "materials": 26,
+      "missingMaterials": 0,
+      "badNormals": 0,
+      "bounds": {
+        "min": [
+          -13.590875625610352,
+          -0.46000000834465027,
+          -11.425000190734863
+        ],
+        "max": [
+          13.581055641174316,
+          4.8470001220703125,
+          13.581055641174316
+        ]
+      },
+      "sizeGLTF_XYZ": [
+        27.171931266784668,
+        5.307000130414963,
+        25.00605583190918
+      ],
+      "coordinateSystem": "Blender +Z up exported to Three.js +Y up; model front +Z, source front -Y.",
+      "transmissionMaterials": [
+        {
+          "name": "Clear warm architectural glazing",
+          "transmission": 1,
+          "roughness": 0.04500000178813934,
+          "ior": 1.4500000476837158
+        }
+      ],
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "complexityWithinApprovedBaseline": true,
+      "scope": "Standalone GLTFLoader parsing and material validation; no game integration, physics or hardware FPS certification."
+    },
+    {
+      "id": "water",
+      "file": "docs/design/seven-policy-islands-blender-v1/water/water.glb",
+      "bytes": 9492344,
+      "sha256": "7fcdafd5fc697c760e6862229b4ff19bbcb838be89b3f7b429d4dc9c2d70f528",
+      "meshes": 77,
+      "triangles": 176475,
+      "materials": 28,
+      "missingMaterials": 0,
+      "badNormals": 0,
+      "bounds": {
+        "min": [
+          -14.596384048461914,
+          -0.5199999809265137,
+          -12.425000190734863
+        ],
+        "max": [
+          14.59213924407959,
+          4.996999740600586,
+          14.59213924407959
+        ]
+      },
+      "sizeGLTF_XYZ": [
+        29.188523292541504,
+        5.5169997215271,
+        27.017139434814453
+      ],
+      "coordinateSystem": "Blender +Z up exported to Three.js +Y up; model front +Z, source front -Y.",
+      "transmissionMaterials": [
+        {
+          "name": "Clear warm architectural glazing",
+          "transmission": 1,
+          "roughness": 0.04500000178813934,
+          "ior": 1.4500000476837158
+        },
+        {
+          "name": "Clear turquoise water",
+          "transmission": 0.30000001192092896,
+          "roughness": 0.1599999964237213,
+          "ior": 1.4500000476837158
+        }
+      ],
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "complexityWithinApprovedBaseline": true,
+      "scope": "Standalone GLTFLoader parsing and material validation; no game integration, physics or hardware FPS certification."
+    },
+    {
+      "id": "education",
+      "file": "docs/design/seven-policy-islands-blender-v1/education/education.glb",
+      "bytes": 12787024,
+      "sha256": "6fb18eaa5df6c1f418f48741ba5211291a292a29ba1a220a59608f1b239a4f62",
+      "meshes": 74,
+      "triangles": 231381,
+      "materials": 27,
+      "missingMaterials": 0,
+      "badNormals": 0,
+      "bounds": {
+        "min": [
+          -13.993513107299805,
+          -0.46000000834465027,
+          -11.824999809265137
+        ],
+        "max": [
+          13.985925674438477,
+          4.836880207061768,
+          13.985925674438477
+        ]
+      },
+      "sizeGLTF_XYZ": [
+        27.97943878173828,
+        5.296880215406418,
+        25.810925483703613
+      ],
+      "coordinateSystem": "Blender +Z up exported to Three.js +Y up; model front +Z, source front -Y.",
+      "transmissionMaterials": [
+        {
+          "name": "Clear warm architectural glazing",
+          "transmission": 1,
+          "roughness": 0.04500000178813934,
+          "ior": 1.4500000476837158
+        }
+      ],
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "complexityWithinApprovedBaseline": true,
+      "scope": "Standalone GLTFLoader parsing and material validation; no game integration, physics or hardware FPS certification."
+    }
+  ]
+}

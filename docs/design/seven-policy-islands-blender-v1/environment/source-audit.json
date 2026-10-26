@@ -1,0 +1,9 @@
+{
+  "id": "environment",
+  "sourceBlendSHA256": "bbcf309631276cac8e391cce3f2da3ed8ed925537a0f9d1a37c1c5b0055e9c39",
+  "checkedObjects": 3786,
+  "evaluatedTriangles": 181812,
+  "nonClosedOrNegativeVolumeIssues": [],
+  "externalImageDependencies": [],
+  "passed": true
+}
