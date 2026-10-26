@@ -4,7 +4,7 @@
 
 [開啟可操作 Preview](https://34a8b999.sky-isles.pages.dev) · [整合 PR #12](https://github.com/qaz741612/sky-isles/pull/12)
 
-[整合配置／碰撞規則](INTEGRATION.md) · [測試與未通過項目](TEST-REPORT.md) · [效能實測](PERFORMANCE.md) · [修改清單](MODIFIED-FILES.md) · [媒體雜湊](media-manifest.json) · [重現方法](REPRODUCE.md)
+[整合配置／碰撞規則](INTEGRATION.md) · [測試與未通過項目](TEST-REPORT.md) · [效能實測](PERFORMANCE.md) · [修改清單](MODIFIED-FILES.md) · [媒體雜湊](media-manifest.json) · [重現方法](REPRODUCE.md) · [GitHub 回讀核對：9/9](github-verification.json)
 
 ## 如何走到親子館
 
