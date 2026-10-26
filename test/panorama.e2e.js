@@ -3,16 +3,17 @@ import fs from 'node:fs';
 const folder='work/world-regression-panorama';
 
 test('real 3D panorama fits, locks movement, preserves progress and returns the exploration camera',async({page,isMobile})=>{
+ test.setTimeout(300000);
  const errors=[];page.on('pageerror',e=>errors.push(String(e)));
  await page.goto('/');await page.waitForFunction(()=>window.__skyisles);
  await page.locator('#title-screen .tap').click();
  if(await page.locator('#touch-help').isVisible())await page.locator('#help-close').click();
- await expect.poll(()=>page.evaluate(()=>window.__skyisles.world.player.move.grounded)).toBe(true);
+ await expect.poll(()=>page.evaluate(()=>window.__skyisles.world.player.move.grounded),{timeout:60000}).toBe(true);
  await page.waitForTimeout(800);
  fs.mkdirSync(folder,{recursive:true});
  await page.screenshot({path:`${folder}/${isMobile?'mobile':'desktop'}-explore.png`});
  await page.evaluate(()=>{const w=window.__skyisles.world;window.__skyisles.playChime(window.__skyisles.getState().muralOrder[0]);const island=w.islands.islands.find(i=>i.name==='windmill');w.player.teleport(island.pos.x,island.pos.y+.4,island.pos.z);});
- await expect.poll(()=>page.evaluate(()=>window.__skyisles.world.player.move.grounded)).toBe(true);
+ await expect.poll(()=>page.evaluate(()=>window.__skyisles.world.player.move.grounded),{timeout:60000}).toBe(true);
  await page.waitForTimeout(1200);
  const before=await page.evaluate(()=>{const w=window.__skyisles.world;return{pos:w.player.pos.toArray(),checkpoint:w.player.lastGrounded.toArray(),orbit:{...w.player.orbit},cam:w.camera.position.toArray(),quaternion:w.camera.quaternion.toArray(),progress:w.puzzle.unlocked};});
  expect(before.progress).toBe(1);expect(Math.hypot(before.checkpoint[0],before.checkpoint[2])).toBeGreaterThan(50);

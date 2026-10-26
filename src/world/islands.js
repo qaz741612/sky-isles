@@ -172,7 +172,7 @@ export function buildIslands(scene, rng) {
       new THREE.CylinderGeometry(def.r, def.r * 0.9, 1.1, 28),
       toonMaterial(GRASS)
     );
-    grass.position.y = -0.55;
+    grass.position.y = def.name==='tree' ? -.75 : -.55; // tuck native cap below approved plinth; no coplanar duplicate surface
     addOutline(grass, 0.018);
     grass.userData.island = def.name;
     isle.add(grass);
@@ -185,7 +185,7 @@ export function buildIslands(scene, rng) {
 
     if (def.name !== 'stepping') {
       const before = isle.children.length;
-      scatterProps(isle, def.r, rng, def.name === 'home' ? 0.6 : 1);
+      scatterProps(isle, def.name==='tree'?9:def.r, rng, def.name === 'home' ? 0.6 : 1);
       if (def.name !== 'stepping') {
         for (const prop of isle.children.slice(before)) isle.remove(prop);
       }
@@ -209,7 +209,7 @@ export function buildIslands(scene, rng) {
   // jump pads: home (toward koi), tree (toward lookout), koi (toward crystal)
   const padDefs = [
     { island: 'home', angle: Math.atan2(22, 18), dist: 6.2, strength: 16.5 },
-    { island: 'tree', angle: Math.atan2(-12, -12), dist: 4.6, strength: 15 },
+    { island: 'tree', x: -8.0, z: 4.0, strength: 15 },
     // Keep this optional spring off the new north-east walking entrance.
     { island: 'koi', angle: Math.atan2(18, 16), dist: 4.6, strength: 15 }
   ];
@@ -217,7 +217,7 @@ export function buildIslands(scene, rng) {
     const isle = islands.find((i) => i.name === pd.island);
     const { group: padGroup, pad } = buildJumpPad();
     pad.strength = pd.strength;
-    padGroup.position.set(Math.cos(pd.angle) * pd.dist, 0, Math.sin(pd.angle) * pd.dist);
+    padGroup.position.set(pd.x ?? Math.cos(pd.angle) * pd.dist, 0, pd.z ?? Math.sin(pd.angle) * pd.dist);
     isle.group.add(padGroup);
     colliders.push(pad.cap);
     jumpPads.push(pad);

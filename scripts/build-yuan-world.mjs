@@ -62,6 +62,7 @@ const report={comparisonReference:'Original design A reference (not V4); V4-to-c
 const layout={reference:'Manually traced approved plan A; real walkable geometry, no font outlines',width:plan.width,nodes,paths:paths.map(({outline,...p})=>p),bounds};
 fs.writeFileSync('src/data/yuan-layout.json',JSON.stringify(layout));
 fs.writeFileSync('src/data/yuan-surface.json',JSON.stringify({positions,indices,barriers,domain:union,islandPaving}));
-fs.mkdirSync('docs/previews/eight-islands-world-redesign-v1',{recursive:true});
-fs.writeFileSync('docs/previews/eight-islands-world-redesign-v1/network-comparison.json',JSON.stringify(report,null,2));
+const reportDir=process.argv.includes('--report-dir')?process.argv[process.argv.indexOf('--report-dir')+1]:'docs/previews/eight-islands-world-redesign-v1';
+fs.mkdirSync(reportDir,{recursive:true});
+fs.writeFileSync(`${reportDir}/network-comparison.json`,JSON.stringify(report,null,2));
 console.log(report);

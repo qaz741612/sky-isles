@@ -15,6 +15,7 @@ import { buildClouds } from './world/clouds.js';
 import { buildPolicyScenery } from './world/policy-scenery.js';
 import { guardIndex } from './sim/walkways.js';
 import { buildChimes } from './world/chimes.js';
+import {loadParentChildModel,buildParentChildModel,parentChildCameraConstraint} from './world/parent-child-model.js';
 import { loadStationModel } from './world/station-model.js';
 import { buildTransport, TRANSPORT_NOTICE } from './world/transport.js';
 import { PolicyUI, loadPolicies } from './policies.js';
@@ -30,6 +31,8 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.12;
+// Preserve full-resolution approved glass after the half-resolution comparison.
+renderer.transmissionResolutionScale = 1;
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 900);
@@ -44,11 +47,21 @@ const bridges = buildBridges(scene, islands.islands, rng);
 const clouds = buildClouds(scene, rng);
 
 const chimes = buildChimes(islands.islands);
-let stationSource;
-try { stationSource=await loadStationModel(); } catch(error) { document.getElementById('loading').textContent='車站模型載入失敗，請重新整理重試'; throw error; }
+let stationSource,familySource;
+try { [stationSource,familySource]=await Promise.all([loadStationModel(),loadParentChildModel()]); } catch(error) { document.getElementById('loading').textContent='建築模型載入失敗，請重新整理重試'; throw error; }
 const transport = buildTransport(islands.islands[0],undefined,stationSource);
 scene.updateMatrixWorld(true);
-const props=buildPolicyScenery(islands.islands);
+const family=buildParentChildModel(familySource,islands.islands.find(i=>i.name==='tree'));
+const props=buildPolicyScenery(islands.islands,{tree:family});
+// Only this static imported island casts/receives the new shadow. Existing light
+// direction and all other islands stay unchanged; bake the map once at runtime.
+const familySun=scene.children.find(o=>o.isDirectionalLight);
+familySun.castShadow=true;familySun.shadow.mapSize.set(1024,1024);familySun.shadow.bias=-.0003;familySun.shadow.normalBias=.025;familySun.shadow.camera.near=1;familySun.shadow.camera.far=220;
+familySun.shadow.updateMatrices(familySun);
+const shadowPoints=[];for(const x of[family.bounds.min.x,family.bounds.max.x])for(const y of[family.bounds.min.y,family.bounds.max.y])for(const z of[family.bounds.min.z,family.bounds.max.z])shadowPoints.push(new THREE.Vector3(x,y,z).applyMatrix4(familySun.shadow.camera.matrixWorldInverse));
+Object.assign(familySun.shadow.camera,{left:Math.min(...shadowPoints.map(p=>p.x))-1,right:Math.max(...shadowPoints.map(p=>p.x))+1,bottom:Math.min(...shadowPoints.map(p=>p.y))-1,top:Math.max(...shadowPoints.map(p=>p.y))+1});familySun.shadow.camera.updateProjectionMatrix();
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.shadowMap.autoUpdate=false;renderer.shadowMap.needsUpdate=true;
+bridges.walkPlans=family.adaptPaths(bridges.plans);
 const allBarriers=[...bridges.barriers,...props.barriers,...transport.barriers];
 
 const colliders = [
@@ -62,9 +75,9 @@ const colliders = [
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
-player.ceilingConstraint=transport.station.constrainHead;
+player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transport.station.constrainHead(pos,y,move);
 scene.updateMatrixWorld(true);
-player.cameraConstraint = worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]);
+player.cameraConstraint = parentChildCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='tree'));
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);
@@ -182,6 +195,9 @@ window.addEventListener('resize', () => {
   panorama.fit(innerWidth,innerHeight);
 });
 
+// Settle the unchanged spawn physics before presenting a heavy first GPU frame.
+for(let i=0;i<35;i++)player.update(1/60,{x:0,z:0,jumpPressed:false,jumpHeld:false},i/60);
+
 // ----- debug handle for e2e / QA -----
 window.__skyisles = {
   getState() {
@@ -213,7 +229,7 @@ window.__skyisles = {
       started = true;
     }
   },
-  world: { props, panorama, policyUI, scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, ui }
+  world: { props, panorama, policyUI, scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, family, ui }
 };
 
 // ----- main loop -----
@@ -223,7 +239,8 @@ const playerCenter = new THREE.Vector3();
 
 function frame() {
   requestAnimationFrame(frame);
-  const dt = Math.min(clock.getDelta(), 0.05);
+  const realDt=clock.getDelta();
+  const dt = Math.min(realDt, 0.05);
   const t = clock.elapsedTime;
 
   const input = started && !policyUI.isOpen && !panorama.active
@@ -231,7 +248,7 @@ function frame() {
     : { x: 0, z: 0, jumpPressed: false, jumpHeld: false };
 
   if(!panorama.active)player.update(dt, input, t);
-  panorama.update(dt);
+  panorama.update(realDt);
   panoramaButton.hidden=!started;
 
   playerCenter.copy(player.pos);
@@ -250,6 +267,7 @@ function frame() {
 
   if (firstFrame) {
     firstFrame = false;
+    family.stats.firstFrameMilliseconds=performance.now();
     ui.hideLoading();
   }
 }
