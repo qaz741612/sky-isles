@@ -8,11 +8,11 @@
   "phase": "complete",
   "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
   "sourceScripts": {
-    "scripts/blender/build_policy_assets.py": "9b2e9f773835479ec99f020a87a323a300f14dda1dce2a141affb4cef0954497",
+    "scripts/blender/build_policy_assets.py": "70e6693976c505b1688a5c3458f84c42a0d5413cf0efa404a911bacac6ff56bc",
     "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
     "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
-    "scripts/blender/policy_assets/recipes.py": "523efe7a69499a5efd992ef1641e38c188e110fee435e4c226413b05a7433388",
-    "scripts/blender/policy_assets/kit.py": "0362ea64bebcef5eaa625bb4ee583ed4a52136341d90e52b7755e4ed97ad0e38"
+    "scripts/blender/policy_assets/recipes.py": "73b85f379f73f81d2a9f6fd1e760d50dc835ebaff3beac6a304dfcde2cde73c0",
+    "scripts/blender/policy_assets/kit.py": "91eb7746e95c11180c5331963cad21d00790f2930d877ebc159b7cc0e3b6835a"
   },
   "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
   "bounds": {
@@ -32,7 +32,7 @@
     25.810925483703613,
     5.721760272979736
   ],
-  "evaluatedTriangles": 185384,
+  "evaluatedTriangles": 135480,
   "meshObjects": 2196,
   "materials": [
     "Clear turquoise water",
@@ -76,7 +76,7 @@
     },
     "Site": {
       "objects": 692,
-      "triangles": 86096
+      "triangles": 36192
     },
     "ThemeFacilities": {
       "objects": 72,
@@ -196,11 +196,11 @@
     "sourceMeshObjects": 2196,
     "meshPrimitives": 40,
     "assemblyGroups": 6,
-    "triangles": 185356,
+    "triangles": 135480,
     "textures": 0,
     "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
   },
-  "blendSHA256": "46e99d4e9a4a820845627488ea6c88b65e44be6b3e1ede9828e1a90edfb81ce4",
-  "glbSHA256": "85e5954c9ce553c57a89feb26811dfe62691f337b832b638589901fb2aaf3924",
-  "buildSeconds": 8.89
+  "blendSHA256": "d939a28fd117a1d9c5b3f5fd75101135353494a602d9ce5b7f6932b61766f3d4",
+  "glbSHA256": "c27db57d8a9051cce2ed5fb2065e7516ce3c5e9cf048e0fe06fa929427f96ab3",
+  "buildSeconds": 9.41
 }
