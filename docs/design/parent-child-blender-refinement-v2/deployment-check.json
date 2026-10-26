@@ -1,0 +1,16 @@
+{
+  "commit": "5bffc3e1f7e9face5ff3661f1b15496421736160",
+  "commitPrefix": "[CF-Pages-Skip]",
+  "checkedAtUTC": "2026-10-26T04:57:31.501978+00:00",
+  "githubCheckRuns": 0,
+  "githubCommitStatuses": 0,
+  "cloudflareCheckRunsForCommit": 0,
+  "productionRef": "codex/yuanli-policy-islands-v1",
+  "productionSHA": "8adc89ed23d1f74151ca70bab2b3bd730c6e54a5",
+  "mainSHA": "a8a1c07ea1ed1d9d2fe259a97a64d08fcec8f2d1",
+  "manualDeploymentPerformed": false,
+  "cloudflareConfigurationChanged": false,
+  "directCloudflareDeploymentListQueried": false,
+  "scope": "Observed GitHub checks/statuses and git refs; no direct Cloudflare API credentials. Previous Preview remains separate. GitHub combined status is pending with zero statuses when no check is scheduled; it is not a local model-test failure.",
+  "skipDocumentation": "https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/"
+}
