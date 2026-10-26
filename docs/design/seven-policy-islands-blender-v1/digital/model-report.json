@@ -8,11 +8,11 @@
   "phase": "complete",
   "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
   "sourceScripts": {
-    "scripts/blender/build_policy_assets.py": "70e6693976c505b1688a5c3458f84c42a0d5413cf0efa404a911bacac6ff56bc",
+    "scripts/blender/build_policy_assets.py": "ba4bd8e9660eab7720d3086afb20983b8b168cfec29d9b8713174462260a972e",
     "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
     "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
-    "scripts/blender/policy_assets/recipes.py": "73b85f379f73f81d2a9f6fd1e760d50dc835ebaff3beac6a304dfcde2cde73c0",
-    "scripts/blender/policy_assets/kit.py": "91eb7746e95c11180c5331963cad21d00790f2930d877ebc159b7cc0e3b6835a"
+    "scripts/blender/policy_assets/recipes.py": "04efa362d275c5c39644817760462975c505f9d5686ff01973c80efa0824a351",
+    "scripts/blender/policy_assets/kit.py": "8f02ff25e2663b88793fc92150742d59c57ac0d151bd2f5315b4a8b8e7c4f949"
   },
   "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
   "bounds": {
@@ -32,12 +32,12 @@
     25.00605583190918,
     5.307000130414963
   ],
-  "evaluatedTriangles": 186596,
-  "meshObjects": 2383,
+  "evaluatedTriangles": 206608,
+  "meshObjects": 3082,
   "materials": [
     "Clear warm architectural glazing",
-    "Muted blue court",
-    "Muted clay court",
+    "Soft sage stone inlay",
+    "Warm peach stone inlay",
     "WarmLimestonePaver0",
     "WarmLimestonePaver1",
     "WarmLimestonePaver2",
@@ -77,12 +77,12 @@
       "triangles": 15604
     },
     "Landscape": {
-      "objects": 1226,
-      "triangles": 56648
+      "objects": 1922,
+      "triangles": 76104
     },
     "Site": {
-      "objects": 658,
-      "triangles": 29156
+      "objects": 661,
+      "triangles": 29712
     },
     "ThemeFacilities": {
       "objects": 13,
@@ -212,7 +212,7 @@
     }
   ],
   "geometryAudit": {
-    "checkedMeshes": 2383,
+    "checkedMeshes": 3082,
     "issues": [],
     "note": "Per-component closed solids; intentional assembly intersections are not boolean-unioned. Not an engineering or runtime collision certification."
   },
@@ -224,14 +224,14 @@
     "materialsWithinCap": true
   },
   "webExport": {
-    "sourceMeshObjects": 2383,
+    "sourceMeshObjects": 3082,
     "meshPrimitives": 73,
     "assemblyGroups": 11,
-    "triangles": 186596,
+    "triangles": 206608,
     "textures": 0,
     "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
   },
-  "blendSHA256": "6d2f50368e1eaf027ada09fcf0f9af9345d8fcc2815a3602fc7b78af0a78cd02",
-  "glbSHA256": "0a6454822d05c8e5012db8a9e673e577a6ff6868c7cadcd504fbcd46da6e29f8",
-  "buildSeconds": 9.87
+  "blendSHA256": "85dd42534c88629cb9c6a2d825e7f9b960d0ba37b1d1efe3a989a7505b298e03",
+  "glbSHA256": "1880c9f0d7fed481a56113a18a944b53141685643d57793d8f575a2602acfe44",
+  "buildSeconds": 12.73
 }
