@@ -1,0 +1,214 @@
+{
+  "policyName": "交通大升級",
+  "id": "transport",
+  "reference": "docs/references/policy-islands/transport-reference.png",
+  "referenceSHA256": "811dccf98b9ab2e2c2228d9ad6939f8764ff9b4bbeaced524f7519b6eb829c3c",
+  "approvedBaselineSHA256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+  "blenderVersion": "4.3.0",
+  "phase": "complete",
+  "role": "Standalone Blender/GLB asset only. No game integration or world-layout edit.",
+  "sourceScripts": {
+    "scripts/blender/build_policy_assets.py": "9b2e9f773835479ec99f020a87a323a300f14dda1dce2a141affb4cef0954497",
+    "scripts/blender/policy_assets/exporter.py": "15fe5e4bfaf33bcaba4bedd9137ae9d36f3a5e7c4ae88b7add0e30041030a0cb",
+    "scripts/blender/policy_assets/__init__.py": "8639e84eb2226db3b31912358e7d5824de221d0d83f8fd4217a4bd701555e152",
+    "scripts/blender/policy_assets/recipes.py": "523efe7a69499a5efd992ef1641e38c188e110fee435e4c226413b05a7433388",
+    "scripts/blender/policy_assets/kit.py": "0362ea64bebcef5eaa625bb4ee583ed4a52136341d90e52b7755e4ed97ad0e38"
+  },
+  "blenderDimensionsOrder": "X width, Y depth, Z height; GLB uses X width, Y height, Z negative Blender-Y",
+  "bounds": {
+    "min": [
+      -14.797080039978027,
+      -14.79394817352295,
+      -0.46000000834465027
+    ],
+    "max": [
+      14.79394817352295,
+      12.625,
+      4.836880207061768
+    ]
+  },
+  "sizeXYZ": [
+    29.591028213500977,
+    27.41894817352295,
+    5.296880215406418
+  ],
+  "evaluatedTriangles": 245792,
+  "meshObjects": 2507,
+  "materials": [
+    "Clear warm architectural glazing",
+    "Muted blue court",
+    "Muted clay court",
+    "WarmLimestonePaver0",
+    "WarmLimestonePaver1",
+    "WarmLimestonePaver2",
+    "cream",
+    "floor",
+    "gray",
+    "leaf",
+    "leafDark",
+    "leafLight",
+    "petal",
+    "petalPink",
+    "rail",
+    "roof",
+    "seam",
+    "slide",
+    "soil",
+    "stone",
+    "tealCloth",
+    "trim",
+    "wood",
+    "woodDark",
+    "woodLight"
+  ],
+  "materialCount": 25,
+  "collections": {
+    "Architecture": {
+      "objects": 352,
+      "triangles": 70476
+    },
+    "Furniture": {
+      "objects": 60,
+      "triangles": 11280
+    },
+    "Interior": {
+      "objects": 2,
+      "triangles": 376
+    },
+    "Landscape": {
+      "objects": 1174,
+      "triangles": 54360
+    },
+    "Site": {
+      "objects": 782,
+      "triangles": 83944
+    },
+    "ThemeFacilities": {
+      "objects": 137,
+      "triangles": 25356
+    }
+  },
+  "recommendedPlatform": {
+    "shape": "circle",
+    "radius": 12.6,
+    "derivedFromActualContentRadius": 11.555891379140016,
+    "minimumOuterClearance": 1.0,
+    "radiusOver12": true,
+    "reviewBridgeArmsExcludedFromRadiusMeasurement": true,
+    "actualWorldNotChanged": true
+  },
+  "rooms": [
+    {
+      "name": "ModernYuanliStation",
+      "footprint": [
+        -5.9,
+        1.25,
+        5.6,
+        5.1
+      ],
+      "door": [
+        0,
+        1.25
+      ],
+      "peak": 4.470484297880061
+    }
+  ],
+  "npcReservations": [
+    {
+      "positionBlenderXYZ": [
+        3,
+        -2.4,
+        0.03
+      ],
+      "positionGLTFXYZ": [
+        3,
+        0.03,
+        2.4
+      ],
+      "bodyRadius": 0.35,
+      "reservationRadius": 0.65,
+      "playerStopBlenderXYZ": [
+        3,
+        -3.7,
+        0.03
+      ],
+      "interactionRadius": 1.4,
+      "implemented": false
+    }
+  ],
+  "npcClearanceChecks": [
+    {
+      "kind": "future_npc",
+      "position": [
+        3,
+        -2.4,
+        0.03
+      ],
+      "radius": 0.35,
+      "intersectingObjects": []
+    },
+    {
+      "kind": "player_stop",
+      "position": [
+        3,
+        -3.7,
+        0.03
+      ],
+      "radius": 0.33,
+      "intersectingObjects": []
+    }
+  ],
+  "reviewConnections": [
+    {
+      "angleDegrees": 190,
+      "width": 4.8,
+      "startRadius": 12.329316876852982,
+      "endRadius": 14.579316876852982,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 225,
+      "width": 4.8,
+      "startRadius": 12.329316876852982,
+      "endRadius": 14.579316876852982,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 278,
+      "width": 4.8,
+      "startRadius": 12.329316876852982,
+      "endRadius": 14.579316876852982,
+      "reviewOnly": true
+    },
+    {
+      "angleDegrees": 352,
+      "width": 4.8,
+      "startRadius": 12.329316876852982,
+      "endRadius": 14.579316876852982,
+      "reviewOnly": true
+    }
+  ],
+  "geometryAudit": {
+    "checkedMeshes": 2507,
+    "issues": [],
+    "note": "Per-component closed solids; intentional assembly intersections are not boolean-unioned. Not an engineering or runtime collision certification."
+  },
+  "complexityCap": {
+    "baselineEvaluatedTriangles": 381520,
+    "baselineGLBTriangles": 380999,
+    "baselineMaterials": 29,
+    "trianglesWithinCap": true,
+    "materialsWithinCap": true
+  },
+  "webExport": {
+    "sourceMeshObjects": 2507,
+    "meshPrimitives": 65,
+    "assemblyGroups": 11,
+    "triangles": 245780,
+    "textures": 0,
+    "method": "Evaluated original geometry batched per semantic assembly and material; corner normals preserved; original BLEND objects remain separate; no polygon decimation."
+  },
+  "blendSHA256": "395852b787155dcac62cbf6c834b7e9d0626c513c82e231163553ce2546ef52b",
+  "glbSHA256": "247656650f38d4f3cabe391497896db990ef1bccba8e3aa6d9f1a00b74e0d0ad",
+  "buildSeconds": 12.48
+}
