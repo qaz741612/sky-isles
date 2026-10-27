@@ -1,0 +1,50 @@
+{
+  "modelReadable": true,
+  "glbBytes": 798436,
+  "geometryGroups": 87,
+  "triangles": 28328,
+  "siteBoundsXZ": [
+    -10.164,
+    -11.17,
+    10.17,
+    8.649
+  ],
+  "siteSizeXZ": [
+    20.33,
+    19.82
+  ],
+  "siteFootprintArea": 333.79,
+  "playerHeight": 1.5,
+  "trainTopHeight": 6.208,
+  "platformHeight": 3.75,
+  "canopyHeight": 6.79,
+  "externalBridges": [
+    "S09",
+    "S10",
+    "S15",
+    "S18"
+  ],
+  "groundRoutesReachable": true,
+  "npcAreasClear": [
+    true,
+    true
+  ],
+  "foreignRoadOverlapAreas": {
+    "S05": 0.0,
+    "S08": 0.0,
+    "S11": 0.0,
+    "S02": 0.0,
+    "S07": 0.0
+  },
+  "familyIslandOverlapArea": 0.0,
+  "groundMainSpineOverlapArea": 0.0,
+  "underViaductClearanceHeight": 3.289,
+  "checksNotPerformed": [
+    "Three.js actual collisions and gliding/jump",
+    "actual in-engine roof occlusion and panning",
+    "mobile WebGL runtime",
+    "original Sky Isles GLB color/material shaders",
+    "upstairs navigable mesh and platform interactions"
+  ],
+  "artStatus": "Visual-geometry review only; final approved art reference NOT yet fully reproduced."
+}
