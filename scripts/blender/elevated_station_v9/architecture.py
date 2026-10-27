@@ -75,7 +75,8 @@ def hall(s):
  for y in [2.30,2.41,2.51]:s.beam('OwnRailIconSleeper',(-1.56,y,-2.545),(-1.32,y,-2.545),.018,'rail')
 
 def viaduct(s):
- s.use('Viaduct');s.box('ViaductMainDeck',(0,3.50,-7.66),(18.90,.422,3.36),'concrete',.045);s.box('FrontRecessedBand',(0,3.28,-6.02),(18.75,.12,.10),'shadowStone',.012);s.box('RearRecessedBand',(0,3.28,-9.29),(18.75,.12,.10),'shadowStone',.012)
+ s.use('Viaduct')
+ section=[(-9.34,3.31),(-7.20,3.31),(-7.20,3.711),(-5.98,3.711),(-5.98,3.289),(-7.20,3.289),(-7.20,3.02),(-9.34,3.02)];n=len(section);pts=[(x,y,z)for x in [-9.45,9.45]for z,y in section];faces=[tuple(reversed(range(n))),tuple(range(n,2*n)),*[(i,(i+1)%n,(i+1)%n+n,i+n)for i in range(n)]];s.mesh('ViaductRecessedRailDeck',pts,faces,'concrete');s.box('FrontRecessedBand',(0,3.28,-6.02),(18.75,.12,.10),'shadowStone',.012);s.box('RearRecessedBand',(0,3.00,-9.29),(18.75,.12,.10),'shadowStone',.012)
  for x in [-7.65,-2.55,2.55,7.65]:
   for z in [-8.79,-6.63]:
    s.box('TaperedPierFoot',(x,.17,z),(.77,.22,.83),'stone',.045);s.box('ViaductPier',(x,1.63,z),(.42,3.0,.48),'concrete',.045);s.box('PierCapital',(x,3.08,z),(.85,.34,.82),'concrete',.035)
@@ -89,12 +90,12 @@ def viaduct(s):
    # Extrusion along world Z. Front and back loops have consistent outward winding.
    p=[(x,y,za-.13)for x,y in poly]+[(x,y,za+.13)for x,y in poly];n=len(poly);f=[tuple(reversed(range(n))),tuple(range(n,2*n))]+[(i,(i+1)%n,(i+1)%n+n,i+n)for i in range(n)];s.mesh('LoadBearingArchFascia',p,f,'concrete')
  for x in [-5.10,0,5.10]:s.box('BridgeSoffitWarmLight',(x,3.20,-6.25),(1.8,.035,.075),'light',.008)
- s.use('Railway');s.box('RecessedBallast',(0,3.727,-8.20),(18.9,.07,1.67),'shadowStone',.012)
- for i in range(59):s.box('IndividualTrackSleeper',(-9.20+i*.317,3.80,-8.20),(.10,.07,1.55),'woodDark',.008)
- for z in [-8.71,-7.69]:s.box('SteelRailWeb',(0,3.862,z),(18.90,.075,.065),'steel',.008);s.box('RailPolishedHead',(0,3.909,z),(18.90,.023,.085),'roofEdge',.005)
+ s.use('Railway');s.box('RecessedBallast',(0,3.347,-8.20),(18.9,.07,1.67),'shadowStone',.012)
+ for i in range(59):s.box('IndividualTrackSleeper',(-9.20+i*.317,3.42,-8.20),(.10,.07,1.55),'woodDark',.008)
+ for z in [-8.71,-7.69]:s.box('SteelRailWeb',(0,3.482,z),(18.90,.075,.065),'steel',.008);s.box('RailPolishedHead',(0,3.529,z),(18.90,.023,.085),'roofEdge',.005)
  s.box('PlatformWalkingSurface',(0,3.731,-6.56),(18.65,.038,1.10),'cream',.012)
  for i in range(91):s.box('PlatformTactileDashes',(-9.15+i*.20,3.759,-7.03),(.13,.018,.13),'yellow',.005)
- s.railing('PlatformFrontGuard',LineString([(-8.9,-6.05),(8.9,-6.05)]).difference(rect(-7.15,-6.2,-5.95,-5.9).union(rect(7.05,-6.2,8.35,-5.9))),3.75,1.0,postSpacing=.98);s.railing('PlatformRearGuard',LineString([(-9.25,-9.26),(9.25,-9.26)]),3.75,.95,postSpacing=.98)
+ s.railing('PlatformFrontGuard',LineString([(-8.9,-6.05),(8.9,-6.05)]).difference(rect(-7.15,-6.2,-5.95,-5.9).union(rect(7.05,-6.2,8.35,-5.9))),3.75,1.0,postSpacing=.98);s.railing('PlatformRearGuard',LineString([(-9.25,-9.26),(9.25,-9.26)]),3.31,.95,postSpacing=.98)
  s.proxy('PlatformWalk','platform',rect(-9.3,-7.1,9.3,-6.0),3.65,3.75,'walkable')
 
 def canopy(s):
@@ -102,7 +103,7 @@ def canopy(s):
  # Layered long low canopy. Opaque eaves flank a real glazed roof strip.
  for x in [-8.7,-5.8,-2.9,0,2.9,5.8,8.7]:
   for z in [-9.18,-6.08]:
-   s.box('CanopySteelColumn',(x,5.17,z),(.095,2.84,.11),'steel',.012);s.box('ColumnBaseShoe',(x,3.85,z),(.19,.16,.21),'roofEdge',.015)
+   s.box('CanopySteelColumn',(x,4.95 if z<-8 else 5.17,z),(.095,3.28 if z<-8 else 2.84,.11),'steel',.012);s.box('ColumnBaseShoe',(x,3.41 if z<-8 else 3.85,z),(.19,.16,.21),'roofEdge',.015)
    s.beam('CanopyKneeBrace',(x,6.17,z),(x+.43,6.55,z+(.32 if z<-8 else-.32)),.075,'steel')
   s.box('CanopyCrossRafter',(x,6.53,-7.64),(.13,.17,3.75),'steel',.01)
  for z in [-9.39,-8.52,-7.22,-5.82]:s.box('RoofLongitudinalRib',(0,6.65,z),(19.3,.15,.11),'steel',.012)
@@ -178,9 +179,14 @@ def train(s):
     xx=lo+.53+j*(hi-lo-1.10)/10
     door=j in [2,7]
     if door:
-     s.box('TrainDoorFrame',(xx,5.17,zz),(.60,1.13,.045),'roofEdge',.035,p);s.box('TrainDoorPanel',(xx,4.95,zz+.012 if zz>z else zz-.012),(.52,.66,.022),'trainWhite',.025,p);s.box('DoorWindow',(xx,5.45,zz+.027 if zz>z else zz-.027),(.41,.39,.025),'trainGlass',.055,p);s.box('DoorJoint',(xx,5.18,zz+.043 if zz>z else zz-.043),(.018,1.10,.018),'steel',.002,p)
+     s.box('DoorHeader',(xx,5.84,zz),(.60,.075,.08),'roofEdge',.012,p);
+     for dx in [-.28,.28]:s.box('TrainDoorJamb',(xx+dx,5.07,zz),(.045,1.62,.08),'roofEdge',.012,p)
+     s.box('TrainDoorPanel',(xx,4.63,zz+.012 if zz>z else zz-.012),(.52,.70,.022),'trainWhite',.025,p);s.box('DoorWindow',(xx,5.37,zz+.027 if zz>z else zz-.027),(.45,.70,.025),'trainGlass',.055,p);s.box('DoorJoint',(xx,5.07,zz+.043 if zz>z else zz-.043),(.018,1.62,.018),'steel',.002,p)
     else:
-     s.box('TrainWindowRecess',(xx,5.30,zz),(.63,.79,.055),'steel',.075,p);s.box('ActualTrainWindow',(xx,5.30,zz+.031 if zz>z else zz-.031),(.54,.69,.028),'trainGlass',.065,p)
+     
+     for dx in [-.30,.30]:s.box('TrainWindowSideFrame',(xx+dx,5.30,zz),(.055,.79,.055),'steel',.012,p)
+     for yy in [4.93,5.67]:s.box('TrainWindowTopBottom',(xx,yy,zz),(.63,.055,.055),'steel',.012,p)
+     s.box('ActualTrainWindow',(xx,5.30,zz+.031 if zz>z else zz-.031),(.54,.69,.028),'trainGlass',.065,p)
     s.box('TrainWindowPillar',(xx+.37,5.34,zz),(.09,1.00,.11),'trainWhite',.018,p)
    s.box('ContinuousWindowHeader',((lo+hi)/2,5.84,zz),(hi-lo-.28,.21,.12),'trainWhite',.035,p)
   s.box('RoundedCarRoof',((lo+hi)/2,5.99,z),(hi-lo-.04,.31,1.61),'trainWhite',.145,p)
@@ -196,9 +202,9 @@ def train(s):
  p=parent;xc=8.93;z=-8.20
  profile=[(-.72,4.40),(-.79,4.65),(-.77,5.58),(-.62,5.96),(-.39,6.10),(.39,6.10),(.62,5.96),(.77,5.58),(.79,4.65),(.72,4.40)]
  pts=[]
- for x,f in [(8.55,1),(8.90,.98),(9.14,.80)]:pts.extend((x,y,z+zz*f)for zz,y in profile)
+ for x,f in [(8.55,1),(8.90,.995),(9.14,.95)]:pts.extend((x,y,z+zz*f)for zz,y in profile)
  n=len(profile)
- for x,f in [(8.55,1),(8.90,.98),(9.14,.80)]:pts.extend((x,5.25+(y-5.25)*.94,z+zz*f*.94)for zz,y in profile)
+ for x,f in [(8.55,1),(8.90,.995),(9.14,.95)]:pts.extend((x,5.25+(y-5.25)*.94,z+zz*f*.94)for zz,y in profile)
  faces=[]
  for k in range(2):
   for j in range(n):
@@ -222,8 +228,9 @@ def train(s):
    a=list(ring.coords)
    for (zz,yy),(z2,y2)in zip(a,a[1:]):ff.append((idx(zz,yy,x0),idx(z2,y2,x0),idx(z2,y2,x1),idx(zz,yy,x1)))
   return s.mesh(name,verts,ff,mat,p)
- opening=Polygon([(-.52,5.02),(.52,5.02),(.45,5.79),(-.45,5.79)]);outer=Polygon([(zz*.80,yy)for zz,yy in profile]);cab_prism('CabNoseFrameWithRealOpening',outer.difference(opening),9.14,9.19,'trainWhite');cab_prism('CabWindowGasket',opening.buffer(.045).difference(opening),9.19,9.215,'rubber');cab_prism('CabActualWindscreen',opening,9.20,9.22,'trainGlass');s.box('CabDashboard',(8.82,4.96,z),(.49,.10,1.1),'navy',.03,p)
+ opening=Polygon([(-.61,5.02),(.61,5.02),(.54,5.79),(-.54,5.79)]).buffer(.08).buffer(-.08);outer=Polygon([(zz*.95,yy)for zz,yy in profile]);cab_prism('CabNoseFrameWithRealOpening',outer.difference(opening),9.14,9.19,'trainWhite');cab_prism('CabWindowGasket',opening.buffer(.045).difference(opening),9.19,9.215,'rubber');cab_prism('CabActualWindscreen',opening,9.20,9.22,'trainGlass');s.box('CabDashboard',(8.82,4.96,z),(.49,.10,1.1),'navy',.03,p)
  for zz in [-.48,.48]:s.ball('CabHeadlight',(9.25,4.82,z+zz),(.035,.075,.10),'light',2,p)
  s.box('CabBlueBelt',(9.17,4.57,z),(.08,.16,1.25),'trainBlue',.06,p);s.box('FrontCoupler',(9.29,4.27,z),(.28,.13,.21),'rubber',.025,p)
  s.box('IntercarGangway',(-.025,5.15,z),(.31,1.57,1.05),'rubber',.055,p)
- s.proxy('TrainSweptStaticEnvelope','train',rect(-8.8,-9.05,9.45,-7.35),3.92,6.29,'static_display_no_riding')
+ s.parent.location.z=-.38
+ s.proxy('TrainSweptStaticEnvelope','train',rect(-8.8,-9.05,9.45,-7.35),3.54,5.91,'static_display_no_riding')

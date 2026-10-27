@@ -113,7 +113,7 @@ class Station:
    for zz in [-width*.39,width*.39]:self.box(n+'_Leg',(xx,y+.23,zz),(.055,.46,.065),'rail',.008,p)
   for yy in [.76,.93]:self.box(n+'_Back',(-.25,y+yy,0),(.06,.12,width),'wood',.012,p)
   for zz in [-width*.38,width*.38]:self.beam(n+'_Upright',(-.25,y+.4,zz),(-.25,y+1.02,zz),.045,'rail',p)
-  p.location=W((x,0,z));p.rotation_euler.z=yaw;foot=rect(x-.35,z-width/2,x+.35,z+width/2);self.proxy(n,'furniture',foot,.06,1.05)
+  p.location=W((x,0,z));p.rotation_euler.z=yaw;from shapely.affinity import rotate;foot=rotate(rect(x-.35,z-width/2,x+.35,z+width/2),-math.degrees(yaw),origin=(x,z));self.proxy(n,'furniture',foot,.06,1.05)
  def tree(self,n,x,z,h=3.3,r=1.05):
   self.use('Gardens');p=self.group(n);self.cyl(n+'_Trunk',(x,h*.30,z),.14,h*.60,'woodDark',12,p)
   rng=self.rng

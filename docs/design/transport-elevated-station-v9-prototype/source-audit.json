@@ -1,0 +1,354 @@
+{
+  "sourceBlendSHA256": "3dfa5fff234e7edba2ce1d6bbe0aa5b4d5cab7601fc3628a63e7afa5c8f52487",
+  "sourceUnchangedAfterInspection": true,
+  "allClosedPositiveVolume": true,
+  "meshObjectsChecked": 8948,
+  "evaluatedTriangles": 530176,
+  "issues": [],
+  "actualLowGeometryNPCIntrusions": [
+    [],
+    []
+  ],
+  "wheelRail": {
+    "wheelBottomWorldY": [
+      3.5409996509552,
+      3.5409996509552,
+      3.5409996509552,
+      3.5409996509552,
+      3.5409996509552,
+      3.5409996509552,
+      3.5409996509552,
+      3.5409996509552
+    ],
+    "railHeadWorldY": [
+      3.5404999256134033,
+      3.5404999256134033
+    ],
+    "maximumMismatch": 0.000499725341796875
+  },
+  "componentBounds": {
+    "Canopy": {
+      "minWorldXYZ": [
+        -9.869999885559082,
+        3.309999942779541,
+        -9.539999961853027
+      ],
+      "maxWorldXYZ": [
+        9.869999885559082,
+        6.860000133514404,
+        -5.639999866485596
+      ],
+      "sizeWorldXYZ": [
+        19.739999771118164,
+        3.5500001907348633,
+        3.9000000953674316
+      ]
+    },
+    "Hall": {
+      "minWorldXYZ": [
+        -7.125,
+        0.03999999910593033,
+        -6.079999923706055
+      ],
+      "maxWorldXYZ": [
+        7.125,
+        3.0350000858306885,
+        -2.4749999046325684
+      ],
+      "sizeWorldXYZ": [
+        14.25,
+        2.995000086724758,
+        3.6050000190734863
+      ]
+    },
+    "TrainRollingStock": {
+      "minWorldXYZ": [
+        -8.680000305175781,
+        3.5409996509552,
+        -9.052000045776367
+      ],
+      "maxWorldXYZ": [
+        9.430000305175781,
+        5.888000011444092,
+        -7.3480000495910645
+      ],
+      "sizeWorldXYZ": [
+        18.110000610351562,
+        2.3470003604888916,
+        1.7039999961853027
+      ]
+    },
+    "VerticalCirculation": {
+      "minWorldXYZ": [
+        -9.154999732971191,
+        0.0,
+        -7.333499908447266
+      ],
+      "maxWorldXYZ": [
+        8.675000190734863,
+        4.997499942779541,
+        -2.6750001907348633
+      ],
+      "sizeWorldXYZ": [
+        17.829999923706055,
+        4.997499942779541,
+        4.658499717712402
+      ]
+    },
+    "Viaduct": {
+      "minWorldXYZ": [
+        -9.449999809265137,
+        0.06000000238418579,
+        -9.34000015258789
+      ],
+      "maxWorldXYZ": [
+        9.449999809265137,
+        3.7109999656677246,
+        -5.960000038146973
+      ],
+      "sizeWorldXYZ": [
+        18.899999618530273,
+        3.650999963283539,
+        3.380000114440918
+      ]
+    }
+  },
+  "packedImages": [
+    {
+      "name": "OriginalWarmWoodGrain",
+      "packed": true,
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "cameras": [
+    {
+      "name": "hero",
+      "viewport": [
+        1440,
+        1080
+      ],
+      "projection": "ORTHO",
+      "wholeAssetInFrame": true,
+      "actualPartsWithinFrame": {
+        "Canopy": true,
+        "Hall": true,
+        "TrainRollingStock": true,
+        "VerticalCirculation": true,
+        "Viaduct": true
+      },
+      "minNDC": [
+        -0.7633392045462012,
+        -0.6235073523897703
+      ],
+      "maxNDC": [
+        0.9169146907427843,
+        0.8840723770907779
+      ],
+      "simulationOnly": false
+    },
+    {
+      "name": "front",
+      "viewport": [
+        1200,
+        900
+      ],
+      "projection": "ORTHO",
+      "wholeAssetInFrame": true,
+      "actualPartsWithinFrame": {
+        "Canopy": true,
+        "Hall": true,
+        "TrainRollingStock": true,
+        "VerticalCirculation": true,
+        "Viaduct": true
+      },
+      "minNDC": [
+        -0.6883395377020207,
+        -0.4171583999313502
+      ],
+      "maxNDC": [
+        0.688716496789965,
+        0.5384223529710718
+      ],
+      "simulationOnly": false
+    },
+    {
+      "name": "back",
+      "viewport": [
+        1200,
+        900
+      ],
+      "projection": "ORTHO",
+      "wholeAssetInFrame": true,
+      "actualPartsWithinFrame": {
+        "Canopy": true,
+        "Hall": true,
+        "TrainRollingStock": true,
+        "VerticalCirculation": true,
+        "Viaduct": true
+      },
+      "minNDC": [
+        -0.6887163034257338,
+        -0.41200537556111416
+      ],
+      "maxNDC": [
+        0.6883397695652714,
+        0.3716711587850797
+      ],
+      "simulationOnly": false
+    },
+    {
+      "name": "left",
+      "viewport": [
+        1200,
+        900
+      ],
+      "projection": "ORTHO",
+      "wholeAssetInFrame": true,
+      "actualPartsWithinFrame": {
+        "Canopy": true,
+        "Hall": true,
+        "TrainRollingStock": true,
+        "VerticalCirculation": true,
+        "Viaduct": true
+      },
+      "minNDC": [
+        -0.6730873325953038,
+        -0.41836446353721324
+      ],
+      "maxNDC": [
+        0.6721092729474316,
+        0.5634968122608663
+      ],
+      "simulationOnly": false
+    },
+    {
+      "name": "right",
+      "viewport": [
+        1200,
+        900
+      ],
+      "projection": "ORTHO",
+      "wholeAssetInFrame": true,
+      "actualPartsWithinFrame": {
+        "Canopy": true,
+        "Hall": true,
+        "TrainRollingStock": true,
+        "VerticalCirculation": true,
+        "Viaduct": true
+      },
+      "minNDC": [
+        -0.6722632360655215,
+        -0.4182245066217997
+      ],
+      "maxNDC": [
+        0.6730567522248633,
+        0.5634968122608663
+      ],
+      "simulationOnly": false
+    },
+    {
+      "name": "top",
+      "viewport": [
+        1440,
+        1080
+      ],
+      "projection": "ORTHO",
+      "wholeAssetInFrame": true,
+      "actualPartsWithinFrame": {
+        "Canopy": true,
+        "Hall": true,
+        "TrainRollingStock": true,
+        "VerticalCirculation": true,
+        "Viaduct": true
+      },
+      "minNDC": [
+        -0.6883395377020207,
+        -0.8692549651055188
+      ],
+      "maxNDC": [
+        0.688716496789965,
+        0.9183261473403945
+      ],
+      "simulationOnly": false
+    },
+    {
+      "name": "train-side",
+      "viewport": [
+        1440,
+        1080
+      ],
+      "projection": "ORTHO",
+      "wholeAssetInFrame": false,
+      "actualPartsWithinFrame": {
+        "Canopy": true,
+        "Hall": true,
+        "TrainRollingStock": true,
+        "VerticalCirculation": true,
+        "Viaduct": true
+      },
+      "minNDC": [
+        -1.3150519068917637,
+        -0.9238307708923714
+      ],
+      "maxNDC": [
+        0.6806202651733224,
+        0.44819174023261277
+      ],
+      "simulationOnly": false
+    },
+    {
+      "name": "player-desktop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "projection": "PERSP",
+      "wholeAssetInFrame": true,
+      "actualPartsWithinFrame": {
+        "Canopy": true,
+        "Hall": true,
+        "TrainRollingStock": true,
+        "VerticalCirculation": true,
+        "Viaduct": true
+      },
+      "minNDC": [
+        -0.6868355338608146,
+        -0.7361661761015151
+      ],
+      "maxNDC": [
+        0.7282868010299923,
+        0.9258548722331948
+      ],
+      "simulationOnly": true
+    },
+    {
+      "name": "player-mobile",
+      "viewport": [
+        720,
+        1280
+      ],
+      "projection": "PERSP",
+      "wholeAssetInFrame": false,
+      "actualPartsWithinFrame": {
+        "Canopy": false,
+        "Hall": true,
+        "TrainRollingStock": false,
+        "VerticalCirculation": false,
+        "Viaduct": false
+      },
+      "minNDC": [
+        -1.3222708859413461,
+        -0.4829620278482205
+      ],
+      "maxNDC": [
+        1.3856910303141439,
+        0.7526409623191721
+      ],
+      "simulationOnly": true
+    }
+  ],
+  "scope": "Offline geometry/contact/framing only. Strict player cameras are simulations of original spawn plus target offset 1.5; not actual gameplay. A crop in strict player view is reported, never hidden by changing required parameters."
+}

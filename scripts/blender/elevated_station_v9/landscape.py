@@ -16,8 +16,8 @@ def landscape(s):
  # Additional high-level terrace planting, not on railway or at the lift doorway.
  s.use('Gardens')
  for x,z in [(-8.65,-9.00),(8.65,-9.0)]:
-  p=s.group('UpperTerracePlanter');s.box('UpperPlanterBase',(x,4.00,z),(.70,.43,.42),'cream',.035,p)
-  for i in range(8):s.ball('UpperGardenLeaves',(x-.25+(i%4)*.16,4.32+(i//4)*.1,z),(.15,.16,.14),['leaf','leafDark','leafLight'][i%3],1,p)
+  p=s.group('UpperTerracePlanter');s.box('UpperPlanterBase',(x,3.56,z),(.70,.43,.42),'cream',.035,p)
+  for i in range(8):s.ball('UpperGardenLeaves',(x-.25+(i%4)*.16,3.88+(i//4)*.1,z),(.15,.16,.14),['leaf','leafDark','leafLight'][i%3],1,p)
  # Lighting and furnishings remain outside all reserved movement bands.
  s.use('Furniture')
  for x,z in [(-6.0,5.3),(6.0,5.3),(-9.4,-3.5),(8.75,-6.6)]:

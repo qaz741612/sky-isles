@@ -1,0 +1,245 @@
+{
+  "allOfflineChecksPassed": true,
+  "sourceBlendSHA256": "3dfa5fff234e7edba2ce1d6bbe0aa5b4d5cab7601fc3628a63e7afa5c8f52487",
+  "siteArea": 346.3553364814237,
+  "referenceSiteArea": 333.78727266705187,
+  "gardenTerraceProposalAddedArea": 12.56807958819447,
+  "siteBoundsXZ": [
+    -10.164034947245073,
+    -11.169999876332167,
+    10.169976266556437,
+    8.648725054868512
+  ],
+  "NPCSquares": [
+    {
+      "squareXZ": [
+        -5.2,
+        2.43,
+        -2.2,
+        5.43
+      ],
+      "intersectingGroundShells": [],
+      "passed": true
+    },
+    {
+      "squareXZ": [
+        2.15,
+        2.43,
+        5.15,
+        5.43
+      ],
+      "intersectingGroundShells": [],
+      "passed": true
+    }
+  ],
+  "fullWidthEastWestSpineIntersections": [],
+  "groundNavigation": {
+    "method": "0.12 four-neighbour grid on actual proposed site minus shell polygons expanded by 0.33 player radius. Offline 2D feasibility, not runtime physics.",
+    "targets": [
+      {
+        "target": "mobile_observation_walkway",
+        "pointXZ": [
+          0,
+          7.5
+        ],
+        "reachable": true
+      },
+      {
+        "target": "spawn",
+        "pointXZ": [
+          0,
+          3.5
+        ],
+        "reachable": true
+      },
+      {
+        "target": "lobby",
+        "pointXZ": [
+          0,
+          -2.45
+        ],
+        "reachable": true
+      },
+      {
+        "target": "west_stair_public_approach_before_step",
+        "pointXZ": [
+          -7.8,
+          -2.4
+        ],
+        "reachable": true
+      },
+      {
+        "target": "east_lift_approach",
+        "pointXZ": [
+          7.7,
+          -2.8
+        ],
+        "reachable": true
+      },
+      {
+        "target": "NPC_west",
+        "pointXZ": [
+          -3.7,
+          3.93
+        ],
+        "reachable": true
+      },
+      {
+        "target": "NPC_east",
+        "pointXZ": [
+          3.65,
+          3.93
+        ],
+        "reachable": true
+      },
+      {
+        "target": "NPC_west_stop",
+        "pointXZ": [
+          -3.7,
+          2.75
+        ],
+        "reachable": true
+      },
+      {
+        "target": "NPC_east_stop",
+        "pointXZ": [
+          3.65,
+          2.75
+        ],
+        "reachable": true
+      },
+      {
+        "target": "west_rest",
+        "pointXZ": [
+          -4.7,
+          4.1
+        ],
+        "reachable": true
+      },
+      {
+        "target": "east_rest",
+        "pointXZ": [
+          4.7,
+          4.1
+        ],
+        "reachable": true
+      },
+      {
+        "target": "S09",
+        "pointXZ": [
+          -7.578654484742904,
+          -0.43306597055673746
+        ],
+        "reachable": true
+      },
+      {
+        "target": "S10",
+        "pointXZ": [
+          7.603431864833284,
+          0.35364799371317607
+        ],
+        "reachable": true
+      },
+      {
+        "target": "S15",
+        "pointXZ": [
+          -1.549589494485411,
+          7.435123650898562
+        ],
+        "reachable": true
+      },
+      {
+        "target": "S18",
+        "pointXZ": [
+          0.571049397870577,
+          7.573060727428029
+        ],
+        "reachable": true
+      }
+    ],
+    "connectedCells": 10297
+  },
+  "fourUnchangedBridgePorts": [
+    {
+      "id": "S09",
+      "centrelineWorldXZ": [
+        -8.612107369026027,
+        -0.49212042108720166
+      ],
+      "width": 4.8,
+      "fenceInMouthArea": 0.0
+    },
+    {
+      "id": "S10",
+      "centrelineWorldXZ": [
+        8.640263482765095,
+        0.40187272012860914
+      ],
+      "width": 4.8,
+      "fenceInMouthArea": 0.0
+    },
+    {
+      "id": "S15",
+      "centrelineWorldXZ": [
+        -1.7608971528243307,
+        8.449004148748365
+      ],
+      "width": 4.8,
+      "fenceInMouthArea": 0.0
+    },
+    {
+      "id": "S18",
+      "centrelineWorldXZ": [
+        0.6489197703074738,
+        8.60575082662276
+      ],
+      "width": 4.8,
+      "fenceInMouthArea": 0.0
+    }
+  ],
+  "foreignRoadOverlapAreas": {
+    "S01": 0.0,
+    "S02": 0.0,
+    "S03": 0.0,
+    "S04": 0.0,
+    "S05": 0.0,
+    "S06": 0.0,
+    "S07": 0.0,
+    "S08": 0.0,
+    "S11": 0.0,
+    "S12": 0.0,
+    "S13": 0.0,
+    "S14": 0.0,
+    "S16": 0.0,
+    "S17": 0.0,
+    "S19": 0.0,
+    "S20": 0.0,
+    "S21": 0.0,
+    "S22": 0.0
+  },
+  "familyOverlapArea": 0.0,
+  "sourcePreservation": [
+    {
+      "path": "src/data/yuan-plan.json",
+      "sha256": "8cba1949b2cf59745595d20c92c3859a410bfcd5fc8fbb84ba90674cc6dc3cdb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/parent-child-blender-refinement-v2/parent-child-centre.blend",
+      "sha256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/parent-child-blender-refinement-v2/parent-child-centre.glb",
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44",
+      "unchanged": true
+    }
+  ],
+  "gameSourceChanged": false,
+  "knownLimits": [
+    "Two-dimensional navigation does not certify actual capsule collision, jumping, head clearance, stair stepping, elevator operation or game camera occlusion.",
+    "Upper stair flight/landing/bridge geometry exists; vertical traversal needs game integration.",
+    "Static train not boardable; no NPC model or dialogue system.",
+    "Terrace proposal is in standalone model only, never written into the approved world layout."
+  ]
+}

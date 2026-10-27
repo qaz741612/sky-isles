@@ -2,7 +2,16 @@
 import bpy,sys,os,json,hashlib,time,argparse,math
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/design/transport-elevated-station-v9-prototype';p=argparse.ArgumentParser();p.add_argument('--only');p.add_argument('--draft',action='store_true');a=p.parse_args(sys.argv[sys.argv.index('--')+1:]if'--'in sys.argv else sys.argv[1:]);sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=OUT/'transport-station-v9.blend';h=sha(source);bpy.ops.wm.open_mainfile(filepath=str(source));scene=bpy.context.scene;scene.render.threads_mode='FIXED';scene.render.threads=2;file=OUT/'render-record.json';records=json.loads(file.read_text())['views']if file.exists()else[]
-views=[('hero',1440,1080,64),('front',1200,900,40),('back',1200,900,40),('left',1200,900,40),('right',1200,900,40),('top',1440,1080,48),('train-side',1440,1080,48),('player-desktop',1440,900,48),('player-mobile',720,1280,48)]
+# Supplementary existing-zoom simulation, separate from the required default dist22 portrait.
+from mathutils import Vector
+mobile=bpy.data.objects['player-mobile'];extra=bpy.data.objects.new('player-mobile-zoom28',mobile.data.copy());scene.collection.objects.link(extra);target=Vector((0,-3.5,2.0));extra.location=target+(mobile.location-target).normalized()*28;extra.rotation_euler=(target-extra.location).to_track_quat('-Z','Y').to_euler()
+for k in mobile.keys():extra[k]=mobile[k]
+extra['distance']=28;extra['usesExistingUserZoomRangeOnly']=True
+# Existing controls can also show the whole station from the arrival walkway: explicit non-default pose.
+arrival=bpy.data.objects.new('player-mobile-arrival-overview',mobile.data.copy());scene.collection.objects.link(arrival);target=Vector((0,-7.5,2.0));arrival.location=target+Vector((0,-math.cos(.67)*28,math.sin(.67)*28));arrival.rotation_euler=(target-arrival.location).to_track_quat('-Z','Y').to_euler()
+for k in mobile.keys():arrival[k]=mobile[k]
+arrival['distance']=28;arrival['yaw']=0;arrival['targetWorldXYZ']=[0,2,7.5];arrival['usesExistingUserZoomAndOrbitOnly']=True
+views=[('hero',1440,1080,64),('front',1200,900,40),('back',1200,900,40),('left',1200,900,40),('right',1200,900,40),('top',1440,1080,48),('train-side',1440,1080,48),('player-desktop',1440,900,48),('player-mobile',720,1280,48),('player-mobile-zoom28',720,1280,48),('player-mobile-arrival-overview',720,1280,48)]
 for name,w,hgt,samples in views:
  if a.only and name not in a.only.split(','):continue
  cam=bpy.data.objects[name];path=OUT/'renders'/(name+'.png');old=next((v for v in records if v['view']==name),None)

@@ -1,0 +1,43 @@
+{
+  "allPassed": true,
+  "results": [
+    {
+      "mode": "showcase",
+      "sha256": "f7f9a361d35597d9d3c179a16682bae56f879f0b56ebb0e48efc0e8d81462022",
+      "bytes": 41846748,
+      "triangles": 529952,
+      "vertices": 1193509,
+      "meshPrimitives": 90,
+      "materials": 33,
+      "embeddedImages": 1,
+      "textures": 2,
+      "externalImages": 0,
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "extensions": [
+        "KHR_materials_transmission",
+        "KHR_materials_emissive_strength",
+        "KHR_materials_ior"
+      ]
+    },
+    {
+      "mode": "game-candidate",
+      "sha256": "66b7a99c1a97fdfb84d284e668309c85888380f8dbdfed346bc2f54c889d83e8",
+      "bytes": 18367588,
+      "triangles": 210952,
+      "vertices": 526037,
+      "meshPrimitives": 90,
+      "materials": 33,
+      "embeddedImages": 1,
+      "textures": 2,
+      "externalImages": 0,
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "extensions": [
+        "KHR_materials_transmission",
+        "KHR_materials_emissive_strength",
+        "KHR_materials_ior"
+      ]
+    }
+  ]
+}
