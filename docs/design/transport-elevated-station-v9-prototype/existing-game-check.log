@@ -1,0 +1,87 @@
+
+> sky-isles@1.0.0 check
+> npm run test && npm run lint && npm run build
+
+
+> sky-isles@1.0.0 test
+> node --test test/*.test.js
+
+✔ actual station roof no longer blocks the local target; other seven islands are unaffected (69.181675ms)
+✔ portrait camera has its own framing within controller zoom limits (0.735646ms)
+✔ ground jump then double jump, but no third jump (1.659116ms)
+✔ falling off a ledge still allows one air jump (but only one) (0.141393ms)
+✔ coyote time allows a jump just after leaving the ground (0.102765ms)
+✔ glide caps fall speed while jump is held (4.307139ms)
+✔ without holding jump, fall speed keeps growing past the glide cap (0.364529ms)
+✔ glide boosts forward speed (0.412801ms)
+✔ respawn triggers below the kill plane (0.197467ms)
+✔ gravity integration is stable and downward (0.11247ms)
+✔ orthographic panorama fits every actual footprint corner in landscape and portrait (2.188682ms)
+✔ transition is finite, pauses at the true ortho lens and returns to the saved camera pose (4.545597ms)
+✔ resizing during overview restores the current aspect without a final lens jump (0.408094ms)
+S01 PASS
+S02 PASS
+S04 PASS
+S05 PASS
+{"result":[{"gate":"S01","bidirectional":true,"respawns":0},{"gate":"S02","bidirectional":true,"respawns":0},{"gate":"S04","bidirectional":true,"respawns":0},{"gate":"S05","bidirectional":true,"respawns":0}],"ticks":5613,"runtimeMeshes":60,"barriers":3746}
+✔ approved GLB remains byte-identical; four actual gates and all destinations work with the real unchanged player (3335.628084ms)
+✔ seven distinct authored places use bounded material batches, explicit solids and no decoration ground colliders (129.868102ms)
+✔ all scenery preserves the 3.9-wide player-centre corridor along every fixed B route (444.507726ms)
+✔ every island has independent exposed union edges and an accessible future NPC reservation (73.801385ms)
+✔ retained chime highlight uses a small geometric ring, not an opaque sprite square (5.646924ms)
+✔ chime definitions are unique pentatonic notes with colors and symbols (1.750302ms)
+✔ correct full order opens the portal (0.255254ms)
+✔ wrong note resets progress (4.106968ms)
+✔ playing a duplicate note mid-sequence counts as wrong and resets (0.137116ms)
+✔ partial sequences do not open the portal (0.116555ms)
+✔ after the portal opens, further plays are replays and keep state (0.161714ms)
+✔ music layers grow one per unlocked chime (0.18611ms)
+✔ mulberry32 is deterministic for the same seed (1.287537ms)
+✔ different seeds produce different sequences (0.27279ms)
+✔ Rng helpers stay in range (1.643122ms)
+✔ Rng pick returns items from the list deterministically (0.21282ms)
+✔ supplied GLB is unchanged; full station architecture, canopy and lettering retain original materials (55.216628ms)
+✔ station fits radius 9 without changing source proportions; original doorway clears the unchanged player (20.406727ms)
+✔ retained animated train swept volume never intersects any actual imported station triangle (52.112239ms)
+✔ actual GLB lintel and canopy undersides stop rising heads without changing movement outside the station (34.680918ms)
+✔ transport stays home, bounded north train, low material batches and no extra lights (69.282657ms)
+✔ all visible island safety segments block either direction and southern shared gate has no fence (37.808214ms)
+✔ NPC reservation, interaction stop and approach stay outside physical solids (31.986765ms)
+✔ full 4.8-wide home approaches keep a 3.9-wide player-centre band unobstructed (128.229342ms)
+✔ every actual home structure, column, culture base, viewing seat and rail blocks swept crossing (39.070181ms)
+✔ compound facade collision protects the actual front and side woven surfaces, not only the cream wall (69.635393ms)
+✔ approved handwritten graph has 21 connected nodes, 22 real paths and eight distinct islands (1.884835ms)
+✔ actual Player walks every route in both directions without jumping dt=0.016666666666666666 (1925.687539ms)
+✔ actual Player walks every route in both directions without jumping dt=0.05 (814.964639ms)
+✔ guards prevent high-speed horizontal crossing from either side, including endpoints (128.5367ms)
+✔ released stick decelerates to rest quickly, with a bounded stopping distance (0.228223ms)
+✔ every actual outer rail blocks crossing and matches rendered guard coordinates (119.749291ms)
+✔ all actual collision triangles have finite horizontal surfaces and <=10% grade (78.936649ms)
+✔ near-zero X movement never falls through a cylinder cap triangle seam (118.119049ms)
+✔ every ordered junction turn stays walkable with actual transport decks present (2094.608166ms)
+✔ all six covered policy places support an actual falling Player; the open park pergola has no fake roof (211.072333ms)
+✔ expanded islands retain the approved B centres, exact curves and 4.8 width without repeated scaling (14.885812ms)
+ℹ tests 50
+ℹ suites 0
+ℹ pass 50
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11364.749797
+
+> sky-isles@1.0.0 lint
+> eslint src test vite.config.js eslint.config.js playwright.config.js
+
+
+> sky-isles@1.0.0 build
+> vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 38 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   14.90 kB │ gzip:   4.42 kB
+dist/assets/index-9F6Uh_WJ.js  2,063.03 kB │ gzip: 426.07 kB │ map: 3,317.84 kB
+✓ built in 2.36s

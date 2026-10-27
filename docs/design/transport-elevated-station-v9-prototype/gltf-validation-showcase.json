@@ -2,7 +2,7 @@
   "uri": "transport-station-v9-showcase.glb",
   "mimeType": "model/gltf-binary",
   "validatorVersion": "2.0.0-dev.3.10",
-  "validatedAt": "2026-10-27T14:19:01.566Z",
+  "validatedAt": "2026-10-27T14:53:10.534Z",
   "issues": {
     "numErrors": 0,
     "numWarnings": 0,
@@ -535,7 +535,7 @@
         "pointer": "/buffers/0",
         "mimeType": "application/gltf-buffer",
         "storage": "glb",
-        "byteLength": 41767664
+        "byteLength": 42533624
       },
       {
         "pointer": "/images/0",
@@ -558,8 +558,8 @@
     "hasTextures": true,
     "hasDefaultScene": true,
     "drawCallCount": 90,
-    "totalVertexCount": 1193509,
-    "totalTriangleCount": 529952,
+    "totalVertexCount": 1215013,
+    "totalTriangleCount": 540480,
     "maxUVs": 1,
     "maxInfluences": 0,
     "maxAttributes": 3

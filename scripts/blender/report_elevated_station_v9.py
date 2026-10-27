@@ -6,7 +6,9 @@ ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/design/transport-elevate
 for name in views:
  r=records[name];assert r['sourceBlendSHA256']==m['blendSHA256'];assert sha(OUT/r['file'])==r['imageSHA256'];
  with Image.open(OUT/r['file'])as im:im.verify()
-assert gl['allPassed']and web['allPassed']and g['allOfflineChecksPassed'];assert not m['geometryAuditIssues'];fontfile='/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc';font=ImageFont.truetype(fontfile,25);small=ImageFont.truetype(fontfile,18)
+sanity=(ROOT/'work/transport-v9-final-game-sanity.log').read_text();assert 'ℹ pass 50'in sanity and 'ℹ fail 0'in sanity and 'built in'in sanity;assert '> eslint'in sanity;
+(OUT/'existing-game-sanity.json').write_text(json.dumps({'command':'npm run check','exitCode':0,'unitTestsPassed':50,'unitTestsFailed':0,'lintPassed':True,'buildPassed':True,'logSHA256':hashlib.sha256(sanity.encode()).hexdigest(),'scope':'Unchanged existing game only, not new-station runtime validation.'},indent=2)+'\n');(OUT/'existing-game-check.log').write_text(sanity);
+assert gl['allPassed']and web['allPassed']and g['allOfflineChecksPassed'];assert all(r['loadedSHA256']==sha(OUT/('transport-station-v9-'+r['mode']+'.glb'))for r in web['results']);assert all(r['sha256']==sha(OUT/('transport-station-v9-'+r['mode']+'.glb'))for r in gl['results']);assert not m['geometryAuditIssues'];fontfile='/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc';font=ImageFont.truetype(fontfile,25);small=ImageFont.truetype(fontfile,18)
 # Comparison is explicitly labelled: user reference at left, real Blender at right.
 canvas=Image.new('RGB',(1920,790),'#f0eade');d=ImageDraw.Draw(canvas)
 for i,(file,label)in enumerate([('inputs/approved-v9/美術參考_高架車站.png','使用者核准美術參考（非本次模型渲染）'),('renders/hero.png','本次 Blender Cycles｜同一份可編輯原型')]):
@@ -34,7 +36,7 @@ rows=[]
 for name,b in a['componentBounds'].items():rows.append('| '+name+' | '+' × '.join(f'{n:.3f}'for n in b['sizeWorldXYZ'])+' | '+str([round(n,3)for n in b['minWorldXYZ']])+' → '+str([round(n,3)for n in b['maxWorldXYZ']])+' |')
 report=f'''# 交通大升級 V9｜獨立 Blender 精修原型
 
-[可編輯 BLEND](transport-station-v9.blend) · [精修展示 GLB](transport-station-v9-showcase.glb) · [遊戲優化候選 GLB](transport-station-v9-game-candidate.glb) · [尺寸／效能／限制](VALIDATION.md) · [與核准圖逐項比對](ART-REVIEW.md) · [製作流程](WORKFLOW.md)
+[可編輯 BLEND](transport-station-v9.blend) · [精修展示 GLB](transport-station-v9-showcase.glb) · [遊戲優化候選 GLB](transport-station-v9-game-candidate.glb) · [尺寸／效能／限制](VALIDATION.md) · [實際PBR材質表](material-report.json) · [與核准圖逐項比對](ART-REVIEW.md) · [製作流程](WORKFLOW.md)
 
 本輪只製作交通島原型，**沒有整合正式遊戲**。V9 GLB 僅用來量測地界與構件配置；站房、雨棚、橋體、兩節列車、樓梯、玻璃電梯、景觀及材質都是重新建立的原生三維構件，沒有沿用 V9 白模外觀或 `k.hall()`／統一弧形屋頂。
 
@@ -57,7 +59,7 @@ report+=f'''十一張均由**同一份最終 BLEND**的幾何輸出。後兩張�
 | 精修展示 | {show['triangles']:,} | {show['materials']} | {show['meshPrimitives']} | {show['bytes']/1e6:.2f} MB |
 | 遊戲候選 | {cand['triangles']:,} | {cand['materials']} | {cand['meshPrimitives']} | {cand['bytes']/1e6:.2f} MB |
 
-候選減少約 **{reduction:.1f}% 三角面**，保留建築、門窗、軌道及列車位置與主要輪廓，降低倒角細分並略去 {m['candidate']['skippedMicroFoliageObjects']} 個微小植栽構件。沒有縮小整座模型。候選尚未獲遊戲整合或手機效能認證。
+候選減少約 **{reduction:.1f}% 三角面**，保留建築、門窗、軌道及列車位置與主要輪廓，降低倒角細分並略去 {m['candidate']['skippedMicroFoliageObjects']} 個微小植栽構件。沒有縮小整座模型。候選另採透明薄玻璃（建築alpha0.25、車窗0.54）取消折射pass；這是明確的材質近似，保留通透與主配色，但反射／折射外觀須人工比對，精修BLEND及展示GLB維持原PBR。候選尚未獲遊戲整合或手機效能認證。
 
 ## 尺寸、配置與空間
 
@@ -71,7 +73,7 @@ V9 原地界面積 {m['referenceSiteArea']:.3f}；本原型側向花園提案面
 
 ![四橋口及 NPC 空間圖（工程圖）](space-plan.png)
 
-兩位 NPC 只有預留 Empty／資料，不製作人物或對話。四口 S09/S10/S15/S18 沿用真正 `src/data/yuan-plan.json`，寬4.8，南側雙口共享開放區域；沒有重畫路網。左折返樓梯及其上層連橋、右玻璃電梯與月台連接幾何都存在；實機踏階／電梯操作留待正式整合。
+兩位 NPC 只有預留 Empty／資料，不製作人物或對話。四口 S09/S10/S15/S18 沿用真正 `src/data/yuan-plan.json`，寬4.8，相近的雙口共享開放區域；沒有重畫路網。左折返樓梯及其上層連橋、右玻璃電梯與月台連接幾何都存在；實機踏階／電梯操作留待正式整合。
 
 ## 原型重要限制
 
@@ -81,7 +83,7 @@ V9 原地界面積 {m['referenceSiteArea']:.3f}；本原型側向花園提案面
 
 原安心生養 BLEND／GLB、其他七島資產、政策資料、`src/`、`public/`及苑字路網不變。所有原創程式與幾何沿用專案 [MIT](../../../LICENSE)；使用者提供參考與設計包保留原始權利。文字輪廓由 Noto Sans CJK（SIL OFL）產生，沒有複製未提供官方標誌，也沒有外部建築模型。
 
-[檔案大小／SHA256](media-manifest.json) · [GitHub 下載核對](github-verification.json) · [輸入來源](input-audit.json)
+[原成果保留核對](source-preservation.json) · [檔案大小／SHA256](media-manifest.json) · [GitHub 下載核對](github-verification.json) · [輸入來源](input-audit.json)
 '''
 (OUT/'README.md').write_text(report,encoding='utf-8')
 validation=f'''# 幾何、相機、GLB 與效能檢查
@@ -102,9 +104,9 @@ validation=f'''# 幾何、相機、GLB 與效能檢查
 for r in web['results']:
  p=r['performance'];validation+=f"| {r['mode']} / {'390×844'if r['mobile']else'1280×800'} | {r['loadToFrameMs']:.1f} | {r['drawCalls']} | {r['submittedTriangles']:,} | {p['meanFrameMs']:.1f} | {p['approxFPS']:.1f} |\n"
 validation+='''
-環境是受限CPU、Chromium軟體WebGL；每次只載入一個資產，沒有其他七島、角色、物理或遊戲UI。量測在Blender渲染結束後執行，避免兩工作互搶CPU；不外推iOS、Android或桌機GPU真實FPS。透射玻璃會增加額外pass，因此提交面數高於檔案三角面。
+環境是受限CPU、Chromium軟體WebGL；每次只載入一個資產，沒有其他七島、角色、物理或遊戲UI。載入時間來自localhost，不代表4G或真實網站網路速度。量測在Blender渲染結束後執行，避免兩工作互搶CPU；不外推iOS、Android或桌機GPU真實FPS。展示版透射玻璃會增加額外pass，因此提交面數高於檔案三角面；候選改透明薄玻璃取消折射pass，未把這種近似回寫精修來源。
 
-候選仍約18MB、90網格批次與多處透射玻璃，不能直接宣稱適合所有手機。後續可在取得外觀驗收後評估meshopt／量化、依距離LOD及玻璃pass；本輪不為降低數字而更改已建立的主輪廓。
+候選仍約18MB、90網格批次，不能直接宣稱適合所有手機。後續可在取得外觀驗收後評估meshopt／量化、依距離LOD及玻璃pass；本輪不為降低數字而更改已建立的主輪廓。
 
 ## 高度／垂直動線調整
 
@@ -120,7 +122,7 @@ validation+='''
 
 ## 既有遊戲與人工驗收
 
-`npm run check` 成功：50項既有單元測試、lint、Vite build。這只證明未修改的舊遊戲仍可建置，不是新高架站的遊戲碰撞回歸。安心生養來源與苑字JSON以原提交雜湊核對完全一致。
+`npm run check` 成功：50項既有單元測試、lint、Vite build；[實際紀錄](existing-game-sanity.json)及[完整log](existing-game-check.log)。這只證明未修改的舊遊戲仍可建置，不是新高架站的遊戲碰撞回歸。安心生養來源與苑字JSON以原提交雜湊核對完全一致。
 
 尚待：人工建築／景觀／文化及材質審查、90分且無重大缺陷的整合決策、實機GPU及熱負載、真實八島同載FPS、原人物跳躍／攝影機／風鈴與政策互動回歸。沒有合併、修改Production或執行部署。
 '''
@@ -144,18 +146,19 @@ art='''# 與核准美術圖逐項核對及差異
 
 ## 自行修正紀錄
 
-首輪未作交付：修正玻璃與暖木層次、文字輪廓封閉、拱梁法線；第二輪修正車頭實際玻璃開口、連續岩體與園藝密度；再校正字高、花朵高度、輪軌接觸、車門比例、凹槽橋面與座椅碰撞殼方向，才凍結同源渲染。
+首輪未作交付：修正玻璃與暖木層次、文字輪廓封閉、拱梁法線；第二輪修正車頭實際玻璃開口、連續岩體與園藝密度；再校正字高、花朵高度、輪軌接觸、車門比例、凹槽橋面與座椅碰撞殼方向；六面自審後僅局部補齊列車尾端、窗間實體與電梯中段玻璃，保留其他場景，最後重出整套同源渲染。
 
 本成果是完整獨立原型與證據，供一次集中檢查；**不能因本報告或工具通過，就宣稱已跨過90分並開始正式整合**。正式整合仍需美術與玩法驗收，尤其手機預設構圖、踏階／電梯與遊戲材質的差異。
 '''
 (OUT/'ART-REVIEW.md').write_text(art,encoding='utf-8')
 workflow='''# 可重現流程
 
-Blender/bpy4.3、Python3.11、Shapely2.2、NumPy、Pillow；Three.js、KhronosValidator與Playwright使用既有專案／work工具環境。不修改runtime依賴。
+Blender/bpy4.3、Python3.11、Shapely2.2、NumPy、Pillow；Three.js、KhronosValidator與Playwright使用既有專案／work工具環境。不修改runtime依賴。工具端Python可依 `scripts/blender/blender-assets-requirements.txt` 安裝；Khronos可用 `npm install --prefix work/parent-child-blender/gltf-validator gltf-validator@2.0.0-dev.3.10` 建立隔離路徑。Noto Sans CJK字型用於產生實體文字；原檔已是mesh與packed材質，開啟BLEND不需要外部字型或圖片。
 
 ```sh
 node scripts/blender/elevated_station_v9/measure_reference.mjs
 python scripts/blender/build_elevated_station_v9.py
+python scripts/blender/optimize_elevated_station_v9_candidate.py
 python scripts/blender/audit_elevated_station_v9_source.py
 python scripts/blender/audit_elevated_station_v9.py
 node scripts/blender/validate_elevated_station_v9.mjs
@@ -164,7 +167,7 @@ python scripts/blender/render_elevated_station_v9.py
 
 GLB量測工具直接讀取專案內 `inputs/approved-v9` 的模型，圖片也保持同一專案來源路徑；work只暫存可重建的量測結果，無需重新上傳原圖。原始建模模組只讀取這些參考及原路線。官方Blender CLI亦可用 `blender --background --python scripts/blender/build_elevated_station_v9.py`。
 
-保存BLEND保留各構件／Collections、可調材質、燈光、相機與另置的隱藏線框碰撞代理。GLB合批包含UV及法線；不包含棚燈／相機／碰撞殼／白模。候選僅在暫存匯出狀態調整倒角與微植栽，絕不回存覆蓋精修BLEND。
+保存BLEND保留各構件／Collections、可調材質、燈光、相機與另置的隱藏線框碰撞代理。GLB合批包含UV及法線；不包含棚燈／相機／碰撞殼／白模。候選僅在暫存匯出狀態調整倒角與微植栽，並另用optimize工具改薄玻璃；絕不回存覆蓋精修BLEND或展示GLB。
 
 預設渲染會核對現有圖片SHA與來源BLEND SHA，只在兩者都一致才續用。十一視圖均為Cycles+OIDN，主視圖1440×1080/64samples，四向1200×900/40samples，其餘48samples；手機720×1280。額外手機相機只在渲染工作記憶體中建立，幾何不變，完整參數記錄於render-record。
 
@@ -190,6 +193,6 @@ for p in sorted(OUT.rglob('*')):
  if p.suffix=='.png':
   with Image.open(p)as im:im.verify()
   with Image.open(p)as im:r.update(width=im.width,height=im.height)
-  r['role']='source input (not our model render)'if'/inputs/'in str(p)else'actual Cycles same-source render'if'/renders/'in str(p)else'isolated WebGL engineering image'if'/qa/'in str(p)else'comparison/contact-sheet/engineering diagram; see labels'
+  r['role']='source input (not our model render)'if'/inputs/'in str(p)else'actual Cycles same-source render'if'/renders/'in str(p)else'isolated WebGL engineering image'if'/qa/'in str(p)else'original procedural material texture'if'/textures/'in str(p)else'comparison/contact-sheet/engineering diagram; see labels'
  files.append(r)
 (OUT/'media-manifest.json').write_text(json.dumps({'sourceBlendSHA256':m['blendSHA256'],'allModelRendersSameSource':True,'files':files},ensure_ascii=False,indent=2)+'\n');(OUT/'SHA256SUMS').write_text(''.join(r['sha256']+'  '+r['path']+'\n'for r in files));print(json.dumps({'sameSourceCyclesRenders':len(views),'manifestFiles':len(files),'triangleReductionPercent':reduction},ensure_ascii=False))

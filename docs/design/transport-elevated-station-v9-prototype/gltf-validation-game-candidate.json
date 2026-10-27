@@ -2,7 +2,7 @@
   "uri": "transport-station-v9-game-candidate.glb",
   "mimeType": "model/gltf-binary",
   "validatorVersion": "2.0.0-dev.3.10",
-  "validatedAt": "2026-10-27T14:19:02.239Z",
+  "validatedAt": "2026-10-27T14:53:11.123Z",
   "issues": {
     "numErrors": 0,
     "numWarnings": 0,
@@ -526,16 +526,14 @@
     "version": "2.0",
     "generator": "Khronos glTF Blender I/O v4.3.47",
     "extensionsUsed": [
-      "KHR_materials_transmission",
-      "KHR_materials_emissive_strength",
-      "KHR_materials_ior"
+      "KHR_materials_emissive_strength"
     ],
     "resources": [
       {
         "pointer": "/buffers/0",
         "mimeType": "application/gltf-buffer",
         "storage": "glb",
-        "byteLength": 18288832
+        "byteLength": 18479080
       },
       {
         "pointer": "/images/0",
@@ -558,8 +556,8 @@
     "hasTextures": true,
     "hasDefaultScene": true,
     "drawCallCount": 90,
-    "totalVertexCount": 526037,
-    "totalTriangleCount": 210952,
+    "totalVertexCount": 531413,
+    "totalTriangleCount": 213416,
     "maxUVs": 1,
     "maxInfluences": 0,
     "maxAttributes": 3

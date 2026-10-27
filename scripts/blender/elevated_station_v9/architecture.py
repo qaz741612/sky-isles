@@ -152,6 +152,7 @@ def access(s):
   for z in [-5.27,-3.61]:s.box('LiftTransom',(cx,y,z),(1.78,.11,.13),'roofEdge',.01)
   for x in [6.88,8.52]:s.box('LiftReturnFrame',(x,y,cz),(.13,.11,1.77),'roofEdge',.01)
  for x in [6.88,8.52]:s.box('LiftSideGlass',(x,2.48,cz),(.036,4.5,1.49),'glass',.005)
+ s.box('LiftMiddleFrontGlass',(cx,2.81,-3.605),(1.49,1.46,.035),'glass',.004)
  s.box('LiftRearGlass',(cx,2.48,-5.27),(1.49,4.5,.035),'glass',.004)
  for y in [1.16,4.12]:
   for x in [cx-.34,cx+.34]:s.box('GlassLiftDoor',(x,y,-3.605),(.65,1.83 if y<2 else 1.16,.035),'glass',.004)
@@ -176,7 +177,7 @@ def train(s):
    s.box('TransportBlueStripe',((lo+hi)/2,4.66,zz),(hi-lo-.24,.23,.023),'trainBlue',.008,p)
    s.box('FineTrainGoldLine',((lo+hi)/2,4.82,zz),(hi-lo-.28,.045,.024),'yellow',.006,p)
    for j in range(10):
-    xx=lo+.53+j*(hi-lo-1.10)/10
+    xx=lo+.53+j*(hi-lo-1.10)/9
     door=j in [2,7]
     if door:
      s.box('DoorHeader',(xx,5.84,zz),(.60,.075,.08),'roofEdge',.012,p);
@@ -188,6 +189,13 @@ def train(s):
      for yy in [4.93,5.67]:s.box('TrainWindowTopBottom',(xx,yy,zz),(.63,.055,.055),'steel',.012,p)
      s.box('ActualTrainWindow',(xx,5.30,zz+.031 if zz>z else zz-.031),(.54,.69,.028),'trainGlass',.065,p)
     s.box('TrainWindowPillar',(xx+.37,5.34,zz),(.09,1.00,.11),'trainWhite',.018,p)
+   # Actual upper sidewall strips surround each window opening, including both car ends.
+   centres=[lo+.53+j*(hi-lo-1.10)/9 for j in range(10)];last=lo+.05
+   for centre in centres+[hi+.275]:
+    end=min(hi-.05,centre-.325)
+    if end>last:s.box('SolidBodyBetweenWindowOpenings',((last+end)/2,5.30,zz),(end-last,1.06,.12),'trainWhite',.015,p)
+    last=centre+.325
+   s.box('ClosedWindowWaistBand',((lo+hi)/2,4.85,z+(.775 if zz>z else-.775)),(hi-lo-.10,.20,.05),'trainWhite',.015,p)
    s.box('ContinuousWindowHeader',((lo+hi)/2,5.84,zz),(hi-lo-.28,.21,.12),'trainWhite',.035,p)
   s.box('RoundedCarRoof',((lo+hi)/2,5.99,z),(hi-lo-.04,.31,1.61),'trainWhite',.145,p)
   for xx in [(lo+hi)/2-1.45,(lo+hi)/2+1.45]:
@@ -198,6 +206,11 @@ def train(s):
    for zz in [z-.51,z+.51]:
     o=s.cyl('RailContactWheel',(xx,4.121,zz),.20,.12,'steel',20,p);o.rotation_euler.x=math.pi/2
   for xx in [lo+1.9,lo+4.9]:s.box('TrainVisibleSeat',(xx,4.62,z),(.8,.36,.62),'trainBlue',.08,p)
+ # Flat trailing end has a real glass opening and complete surrounding coach body.
+ p=parent;end=-8.61;z=-8.20
+ for dz in [-.72,.72]:s.box('TrailingEndFrame',(end,5.08,z+dz),(.09,1.65,.14),'trainWhite',.035,p)
+ for yy,hh in [(4.57,.56),(4.88,.12),(5.72,.12),(5.83,.14)]:s.box('TrailingEndHeaderSill',(end,yy,z),(.09,hh,1.56),'trainWhite',.025,p)
+ s.box('TrailingEndActualGlass',(end-.052,5.30,z),(.032,.76,1.30),'trainGlass',.035,p)
  # Custom curved front shell, physical trapezoidal windshield and lights.
  p=parent;xc=8.93;z=-8.20
  profile=[(-.72,4.40),(-.79,4.65),(-.77,5.58),(-.62,5.96),(-.39,6.10),(.39,6.10),(.62,5.96),(.77,5.58),(.79,4.65),(.72,4.40)]

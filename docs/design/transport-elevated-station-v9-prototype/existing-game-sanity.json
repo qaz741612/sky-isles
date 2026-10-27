@@ -1,0 +1,10 @@
+{
+  "command": "npm run check",
+  "exitCode": 0,
+  "unitTestsPassed": 50,
+  "unitTestsFailed": 0,
+  "lintPassed": true,
+  "buildPassed": true,
+  "logSHA256": "bf720b08ba93ac596fe70383aa5dfab0fd185b77e4a24cbeeb4438c08a4bd3a6",
+  "scope": "Unchanged existing game only, not new-station runtime validation."
+}

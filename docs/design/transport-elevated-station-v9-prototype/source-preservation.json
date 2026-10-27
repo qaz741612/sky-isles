@@ -1,0 +1,43 @@
+{
+  "baseCommit": "19a568279424278dad5b7ce45dba11fca53c0145",
+  "baseBranch": "codex/seven-policy-islands-blender-assets-v1",
+  "headBranch": "codex/transport-elevated-station-v9-blender-prototype",
+  "protectedPathsUnchanged": [
+    "src",
+    "public",
+    "package.json",
+    "package-lock.json",
+    "LICENSE",
+    "docs/design/seven-policy-islands-blender-v1",
+    "docs/design/parent-child-blender-refinement-v2"
+  ],
+  "preExistingUserPreviewEditsPreservedAndExcludedFromCommits": [
+    {
+      "path": "docs/previews/yuan-panorama/desktop-explore.png",
+      "sha256": "5c579e1e7f1b2c74e4e7fe97ec96a8c23cc7ced0e7f6f151c69a3b45ad389a5c",
+      "unchangedFromPreExistingBackup": true
+    },
+    {
+      "path": "docs/previews/yuan-panorama/mobile-explore.png",
+      "sha256": "ff1ccc4b1391cba0da9df1fc36fb681f385ef405e7ab0fc0b1fe164eca863255",
+      "unchangedFromPreExistingBackup": true
+    },
+    {
+      "path": "docs/previews/yuan-panorama/mobile-portrait-panorama.png",
+      "sha256": "0994b2f4b973d2b618d74354d1a7e3d61e23876b7df76da20162130cc62f7bf8",
+      "unchangedFromPreExistingBackup": true
+    },
+    {
+      "path": "docs/previews/yuan-panorama/panorama-labelled.png",
+      "sha256": "d7f4ddf33cfb7fd2c3de515fcd10334b2ac0cff2a82641f72ade4797b43e4c04",
+      "unchangedFromPreExistingBackup": true
+    },
+    {
+      "path": "docs/previews/yuan-panorama/panorama-pure.png",
+      "sha256": "d17053b6ce1b0416de12ed0b0e8bba41b630deaae1190ded3235e129f9c3a460",
+      "unchangedFromPreExistingBackup": true
+    }
+  ],
+  "productionConfigChanged": false,
+  "gameIntegrationPerformed": false
+}

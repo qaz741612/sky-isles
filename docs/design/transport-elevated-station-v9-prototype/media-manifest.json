@@ -1,0 +1,597 @@
+{
+  "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+  "allModelRendersSameSource": true,
+  "files": [
+    {
+      "path": "ART-REVIEW.md",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/ART-REVIEW.md",
+      "bytes": 3396,
+      "sha256": "94c6f3574f495030fedd55867fa660e7f006ad76a98040e99fb8c28ad7790693"
+    },
+    {
+      "path": "README.md",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/README.md",
+      "bytes": 4961,
+      "sha256": "835be34a31e24f53678fef0c92978297230dc325391330fb5d80f98f08871d75"
+    },
+    {
+      "path": "VALIDATION.md",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/VALIDATION.md",
+      "bytes": 4085,
+      "sha256": "9251364333abe6928a8b2f15c39828fed3ab6ff0e0bc6c3f0ff1cb454be79ee4"
+    },
+    {
+      "path": "WORKFLOW.md",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/WORKFLOW.md",
+      "bytes": 2520,
+      "sha256": "810b69255b05c97f97366d5335fad3d1b965fe56b7b38725d030698d2d15fb2a"
+    },
+    {
+      "path": "collision-shells.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/collision-shells.json",
+      "bytes": 201408,
+      "sha256": "1c1a9bc143ee2ebd938778c75b954a7dbd54bcf31b01ed8878e441eb14d119a9"
+    },
+    {
+      "path": "existing-game-check.log",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/existing-game-check.log",
+      "bytes": 5510,
+      "sha256": "bf720b08ba93ac596fe70383aa5dfab0fd185b77e4a24cbeeb4438c08a4bd3a6"
+    },
+    {
+      "path": "existing-game-sanity.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/existing-game-sanity.json",
+      "bytes": 307,
+      "sha256": "833bc745dba47af074a31deeb57a8fe347ed10c3a9b7b291c5b7b7de7a9b48aa"
+    },
+    {
+      "path": "geometry-space-audit.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/geometry-space-audit.json",
+      "bytes": 5367,
+      "sha256": "e83494f131706ebbbca24a8b51102203a015960c5687e47828f3f4edc895faf9"
+    },
+    {
+      "path": "gltf-summary.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/gltf-summary.json",
+      "bytes": 1023,
+      "sha256": "745686ae24a1d5b02f0bea95b57315ac37b060c0b135e4f957c87b443d577d76"
+    },
+    {
+      "path": "gltf-validation-game-candidate.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/gltf-validation-game-candidate.json",
+      "bytes": 17334,
+      "sha256": "f5981150665648b58a6aedc2eae6fce9921e4ccf227026d6f3c33d7d94c746bc"
+    },
+    {
+      "path": "gltf-validation-showcase.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/gltf-validation-showcase.json",
+      "bytes": 17392,
+      "sha256": "f981e18e11332fe204c5971d6b5fb6e0626deb5bd9ded8f42db0ffcd41826fa0"
+    },
+    {
+      "path": "input-audit-v8.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/input-audit-v8.json",
+      "bytes": 5769,
+      "sha256": "7c9360232a5f77f7247fd07c362f6599b22055501fdf72e8536cd854bf0b75fc"
+    },
+    {
+      "path": "input-audit.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/input-audit.json",
+      "bytes": 4687,
+      "sha256": "a2ed103b42b961066c29f69fc8ac921993586599c74ecbe91e3bc760e28c2321"
+    },
+    {
+      "path": "inputs/approved-v9/F_elevated_station_v9_design.glb",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/F_elevated_station_v9_design.glb",
+      "bytes": 1381448,
+      "sha256": "991f8c99dcdb52ac635cf80c8cb6b3003fcb973f3f201f119267d07adb62fdc0"
+    },
+    {
+      "path": "inputs/approved-v9/V9_工程檢核.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/V9_工程檢核.json",
+      "bytes": 1967,
+      "sha256": "455e5457b820ad8c7a1fb44dc9f6e57ecf41beafa6e94f1eed3b4fd23ea9cbc8"
+    },
+    {
+      "path": "inputs/approved-v9/V9_高架車站_設計驗收總覽.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/V9_高架車站_設計驗收總覽.png",
+      "bytes": 1885648,
+      "sha256": "16d0f43ef352c48d02013c3a77e0f56152fdc05e140129bcd4ff56a704f2542d",
+      "width": 2700,
+      "height": 2060,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/build_transport_v8.py",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/build_transport_v8.py",
+      "bytes": 42688,
+      "sha256": "44703a11872231a278a703f3a009e8e26914911b91cedaba860ade87e502bd06"
+    },
+    {
+      "path": "inputs/approved-v9/views/01_hero.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/views/01_hero.png",
+      "bytes": 534440,
+      "sha256": "9b12bfd67cd2ddde41d107e5af937e215f5e3121a333b96a608c3f5364a1e04b",
+      "width": 1139,
+      "height": 857,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/views/02_front.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/views/02_front.png",
+      "bytes": 314157,
+      "sha256": "271d6c00500901ef4bdae53559ef05bbf234b110811b9051d4ae6ed6bec6d7f5",
+      "width": 938,
+      "height": 649,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/views/03_rear.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/views/03_rear.png",
+      "bytes": 296549,
+      "sha256": "091b3e3d926144041e92e8c4c38eda546435d25c6d5f70521e6984af5678a228",
+      "width": 938,
+      "height": 649,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/views/04_left.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/views/04_left.png",
+      "bytes": 350331,
+      "sha256": "03648e594628eee4a3c280641f078a04fa0b709a733f70defd49a604025508c4",
+      "width": 938,
+      "height": 649,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/views/05_right.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/views/05_right.png",
+      "bytes": 350365,
+      "sha256": "96e9803ecac70ca63b9b4818ccc181907823bb5e734eab9a5a710009e73f54df",
+      "width": 938,
+      "height": 649,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/views/06_top.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/views/06_top.png",
+      "bytes": 315495,
+      "sha256": "46c95f9c0b02dbee2149866c3a79cf91fab2bdffb5415f73c528889a4f6c2e83",
+      "width": 911,
+      "height": 911,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/views/07_player_desktop.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/views/07_player_desktop.png",
+      "bytes": 353763,
+      "sha256": "95d2f9ad15ee29562c07691d4adc48b6ca54782e442964185b3befd93fffba95",
+      "width": 1005,
+      "height": 603,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/views/08_player_mobile.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/views/08_player_mobile.png",
+      "bytes": 342538,
+      "sha256": "2a07b28a0bc3cad76fbeb7827b92c2675ffd7c2a01e829ea338e3ac5363478c1",
+      "width": 680,
+      "height": 971,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/views/09_high_rail.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/views/09_high_rail.png",
+      "bytes": 532647,
+      "sha256": "5418f13e936504224138b5c0f3f9e0829fd9af093531e79044ca2bbdc4d968fe",
+      "width": 1139,
+      "height": 857,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/交通大升級_V9_真實尺度與橋口.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/交通大升級_V9_真實尺度與橋口.png",
+      "bytes": 92254,
+      "sha256": "f7a8ff3d0820ca4559afdfce2acc57fa60fd64c650da9a077ff6e691b2e0a542",
+      "width": 1550,
+      "height": 1700,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/交通大升級_V9_高架車站_同源六視圖.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/交通大升級_V9_高架車站_同源六視圖.png",
+      "bytes": 3313921,
+      "sha256": "826912017a335ab47fbbf34f8b14f5289ee002214f249b0dbc8175cff06bd8ae",
+      "width": 2400,
+      "height": 3380,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/approved-v9/交通大升級_高架車站_正式建模設計規格.md",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/交通大升級_高架車站_正式建模設計規格.md",
+      "bytes": 7497,
+      "sha256": "644ba4ca706879e6ca914358613e12aaccdb891b56fca80ca9db8d89081093f9"
+    },
+    {
+      "path": "inputs/approved-v9/美術參考_高架車站.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/approved-v9/美術參考_高架車站.png",
+      "bytes": 2419443,
+      "sha256": "ad9f86475e4d494fcb171dd8f425bcd0d8118968b1f7eb5c3eab736bd7bc961c",
+      "width": 1448,
+      "height": 1086,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/F_elevated_station_v8_design.glb",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/F_elevated_station_v8_design.glb",
+      "bytes": 798436,
+      "sha256": "a15cd5e3e54fd87a2e68e948ae332d8564a9f76d52a81bfd6268af53bee66c83"
+    },
+    {
+      "path": "inputs/received-v8/README_V8_設計自評與驗收.md",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/README_V8_設計自評與驗收.md",
+      "bytes": 4220,
+      "sha256": "425d1aad1c3cfb5f66fcd54cf3b320ece2bde0c3c301ca86d1ac30a0f013af24"
+    },
+    {
+      "path": "inputs/received-v8/V8_工程檢核.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/V8_工程檢核.json",
+      "bytes": 1947,
+      "sha256": "fa96572e70252db43fa2b70d867026915e2fef4a7f2e6b9cf28de94686d30a62"
+    },
+    {
+      "path": "inputs/received-v8/V8_自動檢查結果.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/V8_自動檢查結果.json",
+      "bytes": 1088,
+      "sha256": "a98edf15b329a47bb3ffd2cdc9583b9572ae9e468c6540256c7da060d0ba95c2"
+    },
+    {
+      "path": "inputs/received-v8/build_transport_v8.py",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/build_transport_v8.py",
+      "bytes": 35160,
+      "sha256": "1ddeb8dac6476f3fd82a2824980f6f671a601aebfcd106ea8bcff208824da93b"
+    },
+    {
+      "path": "inputs/received-v8/views/01_hero.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/01_hero.png",
+      "bytes": 1493029,
+      "sha256": "356add405fc0c0dcf7b0bfd847275393cf64cffc0492744ad3bdece689340255",
+      "width": 1700,
+      "height": 1280,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/views/02_front.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/02_front.png",
+      "bytes": 892305,
+      "sha256": "a80c5e67ee7eaf46b3266c275708230ecf7ee985daf67ea85d2b9e459885a37a",
+      "width": 1400,
+      "height": 970,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/views/03_rear.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/03_rear.png",
+      "bytes": 776194,
+      "sha256": "3df2c38d4443a1779a0b08319b97fc4393c2ab990195fc81c3e3fca099c38872",
+      "width": 1400,
+      "height": 970,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/views/04_left.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/04_left.png",
+      "bytes": 876955,
+      "sha256": "ca3f9cdd0b60845a828fdfc7179ecaf78668842d5c31abd7cb53b5a3bb4f1c2e",
+      "width": 1400,
+      "height": 970,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/views/05_right.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/05_right.png",
+      "bytes": 862864,
+      "sha256": "15c6c837705e290ca08359ba5e0e0de310f12d75c4a4875afea41f9900c32e36",
+      "width": 1400,
+      "height": 970,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/views/06_top.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/06_top.png",
+      "bytes": 870703,
+      "sha256": "284eac16dac88365357eac04d8e550463c8142faa1b73fbee733f6c9fb7e0ae4",
+      "width": 1360,
+      "height": 1360,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/views/07_player_desktop.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/07_player_desktop.png",
+      "bytes": 952653,
+      "sha256": "92124af3e514219067e108b6f092ba6eef60e1111589b4878fc00b6585bb3938",
+      "width": 1500,
+      "height": 900,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/views/08_player_mobile.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/08_player_mobile.png",
+      "bytes": 942113,
+      "sha256": "d47ee27ca68e72b67cd3ac339bfbb35395109a49c4fb917a466b86c1cb5b5f4e",
+      "width": 900,
+      "height": 1450,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/views/09_high_rail.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/09_high_rail.png",
+      "bytes": 1448576,
+      "sha256": "da265d74eca040f4fd9b9419e6f14866ac476b6dae744697981a19ddfbc7ec5e",
+      "width": 1700,
+      "height": 1280,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/交通大升級_V8_真實尺度與橋口.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/交通大升級_V8_真實尺度與橋口.png",
+      "bytes": 92348,
+      "sha256": "3012f7471804604dba6e7dcef790eecc4471d572ad9c0c1ffffcde58a43eb1d5",
+      "width": 1550,
+      "height": 1700,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/交通大升級_V8_高架車站_同源六視圖.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/交通大升級_V8_高架車站_同源六視圖.png",
+      "bytes": 4023484,
+      "sha256": "80ef0721a0b9b0ff4aeffbc560564a2b42ccb9b10030c6a14e0f0635ce537d3a",
+      "width": 2400,
+      "height": 3380,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/交通大升級_V8_高架車站_美術工程對照.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/交通大升級_V8_高架車站_美術工程對照.png",
+      "bytes": 2111646,
+      "sha256": "852e34f6b61396f2a766ed54b8e51ac909245ff11cb779a3bf8f6ba6dffa464b",
+      "width": 2300,
+      "height": 1780,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "inputs/received-v8/美術參考_高架車站.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/美術參考_高架車站.png",
+      "bytes": 2419443,
+      "sha256": "ad9f86475e4d494fcb171dd8f425bcd0d8118968b1f7eb5c3eab736bd7bc961c",
+      "width": 1448,
+      "height": 1086,
+      "role": "source input (not our model render)"
+    },
+    {
+      "path": "material-report.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/material-report.json",
+      "bytes": 26593,
+      "sha256": "efafe50d0a4c4b13dbd37c57d089530807c99fdfce04a1f39d3dabe0f0b7893c"
+    },
+    {
+      "path": "model-report.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/model-report.json",
+      "bytes": 29585,
+      "sha256": "6b52bc6b0d013d07cb15a1ed2e65a0a891f081d2145736a19238059cc1bf16b8"
+    },
+    {
+      "path": "qa/webgl-game-candidate-desktop.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/qa/webgl-game-candidate-desktop.png",
+      "bytes": 357250,
+      "sha256": "fd0244ed075a71790c6b975acc7b51303e43e65117cba6eef48ed383eb118286",
+      "width": 1280,
+      "height": 800,
+      "role": "isolated WebGL engineering image"
+    },
+    {
+      "path": "qa/webgl-game-candidate-mobile.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/qa/webgl-game-candidate-mobile.png",
+      "bytes": 139908,
+      "sha256": "63b98e3583c33ec2fcefca03a0474e0af8429bb4e5297c30fdf817bf799c1bfe",
+      "width": 390,
+      "height": 844,
+      "role": "isolated WebGL engineering image"
+    },
+    {
+      "path": "qa/webgl-showcase-desktop.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/qa/webgl-showcase-desktop.png",
+      "bytes": 376288,
+      "sha256": "abe249267e08baf65f26d5ac34d37cadec17dcbf475297ad1b9baaf29697a4fa",
+      "width": 1280,
+      "height": 800,
+      "role": "isolated WebGL engineering image"
+    },
+    {
+      "path": "qa/webgl-showcase-mobile.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/qa/webgl-showcase-mobile.png",
+      "bytes": 149622,
+      "sha256": "d0db4236e71862be9ab3f1838ebba4c9f09ea35fd2153098ab6fc46f06e2c3ce",
+      "width": 390,
+      "height": 844,
+      "role": "isolated WebGL engineering image"
+    },
+    {
+      "path": "reference-comparison.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/reference-comparison.png",
+      "bytes": 1814811,
+      "sha256": "8c8d03894439bfaf5426267045a0c86e60eece1dea12da7a0d3660b5312c1c8a",
+      "width": 1920,
+      "height": 790,
+      "role": "comparison/contact-sheet/engineering diagram; see labels"
+    },
+    {
+      "path": "render-index.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/render-index.png",
+      "bytes": 1128598,
+      "sha256": "ae4b206cc5dc342f928a9f96538f77dda78c6528ac71f0a2db6a88c77c7219a9",
+      "width": 1600,
+      "height": 1260,
+      "role": "comparison/contact-sheet/engineering diagram; see labels"
+    },
+    {
+      "path": "render-record.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/render-record.json",
+      "bytes": 10565,
+      "sha256": "f02f1e438e2103c5361a9b63cc23a049685aa06672de6f5ebb86af631a4ff3e9"
+    },
+    {
+      "path": "renders/back.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/back.png",
+      "bytes": 1193760,
+      "sha256": "3cf76d0af76ce2244136afcf40a5b49b0706ab50468f67fb8ac1dfa892031ec7",
+      "width": 1200,
+      "height": 900,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/front.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/front.png",
+      "bytes": 1269165,
+      "sha256": "2e72490308541270ad7f2122edc0248dce59c575072a5498cce50055ae97d813",
+      "width": 1200,
+      "height": 900,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/hero.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/hero.png",
+      "bytes": 2126926,
+      "sha256": "a27012728114477f85fb61d71c9f8654a89328814a3a295058678490c5d759ca",
+      "width": 1440,
+      "height": 1080,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/left.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/left.png",
+      "bytes": 1176950,
+      "sha256": "9b05450cc0fc00b6f03c8016e683bc9865322520bb78793721f0b8a492afd84f",
+      "width": 1200,
+      "height": 900,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/player-desktop.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/player-desktop.png",
+      "bytes": 1735615,
+      "sha256": "f915e2b9172c3321879c0d98832d21f0bfb8734741c1d41fb2efc07619f0c1b7",
+      "width": 1440,
+      "height": 900,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/player-mobile-arrival-overview.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/player-mobile-arrival-overview.png",
+      "bytes": 1125384,
+      "sha256": "35d9a9c71e627c2877b33179ed01a1d9e3fb08504a6ab78bfbe3858aaf8f3867",
+      "width": 720,
+      "height": 1280,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/player-mobile-zoom28.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/player-mobile-zoom28.png",
+      "bytes": 1182886,
+      "sha256": "f161540e32c2847957ae5e36cc0e65b69c62cce8559091e4dde8610f2aa899f1",
+      "width": 720,
+      "height": 1280,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/player-mobile.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/player-mobile.png",
+      "bytes": 1226565,
+      "sha256": "b37841e772430ac557f02077da2d2cde6b8370c4a46c6c7471587ef073c45324",
+      "width": 720,
+      "height": 1280,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/right.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/right.png",
+      "bytes": 1198039,
+      "sha256": "34ceb7b159ba780520349c7e0d8336a186b6cebb46b7b2bbc64c1d0cab211056",
+      "width": 1200,
+      "height": 900,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/top.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/top.png",
+      "bytes": 1854571,
+      "sha256": "a9cb027881491b37cf6db19994f072c5fd8d775a2d00e3ec9aaaf88d763d5957",
+      "width": 1440,
+      "height": 1080,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "renders/train-side.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/renders/train-side.png",
+      "bytes": 1968516,
+      "sha256": "0d96f47b3c45f325a73127f2ae3a580ff412fc394485920cebfdc1b4b5ba93d6",
+      "width": 1440,
+      "height": 1080,
+      "role": "actual Cycles same-source render"
+    },
+    {
+      "path": "source-audit.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/source-audit.json",
+      "bytes": 7736,
+      "sha256": "dff49f36b476906a045e6c2aba824ed4a98c7586a5a512af43758c8a8e0e2090"
+    },
+    {
+      "path": "source-preservation.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/source-preservation.json",
+      "bytes": 1611,
+      "sha256": "fad8884feee326d5797b865149ae3e55124e6f98218ae12a3dae7c26b9a420d3"
+    },
+    {
+      "path": "space-plan.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/space-plan.png",
+      "bytes": 45983,
+      "sha256": "5039e2852707ecde43971feeebd033e8720dc60a7d973abddb238a3764492161",
+      "width": 1100,
+      "height": 1100,
+      "role": "comparison/contact-sheet/engineering diagram; see labels"
+    },
+    {
+      "path": "textures/original-wood-grain.png",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/textures/original-wood-grain.png",
+      "bytes": 83253,
+      "sha256": "f8af318cd7c2e7f93869324d5c9944aeaf2fbcbf7be60aeccc606b4e9e5a1f8a",
+      "width": 256,
+      "height": 256,
+      "role": "original procedural material texture"
+    },
+    {
+      "path": "transport-station-v9-game-candidate.glb",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/transport-station-v9-game-candidate.glb",
+      "bytes": 18557856,
+      "sha256": "3578ee0082ae06b1f508e4c566cdba77b976131b63a24692c7968d8030b44517"
+    },
+    {
+      "path": "transport-station-v9-showcase.glb",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/transport-station-v9-showcase.glb",
+      "bytes": 42612988,
+      "sha256": "f1f290b1cedfec984dcdbd9d551876a65354c52fb45eac7160094fa15013c2c6"
+    },
+    {
+      "path": "transport-station-v9.blend",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/transport-station-v9.blend",
+      "bytes": 1625930,
+      "sha256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb"
+    },
+    {
+      "path": "webgl-report.json",
+      "repoPath": "docs/design/transport-elevated-station-v9-prototype/webgl-report.json",
+      "bytes": 5015,
+      "sha256": "18fffb6dbef751a845b83a64f108054c4564492758f736f7feeb60fe779d60bd"
+    }
+  ]
+}

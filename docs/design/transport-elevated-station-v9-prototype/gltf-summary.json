@@ -3,10 +3,10 @@
   "results": [
     {
       "mode": "showcase",
-      "sha256": "f7f9a361d35597d9d3c179a16682bae56f879f0b56ebb0e48efc0e8d81462022",
-      "bytes": 41846748,
-      "triangles": 529952,
-      "vertices": 1193509,
+      "sha256": "f1f290b1cedfec984dcdbd9d551876a65354c52fb45eac7160094fa15013c2c6",
+      "bytes": 42612988,
+      "triangles": 540480,
+      "vertices": 1215013,
       "meshPrimitives": 90,
       "materials": 33,
       "embeddedImages": 1,
@@ -22,10 +22,10 @@
     },
     {
       "mode": "game-candidate",
-      "sha256": "66b7a99c1a97fdfb84d284e668309c85888380f8dbdfed346bc2f54c889d83e8",
-      "bytes": 18367588,
-      "triangles": 210952,
-      "vertices": 526037,
+      "sha256": "3578ee0082ae06b1f508e4c566cdba77b976131b63a24692c7968d8030b44517",
+      "bytes": 18557856,
+      "triangles": 213416,
+      "vertices": 531413,
       "meshPrimitives": 90,
       "materials": 33,
       "embeddedImages": 1,
@@ -34,9 +34,7 @@
       "khronosErrors": 0,
       "khronosWarnings": 0,
       "extensions": [
-        "KHR_materials_transmission",
-        "KHR_materials_emissive_strength",
-        "KHR_materials_ior"
+        "KHR_materials_emissive_strength"
       ]
     }
   ]

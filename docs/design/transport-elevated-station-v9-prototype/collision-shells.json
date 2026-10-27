@@ -5977,36 +5977,6 @@
       "integrationImplemented": false
     },
     {
-      "id": "TrainSweptStaticEnvelope",
-      "kind": "train",
-      "polygonXZ": [
-        [
-          9.45,
-          -9.05
-        ],
-        [
-          9.45,
-          -7.35
-        ],
-        [
-          -8.8,
-          -7.35
-        ],
-        [
-          -8.8,
-          -9.05
-        ],
-        [
-          9.45,
-          -9.05
-        ]
-      ],
-      "bottom": 3.54,
-      "top": 5.91,
-      "role": "static_display_no_riding",
-      "integrationImplemented": false
-    },
-    {
       "id": "WestWindowGarden",
       "kind": "planter",
       "polygonXZ": [
@@ -10478,6 +10448,36 @@
       "bottom": 0.1499999761581421,
       "top": 2.0900001525878906,
       "role": "solid",
+      "integrationImplemented": false
+    },
+    {
+      "id": "TrainSweptStaticEnvelope",
+      "kind": "train",
+      "polygonXZ": [
+        [
+          9.45,
+          -9.05
+        ],
+        [
+          9.45,
+          -7.35
+        ],
+        [
+          -8.8,
+          -7.35
+        ],
+        [
+          -8.8,
+          -9.05
+        ],
+        [
+          9.45,
+          -9.05
+        ]
+      ],
+      "bottom": 3.54,
+      "top": 5.91,
+      "role": "static_display_no_riding",
       "integrationImplemented": false
     }
   ]

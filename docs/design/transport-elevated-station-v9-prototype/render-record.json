@@ -1,0 +1,397 @@
+{
+  "source": "transport-station-v9.blend",
+  "sameSourceGeometry": true,
+  "gameScreenshots": false,
+  "views": [
+    {
+      "view": "hero",
+      "file": "renders/hero.png",
+      "size": [
+        1440,
+        1080
+      ],
+      "cameraPositionBlenderXYZ": [
+        25.0,
+        -30.0,
+        20.0
+      ],
+      "cameraRotationRadians": [
+        1.1436082124710083,
+        1.5511162132497702e-08,
+        0.6755222082138062
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 29.600000381469727,
+      "lensMillimetres": 48.0,
+      "sensorFit": "AUTO",
+      "sensorHeight": 24.0,
+      "simulationOnly": false,
+      "distance": null,
+      "pitch": null,
+      "yaw": null,
+      "verticalFOV": null,
+      "targetWorldXYZ": [],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 64,
+      "seconds": 208.11,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "a27012728114477f85fb61d71c9f8654a89328814a3a295058678490c5d759ca"
+    },
+    {
+      "view": "front",
+      "file": "renders/front.png",
+      "size": [
+        1200,
+        900
+      ],
+      "cameraPositionBlenderXYZ": [
+        0.0,
+        -35.0,
+        7.300000190734863
+      ],
+      "cameraRotationRadians": [
+        1.425815224647522,
+        -0.0,
+        0.0
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 29.600000381469727,
+      "lensMillimetres": 48.0,
+      "sensorFit": "AUTO",
+      "sensorHeight": 24.0,
+      "simulationOnly": false,
+      "distance": null,
+      "pitch": null,
+      "yaw": null,
+      "verticalFOV": null,
+      "targetWorldXYZ": [],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 40,
+      "seconds": 95.32,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "2e72490308541270ad7f2122edc0248dce59c575072a5498cce50055ae97d813"
+    },
+    {
+      "view": "back",
+      "file": "renders/back.png",
+      "size": [
+        1200,
+        900
+      ],
+      "cameraPositionBlenderXYZ": [
+        0.0,
+        36.0,
+        7.300000190734863
+      ],
+      "cameraRotationRadians": [
+        1.4192298650741577,
+        8.642054183383152e-08,
+        3.1415927410125732
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 29.600000381469727,
+      "lensMillimetres": 48.0,
+      "sensorFit": "AUTO",
+      "sensorHeight": 24.0,
+      "simulationOnly": false,
+      "distance": null,
+      "pitch": null,
+      "yaw": null,
+      "verticalFOV": null,
+      "targetWorldXYZ": [],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 40,
+      "seconds": 90.11,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "3cf76d0af76ce2244136afcf40a5b49b0706ab50468f67fb8ac1dfa892031ec7"
+    },
+    {
+      "view": "left",
+      "file": "renders/left.png",
+      "size": [
+        1200,
+        900
+      ],
+      "cameraPositionBlenderXYZ": [
+        -35.0,
+        1.0,
+        7.300000190734863
+      ],
+      "cameraRotationRadians": [
+        1.4205151796340942,
+        7.270786639423932e-09,
+        -1.562225341796875
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 29.600000381469727,
+      "lensMillimetres": 48.0,
+      "sensorFit": "AUTO",
+      "sensorHeight": 24.0,
+      "simulationOnly": false,
+      "distance": null,
+      "pitch": null,
+      "yaw": null,
+      "verticalFOV": null,
+      "targetWorldXYZ": [],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 40,
+      "seconds": 92.79,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "9b05450cc0fc00b6f03c8016e683bc9865322520bb78793721f0b8a492afd84f"
+    },
+    {
+      "view": "right",
+      "file": "renders/right.png",
+      "size": [
+        1200,
+        900
+      ],
+      "cameraPositionBlenderXYZ": [
+        35.0,
+        1.0,
+        7.300000190734863
+      ],
+      "cameraRotationRadians": [
+        1.4205151796340942,
+        -7.270786639423932e-09,
+        1.562225341796875
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 29.600000381469727,
+      "lensMillimetres": 48.0,
+      "sensorFit": "AUTO",
+      "sensorHeight": 24.0,
+      "simulationOnly": false,
+      "distance": null,
+      "pitch": null,
+      "yaw": null,
+      "verticalFOV": null,
+      "targetWorldXYZ": [],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 40,
+      "seconds": 94.71,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "34ceb7b159ba780520349c7e0d8336a186b6cebb46b7b2bbc64c1d0cab211056"
+    },
+    {
+      "view": "top",
+      "file": "renders/top.png",
+      "size": [
+        1440,
+        1080
+      ],
+      "cameraPositionBlenderXYZ": [
+        0.0,
+        1.0,
+        42.0
+      ],
+      "cameraRotationRadians": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 29.600000381469727,
+      "lensMillimetres": 48.0,
+      "sensorFit": "AUTO",
+      "sensorHeight": 24.0,
+      "simulationOnly": false,
+      "distance": null,
+      "pitch": null,
+      "yaw": null,
+      "verticalFOV": null,
+      "targetWorldXYZ": [],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 48,
+      "seconds": 198.22,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "a9cb027881491b37cf6db19994f072c5fd8d775a2d00e3ec9aaaf88d763d5957"
+    },
+    {
+      "view": "train-side",
+      "file": "renders/train-side.png",
+      "size": [
+        1440,
+        1080
+      ],
+      "cameraPositionBlenderXYZ": [
+        16.0,
+        -7.0,
+        9.199999809265137
+      ],
+      "cameraRotationRadians": [
+        1.3523743152618408,
+        -2.1302327013472677e-08,
+        0.809284508228302
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 25.0,
+      "lensMillimetres": 48.0,
+      "sensorFit": "AUTO",
+      "sensorHeight": 24.0,
+      "simulationOnly": false,
+      "distance": null,
+      "pitch": null,
+      "yaw": null,
+      "verticalFOV": null,
+      "targetWorldXYZ": [],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 48,
+      "seconds": 206.28,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "0d96f47b3c45f325a73127f2ae3a580ff412fc394485920cebfdc1b4b5ba93d6"
+    },
+    {
+      "view": "player-desktop",
+      "file": "renders/player-desktop.png",
+      "size": [
+        1440,
+        900
+      ],
+      "cameraPositionBlenderXYZ": [
+        2.103855848312378,
+        -16.536701202392578,
+        11.034279823303223
+      ],
+      "cameraRotationRadians": [
+        0.9707963466644287,
+        1.3206764570838914e-08,
+        0.1600000113248825
+      ],
+      "projection": "PERSP",
+      "orthoScale": null,
+      "lensMillimetres": 30.735713958740234,
+      "sensorFit": "VERTICAL",
+      "sensorHeight": 32.0,
+      "simulationOnly": true,
+      "distance": 16,
+      "pitch": 0.6,
+      "yaw": 0.16,
+      "verticalFOV": 55,
+      "targetWorldXYZ": [
+        0.0,
+        2.0,
+        3.5
+      ],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 48,
+      "seconds": 190.83,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "f915e2b9172c3321879c0d98832d21f0bfb8734741c1d41fb2efc07619f0c1b7"
+    },
+    {
+      "view": "player-mobile",
+      "file": "renders/player-mobile.png",
+      "size": [
+        720,
+        1280
+      ],
+      "cameraPositionBlenderXYZ": [
+        2.064326524734497,
+        -20.620067596435547,
+        15.661691665649414
+      ],
+      "cameraRotationRadians": [
+        0.9007965326309204,
+        1.1977216551883885e-08,
+        0.12000004202127457
+      ],
+      "projection": "PERSP",
+      "orthoScale": null,
+      "lensMillimetres": 28.864763259887695,
+      "sensorFit": "VERTICAL",
+      "sensorHeight": 32.0,
+      "simulationOnly": true,
+      "distance": 22,
+      "pitch": 0.67,
+      "yaw": 0.12,
+      "verticalFOV": 58,
+      "targetWorldXYZ": [
+        0.0,
+        2.0,
+        3.5
+      ],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 48,
+      "seconds": 147.13,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "b37841e772430ac557f02077da2d2cde6b8370c4a46c6c7471587ef073c45324"
+    },
+    {
+      "view": "player-mobile-zoom28",
+      "file": "renders/player-mobile-zoom28.png",
+      "size": [
+        720,
+        1280
+      ],
+      "cameraPositionBlenderXYZ": [
+        2.6273248195648193,
+        -25.28917694091797,
+        19.38760757446289
+      ],
+      "cameraRotationRadians": [
+        0.9007964134216309,
+        -8.129146245039465e-09,
+        0.12000003457069397
+      ],
+      "projection": "PERSP",
+      "orthoScale": null,
+      "lensMillimetres": 28.864763259887695,
+      "sensorFit": "VERTICAL",
+      "sensorHeight": 32.0,
+      "simulationOnly": true,
+      "distance": 28,
+      "pitch": 0.67,
+      "yaw": 0.12,
+      "verticalFOV": 58,
+      "targetWorldXYZ": [
+        0.0,
+        2.0,
+        3.5
+      ],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 48,
+      "seconds": 121.17,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "f161540e32c2847957ae5e36cc0e65b69c62cce8559091e4dde8610f2aa899f1"
+    },
+    {
+      "view": "player-mobile-arrival-overview",
+      "file": "renders/player-mobile-arrival-overview.png",
+      "size": [
+        720,
+        1280
+      ],
+      "cameraPositionBlenderXYZ": [
+        0.0,
+        -29.447006225585938,
+        19.38760757446289
+      ],
+      "cameraRotationRadians": [
+        0.9007963538169861,
+        -0.0,
+        0.0
+      ],
+      "projection": "PERSP",
+      "orthoScale": null,
+      "lensMillimetres": 28.864763259887695,
+      "sensorFit": "VERTICAL",
+      "sensorHeight": 32.0,
+      "simulationOnly": true,
+      "distance": 28,
+      "pitch": 0.67,
+      "yaw": 0,
+      "verticalFOV": 58,
+      "targetWorldXYZ": [
+        0.0,
+        2.0,
+        7.5
+      ],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 48,
+      "seconds": 114.76,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "35d9a9c71e627c2877b33179ed01a1d9e3fb08504a6ab78bfbe3858aaf8f3867"
+    }
+  ]
+}
