@@ -1,0 +1,67 @@
+{
+  "comparisonBaselineCommit": "81f7408468bcce2f7452b13e0a9d7ea1d4be62a1",
+  "comparisonBaselineRole": "previous submitted PR14 head, not the current PR base",
+  "PRBaseBranch": "codex/seven-policy-islands-blender-assets-v1",
+  "PRBaseSHA": "19a568279424278dad5b7ce45dba11fca53c0145",
+  "headBranch": "codex/transport-elevated-station-v9-blender-prototype",
+  "protectedPathsUnchanged": [
+    "src",
+    "public",
+    "package.json",
+    "package-lock.json",
+    "LICENSE",
+    "docs/design/parent-child-blender-refinement-v2",
+    "docs/design/seven-policy-islands-blender-v1"
+  ],
+  "protectedFiles": [
+    {
+      "path": "src/data/yuan-plan.json",
+      "sha256": "8cba1949b2cf59745595d20c92c3859a410bfcd5fc8fbb84ba90674cc6dc3cdb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/parent-child-blender-refinement-v2/parent-child-centre.blend",
+      "sha256": "a5116f37b5c5fb9a3d8f4612d94094fc33680159b80ea1bd5fcf63fc8e5013c0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/parent-child-blender-refinement-v2/parent-child-centre.glb",
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44",
+      "unchanged": true
+    }
+  ],
+  "preExistingUserPreviewEditsPreservedAndExcludedFromCommits": [
+    {
+      "path": "docs/previews/yuan-panorama/panorama-pure.png",
+      "sha256": "d17053b6ce1b0416de12ed0b0e8bba41b630deaae1190ded3235e129f9c3a460",
+      "unchangedFromPreExistingBackup": true
+    },
+    {
+      "path": "docs/previews/yuan-panorama/desktop-explore.png",
+      "sha256": "5c579e1e7f1b2c74e4e7fe97ec96a8c23cc7ced0e7f6f151c69a3b45ad389a5c",
+      "unchangedFromPreExistingBackup": true
+    },
+    {
+      "path": "docs/previews/yuan-panorama/mobile-explore.png",
+      "sha256": "ff1ccc4b1391cba0da9df1fc36fb681f385ef405e7ab0fc0b1fe164eca863255",
+      "unchangedFromPreExistingBackup": true
+    },
+    {
+      "path": "docs/previews/yuan-panorama/panorama-labelled.png",
+      "sha256": "d7f4ddf33cfb7fd2c3de515fcd10334b2ac0cff2a82641f72ade4797b43e4c04",
+      "unchangedFromPreExistingBackup": true
+    },
+    {
+      "path": "docs/previews/yuan-panorama/mobile-portrait-panorama.png",
+      "sha256": "0994b2f4b973d2b618d74354d1a7e3d61e23876b7df76da20162130cc62f7bf8",
+      "unchangedFromPreExistingBackup": true
+    }
+  ],
+  "productionConfigChanged": false,
+  "gameIntegrationPerformed": false,
+  "PRBaseRetargetPerformed": false,
+  "forcePushPerformed": false,
+  "transportOnlyApprovedBaseProposal": "BRANCH-ISOLATION.md",
+  "recoveryCodeCommit": "0b02820658e5c9ccf4821c58dfe2c2547e93d756",
+  "recoveryModelsCommitShort": "ca94f48"
+}

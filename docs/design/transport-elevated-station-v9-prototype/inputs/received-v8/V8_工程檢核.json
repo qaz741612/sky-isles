@@ -1,0 +1,88 @@
+{
+  "design": "V8_高架交通驛站",
+  "roadLinkIDs": [
+    "S09",
+    "S10",
+    "S15",
+    "S18"
+  ],
+  "worldUnits": "Sky Isles",
+  "playerHeight": 1.5,
+  "roadWidth": 4.8,
+  "siteOuterBoundsXZ": [
+    -10.164,
+    -11.17,
+    10.17,
+    8.649
+  ],
+  "siteSizeWXZ": [
+    20.33,
+    19.82
+  ],
+  "siteArea": 333.79,
+  "hallBoundsXZ": [
+    -6.85,
+    -5.79,
+    6.85,
+    -3.04
+  ],
+  "viaductEnvelopeXYZ": [
+    -9.45,
+    0,
+    -9.35,
+    9.45,
+    10.64,
+    -5.06
+  ],
+  "platformHeight": 3.75,
+  "deckUnderside": 3.289,
+  "maxTrainHeight": 6.208,
+  "platformCanopyTop": 6.79,
+  "npcSquaresXZ": [
+    [
+      -3.7,
+      3.93
+    ],
+    [
+      3.65,
+      3.93
+    ]
+  ],
+  "viaductFootprintInsideSite": true,
+  "hallInsideSite": true,
+  "stairInsideSite": true,
+  "elevatorInsideSite": true,
+  "npcSquareClear": [
+    true,
+    true
+  ],
+  "piersBlockRoadSpine": false,
+  "clearanceUnderViaduct": 3.248,
+  "unrelatedRoadOverlapAreas": {
+    "S05": 0.0,
+    "S08": 0.0,
+    "S11": 0.0,
+    "S02": 0.0,
+    "S07": 0.0
+  },
+  "familyIslandOverlapArea": 0.0,
+  "groundNavComponents": {
+    "S09 west": 1,
+    "S10 east": 1,
+    "S15 north": 1,
+    "S18 north": 1,
+    "spawn": 1,
+    "lobby": 1,
+    "npcWest": 1,
+    "npcEast": 1,
+    "elevator": 1,
+    "stairs": 1
+  },
+  "groundNavConnected": true,
+  "groundSolidFootprintIntersectMainRoadSpine": 0.0,
+  "notes": "Full Three.js camera / collider / shader / mobile performance NOT verified; elevated platform accessibility is represented in geometry but not runtime navmesh.",
+  "architecturalHeightRevision": "Piecewise human-scale elevation: deck 3.75, coach 2.08, canopy below 6.9; coordinates in exported GLB are actual revisions.",
+  "cameraFramingNotes": "Camera perspective mock-ups use desktop dist16, pitch .60, fov55 and mobile dist22, pitch .67, fov58 aimed at original player spawn. Verify actual game orbit separately.",
+  "meshTrianglesTotal": 28328,
+  "glbBytes": 798436
+}

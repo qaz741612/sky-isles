@@ -1,0 +1,530 @@
+{
+  "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+  "groundStructuralSupports": [
+    {
+      "name": "GardenLanternFoot",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenLanternFoot.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenLanternFoot.002",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenLanternFoot.003",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Back",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Back.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Leg",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Leg.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Leg.002",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Leg.003",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat.002",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat.003",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat.004",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Upright",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Upright.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Back.002",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Back.003",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Leg.004",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Leg.005",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Leg.006",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Leg.007",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat.005",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat.006",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat.007",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat.008",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Seat.009",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Upright.002",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "GardenWaitingBench_Upright.003",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "SteelWoodWasteBin",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "SteelWoodWasteBin.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Back",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Back.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Leg",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Leg.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Leg.002",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Leg.003",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat.002",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat.003",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat.004",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Upright",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Upright.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Back.002",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Back.003",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Leg.004",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Leg.005",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Leg.006",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Leg.007",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat.005",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat.006",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat.007",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat.008",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Seat.009",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Upright.002",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WindowWaitingBench_Upright.003",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "EastArrivalGarden_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "EastArrivalGarden_Tree_Trunk",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "EastForecourtGarden_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "EastForecourtGarden_Tree_Trunk",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "EastLiftGarden_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "EastWindowGarden_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "EntryTerracottaPot",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "EntryTerracottaPot.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "RearRailGardenEast_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "RearRailGardenWest_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "SecondaryLayerTree_Trunk",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "SecondaryLayerTree_Trunk.001",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WestAccessGarden_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WestArrivalGarden_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WestArrivalGarden_Tree_Trunk",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WestForecourtGarden_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WestForecourtGarden_Tree_Trunk",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "WestWindowGarden_Retaining",
+      "outsideSiteArea": 0.0
+    },
+    {
+      "name": "TravelInformationStele",
+      "outsideSiteArea": 0.0
+    }
+  ],
+  "groundStructuralSupportMethod": "Union of actual evaluated triangle XZ projections; avoids convex-hull false positives on concave island/planter edges. Foliage/roof cantilevers intentionally excluded.",
+  "groundStructuralSupportsAllInsideSite": true,
+  "upperRouteChecks": [
+    {
+      "route": "platform-clear-lane",
+      "radius": 0.33,
+      "intersectingShells": []
+    },
+    {
+      "route": "stair-upper-connector",
+      "radius": 0.33,
+      "intersectingShells": []
+    },
+    {
+      "route": "lift-upper-connector",
+      "radius": 0.33,
+      "intersectingShells": []
+    }
+  ],
+  "shelterTrainOverlapArea": 0.0,
+  "shelterClearanceAboveUpperWalk": 1.9400000000000004,
+  "groundBenchesOutsideSiteArea": 0.0,
+  "retainedGroundRoofAndIdentity": true,
+  "canopyRemaining": false,
+  "framing": [
+    {
+      "camera": "hero",
+      "viewport": [
+        1440,
+        1080
+      ],
+      "parts": {
+        "cab": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.7724888336744955,
+            0.16901223990222164
+          ],
+          "maxNDC": [
+            -0.6736560649581367,
+            0.3546232353069445
+          ]
+        },
+        "train": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.7724888336744955,
+            0.15536258764783367
+          ],
+          "maxNDC": [
+            0.23546912270194834,
+            0.7672432779428309
+          ]
+        },
+        "entrance": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.19704348592728893,
+            -0.1519774562097247
+          ],
+          "maxNDC": [
+            0.06003042473141009,
+            0.17487693434617502
+          ]
+        },
+        "structure": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.8422011634390476,
+            -0.18192790515846222
+          ],
+          "maxNDC": [
+            0.29632692921486103,
+            0.5814756759078129
+          ]
+        }
+      },
+      "scope": "Framing of real evaluated geometry, not a pixel visibility or gameplay proof."
+    },
+    {
+      "camera": "player-desktop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "parts": {
+        "cab": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.32634383874302203,
+            0.6567487798828828
+          ],
+          "maxNDC": [
+            -0.2641620888607244,
+            0.8163504676487422
+          ]
+        },
+        "train": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.32634383874302203,
+            0.5604010079103359
+          ],
+          "maxNDC": [
+            0.613190891746773,
+            0.8242958390211463
+          ]
+        },
+        "entrance": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.07482436896827514,
+            0.14547046051064194
+          ],
+          "maxNDC": [
+            0.19309004729525334,
+            0.39457005198552625
+          ]
+        },
+        "structure": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.39113605362402365,
+            0.2494255874784816
+          ],
+          "maxNDC": [
+            0.6048747562905621,
+            0.6474805595752425
+          ]
+        }
+      },
+      "scope": "Framing of real evaluated geometry, not a pixel visibility or gameplay proof."
+    },
+    {
+      "camera": "player-mobile",
+      "viewport": [
+        720,
+        1280
+      ],
+      "parts": {
+        "cab": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.773846298457614,
+            0.5367651824848582
+          ],
+          "maxNDC": [
+            -0.6443811798334141,
+            0.663343379605779
+          ]
+        },
+        "train": {
+          "allVerticesInFrame": false,
+          "vertexFractionInFrame": 0.8734011151197114,
+          "minNDC": [
+            -0.773846298457614,
+            0.46558700342905485
+          ],
+          "maxNDC": [
+            1.2497067149783112,
+            0.6717901321564677
+          ]
+        },
+        "entrance": {
+          "allVerticesInFrame": true,
+          "vertexFractionInFrame": 1.0,
+          "minNDC": [
+            -0.188561201052396,
+            0.1385184618628228
+          ],
+          "maxNDC": [
+            0.3730739324129413,
+            0.31435785443646386
+          ]
+        },
+        "structure": {
+          "allVerticesInFrame": false,
+          "vertexFractionInFrame": 0.9308578745198464,
+          "minNDC": [
+            -0.9057879437066869,
+            0.2339104571804228
+          ],
+          "maxNDC": [
+            1.2297596466522238,
+            0.5426709406732968
+          ]
+        }
+      },
+      "scope": "Framing of real evaluated geometry, not a pixel visibility or gameplay proof."
+    }
+  ],
+  "cabRayChecks": [
+    {
+      "camera": "hero",
+      "firstHit": "CabActualWindscreen",
+      "cabFirstHit": true
+    },
+    {
+      "camera": "player-mobile",
+      "firstHit": "OriginalRoundedCabNose",
+      "cabFirstHit": true
+    }
+  ],
+  "knownLimits": [
+    "Offline geometry/proxy checks only, no runtime capsule or mobile-device proof.",
+    "Strict portrait retains west cab and entrance but crops east trailing end/outer supports.",
+    "Static train, lift nonfunctional, stair step controller absent; not gameplay integration."
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "requestedVersion": "V9",
+  "receivedVersion": "V8",
+  "sourceArchiveBytes": 17827145,
+  "sourceArchiveSHA256": "ebfb332cfbd09f1e36e3bbcab10182b7be158505053c130f8a5360ea0038574b",
+  "requiredArtReferencePresent": true,
+  "missingRequiredInputs": [
+    "V9 geometry-reference GLB",
+    "交通大升級_高架車站_正式建模設計規格.md"
+  ],
+  "files": [
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/F_elevated_station_v8_design.glb",
+      "bytes": 798436,
+      "sha256": "a15cd5e3e54fd87a2e68e948ae332d8564a9f76d52a81bfd6268af53bee66c83",
+      "glbContainerValid": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/README_V8_設計自評與驗收.md",
+      "bytes": 4220,
+      "sha256": "425d1aad1c3cfb5f66fcd54cf3b320ece2bde0c3c301ca86d1ac30a0f013af24"
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/V8_工程檢核.json",
+      "bytes": 1947,
+      "sha256": "fa96572e70252db43fa2b70d867026915e2fef4a7f2e6b9cf28de94686d30a62"
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/V8_自動檢查結果.json",
+      "bytes": 1088,
+      "sha256": "a98edf15b329a47bb3ffd2cdc9583b9572ae9e468c6540256c7da060d0ba95c2"
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/build_transport_v8.py",
+      "bytes": 35160,
+      "sha256": "1ddeb8dac6476f3fd82a2824980f6f671a601aebfcd106ea8bcff208824da93b"
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/01_hero.png",
+      "bytes": 1493029,
+      "sha256": "356add405fc0c0dcf7b0bfd847275393cf64cffc0492744ad3bdece689340255",
+      "width": 1700,
+      "height": 1280,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/02_front.png",
+      "bytes": 892305,
+      "sha256": "a80c5e67ee7eaf46b3266c275708230ecf7ee985daf67ea85d2b9e459885a37a",
+      "width": 1400,
+      "height": 970,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/03_rear.png",
+      "bytes": 776194,
+      "sha256": "3df2c38d4443a1779a0b08319b97fc4393c2ab990195fc81c3e3fca099c38872",
+      "width": 1400,
+      "height": 970,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/04_left.png",
+      "bytes": 876955,
+      "sha256": "ca3f9cdd0b60845a828fdfc7179ecaf78668842d5c31abd7cb53b5a3bb4f1c2e",
+      "width": 1400,
+      "height": 970,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/05_right.png",
+      "bytes": 862864,
+      "sha256": "15c6c837705e290ca08359ba5e0e0de310f12d75c4a4875afea41f9900c32e36",
+      "width": 1400,
+      "height": 970,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/06_top.png",
+      "bytes": 870703,
+      "sha256": "284eac16dac88365357eac04d8e550463c8142faa1b73fbee733f6c9fb7e0ae4",
+      "width": 1360,
+      "height": 1360,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/07_player_desktop.png",
+      "bytes": 952653,
+      "sha256": "92124af3e514219067e108b6f092ba6eef60e1111589b4878fc00b6585bb3938",
+      "width": 1500,
+      "height": 900,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/08_player_mobile.png",
+      "bytes": 942113,
+      "sha256": "d47ee27ca68e72b67cd3ac339bfbb35395109a49c4fb917a466b86c1cb5b5f4e",
+      "width": 900,
+      "height": 1450,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/views/09_high_rail.png",
+      "bytes": 1448576,
+      "sha256": "da265d74eca040f4fd9b9419e6f14866ac476b6dae744697981a19ddfbc7ec5e",
+      "width": 1700,
+      "height": 1280,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/交通大升級_V8_真實尺度與橋口.png",
+      "bytes": 92348,
+      "sha256": "3012f7471804604dba6e7dcef790eecc4471d572ad9c0c1ffffcde58a43eb1d5",
+      "width": 1550,
+      "height": 1700,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/交通大升級_V8_高架車站_同源六視圖.png",
+      "bytes": 4023484,
+      "sha256": "80ef0721a0b9b0ff4aeffbc560564a2b42ccb9b10030c6a14e0f0635ce537d3a",
+      "width": 2400,
+      "height": 3380,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/交通大升級_V8_高架車站_美術工程對照.png",
+      "bytes": 2111646,
+      "sha256": "852e34f6b61396f2a766ed54b8e51ac909245ff11cb779a3bf8f6ba6dffa464b",
+      "width": 2300,
+      "height": 1780,
+      "decodeVerified": true
+    },
+    {
+      "path": "docs/design/transport-elevated-station-v9-prototype/inputs/received-v8/美術參考_高架車站.png",
+      "bytes": 2419443,
+      "sha256": "ad9f86475e4d494fcb171dd8f425bcd0d8118968b1f7eb5c3eab736bd7bc961c",
+      "width": 1448,
+      "height": 1086,
+      "decodeVerified": true
+    }
+  ],
+  "archiveScriptsExecuted": false,
+  "formalModellingStarted": false,
+  "gameModified": false,
+  "status": "Blocked on required V9 specification and geometry; do not silently substitute V8."
+}

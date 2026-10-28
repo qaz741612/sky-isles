@@ -1,0 +1,11 @@
+{
+  "command": "npm run check",
+  "nodeVersion": "v24.19.0",
+  "exitCode": 0,
+  "reportedTestFilesPassed": 50,
+  "reportedFailures": 0,
+  "lintPassed": true,
+  "buildPassed": true,
+  "logSHA256": "e47a2f31bcb26e8950a40f3b72daa435d668092d5713ed83fd43662923e8ded1",
+  "scope": "Existing unchanged PR14 game only. Node reports test files in this run; not a new-model gameplay integration test."
+}

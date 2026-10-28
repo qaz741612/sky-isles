@@ -1,0 +1,145 @@
+{
+  "sourceCommit": "81f7408468bcce2f7452b13e0a9d7ea1d4be62a1",
+  "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+  "views": [
+    {
+      "view": "player-desktop",
+      "file": "before/player-desktop.png",
+      "size": [
+        1440,
+        900
+      ],
+      "cameraPositionBlenderXYZ": [
+        2.103855848312378,
+        -16.536701202392578,
+        11.034279823303223
+      ],
+      "cameraRotationRadians": [
+        0.9707963466644287,
+        1.3206764570838914e-08,
+        0.1600000113248825
+      ],
+      "projection": "PERSP",
+      "orthoScale": null,
+      "lensMillimetres": 30.735713958740234,
+      "sensorFit": "VERTICAL",
+      "sensorHeight": 32.0,
+      "simulationOnly": true,
+      "distance": 16,
+      "pitch": 0.6,
+      "yaw": 0.16,
+      "verticalFOV": 55,
+      "targetWorldXYZ": [
+        0.0,
+        2.0,
+        3.5
+      ],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 48,
+      "seconds": 190.83,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "f915e2b9172c3321879c0d98832d21f0bfb8734741c1d41fb2efc07619f0c1b7",
+      "originalPR14Commit": "81f7408468bcce2f7452b13e0a9d7ea1d4be62a1"
+    },
+    {
+      "view": "player-mobile",
+      "file": "before/player-mobile.png",
+      "size": [
+        720,
+        1280
+      ],
+      "cameraPositionBlenderXYZ": [
+        2.064326524734497,
+        -20.620067596435547,
+        15.661691665649414
+      ],
+      "cameraRotationRadians": [
+        0.9007965326309204,
+        1.1977216551883885e-08,
+        0.12000004202127457
+      ],
+      "projection": "PERSP",
+      "orthoScale": null,
+      "lensMillimetres": 28.864763259887695,
+      "sensorFit": "VERTICAL",
+      "sensorHeight": 32.0,
+      "simulationOnly": true,
+      "distance": 22,
+      "pitch": 0.67,
+      "yaw": 0.12,
+      "verticalFOV": 58,
+      "targetWorldXYZ": [
+        0.0,
+        2.0,
+        3.5
+      ],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 48,
+      "seconds": 147.13,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "b37841e772430ac557f02077da2d2cde6b8370c4a46c6c7471587ef073c45324",
+      "originalPR14Commit": "81f7408468bcce2f7452b13e0a9d7ea1d4be62a1"
+    },
+    {
+      "view": "top",
+      "file": "before/top.png",
+      "size": [
+        1440,
+        1080
+      ],
+      "cameraPositionBlenderXYZ": [
+        0.0,
+        1.0,
+        42.0
+      ],
+      "cameraRotationRadians": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 29.600000381469727,
+      "lensMillimetres": 48.0,
+      "sensorFit": "AUTO",
+      "sensorHeight": 24.0,
+      "simulationOnly": false,
+      "distance": null,
+      "pitch": null,
+      "yaw": null,
+      "verticalFOV": null,
+      "targetWorldXYZ": [],
+      "engine": "Blender Cycles CPU / OIDN",
+      "samples": 48,
+      "seconds": 198.22,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "a9cb027881491b37cf6db19994f072c5fd8d775a2d00e3ec9aaaf88d763d5957",
+      "originalPR14Commit": "81f7408468bcce2f7452b13e0a9d7ea1d4be62a1"
+    },
+    {
+      "view": "hero",
+      "file": "before/hero.png",
+      "size": [
+        1440,
+        1080
+      ],
+      "cameraPositionBlenderXYZ": [
+        -25.0,
+        -30.0,
+        20.0
+      ],
+      "cameraRotationRadians": [
+        1.1436082124710083,
+        -1.5511162132497702e-08,
+        -0.6755222082138062
+      ],
+      "projection": "ORTHO",
+      "orthoScale": 29.600000381469727,
+      "samples": 64,
+      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+      "imageSHA256": "543b869d77939ceeb2ded9055265d23a42ce5ceb0940c3a0083731c57e26267e",
+      "seconds": 194.5951726436615,
+      "originalPR14Commit": "81f7408468bcce2f7452b13e0a9d7ea1d4be62a1"
+    }
+  ],
+  "note": "Before images use prior PR14 BLEND, same camera matrices/resolution as final. Hero re-rendered from west cab-side comparison camera; strict player images reused byte-for-byte after parameter verification."
+}

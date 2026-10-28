@@ -1,0 +1,27 @@
+{
+  "sourceCommit": "ca94f48bccdc89a00e5a0688479214d6114915d6",
+  "modelRebuiltThisRound": false,
+  "files": [
+    {
+      "file": "transport-station-v9.blend",
+      "bytes": 1614379,
+      "sha256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "gitBlob": "6a5c5469979a6461931565fd76fc8b4e5f9a7b40",
+      "matchesCa94f48Exactly": true
+    },
+    {
+      "file": "transport-station-v9-showcase.glb",
+      "bytes": 40649088,
+      "sha256": "32d021a0df38853012f752d0b1d1e3ff52d6dff2d0b4abfd90f8127f05c52980",
+      "gitBlob": "030c184d3c47e652d4d039a25673f209ac23c35b",
+      "matchesCa94f48Exactly": true
+    },
+    {
+      "file": "transport-station-v9-game-candidate.glb",
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "gitBlob": "23f309d4ce1264b1c4c77b7936eb72049f8f49ea",
+      "matchesCa94f48Exactly": true
+    }
+  ]
+}
