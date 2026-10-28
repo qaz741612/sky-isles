@@ -1,5 +1,5 @@
 {
-  "phase": "standalone Blender prototype, manual art acceptance pending",
+  "phase": "PR14 open-platform revision; standalone artwork, manual acceptance pending",
   "blenderVersion": "4.3.0",
   "artSource": "inputs/approved-v9/美術參考_高架車站.png",
   "artSHA256": "ad9f86475e4d494fcb171dd8f425bcd0d8118968b1f7eb5c3eab736bd7bc961c",
@@ -7,17 +7,16 @@
   "geometryReferenceSHA256": "991f8c99dcdb52ac635cf80c8cb6b3003fcb973f3f201f119267d07adb62fdc0",
   "geometrySourceReusedAsArt": false,
   "curvedHallTemplateUsed": false,
-  "worldPlanSHA256": "8cba1949b2cf59745595d20c92c3859a410bfcd5fc8fbb84ba90674cc6dc3cdb",
+  "worldPlanSHA256": "244c3d8ba3b870536a9ca1059e29f31eda4fbdaf912ff930a52cf2fa11927059",
   "sourceScriptSHA256": {
-    "scripts/blender/build_elevated_station_v9.py": "423e981c90595e9a586fa5bbb13b034d6a84df436849c1f9f0dcdab84d2ee51f",
-    "scripts/blender/finish_elevated_station_v9.py": "00acdd865a01d8c9dba9bc97c7525f86b58fc76000ba0061cffe3fcbc777400a",
-    "scripts/blender/elevated_station_v9/exporter.py": "f56ff9e604ae32a1837c35777e9fb1603ea683378b27af06ff29beee4c1aa490",
+    "scripts/blender/open_platform_elevated_station_v9.py": "f235e1f633d402ba167e91c9b04abd91d85ed0a1b20f3f6be4ba796c1c809da2",
+    "scripts/blender/elevated_station_v9/exporter.py": "162f2ce108c241088764d4b87e8df78e3f1b705725253bba65b230a8b97d7998",
     "scripts/blender/elevated_station_v9/architecture.py": "1be71ef6e9b47e4a0b56a0e2da87e8c1dcc457c592feace5e4fb5ef565e625f1",
     "scripts/blender/elevated_station_v9/landscape.py": "84ae81aa02976fce884e049da4443f13109344118d0e26067564a300a1667c21",
     "scripts/blender/elevated_station_v9/core.py": "b8168fa4bb7e2b9633bb827320ab331acff7220395049515f2a9cdc0e97314e8"
   },
-  "sourceMeshObjects": 9004,
-  "evaluatedTriangles": 540704,
+  "sourceMeshObjects": 8451,
+  "evaluatedTriangles": 516548,
   "geometryAuditIssues": [],
   "sitePolygonXZ": [
     [
@@ -1681,29 +1680,29 @@
     "max": [
       10.193004608154297,
       11.19342041015625,
-      6.860000133514404
+      5.888000011444092
     ]
   },
-  "blendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+  "blendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
   "showcase": {
-    "triangles": 540704,
-    "meshPrimitives": 90,
+    "triangles": 516548,
+    "meshPrimitives": 91,
     "materials": 33,
-    "bytes": 42612988,
+    "bytes": 40649088,
     "skippedMicroFoliageObjects": 0,
     "UVandNormalsPreserved": true,
     "mode": "evaluated original source geometry",
-    "sha256": "f1f290b1cedfec984dcdbd9d551876a65354c52fb45eac7160094fa15013c2c6"
+    "sha256": "32d021a0df38853012f752d0b1d1e3ff52d6dff2d0b4abfd90f8127f05c52980"
   },
   "candidate": {
-    "triangles": 213496,
-    "meshPrimitives": 90,
+    "triangles": 201820,
+    "meshPrimitives": 49,
     "materials": 33,
-    "bytes": 18557856,
-    "skippedMicroFoliageObjects": 1530,
+    "bytes": 17633080,
+    "skippedMicroFoliageObjects": 1410,
     "UVandNormalsPreserved": true,
-    "mode": "1-segment bevels and omit tagged microfoliage; same architecture/train/door positions; candidate-only alpha thin glass, no refraction pass",
-    "sha256": "3578ee0082ae06b1f508e4c566cdba77b976131b63a24692c7968d8030b44517",
+    "mode": "1-segment bevels, omit tagged microfoliage, material-coalesce static station within this one island; train assemblies remain separate; geometry/normals/UV retained; candidate-only alpha thin glass, no refraction pass",
+    "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
     "thinGlassOptimization": [
       {
         "material": "glass",
@@ -1720,7 +1719,8 @@
     ]
   },
   "buildSeconds": 59.76,
-  "previousSourceBlendSHA256": "3dfa5fff234e7edba2ce1d6bbe0aa5b4d5cab7601fc3628a63e7afa5c8f52487",
+  "previousSourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
   "localCompletion": "Trailing coach real window/end wall; side infill around window openings; lift middle glazing. Other existing mesh transforms unchanged.",
-  "candidateOptimizationScriptSHA256": "f6e4daeae002243141156d169e45ccd853e303f4ba23a730bbabf85a0fdd1349"
+  "candidateOptimizationScriptSHA256": "f6e4daeae002243141156d169e45ccd853e303f4ba23a730bbabf85a0fdd1349",
+  "designRevision": "open-platform-r2"
 }

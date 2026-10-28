@@ -1,9 +1,9 @@
 {
-  "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+  "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
   "sourceUnchangedAfterInspection": true,
   "allClosedPositiveVolume": true,
-  "meshObjectsChecked": 9004,
-  "evaluatedTriangles": 540704,
+  "meshObjectsChecked": 8451,
+  "evaluatedTriangles": 516548,
   "issues": [],
   "actualLowGeometryNPCIntrusions": [
     [],
@@ -27,23 +27,6 @@
     "maximumMismatch": 0.000499725341796875
   },
   "componentBounds": {
-    "Canopy": {
-      "minWorldXYZ": [
-        -9.869999885559082,
-        3.309999942779541,
-        -9.539999961853027
-      ],
-      "maxWorldXYZ": [
-        9.869999885559082,
-        6.860000133514404,
-        -5.639999866485596
-      ],
-      "sizeWorldXYZ": [
-        19.739999771118164,
-        3.5500001907348633,
-        3.9000000953674316
-      ]
-    },
     "Hall": {
       "minWorldXYZ": [
         -7.125,
@@ -63,19 +46,19 @@
     },
     "TrainRollingStock": {
       "minWorldXYZ": [
-        -8.680000305175781,
+        -8.679999351501465,
         3.5409996509552,
-        -9.052000045776367
+        -9.052000999450684
       ],
       "maxWorldXYZ": [
-        9.430000305175781,
+        9.430001258850098,
         5.888000011444092,
-        -7.3480000495910645
+        -7.347999095916748
       ],
       "sizeWorldXYZ": [
         18.110000610351562,
         2.3470003604888916,
-        1.7039999961853027
+        1.7040019035339355
       ]
     },
     "VerticalCirculation": {
@@ -133,19 +116,18 @@
       "projection": "ORTHO",
       "wholeAssetInFrame": true,
       "actualPartsWithinFrame": {
-        "Canopy": true,
         "Hall": true,
         "TrainRollingStock": true,
         "VerticalCirculation": true,
         "Viaduct": true
       },
       "minNDC": [
-        -0.7633392045462012,
+        -0.916931570417902,
         -0.6235073523897703
       ],
       "maxNDC": [
-        0.9169146907427843,
-        0.8840723770907779
+        0.7633392045462012,
+        0.7672432779428309
       ],
       "simulationOnly": false
     },
@@ -158,7 +140,6 @@
       "projection": "ORTHO",
       "wholeAssetInFrame": true,
       "actualPartsWithinFrame": {
-        "Canopy": true,
         "Hall": true,
         "TrainRollingStock": true,
         "VerticalCirculation": true,
@@ -170,7 +151,7 @@
       ],
       "maxNDC": [
         0.688716496789965,
-        0.5384223529710718
+        0.4399437744202752
       ],
       "simulationOnly": false
     },
@@ -183,7 +164,6 @@
       "projection": "ORTHO",
       "wholeAssetInFrame": true,
       "actualPartsWithinFrame": {
-        "Canopy": true,
         "Hall": true,
         "TrainRollingStock": true,
         "VerticalCirculation": true,
@@ -195,7 +175,7 @@
       ],
       "maxNDC": [
         0.6883397695652714,
-        0.3716711587850797
+        0.31852404399304607
       ],
       "simulationOnly": false
     },
@@ -208,7 +188,6 @@
       "projection": "ORTHO",
       "wholeAssetInFrame": true,
       "actualPartsWithinFrame": {
-        "Canopy": true,
         "Hall": true,
         "TrainRollingStock": true,
         "VerticalCirculation": true,
@@ -220,7 +199,7 @@
       ],
       "maxNDC": [
         0.6721092729474316,
-        0.5634968122608663
+        0.4619669652325199
       ],
       "simulationOnly": false
     },
@@ -233,7 +212,6 @@
       "projection": "ORTHO",
       "wholeAssetInFrame": true,
       "actualPartsWithinFrame": {
-        "Canopy": true,
         "Hall": true,
         "TrainRollingStock": true,
         "VerticalCirculation": true,
@@ -245,7 +223,7 @@
       ],
       "maxNDC": [
         0.6730567522248633,
-        0.5634968122608663
+        0.4460316987848537
       ],
       "simulationOnly": false
     },
@@ -258,7 +236,6 @@
       "projection": "ORTHO",
       "wholeAssetInFrame": true,
       "actualPartsWithinFrame": {
-        "Canopy": true,
         "Hall": true,
         "TrainRollingStock": true,
         "VerticalCirculation": true,
@@ -283,7 +260,6 @@
       "projection": "ORTHO",
       "wholeAssetInFrame": false,
       "actualPartsWithinFrame": {
-        "Canopy": true,
         "Hall": true,
         "TrainRollingStock": true,
         "VerticalCirculation": true,
@@ -295,7 +271,7 @@
       ],
       "maxNDC": [
         0.6806202651733224,
-        0.44819174023261277
+        0.2982021394550265
       ],
       "simulationOnly": false
     },
@@ -308,7 +284,6 @@
       "projection": "PERSP",
       "wholeAssetInFrame": true,
       "actualPartsWithinFrame": {
-        "Canopy": true,
         "Hall": true,
         "TrainRollingStock": true,
         "VerticalCirculation": true,
@@ -320,7 +295,7 @@
       ],
       "maxNDC": [
         0.7282868010299923,
-        0.9258548722331948
+        0.8242958390211463
       ],
       "simulationOnly": true
     },
@@ -333,7 +308,6 @@
       "projection": "PERSP",
       "wholeAssetInFrame": false,
       "actualPartsWithinFrame": {
-        "Canopy": false,
         "Hall": true,
         "TrainRollingStock": false,
         "VerticalCirculation": false,
@@ -344,8 +318,8 @@
         -0.4829620278482205
       ],
       "maxNDC": [
-        1.3856910303141439,
-        0.7526409623191721
+        1.3400032504996375,
+        0.6717901321564677
       ],
       "simulationOnly": true
     }

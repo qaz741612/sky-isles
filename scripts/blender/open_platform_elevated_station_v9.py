@@ -21,7 +21,7 @@ s.proxies=json.loads((before/'collision-shells.json').read_text())['shells'];s.p
 # Freeze the retained structures: topology/material assignment/local and world transforms.
 def fingerprint(o):
  return hashlib.sha256(json.dumps({'vertices':[list(v.co)for v in o.data.vertices],'faces':[list(f.vertices)for f in o.data.polygons],'matrix':[list(r)for r in o.matrix_world],'materials':[m.name for m in o.data.materials]},sort_keys=True).encode()).hexdigest()
-keep={o.name:fingerprint(o)for role in ['Hall','Identity','Viaduct','Railway','VerticalCirculation']for o in s.groups[role].children_recursive if o.type=='MESH'}
+keep={o.name:fingerprint(o)for role in ['Hall','Identity','Viaduct','Railway','VerticalCirculation']for o in s.groups[role].children_recursive if o.type=='MESH'and not o.name.startswith(('TopAccessBridge','StairTopLanding','LiftLandingBridge'))}
 # Remove the entire upper-only semantic group, not a name substring across roofs.
 removed=[{'name':o.name,'type':o.type}for o in s.groups['Canopy'].children_recursive]
 for o in reversed(list(s.groups['Canopy'].children_recursive)):bpy.data.objects.remove(o,do_unlink=True)
@@ -95,6 +95,22 @@ for p in s.proxies:
   cx=sum(v[0]for v in p['polygonXZ'][:-1])/4;poly=rotate(Polygon(p['polygonXZ']),90 if cx<0 else -90,origin=(cx,4.1));from shapely.affinity import translate;poly=translate(poly,xoff=-1.10 if cx<0 else 1.10,yoff=2.25);p['polygonXZ']=list(poly.exterior.coords)
 # Train collider reflects real reversed geometry; dimensions unchanged, no animation claim.
 s.proxy('TrainSweptStaticEnvelope','train',rect(-8.70,-9.06,9.45,-7.34),3.54,5.91,'static_display_no_riding')
+# Remove inherited coplanar deck overlap: millimetre seam offsets, not a new design.
+for name,offset in [('TopAccessBridge',.003),('StairTopLanding',.006),('LiftLandingBridge',.003)]:
+ bpy.data.objects[name].location.z+=offset
+ for p in s.proxies:
+  if p['id']==name:p['bottom']+=offset;p['top']+=offset
+s.proxy('StairTopLanding','platform',rect(-7.925,-3.625,-6.375,-2.675),3.596,3.756,'walkable')
+# Inherited tactile strips overlap at exactly the same height. Union once, no black Z seam.
+s.use('Paving');guides=[]
+for obj in list(s.groups['Paving'].children_recursive):
+ if obj.type=='MESH' and obj.name.startswith('TactileGuidance'):
+  # Original strips are static site-clipped solids with planar top/bottom.
+  pts=[obj.matrix_world@v.co for v in obj.data.vertices];obj.data.calc_loop_triangles();polys=[Polygon([(pts[i].x,-pts[i].y)for i in t.vertices])for t in obj.data.loop_triangles]
+  guides.append(unary_union([p for p in polys if p.area>1e-10]));bpy.data.objects.remove(obj,do_unlink=True)
+if guides:s.solid('TactileGuidanceUnified',unary_union(guides),.075,.085,'yellow')
+
+
 # Add semantic source proxies; exporters only visit artwork root, never these.
 G.COL=col
 for p in s.proxies:
@@ -122,5 +138,5 @@ assert not issues,issues
 # Store detailed revision receipts, plus current approved base plan hash.
 r=old.copy();r.update(phase='PR14 open-platform revision; standalone artwork, manual acceptance pending',designRevision='open-platform-r2',previousSourceBlendSHA256=sha(beforeFile),worldPlanSHA256=sha(ROOT/'src/data/yuan-plan.json'),sourceMeshObjects=objects,evaluatedTriangles=tris,geometryAuditIssues=[],boundsBlenderXYZ={'min':[min(v[i]for v in bounds)for i in range(3)],'max':[max(v[i]for v in bounds)for i in range(3)]},sourceScriptSHA256={str(q.relative_to(ROOT)):sha(q)for q in [Path(__file__),*Path(__file__).parent.joinpath('elevated_station_v9').glob('*.py')]})
 (OUT/'collision-shells.json').write_text(json.dumps({'scope':'Offline collision candidates ONLY, not game capsule physics. Vertical access not implemented; no NPC model.','worldAxes':'X east, Y up, Z north','shells':s.proxies},ensure_ascii=False,indent=2)+'\n')
-receipt={'previousSourceBlendSHA256':sha(beforeFile),'removedUpperCanopyObjects':removed,'removedUpperCanopyCount':len(removed),'purgedUnusedMeshCount':len(purged),'remainingUpperCanopyObjects':0,'retainedGeometryFingerprints':keep,'retainedMeshCount':len(keep),'retainedGeometryExact':True,'trainRigidRotationDegrees':180,'trainScale':[1,1,1],'trainBBoxPivotWorldXZ':[.375,-8.2],'shelterFootprintXZ':[-7.41,-4.59,-5.63,-2.81],'shelterRoofY':5.76,'fourPortsNPCsAndSpawnUnchanged':True,'sceneNotIntegrated':True}
+receipt={'previousSourceBlendSHA256':sha(beforeFile),'removedUpperCanopyObjects':removed,'removedUpperCanopyCount':len(removed),'purgedUnusedMeshCount':len(purged),'remainingUpperCanopyObjects':0,'retainedGeometryFingerprints':keep,'retainedMeshCount':len(keep),'retainedGeometryExact':True,'trainRigidRotationDegrees':180,'trainScale':[1,1,1],'trainBBoxPivotWorldXZ':[.375,-8.2],'shelterFootprintXZ':[-7.41,-4.59,-5.63,-2.81],'shelterRoofY':5.76,'coplanarSeamOffsetsY':{'TopAccessBridge':.003,'StairTopLanding':.006,'LiftLandingBridge':.003},'groundGuidanceUnifiedOnce':True,'fourPortsNPCsAndSpawnUnchanged':True,'sceneNotIntegrated':True}
 bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(source),compress=True);r['blendSHA256']=sha(source);receipt['finalSourceBlendSHA256']=r['blendSHA256'];(OUT/'open-platform-revision.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n');r['showcase']=export(s.root,OUT/'transport-station-v9-showcase.glb');r['showcase']['sha256']=sha(OUT/'transport-station-v9-showcase.glb');(OUT/'model-report.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n');print('OPEN_PLATFORM_SAVED',json.dumps({'objects':objects,'triangles':tris,'removedUpperCanopy':len(removed),'retainedExact':len(keep),'sourceSHA256':r['blendSHA256'],'showcase':r['showcase']}),flush=True);sys.stdout.flush();os._exit(0)

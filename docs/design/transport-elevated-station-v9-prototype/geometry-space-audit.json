@@ -1,6 +1,10 @@
 {
   "allOfflineChecksPassed": true,
-  "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
+  "protectedBaselineCommit": "81f7408468bcce2f7452b13e0a9d7ea1d4be62a1",
+  "currentWorldPlanSHA256": "8cba1949b2cf59745595d20c92c3859a410bfcd5fc8fbb84ba90674cc6dc3cdb",
+  "geometryBuildWorldPlanSHA256": "244c3d8ba3b870536a9ca1059e29f31eda4fbdaf912ff930a52cf2fa11927059",
+  "allRoadControlsAndIslandCentersMatch": true,
+  "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
   "siteArea": 346.3553364814237,
   "referenceSiteArea": 333.78727266705187,
   "gardenTerraceProposalAddedArea": 12.56807958819447,
@@ -157,7 +161,7 @@
         "reachable": true
       }
     ],
-    "connectedCells": 10297
+    "connectedCells": 10466
   },
   "fourUnchangedBridgePorts": [
     {

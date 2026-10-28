@@ -51,5 +51,17 @@ rayChecks=[];cab=bpy.data.objects['CabActualWindscreen']
 # Source cab has world geometry as local coordinates, train parent supplies rigid rotation.
 for n in ['hero','player-mobile']:
  cam=bpy.data.objects[n];target=cab.matrix_world@(sum((v.co for v in cab.data.vertices),Vector())/len(cab.data.vertices));d=target-cam.location;hit,loc,norm,face,obj,matrix=bpy.context.scene.ray_cast(deps,cam.location,d.normalized(),distance=d.length+.1);allowed=bool(hit and (obj.name.startswith(('Cab','OriginalRoundedCabNose'))));rayChecks.append({'camera':n,'firstHit':obj.name if hit else None,'cabFirstHit':allowed});assert allowed,rayChecks[-1]
+# Inspect structural supports at ground level. Organic foliage and roof overhangs
+# intentionally extend beyond their supports; compare support geometry, not canopy leaves.
+supports=[]
+from shapely.geometry import MultiPoint
+for o in root.children_recursive:
+ if o.type!='MESH':continue
+ if not ('_Retaining' in o.name or o.name.startswith(('GardenWaitingBench','WindowWaitingBench','GardenLanternFoot','EntryTerracottaPot','SteelWoodWasteBin','TravelInformationStele')) or '_Trunk' in o.name):continue
+ e=o.evaluated_get(deps);me=e.to_mesh();pts=[o.matrix_world@v.co for v in me.vertices]
+ if not pts or min(v.z for v in pts)>1.4:e.to_mesh_clear();continue
+ me.calc_loop_triangles();polys=[Polygon([(pts[i].x,-pts[i].y)for i in t.vertices])for t in me.loop_triangles];p=unary_union([t for t in polys if t.area>1e-10]);e.to_mesh_clear()
+ if p.is_empty:continue
+ outside=p.difference(site).area;supports.append({'name':o.name,'outsideSiteArea':outside});assert outside<1e-5,(o.name,outside)
 assert sha(file)==h
-r={'sourceBlendSHA256':h,'upperRouteChecks':checks,'shelterTrainOverlapArea':sweep.intersection(shelter).area,'shelterClearanceAboveUpperWalk':5.69-3.75,'groundBenchesOutsideSiteArea':benchOutside,'retainedGroundRoofAndIdentity':True,'canopyRemaining':False,'framing':framing,'cabRayChecks':rayChecks,'knownLimits':['Offline geometry/proxy checks only, no runtime capsule or mobile-device proof.','Strict portrait retains west cab and entrance but crops east trailing end/outer supports.','Static train, lift nonfunctional, stair step controller absent; not gameplay integration.']};(OUT/'open-platform-audit.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n');print(json.dumps(r,ensure_ascii=False),flush=True);sys.stdout.flush();os._exit(0)
+r={'sourceBlendSHA256':h,'groundStructuralSupports':supports,'groundStructuralSupportMethod':'Union of actual evaluated triangle XZ projections; avoids convex-hull false positives on concave island/planter edges. Foliage/roof cantilevers intentionally excluded.','groundStructuralSupportsAllInsideSite':True,'upperRouteChecks':checks,'shelterTrainOverlapArea':sweep.intersection(shelter).area,'shelterClearanceAboveUpperWalk':5.69-3.75,'groundBenchesOutsideSiteArea':benchOutside,'retainedGroundRoofAndIdentity':True,'canopyRemaining':False,'framing':framing,'cabRayChecks':rayChecks,'knownLimits':['Offline geometry/proxy checks only, no runtime capsule or mobile-device proof.','Strict portrait retains west cab and entrance but crops east trailing end/outer supports.','Static train, lift nonfunctional, stair step controller absent; not gameplay integration.']};(OUT/'open-platform-audit.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n');print(json.dumps(r,ensure_ascii=False),flush=True);sys.stdout.flush();os._exit(0)

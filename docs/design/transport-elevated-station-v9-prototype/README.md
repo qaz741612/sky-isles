@@ -1,3 +1,5 @@
+> **開放式月台修訂進行中：可恢復模型與幾何已更新；下方舊長棚圖片與數據待最後同源替換。本提交不是最終驗收交付。**
+
 # 交通大升級 V9｜獨立 Blender 精修原型
 
 [可編輯 BLEND](transport-station-v9.blend) · [精修展示 GLB](transport-station-v9-showcase.glb) · [遊戲優化候選 GLB](transport-station-v9-game-candidate.glb) · [尺寸／效能／限制](VALIDATION.md) · [實際PBR材質表](material-report.json) · [與核准圖逐項比對](ART-REVIEW.md) · [製作流程](WORKFLOW.md)
