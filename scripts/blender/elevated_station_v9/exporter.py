@@ -9,6 +9,8 @@ def export(model,path,candidate=False):
   chain=[];p=o
   while p and p!=model:chain.append(p);p=p.parent
   chain.reverse();role=chain[0].name;assembly=chain[1].name if role=='TrainRollingStock'and len(chain)>2 and chain[1].type=='EMPTY'else role
+  # Single-island static batches share material without changing any surface.
+  if candidate and role!='TrainRollingStock':role=assembly='StationStatic'
   e=o.evaluated_get(deps);me=e.to_mesh();me.calc_loop_triangles();nm=o.matrix_world.to_3x3().inverted().transposed();uv=me.uv_layers.active
   for tri in me.loop_triangles:
    mat=me.materials[tri.material_index];b=batches.setdefault((role,assembly,mat.name),{'mat':mat,'verts':[],'normals':[],'uv':[],'faces':[],'index':{}});face=[]
@@ -34,7 +36,7 @@ def export(model,path,candidate=False):
  bpy.ops.object.select_all(action='DESELECT')
  for o in objects:o.select_set(True)
  bpy.context.view_layer.objects.active=root;bpy.ops.export_scene.gltf(filepath=str(path),export_format='GLB',use_selection=True,export_extras=True,export_cameras=False,export_lights=False,export_apply=False)
- result={'triangles':sum(len(b['faces'])for b in batches.values()),'meshPrimitives':len(batches),'materials':len(set(k[2]for k in batches)),'bytes':path.stat().st_size,'skippedMicroFoliageObjects':skipped,'UVandNormalsPreserved':True,'mode':'1-segment bevels and omit tagged microfoliage; same architecture/train/door positions'if candidate else'evaluated original source geometry'}
+ result={'triangles':sum(len(b['faces'])for b in batches.values()),'meshPrimitives':len(batches),'materials':len(set(k[2]for k in batches)),'bytes':path.stat().st_size,'skippedMicroFoliageObjects':skipped,'UVandNormalsPreserved':True,'mode':'1-segment bevels, omit tagged microfoliage, material-coalesce static station within this one island; train assemblies remain separate; geometry/normals/UV retained'if candidate else'evaluated original source geometry'}
  for o in reversed(objects):
   me=o.data if o.type=='MESH'else None;bpy.data.objects.remove(o,do_unlink=True)
   if me:bpy.data.meshes.remove(me)
