@@ -1,0 +1,58 @@
+{
+  "allPassed": true,
+  "unchangedSourceFile": "src/sim/camera-profile.js",
+  "sourceSHA256": "d61d3978fad50b6b4438b5c5ef494a4f0a6a14a0b0864b303f7e9964ce508e79",
+  "results": [
+    {
+      "view": "player-desktop",
+      "logicalViewportCSS": [
+        1440,
+        900
+      ],
+      "renderPixels": [
+        1440,
+        900
+      ],
+      "pixelRatio": 1,
+      "actualGameProfile": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "sourceCameraParametersMatch": true,
+      "target": [
+        0,
+        2,
+        3.5
+      ],
+      "scope": "Static original HOME_SPAWN (0,.5,3.5) + target offset (0,1.5,0). Not settled-ground physics or camera avoidance simulation."
+    },
+    {
+      "view": "player-mobile",
+      "logicalViewportCSS": [
+        360,
+        640
+      ],
+      "renderPixels": [
+        720,
+        1280
+      ],
+      "pixelRatio": 2,
+      "actualGameProfile": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "sourceCameraParametersMatch": true,
+      "target": [
+        0,
+        2,
+        3.5
+      ],
+      "scope": "Static original HOME_SPAWN (0,.5,3.5) + target offset (0,1.5,0). Not settled-ground physics or camera avoidance simulation."
+    }
+  ],
+  "portraitScreenshotNotice": "720x1280 are rendered pixels, corresponding to 360x640 CSS at DPR2. Do not feed 720 CSS width to the portrait breakpoint."
+}

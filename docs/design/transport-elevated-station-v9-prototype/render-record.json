@@ -11,14 +11,14 @@
         1080
       ],
       "cameraPositionBlenderXYZ": [
-        25.0,
+        -25.0,
         -30.0,
         20.0
       ],
       "cameraRotationRadians": [
         1.1436082124710083,
-        1.5511162132497702e-08,
-        0.6755222082138062
+        -1.5511162132497702e-08,
+        -0.6755222082138062
       ],
       "projection": "ORTHO",
       "orthoScale": 29.600000381469727,
@@ -33,9 +33,9 @@
       "targetWorldXYZ": [],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 64,
-      "seconds": 208.11,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "a27012728114477f85fb61d71c9f8654a89328814a3a295058678490c5d759ca"
+      "seconds": 190.09,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "5bb0003c90c7c35c5132216f8cdbb2d6cfa8bcc87cdbd2d11f358e70679c14a0"
     },
     {
       "view": "front",
@@ -67,9 +67,9 @@
       "targetWorldXYZ": [],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 40,
-      "seconds": 95.32,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "2e72490308541270ad7f2122edc0248dce59c575072a5498cce50055ae97d813"
+      "seconds": 88.93,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "884cf192698bf34db39f17c22dc789e0b663ffcdec04fe7b2c821fa9243d22d0"
     },
     {
       "view": "back",
@@ -101,9 +101,9 @@
       "targetWorldXYZ": [],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 40,
-      "seconds": 90.11,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "3cf76d0af76ce2244136afcf40a5b49b0706ab50468f67fb8ac1dfa892031ec7"
+      "seconds": 92.58,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "2dd9312907a5bb2f98ad752e1c7ca00d5292a0b504df815063d78a72bacfc6c4"
     },
     {
       "view": "left",
@@ -135,9 +135,9 @@
       "targetWorldXYZ": [],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 40,
-      "seconds": 92.79,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "9b05450cc0fc00b6f03c8016e683bc9865322520bb78793721f0b8a492afd84f"
+      "seconds": 77.69,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "971bedd4cc8ea4465649d0269f147caf74c848bd8dfc80d1a780cb134d05c44a"
     },
     {
       "view": "right",
@@ -169,9 +169,9 @@
       "targetWorldXYZ": [],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 40,
-      "seconds": 94.71,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "34ceb7b159ba780520349c7e0d8336a186b6cebb46b7b2bbc64c1d0cab211056"
+      "seconds": 77.23,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "a7e84f8ca5c9e2b4720a4616b1f5b4561952f938a9ae169bb0b8bb9a5d1569e4"
     },
     {
       "view": "top",
@@ -203,9 +203,9 @@
       "targetWorldXYZ": [],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 48,
-      "seconds": 198.22,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "a9cb027881491b37cf6db19994f072c5fd8d775a2d00e3ec9aaaf88d763d5957"
+      "seconds": 167.87,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "625249209d79adad7c732e083e3f35a480a1be65294c71931c07a2b5d99d7d95"
     },
     {
       "view": "train-side",
@@ -237,9 +237,9 @@
       "targetWorldXYZ": [],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 48,
-      "seconds": 206.28,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "0d96f47b3c45f325a73127f2ae3a580ff412fc394485920cebfdc1b4b5ba93d6"
+      "seconds": 169.01,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "504e6798ae6b4b4180a30b8cd408c44c7d24cd1fc944e7428e887a8f5884d484"
     },
     {
       "view": "player-desktop",
@@ -275,9 +275,9 @@
       ],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 48,
-      "seconds": 190.83,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "f915e2b9172c3321879c0d98832d21f0bfb8734741c1d41fb2efc07619f0c1b7"
+      "seconds": 143.5,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "2959a076b96e31f5bd9da1dd1ccc1baefb7271b58b79bffb989e271344c992a2"
     },
     {
       "view": "player-mobile",
@@ -313,9 +313,9 @@
       ],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 48,
-      "seconds": 147.13,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "b37841e772430ac557f02077da2d2cde6b8370c4a46c6c7471587ef073c45324"
+      "seconds": 110.39,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "4d4e18811012161717b43e7ef87dcaacb11e2d01cc5609b9720462e9fc6970e7"
     },
     {
       "view": "player-mobile-zoom28",
@@ -351,9 +351,9 @@
       ],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 48,
-      "seconds": 121.17,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "f161540e32c2847957ae5e36cc0e65b69c62cce8559091e4dde8610f2aa899f1"
+      "seconds": 109.63,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "24cbbf5e424d6ca5b96d9e49bf5e00b9d273653ead485c8e659f83cfddab6672"
     },
     {
       "view": "player-mobile-arrival-overview",
@@ -389,9 +389,9 @@
       ],
       "engine": "Blender Cycles CPU / OIDN",
       "samples": 48,
-      "seconds": 114.76,
-      "sourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
-      "imageSHA256": "35d9a9c71e627c2877b33179ed01a1d9e3fb08504a6ab78bfbe3858aaf8f3867"
+      "seconds": 103.16,
+      "sourceBlendSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6",
+      "imageSHA256": "8542535f33ee38ec1026587ea889fd6d3d1a5c4dffff19773e44582581c786aa"
     }
   ]
 }

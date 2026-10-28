@@ -1722,5 +1722,30 @@
   "previousSourceBlendSHA256": "a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb",
   "localCompletion": "Trailing coach real window/end wall; side infill around window openings; lift middle glazing. Other existing mesh transforms unchanged.",
   "candidateOptimizationScriptSHA256": "f6e4daeae002243141156d169e45ccd853e303f4ba23a730bbabf85a0fdd1349",
-  "designRevision": "open-platform-r2"
+  "designRevision": "open-platform-r2",
+  "currentReproductionScriptsSHA256": {
+    "scripts/blender/audit_elevated_station_v9.py": "c9e4b8556f831df89ad1cd9248379bf171ad0db86f9884f0c472f40a47bbce51",
+    "scripts/blender/audit_elevated_station_v9_source.py": "55571a0ba2da12b06fc25416c99e7d0ecaed97f9181c7fea5ce68747e4e6488c",
+    "scripts/blender/audit_open_platform_v9.py": "0b7ed3fba80192c97e4c2b74cd139bdb0615068cfeff91ac031f2634fe8a05ba",
+    "scripts/blender/build_elevated_station_v9.py": "423e981c90595e9a586fa5bbb13b034d6a84df436849c1f9f0dcdab84d2ee51f",
+    "scripts/blender/check_elevated_station_v9_webgl.mjs": "fe7b354cb010154e7d69641f8f9f0bfd197cab28d52fd901790bb8f24f894788",
+    "scripts/blender/check_open_platform_camera_profile.mjs": "cbf91a6bccc7e756094d59ff2e16ee9adb60e6117183264e2a8d2cfd7d48b6b7",
+    "scripts/blender/elevated_station_v9/architecture.py": "1be71ef6e9b47e4a0b56a0e2da87e8c1dcc457c592feace5e4fb5ef565e625f1",
+    "scripts/blender/elevated_station_v9/core.py": "b8168fa4bb7e2b9633bb827320ab331acff7220395049515f2a9cdc0e97314e8",
+    "scripts/blender/elevated_station_v9/exporter.py": "162f2ce108c241088764d4b87e8df78e3f1b705725253bba65b230a8b97d7998",
+    "scripts/blender/elevated_station_v9/landscape.py": "84ae81aa02976fce884e049da4443f13109344118d0e26067564a300a1667c21",
+    "scripts/blender/elevated_station_v9/measure_reference.mjs": "2aef705b109f99c40f434d39e6c81fe08f5ab41342bb9087f086c86be78d9bc4",
+    "scripts/blender/elevated_station_v9/viewer.html": "883fc14c62ce2fe00e143dbdb5b071e640a7da23a8446267ce95019b185b76ed",
+    "scripts/blender/finalize_open_platform_delivery.py": "83f6d3635f792d2c6d79711ce3be5ff3f9ee8b8bfe99dde9268f2c6f955c57f7",
+    "scripts/blender/finish_elevated_station_v9.py": "00acdd865a01d8c9dba9bc97c7525f86b58fc76000ba0061cffe3fcbc777400a",
+    "scripts/blender/open_platform_elevated_station_v9.py": "f235e1f633d402ba167e91c9b04abd91d85ed0a1b20f3f6be4ba796c1c809da2",
+    "scripts/blender/optimize_elevated_station_v9_candidate.py": "f6e4daeae002243141156d169e45ccd853e303f4ba23a730bbabf85a0fdd1349",
+    "scripts/blender/render_elevated_station_v9.py": "14cef8bb8b565645a7f142a6125238436cd1ffd93e2333e7db2cc550c44baffd",
+    "scripts/blender/render_open_platform_before.py": "73d40e851f9d989d8df0359aa98191135d04010ed7ff5a7304c626e93efc4a7f",
+    "scripts/blender/report_elevated_station_v9.py": "36e92965b718cc65377552cfbe2e15f6fa660e08a17827d2d6c3985cfb8c35fe",
+    "scripts/blender/report_open_platform_v9.py": "f35aec51f80c456f1b74964b2b16e1b0e0c94425935180c844d811d16bedfa7a",
+    "scripts/blender/validate_elevated_station_v9.mjs": "8d6e606f6d76cae03bfb067cee9f9d7c9be7093021c182f242437b8d736b09f5",
+    "scripts/blender/verify_elevated_station_v9_github.py": "a07d885e122725fb194298b52df138364884754388a1ffedd9dcab6c45f02d8c",
+    "scripts/blender/write_open_platform_acceptance.py": "9f526f6e62ee4f849dda8702450dc62d49820ff321fe50f09ab91783868cc2ff"
+  }
 }

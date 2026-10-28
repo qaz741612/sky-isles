@@ -1,0 +1,5 @@
+診斷來源：上一輪工具與本輪恢復結果，非硬體故障推定。
+上一輪 exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 25s。
+後續工具回報 No usable execution environment is available。
+2026-10-28恢復後最後重建log確認OPEN_PLATFORM_SAVED成功，source SHA9070e0...；環境中斷原因未得到OOM／GPU故障等證據，不臆測。
+候選、幾何與全部最終渲染已在恢復後重新驗證；WIP7250a4c和已推送0b02820只作恢復點，不是最終驗收。

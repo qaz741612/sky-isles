@@ -1,0 +1,1 @@
+{"sourceSHA256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6", "objects": 8451, "triangles": 516548, "closed": true, "NPCclear": true, "wheelRailMismatch": 0.000499725341796875, "cameraFits": {"hero": true, "front": true, "back": true, "left": true, "right": true, "top": true, "train-side": false, "player-desktop": true, "player-mobile": false}}

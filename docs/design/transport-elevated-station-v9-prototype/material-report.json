@@ -1,30 +1,6 @@
 {
   "showcase": [
     {
-      "name": "glass",
-      "pbr": {
-        "baseColorFactor": [
-          0.7230551242828369,
-          0.838798999786377,
-          0.8069522380828857,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.03999999910593033
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {
-        "KHR_materials_transmission": {
-          "transmissionFactor": 0.9800000190734863
-        },
-        "KHR_materials_ior": {
-          "ior": 1.4500000476837158
-        }
-      }
-    },
-    {
       "name": "light",
       "pbr": {
         "baseColorFactor": [
@@ -50,21 +26,21 @@
       }
     },
     {
-      "name": "navy",
+      "name": "rail",
       "pbr": {
         "baseColorFactor": [
-          0.03433980792760849,
-          0.09530746936798096,
-          0.1384316086769104,
+          0.04373503103852272,
+          0.16513219475746155,
+          0.2158605009317398,
           1
         ],
-        "metallicFactor": 0.20000000298023224,
-        "roughnessFactor": 0.44999998807907104
+        "metallicFactor": 0.5799999833106995,
+        "roughnessFactor": 0.36000001430511475
       },
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "roof",
@@ -81,7 +57,297 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
+    },
+    {
+      "name": "steel",
+      "pbr": {
+        "baseColorFactor": [
+          0.13286831974983215,
+          0.20507873594760895,
+          0.22322796285152435,
+          1
+        ],
+        "metallicFactor": 0.7200000286102295,
+        "roughnessFactor": 0.3100000023841858
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "stone",
+      "pbr": {
+        "baseColorFactor": [
+          0.6583748459815979,
+          0.5840784311294556,
+          0.5028864741325378,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.7599999904632568
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "wood",
+      "pbr": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.550000011920929
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "woodLight",
+      "pbr": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5199999809265137
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "cream",
+      "pbr": {
+        "baseColorFactor": [
+          0.8549926280975342,
+          0.8069522380828857,
+          0.7011018991470337,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6499999761581421
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "leaf",
+      "pbr": {
+        "baseColorFactor": [
+          0.18116424977779388,
+          0.30054378509521484,
+          0.07227185368537903,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8399999737739563
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "leafDark",
+      "pbr": {
+        "baseColorFactor": [
+          0.0666259378194809,
+          0.1441284716129303,
+          0.045186202973127365,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8500000238418579
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "leafLight",
+      "pbr": {
+        "baseColorFactor": [
+          0.32314321398735046,
+          0.47353148460388184,
+          0.13013647496700287,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8199999928474426
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "leafTip",
+      "pbr": {
+        "baseColorFactor": [
+          0.5088813304901123,
+          0.6104955673217773,
+          0.21223075687885284,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.800000011920929
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "petal",
+      "pbr": {
+        "baseColorFactor": [
+          0.8879231214523315,
+          0.7991027235984802,
+          0.5088813304901123,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6700000166893005
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "petalPink",
+      "pbr": {
+        "baseColorFactor": [
+          0.7681511640548706,
+          0.3915724754333496,
+          0.34670406579971313,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.699999988079071
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "soil",
+      "pbr": {
+        "baseColorFactor": [
+          0.17464740574359894,
+          0.13286831974983215,
+          0.07618538290262222,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.949999988079071
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "woodDark",
+      "pbr": {
+        "baseColorFactor": [
+          0.27049779891967773,
+          0.13013647496700287,
+          0.05780543014407158,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6600000262260437
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "yellow",
+      "pbr": {
+        "baseColorFactor": [
+          0.8069522380828857,
+          0.520995557308197,
+          0.1384316086769104,
+          1
+        ],
+        "metallicFactor": 0.10000000149011612,
+        "roughnessFactor": 0.550000011920929
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "floor",
+      "pbr": {
+        "baseColorFactor": [
+          0.6172065734863281,
+          0.5028864741325378,
+          0.35640013217926025,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.7400000095367432
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "glass",
+      "pbr": {
+        "baseColorFactor": [
+          0.7230551242828369,
+          0.838798999786377,
+          0.8069522380828857,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.03999999910593033
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 0.9800000190734863
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4500000476837158
+        }
+      }
+    },
+    {
+      "name": "navy",
+      "pbr": {
+        "baseColorFactor": [
+          0.03433980792760849,
+          0.09530746936798096,
+          0.1384316086769104,
+          1
+        ],
+        "metallicFactor": 0.20000000298023224,
+        "roughnessFactor": 0.44999998807907104
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
     },
     {
       "name": "roofDark",
@@ -98,7 +364,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "roofEdge",
@@ -115,7 +381,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "screen",
@@ -136,324 +402,7 @@
         0.35446383827304473,
         0.14423786714375808
       ],
-      "extensions": {}
-    },
-    {
-      "name": "steel",
-      "pbr": {
-        "baseColorFactor": [
-          0.13286831974983215,
-          0.20507873594760895,
-          0.22322796285152435,
-          1
-        ],
-        "metallicFactor": 0.7200000286102295,
-        "roughnessFactor": 0.3100000023841858
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "woodLight",
-      "pbr": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicFactor": 0,
-        "roughnessFactor": 0.5199999809265137
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "rail",
-      "pbr": {
-        "baseColorFactor": [
-          0.04373503103852272,
-          0.16513219475746155,
-          0.2158605009317398,
-          1
-        ],
-        "metallicFactor": 0.5799999833106995,
-        "roughnessFactor": 0.36000001430511475
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "stone",
-      "pbr": {
-        "baseColorFactor": [
-          0.6583748459815979,
-          0.5840784311294556,
-          0.5028864741325378,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.7599999904632568
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "wood",
-      "pbr": {
-        "baseColorTexture": {
-          "index": 1
-        },
-        "metallicFactor": 0,
-        "roughnessFactor": 0.550000011920929
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "cream",
-      "pbr": {
-        "baseColorFactor": [
-          0.8549926280975342,
-          0.8069522380828857,
-          0.7011018991470337,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.6499999761581421
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "leaf",
-      "pbr": {
-        "baseColorFactor": [
-          0.18116424977779388,
-          0.30054378509521484,
-          0.07227185368537903,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8399999737739563
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "leafDark",
-      "pbr": {
-        "baseColorFactor": [
-          0.0666259378194809,
-          0.1441284716129303,
-          0.045186202973127365,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8500000238418579
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "leafLight",
-      "pbr": {
-        "baseColorFactor": [
-          0.32314321398735046,
-          0.47353148460388184,
-          0.13013647496700287,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8199999928474426
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "leafTip",
-      "pbr": {
-        "baseColorFactor": [
-          0.5088813304901123,
-          0.6104955673217773,
-          0.21223075687885284,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.800000011920929
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "petal",
-      "pbr": {
-        "baseColorFactor": [
-          0.8879231214523315,
-          0.7991027235984802,
-          0.5088813304901123,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.6700000166893005
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "petalPink",
-      "pbr": {
-        "baseColorFactor": [
-          0.7681511640548706,
-          0.3915724754333496,
-          0.34670406579971313,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.699999988079071
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "soil",
-      "pbr": {
-        "baseColorFactor": [
-          0.17464740574359894,
-          0.13286831974983215,
-          0.07618538290262222,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.949999988079071
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "woodDark",
-      "pbr": {
-        "baseColorFactor": [
-          0.27049779891967773,
-          0.13013647496700287,
-          0.05780543014407158,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.6600000262260437
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "yellow",
-      "pbr": {
-        "baseColorFactor": [
-          0.8069522380828857,
-          0.520995557308197,
-          0.1384316086769104,
-          1
-        ],
-        "metallicFactor": 0.10000000149011612,
-        "roughnessFactor": 0.550000011920929
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "floor",
-      "pbr": {
-        "baseColorFactor": [
-          0.6172065734863281,
-          0.5028864741325378,
-          0.35640013217926025,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.7400000095367432
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "paverA",
-      "pbr": {
-        "baseColorFactor": [
-          0.7230551242828369,
-          0.6583748459815979,
-          0.5583403706550598,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8500000238418579
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "paverB",
-      "pbr": {
-        "baseColorFactor": [
-          0.8069522380828857,
-          0.7379103899002075,
-          0.6307571530342102,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8199999928474426
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "paverC",
-      "pbr": {
-        "baseColorFactor": [
-          0.6239603757858276,
-          0.5647115111351013,
-          0.4677838087081909,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8899999856948853
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "shadowStone",
@@ -470,7 +419,58 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
+    },
+    {
+      "name": "paverA",
+      "pbr": {
+        "baseColorFactor": [
+          0.7230551242828369,
+          0.6583748459815979,
+          0.5583403706550598,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8500000238418579
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "paverB",
+      "pbr": {
+        "baseColorFactor": [
+          0.8069522380828857,
+          0.7379103899002075,
+          0.6307571530342102,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8199999928474426
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "paverC",
+      "pbr": {
+        "baseColorFactor": [
+          0.6239603757858276,
+          0.5647115111351013,
+          0.4677838087081909,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8899999856948853
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
     },
     {
       "name": "rock",
@@ -487,7 +487,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "rubber",
@@ -504,7 +504,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "trainBlue",
@@ -521,7 +521,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "trainGlass",
@@ -562,7 +562,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "concrete",
@@ -579,10 +579,61 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     }
   ],
   "game-candidate": [
+    {
+      "name": "concrete",
+      "pbr": {
+        "baseColorFactor": [
+          0.533276379108429,
+          0.5088813304901123,
+          0.4564110338687897,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.7900000214576721
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "cream",
+      "pbr": {
+        "baseColorFactor": [
+          0.8549926280975342,
+          0.8069522380828857,
+          0.7011018991470337,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6499999761581421
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "floor",
+      "pbr": {
+        "baseColorFactor": [
+          0.6172065734863281,
+          0.5028864741325378,
+          0.35640013217926025,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.7400000095367432
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
     {
       "name": "glass",
       "pbr": {
@@ -598,7 +649,75 @@
       "alphaMode": "BLEND",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
+    },
+    {
+      "name": "leaf",
+      "pbr": {
+        "baseColorFactor": [
+          0.18116424977779388,
+          0.30054378509521484,
+          0.07227185368537903,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8399999737739563
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "leafDark",
+      "pbr": {
+        "baseColorFactor": [
+          0.0666259378194809,
+          0.1441284716129303,
+          0.045186202973127365,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8500000238418579
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "leafLight",
+      "pbr": {
+        "baseColorFactor": [
+          0.32314321398735046,
+          0.47353148460388184,
+          0.13013647496700287,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8199999928474426
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "leafTip",
+      "pbr": {
+        "baseColorFactor": [
+          0.5088813304901123,
+          0.6104955673217773,
+          0.21223075687885284,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.800000011920929
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
     },
     {
       "name": "light",
@@ -640,7 +759,126 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
+    },
+    {
+      "name": "paverA",
+      "pbr": {
+        "baseColorFactor": [
+          0.7230551242828369,
+          0.6583748459815979,
+          0.5583403706550598,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8500000238418579
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "paverB",
+      "pbr": {
+        "baseColorFactor": [
+          0.8069522380828857,
+          0.7379103899002075,
+          0.6307571530342102,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8199999928474426
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "paverC",
+      "pbr": {
+        "baseColorFactor": [
+          0.6239603757858276,
+          0.5647115111351013,
+          0.4677838087081909,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8899999856948853
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "petal",
+      "pbr": {
+        "baseColorFactor": [
+          0.8879231214523315,
+          0.7991027235984802,
+          0.5088813304901123,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6700000166893005
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "petalPink",
+      "pbr": {
+        "baseColorFactor": [
+          0.7681511640548706,
+          0.3915724754333496,
+          0.34670406579971313,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.699999988079071
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "rail",
+      "pbr": {
+        "baseColorFactor": [
+          0.04373503103852272,
+          0.16513219475746155,
+          0.2158605009317398,
+          1
+        ],
+        "metallicFactor": 0.5799999833106995,
+        "roughnessFactor": 0.36000001430511475
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "rock",
+      "pbr": {
+        "baseColorFactor": [
+          0.38642942905426025,
+          0.3762621283531189,
+          0.3277781009674072,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.949999988079071
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
     },
     {
       "name": "roof",
@@ -657,7 +895,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "roofDark",
@@ -674,7 +912,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "roofEdge",
@@ -691,7 +929,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "screen",
@@ -712,324 +950,7 @@
         0.35446383827304473,
         0.14423786714375808
       ],
-      "extensions": {}
-    },
-    {
-      "name": "steel",
-      "pbr": {
-        "baseColorFactor": [
-          0.13286831974983215,
-          0.20507873594760895,
-          0.22322796285152435,
-          1
-        ],
-        "metallicFactor": 0.7200000286102295,
-        "roughnessFactor": 0.3100000023841858
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "woodLight",
-      "pbr": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicFactor": 0,
-        "roughnessFactor": 0.5199999809265137
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "rail",
-      "pbr": {
-        "baseColorFactor": [
-          0.04373503103852272,
-          0.16513219475746155,
-          0.2158605009317398,
-          1
-        ],
-        "metallicFactor": 0.5799999833106995,
-        "roughnessFactor": 0.36000001430511475
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "stone",
-      "pbr": {
-        "baseColorFactor": [
-          0.6583748459815979,
-          0.5840784311294556,
-          0.5028864741325378,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.7599999904632568
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "wood",
-      "pbr": {
-        "baseColorTexture": {
-          "index": 1
-        },
-        "metallicFactor": 0,
-        "roughnessFactor": 0.550000011920929
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "cream",
-      "pbr": {
-        "baseColorFactor": [
-          0.8549926280975342,
-          0.8069522380828857,
-          0.7011018991470337,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.6499999761581421
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "leaf",
-      "pbr": {
-        "baseColorFactor": [
-          0.18116424977779388,
-          0.30054378509521484,
-          0.07227185368537903,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8399999737739563
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "leafDark",
-      "pbr": {
-        "baseColorFactor": [
-          0.0666259378194809,
-          0.1441284716129303,
-          0.045186202973127365,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8500000238418579
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "leafLight",
-      "pbr": {
-        "baseColorFactor": [
-          0.32314321398735046,
-          0.47353148460388184,
-          0.13013647496700287,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8199999928474426
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "leafTip",
-      "pbr": {
-        "baseColorFactor": [
-          0.5088813304901123,
-          0.6104955673217773,
-          0.21223075687885284,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.800000011920929
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "petal",
-      "pbr": {
-        "baseColorFactor": [
-          0.8879231214523315,
-          0.7991027235984802,
-          0.5088813304901123,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.6700000166893005
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "petalPink",
-      "pbr": {
-        "baseColorFactor": [
-          0.7681511640548706,
-          0.3915724754333496,
-          0.34670406579971313,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.699999988079071
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "soil",
-      "pbr": {
-        "baseColorFactor": [
-          0.17464740574359894,
-          0.13286831974983215,
-          0.07618538290262222,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.949999988079071
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "woodDark",
-      "pbr": {
-        "baseColorFactor": [
-          0.27049779891967773,
-          0.13013647496700287,
-          0.05780543014407158,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.6600000262260437
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "yellow",
-      "pbr": {
-        "baseColorFactor": [
-          0.8069522380828857,
-          0.520995557308197,
-          0.1384316086769104,
-          1
-        ],
-        "metallicFactor": 0.10000000149011612,
-        "roughnessFactor": 0.550000011920929
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "floor",
-      "pbr": {
-        "baseColorFactor": [
-          0.6172065734863281,
-          0.5028864741325378,
-          0.35640013217926025,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.7400000095367432
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "paverA",
-      "pbr": {
-        "baseColorFactor": [
-          0.7230551242828369,
-          0.6583748459815979,
-          0.5583403706550598,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8500000238418579
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "paverB",
-      "pbr": {
-        "baseColorFactor": [
-          0.8069522380828857,
-          0.7379103899002075,
-          0.6307571530342102,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8199999928474426
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "paverC",
-      "pbr": {
-        "baseColorFactor": [
-          0.6239603757858276,
-          0.5647115111351013,
-          0.4677838087081909,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8899999856948853
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "shadowStone",
@@ -1046,15 +967,15 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
-      "name": "rock",
+      "name": "soil",
       "pbr": {
         "baseColorFactor": [
-          0.38642942905426025,
-          0.3762621283531189,
-          0.3277781009674072,
+          0.17464740574359894,
+          0.13286831974983215,
+          0.07618538290262222,
           1
         ],
         "metallicFactor": 0,
@@ -1063,7 +984,103 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
+    },
+    {
+      "name": "steel",
+      "pbr": {
+        "baseColorFactor": [
+          0.13286831974983215,
+          0.20507873594760895,
+          0.22322796285152435,
+          1
+        ],
+        "metallicFactor": 0.7200000286102295,
+        "roughnessFactor": 0.3100000023841858
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "stone",
+      "pbr": {
+        "baseColorFactor": [
+          0.6583748459815979,
+          0.5840784311294556,
+          0.5028864741325378,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.7599999904632568
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "wood",
+      "pbr": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.550000011920929
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "woodDark",
+      "pbr": {
+        "baseColorFactor": [
+          0.27049779891967773,
+          0.13013647496700287,
+          0.05780543014407158,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6600000262260437
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "woodLight",
+      "pbr": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5199999809265137
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
+    },
+    {
+      "name": "yellow",
+      "pbr": {
+        "baseColorFactor": [
+          0.8069522380828857,
+          0.520995557308197,
+          0.1384316086769104,
+          1
+        ],
+        "metallicFactor": 0.10000000149011612,
+        "roughnessFactor": 0.550000011920929
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "emissiveFactor": null,
+      "extensions": null
     },
     {
       "name": "rubber",
@@ -1080,7 +1097,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "trainBlue",
@@ -1097,7 +1114,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "trainGlass",
@@ -1114,7 +1131,7 @@
       "alphaMode": "BLEND",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     },
     {
       "name": "trainWhite",
@@ -1131,24 +1148,7 @@
       "alphaMode": "OPAQUE",
       "doubleSided": true,
       "emissiveFactor": null,
-      "extensions": {}
-    },
-    {
-      "name": "concrete",
-      "pbr": {
-        "baseColorFactor": [
-          0.533276379108429,
-          0.5088813304901123,
-          0.4564110338687897,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.7900000214576721
-      },
-      "alphaMode": "OPAQUE",
-      "doubleSided": true,
-      "emissiveFactor": null,
-      "extensions": {}
+      "extensions": null
     }
   ]
 }

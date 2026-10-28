@@ -1,56 +1,52 @@
-> **開放式月台修訂進行中：可恢復模型與幾何已更新；下方舊長棚圖片與數據待最後同源替換。本提交不是最終驗收交付。**
+# 交通大升級 V9｜開放式高架月台修訂
 
-# 交通大升級 V9｜獨立 Blender 精修原型
+[Draft PR #14](https://github.com/qaz741612/sky-isles/pull/14) · [可編輯 BLEND](transport-station-v9.blend) · [展示 GLB](transport-station-v9-showcase.glb) · [遊戲候選 GLB](transport-station-v9-game-candidate.glb)
 
-[可編輯 BLEND](transport-station-v9.blend) · [精修展示 GLB](transport-station-v9-showcase.glb) · [遊戲優化候選 GLB](transport-station-v9-game-candidate.glb) · [尺寸／效能／限制](VALIDATION.md) · [實際PBR材質表](material-report.json) · [與核准圖逐項比對](ART-REVIEW.md) · [製作流程](WORKFLOW.md)
+**本次收尾沒有重新建模**；BLEND與兩GLB仍和ca94f48逐位元一致，見[鎖定核對](asset-lock.json)。以下改造描述是ca94f48已保存的成果。
 
-本輪只製作交通島原型，**沒有整合正式遊戲**。V9 GLB 僅用來量測地界與構件配置；站房、雨棚、橋體、兩節列車、樓梯、玻璃電梯、景觀及材質都是重新建立的原生三維構件，沒有沿用 V9 白模外觀或 `k.hall()`／統一弧形屋頂。
+既有 V9 Blender 修訂完整移除高架長棚的 **241** 個物件及孤立網格，保留地面站房金屬屋頂、玻璃天窗、木格柵、招牌及入口；沒有重建整座車站或沿用弧形屋頂模板。橋體／拱梁、軌道、月台、樓梯與電梯也保留。
 
-![核准參考與真正 Blender 原型比較](reference-comparison.png)
+![實際 Blender 開放式月台主視圖](renders/hero.png)
 
-## 同源實際渲染
+兩節列車保持原尺寸、輪軌關係與軌道中心，只繞自身中心迴轉180°朝西；45°主視角改由西側觀看。小型遮雨亭僅覆蓋樓梯出口，與列車平面重疊0。月台補端部護欄、細直欄、靠軌安全線、鋪面收邊、候車資訊、獨立照明與短坐靠設施。前庭花園只縮短兩個前端，座椅回到真正鋪面內；樹木、暖木、主要花帶與留白保留。
 
-![實際 Cycles 主視角](renders/hero.png)
+## 同源六視圖與玩家鏡頭
 
-![十一視角索引](render-index.png)
+![同一份最終原檔的11個視角](render-index.png)
 
-[45° 主視角](renders/hero.png) · [正面](renders/front.png) · [背面](renders/back.png) · [左側](renders/left.png) · [右側](renders/right.png) · [俯視](renders/top.png) · [列車側主視角](renders/train-side.png) · [桌機預設鏡頭模擬](renders/player-desktop.png) · [手機預設鏡頭模擬（有裁切）](renders/player-mobile.png) · [手機既有 zoom28 模擬](renders/player-mobile-zoom28.png) · [手機橋口觀察位置（非預設）](renders/player-mobile-arrival-overview.png)
+[45° 主視角（西側車頭）](renders/hero.png) · [正面](renders/front.png) · [背面](renders/back.png) · [左側](renders/left.png) · [右側](renders/right.png) · [正上方](renders/top.png) · [列車側面](renders/train-side.png) · [桌機預設模擬](renders/player-desktop.png) · [手機預設模擬（車尾裁切）](renders/player-mobile.png) · [補充 zoom28，非預設](renders/player-mobile-zoom28.png) · [補充橋口站位，非預設](renders/player-mobile-arrival-overview.png)
 
-十一張均由**同一份最終 BLEND**的幾何輸出。後兩張是另外明確標示的相機模擬，沒有修改模型或原檔。所有來源與圖片 SHA、相機、解析度、採樣見 [render-record.json](render-record.json)。它們是 Blender 渲染，**不是實際 Sky Isles 遊戲截圖**；`qa/` 是另行標示的隔離 Three.js GLB 測試畫面。
+全部修改後圖源自同一 BLEND：`5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6`。六視圖為正／背／左／右／俯視及45°主視角。這些是 **Blender Cycles 渲染與原遊戲相機參數模擬，不是遊戲整合截圖**。
 
-## 實測規模
+## 真正同機位修改前後
 
-| 檔案 | GLB 實際三角面 | 材質 | 網格批次 | 體積 |
+![手機預設鏡頭前後比較](comparison-player-mobile.png)
+
+[桌機預設比較](comparison-player-desktop.png) · [45°同機位比較](comparison-hero.png) · [俯視比較](comparison-top.png) · [相機逐項核對](before-render-record.json)
+
+手機兩側固定720×1280渲染像素（360×640 CSS／DPR2）、dist22、pitch0.67、yaw0.12、垂直FOV58、目標(0,2,3.5)，出生點(0,0.5,3.5)不動；這是出生瞬間加1.5目標高度的靜態模擬，未冒稱落地後／避障中的實際相機。已用原src/sim/camera-profile.js核對兩組參數，見camera-profile-audit.json。未用zoom28或橋口觀察點代替預設圖。修改後車頭與站房入口的投影範圍完整入鏡，車頭中心視線先撞到車頭本身；這不是全部車頭像素均無遮蔽的證明，小亭／欄杆仍遮住車頭下緣，正面讀感待人工判斷。**右端車尾及部分外側高架仍裁切，沒有宣稱整列車／全島均在手機預設窄幅內**。補充拉遠圖明確標示，請勿混用。
+
+## 本輪測量
+
+| 版本 | GLB實際三角面 | 材質 | 網格批次 | 大小 |
 | --- | ---: | ---: | ---: | ---: |
-| 精修展示 | 540,480 | 33 | 90 | 42.61 MB |
-| 遊戲候選 | 213,416 | 33 | 90 | 18.56 MB |
+| 前輪展示 | 540,480 | 33 | 90 | 42.61 MB |
+| 本輪展示 | 516,324 | 33 | 91 | 40.65 MB |
+| 前輪候選 | 213,416 | 33 | 90 | 18.56 MB |
+| 本輪候選 | 201,740 | 33 | 49 | 17.63 MB |
 
-候選減少約 **60.5% 三角面**，保留建築、門窗、軌道及列車位置與主要輪廓，降低倒角細分並略去 1530 個微小植栽構件。沒有縮小整座模型。候選另採透明薄玻璃（建築alpha0.25、車窗0.54）取消折射pass；這是明確的材質近似，保留通透與主配色，但反射／折射外觀須人工比對，精修BLEND及展示GLB維持原PBR。候選尚未獲遊戲整合或手機效能認證。
+候選較前輪三角面減5.5%、靜態材質合批後批次減45.6%；主建築沒有縮小。薄玻璃近似、微植栽與倒角差異仍限候選，不回寫展示原檔。33材質仍全部有實際用途；頂棚原本共用站房屋面／玻璃／木材，不能連共用材質一併刪除。
 
-## 尺寸、配置與空間
+## 檢查與界線
 
-世界座標 X 東／Y 上／Z 北，單位沿用 Sky Isles；玩家身高基準1.5。完整站體包含屋簷，實際尺寸如下。
+- 8,451個源網格重新開啟，全部封閉／正體積；841個保留構件的幾何、材質指派、變換完全相同。
+- 77個低位結構支承以實際三角面投影檢查，越出台地0；兩NPC 3×3空間、S09/S10/S15/S18、15地面採樣點與3上層平面通道通過離線檢查。
+- 安心生養以10.2半徑保守檢查，交通提案島台與其交疊0；其他非接入路段交疊0。四口與原苑字控制點不改。
+- 兩GLB Khronos為0 errors／0 warnings，實際Three.js GLTFLoader／WebGL與量測另列[報告](PERFORMANCE.md)。
+- 原PR14既有遊戲`npm run check`：本輪Node實際回報50個測試檔通過、0失敗，lint與build成功；不沿用舊50項文字，也不把這結果當新模型整合證據。
 
-| 組別 | X寬 × Y高 × Z深 | 世界包圍盒 min → max |
-| --- | --- | --- |
-| Canopy | 19.740 × 3.550 × 3.900 | [-9.87, 3.31, -9.54] → [9.87, 6.86, -5.64] |
-| Hall | 14.250 × 2.995 × 3.605 | [-7.125, 0.04, -6.08] → [7.125, 3.035, -2.475] |
-| TrainRollingStock | 18.110 × 2.347 × 1.704 | [-8.68, 3.541, -9.052] → [9.43, 5.888, -7.348] |
-| VerticalCirculation | 17.830 × 4.997 × 4.658 | [-9.155, 0.0, -7.333] → [8.675, 4.997, -2.675] |
-| Viaduct | 18.900 × 3.651 × 3.380 | [-9.45, 0.06, -9.34] → [9.45, 3.711, -5.96] |
+[空間／碰撞候選稽核](VALIDATION.md) · [美術自審及待驗](ART-REVIEW.md) · [基底安全整理方案（未執行）](BRANCH-ISOLATION.md) · [重現流程](WORKFLOW.md) · [修改清單](MODIFIED-FILES.md) · [媒體大小／SHA256](media-manifest.json)
 
-V9 原地界面積 333.787；本原型側向花園提案面積 346.355，增加 **12.568**。外接框仍約20.33×19.82。這是保留完整兩側花園、四入口及兩塊NPC清空區的局部土地提案，**未寫回正式世界**。四口與其他道路、鄰島分析見 [geometry-space-audit.json](geometry-space-audit.json)。
+RECOVERY.md及RECOVERY-INTERRUPTION-2.md保留為先前中斷的歷史紀錄，本輪最新狀態以本README、VALIDATION及ACCEPTANCE為準。
 
-![四橋口及 NPC 空間圖（工程圖）](space-plan.png)
-
-兩位 NPC 只有預留 Empty／資料，不製作人物或對話。四口 S09/S10/S15/S18 沿用真正 `src/data/yuan-plan.json`，寬4.8，相近的雙口共享開放區域；沒有重畫路網。左折返樓梯及其上層連橋、右玻璃電梯與月台連接幾何都存在；實機踏階／電梯操作留待正式整合。
-
-## 原型重要限制
-
-手機預設直式相機會裁到部分高架及列車端部；完整保留了這個結果。另附既有 zoom28，以及玩家步行至橋口 `(0,0.5,7.5)`、yaw0、zoom28 的觀察模擬；補充圖不是預設視角，沒有暗改 FOV。
-
-人工美術驗收、90分整合門檻與真機驗證尚未由工具替使用者宣布通過。逐項差異與自行修正紀錄見 ART-REVIEW。正式遊戲相機避障、膠囊碰撞、上下樓、列車動畫及硬體 FPS 均未整合；本輪無搭乘、NPC、任務或新音樂。
-
-原安心生養 BLEND／GLB、其他七島資產、政策資料、`src/`、`public/`及苑字路網不變。所有原創程式與幾何沿用專案 [MIT](../../../LICENSE)；使用者提供參考與設計包保留原始權利。文字輪廓由 Noto Sans CJK（SIL OFL）產生，沒有複製未提供官方標誌，也沒有外部建築模型。
-
-[原成果保留核對](source-preservation.json) · [檔案大小／SHA256](media-manifest.json) · [GitHub 下載核對](github-verification.json) · [輸入來源](input-audit.json)
+沒有修改安心生養、其他島、正式遊戲、政策、苑字路網、main或Production；沒有處理全地圖橋邊景觀。本輪不整合、不合併、不部署。等待人工美術與手機視角驗收。

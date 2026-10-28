@@ -2,7 +2,7 @@
 from pathlib import Path
 from PIL import Image,ImageOps,ImageDraw,ImageFont
 import json,hashlib,re,subprocess,shutil
-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/design/transport-elevated-station-v9-prototype';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();load=lambda p:json.loads((OUT/p).read_text());m=load('model-report.json');a=load('source-audit.json');s=load('geometry-space-audit.json');o=load('open-platform-audit.json');g=load('gltf-summary.json');web=load('webgl-report.json');r=load('render-record.json');b=load('before-render-record.json');revision=load('open-platform-revision.json');source=sha(OUT/'transport-station-v9.blend');views=['hero','front','back','left','right','top','train-side','player-desktop','player-mobile','player-mobile-zoom28','player-mobile-arrival-overview'];records={v['view']:v for v in r['views']};before={v['view']:v for v in b['views']}
+ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/design/transport-elevated-station-v9-prototype';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();load=lambda p:json.loads((OUT/p).read_text());m=load('model-report.json');a=load('source-audit.json');s=load('geometry-space-audit.json');o=load('open-platform-audit.json');g=load('gltf-summary.json');web=load('webgl-report.json');r=load('render-record.json');b=load('before-render-record.json');revision=load('open-platform-revision.json');profile=load('camera-profile-audit.json');assert profile['allPassed'];source=sha(OUT/'transport-station-v9.blend');views=['hero','front','back','left','right','top','train-side','player-desktop','player-mobile','player-mobile-zoom28','player-mobile-arrival-overview'];records={v['view']:v for v in r['views']};before={v['view']:v for v in b['views']}
 assert source==m['blendSHA256']==a['sourceBlendSHA256']==s['sourceBlendSHA256']==o['sourceBlendSHA256']==revision['finalSourceBlendSHA256']
 assert a['allClosedPositiveVolume']and s['allOfflineChecksPassed']and o['groundStructuralSupportsAllInsideSite']and g['allPassed']and web['allPassed']
 for name in views:
@@ -52,7 +52,9 @@ readme=f'''# 交通大升級 V9｜開放式高架月台修訂
 
 [Draft PR #14](https://github.com/qaz741612/sky-isles/pull/14) · [可編輯 BLEND](transport-station-v9.blend) · [展示 GLB](transport-station-v9-showcase.glb) · [遊戲候選 GLB](transport-station-v9-game-candidate.glb)
 
-本輪接續同一份 V9 Blender 工程，完整移除高架長棚的 **{revision['removedUpperCanopyCount']}** 個物件及孤立網格，保留地面站房金屬屋頂、玻璃天窗、木格柵、招牌及入口；沒有重建整座車站或沿用弧形屋頂模板。橋體／拱梁、軌道、月台、樓梯與電梯也保留。
+**本次收尾沒有重新建模**；BLEND與兩GLB仍和ca94f48逐位元一致，見[鎖定核對](asset-lock.json)。以下改造描述是ca94f48已保存的成果。
+
+既有 V9 Blender 修訂完整移除高架長棚的 **{revision['removedUpperCanopyCount']}** 個物件及孤立網格，保留地面站房金屬屋頂、玻璃天窗、木格柵、招牌及入口；沒有重建整座車站或沿用弧形屋頂模板。橋體／拱梁、軌道、月台、樓梯與電梯也保留。
 
 ![實際 Blender 開放式月台主視圖](renders/hero.png)
 
@@ -72,7 +74,7 @@ readme=f'''# 交通大升級 V9｜開放式高架月台修訂
 
 [桌機預設比較](comparison-player-desktop.png) · [45°同機位比較](comparison-hero.png) · [俯視比較](comparison-top.png) · [相機逐項核對](before-render-record.json)
 
-手機兩側固定720×1280、dist22、pitch0.67、yaw0.12、垂直FOV58、目標(0,2,3.5)，出生點(0,0.5,3.5)不動；未用zoom28或橋口觀察點代替預設圖。修改後車頭與站房入口完整入鏡，車頭中心視線先撞到車頭本身；**右端車尾及部分外側高架仍裁切，沒有宣稱整列車／全島均在手機預設窄幅內**。補充拉遠圖明確標示，請勿混用。
+手機兩側固定720×1280渲染像素（360×640 CSS／DPR2）、dist22、pitch0.67、yaw0.12、垂直FOV58、目標(0,2,3.5)，出生點(0,0.5,3.5)不動；這是出生瞬間加1.5目標高度的靜態模擬，未冒稱落地後／避障中的實際相機。已用原src/sim/camera-profile.js核對兩組參數，見camera-profile-audit.json。未用zoom28或橋口觀察點代替預設圖。修改後車頭與站房入口的投影範圍完整入鏡，車頭中心視線先撞到車頭本身；這不是全部車頭像素均無遮蔽的證明，小亭／欄杆仍遮住車頭下緣，正面讀感待人工判斷。**右端車尾及部分外側高架仍裁切，沒有宣稱整列車／全島均在手機預設窄幅內**。補充拉遠圖明確標示，請勿混用。
 
 ## 本輪測量
 
@@ -94,6 +96,8 @@ readme=f'''# 交通大升級 V9｜開放式高架月台修訂
 - 原PR14既有遊戲`npm run check`：本輪Node實際回報{passed}個測試檔通過、0失敗，lint與build成功；不沿用舊50項文字，也不把這結果當新模型整合證據。
 
 [空間／碰撞候選稽核](VALIDATION.md) · [美術自審及待驗](ART-REVIEW.md) · [基底安全整理方案（未執行）](BRANCH-ISOLATION.md) · [重現流程](WORKFLOW.md) · [修改清單](MODIFIED-FILES.md) · [媒體大小／SHA256](media-manifest.json)
+
+RECOVERY.md及RECOVERY-INTERRUPTION-2.md保留為先前中斷的歷史紀錄，本輪最新狀態以本README、VALIDATION及ACCEPTANCE為準。
 
 沒有修改安心生養、其他島、正式遊戲、政策、苑字路網、main或Production；沒有處理全地圖橋邊景觀。本輪不整合、不合併、不部署。等待人工美術與手機視角驗收。
 '''
@@ -149,7 +153,7 @@ perf=f'''# 遊戲候選優化與實測
 for z in web['results']:
  p=z['performance'];perf+=f"| {z['mode']}／{z['viewport'][0]}×{z['viewport'][1]} | {z['loadToFrameMs']:.1f} | {z['drawCalls']} | {z['submittedTriangles']:,} | {p['meanFrameMs']:.1f} | {p['approxFPS']:.3f} |\n"
 perf+='''
-只在Cycles完成後量測，各24樣本。Chromium SwiftShader CPU軟體GPU、localhost、一次一個模型；沒有世界其他島、角色物理、遊戲UI或真網路。數值不是桌機GPU／真手機FPS，不宣稱達到流暢門檻。前輪與本輪隔了環境重啟，不能將兩次CPU FPS當成嚴格同硬體前後比較；GLB三角面／批次與bytes是直接檔案量測，可重現。
+只在Cycles完成後量測，各24樣本。Chromium SwiftShader CPU軟體GPU、DPR1、localhost、一次一個模型；沒有世界其他島、角色物理、遊戲UI或真網路。數值不是桌機GPU／真手機FPS，不宣稱達到流暢門檻。前輪與本輪隔了環境重啟，不能將兩次CPU FPS當成嚴格同硬體前後比較；GLB三角面／批次與bytes是直接檔案量測，可重現。
 
 ## 進一步降低成本的方案（尚未採用）
 
@@ -170,7 +174,7 @@ art='''# 美術第一輪自審與待人工檢視
 | 列車 | 同尺寸剛性迴轉，不改兩車比例、窗框或車頭；輪軌接觸不變，主視圖完整兩車可見 | 靜態不可搭乘；手機預設車尾被裁，不宣稱全列車入鏡 |
 | 庭院與植栽 | 原六棵樹與主要花帶保留，兩側前花圃縮短；先修座椅侵NPC，再修座椅越出台地，最終用實際三角投影重驗 | 廣場為四口與兩NPC留白，不能靠塞裝飾填滿；暖木及微花遠景讀感待人工 |
 | 六面完成度 | 同一最終原檔輸出45°、正／背／左右／頂，無平面假背面或AI概念圖 | 純側面本來看不到完整車頭正面，不能用它取代主角度；未製作完整室內漫遊 |
-| 原預設玩家鏡頭 | 桌機全列車及入口入鏡；手機車頭與入口完整入鏡；保留兩側真實裁切結果，同站位同FOV | 手機右車尾及部分橋端仍裁切；zoom28與橋口補充圖只作補充，非預設驗收 |
+| 原預設玩家鏡頭 | 桌機全列車及入口入鏡；手機車頭與入口投影入鏡；小亭／欄杆遮到車頭下緣，保留真實裁切結果，同站位同FOV | 手機右車尾及部分橋端仍裁切，車頭下緣有小亭／欄杆遮擋；zoom28與橋口補充圖只作補充，非預設驗收 |
 | 邊界與玩法 | 四橋口、NPC、出生、世界中心線不改；局部支承與候選通行檢查通過 | 離線通行不是遊戲膠囊、相機、踩階或解謎驗證；未做全地圖橋邊造景 |
 
 四向低仰角棚拍圖下緣仍可見棚拍平面界線，保留原始渲染不裁切隱藏；這不是建築破面。
@@ -178,39 +182,8 @@ art='''# 美術第一輪自審與待人工檢視
 未由工具宣稱人工美術驗收通過。人工仍需評估暖木、玻璃、站房識別、開放月台完整度、手機車尾裁切是否可接受。未接runtime前，不開始下一輪橋梁景觀或其他島工作。
 ''';(OUT/'ART-REVIEW.md').write_text(art)
 # Legacy closed-canopy generator is intentionally retained for historical reproduction.
-workflow='''# 重現本輪
-
-工具：Blender/bpy4.3、Python3.11、Shapely、NumPy、Pillow，既有Three.js／Playwright／Khronos環境；無runtime套件修改。使用專案原有MIT通用幾何工具；中文字轉網格採Noto Sans CJK（SIL OFL），原檔已有mesh與packed木紋。
-
-`open_platform_elevated_station_v9.py`是目前修訂入口；原`build_elevated_station_v9.py`與`finish_elevated_station_v9.py`是歷史長棚版本流程，不應用來覆蓋目前交付。
-
-開放修訂直接開啟舊PR14的BLEND，不重建整座站房。若work/open-platform-before不存在，程式從原提交81f7408讀出三個必要來源；同機位比較另需要該提交的render-record及原圖。原始舊BLEND SHA為a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb。
-
-```sh
-node scripts/blender/elevated_station_v9/measure_reference.mjs
-python scripts/blender/open_platform_elevated_station_v9.py
-python scripts/blender/optimize_elevated_station_v9_candidate.py
-python scripts/blender/audit_elevated_station_v9_source.py
-python scripts/blender/audit_elevated_station_v9.py
-python scripts/blender/audit_open_platform_v9.py
-node scripts/blender/validate_elevated_station_v9.mjs
-python scripts/blender/render_elevated_station_v9.py
-python scripts/blender/render_open_platform_before.py
-```
-
-Python使用已安裝bpy的工具虛擬環境，例如work/parent-child-blender/render-env/bin/python；一般Blender CLI亦可background執行。全部最終渲染使用一份凍結BLEND；渲染工作不保存修改原檔，以SHA確認。
-
-瀏覽器測試在本機隔離資產viewer執行，不是正式遊戲：
-
-```sh
-npx vite --host 127.0.0.1 --port 4192 --strictPort
-node scripts/blender/check_elevated_station_v9_webgl.mjs
-npm run check
-python scripts/blender/report_open_platform_v9.py
-```
-
-先等Cycles全部完成，再量FPS，避免CPU互搶。最終report會強制核對原檔、每張渲染來源SHA、前後相機矩陣／FOV／尺寸、兩GLB與瀏覽器hash，才組合對照及manifest。恢復過程的失敗紀錄保留於recovery-diagnostics；不將舊失敗的圖當最終交付。
-''';(OUT/'WORKFLOW.md').write_text(workflow)
+workflow='# 本輪只讀模型的重現流程\n\n本輪禁止重新建模。固定使用ca94f48的BLEND、展示GLB與候選GLB；asset-lock.json列出精確SHA與Git blob ID。不得執行open_platform_elevated_station_v9.py、build_elevated_station_v9.py、finish_elevated_station_v9.py或optimize_elevated_station_v9_candidate.py來覆蓋本輪模型。這些程式僅保留為歷史可恢復來源。\n\n工具：Blender/bpy4.3、Python3.11、Shapely、NumPy、Pillow，既有Three.js／Playwright／Khronos工具環境；未修改runtime依賴。文字輪廓採Noto Sans CJK（SIL OFL），原檔已有mesh與packed原創木紋；沿用專案MIT及既有授權。\n\n```sh\npython scripts/blender/render_elevated_station_v9.py\npython scripts/blender/render_open_platform_before.py\npython scripts/blender/audit_elevated_station_v9_source.py\npython scripts/blender/audit_elevated_station_v9.py\npython scripts/blender/audit_open_platform_v9.py\nnode scripts/blender/check_open_platform_camera_profile.mjs\nnode scripts/blender/validate_elevated_station_v9.mjs\n```\n\nPython使用已安裝bpy的工具虛擬環境，如work/parent-child-blender/render-env/bin/python。渲染不儲存修改原檔，逐圖來源與PNG SHA都吻合才續用；11張最終圖使用同一BLEND，原始樣本及解析度見render-record.json。\n\n拆棚前來源固定為81f7408的BLEND，SHA a975409e16bf406b4fe1ae9981d632c527f85244387e3a88111baad4177f2abb。before/有明確舊來源標記。前後桌機／手機／45°／頂視相機位置、方向、鏡頭、正交尺度與像素尺寸都由報告工具assert；補充zoom28不代替手機預設。\n\n等Cycles完成後再測量，避免與軟體GPU爭CPU：\n\n```sh\nnpx vite --host 127.0.0.1 --port 4192 --strictPort\nnode scripts/blender/check_elevated_station_v9_webgl.mjs\nnpm run check\npython scripts/blender/report_open_platform_v9.py\npython scripts/blender/write_open_platform_acceptance.py\npython scripts/blender/finalize_open_platform_delivery.py\n```\n\nWebGL只載入單一資產的本機viewer，不是正式遊戲；DPR1的1280×800及390×844，不宣稱真機GPU效能。Blender手機720×1280對應360×640 CSS／DPR2的原手機profile，並非720 CSS寬。\n\n最後verify_elevated_station_v9_github.py以精確提交SHA下載manifest及每個檔案，比對byte數與SHA256。manifest本身直接與本地檔案逐byte比較；下載收據及DELIVERY另列，避免自我雜湊循環。全程保留ca94f48三個模型SHA不變，不合併或部署。\n'
+(OUT/'WORKFLOW.md').write_text(workflow)
 # This is a proposal only. No force push/base retarget occurs in this task.
 branch='''# PR #14 基底隔離方案（本輪不執行）
 
@@ -229,7 +202,9 @@ PR14仍為Draft，base是未核准PR13來源codex/seven-policy-islands-blender-a
 5. 在GitHub再次核對Files changed不含seven-policy-islands資產，下載核對所有模型與媒體SHA，保持Draft等待審查，才討論整合。任何PR均不自動合併。
 
 本輪只提出方案，**未改base、未force-push、未建立無關原型／新PR、未將已完成成果刪除**。若未完成上述隔離，不應合入PR14，否則仍會攜帶未核准七島歷史。
-''';(OUT/'BRANCH-ISOLATION.md').write_text(branch)
+''';
+if not (OUT/'BRANCH-ISOLATION.md').exists():(OUT/'BRANCH-ISOLATION.md').write_text(branch)
+
 # Preserve source-build script hashes and separately record current reproduction script hashes.
 m['currentReproductionScriptsSHA256']={str(p.relative_to(ROOT)):sha(p)for p in sorted((ROOT/'scripts/blender').rglob('*'))if p.is_file()and(p.name.endswith(('.py','.mjs','.html')))and('elevated_station_v9'in str(p)or'open_platform'in p.name)};(OUT/'model-report.json').write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
 # Actual current GLB JSON material inventory, not an inherited report.
