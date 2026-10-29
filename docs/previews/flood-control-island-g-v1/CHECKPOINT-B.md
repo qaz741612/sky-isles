@@ -1,3 +1,5 @@
+歷史檢查點 B（861a1f1）；最終版另修正橋底並重新渲染，最新 SHA/尺寸請看 REPORT.md 和 model-report.json。以下是當時紀錄。
+
 # 檢查點 B：同源 Blender 美術與模型
 
 六張 Cycles CPU 圖已完成，全部源於同一份可編輯 Blender。SHA256 3f3d237bb33a3e7e9ac08877f2fbed44cf61b2585f2f71934ecb25fe09c6910e。GLB 42,709 三角面、33 個材質/構件批次、無外部貼圖。原生遊戲另加兩塊橋緣支承，以保留 S21-L3/S22-L1 的原始燈柱位置。

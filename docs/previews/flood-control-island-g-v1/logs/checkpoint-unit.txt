@@ -1,0 +1,10 @@
+✔ G physical solids leave fixed S21/S22 4.8 core and two NPC 3x3 spaces clear (21.529031ms)
+✔ real GLB is bounded, has materials, dry holes and every visible safety segment blocks motion (202.869423ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 237.171774

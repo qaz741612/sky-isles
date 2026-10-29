@@ -1,0 +1,531 @@
+[
+  {
+    "name": "desktop-native",
+    "kind": "native",
+    "args": [
+      0,
+      -1.2
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      47.03182843673732,
+      10.534279577174548,
+      57.115676634274806
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      44.928,
+      1.1920928910669204e-08,
+      44.079
+    ],
+    "flood": null,
+    "render": {
+      "frame": 3,
+      "calls": 588,
+      "triangles": 1322472,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 288,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "s21-player",
+    "kind": "native",
+    "args": [
+      3.8,
+      -10
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      50.831853522982826,
+      10.534279574320571,
+      48.31570675818252
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      48.727999999999994,
+      0,
+      35.279
+    ],
+    "flood": null,
+    "render": {
+      "frame": 4,
+      "calls": 474,
+      "triangles": 1239058,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 295,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "s22-player",
+    "kind": "native",
+    "args": [
+      -11,
+      -5.5
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      36.031864865850224,
+      10.534279574320571,
+      52.81569864745181
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      33.928,
+      0,
+      39.779
+    ],
+    "flood": null,
+    "render": {
+      "frame": 5,
+      "calls": 609,
+      "triangles": 1352596,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 295,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "command-porch-player",
+    "kind": "native",
+    "args": [
+      6.7,
+      1.4
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      53.65983951339321,
+      10.7742730972225,
+      59.16133231819964
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.55598562530568,
+      0.23999999821186077,
+      46.124640329790196
+    ],
+    "flood": null,
+    "render": {
+      "frame": 6,
+      "calls": 561,
+      "triangles": 1274354,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 296,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "g-hero",
+    "kind": "qa",
+    "args": [
+      -24,
+      23,
+      29
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      20.927999999999997,
+      23,
+      74.279
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.55598562530568,
+      0.23999999821186077,
+      46.124640329790196
+    ],
+    "flood": null,
+    "render": {
+      "frame": 7,
+      "calls": 162,
+      "triangles": 96884,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 301,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "g-entrance",
+    "kind": "qa",
+    "args": [
+      18,
+      14,
+      -24
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      62.928,
+      14,
+      21.279000000000003
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.55598562530568,
+      0.23999999821186077,
+      46.124640329790196
+    ],
+    "flood": null,
+    "render": {
+      "frame": 8,
+      "calls": 220,
+      "triangles": 105398,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 400,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "g-top",
+    "kind": "qa",
+    "args": [
+      0,
+      38,
+      0.001
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      44.928,
+      38,
+      45.28
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.55598562530568,
+      0.23999999821186077,
+      46.124640329790196
+    ],
+    "flood": null,
+    "render": {
+      "frame": 9,
+      "calls": 108,
+      "triangles": 83235,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 400,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "sluice-detail",
+    "kind": "qa",
+    "args": [
+      -11,
+      7,
+      15,
+      -5,
+      1,
+      4.6
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      33.928,
+      7,
+      60.279
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.55598562530568,
+      0.23999999821186077,
+      46.124640329790196
+    ],
+    "flood": null,
+    "render": {
+      "frame": 10,
+      "calls": 148,
+      "triangles": 79766,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 400,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "yuan-panorama",
+    "kind": "overview",
+    "args": [],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      0.08983500000000078,
+      240,
+      28.923
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.55598562530568,
+      0.23999999821186077,
+      46.124640329790196
+    ],
+    "flood": null,
+    "render": {
+      "frame": 11,
+      "calls": 939,
+      "triangles": 1433794,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 435,
+      "textures": 20
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "mobile-native",
+    "kind": "native",
+    "args": [
+      0,
+      -1.2
+    ],
+    "size": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "camera": [
+      46.99229907483396,
+      15.161691706346748,
+      61.19904344743537
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "player": [
+      44.928,
+      1.1920928910669204e-08,
+      44.079
+    ],
+    "flood": null,
+    "render": {
+      "frame": 3,
+      "calls": 147,
+      "triangles": 76729,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 273,
+      "textures": 17
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "mobile-landscape",
+    "kind": "native",
+    "args": [
+      0,
+      -1.2
+    ],
+    "size": {
+      "width": 932,
+      "height": 430
+    },
+    "errors": [],
+    "camera": [
+      46.99232647833972,
+      15.161691726725229,
+      61.19906821481405
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "player": [
+      44.928,
+      1.1920928910669204e-08,
+      44.079
+    ],
+    "flood": null,
+    "render": {
+      "frame": 4,
+      "calls": 325,
+      "triangles": 661986,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 305,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  },
+  {
+    "name": "mobile-panorama",
+    "kind": "overview",
+    "args": [],
+    "size": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "camera": [
+      0.08983500000000078,
+      240,
+      28.923
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "player": [
+      44.928,
+      1.1920928910669204e-08,
+      44.079
+    ],
+    "flood": null,
+    "render": {
+      "frame": 5,
+      "calls": 939,
+      "triangles": 1433794,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 435,
+      "textures": 20
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+    "role": "Actual baseline game, not final G artwork"
+  }
+]

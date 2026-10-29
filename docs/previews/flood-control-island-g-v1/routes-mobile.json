@@ -1,0 +1,259 @@
+{
+  "routes": [
+    {
+      "id": "S01",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S02",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S03",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S04",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S05",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S06",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S07",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S08",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S09",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S10",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S11",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S12",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S13",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S14",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S15",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S16",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S17",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S18",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S19",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S20",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S21",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S22",
+      "bidirectional": true,
+      "noJump": true
+    }
+  ],
+  "publicCircuit": [
+    [
+      0,
+      0
+    ],
+    [
+      6.8,
+      0
+    ],
+    [
+      6.8,
+      1.5
+    ],
+    [
+      0,
+      1.5
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      6.8,
+      9.2
+    ],
+    [
+      9,
+      8.9
+    ],
+    [
+      11,
+      7
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      8.7,
+      -3.1
+    ],
+    [
+      6,
+      -4
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      -10.8,
+      -0.3
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      -9,
+      1.8
+    ],
+    [
+      -9,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "waterEdges": 32,
+  "cameras": 48,
+  "respawns": 0,
+  "ticks": 17477,
+  "stats": {
+    "bytes": 2342896,
+    "downloadMilliseconds": 132.80000001192093,
+    "decodeMilliseconds": 19.19999998807907,
+    "totalMilliseconds": 152,
+    "triangles": 42773,
+    "runtimeMeshes": 33,
+    "materials": 17,
+    "buildMilliseconds": 14.199999988079071,
+    "waterCollision": false,
+    "newLights": 0,
+    "integrationTriangles": 24,
+    "retainedLampInterfaces": [
+      {
+        "id": "S21-L3",
+        "position": [
+          45.98585568461623,
+          0,
+          32.8410838841428
+        ],
+        "groundTop": 0.025,
+        "moved": false
+      },
+      {
+        "id": "S22-L1",
+        "position": [
+          36.142117348918624,
+          0,
+          37.56933897223424
+        ],
+        "groundTop": 0.025,
+        "moved": false
+      }
+    ]
+  },
+  "npc": [
+    {
+      "id": "water-guide",
+      "position": [
+        -9.5,
+        0,
+        1
+      ],
+      "facing": 1.57,
+      "interactionRadius": 1.65
+    },
+    {
+      "id": "resilience-guide",
+      "position": [
+        8.7,
+        0,
+        -3.1
+      ],
+      "facing": -1.57,
+      "interactionRadius": 1.65
+    }
+  ],
+  "modelMeshes": 33,
+  "waterCollision": false
+}
