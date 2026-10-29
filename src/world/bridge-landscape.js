@@ -64,5 +64,19 @@ export function buildBridgeLandscape(parent){
  for(const {key,zone,parts}of batches.values()){const g=mergeGeometries(parts),m=new THREE.Mesh(g,material(key));m.name=`zone-${zone}-${key}-batch`;m.receiveShadow=false;g.computeBoundingBox();g.computeBoundingSphere();group.add(m);meshes.push(m);parts.forEach(p=>p.dispose());geometries++;}
  group.updateMatrixWorld(true);let triangles=0;for(const m of meshes)triangles+=(m.geometry.index?.count??m.geometry.attributes.position.count)/3*(m.isInstancedMesh?m.count:1);
  const stats={...plan.stats,visibleMeshes:meshes.length,triangles,collisionMeshes:colliders.length,horizontalBarriers:barriers.length,buildMilliseconds:performance.now()-start,newRealtimeLights:0,geometryBatches:geometries,perFrameRebuilds:0,instanceBatches:instanced.length};
- const ceilings=meshes.filter(m=>['rounded-seven-post','warm-downward-linear-luminaire','S09-low-light-line'].includes(m.name));const bounds=new THREE.Box3().setFromObject(group,true);return{group,plan,stats,colliders,barriers,meshes,ceilings,constrainHead:stationHeadroom(ceilings,bounds,1.6),update(){}};
+ const ceilings=meshes.filter(m=>['rounded-seven-post','warm-downward-linear-luminaire','S09-low-light-line'].includes(m.name));const bounds=new THREE.Box3().setFromObject(group,true),curvedHeadroom=stationHeadroom(ceilings,bounds,1.6);
+ // A narrow light strip can fall between the five roof-ray samples. Sweep the
+ // head circle against each straight arm's exact oriented rectangle as well.
+ const constrainHead=(position,previousY,move)=>{
+  if(move.vy<=0||position.y<=previousY)return false;let allowed=position.y;
+  for(const l of plan.lamps){if(l.type!=='seven')continue;const dx=position.x-l.position[0],dz=position.z-l.position[2];if(Math.abs(dx)>1.2||Math.abs(dz)>1.2)continue;const c=Math.cos(l.yaw),s=Math.sin(l.yaw),u=c*dx-s*dz,v=s*dx+c*dz;
+   for(const[x0,x1,z0,z1,bottom]of[[.19,.73,-.035,.035,3.0175],[.16,.76,-.06,.06,3.05]]){
+    const distance=Math.hypot(u-Math.max(x0,Math.min(x1,u)),v-Math.max(z0,Math.min(z1,v)));
+    if(distance<=.22&&previousY+1.6<=bottom+.001&&position.y+1.6>=bottom)allowed=Math.min(allowed,bottom-1.605);
+   }
+  }
+  if(allowed<position.y){position.y=Math.max(previousY,allowed);move.vy=0;return true;}
+  return curvedHeadroom(position,previousY,move);
+ };
+ return{group,plan,stats,colliders,barriers,meshes,ceilings,constrainHead,update(){}};
 }
