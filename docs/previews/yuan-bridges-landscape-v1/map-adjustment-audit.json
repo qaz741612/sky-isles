@@ -1,0 +1,92 @@
+{
+  "baseCommit": "ae13305",
+  "onlyTranslatedNodes": [
+    "A",
+    "T3"
+  ],
+  "translatedX": -5,
+  "affectedCurves": [
+    "S01",
+    "S02",
+    "S04",
+    "S05"
+  ],
+  "width": 4.8,
+  "compressionXZ": 0.585,
+  "compressionReapplied": false,
+  "homeFootprintUnchanged": true,
+  "centres": [
+    {
+      "id": "F",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "r": 9,
+      "island": "home",
+      "name": "交通大升級"
+    },
+    {
+      "id": "A",
+      "x": -22.549999999999997,
+      "y": 0,
+      "z": -19.656,
+      "r": 10.2,
+      "island": "tree",
+      "name": "安心生養"
+    },
+    {
+      "id": "B",
+      "x": -42.12,
+      "y": 0,
+      "z": -1.4040000000000001,
+      "r": 9,
+      "island": "temple",
+      "name": "幸福養老"
+    },
+    {
+      "id": "C",
+      "x": -20.357999999999997,
+      "y": 0,
+      "z": 38.61,
+      "r": 9,
+      "island": "koi",
+      "name": "產業青年"
+    },
+    {
+      "id": "E",
+      "x": 26.676,
+      "y": 0,
+      "z": -18.252,
+      "r": 9,
+      "island": "meadow",
+      "name": "宜居環境"
+    },
+    {
+      "id": "D",
+      "x": -53.352,
+      "y": 0,
+      "z": 87.048,
+      "r": 9,
+      "island": "windmill",
+      "name": "智慧公所"
+    },
+    {
+      "id": "G",
+      "x": 44.928000000000004,
+      "y": 0,
+      "z": 45.278999999999996,
+      "r": 9,
+      "island": "crystal",
+      "name": "治水防災"
+    },
+    {
+      "id": "H",
+      "x": 50.544,
+      "y": 0,
+      "z": 88.452,
+      "r": 9,
+      "island": "lookout",
+      "name": "教育發展"
+    }
+  ]
+}

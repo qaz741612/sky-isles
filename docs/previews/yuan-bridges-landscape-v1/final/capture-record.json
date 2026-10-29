@@ -45,14 +45,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "family-separation",
@@ -100,14 +102,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "zone-1",
@@ -155,14 +159,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "zone-2",
@@ -210,14 +216,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "zone-3",
@@ -247,8 +255,8 @@
     ],
     "render": {
       "frame": 7,
-      "calls": 498,
-      "triangles": 1292558,
+      "calls": 499,
+      "triangles": 1292560,
       "points": 0,
       "lines": 0
     },
@@ -265,14 +273,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "zone-4",
@@ -302,8 +312,8 @@
     ],
     "render": {
       "frame": 8,
-      "calls": 306,
-      "triangles": 802538,
+      "calls": 308,
+      "triangles": 802542,
       "points": 0,
       "lines": 0
     },
@@ -320,14 +330,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "zone-5",
@@ -357,8 +369,8 @@
     ],
     "render": {
       "frame": 9,
-      "calls": 269,
-      "triangles": 638314,
+      "calls": 268,
+      "triangles": 638312,
       "points": 0,
       "lines": 0
     },
@@ -375,14 +387,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "seven-lamp-close",
@@ -412,8 +426,8 @@
     ],
     "render": {
       "frame": 10,
-      "calls": 24,
-      "triangles": 22679,
+      "calls": 28,
+      "triangles": 22687,
       "points": 0,
       "lines": 0
     },
@@ -430,14 +444,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "terminal-garden",
@@ -485,14 +501,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "yuan-panorama",
@@ -540,14 +558,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 314.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 248.29999995231628,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "mobile-player",
@@ -595,14 +615,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 501.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 145.89999997615814,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "mobile-landscape",
@@ -650,14 +672,16 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 501.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 145.89999997615814,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "mobile-panorama",
@@ -705,13 +729,15 @@
       "visibleMeshes": 72,
       "triangles": 83139,
       "collisionMeshes": 49,
-      "horizontalBarriers": 1835,
-      "buildMilliseconds": 501.9000000357628,
+      "horizontalBarriers": 1979,
+      "buildMilliseconds": 145.89999997615814,
       "newRealtimeLights": 0,
       "geometryBatches": 46,
       "perFrameRebuilds": 0,
       "instanceBatches": 28
     },
-    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   }
 ]

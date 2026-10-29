@@ -1,8 +1,8 @@
 {
-  "baseline": "map-only ea5cd7e",
-  "after": "final landscape runtime ce6a569",
+  "baselineCommit": "ea5cd7e",
+  "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
   "hardwareFPS": "NOT MEASURED",
-  "note": "Real rendered frames; counts include transmission/other passes. Fixed player profiles, DPR1. Overview is fitted to the new exterior extent. Not unique triangle counts or hardware FPS.",
+  "note": "Real rendered frames, DPR1. Includes transparency/transmission passes. Native player profiles unchanged; overview refits the final outside extent. Not a unique geometry count or real phone benchmark.",
   "views": [
     {
       "view": "desktop-player",
@@ -26,7 +26,7 @@
       },
       "deltaCalls": 90,
       "deltaSubmittedTriangles": 122620,
-      "newGeometryBuildMilliseconds": 314.9000000357628,
+      "geometryBuildMilliseconds": 248.29999995231628,
       "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
     },
     {
@@ -51,7 +51,7 @@
       },
       "deltaCalls": 82,
       "deltaSubmittedTriangles": 124542,
-      "newGeometryBuildMilliseconds": 501.9000000357628,
+      "geometryBuildMilliseconds": 145.89999997615814,
       "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
     },
     {
@@ -76,7 +76,7 @@
       },
       "deltaCalls": 148,
       "deltaSubmittedTriangles": 175286,
-      "newGeometryBuildMilliseconds": 314.9000000357628,
+      "geometryBuildMilliseconds": 248.29999995231628,
       "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
     }
   ]

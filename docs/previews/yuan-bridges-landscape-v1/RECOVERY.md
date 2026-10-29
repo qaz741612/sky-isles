@@ -1,3 +1,5 @@
+最新狀態：運行程式 59bb95a，16 個單元模組與燈臂修正後的桌機／手機復測均通過；最終報告見 REPORT.md。前段施工紀錄保留如下。
+
 # 道路景觀施工恢復紀錄
 
 工作目錄 `/workspace/sky-isles-yuan-landscape`，分支 `codex/yuan-bridges-landscape-v1`。基底 ae13305。

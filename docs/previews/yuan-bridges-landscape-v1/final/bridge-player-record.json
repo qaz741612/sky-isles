@@ -23,7 +23,9 @@
       10.53427953639433,
       97.89838640147762
     ],
-    "description": "QA teleport to bridge; unchanged native player camera profile and real physics; not a traversal video"
+    "description": "QA teleport to bridge; unchanged native player camera profile and real physics; not a traversal video",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   },
   {
     "name": "mobile-bridge-player",
@@ -49,6 +51,8 @@
       15.161691629562835,
       101.98175318286746
     ],
-    "description": "QA teleport to bridge; unchanged native player camera profile and real physics; not a traversal video"
+    "description": "QA teleport to bridge; unchanged native player camera profile and real physics; not a traversal video",
+    "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+    "bundle": "index-B8SOGj0X.js"
   }
 ]

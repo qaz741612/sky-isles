@@ -26,8 +26,8 @@
   ],
   "render": {
     "frame": 9,
-    "calls": 269,
-    "triangles": 638314,
+    "calls": 268,
+    "triangles": 638312,
     "points": 0,
     "lines": 0
   },
@@ -44,13 +44,15 @@
     "visibleMeshes": 72,
     "triangles": 83139,
     "collisionMeshes": 49,
-    "horizontalBarriers": 1835,
-    "buildMilliseconds": 314.9000000357628,
+    "horizontalBarriers": 1979,
+    "buildMilliseconds": 248.29999995231628,
     "newRealtimeLights": 0,
     "geometryBatches": 46,
     "perFrameRebuilds": 0,
     "instanceBatches": 28
   },
   "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
-  "provenance": "Final shared runtime ce6a569; construction stages remain recorded by Git commits and zone-N-browser.txt"
+  "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+  "bundle": "index-B8SOGj0X.js",
+  "provenance": "Final runtime; historical construction stages remain in Git and zone-N-browser.txt"
 }

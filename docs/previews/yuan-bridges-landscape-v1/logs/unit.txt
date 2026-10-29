@@ -1,0 +1,28 @@
+
+> sky-isles@1.0.0 test
+> node --test test/*.test.js
+
+✔ test/bridge-lamp-headroom.test.js (271.163144ms)
+✔ test/bridge-landscape.test.js (583.434757ms)
+✔ test/camera-clearance.test.js (151.991247ms)
+✔ test/camera-profile.test.js (44.262389ms)
+✔ test/elevated-foundation.test.js (127.26354ms)
+✔ test/future-island-reservations.test.js (76.873583ms)
+✔ test/movement.test.js (58.200519ms)
+✔ test/panorama.test.js (77.970571ms)
+✔ test/parent-child-model.test.js (3443.951541ms)
+✔ test/policy-scenery.test.js (1715.953246ms)
+✔ test/puzzle.test.js (53.266965ms)
+✔ test/rng.test.js (52.787128ms)
+✔ test/station-model.test.js (209.770652ms)
+✔ test/transport.test.js (938.49312ms)
+✔ test/walkways.test.js (13928.214163ms)
+✔ test/yuan-size-b.test.js (130.209032ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 21878.971136

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "S05-L1",
+    "position": [
+      -20.813673715176414,
+      0,
+      -5.768934477258016
+    ],
+    "floorPresent": false,
+    "nearestRoute": "S05",
+    "nearestCentrelineDistance": 3.019999999999998,
+    "requiredDistance": 2.52,
+    "decision": "omitted; no automatic relocation"
+  },
+  {
+    "id": "S18-L1",
+    "position": [
+      -2.2610726318783767,
+      0,
+      16.363851268998456
+    ],
+    "floorPresent": true,
+    "nearestRoute": "S15",
+    "nearestCentrelineDistance": 2.4363958916814603,
+    "requiredDistance": 2.52,
+    "decision": "omitted; no automatic relocation"
+  }
+]
