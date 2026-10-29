@@ -1,0 +1,402 @@
+{
+  "revision": 1,
+  "coordinateSystem": "local to each unchanged island centre",
+  "reservations": [
+    {
+      "island": "temple",
+      "name": "幸福養老",
+      "localFootprintXZ": [
+        [
+          -6.3,
+          -5.5
+        ],
+        [
+          -1,
+          -5.5
+        ],
+        [
+          -1,
+          -2.8
+        ],
+        [
+          -6.3,
+          -2.8
+        ],
+        [
+          -6.3,
+          -5.5
+        ]
+      ],
+      "heightEnvelope": 3.8,
+      "use": "future primary building replacement envelope",
+      "currentOccupancy": "Existing v1 scenery retained now; this reservation is not an empty construction permit or a finished building",
+      "gates": [
+        "S08",
+        "S12",
+        "S13",
+        "S14"
+      ],
+      "npc": {
+        "position": [
+          -3.5,
+          0,
+          -1.2
+        ],
+        "playerStop": [
+          -2.2,
+          0,
+          -1.2
+        ],
+        "facingYaw": 1.57,
+        "interactionRadius": 1.7,
+        "implemented": false,
+        "bodyRadius": 0.4,
+        "standingAreaRadius": 1.2,
+        "approachIsSharedPublicSpace": true
+      },
+      "preferredCamera": {
+        "localPosition": [
+          2.35,
+          5.8,
+          5.85
+        ],
+        "localTarget": [
+          -3.65,
+          1.5,
+          -4.15
+        ],
+        "status": "future envelope sight line; actual replacement building not built or art-approved"
+      },
+      "runtimeObjectsCreated": 0
+    },
+    {
+      "island": "koi",
+      "name": "產業青年",
+      "localFootprintXZ": [
+        [
+          2.3,
+          1.8
+        ],
+        [
+          6.3,
+          1.8
+        ],
+        [
+          6.3,
+          5.2
+        ],
+        [
+          2.3,
+          5.2
+        ],
+        [
+          2.3,
+          1.8
+        ]
+      ],
+      "heightEnvelope": 3.8,
+      "use": "future primary building replacement envelope",
+      "currentOccupancy": "Existing v1 scenery retained now; this reservation is not an empty construction permit or a finished building",
+      "gates": [
+        "S14",
+        "S15",
+        "S16"
+      ],
+      "npc": {
+        "position": [
+          1,
+          0,
+          4.8
+        ],
+        "playerStop": [
+          1,
+          0,
+          3.4
+        ],
+        "facingYaw": 3.14159,
+        "interactionRadius": 1.6,
+        "implemented": false,
+        "bodyRadius": 0.4,
+        "standingAreaRadius": 1.2,
+        "approachIsSharedPublicSpace": true
+      },
+      "preferredCamera": {
+        "localPosition": [
+          10.3,
+          5.8,
+          13.5
+        ],
+        "localTarget": [
+          4.3,
+          1.5,
+          3.5
+        ],
+        "status": "future envelope sight line; actual replacement building not built or art-approved"
+      },
+      "runtimeObjectsCreated": 0
+    },
+    {
+      "island": "meadow",
+      "name": "宜居環境",
+      "localFootprintXZ": [
+        [
+          2.8,
+          3.3
+        ],
+        [
+          6.4,
+          3.3
+        ],
+        [
+          6.4,
+          5.4
+        ],
+        [
+          2.8,
+          5.4
+        ],
+        [
+          2.8,
+          3.3
+        ]
+      ],
+      "heightEnvelope": 3.1,
+      "use": "future natural canopy / small environment pavilion",
+      "currentOccupancy": "Existing v1 scenery retained now; this reservation is not an empty construction permit or a finished building",
+      "gates": [
+        "S02",
+        "S03",
+        "S06",
+        "S07"
+      ],
+      "npc": {
+        "position": [
+          2.9,
+          0,
+          4.6
+        ],
+        "playerStop": [
+          1.6,
+          0,
+          4.6
+        ],
+        "facingYaw": -1.5708,
+        "interactionRadius": 1.7,
+        "implemented": false,
+        "bodyRadius": 0.4,
+        "standingAreaRadius": 1.2,
+        "approachIsSharedPublicSpace": true
+      },
+      "preferredCamera": {
+        "localPosition": [
+          10.7,
+          5.8,
+          14.05
+        ],
+        "localTarget": [
+          4.699999999999999,
+          1.5,
+          4.050000000000001
+        ],
+        "status": "future envelope sight line; actual replacement building not built or art-approved"
+      },
+      "runtimeObjectsCreated": 0
+    },
+    {
+      "island": "windmill",
+      "name": "智慧公所",
+      "localFootprintXZ": [
+        [
+          -6.2,
+          -5.4
+        ],
+        [
+          -1.4,
+          -5.4
+        ],
+        [
+          -1.4,
+          -2.7
+        ],
+        [
+          -6.2,
+          -2.7
+        ],
+        [
+          -6.2,
+          -5.4
+        ]
+      ],
+      "heightEnvelope": 3.8,
+      "use": "future primary building replacement envelope",
+      "currentOccupancy": "Existing v1 scenery retained now; this reservation is not an empty construction permit or a finished building",
+      "gates": [
+        "S16",
+        "S17"
+      ],
+      "npc": {
+        "position": [
+          -3,
+          0,
+          -1.6
+        ],
+        "playerStop": [
+          -1.7,
+          0,
+          -1.6
+        ],
+        "facingYaw": 1.57,
+        "interactionRadius": 1.6,
+        "implemented": false,
+        "bodyRadius": 0.4,
+        "standingAreaRadius": 1.2,
+        "approachIsSharedPublicSpace": true
+      },
+      "preferredCamera": {
+        "localPosition": [
+          2.2,
+          5.8,
+          5.949999999999999
+        ],
+        "localTarget": [
+          -3.8,
+          1.5,
+          -4.050000000000001
+        ],
+        "status": "future envelope sight line; actual replacement building not built or art-approved"
+      },
+      "runtimeObjectsCreated": 0
+    },
+    {
+      "island": "crystal",
+      "name": "治水防災",
+      "localFootprintXZ": [
+        [
+          2.4,
+          2.8
+        ],
+        [
+          5.8,
+          2.8
+        ],
+        [
+          5.8,
+          5.8
+        ],
+        [
+          2.4,
+          5.8
+        ],
+        [
+          2.4,
+          2.8
+        ]
+      ],
+      "heightEnvelope": 3.8,
+      "use": "future primary building replacement envelope",
+      "currentOccupancy": "Existing v1 scenery retained now; this reservation is not an empty construction permit or a finished building",
+      "gates": [
+        "S21",
+        "S22"
+      ],
+      "npc": {
+        "position": [
+          -0.3,
+          0,
+          3.6
+        ],
+        "playerStop": [
+          -0.3,
+          0,
+          2.2
+        ],
+        "facingYaw": 3.14159,
+        "interactionRadius": 1.7,
+        "implemented": false,
+        "bodyRadius": 0.4,
+        "standingAreaRadius": 1.2,
+        "approachIsSharedPublicSpace": true
+      },
+      "preferredCamera": {
+        "localPosition": [
+          10.1,
+          5.8,
+          14.3
+        ],
+        "localTarget": [
+          4.1,
+          1.5,
+          4.3
+        ],
+        "status": "future envelope sight line; actual replacement building not built or art-approved"
+      },
+      "runtimeObjectsCreated": 0
+    },
+    {
+      "island": "lookout",
+      "name": "教育發展",
+      "localFootprintXZ": [
+        [
+          -6,
+          -5.8
+        ],
+        [
+          -1,
+          -5.8
+        ],
+        [
+          -1,
+          -2.8
+        ],
+        [
+          -6,
+          -2.8
+        ],
+        [
+          -6,
+          -5.8
+        ]
+      ],
+      "heightEnvelope": 3.8,
+      "use": "future primary building replacement envelope",
+      "currentOccupancy": "Existing v1 scenery retained now; this reservation is not an empty construction permit or a finished building",
+      "gates": [
+        "S19",
+        "S20"
+      ],
+      "npc": {
+        "position": [
+          1.4,
+          0,
+          4.5
+        ],
+        "playerStop": [
+          0.1,
+          0,
+          4.5
+        ],
+        "facingYaw": -1.5708,
+        "interactionRadius": 1.65,
+        "implemented": false,
+        "bodyRadius": 0.4,
+        "standingAreaRadius": 1.2,
+        "approachIsSharedPublicSpace": true
+      },
+      "preferredCamera": {
+        "localPosition": [
+          2.5,
+          5.8,
+          5.7
+        ],
+        "localTarget": [
+          -3.5,
+          1.5,
+          -4.3
+        ],
+        "status": "future envelope sight line; actual replacement building not built or art-approved"
+      },
+      "runtimeObjectsCreated": 0
+    }
+  ],
+  "note": "Data only, not consumed by runtime; no six replacement buildings or NPC meshes created."
+}

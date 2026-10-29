@@ -1,0 +1,38 @@
+[
+  {
+    "island": "temple",
+    "roadOverlapArea": 0,
+    "maxFootprintRadius": 8.363013810822029,
+    "withinIsland": true
+  },
+  {
+    "island": "koi",
+    "roadOverlapArea": 0,
+    "maxFootprintRadius": 8.168843247363728,
+    "withinIsland": true
+  },
+  {
+    "island": "meadow",
+    "roadOverlapArea": 0,
+    "maxFootprintRadius": 8.37376856618333,
+    "withinIsland": true
+  },
+  {
+    "island": "windmill",
+    "roadOverlapArea": 0,
+    "maxFootprintRadius": 8.221921916437788,
+    "withinIsland": true
+  },
+  {
+    "island": "crystal",
+    "roadOverlapArea": 0,
+    "maxFootprintRadius": 8.202438661763951,
+    "withinIsland": true
+  },
+  {
+    "island": "lookout",
+    "roadOverlapArea": 0,
+    "maxFootprintRadius": 8.345058418010026,
+    "withinIsland": true
+  }
+]
