@@ -1,0 +1,369 @@
+{
+  "verifiedCommit": "658bf32e42eea433c3775f75e123f610cf08f196",
+  "method": "GitHub raw download at immutable commit, every file size and SHA256 checked against STAGE1-MANIFEST.json",
+  "manifestSHA256": "0ab4accbef6b43b7d37afea8f99f44cf046be7809d1c1f194b9f98fa140f413c",
+  "verifiedFileCount": 60,
+  "allMatched": true,
+  "files": [
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/CHANGES.md",
+      "bytes": 1123,
+      "sha256": "d970c4c3fefb2b2117b7ac3fdb034a973792b14b6c2fb7a6d3754bdc7584e460",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/ENVIRONMENT-INTERRUPTION.md",
+      "bytes": 4489,
+      "sha256": "3d99b4f2a6ccac7a93377963478a16278d92eb5ed2a34a7df7453d0b20244758",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/README.md",
+      "bytes": 1448,
+      "sha256": "acd91dd4d4527ecc6f42b9f78f08c96ecfb616b38f544ab2ee56e68d6dbd4b7e",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/RECOVERED-FILES.json",
+      "bytes": 2270,
+      "sha256": "5719cf183f656e2619f06d2c217c4f1833066eaf7d29454f94c1e7b5ea3caf5a",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/RECOVERY-SAVED.md",
+      "bytes": 3992,
+      "sha256": "107936ec046aafb031df508f31f69f0599415211d2a7aba7b1865a6660f86571",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/RECOVERY.md",
+      "bytes": 3887,
+      "sha256": "aa20afa620e0f55bd1d5ad599fba34301e972df0421a7a94e2bc18ea10193df7",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/STAGE1-PROGRESS.md",
+      "bytes": 1214,
+      "sha256": "8e4e82a4861bc8d1a9d74c77b63ea706a4c8255681947340d0b333381766bc2c",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/STAGE1-REPORT.md",
+      "bytes": 10203,
+      "sha256": "2a0ff28d7e936314df2ca53ddc0659ac1208b4adcc619bd46ea516257ed9082f",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/WIP-MANIFEST.json",
+      "bytes": 2878,
+      "sha256": "fde5907c21dd87768f72dd1fb5477a9233f47d056a513920fdbd9246388b83c9",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/benchmark-station-stage1.mjs",
+      "bytes": 2652,
+      "sha256": "94f5d432c3e7fffbec11bf57d5897a8d9ea63ce0fc5e82fc190a33dc5489381a",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/capture-record.json",
+      "bytes": 10769,
+      "sha256": "4aabefa9b732d774180ee7c910c0c6593c97336280af05bf2be8c3667e9d328c",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/capture-station-stage1.mjs",
+      "bytes": 3836,
+      "sha256": "8765cdf12505303d01472dd5909bd2ed15e58d3c0dc1f61187654aa48437e287",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/desktop-controller.json",
+      "bytes": 16980,
+      "sha256": "0e50897c205f347202618cf2b97947b631a5ac4bd5787fa186d65ec8b023e22d",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/desktop-default.png",
+      "bytes": 651047,
+      "sha256": "7b1233153b40e02b102ea46a8019b28f4fa35c8a0a0e2980537f76ab4732cda4",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/desktop-plinth-guards.json",
+      "bytes": 634,
+      "sha256": "6730636413a25b12c105bda7298e3b3f73d466f8f0861649bf8440bf3330c5a7",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/foundation-audit.json",
+      "bytes": 404,
+      "sha256": "a10ce6091046fae8a6d3f29fa939d55bda5f65d8e59a9fc8cf4379148628d777",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/foundation-check.json",
+      "bytes": 191,
+      "sha256": "587e3d72b1a761f62f3d59654ebbd7fcb0bcda6714bdd48dc1bc7363d6986b48",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/from-family.png",
+      "bytes": 726832,
+      "sha256": "38d48f79483f18a5590f8eadc994961a87bcec2a32bc6f9bcbb6573586712fb6",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/logs/browser.txt",
+      "bytes": 6431,
+      "sha256": "9ba0492c9ee960aa9411e18393b870bc3bd7b2436f38eca55f7109985d9a43c1",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/logs/build.txt",
+      "bytes": 683,
+      "sha256": "fdd9f1eb942ebec0f90e0cdefa8606bc8c715c4fd3025771fc054925fc8c1cbe",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/logs/lint.txt",
+      "bytes": 96,
+      "sha256": "7127f972dd7299109526fb9d1d6a36c9e08097f932df9f03961ee6f9fd6d7692",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/logs/plinth-guards.txt",
+      "bytes": 654,
+      "sha256": "4944ba2db49065738599e6fc0310170c4adcdb0379462ffb8220ddcc2a047244",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/logs/unit.txt",
+      "bytes": 756,
+      "sha256": "627d0a40d140048134b680020699ab14a5956b66ee2220f963560e2f8fe03201",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/mobile-controller.json",
+      "bytes": 17021,
+      "sha256": "f1871c1cfbeb8d2110badebd5a15395ff8fac75f16a97faa1a56f84f8553aee4",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/mobile-default.png",
+      "bytes": 255301,
+      "sha256": "a9337a365b63c93c8a1ab8172fbd296ff84a759ddf92f4d104c0aff2d08c981f",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/mobile-landscape.png",
+      "bytes": 338143,
+      "sha256": "9c258b0b3f9af1caa270df9e80bcac7afa334b731a5616c9a7bb33516c0c83ec",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/mobile-plinth-guards.json",
+      "bytes": 634,
+      "sha256": "6730636413a25b12c105bda7298e3b3f73d466f8f0861649bf8440bf3330c5a7",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/neighbor-clearance.json",
+      "bytes": 512,
+      "sha256": "d43e2f554325d34b7b8e349aa7874c377d1f6de4ae530015df904674494f2d02",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/network-comparison.json",
+      "bytes": 4581,
+      "sha256": "f8c60f473457980c803b4062fd8cd1a616c09931734f027557531c2c92743937",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/software-render-diagnostic.json",
+      "bytes": 4183,
+      "sha256": "5aada77a4e5be16e2148d43b6cbbf7331919be5ac6cbcbc8e157a97300274a35",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/stage1-working-changes.txt",
+      "bytes": 1943,
+      "sha256": "52fb2bbe815f71da73fab0b598cab3f4282c6e4ec245ba8572c8510c53365b2f",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/station-45-qa.png",
+      "bytes": 578745,
+      "sha256": "c5289eb027984df827a1e0c114f875f4daa464c73c9a856b55bbcdbffe97c75a",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/toward-family.png",
+      "bytes": 681515,
+      "sha256": "cdaf4376d5ff4ffee26b919564b6dbb165e31f69e5463af0a92e2791f41dc483",
+      "matched": true
+    },
+    {
+      "path": "docs/previews/transport-elevated-station-v9-game-integration/yuan-panorama.png",
+      "bytes": 158057,
+      "sha256": "4c5021ded76902adc3f897af7aa7cc29dbe00da53686cf2cff998d1344db4d42",
+      "matched": true
+    },
+    {
+      "path": "public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb",
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "matched": true
+    },
+    {
+      "path": "scripts/build-yuan-world.mjs",
+      "bytes": 8354,
+      "sha256": "7aa35b1f9ac70cfc74367f37e3816da9ca6a1877bb7573306bd60bc6c679338c",
+      "matched": true
+    },
+    {
+      "path": "scripts/transport-v9/extract-collision.py",
+      "bytes": 5925,
+      "sha256": "3769cbe033180e9afeb223d5476d85c93ac0cf4a31a0c2080176be2ae1861b05",
+      "matched": true
+    },
+    {
+      "path": "src/data/elevated-station-collision.json",
+      "bytes": 631950,
+      "sha256": "f0c748549a783156fc1861c0831859c15a3ef54f9d7e08f53ca2f314b82ac825",
+      "matched": true
+    },
+    {
+      "path": "src/data/elevated-station-model.json",
+      "bytes": 22883,
+      "sha256": "29c7c56c5b9372477b699153b1511d1150d870fb69b043e5d735fd53f2383d95",
+      "matched": true
+    },
+    {
+      "path": "src/data/transport.json",
+      "bytes": 1638,
+      "sha256": "858d6f58940fee8f4ff5dfa92524936d73825f93a51a5000ec0e6d64b58927eb",
+      "matched": true
+    },
+    {
+      "path": "src/data/yuan-plan.json",
+      "bytes": 38946,
+      "sha256": "e1824816472de4be1a3a23b935a7e8e4f6556babb9ff104bcbf0ae1fe8d139de",
+      "matched": true
+    },
+    {
+      "path": "src/data/yuan-surface.json",
+      "bytes": 308592,
+      "sha256": "a4f179d41e4dafccef04058a15a6998b6f01fcfba8e525952b85fb7c39f9007e",
+      "matched": true
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 11361,
+      "sha256": "34efba05f3efb5bb4d3c930dfd74de54e4a630d9c82887a8e817cd0a7c9fb448",
+      "matched": true
+    },
+    {
+      "path": "src/sim/walkways.js",
+      "bytes": 3098,
+      "sha256": "3d60a2760048b3df7530a495bc1996780d9462449570dd02f90228b8590cd1fe",
+      "matched": true
+    },
+    {
+      "path": "src/world/bridges.js",
+      "bytes": 4209,
+      "sha256": "a895057d69c565059dff3dd746c593a12c2e18c67f78243c0246203069f1977a",
+      "matched": true
+    },
+    {
+      "path": "src/world/elevated-station.js",
+      "bytes": 7674,
+      "sha256": "cda24e5a2e2502e6fb1b36eaf4fdafd0bf80b11b11c30402d668d60b6b3ee086",
+      "matched": true
+    },
+    {
+      "path": "src/world/islands.js",
+      "bytes": 7949,
+      "sha256": "cfd358298dc791d195e63b1a61c1258e0af572518910e605a49bc2a712e4d9ce",
+      "matched": true
+    },
+    {
+      "path": "src/world/transport-foundation.js",
+      "bytes": 710,
+      "sha256": "1aee8e907f8a5ece63443232eab4ff6593894ab851d2c5568518409d279cdfbd",
+      "matched": true
+    },
+    {
+      "path": "src/world/transport.js",
+      "bytes": 4967,
+      "sha256": "64bca9a6d42ebf281f3582bfadc29c9268de9332eaba2b46ac556d1ef25f4c26",
+      "matched": true
+    },
+    {
+      "path": "test/elevated-foundation.test.js",
+      "bytes": 1504,
+      "sha256": "4082a82bec7f26a3f12e55c3c5ee0201b8fa80c4637fac3fb973e0d7a8648727",
+      "matched": true
+    },
+    {
+      "path": "test/elevated-guards.e2e.js",
+      "bytes": 1559,
+      "sha256": "aa30835c6131dde7cb56c80bd13faa3dac8978c80f07678f23971990318e1f46",
+      "matched": true
+    },
+    {
+      "path": "test/elevated-station.e2e.js",
+      "bytes": 8540,
+      "sha256": "574413d93f25fc6b44e47f0e28eb3b88a986034c02cbf0f5cc4601b0578eaa1b",
+      "matched": true
+    },
+    {
+      "path": "test/helpers/elevated-fixture.js",
+      "bytes": 1532,
+      "sha256": "76a527177dce12ab1d8f9fe6802242efbc1240e075adf01a7b5d8b9f2b92b561",
+      "matched": true
+    },
+    {
+      "path": "test/policy-scenery.test.js",
+      "bytes": 3665,
+      "sha256": "d51d6efb9c8fe2233cefd864438e4e91c95803bd82f3cdd0dd339993789022d9",
+      "matched": true
+    },
+    {
+      "path": "test/station-headroom.e2e.js",
+      "bytes": 2352,
+      "sha256": "fa38968003938161d72347017e1f11ab540091324e1865b440784297cdbe6c1e",
+      "matched": true
+    },
+    {
+      "path": "test/station-model.test.js",
+      "bytes": 3543,
+      "sha256": "32e7796c85d9e193b3395b5efbb180c0f56b0340a31bbc1fa7a328b7f11033cc",
+      "matched": true
+    },
+    {
+      "path": "test/transport-v4.e2e.js",
+      "bytes": 1112,
+      "sha256": "b2e5462807d79f2bd2673043758eef885d0b2560cddda7174375838be31316ee",
+      "matched": true
+    },
+    {
+      "path": "test/transport-walk.e2e.js",
+      "bytes": 3413,
+      "sha256": "8914363fcd387917f1fc0f08fd6ee2ee656ba04e8dfce8298f66b05d3f633106",
+      "matched": true
+    },
+    {
+      "path": "test/transport.e2e.js",
+      "bytes": 2695,
+      "sha256": "fb68a259da0812aa781df76cb493ff4e13e84370c9b6dbc3b329c99f340f55c3",
+      "matched": true
+    },
+    {
+      "path": "test/transport.test.js",
+      "bytes": 4705,
+      "sha256": "f85f6d5f5ec8fe5b371a41ed4f17d57760c8127d619a0bb7b209b9e1958d9e65",
+      "matched": true
+    }
+  ]
+}
