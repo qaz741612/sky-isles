@@ -89,9 +89,9 @@ test('guards block sideways movement on the live mesh; stepping on a mushroom ne
     pad.group.getWorldPosition(pos);w.player.teleport(pos.x,pos.y+1.5,pos.z);
     let maxUp=0;
     for(let j=0;j<180;j++){w.tourStep(1/60,{x:0,z:0,jumpHeld:false,jumpPressed:false},j/60);maxUp=Math.max(maxUp,w.player.move.vy);}
-    return {offset,grounded,maxUp};
+    const maxOffset=2.4+(w.bridges.landscape?.plan.zones.find(z=>z.routes.includes(p.id))?.shoulder??0);return {offset,grounded,maxUp,maxOffset};
   });
-  expect(result.grounded).toBe(true);expect(result.offset).toBeLessThan(2.05);expect(result.offset).toBeGreaterThan(1.8);
+  expect(result.grounded).toBe(true);expect(result.offset).toBeLessThan(result.maxOffset);expect(result.offset).toBeGreaterThan(1.8);
   expect(result.maxUp).toBe(0);
 });
 

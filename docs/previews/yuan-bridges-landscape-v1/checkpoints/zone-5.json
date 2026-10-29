@@ -1,0 +1,21 @@
+{
+  "zone": 5,
+  "route": "S19",
+  "camera": "custom QA, actual game",
+  "stats": {
+    "lampCount": 36,
+    "sevenLampCount": 34,
+    "lowLightCount": 2,
+    "platformCount": 5,
+    "foliageInstances": 332,
+    "visibleMeshes": 116,
+    "triangles": 78845,
+    "collisionMeshes": 46,
+    "horizontalBarriers": 1734,
+    "buildMilliseconds": 509.89999997615814,
+    "newRealtimeLights": 0,
+    "geometryBatches": 82,
+    "perFrameRebuilds": 0,
+    "instanceBatches": 44
+  }
+}

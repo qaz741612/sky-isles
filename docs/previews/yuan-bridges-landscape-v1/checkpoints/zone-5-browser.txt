@@ -1,0 +1,12 @@
+
+Running 1 test using 1 worker
+
+
+(node:331604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] [desktop] › test/bridge-landscape.e2e.js:2:1 › active landscape zones preserve every route in both directions with the live Player
+[desktop] › test/bridge-landscape.e2e.js:2:1 › active landscape zones preserve every route in both directions with the live Player
+{"records":[{"id":"S01","bidirectional":true,"noJump":true},{"id":"S02","bidirectional":true,"noJump":true},{"id":"S03","bidirectional":true,"noJump":true},{"id":"S04","bidirectional":true,"noJump":true},{"id":"S05","bidirectional":true,"noJump":true},{"id":"S06","bidirectional":true,"noJump":true},{"id":"S07","bidirectional":true,"noJump":true},{"id":"S08","bidirectional":true,"noJump":true},{"id":"S09","bidirectional":true,"noJump":true},{"id":"S10","bidirectional":true,"noJump":true},{"id":"S11","bidirectional":true,"noJump":true},{"id":"S12","bidirectional":true,"noJump":true},{"id":"S13","bidirectional":true,"noJump":true},{"id":"S14","bidirectional":true,"noJump":true},{"id":"S15","bidirectional":true,"noJump":true},{"id":"S16","bidirectional":true,"noJump":true},{"id":"S17","bidirectional":true,"noJump":true},{"id":"S18","bidirectional":true,"noJump":true},{"id":"S19","bidirectional":true,"noJump":true},{"id":"S20","bidirectional":true,"noJump":true},{"id":"S21","bidirectional":true,"noJump":true},{"id":"S22","bidirectional":true,"noJump":true}],"bays":[{"id":"P07","walkInAndReturn":true},{"id":"P11","walkInAndReturn":true},{"id":"P14","walkInAndReturn":true},{"id":"P16","walkInAndReturn":true},{"id":"P19","walkInAndReturn":true}],"ticks":16219,"respawns":0,"stats":{"lampCount":36,"sevenLampCount":34,"lowLightCount":2,"platformCount":5,"foliageInstances":332,"visibleMeshes":116,"triangles":78845,"collisionMeshes":46,"horizontalBarriers":1734,"buildMilliseconds":160.9000000357628,"newRealtimeLights":0,"geometryBatches":82,"perFrameRebuilds":0,"instanceBatches":44}}
+
+  1 passed (1.7m)

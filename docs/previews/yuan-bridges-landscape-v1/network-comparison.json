@@ -43,8 +43,8 @@
     2
   ],
   "maxTriangleGrade": 0,
-  "deckTriangles": 1268,
-  "boundarySegments": 1636,
+  "deckTriangles": 1304,
+  "boundarySegments": 1673,
   "unionComponents": 1,
   "totalLengthBefore": 1137.0921395172427,
   "totalLengthAfter": 667.537182593549,
@@ -217,12 +217,12 @@
     "height": 228.20000000000002
   },
   "boundsAfter": {
-    "width": 125.93388999999999,
+    "width": 126.88367,
     "height": 139.058
   },
   "bounds": {
     "minX": -63.352,
-    "maxX": 62.58189,
+    "maxX": 63.53167,
     "minZ": -40.606,
     "maxZ": 98.452
   }

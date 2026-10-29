@@ -5,7 +5,7 @@ import { ISLANDS } from '../src/world/islands.js';
 import { buildBridges } from '../src/world/bridges.js';
 import { buildPolicyScenery } from '../src/world/policy-scenery.js';
 import { guardIndex } from '../src/sim/walkways.js';
-import { buildTransport } from './helpers/station-fixture.js';
+import { buildTransport } from './helpers/elevated-fixture.js';
 import { Player } from '../src/sim/player.js';
 import { WALKWAY, planWalkways, moveWithGuards, nearestOnSegment } from '../src/sim/walkways.js';
 import { walkTour } from './helpers/walk-tour.js';
@@ -80,7 +80,7 @@ test('every actual outer rail blocks crossing and matches rendered guard coordin
  const {bridges}=fixture();
  for(const w of bridges.barriers){const dx=w.b.x-w.a.x,dz=w.b.z-w.a.z,d=Math.hypot(dx,dz);if(d<.05)continue;
   for(const side of [-1,1]){const nx=-dz/d*side,nz=dx/d*side,p={x:(w.a.x+w.b.x)/2+nx,y:0,z:(w.a.z+w.b.z)/2+nz};
-   moveWithGuards(p,-nx*2,-nz*2,[w]);const q=nearestOnSegment(p,w.a,w.b);assert.ok(Math.hypot(p.x-q.x,p.z-q.z)>=.4099);}
+   moveWithGuards(p,-nx*2,-nz*2,[w]);const q=nearestOnSegment(p,w.a,w.b);assert.ok(Math.hypot(p.x-q.x,p.z-q.z)>=WALKWAY.playerRadius+(w.thickness??WALKWAY.railThickness)/2-1e-4);}
  }
 });
 
