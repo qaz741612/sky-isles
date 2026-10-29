@@ -1,0 +1,717 @@
+[
+  {
+    "name": "desktop-player",
+    "kind": "unchanged default player camera and original spawn",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      0,
+      -2.220446049250313e-16,
+      3.5
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      2.1038557503739357,
+      10.534279415678343,
+      16.536701197651013
+    ],
+    "render": {
+      "frame": 3,
+      "calls": 505,
+      "triangles": 1295992,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 225,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "family-separation",
+    "kind": "QA position at transport west mouth, normal player orbit",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "orbit": {
+      "yaw": 0.6372202158735158,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      -0.14326317807116637,
+      10.534279574318873,
+      10.61391527121722
+    ],
+    "render": {
+      "frame": 4,
+      "calls": 469,
+      "triangles": 1295680,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 249,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "zone-1",
+    "kind": "custom QA bridge camera S02",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "orbit": {
+      "yaw": 0.6372202158735158,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      11.32625,
+      10,
+      -6.822375000000001
+    ],
+    "render": {
+      "frame": 5,
+      "calls": 315,
+      "triangles": 1216400,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 249,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "zone-2",
+    "kind": "custom QA bridge camera S07",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "orbit": {
+      "yaw": 0.6372202158735158,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      30.294142272000002,
+      10,
+      3.467409024
+    ],
+    "render": {
+      "frame": 6,
+      "calls": 441,
+      "triangles": 1261920,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 268,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "zone-3",
+    "kind": "custom QA bridge camera S11",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "orbit": {
+      "yaw": 0.6372202158735158,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      43.04125301457726,
+      10,
+      13.18032601749271
+    ],
+    "render": {
+      "frame": 7,
+      "calls": 498,
+      "triangles": 1292558,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 274,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "zone-4",
+    "kind": "custom QA bridge camera S16",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "orbit": {
+      "yaw": 0.6372202158735158,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      -26.143875,
+      10,
+      75.22387499999999
+    ],
+    "render": {
+      "frame": 8,
+      "calls": 306,
+      "triangles": 802538,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 306,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "zone-5",
+    "kind": "custom QA bridge camera S19",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "orbit": {
+      "yaw": 0.6372202158735158,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      23.85055352957977,
+      10,
+      97.63488198016378
+    ],
+    "render": {
+      "frame": 9,
+      "calls": 269,
+      "triangles": 638314,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 331,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "seven-lamp-close",
+    "kind": "custom QA camera; real shared 7-shaped lamp",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "orbit": {
+      "yaw": 0.6372202158735158,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      -38.053806616292036,
+      1.7,
+      -15.196311233262879
+    ],
+    "render": {
+      "frame": 10,
+      "calls": 24,
+      "triangles": 22679,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 331,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "terminal-garden",
+    "kind": "custom QA camera, actual finishing-stroke garden",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "orbit": {
+      "yaw": 0.6372202158735158,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      65.617,
+      7,
+      74.286
+    ],
+    "render": {
+      "frame": 11,
+      "calls": 325,
+      "triangles": 658636,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 366,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "yuan-panorama",
+    "kind": "actual fitted orthographic panorama, labels hidden",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "orbit": {
+      "yaw": 0.6372202158735158,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      0.08983500000000078,
+      240,
+      28.923
+    ],
+    "render": {
+      "frame": 12,
+      "calls": 939,
+      "triangles": 1433794,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 435,
+      "textures": 20
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 314.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "mobile-player",
+    "kind": "unchanged default player camera and original spawn",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      0,
+      -2.220446049250313e-16,
+      3.5
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "camera": [
+      2.064326390064638,
+      15.161691358246431,
+      20.620067846146526
+    ],
+    "render": {
+      "frame": 3,
+      "calls": 355,
+      "triangles": 1051896,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 189,
+      "textures": 17
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 501.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "mobile-landscape",
+    "kind": "mobile orientation change, same user orbit",
+    "viewport": {
+      "width": 932,
+      "height": 430
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      0,
+      -2.220446049250313e-16,
+      3.5
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "camera": [
+      2.064326390064638,
+      15.161691358246431,
+      20.620067846146526
+    ],
+    "render": {
+      "frame": 4,
+      "calls": 590,
+      "triangles": 1320348,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 265,
+      "textures": 19
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 501.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "mobile-panorama",
+    "kind": "actual portrait orthographic panorama",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "bridgeTriangles": 138024,
+    "bridgeMeshes": 113,
+    "position": [
+      0,
+      -2.220446049250313e-16,
+      3.5
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "camera": [
+      0.08983500000000078,
+      240,
+      28.923
+    ],
+    "render": {
+      "frame": 5,
+      "calls": 939,
+      "triangles": 1433794,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 435,
+      "textures": 20
+    },
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 501.9000000357628,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  }
+]

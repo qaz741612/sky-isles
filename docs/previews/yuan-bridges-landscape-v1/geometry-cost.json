@@ -1,0 +1,34 @@
+{
+  "baselineCommit": "ea5cd7e",
+  "before": {
+    "triangles": 50381,
+    "meshes": 39
+  },
+  "after": {
+    "triangles": 138024,
+    "meshes": 113,
+    "landscape": {
+      "lampCount": 36,
+      "sevenLampCount": 34,
+      "lowLightCount": 2,
+      "platformCount": 5,
+      "foliageInstances": 352,
+      "visibleMeshes": 72,
+      "triangles": 83139,
+      "collisionMeshes": 49,
+      "horizontalBarriers": 1835,
+      "buildMilliseconds": 364.41008799999986,
+      "newRealtimeLights": 0,
+      "geometryBatches": 46,
+      "perFrameRebuilds": 0,
+      "instanceBatches": 28
+    }
+  },
+  "delta": {
+    "uniqueSubmittedTriangles": 87643,
+    "meshBatches": 74
+  },
+  "landscapeDataBytes": 192586,
+  "landscapeDataGzipBytes": 75402,
+  "notes": "Static geometry includes all loaded bridge regions. Mesh batch counts are not GPU draw calls. Imported station/family art unchanged. Hardware FPS not measured."
+}

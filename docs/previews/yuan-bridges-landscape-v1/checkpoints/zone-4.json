@@ -1,21 +1,56 @@
 {
-  "zone": 4,
-  "route": "S16",
-  "camera": "custom QA, actual game",
-  "stats": {
-    "lampCount": 23,
-    "sevenLampCount": 21,
+  "name": "zone-4",
+  "kind": "custom QA bridge camera S16",
+  "viewport": {
+    "width": 1200,
+    "height": 800
+  },
+  "errors": [],
+  "bridgeTriangles": 138024,
+  "bridgeMeshes": 113,
+  "position": [
+    -8,
+    -1.1102230246251565e-16,
+    0
+  ],
+  "orbit": {
+    "yaw": 0.6372202158735158,
+    "pitch": 0.6,
+    "dist": 16,
+    "fov": 55
+  },
+  "camera": [
+    -26.143875,
+    10,
+    75.22387499999999
+  ],
+  "render": {
+    "frame": 8,
+    "calls": 306,
+    "triangles": 802538,
+    "points": 0,
+    "lines": 0
+  },
+  "memory": {
+    "geometries": 306,
+    "textures": 19
+  },
+  "landscape": {
+    "lampCount": 36,
+    "sevenLampCount": 34,
     "lowLightCount": 2,
-    "platformCount": 4,
-    "foliageInstances": 176,
-    "visibleMeshes": 85,
-    "triangles": 45440,
-    "collisionMeshes": 35,
-    "horizontalBarriers": 1005,
-    "buildMilliseconds": 97.19999998807907,
+    "platformCount": 5,
+    "foliageInstances": 352,
+    "visibleMeshes": 72,
+    "triangles": 83139,
+    "collisionMeshes": 49,
+    "horizontalBarriers": 1835,
+    "buildMilliseconds": 314.9000000357628,
     "newRealtimeLights": 0,
-    "geometryBatches": 60,
+    "geometryBatches": 46,
     "perFrameRebuilds": 0,
-    "instanceBatches": 33
-  }
+    "instanceBatches": 28
+  },
+  "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "provenance": "Final shared runtime ce6a569; construction stages remain recorded by Git commits and zone-N-browser.txt"
 }

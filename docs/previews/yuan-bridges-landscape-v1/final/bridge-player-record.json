@@ -1,0 +1,54 @@
+[
+  {
+    "name": "desktop-bridge-player",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "route": "S19",
+    "position": [
+      12.233804870918298,
+      -1.1102230246251565e-16,
+      84.86189259982112
+    ],
+    "grounded": true,
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "camera": [
+      14.337629482912204,
+      10.53427953639433,
+      97.89838640147762
+    ],
+    "description": "QA teleport to bridge; unchanged native player camera profile and real physics; not a traversal video"
+  },
+  {
+    "name": "mobile-bridge-player",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "route": "S19",
+    "position": [
+      12.233804870918298,
+      -1.1102230246251565e-16,
+      84.86189259982112
+    ],
+    "grounded": true,
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "camera": [
+      14.298100121316413,
+      15.161691629562835,
+      101.98175318286746
+    ],
+    "description": "QA teleport to bridge; unchanged native player camera profile and real physics; not a traversal video"
+  }
+]
