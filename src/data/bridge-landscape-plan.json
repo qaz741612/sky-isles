@@ -1,0 +1,374 @@
+{
+  "revision": 1,
+  "activeZones": [
+    1
+  ],
+  "safeWidth": 4.8,
+  "maxLampCount": 42,
+  "lampHeight": 3.1,
+  "lampArm": 0.75,
+  "zones": [
+    {
+      "id": 1,
+      "name": "草字頭綠帶",
+      "routes": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "style": "greenbelt",
+      "shoulder": 0.9
+    },
+    {
+      "id": 2,
+      "name": "自然石景",
+      "routes": [
+        "S04",
+        "S05",
+        "S06",
+        "S07"
+      ],
+      "style": "stone-garden",
+      "shoulder": 0.85
+    },
+    {
+      "id": 3,
+      "name": "交通導引",
+      "routes": [
+        "S08",
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "style": "transit",
+      "shoulder": 0.85
+    },
+    {
+      "id": 4,
+      "name": "庭園木景",
+      "routes": [
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17"
+      ],
+      "style": "wood-garden",
+      "shoulder": 1.0
+    },
+    {
+      "id": 5,
+      "name": "曲線收筆",
+      "routes": [
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22"
+      ],
+      "style": "curved-floral",
+      "shoulder": 0.95
+    }
+  ],
+  "lamps": [
+    {
+      "id": "S01-L1",
+      "route": "S01",
+      "t": 0.18,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S02-L1",
+      "route": "S02",
+      "t": 0.31,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S02-L2",
+      "route": "S02",
+      "t": 0.6,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S03-L1",
+      "route": "S03",
+      "t": 0.55,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S03-L2",
+      "route": "S03",
+      "t": 0.85,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S04-L1",
+      "route": "S04",
+      "t": 0.12,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S05-L1",
+      "route": "S05",
+      "t": 0.6,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S06-L1",
+      "route": "S06",
+      "t": 0.16,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S07-L1",
+      "route": "S07",
+      "t": 0.58,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S08-L1",
+      "route": "S08",
+      "t": 0.45,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S08-L2",
+      "route": "S08",
+      "t": 0.75,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S09-L1",
+      "route": "S09",
+      "t": 0.05,
+      "side": 1,
+      "type": "low-linear"
+    },
+    {
+      "id": "S09-L2",
+      "route": "S09",
+      "t": 0.2,
+      "side": -1,
+      "type": "low-linear"
+    },
+    {
+      "id": "S10-L1",
+      "route": "S10",
+      "t": 0.84,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S11-L1",
+      "route": "S11",
+      "t": 0.3,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S11-L2",
+      "route": "S11",
+      "t": 0.7,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S13-L1",
+      "route": "S13",
+      "t": 0.75,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S14-L1",
+      "route": "S14",
+      "t": 0.38,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S14-L2",
+      "route": "S14",
+      "t": 0.67,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S15-L1",
+      "route": "S15",
+      "t": 0.32,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S15-L2",
+      "route": "S15",
+      "t": 0.65,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S16-L1",
+      "route": "S16",
+      "t": 0.26,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S16-L2",
+      "route": "S16",
+      "t": 0.52,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S16-L3",
+      "route": "S16",
+      "t": 0.75,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S18-L1",
+      "route": "S18",
+      "t": 0.23,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S18-L2",
+      "route": "S18",
+      "t": 0.48,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S18-L3",
+      "route": "S18",
+      "t": 0.72,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S18-L4",
+      "route": "S18",
+      "t": 0.9,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S19-L1",
+      "route": "S19",
+      "t": 0.2,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S19-L2",
+      "route": "S19",
+      "t": 0.44,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S19-L3",
+      "route": "S19",
+      "t": 0.66,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S19-L4",
+      "route": "S19",
+      "t": 0.8,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S20-L1",
+      "route": "S20",
+      "t": 0.53,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S20-L2",
+      "route": "S20",
+      "t": 0.82,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S21-L1",
+      "route": "S21",
+      "t": 0.25,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S21-L2",
+      "route": "S21",
+      "t": 0.52,
+      "side": -1,
+      "type": "seven"
+    },
+    {
+      "id": "S21-L3",
+      "route": "S21",
+      "t": 0.68,
+      "side": 1,
+      "type": "seven"
+    },
+    {
+      "id": "S22-L1",
+      "route": "S22",
+      "t": 0.78,
+      "side": 1,
+      "type": "seven"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "P07",
+      "route": "S07",
+      "t": 0.6,
+      "side": -1
+    },
+    {
+      "id": "P11",
+      "route": "S11",
+      "t": 0.64,
+      "side": 1
+    },
+    {
+      "id": "P14",
+      "route": "S14",
+      "t": 0.48,
+      "side": -1
+    },
+    {
+      "id": "P16",
+      "route": "S16",
+      "t": 0.5,
+      "side": 1
+    },
+    {
+      "id": "P19",
+      "route": "S19",
+      "t": 0.47,
+      "side": 1
+    }
+  ]
+}

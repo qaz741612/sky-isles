@@ -1,6 +1,7 @@
 // Reproducible build-time polygon union; no Boolean library is sent to browsers.
 import fs from 'node:fs';
 import polygon from 'polygon-clipping';
+import {compileLandscape} from './bridge-landscape-domain.mjs';
 import { ShapeUtils, Vector2 } from 'three';
 const source=JSON.parse(fs.readFileSync('docs/design/yuan-masterplan-v1/yuan-layout.json'));
 const plan=JSON.parse(fs.readFileSync('src/data/yuan-plan.json'));
@@ -28,6 +29,9 @@ const inFootprint=(x,z,n)=>{const ring=footprint(n)[0];let yes=false;for(let i=0
 const snap=p=>JSON.parse(JSON.stringify(p,(_k,v)=>typeof v==='number'?Math.round(v*1e5)/1e5:v));
 const operands=snap([...roads,...nodes.filter(n=>n.r>0).map(footprint)]);
 let union=operands[0];for(const operand of operands.slice(1))union=polygon.union(union,operand);
+const coreDomain=union;
+const scenery=compileLandscape({paths,nodes,coreDomain,islePolys,footprint,config:JSON.parse(fs.readFileSync('src/data/bridge-landscape-plan.json'))});union=scenery.domain;
+fs.writeFileSync('src/data/bridge-landscape.json',JSON.stringify(scenery.data));
 const decks=polygon.difference(union,polygon.union(...snap(islePolys)));
 const roadOperands=snap(roads);let roadDomain=roadOperands[0];for(const part of roadOperands.slice(1))roadDomain=polygon.union(roadDomain,part);
 const islandPaving=nodes.filter(n=>n.island).map(n=>({island:n.island,domain:polygon.intersection(roadDomain,snap(footprint(n)))}));

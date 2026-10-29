@@ -1,0 +1,12 @@
+
+Running 1 test using 1 worker
+
+
+(node:329523) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] [desktop] › test/bridge-landscape.e2e.js:2:1 › active landscape zones preserve every route in both directions with the live Player
+[desktop] › test/bridge-landscape.e2e.js:2:1 › active landscape zones preserve every route in both directions with the live Player
+{"records":[{"id":"S01","bidirectional":true,"noJump":true},{"id":"S02","bidirectional":true,"noJump":true},{"id":"S03","bidirectional":true,"noJump":true}],"ticks":2520,"respawns":0,"stats":{"lampCount":5,"sevenLampCount":5,"lowLightCount":0,"platformCount":0,"foliageInstances":46,"visibleMeshes":20,"triangles":10537,"collisionMeshes":6,"horizontalBarriers":240,"buildMilliseconds":70.29999995231628,"newRealtimeLights":0,"geometryBatches":12,"perFrameRebuilds":0,"instanceBatches":10}}
+
+  1 passed (24.4s)

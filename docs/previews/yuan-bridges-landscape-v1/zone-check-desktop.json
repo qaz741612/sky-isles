@@ -1,0 +1,37 @@
+{
+  "records": [
+    {
+      "id": "S01",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S02",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S03",
+      "bidirectional": true,
+      "noJump": true
+    }
+  ],
+  "ticks": 2520,
+  "respawns": 0,
+  "stats": {
+    "lampCount": 5,
+    "sevenLampCount": 5,
+    "lowLightCount": 0,
+    "platformCount": 0,
+    "foliageInstances": 46,
+    "visibleMeshes": 20,
+    "triangles": 10537,
+    "collisionMeshes": 6,
+    "horizontalBarriers": 240,
+    "buildMilliseconds": 70.29999995231628,
+    "newRealtimeLights": 0,
+    "geometryBatches": 12,
+    "perFrameRebuilds": 0,
+    "instanceBatches": 10
+  }
+}

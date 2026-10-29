@@ -43,8 +43,8 @@
     2
   ],
   "maxTriangleGrade": 0,
-  "deckTriangles": 1193,
-  "boundarySegments": 1560,
+  "deckTriangles": 1210,
+  "boundarySegments": 1578,
   "unionComponents": 1,
   "totalLengthBefore": 1137.0921395172427,
   "totalLengthAfter": 667.537182593549,
