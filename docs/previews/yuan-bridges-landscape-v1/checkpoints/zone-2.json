@@ -1,0 +1,21 @@
+{
+  "zone": 2,
+  "route": "S07",
+  "camera": "custom QA, actual game",
+  "stats": {
+    "lampCount": 8,
+    "sevenLampCount": 8,
+    "lowLightCount": 0,
+    "platformCount": 1,
+    "foliageInstances": 59,
+    "visibleMeshes": 36,
+    "triangles": 15595,
+    "collisionMeshes": 15,
+    "horizontalBarriers": 347,
+    "buildMilliseconds": 50.89999997615814,
+    "newRealtimeLights": 0,
+    "geometryBatches": 28,
+    "perFrameRebuilds": 0,
+    "instanceBatches": 12
+  }
+}

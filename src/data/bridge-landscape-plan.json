@@ -1,7 +1,8 @@
 {
   "revision": 1,
   "activeZones": [
-    1
+    1,
+    2
   ],
   "safeWidth": 4.8,
   "maxLampCount": 42,
