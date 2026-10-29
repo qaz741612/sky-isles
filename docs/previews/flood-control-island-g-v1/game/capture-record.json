@@ -1,0 +1,1011 @@
+[
+  {
+    "name": "desktop-native",
+    "kind": "native",
+    "args": [
+      0,
+      -1.2
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      47.031828433308775,
+      10.534279559209,
+      57.11567662688161
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      44.928,
+      0,
+      44.079
+    ],
+    "firstFrameSubmissionMs": 3671.199999988079,
+    "observedAtMs": 20021.30000001192,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 130,
+      "decodeMilliseconds": 13.700000047683716,
+      "totalMilliseconds": 143.70000004768372,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 29.600000023841858,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 2,
+      "calls": 610,
+      "triangles": 1397496,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 301,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "s21-player",
+    "kind": "native",
+    "args": [
+      3.8,
+      -10
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      50.831853522982826,
+      10.534279574320557,
+      48.31570675818252
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      48.727999999999994,
+      1.1102230246251565e-16,
+      35.279
+    ],
+    "firstFrameSubmissionMs": 3671.199999988079,
+    "observedAtMs": 23688.30000001192,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 130,
+      "decodeMilliseconds": 13.700000047683716,
+      "totalMilliseconds": 143.70000004768372,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 29.600000023841858,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 3,
+      "calls": 481,
+      "triangles": 1285008,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 308,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "s22-player",
+    "kind": "native",
+    "args": [
+      -11,
+      -5.5
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      36.031864865850224,
+      10.53427957432056,
+      52.81569864745181
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      33.928,
+      0,
+      39.779
+    ],
+    "firstFrameSubmissionMs": 3671.199999988079,
+    "observedAtMs": 26332.5,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 130,
+      "decodeMilliseconds": 13.700000047683716,
+      "totalMilliseconds": 143.70000004768372,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 29.600000023841858,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 4,
+      "calls": 622,
+      "triangles": 1405106,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 308,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "command-porch-player",
+    "kind": "native",
+    "args": [
+      6.7,
+      1.4
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      51.84235152387053,
+      2.4204583112025264,
+      48.00724538447453
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.628,
+      0,
+      46.679
+    ],
+    "firstFrameSubmissionMs": 3671.199999988079,
+    "observedAtMs": 30119.19999998808,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 130,
+      "decodeMilliseconds": 13.700000047683716,
+      "totalMilliseconds": 143.70000004768372,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 29.600000023841858,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 5,
+      "calls": 168,
+      "triangles": 471515,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 308,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "g-hero",
+    "kind": "qa",
+    "args": [
+      -24,
+      23,
+      29
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      20.927999999999997,
+      23,
+      74.279
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.628,
+      0,
+      46.679
+    ],
+    "firstFrameSubmissionMs": 3671.199999988079,
+    "observedAtMs": 31082.5,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 130,
+      "decodeMilliseconds": 13.700000047683716,
+      "totalMilliseconds": 143.70000004768372,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 29.600000023841858,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 6,
+      "calls": 173,
+      "triangles": 134754,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 313,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "g-entrance",
+    "kind": "qa",
+    "args": [
+      18,
+      14,
+      -24
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      62.928,
+      14,
+      21.279000000000003
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.628,
+      0,
+      46.679
+    ],
+    "firstFrameSubmissionMs": 3671.199999988079,
+    "observedAtMs": 31951,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 130,
+      "decodeMilliseconds": 13.700000047683716,
+      "totalMilliseconds": 143.70000004768372,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 29.600000023841858,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 7,
+      "calls": 231,
+      "triangles": 143268,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 412,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "g-top",
+    "kind": "qa",
+    "args": [
+      0,
+      38,
+      0.001
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      44.928,
+      38,
+      45.28
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.628,
+      0,
+      46.679
+    ],
+    "firstFrameSubmissionMs": 3671.199999988079,
+    "observedAtMs": 33038,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 130,
+      "decodeMilliseconds": 13.700000047683716,
+      "totalMilliseconds": 143.70000004768372,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 29.600000023841858,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 8,
+      "calls": 119,
+      "triangles": 121105,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 412,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "sluice-detail",
+    "kind": "qa",
+    "args": [
+      -11,
+      7,
+      15,
+      -5,
+      1,
+      4.6
+    ],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      33.928,
+      7,
+      60.279
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.628,
+      0,
+      46.679
+    ],
+    "firstFrameSubmissionMs": 3671.199999988079,
+    "observedAtMs": 33800,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 130,
+      "decodeMilliseconds": 13.700000047683716,
+      "totalMilliseconds": 143.70000004768372,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 29.600000023841858,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 9,
+      "calls": 156,
+      "triangles": 117630,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 412,
+      "textures": 19
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "yuan-panorama",
+    "kind": "overview",
+    "args": [],
+    "size": {
+      "width": 1200,
+      "height": 800
+    },
+    "errors": [],
+    "camera": [
+      0.08983500000000078,
+      240,
+      28.923
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "player": [
+      51.628,
+      0,
+      46.679
+    ],
+    "firstFrameSubmissionMs": 3671.199999988079,
+    "observedAtMs": 36156.40000003576,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 130,
+      "decodeMilliseconds": 13.700000047683716,
+      "totalMilliseconds": 143.70000004768372,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 29.600000023841858,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 10,
+      "calls": 960,
+      "triangles": 1508748,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 447,
+      "textures": 20
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "mobile-native",
+    "kind": "native",
+    "args": [
+      0,
+      -1.2
+    ],
+    "size": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "camera": [
+      46.992299071469844,
+      15.161691680840171,
+      61.199043433387736
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "player": [
+      44.928,
+      0,
+      44.079
+    ],
+    "firstFrameSubmissionMs": 3054.5,
+    "observedAtMs": 9532.5,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 110.59999996423721,
+      "decodeMilliseconds": 12.300000011920929,
+      "totalMilliseconds": 122.89999997615814,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 7.400000035762787,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 2,
+      "calls": 158,
+      "triangles": 113113,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 284,
+      "textures": 17
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "mobile-landscape",
+    "kind": "native",
+    "args": [
+      0,
+      -1.2
+    ],
+    "size": {
+      "width": 932,
+      "height": 430
+    },
+    "errors": [],
+    "camera": [
+      46.99232647833972,
+      15.161691714804293,
+      61.19906821481404
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "player": [
+      44.928,
+      0,
+      44.079
+    ],
+    "firstFrameSubmissionMs": 3054.5,
+    "observedAtMs": 10224.699999988079,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 110.59999996423721,
+      "decodeMilliseconds": 12.300000011920929,
+      "totalMilliseconds": 122.89999997615814,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 7.400000035762787,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 3,
+      "calls": 158,
+      "triangles": 113113,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 284,
+      "textures": 17
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  },
+  {
+    "name": "mobile-panorama",
+    "kind": "overview",
+    "args": [],
+    "size": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "camera": [
+      0.08983500000000078,
+      240,
+      28.923
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "player": [
+      44.928,
+      0,
+      44.079
+    ],
+    "firstFrameSubmissionMs": 3054.5,
+    "observedAtMs": 11178.899999976158,
+    "flood": {
+      "bytes": 2342896,
+      "downloadMilliseconds": 110.59999996423721,
+      "decodeMilliseconds": 12.300000011920929,
+      "totalMilliseconds": 122.89999997615814,
+      "triangles": 42773,
+      "runtimeMeshes": 33,
+      "materials": 17,
+      "buildMilliseconds": 7.400000035762787,
+      "waterCollision": false,
+      "newLights": 0,
+      "integrationTriangles": 24,
+      "retainedLampInterfaces": [
+        {
+          "id": "S21-L3",
+          "position": [
+            45.98585568461623,
+            0,
+            32.8410838841428
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        },
+        {
+          "id": "S22-L1",
+          "position": [
+            36.142117348918624,
+            0,
+            37.56933897223424
+          ],
+          "groundTop": 0.025,
+          "moved": false
+        }
+      ]
+    },
+    "render": {
+      "frame": 4,
+      "calls": 960,
+      "triangles": 1508748,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 447,
+      "textures": 20
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "sourceRuntimeCommit": "a58b545368333305744f266d13db17676fb15015",
+    "assetCheckpoint": "62379b4",
+    "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
+    "bundle": "index-3Q5k1VAv.js",
+    "server": "fixed Vite production build on local 4211",
+    "qaScheduling": "One real initial game frame; subsequent app frame callbacks stepped manually, screenshots rendered by actual WebGL renderer. No engine/asset mock."
+  }
+]

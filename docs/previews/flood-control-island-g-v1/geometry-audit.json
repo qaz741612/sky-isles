@@ -1,0 +1,80 @@
+{
+  "base": "7c1b39ba14f138c8a6f92060484fc8684682a758",
+  "invariants": {
+    "allNodeCentresAndRadiiUnchanged": true,
+    "all22ExactControlsUnchanged": true,
+    "width": 4.8,
+    "compressionUnchanged": true,
+    "transportFootprintUnchanged": true,
+    "retainedLamps": [
+      {
+        "id": "S21-L3",
+        "unchanged": true
+      },
+      {
+        "id": "S22-L1",
+        "unchanged": true
+      }
+    ]
+  },
+  "bounds": {
+    "minX": -14,
+    "maxX": 14,
+    "minZ": -13,
+    "maxZ": 13
+  },
+  "others": [
+    {
+      "id": "F",
+      "circleOverlapArea": 0
+    },
+    {
+      "id": "A",
+      "circleOverlapArea": 0
+    },
+    {
+      "id": "B",
+      "circleOverlapArea": 0
+    },
+    {
+      "id": "C",
+      "circleOverlapArea": 0
+    },
+    {
+      "id": "E",
+      "circleOverlapArea": 0
+    },
+    {
+      "id": "D",
+      "circleOverlapArea": 0
+    },
+    {
+      "id": "H",
+      "circleOverlapArea": 0
+    }
+  ],
+  "waterHoles": 2,
+  "dryGroundComponents": 1,
+  "assets": [
+    {
+      "path": "public/models/parent-child-centre/parent-child-centre.glb",
+      "bytes": 20239060,
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44"
+    },
+    {
+      "path": "public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb",
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac"
+    },
+    {
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "bytes": 2342896,
+      "sha256": "758833dc90065fed371a6e854f560c68b6e790e05008a4021febb28c43c9059b"
+    }
+  ],
+  "notes": [
+    "Native support feet preserve S21-L3 / S22-L1 original anchors; these interfaces are integrated in game, outside standalone GLB.",
+    "Outer rails follow regenerated union; inner water rails follow cut dry-ground boundary.",
+    "No other island/city asset imported. No font glyph geometry."
+  ]
+}

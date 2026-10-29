@@ -30,7 +30,7 @@ const snap=p=>JSON.parse(JSON.stringify(p,(_k,v)=>typeof v==='number'?Math.round
 const operands=snap([...roads,...nodes.filter(n=>n.r>0).map(footprint)]);
 let union=operands[0];for(const operand of operands.slice(1))union=polygon.union(union,operand);
 const coreDomain=union;
-const scenery=compileLandscape({paths,nodes,coreDomain,islePolys,footprint,config:JSON.parse(fs.readFileSync('src/data/bridge-landscape-plan.json'))});union=scenery.domain;
+const scenery=compileLandscape({paths,nodes,coreDomain,islePolys,footprint,config:{...JSON.parse(fs.readFileSync('src/data/bridge-landscape-plan.json')),retainedLampAnchors:plan.landscapeRetainedLampAnchors??[]}});union=scenery.domain;
 fs.writeFileSync('src/data/bridge-landscape.json',JSON.stringify(scenery.data));
 const decks=polygon.difference(union,polygon.union(...snap(islePolys)));
 const roadOperands=snap(roads);let roadDomain=roadOperands[0];for(const part of roadOperands.slice(1))roadDomain=polygon.union(roadDomain,part);

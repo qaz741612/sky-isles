@@ -1,0 +1,40 @@
+{
+  "method": "Original saved Blender source stays independent; web export batches evaluated surfaces per logical assembly and PBR material, preserving custom normals.",
+  "meshPrimitives": 33,
+  "assemblyGroups": 7,
+  "triangles": 42773,
+  "originalSourceObjects": 1016,
+  "textures": 0,
+  "draft": false,
+  "waterIsCollider": false,
+  "centre": [
+    44.928,
+    0,
+    45.279
+  ],
+  "scale": 1,
+  "boundsNominal": [
+    28,
+    6.2,
+    26
+  ],
+  "upperWaterY": -0.55,
+  "lowerWaterY": -1.35,
+  "maximumTowerY": 6.2,
+  "dryFloorTriangles": 82,
+  "supportTriangles": 278,
+  "boundsGame": {
+    "min": [
+      -14.09994888305664,
+      -4.5,
+      -13.09996223449707
+    ],
+    "max": [
+      14.09994888305664,
+      6.199999809265137,
+      13.09996223449707
+    ]
+  },
+  "roofSupportTriangles": 180,
+  "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391"
+}

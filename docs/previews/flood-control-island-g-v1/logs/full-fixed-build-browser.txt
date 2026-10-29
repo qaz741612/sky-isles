@@ -1,0 +1,30 @@
+
+Running 16 tests using 1 worker
+
+(node:358295) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › test/elevated-station.e2e.js:4:1 › V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information (1.1m)
+  ✓   2 [desktop] › test/flood-control.e2e.js:2:1 › G Blender park: 22 routes, public circuit, water barriers, policy and camera (23.3s)
+  ✓   3 [desktop] › test/flood-interactions.e2e.js:2:1 › G actual water-edge walks, model policy picking and panorama state restoration (16.6s)
+{"gateCount":4,"cameraCases":60,"minimumCameraDistance":3.4576197436245772,"head":[{"x":1.1,"z":0.4,"floor":0.125,"ceiling":2.7100000381469727,"maxHead":2.7050000381469728},{"x":7.5,"z":-3,"floor":0.10999999940395355,"ceiling":2.640000104904175,"maxHead":2.635000104904175}],"sourceTriangles":380999,"selectedTriangles":356223,"runtimeMeshes":60,"npc":"reservation only; no NPC body/dialogue to test","errors":[]}
+  ✓   4 [desktop] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama (53.2s)
+  ✓   5 [desktop] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and locked elevated train display (1.0m)
+{"device":"keyboard","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":80660,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.06154252001890105,0,0.003516715429651861]},"endpoint":[0.06154252001890105,0,0.003516715429651861],"returned":[0.06154252001890105,0.4,0.003516715429651861],"yawUnchanged":true}
+  ✓   6 [desktop] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer (1.1m)
+  ✓   7 [desktop] › test/walkways.e2e.js:75:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker (26.2s)
+  -   8 [desktop] › test/walkways.e2e.js:98:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+(node:359520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [mobile] › test/elevated-station.e2e.js:4:1 › V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information (35.5s)
+  ✓  10 [mobile] › test/flood-control.e2e.js:2:1 › G Blender park: 22 routes, public circuit, water barriers, policy and camera (16.4s)
+  ✓  11 [mobile] › test/flood-interactions.e2e.js:2:1 › G actual water-edge walks, model policy picking and panorama state restoration (11.7s)
+{"gateCount":4,"cameraCases":60,"minimumCameraDistance":3.4576197797313886,"head":[{"x":1.1,"z":0.4,"floor":0.125,"ceiling":2.7100000381469727,"maxHead":2.7050000381469728},{"x":7.5,"z":-3,"floor":0.10999999940395355,"ceiling":2.640000104904175,"maxHead":2.635000104904175}],"sourceTriangles":380999,"selectedTriangles":356223,"runtimeMeshes":60,"npc":"reservation only; no NPC body/dialogue to test","errors":[]}
+  ✓  12 [mobile] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama (36.3s)
+  ✓  13 [mobile] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and locked elevated train display (28.6s)
+{"device":"single-pointer joystick","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":84364,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.03169780810594526,0,0.0018113033203397083]},"endpoint":[0.03169780810594526,0,0.0018113033203397083],"returned":[0.03169780810594526,0.4,0.0018113033203397083],"yawUnchanged":true}
+  ✓  14 [mobile] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer (44.8s)
+  ✓  15 [mobile] › test/walkways.e2e.js:75:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker (26.2s)
+  ✓  16 [mobile] › test/walkways.e2e.js:98:1 › native single-finger release and cancellation reset the stick and stop without camera turning (21.9s)
+
+  1 skipped
+  15 passed (8.9m)

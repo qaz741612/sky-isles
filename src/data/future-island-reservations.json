@@ -293,8 +293,8 @@
         ]
       ],
       "heightEnvelope": 3.8,
-      "use": "future primary building replacement envelope",
-      "currentOccupancy": "Existing v1 scenery retained now; this reservation is not an empty construction permit or a finished building",
+      "use": "Superseded historical envelope; actual G V1 design is in flood-control-plan.json",
+      "currentOccupancy": "G V1 Blender flood park now replaces old v1 scenery; this small historical rectangle is not a size limit",
       "gates": [
         "S21",
         "S22"
@@ -330,7 +330,8 @@
         ],
         "status": "future envelope sight line; actual replacement building not built or art-approved"
       },
-      "runtimeObjectsCreated": 0
+      "runtimeObjectsCreated": 0,
+      "replacementSource": "src/data/flood-control-plan.json"
     },
     {
       "island": "lookout",

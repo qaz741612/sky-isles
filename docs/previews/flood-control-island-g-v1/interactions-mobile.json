@@ -1,0 +1,109 @@
+{
+  "waterEdge": [
+    {
+      "length": 2.596150997149433,
+      "skipped": "midpoint has no clear dry approach; whole segment covered by unit sweep"
+    },
+    {
+      "length": 5.0039984012787215,
+      "skipped": "midpoint has no clear dry approach; whole segment covered by unit sweep"
+    },
+    {
+      "length": 3.679673898594822,
+      "side": 0.3650100000000003,
+      "blocked": true
+    },
+    {
+      "length": 2.5495097567963927,
+      "side": 0.36501000000000383,
+      "blocked": true
+    },
+    {
+      "length": 3.0805843601498735,
+      "side": 0.36501000000000455,
+      "blocked": true
+    },
+    {
+      "length": 4.882622246293479,
+      "side": 0.36500999999999767,
+      "blocked": true
+    },
+    {
+      "length": 3.1000000000000014,
+      "side": 0.36500999999999806,
+      "blocked": true
+    },
+    {
+      "length": 1.834047603571018,
+      "side": 0.9831670627949499,
+      "blocked": true
+    },
+    {
+      "length": 3.807886552931951,
+      "side": 0.36500999999999695,
+      "blocked": true
+    },
+    {
+      "length": 3.264965543462907,
+      "side": 0.7873831940629379,
+      "blocked": true
+    },
+    {
+      "length": 4.700000000000003,
+      "side": 0.36500999999999806,
+      "blocked": true
+    },
+    {
+      "length": 3.1827660925679098,
+      "side": 0.36500999999999983,
+      "blocked": true
+    }
+  ],
+  "forcedFallRecovery": {
+    "distance": 0.4,
+    "count": 1,
+    "checkpoint": [
+      44.928,
+      0,
+      45.279
+    ]
+  },
+  "modelPicking": true,
+  "panoramaRestores": true,
+  "before": {
+    "pos": [
+      44.928,
+      0,
+      45.279
+    ],
+    "checkpoint": [
+      44.928,
+      0,
+      45.279
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    }
+  },
+  "after": {
+    "pos": [
+      44.928,
+      0,
+      45.279
+    ],
+    "checkpoint": [
+      44.928,
+      0,
+      45.279
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    }
+  }
+}
