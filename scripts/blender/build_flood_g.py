@@ -217,7 +217,7 @@ for solid in solids:
  r=solid['polygon'];pts=[Vector((x,-z,solid['top']))for x,z in r]
  for tri in tessellate_polygon([pts]):
   for idx in tri:support.extend([r[idx][0],solid['top'],r[idx][1]])
-collision={'solids':solids,'groundPositions':support,'ceilingPositions':tris(ceilings),'cameraPositions':tris(cameras+ceilings),'waterIsCollider':False}
+collision={'dryGroundFloats':len(tris(floors)),'solids':solids,'groundPositions':support,'ceilingPositions':tris(ceilings),'cameraPositions':tris(cameras+ceilings),'waterIsCollider':False}
 (ROOT/'src/data/flood-control-collision.json').write_text(json.dumps(collision,separators=(',',':')))
 # Render stage is outside the model and is never exported to game.
 world=bpy.data.worlds.new('Neutral soft daylight');scene.world=world;world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.52,.62,.65,1);world.node_tree.nodes['Background'].inputs[1].default_value=.6
@@ -230,6 +230,6 @@ for name,pos in [('hero',(-25,26,-31)),('front',(0,12,38)),('back',(0,12,-38)),(
 scene.camera=bpy.data.objects['VIEW_hero'];scene.render.resolution_x=1200;scene.render.resolution_y=1000
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'flood-control-g.blend'))
 report=export_batched(root,ROOT/'public/models/flood-control-g/flood-control-g.glb')
-report.update({'draft':draft,'waterIsCollider':False,'centre':P['centre'],'scale':1,'boundsNominal':[28,8,26],'upperWaterY':-.55,'lowerWaterY':-1.35,'maximumTowerY':6.245,'dryFloorTriangles':len(json.loads((ROOT/'src/data/flood-control-floor.json').read_text())['triangles']),'supportTriangles':len(collision['groundPositions'])//9})
+report.update({'draft':draft,'waterIsCollider':False,'centre':P['centre'],'scale':1,'boundsNominal':[28,6.2,26],'upperWaterY':-.55,'lowerWaterY':-1.35,'maximumTowerY':6.2,'dryFloorTriangles':len(json.loads((ROOT/'src/data/flood-control-floor.json').read_text())['triangles']),'supportTriangles':len(collision['groundPositions'])//9})
 points=[o.matrix_world@Vector(v)for o in root.children_recursive if o.type=='MESH' for v in o.bound_box];report['boundsGame']={'min':[min(v.x for v in points),min(v.z for v in points),min(-v.y for v in points)],'max':[max(v.x for v in points),max(v.z for v in points),max(-v.y for v in points)]}
 (OUT/'model-report.json').write_text(json.dumps(report,indent=2));print('FLOOD_G_SAVED',json.dumps(report),flush=True)

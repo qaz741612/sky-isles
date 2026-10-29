@@ -13,5 +13,5 @@ for o in root.children_recursive:
   if n.z<=0 or n.z/max(.0000001,n.length)<.85:continue
   for v in vs:tops.extend([round(v.x,6),round(v.z,6),round(-v.y,6)])
  e.to_mesh_clear()
-p=ROOT/'src/data/flood-control-collision.json';c=json.loads(p.read_text());c['roofSupportPositions']=tops;p.write_text(json.dumps(c,separators=(',',':')))
+p=ROOT/'src/data/flood-control-collision.json';c=json.loads(p.read_text());c['roofSupportPositions']=tops;c['dryGroundFloats']=len(json.loads((ROOT/'src/data/flood-control-floor.json').read_text())['triangles'])*9;p.write_text(json.dumps(c,separators=(',',':')))
 r=json.loads((D/'model-report.json').read_text());r.update(export_batched(root,ROOT/'public/models/flood-control-g/flood-control-g.glb'));r.update({'roofSupportTriangles':len(tops)//9,'sourceBlendSHA256':hashlib.sha256((D/'flood-control-g.blend').read_bytes()).hexdigest()});(D/'model-report.json').write_text(json.dumps(r,indent=2));print('FINAL_EXPORT',json.dumps(r),flush=True)
