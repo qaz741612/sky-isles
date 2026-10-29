@@ -1,0 +1,25 @@
+{
+  "method": "Original saved Blender source stays independent; web export batches evaluated surfaces per logical assembly and PBR material, preserving custom normals.",
+  "meshPrimitives": 21,
+  "assemblyGroups": 6,
+  "triangles": 33146,
+  "originalSourceObjects": 576,
+  "textures": 0,
+  "draft": true,
+  "waterIsCollider": false,
+  "centre": [
+    44.928,
+    0,
+    45.279
+  ],
+  "scale": 1,
+  "boundsNominal": [
+    28,
+    8,
+    26
+  ],
+  "upperWaterY": -0.55,
+  "lowerWaterY": -1.35,
+  "maximumTowerY": 6.245,
+  "floorTriangles": 77
+}

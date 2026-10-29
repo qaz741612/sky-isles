@@ -47,7 +47,7 @@ export function compileLandscape({paths,nodes,coreDomain,islePolys,footprint,con
  const guides=[];for(const p of paths.filter(p=>active(p.id)&&zoneFor(p.id).id===3))for(const t of[.35,.65]){const q=sample(p,t);if(isleDistance(q.x,q.z)>.5)guides.push({route:p.id,position:[q.x,q.z],tangent:[q.tx,q.tz]});}
  const lamps=[],rejected=[];
  for(const l of config.lamps){if(!active(l.route))continue;const p=paths.find(p=>p.id===l.route),q=sample(p,l.t),offset=l.type==='seven'?3.02:2.9,x=q.x+q.nx*offset*l.side,z=q.z+q.nz*offset*l.side;
-  if(!contains(domain,x,z)||isleDistance(x,z)<.5||!safeFromRoad(x,z,.12)){rejected.push({...l,reason:'planned anchor fails floor/island/4.8-corridor clearance; omitted, not auto-relocated'});continue;}
+  if(!contains(domain,x,z)||(!config.retainedLampAnchors?.includes(l.id)&&isleDistance(x,z)<.5)||!safeFromRoad(x,z,.12)){rejected.push({...l,reason:'planned anchor fails floor/island/4.8-corridor clearance; omitted, not auto-relocated'});continue;}
   lamps.push({...l,zone:zoneFor(l.route).id,position:[x,0,z],yaw:Math.atan2(-q.nx*l.side,-q.nz*l.side)-Math.PI/2});
  }
  if(lamps.length>config.maxLampCount)throw Error('Lamp budget exceeded');
