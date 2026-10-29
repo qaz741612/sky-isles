@@ -1,0 +1,422 @@
+[
+  {
+    "name": "mobile-default",
+    "description": "Actual game, original spawn and unchanged default camera profile. QA start skips title only.",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "deviceScaleFactor": 1,
+    "errors": [],
+    "player": [
+      0,
+      -2.220446049250313e-16,
+      3.5
+    ],
+    "camera": [
+      2.0643264572487166,
+      15.161691629562835,
+      20.620068126689045
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "render": {
+      "frame": 3,
+      "calls": 323,
+      "triangles": 1097788,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 165,
+      "textures": 17
+    },
+    "load": {
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "downloadMilliseconds": 429.5,
+      "decodeMilliseconds": 289.30000001192093,
+      "totalMilliseconds": 718.8000000119209,
+      "triangles": 201740,
+      "materials": 33,
+      "runtimeMeshes": 50,
+      "groundTriangles": 1890,
+      "ceilingTriangles": 844,
+      "buildMilliseconds": 74.69999998807907,
+      "scale": 1,
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "upperAccess": "closed display; not a usable stair or elevator",
+      "train": "locked static display; not boardable",
+      "firstFrameMilliseconds": 4696.699999988079
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "mobile-landscape",
+    "description": "Actual mobile landscape; same portrait-entry orbit retained after orientation change.",
+    "viewport": {
+      "width": 932,
+      "height": 430
+    },
+    "deviceScaleFactor": 1,
+    "errors": [],
+    "player": [
+      0,
+      -2.220446049250313e-16,
+      3.5
+    ],
+    "camera": [
+      2.0643264783563815,
+      15.161691714804096,
+      20.620068214828933
+    ],
+    "orbit": {
+      "yaw": 0.12,
+      "pitch": 0.67,
+      "dist": 22,
+      "fov": 58
+    },
+    "render": {
+      "frame": 4,
+      "calls": 490,
+      "triangles": 1191758,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 229,
+      "textures": 19
+    },
+    "load": {
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "downloadMilliseconds": 429.5,
+      "decodeMilliseconds": 289.30000001192093,
+      "totalMilliseconds": 718.8000000119209,
+      "triangles": 201740,
+      "materials": 33,
+      "runtimeMeshes": 50,
+      "groundTriangles": 1890,
+      "ceilingTriangles": 844,
+      "buildMilliseconds": 74.69999998807907,
+      "scale": 1,
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "upperAccess": "closed display; not a usable stair or elevator",
+      "train": "locked static display; not boardable",
+      "firstFrameMilliseconds": 4696.699999988079
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "desktop-default",
+    "description": "Actual game, original spawn and unchanged default camera profile. QA start skips title only.",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "errors": [],
+    "player": [
+      0,
+      -2.220446049250313e-16,
+      3.5
+    ],
+    "camera": [
+      2.1038558188445085,
+      10.53427953639433,
+      16.536701345299218
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "render": {
+      "frame": 3,
+      "calls": 415,
+      "triangles": 1173226,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 194,
+      "textures": 19
+    },
+    "load": {
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "downloadMilliseconds": 396.19999998807907,
+      "decodeMilliseconds": 343.9000000357628,
+      "totalMilliseconds": 740.1000000238419,
+      "triangles": 201740,
+      "materials": 33,
+      "runtimeMeshes": 50,
+      "groundTriangles": 1890,
+      "ceilingTriangles": 844,
+      "buildMilliseconds": 44.60000002384186,
+      "scale": 1,
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "upperAccess": "closed display; not a usable stair or elevator",
+      "train": "locked static display; not boardable",
+      "firstFrameMilliseconds": 4296.199999988079
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "from-family",
+    "description": "Actual exploration camera at approved family south entrance; QA teleport, normal orbit.",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "errors": [],
+    "player": [
+      -16.449999999999996,
+      0.02999999999999829,
+      -11.456
+    ],
+    "camera": [
+      -27.286413473183078,
+      10.564279497794356,
+      -19.002584821837804
+    ],
+    "orbit": {
+      "yaw": -2.179111101375645,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "render": {
+      "frame": 4,
+      "calls": 526,
+      "triangles": 1220918,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 259,
+      "textures": 19
+    },
+    "load": {
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "downloadMilliseconds": 396.19999998807907,
+      "decodeMilliseconds": 343.9000000357628,
+      "totalMilliseconds": 740.1000000238419,
+      "triangles": 201740,
+      "materials": 33,
+      "runtimeMeshes": 50,
+      "groundTriangles": 1890,
+      "ceilingTriangles": 844,
+      "buildMilliseconds": 44.60000002384186,
+      "scale": 1,
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "upperAccess": "closed display; not a usable stair or elevator",
+      "train": "locked static display; not boardable",
+      "firstFrameMilliseconds": 4296.199999988079
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "toward-family",
+    "description": "Actual exploration camera at transport west mouth toward family; QA teleport, normal orbit.",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "errors": [],
+    "player": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "camera": [
+      -2.2292165410762808,
+      10.534279650846482,
+      11.877594111959022
+    ],
+    "orbit": {
+      "yaw": 0.45226911436979905,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "render": {
+      "frame": 5,
+      "calls": 371,
+      "triangles": 1169430,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 273,
+      "textures": 19
+    },
+    "load": {
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "downloadMilliseconds": 396.19999998807907,
+      "decodeMilliseconds": 343.9000000357628,
+      "totalMilliseconds": 740.1000000238419,
+      "triangles": 201740,
+      "materials": 33,
+      "runtimeMeshes": 50,
+      "groundTriangles": 1890,
+      "ceilingTriangles": 844,
+      "buildMilliseconds": 44.60000002384186,
+      "scale": 1,
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "upperAccess": "closed display; not a usable stair or elevator",
+      "train": "locked static display; not boardable",
+      "firstFrameMilliseconds": 4296.199999988079
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "station-45-qa",
+    "description": "Actual Three.js scene, custom QA camera; not the default player view.",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "errors": [],
+    "player": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "camera": [
+      22,
+      18,
+      24
+    ],
+    "orbit": {
+      "yaw": 0.45226911436979905,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "render": {
+      "frame": 6,
+      "calls": 471,
+      "triangles": 1194382,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 283,
+      "textures": 19
+    },
+    "load": {
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "downloadMilliseconds": 396.19999998807907,
+      "decodeMilliseconds": 343.9000000357628,
+      "totalMilliseconds": 740.1000000238419,
+      "triangles": 201740,
+      "materials": 33,
+      "runtimeMeshes": 50,
+      "groundTriangles": 1890,
+      "ceilingTriangles": 844,
+      "buildMilliseconds": 44.60000002384186,
+      "scale": 1,
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "upperAccess": "closed display; not a usable stair or elevator",
+      "train": "locked static display; not boardable",
+      "firstFrameMilliseconds": 4296.199999988079
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "name": "yuan-panorama",
+    "description": "Actual full-world orthographic panorama; no policy labels.",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "errors": [],
+    "player": [
+      -8,
+      -1.1102230246251565e-16,
+      0
+    ],
+    "camera": [
+      -0.3850549999999977,
+      240,
+      28.923
+    ],
+    "orbit": {
+      "yaw": 0.45226911436979905,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    },
+    "render": {
+      "frame": 7,
+      "calls": 791,
+      "triangles": 1258362,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 383,
+      "textures": 20
+    },
+    "load": {
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "downloadMilliseconds": 396.19999998807907,
+      "decodeMilliseconds": 343.9000000357628,
+      "totalMilliseconds": 740.1000000238419,
+      "triangles": 201740,
+      "materials": 33,
+      "runtimeMeshes": 50,
+      "groundTriangles": 1890,
+      "ceilingTriangles": 844,
+      "buildMilliseconds": 44.60000002384186,
+      "scale": 1,
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "upperAccess": "closed display; not a usable stair or elevator",
+      "train": "locked static display; not boardable",
+      "firstFrameMilliseconds": 4296.199999988079
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  }
+]

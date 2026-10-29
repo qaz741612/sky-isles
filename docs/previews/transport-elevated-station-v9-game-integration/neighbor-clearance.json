@@ -1,0 +1,18 @@
+{
+  "homeFootprintXZBounds": [
+    -10.164034947245073,
+    -11.169999876332167,
+    10.169976266556437,
+    8.648725054868512
+  ],
+  "otherIslandCircleClearance": {
+    "tree": 1.6759125919272648,
+    "temple": 23.05464777050139,
+    "koi": 25.04398315063878,
+    "meadow": 9.455567862035924,
+    "windmill": 83.16096222308528,
+    "crystal": 44.33750116142251,
+    "lookout": 83.04164236860652
+  },
+  "note": "Plan circle-to-footprint distance only, not a substitute for approved family GLB / camera tests."
+}

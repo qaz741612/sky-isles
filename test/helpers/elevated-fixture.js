@@ -1,6 +1,7 @@
 // Node geometry fixture only: omit image bindings because Node has no ImageBitmap.
 // Browser integration tests load the byte-identical GLB with all real materials.
 import fs from 'node:fs';
+import {URL} from 'node:url';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {buildTransport as build,transportEdgeSegments} from '../../src/world/transport.js';
 const bytes=fs.readFileSync(new URL('../../public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb',import.meta.url));
