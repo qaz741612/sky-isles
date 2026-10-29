@@ -1,0 +1,35 @@
+{
+  "revision": "family-west-5-v1",
+  "baseCommit": "ae1330522395f91fae03639b8b51dfa81b2fd4e3",
+  "nodeXOffsets": {
+    "A": -5,
+    "T3": -5
+  },
+  "edgeControlXOffsets": {
+    "S01": [
+      0,
+      -2.5,
+      -5,
+      -5
+    ],
+    "S02": [
+      -5,
+      -5,
+      0,
+      0
+    ],
+    "S04": [
+      -5,
+      -5,
+      -5,
+      -5
+    ],
+    "S05": [
+      -5,
+      -5,
+      -2.5,
+      0
+    ]
+  },
+  "note": "Offsets are provenance only. Already applied to yuan-plan.json; never apply during generation or at runtime."
+}
