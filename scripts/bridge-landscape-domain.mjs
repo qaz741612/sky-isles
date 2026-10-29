@@ -34,6 +34,8 @@ export function compileLandscape({paths,nodes,coreDomain,islePolys,footprint,con
   const ring=Array.from({length:25},(_,i)=>{const a=i/24*Math.PI*2,along=Math.cos(a)*2.75,out=p.side*(3.65+Math.sin(a)*1.65);return[q.x+q.tx*along+q.nx*out,q.z+q.tz*along+q.nz*out];});
   const domain=snap([ring]);additions.push(domain);const item={...p,zone:z.id,position:[q.x+q.nx*p.side*4.25,0,q.z+q.nz*p.side*4.25],tangent:[q.tx,q.tz],normal:[q.nx*p.side,q.nz*p.side],domain};platforms.push(item);zones.find(v=>v.id===z.id).platforms.push(item);
  }
+ // Shared bay entrances replace the bed, never a low wall across the way in.
+ for(const z of zones)if(z.beds.length&&platforms.length)z.beds=clean(polygon.difference(z.beds,...platforms.map(p=>p.domain)));
  let domain=coreDomain;for(const add of additions)domain=polygon.union(domain,add);domain=clean(domain);
  const safeFromRoad=(x,z,r=.18)=>paths.every(p=>p.points.every((a,i)=>i===0||distance(x,z,[p.points[i-1].x,p.points[i-1].z],[a.x,a.z])>2.4+r));
  const guides=[];for(const p of paths.filter(p=>active(p.id)&&zoneFor(p.id).id===3))for(const t of[.35,.65]){const q=sample(p,t);if(isleDistance(q.x,q.z)>.5)guides.push({route:p.id,position:[q.x,q.z],tangent:[q.tx,q.tz]});}

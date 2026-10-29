@@ -3,7 +3,8 @@
   "activeZones": [
     1,
     2,
-    3
+    3,
+    4
   ],
   "safeWidth": 4.8,
   "maxLampCount": 42,

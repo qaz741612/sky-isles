@@ -7,6 +7,7 @@ const area=r=>Math.abs(r.reduce((s,a,i)=>{const b=r[(i+1)%r.length];return s+a[0
 test('landscape beds stay outside the original shared road/island domain and lights respect the budget',()=>{
  assert.equal(plan.safeWidth,4.8);assert.ok(plan.lamps.length<=42);assert.equal(plan.routes.length,22);
  for(const z of plan.zones)for(const bed of z.beds)assert.ok(polygon.intersection([bed],plan.coreDomain).reduce((n,p)=>n+area(p[0]),0)<.0001);
+ for(const z of plan.zones)for(const bed of z.beds)for(const bay of plan.platforms)assert.ok(polygon.intersection([bed],bay.domain).reduce((n,p)=>n+area(p[0]),0)<.0001,'bed obstructs bay mouth');
  for(const id of['S12','S17'])assert.equal(plan.routes.find(p=>p.id===id).mode,'island-walk');
  for(const l of plan.lamps.filter(l=>l.route==='S09'))assert.equal(l.type,'low-linear');
 });

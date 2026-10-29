@@ -7,7 +7,8 @@ test('active landscape zones preserve every route in both directions with the li
    for(const target of[...path.points,...path.points.toReversed()]){let frames=0;while(Math.hypot(target.x-p.pos.x,target.z-p.pos.z)>.20&&frames++<1400){const dx=target.x-p.pos.x,dz=target.z-p.pos.z,d=Math.hypot(dx,dz),yaw=p.orbit.yaw;tick((dx*Math.cos(yaw)-dz*Math.sin(yaw))/d,(dx*Math.sin(yaw)+dz*Math.cos(yaw))/d);if(!p.move.grounded||p.respawnCount)throw Error('landscape gap '+path.id+' '+JSON.stringify(p.pos));}if(frames>=1400)throw Error('landscape obstruction '+path.id+' '+JSON.stringify({target,pos:p.pos.toArray()}));}
    records.push({id:path.id,bidirectional:true,noJump:true});
   }
-  return{records,ticks,respawns:p.respawnCount,stats:w.bridges.landscape.stats};
+  const bays=[];for(const bay of w.bridges.landscape.plan.platforms){const [x,,z]=bay.position,[nx,nz]=bay.normal;const road={x:x-nx*4.25,z:z-nz*4.25};p.teleport(road.x,.15,road.z);for(let i=0;i<50;i++)tick();for(const target of[{x:x-nx*.85,z:z-nz*.85},road]){let frames=0;while(Math.hypot(target.x-p.pos.x,target.z-p.pos.z)>.15&&frames++<900){const dx=target.x-p.pos.x,dz=target.z-p.pos.z,d=Math.hypot(dx,dz),yaw=p.orbit.yaw;tick((dx*Math.cos(yaw)-dz*Math.sin(yaw))/d,(dx*Math.sin(yaw)+dz*Math.cos(yaw))/d);}if(frames>=900||!p.move.grounded||p.respawnCount)throw Error('bay entrance blocked '+bay.id+' '+JSON.stringify(p.pos));}bays.push({id:bay.id,walkInAndReturn:true});}
+  return{records,bays,ticks,respawns:p.respawnCount,stats:w.bridges.landscape.stats};
  });
  expect(results.respawns).toBe(0);expect(results.records.length).toBeGreaterThan(0);expect(errors).toEqual([]);fs.writeFileSync(`docs/previews/yuan-bridges-landscape-v1/zone-check-${isMobile?'mobile':'desktop'}.json`,JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify(results));
 });

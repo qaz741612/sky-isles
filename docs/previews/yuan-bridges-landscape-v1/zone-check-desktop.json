@@ -54,24 +54,72 @@
       "id": "S11",
       "bidirectional": true,
       "noJump": true
+    },
+    {
+      "id": "S12",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S13",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S14",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S15",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S16",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S17",
+      "bidirectional": true,
+      "noJump": true
     }
   ],
-  "ticks": 6869,
+  "bays": [
+    {
+      "id": "P07",
+      "walkInAndReturn": true
+    },
+    {
+      "id": "P11",
+      "walkInAndReturn": true
+    },
+    {
+      "id": "P14",
+      "walkInAndReturn": true
+    },
+    {
+      "id": "P16",
+      "walkInAndReturn": true
+    }
+  ],
+  "ticks": 11492,
   "respawns": 0,
   "stats": {
-    "lampCount": 15,
-    "sevenLampCount": 13,
+    "lampCount": 23,
+    "sevenLampCount": 21,
     "lowLightCount": 2,
-    "platformCount": 2,
-    "foliageInstances": 103,
-    "visibleMeshes": 67,
-    "triangles": 26680,
-    "collisionMeshes": 22,
-    "horizontalBarriers": 605,
-    "buildMilliseconds": 86.30000001192093,
+    "platformCount": 4,
+    "foliageInstances": 176,
+    "visibleMeshes": 85,
+    "triangles": 45440,
+    "collisionMeshes": 35,
+    "horizontalBarriers": 1005,
+    "buildMilliseconds": 115,
     "newRealtimeLights": 0,
-    "geometryBatches": 47,
+    "geometryBatches": 60,
     "perFrameRebuilds": 0,
-    "instanceBatches": 26
+    "instanceBatches": 33
   }
 }
