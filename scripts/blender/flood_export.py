@@ -17,13 +17,15 @@ def export_batched(model,path):
         if obj.type!='MESH':continue
         role,assembly=key(obj);e=obj.evaluated_get(deps);mesh=e.to_mesh();mesh.calc_loop_triangles();matrix=obj.matrix_world;normal_matrix=matrix.to_3x3().inverted().transposed()
         for tri in mesh.loop_triangles:
+            a,b,c=[matrix@mesh.vertices[i].co for i in tri.vertices]
+            if (b-a).cross(c-a).length_squared<1e-14:continue
             material=mesh.materials[tri.material_index];batch=groups.setdefault((role,assembly,material.name),{'mat':material,'verts':[],'normals':[],'faces':[],'map':{}});indices=[]
             for loop_index in tri.loops:
                 loop=mesh.loops[loop_index];p=matrix@mesh.vertices[loop.vertex_index].co;n=(normal_matrix@mesh.corner_normals[loop_index].vector).normalized();vertex=tuple(round(v,6)for v in p)+tuple(round(v,6)for v in n)
                 if vertex not in batch['map']:
                     batch['map'][vertex]=len(batch['verts']);batch['verts'].append(tuple(p));batch['normals'].append(tuple(n))
                 indices.append(batch['map'][vertex])
-            batch['faces'].append(tuple(indices))
+            if len(set(indices))==3:batch['faces'].append(tuple(indices))
         e.to_mesh_clear()
     collection=bpy.data.collections.new('TEMP_WEB_EXPORT');scene.collection.children.link(collection);created=[]
     def empty(name,parent=None):
@@ -35,6 +37,11 @@ def export_batched(model,path):
         if role not in parents:parents[role]=empty(role,root)
         k=(role,assembly)
         if k not in parents:parents[k]=empty(assembly,parents[role])
+        seen=set();faces=[]
+        for face in batch['faces']:
+            key=tuple(sorted(face))
+            if key not in seen:seen.add(key);faces.append(face)
+        batch['faces']=faces
         mesh=bpy.data.meshes.new(assembly+'__'+name);mesh.from_pydata(batch['verts'],[],batch['faces']);mesh.materials.append(batch['mat']);mesh.update()
         for poly in mesh.polygons:poly.use_smooth=True
         mesh.normals_split_custom_set_from_vertices(batch['normals'])

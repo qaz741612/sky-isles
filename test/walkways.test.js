@@ -6,6 +6,7 @@ import { buildBridges } from '../src/world/bridges.js';
 import { buildPolicyScenery } from '../src/world/policy-scenery.js';
 import { guardIndex } from '../src/sim/walkways.js';
 import { buildTransport } from './helpers/elevated-fixture.js';
+import {buildFloodControl} from '../src/world/flood-control.js';
 import { Player } from '../src/sim/player.js';
 import { WALKWAY, planWalkways, moveWithGuards, nearestOnSegment } from '../src/sim/walkways.js';
 import { walkTour } from './helpers/walk-tour.js';
@@ -15,14 +16,15 @@ function fixture() {
   const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera();
   const colliders=[],islands=ISLANDS.map(d=> {
     const grass=new THREE.Mesh(new THREE.CylinderGeometry(d.r,d.r*0.9,1.1,28),new THREE.MeshBasicMaterial());
-    grass.position.set(d.x,d.y-0.55,d.z);grass.userData.island=d.name;scene.add(grass);colliders.push(grass);
+    grass.position.set(d.x,d.y-0.55,d.z);grass.userData.island=d.name;scene.add(grass);if(d.name!=='crystal')colliders.push(grass);
     const group=new THREE.Group();group.position.set(d.x,d.y,d.z);scene.add(group);
     return { name:d.name,r:d.r,pos:new THREE.Vector3(d.x,d.y,d.z),group };
   });
   const bridges=buildBridges(scene,islands);
   const trafficHome={name:'home',group:new THREE.Group()};scene.add(trafficHome.group);
   const transport=buildTransport(trafficHome,()=>new THREE.Group());
-  const scenery=buildPolicyScenery(islands);
+  const flood=buildFloodControl(new THREE.Group(),islands.find(i=>i.name==='crystal'));
+  const scenery=buildPolicyScenery(islands,{crystal:flood});
   const barriers=[...bridges.barriers,...scenery.barriers,...transport.barriers];
   const player=new Player(scene,camera,[...colliders,...bridges.colliders,...transport.colliders,...scenery.colliders]);
   player.orbit.yaw=0;player.navigation={islands:ISLANDS,barriers,nearby:guardIndex(barriers)};

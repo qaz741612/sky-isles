@@ -1,0 +1,134 @@
+[
+  {
+    "name": "hero",
+    "blender": "4.3.2",
+    "engine": "Cycles CPU",
+    "sourceBlendSHA256": "3f3d237bb33a3e7e9ac08877f2fbed44cf61b2585f2f71934ecb25fe09c6910e",
+    "seconds": 44.5560257434845,
+    "position": [
+      -25.0,
+      31.0,
+      26.0
+    ],
+    "rotation": [
+      0.9924113750457764,
+      -1.3020368783145386e-08,
+      -2.462930202484131
+    ],
+    "orthoScale": 34.0,
+    "size": [
+      1200,
+      1000
+    ]
+  },
+  {
+    "name": "front",
+    "blender": "4.3.2",
+    "engine": "Cycles CPU",
+    "sourceBlendSHA256": "3f3d237bb33a3e7e9ac08877f2fbed44cf61b2585f2f71934ecb25fe09c6910e",
+    "seconds": 39.839073181152344,
+    "position": [
+      0.0,
+      -38.0,
+      12.0
+    ],
+    "rotation": [
+      1.2649174928665161,
+      -0.0,
+      0.0
+    ],
+    "orthoScale": 34.0,
+    "size": [
+      1200,
+      1000
+    ]
+  },
+  {
+    "name": "back",
+    "blender": "4.3.2",
+    "engine": "Cycles CPU",
+    "sourceBlendSHA256": "3f3d237bb33a3e7e9ac08877f2fbed44cf61b2585f2f71934ecb25fe09c6910e",
+    "seconds": 44.10942459106445,
+    "position": [
+      0.0,
+      38.0,
+      12.0
+    ],
+    "rotation": [
+      1.2649173736572266,
+      8.336484569326785e-08,
+      3.1415927410125732
+    ],
+    "orthoScale": 34.0,
+    "size": [
+      1200,
+      1000
+    ]
+  },
+  {
+    "name": "left",
+    "blender": "4.3.2",
+    "engine": "Cycles CPU",
+    "sourceBlendSHA256": "3f3d237bb33a3e7e9ac08877f2fbed44cf61b2585f2f71934ecb25fe09c6910e",
+    "seconds": 49.548049211502075,
+    "position": [
+      -38.0,
+      0.0,
+      12.0
+    ],
+    "rotation": [
+      1.2649176120758057,
+      -1.8160809744927064e-08,
+      -1.5707966089248657
+    ],
+    "orthoScale": 34.0,
+    "size": [
+      1200,
+      1000
+    ]
+  },
+  {
+    "name": "right",
+    "blender": "4.3.2",
+    "engine": "Cycles CPU",
+    "sourceBlendSHA256": "3f3d237bb33a3e7e9ac08877f2fbed44cf61b2585f2f71934ecb25fe09c6910e",
+    "seconds": 55.48559212684631,
+    "position": [
+      38.0,
+      0.0,
+      12.0
+    ],
+    "rotation": [
+      1.2649176120758057,
+      1.8160809744927064e-08,
+      1.5707966089248657
+    ],
+    "orthoScale": 34.0,
+    "size": [
+      1200,
+      1000
+    ]
+  },
+  {
+    "name": "top",
+    "blender": "4.3.2",
+    "engine": "Cycles CPU",
+    "sourceBlendSHA256": "3f3d237bb33a3e7e9ac08877f2fbed44cf61b2585f2f71934ecb25fe09c6910e",
+    "seconds": 121.69221329689026,
+    "position": [
+      0.0,
+      0.0,
+      42.0
+    ],
+    "rotation": [
+      0.0,
+      -0.0,
+      0.0
+    ],
+    "orthoScale": 34.0,
+    "size": [
+      1200,
+      1000
+    ]
+  }
+]

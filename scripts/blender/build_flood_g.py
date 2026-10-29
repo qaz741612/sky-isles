@@ -45,6 +45,7 @@ def curve(n,pts,r,m,g='Walkways_Railings'):
 
 def post(n,x,z,h=.99,base=0):return box(n,(x,base+h/2,z),(.06,h,.06),'metal','Walkways_Railings',.015)
 def rail(n,a,b,base=0,h=1.13,physics=True):
+ if math.dist(a,b)<.015:return
  for y,r in [(base+h,.035),(base+.50,.022)]:curve(n+' handrail',[(a[0],y,a[1]),(b[0],y,b[1])],r,'metal')
  d=math.dist(a,b)
  for i in range(max(1,math.ceil(d/1.6))+1):
@@ -59,12 +60,16 @@ def poly_slab(n,rings,top,bottom,m,g):
  faces.extend([(i,(i+1)%nvert,(i+1)%nvert+nvert,i+nvert)for i in range(nvert)])
  return mesh(n,verts,faces,m,g)
 # Actual floor triangulated by Three's earcut, matches water holes exactly.
-tri=json.loads((ROOT/'src/data/flood-control-floor.json').read_text());verts=[tuple(v)for v in tri['vertices']];floor=mesh('Public dry ground with true water voids',verts,tri['triangles'],'paver','Terrain_Foundation');floors.append(floor)
+tri=json.loads((ROOT/'src/data/flood-control-floor.json').read_text());verts=[tuple(v)for v in tri['vertices']];floor=mesh('Public dry ground with true water voids',verts,tri['triangles'],'green','Terrain_Foundation');floors.append(floor)
+paving=json.loads((ROOT/'src/data/flood-control-paving.json').read_text());mesh('Connected civic paths and arrivals',paving['vertices'],paving['triangles'],'paver','Terrain_Foundation')
 # Foundation skirts and bevelled coping run around irregular authored outline.
 ring=P['footprintLocal'];outer=[]
 for a,b in zip(ring,ring[1:]):
  mesh('Island layered retaining wall',[(a[0],-.04,a[1]),(b[0],-.04,b[1]),(b[0],-1.8,b[1]),(a[0],-1.8,a[1])],[(0,1,2,3)],'stone','Terrain_Foundation')
  curve('Limestone perimeter coping',[(a[0],-.06,a[1]),(b[0],-.06,b[1])],.10,'edge','Terrain_Foundation')
+# Rock strata tuck beneath the retaining wall; no water collider.
+for upper,lower,ra,rb in [(-1.8,-2.7,1,.83),(-2.7,-4.5,.83,.44)]:
+ for a,b in zip(ring,ring[1:]):mesh('Floating natural rock strata',[(a[0]*ra,upper,a[1]*ra),(b[0]*ra,upper,b[1]*ra),(b[0]*rb,lower,b[1]*rb),(a[0]*rb,lower,a[1]*rb)],[(3,2,1,0)],'rock','Terrain_Foundation')
 # Actual exposed boundary only: generated union leaves both mouths open.
 surface=json.loads((ROOT/'src/data/yuan-surface.json').read_text())
 for w in surface['barriers']:
@@ -93,17 +98,21 @@ for x in [-6.4,-4.2]:
  for j in range(4):curve('Discharge streak',[(x-.6+j*.4,-.52,4.55),(x-.6+j*.4,-.84,5.5),(x-.6+j*.4,-1.28,6.35)],.018,'foam','WaterChannels')
 box('Gate maintenance lintel',(-5.3,2.94,4.6),(5.45,.30,1.62),'stone','SluiceGate',.06,False,True,True)
 # Public facing viewing deck beside lower pool, no elevated stair requirement.
-box('Oak viewing apron',(-.6,-.055,8.6),(2.3,.11,3.2),'wood','ObservationDeck',.04)
+box('Oak viewing apron',(-.6,-.025,8.6),(2.3,.10,3.2),'wood','ObservationDeck',.04)
 rail('Viewing deck lower-water edge',[-1.72,7.05],[-1.72,10.2]);box('Interpretation desk',(-.6,.70,9.55),(1.15,.16,.48),'metal','ObservationDeck',.04,True)
 for x in [-1.0,-.2]:box('Interpretation desk foot',(x,.34,9.55),(.07,.68,.07),'metal','ObservationDeck',.01)
 # Command centre: terraced volumes and connected projecting flat roofs, usable porch.
 b=P['building'];
 for x,z,w,d,h in [(5.1,5.6,2.6,5.6,2.9),(8,5.6,3.2,5.6,2.65)]:
- box('Stone back wall',(x,h/2,8.2),(w,h,.22),'stone',solid=True,camera=True)
+ box('Back wall stone plinth',(x,.25,8.2),(w,.5,.22),'stone',solid=True,camera=True)
+ box('Back wall header',(x,h-.20,8.2),(w,.4,.22),'stone',solid=True,camera=True)
+ box('Rear continuous glazing',(x,h/2,8.2),(w-.18,h-.8,.035),'glass',bevel=0,solid=True,camera=True)
+ for xx in [x-w/2+.07,x,x+w/2-.07]:box('Rear stone window pier',(xx,h/2,8.2),(.14,h,.32),'stone',solid=True,camera=True)
  box('Deep projecting roof',(x,h+.15,z),(w+.6,.25,d+.6),'metal',bevel=.07,head=True)
  box('Roof stone fascia',(x,h-.03,z),(w+.65,.12,d+.65),'edge',bevel=.025)
 # Side walls and full-height glazed front with genuine framing, roof soffit and piers.
 for x in [3.8,10]:box('Side masonry return',(x,1.35,6.65),(.22,2.7,3.1),'stone',solid=True,camera=True)
+box('East front glazed return',(10.0,1.3,4.0),(.04,2.6,2.4),'glass',bevel=0,solid=True,camera=True)
 for x in [4.0,5.45,6.9,8.35,9.8]:
  box('Facade timber mullion',(x,1.3,2.85),(.10,2.6,.18),'wood',solid=True)
  if x<9.7:box('Recessed glass panel',(x+.67,1.32,2.9),(1.22,2.4,.035),'glass',bevel=0)
@@ -126,6 +135,16 @@ box('Clerestory lantern',(5.45,3.5,5.55),(2.1,.72,2.8),'glass',bevel=.035)
 box('Clerestory canopy',(5.45,3.96,5.55),(2.7,.18,3.3),'metal',bevel=.07,head=True)
 for x in [4.45,6.45]:
  for z in [4.2,6.9]:box('Clerestory frame',(x,3.5,z),(.1,.8,.1),'wood')
+# Clear solar-control louvres and layered soffits on the east and rear facades.
+for z in [3.2+i*.34 for i in range(14)]:box('East vertical solar fin',(10.24,1.5,z),(.32,2.2,.055),'wood')
+for x in [4.0+i*.42 for i in range(15)]:box('Rear roof warm soffit rib',(x,2.55,8.48),(.07,.10,.48),'wood')
+box('Reading landscape pergola roof',(-9.6,2.65,4.4),(2.1,.14,3.0),'wood','ObservationDeck',.05,head=True)
+for x in [-10.5,-8.7]:
+ for z in [3.05,5.75]:box('Pergola slim steel column',(x,1.3,z),(.09,2.6,.09),'metal','ObservationDeck',.02,True,True)
+for z in [3.2+i*.34 for i in range(8)]:box('Pergola open transverse slat',(-9.6,2.83,z),(2.2,.12,.12),'wood','ObservationDeck',.025)
+# Lantern tower stone banding and inset observation slots soften the service shaft.
+for y in [1.0,2.2,3.4,4.6]:box('Tower dressed stone course',(9,y,6.6),(1.20,.06,1.30),'edge')
+for z in [6.25,6.7]:box('Tower vertical glazed light',(8.40,3.5,z),(.025,1.65,.22),'glass',bevel=0)
 # Interior control desk/screens visible through front glazing, no claim of playable interior.
 for x in [4.5,6.25,8.1]:
  box('Interior worktable',(x,.78,4.5),(1.25,.12,.65),'wood')
@@ -141,7 +160,7 @@ def tree(x,z,scale=1):
  for dx,dy,dz,s in [(-.55,2.35,.0,.95),(.55,2.5,.15,1.05),(0,3.05,-.08,1.05)]:
   bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2,radius=s*scale,location=V((x+dx*scale,dy*scale,z+dz*scale)));o=bpy.context.object;o.scale=(1,.85,.8);finish(o,'Layered tree canopy','leaf'if dy>2.5 else'darkleaf','Vegetation_Props')
 if not draft:
- for x,z,s in [(-11,4.2,.85),(-10,6.6,.7),(-9.8,-7.5,.72),(-6.5,-10.4,.75),(10.5,-5.7,.9),(11,1.5,.8),(8.3,9.6,.72),(-.2,11.2,.6)]:tree(x,z,s)
+ for x,z,s in [(-11,4.2,.85),(-10,6.6,.7),(-10,-10,.72),(-6.5,-10.4,.75),(10.5,-5.7,.9),(11,1.5,.8),(8.3,9.6,.72),(-.2,11.2,.6),(-1,-10,.70),(11,-5,.72),(-12,6.8,.65)]:tree(x,z,s)
  for a,b in [((-11,-2),(-11,2.9)),((10.8,3),(10.8,7)),((-8.7,9),(-4,11.3)),((-10,-10),(-5.6,-11.2))]:
   pts=[(a[0]*(1-t)+b[0]*t,.13,a[1]*(1-t)+b[1]*t+.24*math.sin(t*math.pi))for t in [i/12 for i in range(13)]]
   curve('Continuous planted grass berm',pts,.32,'green','Vegetation_Props')
@@ -151,6 +170,15 @@ if not draft:
    if i%2==0:
     for j in range(3):
      bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=1,radius=.08,location=V((x+.13*j-.13,.66,z)));finish(bpy.context.object,'Meadow blossom','bloom','Vegetation_Props')
+ # Integrated garden terraces, sized clear of roads and both NPC squares.
+ for cx,cz,rx,rz in [(-2.2,11.5,2.0,.55),(11.7,3.5,.65,2.4),(-12,.5,.6,1.5),(8.8,-8.2,1.1,.65)]:
+  r=[[cx+rx*math.cos(i/24*math.tau),cz+rz*math.sin(i/24*math.tau)]for i in range(25)]
+  poly_slab('Curved ecological stone terrace',[r],.30,0,'edge','Vegetation_Props')
+  poly_slab('Curved planting soil',[r],.32,.29,'soil','Vegetation_Props')
+  solids.append({'name':'Curved ecological terrace','polygon':r[:-1],'base':0,'top':.32})
+  for i in range(9):
+   a=i/9*math.tau;x=cx+rx*.65*math.cos(a);z=cz+rz*.65*math.sin(a)
+   bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=1,radius=.26,location=V((x,.46,z)));o=bpy.context.object;o.scale=(1,.8,.8);finish(o,'Terrace foliage','green','Vegetation_Props')
  # Natural bank rocks share coarse geometry, not a repeated block border.
  for i in range(16):
   a=i/15*math.pi;x=-6.5+3.4*math.cos(a);z=-6.9+2.9*math.sin(a)
@@ -159,7 +187,7 @@ if not draft:
   for j in range(7):
    a=j*2.4;curve('Emergent reed',[(x+.15*math.cos(a),-.5,z+.15*math.sin(a)),(x+.3*math.cos(a),.3+j%3*.12,z+.3*math.sin(a))],.025,'green','Vegetation_Props')
  # Waterfront seating kept out of bridge cores and NPC clear squares.
- for x,z in [(10.7,-1),(-10.5,2.3),(1.2,10.3)]:
+ for x,z in [(11.8,-2.5),(-11,5.3),(2,11.1)]:
   box('Oak seat',(x,.48,z),(1.5,.13,.5),'wood','Vegetation_Props',.04,True)
   box('Oak seat back',(x,.8,z+.23),(1.5,.5,.08),'wood','Vegetation_Props',.03,True)
   for dx in [-.55,.55]:box('Seat steel leg',(x+dx,.21,z),(.06,.42,.4),'metal','Vegetation_Props')
@@ -181,7 +209,15 @@ def tris(objects):
     v=o.matrix_world@me.vertices[idx].co;out.extend([round(v.x,6),round(v.z,6),round(-v.y,6)])
   e.to_mesh_clear()
  return out
-collision={'solids':solids,'groundPositions':tris(floors),'ceilingPositions':tris(ceilings),'cameraPositions':tris(cameras+ceilings),'waterIsCollider':False}
+support=tris(floors)
+# Authored non-rail solid tops support deliberate jumps. Rail bars remain barriers only.
+for solid in solids:
+ if 'polygon' not in solid:continue
+ from mathutils.geometry import tessellate_polygon
+ r=solid['polygon'];pts=[Vector((x,-z,solid['top']))for x,z in r]
+ for tri in tessellate_polygon([pts]):
+  for idx in tri:support.extend([r[idx][0],solid['top'],r[idx][1]])
+collision={'solids':solids,'groundPositions':support,'ceilingPositions':tris(ceilings),'cameraPositions':tris(cameras+ceilings),'waterIsCollider':False}
 (ROOT/'src/data/flood-control-collision.json').write_text(json.dumps(collision,separators=(',',':')))
 # Render stage is outside the model and is never exported to game.
 world=bpy.data.worlds.new('Neutral soft daylight');scene.world=world;world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.52,.62,.65,1);world.node_tree.nodes['Background'].inputs[1].default_value=.6
@@ -189,10 +225,11 @@ bpy.ops.object.light_add(type='AREA',location=(-9,-13,25));bpy.context.object.da
 bpy.ops.object.light_add(type='SUN',location=(4,-8,16));bpy.context.object.rotation_euler=(.45,-.4,-.6);bpy.context.object.data.energy=2.0;bpy.context.object.data.angle=.3
 scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=24;scene.cycles.use_denoising=False;scene.render.image_settings.file_format='PNG';scene.render.resolution_percentage=100
 scene.view_settings.view_transform='AgX'
-for name,pos in [('hero',(25,24,31)),('front',(0,12,38)),('back',(0,12,-38)),('left',(-38,12,0)),('right',(38,12,0)),('top',(0,42,0))]:
+for name,pos in [('hero',(-25,26,-31)),('front',(0,12,38)),('back',(0,12,-38)),('left',(-38,12,0)),('right',(38,12,0)),('top',(0,42,0))]:
  bpy.ops.object.camera_add(location=V(pos));cam=bpy.context.object;cam.name='VIEW_'+name;target=Vector(V((0,0,0)));cam.rotation_euler=(target-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.type='ORTHO';cam.data.ortho_scale=34
 scene.camera=bpy.data.objects['VIEW_hero'];scene.render.resolution_x=1200;scene.render.resolution_y=1000
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'flood-control-g.blend'))
 report=export_batched(root,ROOT/'public/models/flood-control-g/flood-control-g.glb')
-report.update({'draft':draft,'waterIsCollider':False,'centre':P['centre'],'scale':1,'boundsNominal':[28,8,26],'upperWaterY':-.55,'lowerWaterY':-1.35,'maximumTowerY':6.245,'floorTriangles':len(tri['triangles']) if isinstance(tri,dict) else len(collision['groundPositions'])//9})
+report.update({'draft':draft,'waterIsCollider':False,'centre':P['centre'],'scale':1,'boundsNominal':[28,8,26],'upperWaterY':-.55,'lowerWaterY':-1.35,'maximumTowerY':6.245,'dryFloorTriangles':len(json.loads((ROOT/'src/data/flood-control-floor.json').read_text())['triangles']),'supportTriangles':len(collision['groundPositions'])//9})
+points=[o.matrix_world@Vector(v)for o in root.children_recursive if o.type=='MESH' for v in o.bound_box];report['boundsGame']={'min':[min(v.x for v in points),min(v.z for v in points),min(-v.y for v in points)],'max':[max(v.x for v in points),max(v.z for v in points),max(-v.y for v in points)]}
 (OUT/'model-report.json').write_text(json.dumps(report,indent=2));print('FLOOD_G_SAVED',json.dumps(report),flush=True)

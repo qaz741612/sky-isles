@@ -1,3 +1,5 @@
+最新：檢查點 B 六張同源渲染已完成，見 CHECKPOINT-B.md。後續正執行遊戲整合回歸。
+
 # G 島恢復紀錄
 
 Base 7c1b39b，分支 codex/flood-control-island-g-v1，工作目錄 /workspace/sky-isles-flood-g。
