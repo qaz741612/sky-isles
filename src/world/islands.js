@@ -1,3 +1,4 @@
+import {buildTransportFoundation} from './transport-foundation.js';
 // The eight floating isles: layered rock bases, mint grass tops, scattered
 // props, murals on the home isle, and glowing jump pads.
 import * as THREE from 'three';
@@ -176,7 +177,7 @@ export function buildIslands(scene, rng) {
     addOutline(grass, 0.018);
     grass.userData.island = def.name;
     isle.add(grass);
-    if(def.name==='home')grass.visible=false;else colliders.push(grass);
+    if(def.name==='home'){grass.visible=false;const floor=buildTransportFoundation();isle.add(floor);colliders.push(floor);}else colliders.push(grass);
 
     const depth = 3.2 + def.r * 0.55;
     const rock = buildRockBase(def.r, depth);

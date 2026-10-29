@@ -1,0 +1,7 @@
+{
+  "stage": "foundation only; GLB not yet connected",
+  "all22PathsAndNodesUnchanged": true,
+  "roadWidth": 4.8,
+  "floorAndMouthUnitTest": "passed",
+  "gameControllerTest": "not yet run"
+}
