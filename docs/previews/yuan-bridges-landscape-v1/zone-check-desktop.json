@@ -34,24 +34,44 @@
       "id": "S07",
       "bidirectional": true,
       "noJump": true
+    },
+    {
+      "id": "S08",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S09",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S10",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S11",
+      "bidirectional": true,
+      "noJump": true
     }
   ],
-  "ticks": 4858,
+  "ticks": 6869,
   "respawns": 0,
   "stats": {
-    "lampCount": 8,
-    "sevenLampCount": 8,
-    "lowLightCount": 0,
-    "platformCount": 1,
-    "foliageInstances": 59,
-    "visibleMeshes": 36,
-    "triangles": 15595,
-    "collisionMeshes": 15,
-    "horizontalBarriers": 347,
-    "buildMilliseconds": 83.39999997615814,
+    "lampCount": 15,
+    "sevenLampCount": 13,
+    "lowLightCount": 2,
+    "platformCount": 2,
+    "foliageInstances": 103,
+    "visibleMeshes": 67,
+    "triangles": 26680,
+    "collisionMeshes": 22,
+    "horizontalBarriers": 605,
+    "buildMilliseconds": 86.30000001192093,
     "newRealtimeLights": 0,
-    "geometryBatches": 28,
+    "geometryBatches": 47,
     "perFrameRebuilds": 0,
-    "instanceBatches": 12
+    "instanceBatches": 26
   }
 }

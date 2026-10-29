@@ -2,7 +2,8 @@
   "revision": 1,
   "activeZones": [
     1,
-    2
+    2,
+    3
   ],
   "safeWidth": 4.8,
   "maxLampCount": 42,
@@ -160,7 +161,7 @@
     {
       "id": "S09-L2",
       "route": "S09",
-      "t": 0.2,
+      "t": 0.05,
       "side": -1,
       "type": "low-linear"
     },

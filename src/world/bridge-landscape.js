@@ -10,7 +10,7 @@ function sevenGeometry(){const p=new THREE.CurvePath();p.add(new THREE.LineCurve
 export function buildBridgeLandscape(parent){
  const start=performance.now(),group=new THREE.Group();group.name='bridge-landscape';parent.add(group);
  const batches=new Map(),materials=new Map(),barriers=[],colliders=[],meshes=[],instanced=[];let geometries=0;
- const material=key=>{if(!materials.has(key))materials.set(key,new THREE.MeshStandardMaterial({color:colors[key],roughness:key==='metal'?.45:.9,metalness:key==='metal'?.45:0,flatShading:key==='green'}));return materials.get(key);};
+ const material=key=>{if(!materials.has(key))materials.set(key,new THREE.MeshStandardMaterial({color:key==='green'?0xffffff:colors[key],roughness:key==='metal'?.45:.9,metalness:key==='metal'?.45:0,flatShading:key==='green'}));return materials.get(key);};
  const add=(g,key,zone)=>{const a=g.index?g.toNonIndexed():g;if(a!==g)g.dispose();a.deleteAttribute('uv');a.computeBoundingBox();const c=a.boundingBox.getCenter(new THREE.Vector3()),id=`${zone}:${Math.floor(c.x/64)},${Math.floor(c.z/64)}:${key}`;if(!batches.has(id))batches.set(id,{key,zone,parts:[]});batches.get(id).parts.push(a);};
  const box=(size,pos,key,zone,yaw=0)=>{const g=new THREE.BoxGeometry(...size);g.rotateY(yaw);g.translate(...pos);add(g,key,zone);};
  const beam=(a,b,width,height,key,zone)=>{const from=new THREE.Vector3(...a),to=new THREE.Vector3(...b),d=to.clone().sub(from);if(d.length()<.002)return;const g=new THREE.BoxGeometry(width,height,d.length());g.applyMatrix4(new THREE.Matrix4().compose(from.lerp(to,.5),new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,0,1),d.normalize()),new THREE.Vector3(1,1,1)));add(g,key,zone);};
@@ -35,7 +35,7 @@ export function buildBridgeLandscape(parent){
   const foliage=new THREE.IcosahedronGeometry(1,1);geometries++;
   instances(z.foliage,foliage,material('green'),(o,_item,i)=>{o.scale.set(.20,.19+(i%3)*.025,1.05);},'integrated-low-foliage');
   const blooms=z.id===2||z.id===3?[]:z.foliage.filter(f=>f.flower),petals=[];for(let i=0;i<5;i++){const g=new THREE.CircleGeometry(.047,5);g.rotateX(-Math.PI/2);g.translate(Math.cos(i/5*Math.PI*2)*.045,0,Math.sin(i/5*Math.PI*2)*.045);petals.push(g);}const flower=mergeGeometries(petals);petals.forEach(g=>g.dispose());geometries++;
-  instances(blooms,flower,material(z.id===4||z.id===5?'pink':'flower'),o=>{o.position.y=.59;o.scale.set(1,.7,1);},'low-floral-ribbon');
+  instances(blooms,flower,material(z.id===4||z.id===5?'pink':'flower'),o=>{o.position.y=.68;o.scale.set(1,.7,1);},'low-floral-ribbon');
  }
  for(const guide of plan.guides??[]){const[x,z]=guide.position,[tx,tz]=guide.tangent,nx=-tz,nz=tx;const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute([x+tx*.32,.012,z+tz*.32,x-tx*.25+nx*.23,.012,z-tz*.25+nz*.23,x-tx*.10,.012,z-tz*.10,x+tx*.32,.012,z+tz*.32,x-tx*.10,.012,z-tz*.10,x-tx*.25-nx*.23,.012,z-tz*.25-nz*.23],3));g.computeVertexNormals();add(g,'rim',3);}
  const seven=plan.lamps.filter(l=>l.type==='seven'),low=plan.lamps.filter(l=>l.type!=='seven'),metal=material('metal');
