@@ -1,0 +1,51 @@
+
+Running 20 tests using 1 worker
+
+
+(node:325023) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/20] [desktop] › test/elevated-station.e2e.js:4:1 › V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information
+[2/20] [desktop] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+[desktop] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+{"gateCount":4,"cameraCases":60,"minimumCameraDistance":3.4576197436245772,"head":[{"x":1.1,"z":0.4,"floor":0.125,"ceiling":2.7100000381469727,"maxHead":2.7050000381469728},{"x":7.5,"z":-3,"floor":0.10999999940395355,"ceiling":2.640000104904175,"maxHead":2.635000104904175}],"sourceTriangles":380999,"selectedTriangles":356223,"runtimeMeshes":60,"npc":"reservation only; no NPC body/dialogue to test","errors":[]}
+
+[3/20] [desktop] › test/station-headroom.e2e.js:2:1 › imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged
+[desktop] › test/station-headroom.e2e.js:2:1 › imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged
+{"records":[{"name":"front-eave","floor":2.220446049250313e-16,"ceiling":2.694999933242798,"maxFoot":0.4700000476837157},{"name":"rear-deck","floor":4.440892098500626e-16,"ceiling":3.2139999866485596,"maxFoot":1.5183333333333344},{"name":"open-air","floor":-2.220446049250313e-16,"maxFoot":1.518333333333334}],"baseline":1.518333333333334,"respawns":0}
+
+[4/20] [desktop] › test/transport-v4.e2e.js:4:1 › V9 replaces legacy transport geometry without changing the policy or chime identities
+[5/20] [desktop] › test/transport-walk.e2e.js:8:1 › transport portrait and landscape keep policy, panorama and existing input available
+[6/20] [desktop] › test/transport-walk.e2e.js:22:1 › original home chime responds to native keyboard or touchscreen interaction
+[7/20] [desktop] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and locked elevated train display
+[8/20] [desktop] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+[desktop] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+{"device":"keyboard","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":80657,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.1209782489550835,0,0.006913042797433928]},"endpoint":[0.1209782489550835,0,0.006913042797433928],"returned":[0.1209782489550835,0.4,0.006913042797433928],"yawUnchanged":true}
+
+[9/20] [desktop] › test/walkways.e2e.js:75:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker
+[10/20] [desktop] › test/walkways.e2e.js:98:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+
+(node:325793) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[11/20] [mobile] › test/elevated-station.e2e.js:4:1 › V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information
+[12/20] [mobile] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+[mobile] › test/parent-child.e2e.js:2:1 › approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama
+{"gateCount":4,"cameraCases":60,"minimumCameraDistance":3.457619779731386,"head":[{"x":1.1,"z":0.4,"floor":0.125,"ceiling":2.7100000381469727,"maxHead":2.7050000381469728},{"x":7.5,"z":-3,"floor":0.10999999940395355,"ceiling":2.640000104904175,"maxHead":2.635000104904175}],"sourceTriangles":380999,"selectedTriangles":356223,"runtimeMeshes":60,"npc":"reservation only; no NPC body/dialogue to test","errors":[]}
+
+[13/20] [mobile] › test/station-headroom.e2e.js:2:1 › imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged
+[mobile] › test/station-headroom.e2e.js:2:1 › imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged
+{"records":[{"name":"front-eave","floor":2.220446049250313e-16,"ceiling":2.694999933242798,"maxFoot":0.4700000476837157},{"name":"rear-deck","floor":4.440892098500626e-16,"ceiling":3.2139999866485596,"maxFoot":1.5183333333333344},{"name":"open-air","floor":-2.220446049250313e-16,"maxFoot":1.518333333333334}],"baseline":1.518333333333334,"respawns":0}
+
+[14/20] [mobile] › test/transport-v4.e2e.js:4:1 › V9 replaces legacy transport geometry without changing the policy or chime identities
+[15/20] [mobile] › test/transport-walk.e2e.js:8:1 › transport portrait and landscape keep policy, panorama and existing input available
+[16/20] [mobile] › test/transport-walk.e2e.js:22:1 › original home chime responds to native keyboard or touchscreen interaction
+[17/20] [mobile] › test/transport.e2e.js:3:1 › transport scene preserves policy picking, jumping, orbit and locked elevated train display
+[18/20] [mobile] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+[mobile] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+{"device":"single-pointer joystick","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":84346,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.030636857165119796,0,0.0017506775522923874]},"endpoint":[0.030636857165119796,0,0.0017506775522923874],"returned":[0.030636857165119796,0.4,0.0017506775522923874],"yawUnchanged":true}
+
+[19/20] [mobile] › test/walkways.e2e.js:75:1 › guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker
+[20/20] [mobile] › test/walkways.e2e.js:98:1 › native single-finger release and cancellation reset the stick and stop without camera turning
+  1 skipped
+  19 passed (16.5m)

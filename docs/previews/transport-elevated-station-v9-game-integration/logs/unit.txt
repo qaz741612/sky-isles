@@ -1,0 +1,25 @@
+
+> sky-isles@1.0.0 test
+> node --test test/*.test.js
+
+✔ test/camera-clearance.test.js (1014.926166ms)
+✔ test/camera-profile.test.js (270.380073ms)
+✔ test/elevated-foundation.test.js (460.724609ms)
+✔ test/movement.test.js (243.280327ms)
+✔ test/panorama.test.js (408.512705ms)
+✔ test/parent-child-model.test.js (15503.993348ms)
+✔ test/policy-scenery.test.js (5435.856972ms)
+✔ test/puzzle.test.js (171.079678ms)
+✔ test/rng.test.js (191.562307ms)
+✔ test/station-model.test.js (878.617852ms)
+✔ test/transport.test.js (2646.553814ms)
+✔ test/walkways.test.js (22093.381234ms)
+✔ test/yuan-size-b.test.js (191.336612ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 49593.070071

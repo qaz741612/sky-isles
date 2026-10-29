@@ -1,0 +1,17 @@
+
+> sky-isles@1.0.0 build
+> vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 43 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   14.90 kB │ gzip:   4.42 kB
+dist/assets/index-BWBnBc_d.js  2,763.20 kB │ gzip: 505.46 kB │ map: 3,317.14 kB
+
+(!) Some chunks are larger than 2400 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.87s

@@ -1,0 +1,14 @@
+
+Running 2 tests using 1 worker
+
+
+(node:325983) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/2] [desktop] › test/elevated-guards.e2e.js:3:1 › new V9 plinth visible north/east/west guards stop ordinary live Player walking
+
+(node:326324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/2] [mobile] › test/elevated-guards.e2e.js:3:1 › new V9 plinth visible north/east/west guards stop ordinary live Player walking
+  2 passed (2.4m)

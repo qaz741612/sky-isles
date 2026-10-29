@@ -1,0 +1,160 @@
+[
+  {
+    "device": "desktop viewport",
+    "viewport": {
+      "width": 1200,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "notes": "SwiftShader software GPU, local server, brief stationary spawn sample. Not real phone/hardware FPS or WAN loading benchmark.",
+    "errors": [],
+    "intervalsMilliseconds": [
+      15601.099999964237,
+      21520.400000035763,
+      13190.699999988079,
+      16105.899999976158,
+      18308.600000023842,
+      19284.599999964237,
+      14999.200000047684,
+      20295.799999952316,
+      20734.600000023842,
+      20298.600000023842,
+      16886.69999998808,
+      18115.69999998808
+    ],
+    "frames": 12,
+    "observedFPS": 0.055725337242781496,
+    "renderer": {
+      "frame": 18,
+      "calls": 415,
+      "triangles": 1173226,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 194,
+      "textures": 19
+    },
+    "source": {
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "downloadMilliseconds": 729.3999999761581,
+      "decodeMilliseconds": 205.10000002384186,
+      "totalMilliseconds": 934.5,
+      "triangles": 201740,
+      "materials": 33,
+      "runtimeMeshes": 50,
+      "groundTriangles": 1890,
+      "ceilingTriangles": 844,
+      "buildMilliseconds": 157.80000001192093,
+      "scale": 1,
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "upperAccess": "closed display; not a usable stair or elevator",
+      "train": "locked static display; not boardable",
+      "firstFrameMilliseconds": 8088.300000011921
+    },
+    "stationBounds": {
+      "min": [
+        -10.18742561340332,
+        -1.614979338645935,
+        -11.19342041015625
+      ],
+      "max": [
+        10.193004608154297,
+        5.813000011444092,
+        8.648730278015137
+      ]
+    },
+    "boundTextureCount": 1,
+    "missingTextureImages": [],
+    "cameraCPUQueries": {
+      "queries": 53,
+      "candidates": 0,
+      "maxCandidates": 0
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  {
+    "device": "mobile viewport",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "deviceScaleFactor": 1,
+    "notes": "SwiftShader software GPU, local server, brief stationary spawn sample. Not real phone/hardware FPS or WAN loading benchmark.",
+    "errors": [],
+    "intervalsMilliseconds": [
+      6624.900000035763,
+      6171.199999988079,
+      8082,
+      7706.800000011921,
+      6306.5,
+      6075.399999976158,
+      5967.199999988079,
+      7089.300000011921,
+      7098.199999988079,
+      6276.100000023842,
+      6793.399999976158,
+      6597.200000047684
+    ],
+    "frames": 12,
+    "observedFPS": 0.1485365437030769,
+    "renderer": {
+      "frame": 18,
+      "calls": 323,
+      "triangles": 1097788,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 165,
+      "textures": 17
+    },
+    "source": {
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "downloadMilliseconds": 472.5,
+      "decodeMilliseconds": 89.90000003576279,
+      "totalMilliseconds": 562.4000000357628,
+      "triangles": 201740,
+      "materials": 33,
+      "runtimeMeshes": 50,
+      "groundTriangles": 1890,
+      "ceilingTriangles": 844,
+      "buildMilliseconds": 50,
+      "scale": 1,
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "upperAccess": "closed display; not a usable stair or elevator",
+      "train": "locked static display; not boardable",
+      "firstFrameMilliseconds": 15139.199999988079
+    },
+    "stationBounds": {
+      "min": [
+        -10.18742561340332,
+        -1.614979338645935,
+        -11.19342041015625
+      ],
+      "max": [
+        10.193004608154297,
+        5.813000011444092,
+        8.648730278015137
+      ]
+    },
+    "boundTextureCount": 1,
+    "missingTextureImages": [],
+    "cameraCPUQueries": {
+      "queries": 53,
+      "candidates": 0,
+      "maxCandidates": 0
+    },
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  }
+]
