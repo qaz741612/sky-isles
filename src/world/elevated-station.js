@@ -27,7 +27,7 @@ function prism(s){
  const g=new THREE.ExtrudeGeometry(shape,{depth:s.top-s.base,bevelEnabled:false});g.rotateX(-Math.PI/2);g.translate(0,s.base,0);
  const mesh=new THREE.Mesh(g,proxyMaterial);mesh.name=`camera:${s.name}`;mesh.visible=false;return mesh;
 }
-function solidBarriers(s){return s.polygon.slice(1).map((b,i)=>({a:{x:s.polygon[i][0],y:s.base,z:s.polygon[i][1]},b:{x:b[0],y:s.base,z:b[1]},height:s.top-s.base,thickness:0,capsuleHeight:1.6,kind:s.kind,source:s.name}));}
+function solidBarriers(s){return s.polygon.slice(1).map((b,i)=>({a:{x:s.polygon[i][0],y:s.base,z:s.polygon[i][1]},b:{x:b[0],y:s.base,z:b[1]},height:s.top-s.base,thickness:.025,capsuleHeight:1.6,kind:s.kind,source:s.name}));}
 export function buildElevatedStation(source){
  if(!source)throw new Error('Locked elevated station must load before world construction');
  const begin=performance.now(),group=new THREE.Group();group.name='elevated-station-v9';

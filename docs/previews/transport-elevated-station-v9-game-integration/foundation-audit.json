@@ -1,0 +1,11 @@
+{
+  "roadWidth": 4.8,
+  "nodePositionsAndRadiiUnchanged": true,
+  "all22PathSamplesUnchanged": true,
+  "otherSevenIslandRoadPavingUnchanged": true,
+  "foreignRoadOverlapArea": 0,
+  "previousHomeCircleArea": 254.46900494077323,
+  "authoredHomeFootprintArea": 346.35533648142393,
+  "homeChange": "Local irregular V9 plinth only; world nodes, route control points and compression untouched",
+  "grade": 0
+}

@@ -30,15 +30,6 @@ test('station fits radius 9 without changing source proportions; original doorwa
  assert.ok(station.barriers.length>200);assert.ok(station.barriers.every(w=>w.height>0&&Number.isFinite(w.a.x)&&w.source));
 });
 
-test('retained animated train swept volume never intersects any actual imported station triangle',async()=>{
- const {buildTransport}=await import('./helpers/station-fixture.js');
- const transport=buildTransport({name:'home',group:new THREE.Group()},()=>new THREE.Group()),swept=new THREE.Box3();
- for(let i=0;i<=64;i++){transport.update(i*2*Math.PI/(64*transport.plan.rail.speed));transport.group.updateMatrixWorld(true);swept.union(new THREE.Box3().setFromObject(transport.train,true));}
- const triangle=new THREE.Triangle(),collisions=[];
- for(const mesh of transport.station.meshes){const p=mesh.geometry.attributes.position;for(let i=0;i<p.count;i+=3){triangle.a.fromBufferAttribute(p,i);triangle.b.fromBufferAttribute(p,i+1);triangle.c.fromBufferAttribute(p,i+2);if(swept.intersectsTriangle(triangle))collisions.push(`${mesh.name}:${i/3}`);}}
- assert.deepEqual(collisions,[],'Includes original platform canopy/posts, not only a planned exclusion box');
-});
-
 test('actual GLB lintel and canopy undersides stop rising heads without changing movement outside the station',()=>{
  const station=buildStationModel(source),p=new THREE.Vector3(-1.277,.7,-3.8),move={vy:7};station.group.updateMatrixWorld(true);
  assert.equal(station.constrainHead(p,.2479,move),true);assert.equal(move.vy,0);assert.ok(p.y<.4,`lintel head clearance ${p.y}`);

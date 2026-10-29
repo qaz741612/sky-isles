@@ -4,39 +4,15 @@
   "station": {
     "source": "locked elevated station ca94f48, scale1"
   },
-  "platform": {
-    "center": [
-      3,
-      0.06,
-      -6.35
-    ],
-    "size": [
-      3.4,
-      0.12,
-      1.0
-    ],
-    "access": [
-      4.9,
-      0,
-      -6.35
-    ]
-  },
   "rail": {
     "center": [
       0,
-      0,
-      -7.7
+      3.675,
+      -8.2
     ],
-    "length": 6.6,
-    "exclusion": [
-      -3.4,
-      -8.25,
-      3.4,
-      -7.05
-    ],
-    "trainHalfLength": 1.25,
-    "travel": 1.35,
-    "speed": 0.16
+    "length": 18.9,
+    "staticDisplay": true,
+    "note": "Locked V9 train; no boarding or procedural movement"
   },
   "npcReservation": {
     "position": [
@@ -58,7 +34,7 @@
       2.8
     ],
     "implemented": false,
-    "note": "Unused V3 reservation relocated within home to keep culture wall and approach open; no NPC created"
+    "note": "Reservation only; no NPC. Ground position checked against V9 physical solids; no claim of future 3x3 dialogue layout validation."
   },
   "murals": {
     "x": [
@@ -100,7 +76,7 @@
     ]
   },
   "roadExhibit": null,
-  "edgeSource": "Shared world island+road union: single external boundary owned by bridges",
+  "edgeSource": "V9 authored plinth guards, matched collision; unchanged road union owns bridge guards",
   "gateRoutes": [
     "S09",
     "S10",
@@ -111,76 +87,5 @@
     0,
     0.5,
     3.5
-  ],
-  "plazaOutline": [
-    [
-      -7,
-      -1.2
-    ],
-    [
-      -6.5,
-      -2.4
-    ],
-    [
-      -4.8,
-      -3.1
-    ],
-    [
-      -4.8,
-      -4.8
-    ],
-    [
-      -0.7,
-      -4.8
-    ],
-    [
-      0,
-      -5.7
-    ],
-    [
-      5.8,
-      -5.7
-    ],
-    [
-      6.3,
-      -3.1
-    ],
-    [
-      6.8,
-      -1.4
-    ],
-    [
-      6.8,
-      1.1
-    ],
-    [
-      3.6,
-      1.8
-    ],
-    [
-      1.8,
-      4.1
-    ],
-    [
-      -1.9,
-      4.1
-    ],
-    [
-      -3.5,
-      2.2
-    ],
-    [
-      -6.5,
-      1.2
-    ]
-  ],
-  "bench": {
-    "bounds": [
-      5.45,
-      -6.2,
-      5.95,
-      -4.9
-    ],
-    "height": 0.9
-  }
+  ]
 }

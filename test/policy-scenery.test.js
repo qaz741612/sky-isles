@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import {buildPolicyScenery,THEMES,PLACE_PLAN} from '../src/world/policy-scenery.js';
 import {ISLANDS} from '../src/world/islands.js';
-import {buildTransport} from './helpers/station-fixture.js';
+import {buildTransport} from './helpers/elevated-fixture.js';
 import layout from '../src/data/yuan-layout.json' with {type:'json'};
 import surface from '../src/data/yuan-surface.json' with {type:'json'};
 import {moveWithGuards,nearestOnSegment} from '../src/sim/walkways.js';
@@ -22,7 +22,7 @@ test('all scenery preserves the 3.9-wide player-centre corridor along every fixe
 });
 test('every island has independent exposed union edges and an accessible future NPC reservation',()=>{
  const{s,h}=fixture(),walls=[...s.barriers,...h.barriers];
- for(const i of ISLANDS){const p=PLACE_PLAN[i.name],edges=surface.barriers.filter(b=>b.island===i.name);assert.ok(edges.length>=10,i.name);assert.equal(p.npc.implemented,false);
+ for(const i of ISLANDS){const p=i.name==='home'?{npc:h.plan.npcReservation}:PLACE_PLAN[i.name],edges=surface.barriers.filter(b=>b.island===i.name);assert.ok(edges.length>=10,i.name);assert.equal(p.npc.implemented,false);
   for(const v of[p.npc.position,p.npc.playerStop]){assert.ok(Math.hypot(v[0],v[2])<8.3);for(const w of walls){const q=nearestOnSegment({x:i.x+v[0],z:i.z+v[2]},w.a,w.b);assert.ok(Math.hypot(q.x-i.x-v[0],q.z-i.z-v[2])>.45,`${i.name} reservation blocked by ${w.kind}`);}}
  }
 });

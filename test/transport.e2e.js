@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-test('transport scene preserves policy picking, jumping, orbit and bounded train animation', async ({ page }) => {
+test('transport scene preserves policy picking, jumping, orbit and locked elevated train display', async ({ page }) => {
   await page.goto('/');
-  await page.waitForFunction(() => window.__skyisles);
+  await page.waitForFunction(() => window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:150000});await page.evaluate(()=>{window.__skyisles.world.renderer.render=()=>{};});
   await page.locator('#title-screen .tap').click();
   if (await page.locator('#touch-help').isVisible()) await page.locator('#help-close').click();
   await page.waitForTimeout(1500);
@@ -14,9 +14,9 @@ test('transport scene preserves policy picking, jumping, orbit and bounded train
       owners: w.islands.islands.filter((i) => i.group.getObjectByName('transport-theme')).map((i) => i.name) };
   });
   expect(before.owners).toEqual(['home']);
-  expect(before.colliders).toEqual(expect.arrayContaining(['station-platform', 'Station_interior_floor']));
+  expect(before.colliders).toEqual(expect.arrayContaining(['station-upper-support']));
   expect(before.notice).toContain('非實際工程');
-  await expect.poll(() => page.evaluate(() => window.__skyisles.world.transport.train.position.x)).not.toBe(before.train);
+  expect(await page.evaluate(() => window.__skyisles.world.transport.train.position.x)).toBe(before.train); // locked GLB display, no synthetic old train animation
   await page.keyboard.down('Space');
   await expect.poll(() => page.evaluate(() => window.__skyisles.getState().playerPos.y)).toBeGreaterThan(0.4);
   await page.keyboard.up('Space');
@@ -34,7 +34,7 @@ test('transport scene preserves policy picking, jumping, orbit and bounded train
   await page.waitForTimeout(1800);
   const xy = await page.evaluate(() => {
     const w = window.__skyisles.world;
-    const p = w.islands.islands[0].pos.clone().set(-3.7, 1.3, -3.45).project(w.camera);
+    const p = w.islands.islands[0].pos.clone().set(0, 1.3, -3.0).project(w.camera);
     return { x: (p.x + 1) * innerWidth / 2, y: (1 - p.y) * innerHeight / 2 };
   });
   await page.mouse.click(xy.x, xy.y);

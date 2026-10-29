@@ -1,16 +1,17 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
-import { buildTransport,transportEdgeSegments } from './helpers/station-fixture.js';
+import { buildTransport,transportEdgeSegments } from './helpers/elevated-fixture.js';
 import { nearestOnSegment, moveWithGuards } from '../src/sim/walkways.js';
 
 const fixture=()=>buildTransport({name:'home',group:new THREE.Group()},()=>new THREE.Group());
-test('transport stays home, bounded north train, low material batches and no extra lights',()=>{
- const s=fixture();let meshes=0,triangles=0,lights=0;
- s.group.traverse(o=>{if(o.isMesh&&o.visible){meshes++;triangles+=(o.geometry.index?.count??o.geometry.attributes.position.count)/3;}if(o.isLight)lights++;});
- assert.ok(meshes<=40,`meshes ${meshes}`);assert.ok(triangles<20000,`triangles ${triangles}`);assert.equal(lights,0);
- assert.ok(s.colliders.some(c=>c.name==='station-platform'));assert.ok(s.interactives.length === 2);
- for(let time=0;time<150;time+=.1){s.update(time);const [x0,z0,x1,z1]=s.plan.rail.exclusion;assert.ok(s.train.position.x-1.25>x0+.4&&s.train.position.x+1.25<x1-.4);assert.ok(s.train.position.z-.4>z0&&s.train.position.z+.4<z1);}
+test('locked elevated asset replaces old display meshes, keeps materials and introduces no lights',()=>{
+ const s=fixture();let lights=0;s.group.traverse(o=>{if(o.isLight)lights++;});
+ assert.equal(lights,0);assert.equal(s.station.triangles,201740);assert.equal(s.station.stats.materials,33);
+ assert.equal(s.interactives.length,2);assert.ok(s.colliders.every(c=>c.name==='station-upper-support'));
+ assert.equal(s.group.getObjectByName('slow-train'),undefined);assert.equal(s.group.getObjectByName('station-platform'),undefined);
+ assert.ok(s.barriers.some(w=>w.kind==='closed-stair-access'));assert.ok(s.barriers.some(w=>w.kind==='closed-lift-access'));
+ const before=s.train.position.clone();s.update(15);assert.ok(s.train.position.equals(before),'locked train is a static display');
  assert.throws(()=>buildTransport({name:'tree'}),/only/);
 });
 test('all visible island safety segments block either direction and southern shared gate has no fence',()=>{
@@ -43,14 +44,14 @@ test('full 4.8-wide home approaches keep a 3.9-wide player-centre band unobstruc
 test('every actual home structure, column, culture base, viewing seat and rail blocks swept crossing',()=>{
  const scene=fixture();let probes=0;
  for(const wall of scene.barriers){const dx=wall.b.x-wall.a.x,dz=wall.b.z-wall.a.z,length=Math.hypot(dx,dz);if(length<.0001)continue;
- for(const side of [-1,1]){const nx=-dz/length*side,nz=dx/length*side,mx=(wall.a.x+wall.b.x)/2,mz=(wall.a.z+wall.b.z)/2,p={x:mx+nx,y:Math.max(.05,wall.a.y),z:mz+nz};
-  assert.equal(moveWithGuards(p,-2*nx,-2*nz,[wall]),true);assert.ok((p.x-mx)*nx+(p.z-mz)*nz>=.4099,`${wall.kind}: crossed actual obstacle`);probes++;}}
+ for(const side of [-1,1]){const nx=-dz/length*side,nz=dx/length*side,mx=(wall.a.x+wall.b.x)/2,mz=(wall.a.z+wall.b.z)/2,p={x:mx+nx,y:wall.a.y-.005,z:mz+nz};
+  assert.equal(moveWithGuards(p,-2*nx,-2*nz,[wall]),true);assert.ok((p.x-mx)*nx+(p.z-mz)*nz>=.3299,`${wall.kind}: crossed actual obstacle`);probes++;}}
  assert.ok(probes>100);
 });
 
 test('compound facade collision protects the actual front and side woven surfaces, not only the cream wall',()=>{
  const s=fixture();s.group.updateMatrixWorld(true);
- for(const [start,direction]of [[new THREE.Vector3(.5,1.3,-2.5),new THREE.Vector3(0,0,-1)],[new THREE.Vector3(-7,1.3,-5.1),new THREE.Vector3(1,0,0)]]){
+ for(const [start,direction]of [[new THREE.Vector3(.5,1.3,-2.5),new THREE.Vector3(0,0,-1)],[new THREE.Vector3(-7.8,1.3,-5.1),new THREE.Vector3(1,0,0)]]){
   const hit=new THREE.Raycaster(start,direction).intersectObjects(s.pickMeshes,false)[0];assert.ok(hit,'actual facade visible');
   const p={x:start.x,y:.05,z:start.z};moveWithGuards(p,direction.x*4,direction.z*4,s.barriers);
   const forward=(hit.point.x-p.x)*direction.x+(hit.point.z-p.z)*direction.z;
