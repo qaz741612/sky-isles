@@ -29,6 +29,11 @@ export function compileLandscape({paths,nodes,coreDomain,islePolys,footprint,con
   if(inside)out.islandFinishes.push(...clean(polygon.intersection(band(path,()=>-1.5,()=>1.5),circleDomain)));
   const finish=clean(polygon.difference(band(path,()=>-2.30,()=>2.30),circleDomain));out.finishes.push(...finish);
  }
+ const terminals=[];
+ for(const id of['S20','S22']){if(!active(id))continue;const path=paths.find(p=>p.id===id),q=sample(path,1),zone=zoneFor(id),circle=r=>[Array.from({length:33},(_,i)=>[q.x+Math.cos(i/32*Math.PI*2)*r,q.z+Math.sin(i/32*Math.PI*2)*r])];additions.push(snap(circle(3.3)));
+  const outer=[],inner=[];for(let i=0;i<=20;i++){const a=-Math.PI/2+i/20*Math.PI;outer.push([q.x+(q.tx*Math.cos(a)+q.nx*Math.sin(a))*3.15,q.z+(q.tz*Math.cos(a)+q.nz*Math.sin(a))*3.15]);inner.push([q.x+(q.tx*Math.cos(a)+q.nx*Math.sin(a))*2.64,q.z+(q.tz*Math.cos(a)+q.nz*Math.sin(a))*2.64]);}
+  const ring=[...outer,...inner.reverse(),outer[0]],out=zones.find(z=>z.id===zone.id);out.beds.push(...clean(polygon.difference(snap([ring]),protectedDomain)));out.shoulders.push(...clean(polygon.difference(snap(circle(3.3)),coreDomain)));terminals.push({route:id,position:[q.x,0,q.z],tangent:[q.tx,q.tz],normal:[q.nx,q.nz]});
+ }
  const platforms=[];
  for(const p of config.platforms){if(!active(p.route))continue;const path=paths.find(v=>v.id===p.route),q=sample(path,p.t),z=zoneFor(p.route);if(isleDistance(q.x,q.z)<4)continue;
   const ring=Array.from({length:25},(_,i)=>{const a=i/24*Math.PI*2,along=Math.cos(a)*2.75,out=p.side*(3.65+Math.sin(a)*1.65);return[q.x+q.tx*along+q.nx*out,q.z+q.tz*along+q.nz*out];});
@@ -37,6 +42,7 @@ export function compileLandscape({paths,nodes,coreDomain,islePolys,footprint,con
  // Shared bay entrances replace the bed, never a low wall across the way in.
  for(const z of zones)if(z.beds.length&&platforms.length)z.beds=clean(polygon.difference(z.beds,...platforms.map(p=>p.domain)));
  let domain=coreDomain;for(const add of additions)domain=polygon.union(domain,add);domain=clean(domain);
+ let ownedBeds=[];for(const z of zones){if(z.shoulders.length)z.shoulders=clean(polygon.union(...z.shoulders.map(r=>[r])));if(z.beds.length){z.beds=clean(polygon.difference(polygon.union(...z.beds.map(r=>[r])),ownedBeds));ownedBeds=polygon.union(ownedBeds,z.beds);}}
  const safeFromRoad=(x,z,r=.18)=>paths.every(p=>p.points.every((a,i)=>i===0||distance(x,z,[p.points[i-1].x,p.points[i-1].z],[a.x,a.z])>2.4+r));
  const guides=[];for(const p of paths.filter(p=>active(p.id)&&zoneFor(p.id).id===3))for(const t of[.35,.65]){const q=sample(p,t);if(isleDistance(q.x,q.z)>.5)guides.push({route:p.id,position:[q.x,q.z],tangent:[q.tx,q.tz]});}
  const lamps=[],rejected=[];
@@ -46,5 +52,6 @@ export function compileLandscape({paths,nodes,coreDomain,islePolys,footprint,con
  }
  if(lamps.length>config.maxLampCount)throw Error('Lamp budget exceeded');
  for(const p of paths){if(!active(p.id))continue;const out=zones.find(z=>z.id===zoneFor(p.id).id);for(let s=1.8;s<p.length-1.5;s+=1.8){const q=sample(p,s/p.length);for(const side of[-1,1]){const x=q.x+q.nx*2.96*side,z=q.z+q.nz*2.96*side;if(contains(out.beds,x,z)&&safeFromRoad(x,z,.21)&&[-1,1].every(a=>[-1,1].every(b=>safeFromRoad(x+q.tx*a*1.05+q.nx*b*.20,z+q.tz*a*1.05+q.nz*b*.20,.025))))out.foliage.push({position:[x,.39,z],yaw:Math.atan2(q.tx,q.tz),flower:Math.round(s/1.8)%3===0});}}}
- return{domain,data:{revision:config.revision,activeZones:config.activeZones,safeWidth:4.8,routes,zones,platforms,guides,lamps,rejectedLamps:rejected,coreDomain,stats:{lampCount:lamps.length,sevenLampCount:lamps.filter(l=>l.type==='seven').length,lowLightCount:lamps.filter(l=>l.type!=='seven').length,platformCount:platforms.length,foliageInstances:zones.reduce((n,z)=>n+z.foliage.length,0)}}};
+ for(const t of terminals){const out=zones.find(z=>z.id===5),[x,,z]=t.position,[tx,tz]=t.tangent,[nx,nz]=t.normal;for(let i=0;i<=10;i++){const a=-Math.PI/2+i/10*Math.PI,px=x+(tx*Math.cos(a)+nx*Math.sin(a))*2.94,pz=z+(tz*Math.cos(a)+nz*Math.sin(a))*2.94;if(contains(out.beds,px,pz))out.foliage.push({position:[px,.39,pz],yaw:Math.atan2(-tx*Math.sin(a)+nx*Math.cos(a),-tz*Math.sin(a)+nz*Math.cos(a)),alongScale:.65,flower:i%2===0});}}
+ return{domain,data:{revision:config.revision,activeZones:config.activeZones,safeWidth:4.8,routes,zones,platforms,terminals,guides,lamps,rejectedLamps:rejected,coreDomain,stats:{lampCount:lamps.length,sevenLampCount:lamps.filter(l=>l.type==='seven').length,lowLightCount:lamps.filter(l=>l.type!=='seven').length,platformCount:platforms.length,foliageInstances:zones.reduce((n,z)=>n+z.foliage.length,0)}}};
 }

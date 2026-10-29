@@ -1,5 +1,6 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import * as THREE from 'three';import polygon from 'polygon-clipping';
 import plan from '../src/data/bridge-landscape.json' with {type:'json'};
+import surface from '../src/data/yuan-surface.json' with {type:'json'};
 import layout from '../src/data/yuan-layout.json' with {type:'json'};
 import {buildBridgeLandscape} from '../src/world/bridge-landscape.js';
 import {nearestOnSegment,moveWithGuards} from '../src/sim/walkways.js';
@@ -17,3 +18,5 @@ test('real landscape geometry is instanced, bounded, has no live lights, and lea
  for(const path of layout.paths)for(const p of path.points)for(const wall of s.barriers){if(wall.a.y>1.6)continue;const q=nearestOnSegment(p,wall.a,wall.b);assert.ok(Math.hypot(p.x-q.x,p.z-q.z)>2.4,`${path.id} blocked by ${wall.source}`);}
  for(const wall of s.barriers){const dx=wall.b.x-wall.a.x,dz=wall.b.z-wall.a.z,d=Math.hypot(dx,dz);if(d<.001)continue;const p={x:(wall.a.x+wall.b.x)/2-dz/d,y:wall.a.y,z:(wall.a.z+wall.b.z)/2+dx/d};assert.equal(moveWithGuards(p,2*dz/d,-2*dx/d,[wall]),true);}
 });
+
+test('expanded surface retains the complete original walkable domain and has one outside boundary network',()=>{assert.ok(polygon.difference(plan.coreDomain,surface.domain).reduce((n,p)=>n+area(p[0]),0)<.001);assert.equal(surface.domain.length,1);const keys=new Set();for(const w of surface.barriers){const a=[w.a.x,w.a.z].join(','),b=[w.b.x,w.b.z].join(','),key=[a,b].sort().join('|');assert.ok(!keys.has(key),'duplicate exterior rail');keys.add(key);}});
