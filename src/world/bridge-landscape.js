@@ -1,5 +1,6 @@
 // MIT. Continuous cantilever landscape, shared materials, static region batches.
 import * as THREE from 'three';
+import {stationHeadroom} from './station-model.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import plan from '../data/bridge-landscape.json' with {type:'json'};
 const colors={stone:0xc7c4b3,rim:0xe0d7bf,soil:0x6a7954,wood:0xba9269,metal:0x355e63,green:0x769b62,flower:0xf2ddaf,finish:0xc8c6b7,rock:0x909d95,transit:0xa9b8b5,pink:0xe5c0b1,glow:0xffe9c9};
@@ -45,7 +46,7 @@ export function buildBridgeLandscape(parent){
  
  const lowPost=new THREE.BoxGeometry(.10,.43,.10);lowPost.translate(0,.215,0);instances(low,lowPost,metal,()=>{},'S09-low-light-post');
  const lowBar=new THREE.BoxGeometry(.52,.035,.1);lowBar.translate(0,.43,0);instances(low,lowBar,light,()=>{},'S09-low-light-line');
- for(const l of plan.lamps){const[x,,z]=l.position,r=.065;boundary([[x-r,z-r],[x+r,z-r],[x+r,z+r],[x-r,z+r],[x-r,z-r]],l.type==='seven'?3.1:.45,'lamp:'+l.id,0,.01);box([.19,.075,.19],[x,.0375,z],'metal',l.zone);}
+ for(const l of plan.lamps){const[x,,z]=l.position,r=.065;boundary([[x-r,z-r],[x+r,z-r],[x+r,z+r],[x-r,z+r],[x-r,z-r]],l.type==='seven'?3.1:.45,'lamp:'+l.id,0,.01);box([.19,.075,.19],[x,.0375,z],'metal',l.zone);const arm=l.type==='seven'?[[.16,-.06],[.76,-.06],[.76,.06],[.16,.06],[.16,-.06]]:[[-.26,-.05],[.26,-.05],[.26,.05],[-.26,.05],[-.26,-.05]];const c=Math.cos(l.yaw),s=Math.sin(l.yaw);boundary(arm.map(([a,b])=>[x+c*a+s*b,z-s*a+c*b]),l.type==='seven'?.14:.04,'lamp-arm:'+l.id,l.type==='seven'?3.015:.41,.01);}
  // Rounded observation bays have the SAME exterior rail as the shared union.
  // Curved timber benches and cantilever support stay beyond the 4.8 clear band.
  for(const p of plan.platforms){
@@ -63,5 +64,5 @@ export function buildBridgeLandscape(parent){
  for(const {key,zone,parts}of batches.values()){const g=mergeGeometries(parts),m=new THREE.Mesh(g,material(key));m.name=`zone-${zone}-${key}-batch`;m.receiveShadow=false;g.computeBoundingBox();g.computeBoundingSphere();group.add(m);meshes.push(m);parts.forEach(p=>p.dispose());geometries++;}
  group.updateMatrixWorld(true);let triangles=0;for(const m of meshes)triangles+=(m.geometry.index?.count??m.geometry.attributes.position.count)/3*(m.isInstancedMesh?m.count:1);
  const stats={...plan.stats,visibleMeshes:meshes.length,triangles,collisionMeshes:colliders.length,horizontalBarriers:barriers.length,buildMilliseconds:performance.now()-start,newRealtimeLights:0,geometryBatches:geometries,perFrameRebuilds:0,instanceBatches:instanced.length};
- return{group,plan,stats,colliders,barriers,meshes,update(){}};
+ const ceilings=meshes.filter(m=>['rounded-seven-post','warm-downward-linear-luminaire','S09-low-light-line'].includes(m.name));const bounds=new THREE.Box3().setFromObject(group,true);return{group,plan,stats,colliders,barriers,meshes,ceilings,constrainHead:stationHeadroom(ceilings,bounds,1.6),update(){}};
 }
