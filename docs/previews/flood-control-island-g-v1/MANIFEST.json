@@ -3,6 +3,11 @@
   "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391",
   "files": [
     {
+      "path": "docs/design/flood-control-island-g-v1/baseline-protected.json",
+      "bytes": 53385,
+      "sha256": "dd55225a700ccab5e4e5feced33edfbb57d309f3ec976c4a378e42074c89bcc2"
+    },
+    {
       "path": "docs/design/flood-control-island-g-v1/flood-control-g.blend",
       "bytes": 7029640,
       "sha256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391"
@@ -336,8 +341,8 @@
     },
     {
       "path": "docs/previews/flood-control-island-g-v1/logs/lint.txt",
-      "bytes": 96,
-      "sha256": "7127f972dd7299109526fb9d1d6a36c9e08097f932df9f03961ee6f9fd6d7692"
+      "bytes": 95,
+      "sha256": "66a36bca7ed0a43b7cbe93991d130c6d9847416ee59cd00f5caa33c7840f2c68"
     },
     {
       "path": "docs/previews/flood-control-island-g-v1/logs/unit.txt",
@@ -416,8 +421,8 @@
     },
     {
       "path": "scripts/qa/audit-flood-g.mjs",
-      "bytes": 2779,
-      "sha256": "b70603e2f93a9ecafcb4e893516423387c169253d18a30f36bacc3222613e93d"
+      "bytes": 2881,
+      "sha256": "97b6c44eed6af8e7a22e19eeef2bf4794366ca68aca34d446d760ff11ac6818a"
     },
     {
       "path": "scripts/qa/capture-flood-g.mjs",
