@@ -1,4 +1,8 @@
 {
+  "surfaceCheck": {
+    "islandPavingArea": 116.1485367086998,
+    "exposedOuterSegments": 24
+  },
   "baseCommit": "ae2a63ff2262612967996ab939b62b335069190d",
   "scope": "Pre-model read-only geometry audit. G engineering retained; G art pending refinement. Await formal C design.",
   "island": {
