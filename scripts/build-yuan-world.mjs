@@ -22,13 +22,15 @@ const paths=plan.edges.map(e=>{
  return {id:e.id,from:e.from,to:e.to,meaning:e.meaning,width:plan.width,points,length,outline:[...edges.map(e=>e.left),...edges.toReversed().map(e=>e.right)]};
 });
 const roads=paths.flatMap(p=>[[[...p.outline,p.outline[0]]],circle(p.points[0],half,16),circle(p.points.at(-1),half,16)]);
-const islePolys=nodes.filter(n=>n.island).map(n=>circle(n));
+const footprint=n=>plan.islandFootprintsXZ?.[n.id]?[plan.islandFootprintsXZ[n.id]]:circle(n);
+const islePolys=nodes.filter(n=>n.island).map(footprint);
+const inFootprint=(x,z,n)=>{const ring=footprint(n)[0];let yes=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>z)!==(b[1]>z)&&x<(b[0]-a[0])*(z-a[1])/(b[1]-a[1])+a[0])yes=!yes;}return yes;};
 const snap=p=>JSON.parse(JSON.stringify(p,(_k,v)=>typeof v==='number'?Math.round(v*1e5)/1e5:v));
-const operands=snap([...roads,...nodes.filter(n=>n.r>0).map(n=>circle(n))]);
+const operands=snap([...roads,...nodes.filter(n=>n.r>0).map(footprint)]);
 let union=operands[0];for(const operand of operands.slice(1))union=polygon.union(union,operand);
 const decks=polygon.difference(union,polygon.union(...snap(islePolys)));
 const roadOperands=snap(roads);let roadDomain=roadOperands[0];for(const part of roadOperands.slice(1))roadDomain=polygon.union(roadDomain,part);
-const islandPaving=nodes.filter(n=>n.island).map(n=>({island:n.island,domain:polygon.intersection(roadDomain,snap(circle(n)))}));
+const islandPaving=nodes.filter(n=>n.island).map(n=>({island:n.island,domain:polygon.intersection(roadDomain,snap(footprint(n)))}));
 function height(){ return plan.heightDatum; }
 const positions=[],indices=[];
 for(const rings of decks){
@@ -46,7 +48,7 @@ for(const rings of union)for(const ring of rings)for(let i=1;i<ring.length;i++){
  const a=ring[i-1],b=ring[i],mx=(a[0]+b[0])/2,mz=(a[1]+b[1])/2;
  // Keep every exposed edge of the shared domain, including enlarged islands.
  // Classify for landscape treatment only; there are never internal gate fences.
- const owner=nodes.find(n=>n.island&&Math.hypot(mx-n.x,mz-n.z)<n.r+.015);
+ const owner=nodes.find(n=>n.island&&(plan.islandFootprintsXZ?.[n.id]?inFootprint(mx,mz,n)||footprint(n)[0].some((p,i,r)=>{const q=r[(i+1)%r.length],dx=q[0]-p[0],dz=q[1]-p[1],t=Math.max(0,Math.min(1,((mx-p[0])*dx+(mz-p[1])*dz)/(dx*dx+dz*dz||1)));return Math.hypot(mx-p[0]-dx*t,mz-p[1]-dz*t)<.016;}):Math.hypot(mx-n.x,mz-n.z)<n.r+.015));
  barriers.push({a:{x:a[0],y:height(a[0],a[1]),z:a[1]},b:{x:b[0],y:height(b[0],b[1]),z:b[1]},height:1.3,kind:owner?'island-edge':'bridge-edge',island:owner?.island??null});
 }
 // height() now sees scaled path/node heights, so boundary heights match the scaled deck.

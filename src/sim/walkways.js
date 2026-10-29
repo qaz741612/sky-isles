@@ -30,7 +30,7 @@ export function moveWithGuards(position, dx, dz, barriers, radius=WALKWAY.player
     for(let iteration=0;iteration<4;iteration++) for(const wall of barriers) {
       const clearance=radius+(wall.thickness??WALKWAY.railThickness)/2;
       const p=nearestOnSegment(position,wall.a,wall.b);
-      if(position.y>p.y+wall.height || position.y+1.5<p.y-0.2) continue;
+      if(position.y>p.y+wall.height || position.y+(wall.capsuleHeight??1.5)<p.y-(wall.capsuleHeight?0:.2)) continue;
       const ox=position.x-p.x,oz=position.z-p.z,d=Math.hypot(ox,oz);
       if(d>=clearance) continue;
       let nx=ox/(d||1),nz=oz/(d||1);
@@ -44,6 +44,7 @@ export function moveWithGuards(position, dx, dz, barriers, radius=WALKWAY.player
 }
 
 export function isSafeCheckpoint(position, hit, islands, barriers) {
+  if(hit.userData.noCheckpoint)return false;
   if(hit.userData.island) {
     const island=islands.find(i=>i.name===hit.userData.island);
     return island && Math.hypot(position.x-island.x,position.z-island.z)<island.r-0.8;

@@ -18,7 +18,7 @@ export function buildBridges(scene, islands, rng) {
  const deck=new THREE.Mesh(geo,toonMaterial(0xbeb8a7,{side:THREE.DoubleSide}));deck.name='shared-deck';deck.userData.walkway='shared-yuan-domain';group.add(deck);
  // Island transit paving is clipped from these same fixed centreline ribbons.
  // It joins the bridge deck exactly and stays separate from landscaped courts.
- for(const patch of surface.islandPaving){if(patch.island==='tree')continue;const isle=islands.find(i=>i.name===patch.island);if(!isle)continue;const pieces=[];
+ for(const patch of surface.islandPaving){if(patch.island==='tree'||patch.island==='home')continue;const isle=islands.find(i=>i.name===patch.island);if(!isle)continue;const pieces=[];
  for(const rings of patch.domain){const shape=new THREE.Shape(rings[0].slice(0,-1).map(p=>new THREE.Vector2(p[0],-p[1])));for(const hole of rings.slice(1))shape.holes.push(new THREE.Path(hole.slice(0,-1).map(p=>new THREE.Vector2(p[0],-p[1]))));const g=new THREE.ShapeGeometry(shape);g.rotateX(-Math.PI/2);g.translate(-isle.pos.x,.015,-isle.pos.z);pieces.push(g);}
  if(pieces.length){const mesh=new THREE.Mesh(mergeGeometries(pieces),toonMaterial(0xbeb8a7));mesh.name='island-transit-paving';mesh.userData.island=patch.island;isle.group.add(mesh);pieces.forEach(p=>p.dispose());}
  }
@@ -31,6 +31,7 @@ export function buildBridges(scene, islands, rng) {
  }
  let postDistance=0;
  for(const wall of surface.barriers){
+ if(wall.island==='home')continue; // V9 authored boundary owns this plinth only.
  const key=`${Math.floor((wall.a.x+wall.b.x)/64)},${Math.floor((wall.a.z+wall.b.z)/64)}`;
  if(!chunks.has(key))chunks.set(key,[[],[]]);const [body,top]=chunks.get(key);
  const islandEdge=wall.kind==='island-edge';
@@ -44,5 +45,5 @@ export function buildBridges(scene, islands, rng) {
  }
  for(const parts of chunks.values())for(let i=0;i<2;i++)if(parts[i].length){const mesh=new THREE.Mesh(mergeGeometries(parts[i]),i?trim:wood);group.add(mesh);parts[i].forEach(g=>g.dispose());}
  scene.add(group);scene.updateMatrixWorld(true);
- return {group,bridges:[{group}],plans:layout.paths,nodes:layout.nodes,colliders:[deck],barriers:surface.barriers,nearby:guardIndex(surface.barriers),width:layout.width,bounds:layout.bounds,domain:surface.domain,update(){}};
+ return {group,bridges:[{group}],plans:layout.paths,nodes:layout.nodes,colliders:[deck],barriers:surface.barriers.filter(w=>w.island!=='home'),nearby:guardIndex(surface.barriers.filter(w=>w.island!=='home')),width:layout.width,bounds:layout.bounds,domain:surface.domain,update(){}};
 }

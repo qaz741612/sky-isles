@@ -1,0 +1,75 @@
+[
+  {
+    "path": "node_modules",
+    "symlink": "/workspace/sky-isles/node_modules"
+  },
+  {
+    "path": "public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb",
+    "bytes": 17633080,
+    "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac"
+  },
+  {
+    "path": "scripts/build-yuan-world.mjs",
+    "bytes": 8354,
+    "sha256": "7aa35b1f9ac70cfc74367f37e3816da9ca6a1877bb7573306bd60bc6c679338c"
+  },
+  {
+    "path": "scripts/transport-v9/extract-collision.py",
+    "bytes": 5925,
+    "sha256": "3769cbe033180e9afeb223d5476d85c93ac0cf4a31a0c2080176be2ae1861b05"
+  },
+  {
+    "path": "src/data/elevated-station-collision.json",
+    "bytes": 631950,
+    "sha256": "f0c748549a783156fc1861c0831859c15a3ef54f9d7e08f53ca2f314b82ac825"
+  },
+  {
+    "path": "src/data/elevated-station-model.json",
+    "bytes": 22883,
+    "sha256": "29c7c56c5b9372477b699153b1511d1150d870fb69b043e5d735fd53f2383d95"
+  },
+  {
+    "path": "src/data/yuan-plan.json",
+    "bytes": 38946,
+    "sha256": "e1824816472de4be1a3a23b935a7e8e4f6556babb9ff104bcbf0ae1fe8d139de"
+  },
+  {
+    "path": "src/sim/walkways.js",
+    "bytes": 3098,
+    "sha256": "3d60a2760048b3df7530a495bc1996780d9462449570dd02f90228b8590cd1fe"
+  },
+  {
+    "path": "src/world/bridges.js",
+    "bytes": 4209,
+    "sha256": "a895057d69c565059dff3dd746c593a12c2e18c67f78243c0246203069f1977a"
+  },
+  {
+    "path": "src/world/islands.js",
+    "bytes": 7802,
+    "sha256": "842458b07af5827f8d348051859dabd8d2117368cc18fa6245b3b2105a6a6972"
+  },
+  {
+    "path": "work/extract-collision.log",
+    "bytes": 111,
+    "sha256": "5d552049870b9df041bcdffc544051cd0bfaebeb378b0b90100b8e01212063eb"
+  },
+  {
+    "path": "work/render-env",
+    "symlink": "/workspace/sky-isles/work/parent-child-blender/render-env"
+  },
+  {
+    "path": "work/source-collision.json",
+    "bytes": 207649,
+    "sha256": "6e074022d0ed3c4bab8500b9e7e26c4cc50ae22865efce6a68b005156dcd30fe"
+  },
+  {
+    "path": "work/source-model-report.json",
+    "bytes": 29605,
+    "sha256": "82304ce91b5f35d65b19f40615fb926bab1a68ba5c065add13af6db2a40b3318"
+  },
+  {
+    "path": "work/transport-station-v9.blend",
+    "bytes": 1614379,
+    "sha256": "5d99e81f8255f815e60ab0d63615ce024e96533c6757821beb74eb777c7eade6"
+  }
+]

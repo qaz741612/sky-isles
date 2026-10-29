@@ -176,12 +176,12 @@ export function buildIslands(scene, rng) {
     addOutline(grass, 0.018);
     grass.userData.island = def.name;
     isle.add(grass);
-    colliders.push(grass);
+    if(def.name==='home')grass.visible=false;else colliders.push(grass);
 
     const depth = 3.2 + def.r * 0.55;
     const rock = buildRockBase(def.r, depth);
     rock.position.y = -1.05;
-    isle.add(rock);
+    if(def.name!=='home')isle.add(rock); // V9 includes its own foundation, not two stacked island caps.
 
     if (def.name !== 'stepping') {
       const before = isle.children.length;
