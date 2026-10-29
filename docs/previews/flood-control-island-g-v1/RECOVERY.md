@@ -11,3 +11,7 @@ Base 7c1b39b，分支 codex/flood-control-island-g-v1，工作目錄 /workspace/
 source: src/data/flood-control-plan.json。先 node scripts/build-flood-site.mjs，再 npm run generate:yuan -- --report-dir docs/previews/flood-control-island-g-v1，再 Blender build_flood_g.py；最後 runtime 由獨立 flood-control.js replacement 接入。勿混入 PR13 歷史。已核准車站及安心生養資產不變。
 
 保留 work/ 與 Blender .blend1 本機備份；不要 reset/clean。服務 4210 是本機 Vite，不是正式部署。
+
+最新水路修正：覆蓋水道的 18 個內側護岸面已改為橋側邊梁，橋底 -.32、上游水面 -.55，留下 .23 可視淨空，並補真實橋底。資產已保存到本機 final .blend / GLB，GLB 42,773 三角面；原 dry-floor/collision、玩家路線與 NPC 不變。最新 GLB 的 17 個單元模組、lint、build 通過，包含穿越橋底的水平幾何射線。正在重跑新版 GLB 桌機/手機四項與 final 遊戲圖片。最終六視圖尚在依次更新，檢查 render-record.json 全部 SHA 一致後才交付。
+
+原固定版 16 項瀏覽器回歸為 15 通過、1 桌機觸控不適用跳過，詳 work/browser-fixed-build.log。不要把更早 Vite HMR 中斷的紀錄當最後驗收。

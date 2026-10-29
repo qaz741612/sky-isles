@@ -2,8 +2,8 @@
   "method": "Original saved Blender source stays independent; web export batches evaluated surfaces per logical assembly and PBR material, preserving custom normals.",
   "meshPrimitives": 33,
   "assemblyGroups": 7,
-  "triangles": 42709,
-  "originalSourceObjects": 1015,
+  "triangles": 42773,
+  "originalSourceObjects": 1016,
   "textures": 0,
   "draft": false,
   "waterIsCollider": false,
@@ -36,5 +36,5 @@
     ]
   },
   "roofSupportTriangles": 180,
-  "sourceBlendSHA256": "3f3d237bb33a3e7e9ac08877f2fbed44cf61b2585f2f71934ecb25fe09c6910e"
+  "sourceBlendSHA256": "21a19f97ae9e2a8010efc0ea84646d7e3b3e17c0bffcc67ca5a0a02750038391"
 }

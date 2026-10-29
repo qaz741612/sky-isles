@@ -79,7 +79,8 @@ for w in surface['barriers']:
 for n,r,y,m in [('Upstream retention and canal',P['water']['upstream'],-.55,'water'),('Downstream demonstration basin',P['water']['downstream'],-1.35,'lower')]:poly_slab(n,[r],y,y-.07,m,'WaterChannels')
 for e in SITE['waterRails']:
  a,b=e['a'],e['b'];rail('Water edge safety',a,b)
- mesh('Channel coping and retaining wall',[(a[0],-.04,a[1]),(b[0],-.04,b[1]),(b[0],-1.65,b[1]),(a[0],-1.65,a[1])],[(0,1,2,3)],'edge','WaterChannels')
+ mesh('Channel coping and retaining wall',[(a[0],-.04,a[1]),(b[0],-.04,b[1]),(b[0],-.32 if e['coveredCrossing'] else -1.65,b[1]),(a[0],-.32 if e['coveredCrossing'] else -1.65,a[1])],[(0,1,2,3)],'edge','WaterChannels')
+bridge=json.loads((ROOT/'src/data/flood-control-bridge-soffit.json').read_text());mesh('Actual public crossing underside',bridge['vertices'],bridge['triangles'],'edge','WaterChannels')
 # Water-control structure: two tall sculpted concrete portal frames, deep gate leaves,
 # operable-looking guide tracks, screw hoists, access catwalk and parapet caps.
 for x in [-7.5,-5.3,-3.1]:
