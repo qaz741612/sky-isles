@@ -1,0 +1,182 @@
+{
+  "sourceRuntime": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+  "roadWidth": 4.8,
+  "compressionUnchanged": 0.585,
+  "policyIslands": [
+    {
+      "id": "F",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "r": 9,
+      "island": "home",
+      "name": "交通大升級"
+    },
+    {
+      "id": "A",
+      "x": -22.549999999999997,
+      "y": 0,
+      "z": -19.656,
+      "r": 10.2,
+      "island": "tree",
+      "name": "安心生養"
+    },
+    {
+      "id": "B",
+      "x": -42.12,
+      "y": 0,
+      "z": -1.4040000000000001,
+      "r": 9,
+      "island": "temple",
+      "name": "幸福養老"
+    },
+    {
+      "id": "C",
+      "x": -20.357999999999997,
+      "y": 0,
+      "z": 38.61,
+      "r": 9,
+      "island": "koi",
+      "name": "產業青年"
+    },
+    {
+      "id": "E",
+      "x": 26.676,
+      "y": 0,
+      "z": -18.252,
+      "r": 9,
+      "island": "meadow",
+      "name": "宜居環境"
+    },
+    {
+      "id": "D",
+      "x": -53.352,
+      "y": 0,
+      "z": 87.048,
+      "r": 9,
+      "island": "windmill",
+      "name": "智慧公所"
+    },
+    {
+      "id": "G",
+      "x": 44.928000000000004,
+      "y": 0,
+      "z": 45.278999999999996,
+      "r": 9,
+      "island": "crystal",
+      "name": "治水防災"
+    },
+    {
+      "id": "H",
+      "x": 50.544,
+      "y": 0,
+      "z": 88.452,
+      "r": 9,
+      "island": "lookout",
+      "name": "教育發展"
+    }
+  ],
+  "reservedViews": [
+    {
+      "island": "temple",
+      "worldCamera": [
+        -39.769999999999996,
+        5.8,
+        4.446
+      ],
+      "worldTarget": [
+        -45.769999999999996,
+        1.5,
+        -5.554
+      ],
+      "bridgeScenerySightlineClear": true,
+      "hits": [],
+      "scope": "New bridge scenery only. Existing v1 structures and future replacement building art excluded; not final six-building camera acceptance."
+    },
+    {
+      "island": "koi",
+      "worldCamera": [
+        -10.057999999999996,
+        5.8,
+        52.11
+      ],
+      "worldTarget": [
+        -16.057999999999996,
+        1.5,
+        42.11
+      ],
+      "bridgeScenerySightlineClear": true,
+      "hits": [],
+      "scope": "New bridge scenery only. Existing v1 structures and future replacement building art excluded; not final six-building camera acceptance."
+    },
+    {
+      "island": "meadow",
+      "worldCamera": [
+        37.376,
+        5.8,
+        -4.201999999999998
+      ],
+      "worldTarget": [
+        31.375999999999998,
+        1.5,
+        -14.201999999999998
+      ],
+      "bridgeScenerySightlineClear": true,
+      "hits": [],
+      "scope": "New bridge scenery only. Existing v1 structures and future replacement building art excluded; not final six-building camera acceptance."
+    },
+    {
+      "island": "windmill",
+      "worldCamera": [
+        -51.151999999999994,
+        5.8,
+        92.998
+      ],
+      "worldTarget": [
+        -57.151999999999994,
+        1.5,
+        82.998
+      ],
+      "bridgeScenerySightlineClear": true,
+      "hits": [],
+      "scope": "New bridge scenery only. Existing v1 structures and future replacement building art excluded; not final six-building camera acceptance."
+    },
+    {
+      "island": "crystal",
+      "worldCamera": [
+        55.028000000000006,
+        5.8,
+        59.57899999999999
+      ],
+      "worldTarget": [
+        49.028000000000006,
+        1.5,
+        49.57899999999999
+      ],
+      "bridgeScenerySightlineClear": true,
+      "hits": [],
+      "scope": "New bridge scenery only. Existing v1 structures and future replacement building art excluded; not final six-building camera acceptance."
+    },
+    {
+      "island": "lookout",
+      "worldCamera": [
+        53.044,
+        5.8,
+        94.152
+      ],
+      "worldTarget": [
+        47.044,
+        1.5,
+        84.152
+      ],
+      "bridgeScenerySightlineClear": true,
+      "hits": [],
+      "scope": "New bridge scenery only. Existing v1 structures and future replacement building art excluded; not final six-building camera acceptance."
+    }
+  ],
+  "stationSHA256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+  "familySHA256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44",
+  "notes": "Only A and T3 translated west. Future policy models remain data-only.",
+  "familyCircleClearanceBefore": 1.6759125919272648,
+  "familyCircleClearanceAfter": 5.407735667339633
+}

@@ -1,0 +1,12 @@
+✔ real 7-arm underside stops a rising head; ordinary road jump outside the arm is unchanged (175.857897ms)
+✔ landscape beds stay outside the original shared road/island domain and lights respect the budget (192.509168ms)
+✔ real landscape geometry is instanced, bounded, has no live lights, and leaves the full player corridor clear (250.84338ms)
+✔ expanded surface retains the complete original walkable domain and has one outside boundary network (22.683559ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 854.74797

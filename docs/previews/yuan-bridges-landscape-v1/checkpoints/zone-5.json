@@ -1,0 +1,58 @@
+{
+  "name": "zone-5",
+  "kind": "custom QA bridge camera S19",
+  "viewport": {
+    "width": 1200,
+    "height": 800
+  },
+  "errors": [],
+  "bridgeTriangles": 138024,
+  "bridgeMeshes": 113,
+  "position": [
+    -8,
+    -1.1102230246251565e-16,
+    0
+  ],
+  "orbit": {
+    "yaw": 0.6372202158735158,
+    "pitch": 0.6,
+    "dist": 16,
+    "fov": 55
+  },
+  "camera": [
+    23.85055352957977,
+    10,
+    97.63488198016378
+  ],
+  "render": {
+    "frame": 9,
+    "calls": 268,
+    "triangles": 638312,
+    "points": 0,
+    "lines": 0
+  },
+  "memory": {
+    "geometries": 331,
+    "textures": 19
+  },
+  "landscape": {
+    "lampCount": 36,
+    "sevenLampCount": 34,
+    "lowLightCount": 2,
+    "platformCount": 5,
+    "foliageInstances": 352,
+    "visibleMeshes": 72,
+    "triangles": 83139,
+    "collisionMeshes": 49,
+    "horizontalBarriers": 1979,
+    "buildMilliseconds": 248.29999995231628,
+    "newRealtimeLights": 0,
+    "geometryBatches": 46,
+    "perFrameRebuilds": 0,
+    "instanceBatches": 28
+  },
+  "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "runtimeCommit": "59bb95a321a9e291c49be1b1cf51d906edc861bf",
+  "bundle": "index-B8SOGj0X.js",
+  "provenance": "Final runtime; historical construction stages remain in Git and zone-N-browser.txt"
+}

@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "edge": "north",
+      "position": [
+        -0.0013721858064108627,
+        6.661338147750939e-16,
+        -10.791787129021989
+      ],
+      "grounded": true
+    },
+    {
+      "edge": "east",
+      "position": [
+        9.788337112459596,
+        4.440892098500626e-16,
+        -7.83897951222663
+      ],
+      "grounded": true
+    },
+    {
+      "edge": "west",
+      "position": [
+        -9.007489999999999,
+        4.440892098500626e-16,
+        -8
+      ],
+      "grounded": true
+    }
+  ],
+  "respawns": 0,
+  "description": "Normal walk only. Does not prove deliberate jump/glide containment."
+}

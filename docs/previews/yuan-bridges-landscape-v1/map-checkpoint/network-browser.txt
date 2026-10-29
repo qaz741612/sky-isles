@@ -1,0 +1,20 @@
+
+Running 2 tests using 1 worker
+
+
+(node:328420) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/2] [desktop] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+[desktop] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+{"device":"keyboard","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":80660,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.06154252001890105,0,0.003516715429651861]},"endpoint":[0.06154252001890105,0,0.003516715429651861],"returned":[0.06154252001890105,0.4,0.003516715429651861],"yawUnchanged":true}
+
+
+(node:328562) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/2] [mobile] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+[mobile] › test/walkways.e2e.js:20:1 › walk every island without jumping through keyboard or a single joystick pointer
+{"device":"single-pointer joystick","visited":["F","J1","A","T1","E","T2","T4","J2","C","B","T5","T6","D","T7","J4","H","T8","J3","G","T9","T3"],"ticks":84364,"stopped":{"speed":0,"drift":0,"respawns":0,"checkpoint":[0.03169780810594526,0,0.0018113033203397083]},"endpoint":[0.03169780810594526,0,0.0018113033203397083],"returned":[0.03169780810594526,0.4,0.0018113033203397083],"yawUnchanged":true}
+
+  2 passed (1.3m)

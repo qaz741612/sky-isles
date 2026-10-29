@@ -1,0 +1,287 @@
+[
+  {
+    "id": "S01",
+    "zone": 1,
+    "length": 21.87844351197499,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S01-L1"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S02",
+    "zone": 1,
+    "length": 49.25120962942158,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S02-L1",
+      "S02-L2"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S03",
+    "zone": 1,
+    "length": 28.4566938644134,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S03-L1",
+      "S03-L2"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S04",
+    "zone": 2,
+    "length": 17.632025510039398,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S04-L1"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S05",
+    "zone": 2,
+    "length": 22.14408430254792,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S06",
+    "zone": 2,
+    "length": 15.190963344175405,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S06-L1"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S07",
+    "zone": 2,
+    "length": 22.255824121040394,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S07-L1"
+    ],
+    "bays": [
+      "P07"
+    ],
+    "terminal": false
+  },
+  {
+    "id": "S08",
+    "zone": 3,
+    "length": 29.852315051437913,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S08-L1",
+      "S08-L2"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S09",
+    "zone": 3,
+    "length": 12.30504079635659,
+    "mode": "junction-connector",
+    "active": true,
+    "lighting": [
+      "S09-L1",
+      "S09-L2"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S10",
+    "zone": 3,
+    "length": 15.10931676152168,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S10-L1"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S11",
+    "zone": 3,
+    "length": 30.903637820729248,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S11-L1",
+      "S11-L2"
+    ],
+    "bays": [
+      "P11"
+    ],
+    "terminal": false
+  },
+  {
+    "id": "S12",
+    "zone": 4,
+    "length": 8.514614812028269,
+    "mode": "island-walk",
+    "active": true,
+    "lighting": [],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S13",
+    "zone": 4,
+    "length": 18.34610881940251,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S13-L1"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S14",
+    "zone": 4,
+    "length": 47.41573128367139,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S14-L1",
+      "S14-L2"
+    ],
+    "bays": [
+      "P14"
+    ],
+    "terminal": false
+  },
+  {
+    "id": "S15",
+    "zone": 4,
+    "length": 44.313202560388724,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S15-L1",
+      "S15-L2"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S16",
+    "zone": 4,
+    "length": 58.89162345510876,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S16-L1",
+      "S16-L2",
+      "S16-L3"
+    ],
+    "bays": [
+      "P16"
+    ],
+    "terminal": false
+  },
+  {
+    "id": "S17",
+    "zone": 4,
+    "length": 8.224192908729712,
+    "mode": "island-walk",
+    "active": true,
+    "lighting": [],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S18",
+    "zone": 5,
+    "length": 71.36448826410297,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S18-L2",
+      "S18-L3",
+      "S18-L4"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S19",
+    "zone": 5,
+    "length": 59.87084895345387,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S19-L1",
+      "S19-L2",
+      "S19-L3",
+      "S19-L4"
+    ],
+    "bays": [
+      "P19"
+    ],
+    "terminal": false
+  },
+  {
+    "id": "S20",
+    "zone": 5,
+    "length": 28.641865745343793,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S20-L1",
+      "S20-L2"
+    ],
+    "bays": [],
+    "terminal": true
+  },
+  {
+    "id": "S21",
+    "zone": 5,
+    "length": 40.472342755240746,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S21-L1",
+      "S21-L2",
+      "S21-L3"
+    ],
+    "bays": [],
+    "terminal": false
+  },
+  {
+    "id": "S22",
+    "zone": 5,
+    "length": 16.5026083224197,
+    "mode": "landscaped-bridge",
+    "active": true,
+    "lighting": [
+      "S22-L1"
+    ],
+    "bays": [],
+    "terminal": true
+  }
+]

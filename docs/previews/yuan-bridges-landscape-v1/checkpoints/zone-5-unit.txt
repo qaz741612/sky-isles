@@ -1,0 +1,10 @@
+✔ landscape beds stay outside the original shared road/island domain and lights respect the budget (199.980976ms)
+✔ real landscape geometry is instanced, bounded, has no live lights, and leaves the full player corridor clear (230.562404ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 535.60373

@@ -1,0 +1,15 @@
+import fs from 'node:fs';import * as T from 'three';import {createHash} from 'node:crypto';
+import plan from '../../src/data/yuan-plan.json' with {type:'json'};
+import landscape from '../../src/data/bridge-landscape.json' with {type:'json'};
+import future from '../../src/data/future-island-reservations.json' with {type:'json'};
+import {buildBridgeLandscape} from '../../src/world/bridge-landscape.js';
+const folder='docs/previews/yuan-bridges-landscape-v1',built=buildBridgeLandscape(new T.Group());
+const views=future.reservations.map(r=>{const n=plan.nodes.find(n=>n.island===r.island),origin=new T.Vector3(...r.preferredCamera.localPosition).add(new T.Vector3(n.x,0,n.z)),target=new T.Vector3(...r.preferredCamera.localTarget).add(new T.Vector3(n.x,0,n.z));const ray=new T.Raycaster(origin,target.clone().sub(origin).normalize(),0,origin.distanceTo(target)-.05);const hits=ray.intersectObjects(built.meshes,false);return{island:r.island,worldCamera:origin.toArray(),worldTarget:target.toArray(),bridgeScenerySightlineClear:hits.length===0,hits:hits.map(h=>h.object.name),scope:'New bridge scenery only. Existing v1 structures and future replacement building art excluded; not final six-building camera acceptance.'};});
+const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const report={sourceRuntime:process.argv[2]??'lamp-headroom-refinement',roadWidth:plan.width,compressionUnchanged:plan.compressionXZ,policyIslands:plan.nodes.filter(n=>n.island),reservedViews:views,stationSHA256:sha('public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb'),familySHA256:sha('public/models/parent-child-centre/parent-child-centre.glb'),notes:'Only A and T3 translated west. Future policy models remain data-only.'};
+fs.writeFileSync(`${folder}/layout-audit.json`,JSON.stringify(report,null,2)+'\n');
+fs.writeFileSync(`${folder}/lighting-layout.json`,JSON.stringify({height:3.1,arm:.75,maxFixtures:42,totalFixtures:landscape.lamps.length,sevenPosts:landscape.lamps.filter(l=>l.type==='seven').length,lowLights:landscape.lamps.filter(l=>l.type!=='seven').length,terminalEmissiveStrips:landscape.terminals.length,realtimeLights:0,lamps:landscape.lamps,omitted:landscape.rejectedLamps},null,2)+'\n');
+const columns=['id','route','zone','type','t','side','worldX','worldY','worldZ','yaw'];fs.writeFileSync(`${folder}/lighting-layout.csv`,columns.join(',')+'\n'+landscape.lamps.map(l=>[l.id,l.route,l.zone,l.type,l.t,l.side,...l.position,l.yaw].join(',')).join('\n')+'\n');
+fs.writeFileSync(`${folder}/route-coverage.json`,JSON.stringify(landscape.routes.map(r=>({...r,lighting:landscape.lamps.filter(l=>l.route===r.id).map(l=>l.id),bays:landscape.platforms.filter(p=>p.route===r.id).map(p=>p.id),terminal:landscape.terminals.some(t=>t.route===r.id)})),null,2)+'\n');
+if(report.stationSHA256!=='d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac'||report.familySHA256!=='67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44')throw Error('Approved model changed');
+console.log(JSON.stringify({views,modelHashesMatch:true}));

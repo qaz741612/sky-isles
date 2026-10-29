@@ -1,0 +1,167 @@
+{
+  "records": [
+    {
+      "id": "S01",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S02",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S03",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S04",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S05",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S06",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S07",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S08",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S09",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S10",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S11",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S12",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S13",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S14",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S15",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S16",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S17",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S18",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S19",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S20",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S21",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S22",
+      "bidirectional": true,
+      "noJump": true
+    }
+  ],
+  "bays": [
+    {
+      "id": "P07",
+      "walkInAndReturn": true,
+      "outerGuardHoldsOrdinaryWalk": true
+    },
+    {
+      "id": "P11",
+      "walkInAndReturn": true,
+      "outerGuardHoldsOrdinaryWalk": true
+    },
+    {
+      "id": "P14",
+      "walkInAndReturn": true,
+      "outerGuardHoldsOrdinaryWalk": true
+    },
+    {
+      "id": "P16",
+      "walkInAndReturn": true,
+      "outerGuardHoldsOrdinaryWalk": true
+    },
+    {
+      "id": "P19",
+      "walkInAndReturn": true,
+      "outerGuardHoldsOrdinaryWalk": true
+    }
+  ],
+  "lampHeadroom": {
+    "id": "S01-L1",
+    "maxHead": 3.0125,
+    "minOverlappingClearance": null,
+    "directHead": 3.0125,
+    "airborneQAStart": true,
+    "verified": true
+  },
+  "ticks": 17270,
+  "respawns": 0,
+  "stats": {
+    "lampCount": 36,
+    "sevenLampCount": 34,
+    "lowLightCount": 2,
+    "platformCount": 5,
+    "foliageInstances": 352,
+    "visibleMeshes": 72,
+    "triangles": 83139,
+    "collisionMeshes": 49,
+    "horizontalBarriers": 1979,
+    "buildMilliseconds": 141.89999997615814,
+    "newRealtimeLights": 0,
+    "geometryBatches": 46,
+    "perFrameRebuilds": 0,
+    "instanceBatches": 28
+  }
+}

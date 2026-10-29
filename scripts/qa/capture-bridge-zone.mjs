@@ -1,0 +1,7 @@
+import {chromium} from 'playwright';import fs from 'node:fs';
+const zone=Number(process.argv[2]),id=process.argv[3],browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});const page=await browser.newPage({viewport:{width:1100,height:760},deviceScaleFactor:1});
+await page.goto('http://127.0.0.1:4200/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
+const stats=await page.evaluate(id=>{const w=window.__skyisles.world;window.__skyisles.start();const draw=w.renderer.render.bind(w.renderer);w.renderer.render=()=>{};w.player.update=()=>{};const p=w.bridges.plans.find(p=>p.id===id),q=p.points[Math.floor(p.points.length*.55)];w.camera.position.set(q.x+7,7,q.z+9);w.camera.lookAt(q.x,0,q.z);w.scene.updateMatrixWorld(true);w.camera.updateMatrixWorld();draw(w.scene,w.camera);return w.bridges.landscape.stats;},id);
+await page.evaluate(()=>{const el=document.querySelector('#title-screen');window.getComputedStyle(el).opacity;el.getAnimations().forEach(a=>a.finish());});
+await page.waitForTimeout(100);
+const folder='docs/previews/yuan-bridges-landscape-v1/checkpoints';fs.mkdirSync(folder,{recursive:true});await page.screenshot({path:`${folder}/zone-${zone}.png`,timeout:120000,animations:'disabled'});fs.writeFileSync(`${folder}/zone-${zone}.json`,JSON.stringify({zone,route:id,camera:'custom QA, actual game',stats},null,2)+'\n');await browser.close();console.log('Saved zone '+zone+' game view');

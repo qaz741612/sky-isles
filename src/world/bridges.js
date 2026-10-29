@@ -4,6 +4,7 @@ import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toonMaterial } from './toon.js';
 import layout from '../data/yuan-layout.json' with { type: 'json' };
 import surface from '../data/yuan-surface.json' with { type: 'json' };
+import {buildBridgeLandscape} from './bridge-landscape.js';
 import { guardIndex } from '../sim/walkways.js';
 
 export function buildBridges(scene, islands, rng) {
@@ -44,6 +45,7 @@ export function buildBridges(scene, islands, rng) {
  postDistance+=distance;
  }
  for(const parts of chunks.values())for(let i=0;i<2;i++)if(parts[i].length){const mesh=new THREE.Mesh(mergeGeometries(parts[i]),i?trim:wood);group.add(mesh);parts[i].forEach(g=>g.dispose());}
+ const landscape=buildBridgeLandscape(group);
  scene.add(group);scene.updateMatrixWorld(true);
- return {group,bridges:[{group}],plans:layout.paths,nodes:layout.nodes,colliders:[deck],barriers:surface.barriers.filter(w=>w.island!=='home'),nearby:guardIndex(surface.barriers.filter(w=>w.island!=='home')),width:layout.width,bounds:layout.bounds,domain:surface.domain,update(){}};
+ return {group,bridges:[{group}],plans:layout.paths,nodes:layout.nodes,landscape,colliders:[deck,...landscape.colliders],barriers:[...surface.barriers.filter(w=>w.island!=='home'),...landscape.barriers],nearby:guardIndex([...surface.barriers.filter(w=>w.island!=='home'),...landscape.barriers]),width:layout.width,bounds:layout.bounds,domain:surface.domain,update(){}};
 }

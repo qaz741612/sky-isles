@@ -1,0 +1,641 @@
+{
+  "repository": "qaz741612/sky-isles",
+  "verifiedCommit": "cfa583b0e5adc0eab777054349bd1882dc1e9eaa",
+  "manifestSha256": "33fd0e08762c0a83fe9c684e189f760417113f65f3c27fcc135be153b5669e9e",
+  "verification": "Every manifest file downloaded from immutable GitHub raw commit and compared by byte length and SHA256",
+  "files": [
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/CAPTURE-SAVED.md",
+      "bytes": 471,
+      "sha256": "6fadda717cc5c64cfe19e8e62aab155f1a9b02eecec4623bf990450d03dd1fb6",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/CHANGES.md",
+      "bytes": 1080,
+      "sha256": "6c1e234d2a2a1dbc018e2460aac13eb20074060064d6d4d74db5acab3dcf3f6b",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/README.md",
+      "bytes": 1868,
+      "sha256": "303e844e6d2f7e04c5b1f3d7ea06e0aa9d3625df1d1621b99aa1d060d82a576a",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/RECOVERY.md",
+      "bytes": 2063,
+      "sha256": "7be8c13044fa46fe03a00fd1b16ca5c993ca1f4c080f58349e04de089907c91e",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/REPORT.md",
+      "bytes": 11654,
+      "sha256": "ba0dfc5b793b020addc906aa3009872d94d929cfb49de33ccd0ea4d11c1373b3",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/README.md",
+      "bytes": 287,
+      "sha256": "2f8aac37e072f4ee78571cd3ec1b4bd819dba63af8b251e8d50e80e7441e265b",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-1-browser.txt",
+      "bytes": 985,
+      "sha256": "fa60d9f4d4f28e598be56d84a31eb0410ac1f74949d7460428c799af05c57b38",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-1-unit.txt",
+      "bytes": 163,
+      "sha256": "b1159e607fe5e0e8b8b3a35dc040b969f8cf013a5dc9515f45cd63d9b9c60fbd",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-1.json",
+      "bytes": 1297,
+      "sha256": "c468df86df1e5107e2d7ec5f83739cde197eef2ff0ae9a8fdd0d4ccb76b1c39e",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-1.png",
+      "bytes": 487332,
+      "sha256": "8e262b44372b1f0adbed6aa2d2b175a2502a7fef4c9e274727a4139c8c1ae37b",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-2-browser.txt",
+      "bytes": 1178,
+      "sha256": "a435bfe8d07d5c9bc4da177e541c990abc9028ce5d92d9571dc56de5cd418a7f",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-2-unit.txt",
+      "bytes": 164,
+      "sha256": "b050fa4e2dc4c2bf70c236e0d064454b15a64db19fb4bae5ba312b564ddaac98",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-2.json",
+      "bytes": 1300,
+      "sha256": "e2e04a5fa3bd156994214f3c67c1431084bcc01908680df1e6d17852c546c746",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-2.png",
+      "bytes": 447796,
+      "sha256": "2819c7355eb3d697c0afe234d885026dadadbe39a677ca0972002b8980a0dc38",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-3-browser.txt",
+      "bytes": 1373,
+      "sha256": "f759df127d27f9104de3bbe1cb303c608b00479fc4588e8875df68d49d1cec5c",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-3-unit.txt",
+      "bytes": 359,
+      "sha256": "e65244a0b2309569efa4982bd3e02426bfd597877810ef957cbb208bc5aa76f9",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-3.json",
+      "bytes": 1305,
+      "sha256": "b28601453f59b94a090232c3b51fcfea46c22662501a27be575dd8796add38f1",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-3.png",
+      "bytes": 528446,
+      "sha256": "548060df3fa359fab249b1f40e6d364e0dfb4f72d56a96b5492833d3f25e762b",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-4-browser.txt",
+      "bytes": 1802,
+      "sha256": "4c33a1cea4cad5c1c23bfb66122a09dd256a859f42aee641f35e973b2aa87b02",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-4-unit.txt",
+      "bytes": 359,
+      "sha256": "bf1aef0b05f93981a9350379c3b8244c90bc9d94b5f523810fc68cfa0306270f",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-4.json",
+      "bytes": 1297,
+      "sha256": "a200bdc6ad89b420ee564662b21a2c0e8ee8239ab828c851567b0864eebf0ab2",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-4.png",
+      "bytes": 435949,
+      "sha256": "dcb4c5ced351c9daf07ba87a41e57d31738bab7eef11ca48a43868a397c8f64d",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-5-browser.txt",
+      "bytes": 2092,
+      "sha256": "bdee6c5dc7adb04538f8e5a23a2ce51923b76de900e55e9207421c2766038c77",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-5-unit.txt",
+      "bytes": 358,
+      "sha256": "8805106a37107f6c173a467d128bc2c419adda5204c55c985fc7005d4483d1da",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-5.json",
+      "bytes": 1304,
+      "sha256": "2d08bdbb421c3abb745d70bbe74ecf2ea84387980114f1fed926ac892af67b9d",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/checkpoints/zone-5.png",
+      "bytes": 501572,
+      "sha256": "1a45ca0f3dc609e32b8f4e81f33c29b0d564261ac9b8df084869ade5e605bf84",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/desktop-controller.json",
+      "bytes": 16976,
+      "sha256": "cca27223c35811a74de4a3e2f9ff6f85fa102c741a388245da0539a008e3d3a9",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/diagnostics/README.md",
+      "bytes": 209,
+      "sha256": "c68403f62f47641ddb5674139e81344ab35b33b72fcf59b9f4830483070c9fd3",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/diagnostics/initial-lamp-regression.txt",
+      "bytes": 8584,
+      "sha256": "da505145e9fe9f6d904526dde676c578e4dcfd549612853c4ae09c88cb5401c3",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/diagnostics/narrow-emitter-edge-failure.txt",
+      "bytes": 5353,
+      "sha256": "79caf1e6e6b1abdd93c8305ebb1b52a61ac40ba0ad2f13ac71c154ba598ac2a7",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/bridge-player-record.json",
+      "bytes": 1356,
+      "sha256": "4688745c2de1afe9b40fe048a52b0e1f4bd7758e8531a5a18d68089f81d1cfdf",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/capture-record.json",
+      "bytes": 17326,
+      "sha256": "b637e6fc38d1236becea2e19bfebcf47649a7ab8d812eea7cf271e77f327d647",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/desktop-bridge-player.png",
+      "bytes": 471819,
+      "sha256": "fe50e92951fa09b5830e8e9c423e4ca507d8538f812f2d4021cbc75a63553231",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/desktop-player.png",
+      "bytes": 658287,
+      "sha256": "a4cc3b28b75aed70f48a9f438fca0f0b5e5670c416e26f82f6992407d924a8b7",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/family-separation.png",
+      "bytes": 719890,
+      "sha256": "0f811b5662e94c126d1c3dfef9e850bc8302afa674b5e65b4ddcb3b9a304ee7f",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/mobile-bridge-player.png",
+      "bytes": 224751,
+      "sha256": "741aa11d8306386dac6f1e7951826f1d773c4949ad0c8a12b2be63d691b6a57d",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/mobile-landscape.png",
+      "bytes": 353268,
+      "sha256": "ae674d5407847a35bc9f60001e8e7ce0ea018824d114ef7eeb7ecd62c3e3a04b",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/mobile-panorama.png",
+      "bytes": 100916,
+      "sha256": "bbdcc118f37ed141ed08fc17b77c05f428d76f90a74a8cf23d9316d6d392f28b",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/mobile-player.png",
+      "bytes": 256975,
+      "sha256": "f5b43223931cfc7127fa5c677ccbad2c797b9aef43fa6f1cf3da93d7c1f4a63e",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/seven-lamp-close.png",
+      "bytes": 186408,
+      "sha256": "f03116038f971697654442285aafc9901a440667ab267be48d82cd744f353d44",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/terminal-garden.png",
+      "bytes": 451422,
+      "sha256": "b6b9e923e9effce6568d344649d2c7551345bdf32d3b6913775ed7e95285e1cc",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/yuan-panorama.png",
+      "bytes": 193632,
+      "sha256": "1b49730130d16b8b8f1220d636d53ff9df72684a48b63a8f22cf7d5393278fe7",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/zone-1.png",
+      "bytes": 487332,
+      "sha256": "8e262b44372b1f0adbed6aa2d2b175a2502a7fef4c9e274727a4139c8c1ae37b",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/zone-2.png",
+      "bytes": 447796,
+      "sha256": "2819c7355eb3d697c0afe234d885026dadadbe39a677ca0972002b8980a0dc38",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/zone-3.png",
+      "bytes": 528446,
+      "sha256": "548060df3fa359fab249b1f40e6d364e0dfb4f72d56a96b5492833d3f25e762b",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/zone-4.png",
+      "bytes": 435949,
+      "sha256": "dcb4c5ced351c9daf07ba87a41e57d31738bab7eef11ca48a43868a397c8f64d",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/final/zone-5.png",
+      "bytes": 501572,
+      "sha256": "1a45ca0f3dc609e32b8f4e81f33c29b0d564261ac9b8df084869ade5e605bf84",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/geometry-cost.json",
+      "bytes": 914,
+      "sha256": "6524196a314de2c19ac65aefb2183e53ba86f3febe2899be2b21e4b91410fa42",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/layout-audit.json",
+      "bytes": 4385,
+      "sha256": "ad681a85d4229519cb6ae11fb06f7926cb1fc5333a7d26167ded77635655b7e3",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/lighting-layout.csv",
+      "bytes": 3133,
+      "sha256": "2864dc933625ed21de7071270e335e36b743e44dea98bab6271a5288e2f282e1",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/lighting-layout.json",
+      "bytes": 9952,
+      "sha256": "c9ee2a9d9b31578759b491e51f708af7bc814bca88f81a2156999f8f03fd2ded",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/logs/all-installed-lamp-unit.txt",
+      "bytes": 167,
+      "sha256": "370f559e56aff75d9b7c71f2efca7dce682e4a8c004cc16aafc699c690451eff",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/logs/browser.txt",
+      "bytes": 10807,
+      "sha256": "200fd70beb39172b3213bce66ca51bd56d515cb0ed0a538394a842342bc01961",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/logs/build.txt",
+      "bytes": 683,
+      "sha256": "332b8716f6a54baa39f63caf4c8a445be5c99764c59ff3f74c8bcee270722e93",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/logs/final-lamp-and-routes.txt",
+      "bytes": 4759,
+      "sha256": "d8d59c28bda9d63afb9cd1d9d053906b58e23800548df7ad267f99de55740f66",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/logs/full-browser-before-lamp-sweep.txt",
+      "bytes": 10807,
+      "sha256": "200fd70beb39172b3213bce66ca51bd56d515cb0ed0a538394a842342bc01961",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/logs/lamp-edge-unit.txt",
+      "bytes": 584,
+      "sha256": "4a1a74cd5881e81cba137ee55990c4b2f71d6a5b0a7f355f4499027ed5ea2fde",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/logs/lint.txt",
+      "bytes": 95,
+      "sha256": "66a36bca7ed0a43b7cbe93991d130c6d9847416ee59cd00f5caa33c7840f2c68",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/logs/unit.txt",
+      "bytes": 906,
+      "sha256": "8d7575e079d7c34b04afd35728d4d51257ff2e2f568fc4afd780fabc858e142a",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/map-adjustment-audit.json",
+      "bytes": 1565,
+      "sha256": "c8793b75d01577a6ea9e637633e4eac13471a795c69de83e5f7cd6dd6525c0e1",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/map-checkpoint/README.md",
+      "bytes": 766,
+      "sha256": "2252ce3006fb70ca6bb3a79ca252c58224e2028b863d86b97a1a59a4afe57718",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/map-checkpoint/capture-record.json",
+      "bytes": 3043,
+      "sha256": "37abfa63ffa6298583ca081ff03c98985b43293f0ff904061a3494570c1b22a4",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/map-checkpoint/desktop-player.png",
+      "bytes": 653344,
+      "sha256": "1413367fab39851427684458707a623ab2d82f8cd52a2c3c1d78410b2fe975d9",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/map-checkpoint/family-separation.png",
+      "bytes": 702014,
+      "sha256": "845e9909cc93d4c99259210d147980a1c585263517619b1fcbb6c370970ed1e2",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/map-checkpoint/mobile-player.png",
+      "bytes": 255089,
+      "sha256": "f8e8502c7881c83e19f9eaef7ac06743dbf280e3280d427f633835527bbdf2ba",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/map-checkpoint/network-browser.txt",
+      "bytes": 1675,
+      "sha256": "495a665fcf8fc871bf0ae9e116c932a9473b64e7ed701c431ab16a5ebf590353",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/map-checkpoint/unit.txt",
+      "bytes": 263,
+      "sha256": "32805f614542e5e37555acef216e194f2124d8d3e24198e5c779282c7f1172f0",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/map-checkpoint/yuan-panorama.png",
+      "bytes": 158351,
+      "sha256": "09468603b4b829ec1bdec72a003b7bde766edefb3d3fbd04617b1e03ebe0a72a",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/mobile-controller.json",
+      "bytes": 16966,
+      "sha256": "ee8cf9aba230e19c67659dcee6a239ee0e9c06178f1e6e094bf461b9a1231349",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/network-comparison.json",
+      "bytes": 4573,
+      "sha256": "032ffe3076a1c13d41a6373a4949f169bc6884f90a2f3b3858d0c5683afc1db2",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/omitted-light-audit.json",
+      "bytes": 607,
+      "sha256": "65b76f9b8fa18b16b7ce88109495b91de36106d3934ea5a75e6db5ded28d8b7b",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/render-comparison.json",
+      "bytes": 2230,
+      "sha256": "1be53a92796ec5b5858a474a4ffa73ab572413b06c98cf58570e8bcce41d2e16",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/reservation-audit.json",
+      "bytes": 777,
+      "sha256": "98517647aa7a88b2b08d2f0ab6b9c91ff4d363865f0345b244152477f3f6eafd",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/route-coverage.json",
+      "bytes": 4803,
+      "sha256": "014383ac7032f867f2a9838059946acd4ab60e8b1e26b4a18e015029fe889e2e",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/station-regression-desktop-controller.json",
+      "bytes": 16977,
+      "sha256": "76eb0597cc0a57eb782a7fc799c2445f1950b7c35ba1406202e39ede9cd8e94a",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/station-regression-desktop-plinth-guards.json",
+      "bytes": 634,
+      "sha256": "6730636413a25b12c105bda7298e3b3f73d466f8f0861649bf8440bf3330c5a7",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/station-regression-mobile-controller.json",
+      "bytes": 17007,
+      "sha256": "3a43b27efc06370feee1ecf103cb28e8a30e91dba8105f4d4f94322b1f65e2ac",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/station-regression-mobile-plinth-guards.json",
+      "bytes": 634,
+      "sha256": "6730636413a25b12c105bda7298e3b3f73d466f8f0861649bf8440bf3330c5a7",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/zone-check-desktop.json",
+      "bytes": 2986,
+      "sha256": "c3a4e915fc695e67ec6744ea85ea81ca693bd2a067e235a7d6a4129a3c797c38",
+      "verified": true
+    },
+    {
+      "path": "docs/previews/yuan-bridges-landscape-v1/zone-check-mobile.json",
+      "bytes": 2986,
+      "sha256": "4d2eb0fb0e012a948b9b3d4b6bfc7d319df4d02271cb0470960a23bb7f64f115",
+      "verified": true
+    },
+    {
+      "path": "scripts/bridge-landscape-domain.mjs",
+      "bytes": 8054,
+      "sha256": "770ae826c45f6e776c421fbe341f6dcce57f93464ba9e75bcdc6b7f6764ef890",
+      "verified": true
+    },
+    {
+      "path": "scripts/build-yuan-world.mjs",
+      "bytes": 8696,
+      "sha256": "47aeacc6f19ad72c9447e38efb9ec31616ce0f7c1773cbef7607e28fc5c1381b",
+      "verified": true
+    },
+    {
+      "path": "scripts/qa/audit-landscape-layout.mjs",
+      "bytes": 3094,
+      "sha256": "0b234b640099a6583407d3e105c5baabad0929e870cbe8ab016f6d3c69c6e918",
+      "verified": true
+    },
+    {
+      "path": "scripts/qa/capture-bridge-player.mjs",
+      "bytes": 2026,
+      "sha256": "ac16b43748821ec410d7e87e0c1a351b2bc76d6bd51da4cc09396b445fe712b4",
+      "verified": true
+    },
+    {
+      "path": "scripts/qa/capture-bridge-zone.mjs",
+      "bytes": 1557,
+      "sha256": "ec6ecaffbe4fe4e5663f4a1a3a8f6be4738e198dd852b46e36c9edc6f7cf673b",
+      "verified": true
+    },
+    {
+      "path": "scripts/qa/capture-yuan-landscape.mjs",
+      "bytes": 4729,
+      "sha256": "cbe8f64e8d6a348991430641966e3052261549e0cee0d8142f629d45614c707b",
+      "verified": true
+    },
+    {
+      "path": "scripts/qa/measure-bridge-geometry.mjs",
+      "bytes": 1628,
+      "sha256": "f63b6f7bc92a853b9116ec29b5575baafccb3e864860efbe13230047e78d9707",
+      "verified": true
+    },
+    {
+      "path": "src/data/bridge-landscape-plan.json",
+      "bytes": 5974,
+      "sha256": "29f44af827a34f6ad6adc245a5ec5ce8db7cce4ce84ddfc4c2249b6078601358",
+      "verified": true
+    },
+    {
+      "path": "src/data/bridge-landscape.json",
+      "bytes": 192586,
+      "sha256": "4a238ee37216e730e1cac3bcc294e962f3b9f54973e7f73820226080351df3a2",
+      "verified": true
+    },
+    {
+      "path": "src/data/future-island-reservations.json",
+      "bytes": 8466,
+      "sha256": "e37d416c1b30cddd12c19d192bd1a863d38715e6519dd5ee358628823650587d",
+      "verified": true
+    },
+    {
+      "path": "src/data/yuan-layout.json",
+      "bytes": 60614,
+      "sha256": "fee22925d10b48e81972753d232e8ad07e220a6534f67bda78b5f253df116e34",
+      "verified": true
+    },
+    {
+      "path": "src/data/yuan-map-adjustment.json",
+      "bytes": 537,
+      "sha256": "2ad17d6a9d5d79206453af185323c51c93b7500b57a5ee5d8620150575de0df2",
+      "verified": true
+    },
+    {
+      "path": "src/data/yuan-plan.json",
+      "bytes": 38995,
+      "sha256": "be3788b06d879d0ba3a4ce914c73e7aff0389f4438f187857d2537fd3344b35f",
+      "verified": true
+    },
+    {
+      "path": "src/data/yuan-surface.json",
+      "bytes": 339439,
+      "sha256": "9cf77867ecd47585ece4dd7504cd759e06c329870ab08fc4c543ea1a6a33def4",
+      "verified": true
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 11406,
+      "sha256": "7696063e31e03f1c47bd245a7fcd673656b0f7e2abf010f5dd054cefbaefacda",
+      "verified": true
+    },
+    {
+      "path": "src/world/bridge-landscape.js",
+      "bytes": 11652,
+      "sha256": "af44f1717fc0dda53aec865615750703fede784dfdaf8b043c35e5365b7cbf0d",
+      "verified": true
+    },
+    {
+      "path": "src/world/bridges.js",
+      "bytes": 4402,
+      "sha256": "ed564da213ecede9590015bb7861bb48c9ac565b0ce0513730afb1542d0e1a5d",
+      "verified": true
+    },
+    {
+      "path": "test/bridge-lamp-headroom.test.js",
+      "bytes": 1643,
+      "sha256": "7e9efb067efe5ffa8862181b5d68391775b31050f01518ae5481cbd6b4359c40",
+      "verified": true
+    },
+    {
+      "path": "test/bridge-landscape.e2e.js",
+      "bytes": 4105,
+      "sha256": "33096394138b16ccab951b66bb60c80a051b849965ecb70deb07301586ae0a78",
+      "verified": true
+    },
+    {
+      "path": "test/bridge-landscape.test.js",
+      "bytes": 2711,
+      "sha256": "a440a114279c86cdbc8f50a9b9f0b9816b8378a94c246de69ef9fce9cc478a05",
+      "verified": true
+    },
+    {
+      "path": "test/elevated-station.e2e.js",
+      "bytes": 8576,
+      "sha256": "d331744dcd14eead827acb90fcdc49acf492e2f4ddf56ba5024597a9f969b1ac",
+      "verified": true
+    },
+    {
+      "path": "test/future-island-reservations.test.js",
+      "bytes": 1334,
+      "sha256": "23ec492489b837468bc07617be3ee73b96a8db987b78f90c34fd33c26138ae56",
+      "verified": true
+    },
+    {
+      "path": "test/walkways.e2e.js",
+      "bytes": 7842,
+      "sha256": "e40c0808484427d0880e7f12f6dc99587c0f3d24b386b6ac3d9f87103f69e76e",
+      "verified": true
+    },
+    {
+      "path": "test/walkways.test.js",
+      "bytes": 8256,
+      "sha256": "33ce80da032678873acc4e90f64007009476e54dfa51f24e12c14e5c814d56fc",
+      "verified": true
+    },
+    {
+      "path": "test/yuan-size-b.test.js",
+      "bytes": 1658,
+      "sha256": "3092b0d836b954394c38a09238b86195ba6453de60dff407dce27200f4138d15",
+      "verified": true
+    }
+  ],
+  "passed": 105,
+  "failed": 0,
+  "pngCount": 24
+}
