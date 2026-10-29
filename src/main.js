@@ -16,7 +16,7 @@ import { buildPolicyScenery } from './world/policy-scenery.js';
 import { guardIndex } from './sim/walkways.js';
 import { buildChimes } from './world/chimes.js';
 import {loadParentChildModel,buildParentChildModel,parentChildCameraConstraint} from './world/parent-child-model.js';
-import { loadStationModel } from './world/station-model.js';
+import {loadElevatedStation,elevatedCameraConstraint} from './world/elevated-station.js';
 import { buildTransport, TRANSPORT_NOTICE } from './world/transport.js';
 import { PolicyUI, loadPolicies } from './policies.js';
 
@@ -48,7 +48,7 @@ const clouds = buildClouds(scene, rng);
 
 const chimes = buildChimes(islands.islands);
 let stationSource,familySource;
-try { [stationSource,familySource]=await Promise.all([loadStationModel(),loadParentChildModel()]); } catch(error) { document.getElementById('loading').textContent='建築模型載入失敗，請重新整理重試'; throw error; }
+try { [stationSource,familySource]=await Promise.all([loadElevatedStation(),loadParentChildModel()]); } catch(error) { document.getElementById('loading').textContent='建築模型載入失敗，請重新整理重試'; throw error; }
 const transport = buildTransport(islands.islands[0],undefined,stationSource);
 scene.updateMatrixWorld(true);
 const family=buildParentChildModel(familySource,islands.islands.find(i=>i.name==='tree'));
@@ -58,7 +58,8 @@ const props=buildPolicyScenery(islands.islands,{tree:family});
 const familySun=scene.children.find(o=>o.isDirectionalLight);
 familySun.castShadow=true;familySun.shadow.mapSize.set(1024,1024);familySun.shadow.bias=-.0003;familySun.shadow.normalBias=.025;familySun.shadow.camera.near=1;familySun.shadow.camera.far=220;
 familySun.shadow.updateMatrices(familySun);
-const shadowPoints=[];for(const x of[family.bounds.min.x,family.bounds.max.x])for(const y of[family.bounds.min.y,family.bounds.max.y])for(const z of[family.bounds.min.z,family.bounds.max.z])shadowPoints.push(new THREE.Vector3(x,y,z).applyMatrix4(familySun.shadow.camera.matrixWorldInverse));
+const shadowBounds=family.bounds.clone().union(transport.station.bounds);
+const shadowPoints=[];for(const x of[shadowBounds.min.x,shadowBounds.max.x])for(const y of[shadowBounds.min.y,shadowBounds.max.y])for(const z of[shadowBounds.min.z,shadowBounds.max.z])shadowPoints.push(new THREE.Vector3(x,y,z).applyMatrix4(familySun.shadow.camera.matrixWorldInverse));
 Object.assign(familySun.shadow.camera,{left:Math.min(...shadowPoints.map(p=>p.x))-1,right:Math.max(...shadowPoints.map(p=>p.x))+1,bottom:Math.min(...shadowPoints.map(p=>p.y))-1,top:Math.max(...shadowPoints.map(p=>p.y))+1});familySun.shadow.camera.updateProjectionMatrix();
 renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.shadowMap.autoUpdate=false;renderer.shadowMap.needsUpdate=true;
 bridges.walkPlans=family.adaptPaths(bridges.plans);
@@ -77,7 +78,7 @@ const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
 player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transport.station.constrainHead(pos,y,move);
 scene.updateMatrixWorld(true);
-player.cameraConstraint = parentChildCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='tree'));
+player.cameraConstraint = elevatedCameraConstraint(parentChildCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='tree')),transport.station.bounds);
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);
@@ -267,7 +268,7 @@ function frame() {
 
   if (firstFrame) {
     firstFrame = false;
-    family.stats.firstFrameMilliseconds=performance.now();
+    family.stats.firstFrameMilliseconds=performance.now();transport.stats.firstFrameMilliseconds=performance.now();
     ui.hideLoading();
   }
 }

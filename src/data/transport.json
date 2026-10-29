@@ -1,8 +1,8 @@
 {
-  "version": 4,
+  "version": 9,
   "notice": "交通政策願景示意・非核定或完工工程",
   "station": {
-    "source": "station-model.json"
+    "source": "locked elevated station ca94f48, scale1"
   },
   "platform": {
     "center": [
@@ -40,17 +40,17 @@
   },
   "npcReservation": {
     "position": [
-      5.6,
+      -3.7,
       0,
-      -3.9
+      3.93
     ],
     "facingYaw": 0,
     "bodyRadius": 0.4,
     "interactionRadius": 1.8,
     "playerStop": [
-      5.6,
+      -3.7,
       0,
-      -2.65
+      2.75
     ],
     "cameraFrom": [
       6.2,
@@ -62,35 +62,35 @@
   },
   "murals": {
     "x": [
-      -4.2,
-      -4.85,
-      -5.5,
-      -6.15,
-      -6.8
+      -6.2,
+      -5.6,
+      -5,
+      -4.4,
+      -3.8
     ],
     "y": 1.04,
-    "z": 3.5,
+    "z": -2.88,
     "scale": 0.43,
     "orderUnchanged": true,
     "baseBounds": [
-      -7.1,
-      3.38,
-      -3.9,
-      3.62
+      -6.55,
+      -2.99,
+      -3.45,
+      -2.8
     ],
-    "yaw": 3.141592653589793
+    "yaw": 0
   },
   "visionDisplay": {
     "position": [
-      -6.1,
+      5.5,
       0,
-      -3.65
+      -2.66
     ],
     "bounds": [
-      -7.05,
-      -3.85,
-      -5.1499999999999995,
-      -3.52
+      5.18,
+      -2.74,
+      5.82,
+      -2.58
     ],
     "topics": [
       "高鐵大甲設站及苑裡聯合開發願景",
