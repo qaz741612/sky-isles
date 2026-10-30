@@ -1,4 +1,4 @@
-import{test,expect}from'@playwright/test';import fs from'node:fs';
+import{test,expect}from'./helpers/software-qa.js';import fs from'node:fs';
 test('G actual water-edge walks, model policy picking and panorama state restoration',async({page,isMobile})=>{
  test.setTimeout(300000);await page.addInitScript(()=>{const raf=requestAnimationFrame.bind(window);window.requestAnimationFrame=fn=>(fn.name==='frame'||fn.toString().includes('.render('))?(window.__qaFrame=fn,0):raf(fn);});await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
  const result=await page.evaluate(()=>{const w=window.__skyisles.world,p=w.player;window.__skyisles.start();w.renderer.render=()=>{};const step=p.update.bind(p);w.__qaStep=step;p.update=()=>{};window.__qaFrame();let t=0;const tick=(x=0,z=0)=>step(1/60,{x,z,jumpPressed:false,jumpHeld:false},++t/60),ray=new p.ray.constructor();const records=[];for(const wall of w.flood.barriers.filter(w=>w.source==='Water edge safety')){const dx=wall.b.x-wall.a.x,dz=wall.b.z-wall.a.z,d=Math.hypot(dx,dz);if(d<1.2)continue;

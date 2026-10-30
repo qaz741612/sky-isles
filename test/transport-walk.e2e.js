@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './helpers/software-qa.js';
 
 async function enter(page){
  await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:150000});await page.evaluate(()=>{window.__skyisles.world.renderer.render=()=>{};});await page.locator('#title-screen .tap').click();

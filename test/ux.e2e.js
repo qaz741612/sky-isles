@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './helpers/software-qa.js';
 
 async function enter(page) {
   await page.goto('/'); await page.waitForFunction(() => window.__skyisles);

@@ -64,7 +64,8 @@ def build():
       'factory-limestone-podium','factory-forecourt-step','greenhouse-foundation',
       'greenhouse-floor','greenhouse-entry-path','exhibit-stage','terrace-vegetation-foundation',
       'plaza-inner-limestone-inlay','plaza-centre-copper-medallion','plaza-medallion-rim',
-      'plaza-radial-paving-joint','plaza-inner-motif','greenhouse-timber-terrace','factory-interior-floor')
+      'plaza-radial-paving-joint','plaza-inner-motif','greenhouse-timber-terrace','factory-interior-floor',
+      'architectural-deck-trim','west-observation-platform','public-art-pedestal','maker-monument-plinth')
     solid_names=('factory-masonry-shell','factory-west-glazing','factory-post-west',
       'factory-main-glass-doors','greenhouse-front-glass','greenhouse-side-glass',
       'greenhouse-corner-frame','greenhouse-raised-bed','greenhouse-entrance',
@@ -72,7 +73,8 @@ def build():
       'entry-planter-plinth','plaza-bench-seat','courtyard-low-bollard','factory-identity-pylon',
       'factory-front-timber-fins','outdoor-makers-table','exhibit-vertical','exhibit-machinery-table',
       'factory-rear-wall','factory-side-base','factory-side-upper','factory-side-pier','factory-front-base',
-      'factory-front-upper','factory-entry-door-frame','maker-portal-frame')
+      'factory-front-upper','factory-entry-door-frame','maker-portal-frame','overlook-support',
+      'abstract-art-spine','innovation-sculpture-stem')
     ground=[];roof=[];support=[];camera=[];ceiling=[];solids=[];editable=[]
     for mesh,mat,name in parts:
         v=np.asarray(mesh.vertices);faces=np.asarray(mesh.faces);lo,hi=mesh.bounds
@@ -101,7 +103,16 @@ def build():
                     roof.extend(t.flatten().tolist())
     footprint=list(g['foot'].exterior.coords)[:-1]
     write(Path('src/data/industry-youth-plan.json'),{'centre':[-20.358,0,38.610],'footprintLocal':footprint,'kind':'blender-industry-campus','npc':[{'id':'industry-guide-reserved','position':[.5,0,8.35],'playerStop':[.5,0,6.95],'groundElevation':-.1,'standingSize':[3,3],'facingYaw':math.pi,'interactionRadius':1.6,'implemented':False}],'entrances':['S14','S15','S16'],'mushroomLocal':[3.0560736586,0,3.4380828659],'sourceSHA256':hashlib.sha256(SOURCE.read_bytes()).hexdigest()})
-    write(Path('src/data/industry-youth-collision.json'),{'groundPositions':ground,'supportPositions':support,'roofPositions':roof,'ceilingPositions':ceiling,'cameraPositions':camera,'solids':solids,'source':'V2.2 semantic components, not all mesh raycast'})
+    # Collision is already rendered/queried as Float32. Quantize generated
+    # proxies to the generator's 1e-5 grid, without touching visible geometry.
+    # This avoids shipping long repeated Float64 decimal strings to phones.
+    def quantize(v):
+        if isinstance(v,float):return round(v,5)
+        if isinstance(v,list):return[quantize(x)for x in v]
+        if isinstance(v,tuple):return[quantize(x)for x in v]
+        if isinstance(v,dict):return{k:quantize(x)for k,x in v.items()}
+        return v
+    write(Path('src/data/industry-youth-collision.json'),quantize({'groundPositions':ground,'supportPositions':support,'roofPositions':roof,'ceilingPositions':ceiling,'cameraPositions':camera,'solids':solids,'source':'V2.2 semantic components, not all mesh raycast; 1e-5 proxy precision'}))
     write(Path('work/industry-editable-parts.json'),{'colours':g['COL'],'parts':editable})
     p=ROOT/'src/data/yuan-plan.json';plan=json.loads(p.read_text());plan['landscapeRetainedLampAnchors']=list(dict.fromkeys(plan.get('landscapeRetainedLampAnchors',[])+['S14-L2','S15-L2','S16-L1']));plan.setdefault('islandFootprintsXZ',{})['C']=[[x-20.358,z+38.610]for x,z in footprint];p.write_text(json.dumps(plan,ensure_ascii=False,indent=2)+'\n')
     print('C site prepared: %s parts, %s solids, %s dry triangles'%(len(parts),len(solids),len(ground)//9))

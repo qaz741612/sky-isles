@@ -18,7 +18,7 @@ import { buildChimes } from './world/chimes.js';
 import {loadParentChildModel,buildParentChildModel,parentChildCameraConstraint} from './world/parent-child-model.js';
 import {loadElevatedStation,elevatedCameraConstraint} from './world/elevated-station.js';
 import {loadFloodControl,buildFloodControl} from './world/flood-control.js';
-import {loadIndustryYouth,buildIndustryYouth} from './world/industry-youth.js';
+import {loadIndustryYouth,buildIndustryYouth,industryCameraConstraint} from './world/industry-youth.js';
 import { buildTransport, TRANSPORT_NOTICE } from './world/transport.js';
 import { PolicyUI, loadPolicies } from './policies.js';
 
@@ -82,7 +82,7 @@ const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
 player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transport.station.constrainHead(pos,y,move)||bridges.landscape.constrainHead(pos,y,move)||flood.constrainHead(pos,y,move)||industry.constrainHead(pos,y,move);
 scene.updateMatrixWorld(true);
-player.cameraConstraint = elevatedCameraConstraint(parentChildCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='tree')),transport.station.bounds);
+player.cameraConstraint = elevatedCameraConstraint(parentChildCameraConstraint(industryCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='koi'),()=>player.orbit),islands.islands.find(i=>i.name==='tree')),transport.station.bounds);
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);

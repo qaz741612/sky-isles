@@ -24,3 +24,25 @@ export function buildIndustryYouth(source,island){
  group.updateWorldMatrix(true,true);const bounds=new THREE.Box3().setFromObject(source,true);
  return{group,source,meshes,pickMeshes:meshes,colliders,ceilings,barriers,cameraObstacles,bounds,config:plan,constrainHead:stationHeadroom(ceilings,bounds,1.6),stats:{...source.userData.loadStats,triangles,runtimeMeshes:meshes.length,materials:materials.size,newLights:0}};
 }
+
+// Covered approaches must not push the camera into the character's head.
+// Keep orbit state untouched; use a nearby clear orbit ray, then a low porch
+// sight line only if the original high sight line has no room. Remember the
+// chosen offset to avoid alternating sides while walking under a beam.
+export function industryCameraConstraint(constrain,island,getOrbit){
+ let lastOffset=0;
+ const wrapped=(target,position)=>{
+  const desired=position.clone(),blocked=constrain(target,position);
+  if(!blocked||Math.hypot(target.x-island.pos.x,target.z-island.pos.z)>16||position.distanceTo(target)>3.2)return blocked;
+  const o=getOrbit?.(),dx=desired.x-target.x,dz=desired.z-target.z,r=o?Math.cos(o.pitch)*o.dist:Math.max(6,Math.hypot(dx,dz)),yaw=o?.yaw??Math.atan2(dx,dz);
+  let best=position.clone(),offset=lastOffset;
+  outer:for(const height of[o?target.y+Math.sin(o.pitch)*o.dist:desired.y,target.y+.3]){
+   for(const a of new Set([lastOffset,0,-.35,.35,-.7,.7,-1.05,1.05])){
+    const candidate=new THREE.Vector3(target.x+Math.sin(yaw+a)*r,height,target.z+Math.cos(yaw+a)*r);constrain(target,candidate);
+    if(candidate.distanceTo(target)>best.distanceTo(target)+.15){best=candidate;offset=a;}
+    if(best.distanceTo(target)>Math.min(6,r*.7))break outer;
+   }
+  }
+  lastOffset=offset;position.copy(best);return blocked;
+ };wrapped.stats=constrain.stats;return wrapped;
+}

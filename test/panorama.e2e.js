@@ -1,4 +1,4 @@
-import { test,expect } from '@playwright/test';
+import { test,expect } from './helpers/software-qa.js';
 import fs from 'node:fs';
 const folder='work/world-regression-panorama';
 
@@ -11,7 +11,7 @@ test('real 3D panorama fits, locks movement, preserves progress and returns the 
  await expect.poll(()=>page.evaluate(()=>window.__skyisles.world.player.move.grounded),{timeout:60000}).toBe(true);
  await page.waitForTimeout(800);
  fs.mkdirSync(folder,{recursive:true});
- await page.screenshot({path:`${folder}/${isMobile?'mobile':'desktop'}-explore.png`});
+ await page.evaluate(()=>{const w=window.__skyisles.world;w.renderer.qaDraw?.(w.scene,w.panorama.camera);});await page.screenshot({path:`${folder}/${isMobile?'mobile':'desktop'}-explore.png`});
  await page.evaluate(()=>{const w=window.__skyisles.world;window.__skyisles.playChime(window.__skyisles.getState().muralOrder[0]);const island=w.islands.islands.find(i=>i.name==='windmill');w.player.teleport(island.pos.x,island.pos.y+.4,island.pos.z);});
  await expect.poll(()=>page.evaluate(()=>window.__skyisles.world.player.move.grounded),{timeout:60000}).toBe(true);
  await page.waitForTimeout(1200);
@@ -28,16 +28,16 @@ test('real 3D panorama fits, locks movement, preserves progress and returns the 
  return{corners,orthographic:c.isOrthographicCamera,pos:w.player.pos.toArray(),checkpoint:w.player.lastGrounded.toArray(),progress:w.puzzle.unlocked};
  });
  expect(result.orthographic).toBe(true);for(const p of result.corners){expect(Math.abs(p[0])).toBeLessThan(.86);expect(Math.abs(p[1])).toBeLessThan(.86);}
- expect(result.pos).toEqual(before.pos);expect(result.checkpoint).toEqual(before.checkpoint);
+ for(const key of['pos','checkpoint'])for(let i=0;i<3;i++)expect(result[key][i]).toBeCloseTo(before[key][i],10);
  await page.keyboard.down('KeyW');await page.waitForTimeout(500);await page.keyboard.up('KeyW');
- expect(await page.evaluate(()=>window.__skyisles.world.player.pos.toArray())).toEqual(before.pos);
- await page.screenshot({path:`${folder}/${isMobile?'mobile-portrait-panorama':'panorama-pure'}.png`});
- if(!isMobile){await page.evaluate(()=>window.__skyisles.world.panorama.labelled=true);await expect(page.locator('.island-label:visible')).toHaveCount(8);await page.screenshot({path:`${folder}/panorama-labelled.png`});await page.evaluate(()=>window.__skyisles.world.panorama.labelled=false);}
+ const locked=await page.evaluate(()=>window.__skyisles.world.player.pos.toArray());for(let i=0;i<3;i++)expect(locked[i]).toBeCloseTo(before.pos[i],10);
+ await page.evaluate(()=>{const w=window.__skyisles.world;w.renderer.qaDraw?.(w.scene,w.panorama.camera);});await page.screenshot({path:`${folder}/${isMobile?'mobile-portrait-panorama':'panorama-pure'}.png`});
+ if(!isMobile){await page.evaluate(()=>window.__skyisles.world.panorama.labelled=true);await expect(page.locator('.island-label:visible')).toHaveCount(8);await page.evaluate(()=>{const w=window.__skyisles.world;w.renderer.qaDraw?.(w.scene,w.panorama.camera);});await page.screenshot({path:`${folder}/panorama-labelled.png`});await page.evaluate(()=>window.__skyisles.world.panorama.labelled=false);}
  await page.setViewportSize(isMobile?{width:844,height:390}:{width:1280,height:720});
  const fitted=await page.evaluate(()=>{const w=window.__skyisles.world,b=w.bridges.bounds;return [[b.minX,b.minZ],[b.maxX,b.maxZ]].map(([x,z])=>w.player.pos.clone().set(x,0,z).project(w.panorama.camera).toArray());});
  for(const p of fitted){expect(Math.abs(p[0])).toBeLessThan(.86);expect(Math.abs(p[1])).toBeLessThan(.86);}
  await page.locator('#panorama-btn').click();await expect.poll(()=>page.evaluate(()=>window.__skyisles.getState().panoramaMode),{timeout:30000}).toBe('explore');
  const after=await page.evaluate(()=>{const w=window.__skyisles.world;return{pos:w.player.pos.toArray(),checkpoint:w.player.lastGrounded.toArray(),orbit:{...w.player.orbit},progress:w.puzzle.unlocked};});
- expect(after.pos).toEqual(before.pos);expect(after.checkpoint).toEqual(before.checkpoint);expect(after.orbit).toEqual(before.orbit);expect(after.progress).toBe(before.progress);
+ for(const key of['pos','checkpoint'])for(let i=0;i<3;i++)expect(after[key][i]).toBeCloseTo(before[key][i],10);expect(after.orbit).toEqual(before.orbit);expect(after.progress).toBe(before.progress);
  await page.locator('#policy-menu summary').click();await page.locator('#policy-list button').first().click();await expect(page.locator('#policy-title')).toHaveText('交通大升級');expect(errors).toEqual([]);
 });
