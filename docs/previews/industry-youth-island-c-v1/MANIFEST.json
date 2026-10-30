@@ -1,0 +1,546 @@
+{
+  "basis": "ae2a63f",
+  "excludes": [
+    "MANIFEST.json self",
+    "GITHUB-VERIFIED.json receipt",
+    "work/",
+    "node_modules/",
+    "*.blend1"
+  ],
+  "files": [
+    {
+      "path": "docs/design/industry-youth-island-c-preflight/README.md",
+      "bytes": 5276,
+      "sha256": "280ae97c19876c5297d90183e112b8d48cd8db1a8d1b9c742a021fa8683dba50"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-preflight/audit.json",
+      "bytes": 6862,
+      "sha256": "5fafc33626dc0e229ec3c52a0022bf4187e0f41f64d43eade2575c54c0d7f6e0"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-preflight/audit.mjs",
+      "bytes": 6590,
+      "sha256": "6a7d5a62d3d217ea75903352f6d7c9fc378e6c197f08ebe4dddae586bd2d2390"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-preflight/existing-space.svg",
+      "bytes": 7928,
+      "sha256": "63ccae08820ba989c5c31bd4d5211cae1cfb911d5c293ea803acdce197722593"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/industry-youth-c.blend",
+      "bytes": 13730716,
+      "sha256": "90fcf437d0075d634ade8b609e194b7816482ca048bb306f3e76baab4c29c4b3"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/model-report.json",
+      "bytes": 648,
+      "sha256": "a2d88570f0703740eae13b28226ef75e8500e4d67257667438a6d079139f28c9"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/00_C_island_same_source_six_views.jpg",
+      "bytes": 316999,
+      "sha256": "11b463c01e05190c97667a1ef66cc79a68d30c2ba64973eb845bcffcfdefa64d",
+      "width": 1830,
+      "height": 1540
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/00_設計總覽.jpg",
+      "bytes": 472762,
+      "sha256": "b728ab53263d18ffdac4ffcd25dd63a7e2ad3759c1afe3c9e810beef12435420",
+      "width": 2000,
+      "height": 1400
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/10_真實橋口配置.jpg",
+      "bytes": 151155,
+      "sha256": "0ae31f2e3a4dfb624a670b76ca1a7bbb3280e5fb25d63703a317bf09f18be457",
+      "width": 1980,
+      "height": 1800
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/CODEX_正式施工指令.txt",
+      "bytes": 4446,
+      "sha256": "c6ecb7104aa601a621f9412d045d7e63324dc2e1a3cd1e846ef6488bc5d9d01d"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/C_IndustryYouth_V2_DesignReference.glb",
+      "bytes": 1474344,
+      "sha256": "6a4efb2af3091ca2741e223fca67ade5c7d4842991e7d795d025cf028ba8aeb7"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/C_IndustryYouth_V2_RuntimeAssetCandidate.glb",
+      "bytes": 1266956,
+      "sha256": "ee52e3b7c321a1a9262df3d52a77e969153c8ea6b27bb313780a157a0c2495b7"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/C_IndustryYouth_V2_StaticAudit.json",
+      "bytes": 3072,
+      "sha256": "afb419c083c6a6342c4bc3f91b6c3609f9e1ecb8b783c711d4c628da98e7eae5"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/README_交付說明.txt",
+      "bytes": 1617,
+      "sha256": "70aa3a46f599da2a3d655e7999f7d1e228ff4a75d472f589c7de58d19c0c5695"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/audit_industry_c_v2.py",
+      "bytes": 4476,
+      "sha256": "f772d1288e8ea2d8818733cfc0c9e47bc45a3e16598ae530efdcdecb6d46d9fa"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/build_industry_c_v2.py",
+      "bytes": 28377,
+      "sha256": "6b7e0f5a7884502a568330239f7604e69028c20ce5b043ec997999cfc79d4f27"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/make_design_board.py",
+      "bytes": 7568,
+      "sha256": "39287bba3a268104bba6a876a375743484966beedc70da68cd398b2019b56085"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/source-package/C_產業青年_V2.2/render_industry_c_v2.py",
+      "bytes": 3892,
+      "sha256": "5e8d31fbc713a472ff5f4762c610ce25944e0ecc6e5bad095e4fa42824471ef5"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/CHECKPOINT-A.md",
+      "bytes": 1050,
+      "sha256": "7e1c8a9974e683eeb7a178923135669b756dcf70e5b59d86e2fc5d4095d091d1"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/CHECKPOINT-B-WIP.md",
+      "bytes": 1215,
+      "sha256": "6c16142b06e9d0aaf183d2e6bc6e6568f5c730dfd20946b0d55c39630d74744d"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/CHECKPOINT-B.md",
+      "bytes": 1496,
+      "sha256": "cd35ba5e97898209a99be0b5b9b5160cc51bdac1273a6b2098adeea58004863b"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/CHECKPOINT-C-WIP.md",
+      "bytes": 1238,
+      "sha256": "fc62630a053b9bdaaa9adb73fe09a48c304d1a90fbd28c6594c6044f716d9968"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/FILE-LIST.md",
+      "bytes": 6000,
+      "sha256": "0a1be4f7bbafd45e4f75f2c359e0572cf0e41bc59dc148eecc93af3b8bff6675"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/README.md",
+      "bytes": 2797,
+      "sha256": "1168141553a4c272bbca7778efcacadff2a2a40b811304db8b583c53671623ce"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/RECOVERY.md",
+      "bytes": 2072,
+      "sha256": "4f13c2a42c530368ab54cc7ca899fff55233b20e7b0a1836e7600ce35a4e01d9"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/REPORT.md",
+      "bytes": 7565,
+      "sha256": "d9ff8f429d199b157015b70e6965961730d31ed163b4e07fae0f84b6cc897470"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/back.png",
+      "bytes": 1359045,
+      "sha256": "17f4aa099912bf295e3026a007fb42c9b920cb436e2064220af9631f67861cb4",
+      "width": 1200,
+      "height": 960
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/front.png",
+      "bytes": 1367569,
+      "sha256": "613993aea03c5b35185ab653d2fcfbbf5fbb4841bfbd65ca63d44bd2a963e9ba",
+      "width": 1200,
+      "height": 960
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/greenhouse-detail.png",
+      "bytes": 2199253,
+      "sha256": "d59ac2305577d994284e470ef05024799266a381ee3e4de2c66cc1d2dfa6af1e",
+      "width": 1200,
+      "height": 960
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/hero.png",
+      "bytes": 1515168,
+      "sha256": "a6c95e8e69d74cb6feb936accf37132dcb629f6c8e1aa7cca9a0b788111d94c6",
+      "width": 1200,
+      "height": 960
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/left.png",
+      "bytes": 1379495,
+      "sha256": "c27187932df51c0b5c377170034ad2e3320ff8d51b077f0dd9310294700a1489",
+      "width": 1200,
+      "height": 960
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/render-record.json",
+      "bytes": 2389,
+      "sha256": "5e206f340b16b507c0c1e2a1036f98f3851029edd8e04d9de14c83afe93d1959"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/right.png",
+      "bytes": 1337292,
+      "sha256": "c03415592ccf36f1d65b05a1eaaec1be6827f6c582a78170707ec9bd0149af3a",
+      "width": 1200,
+      "height": 960
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/six-views.png",
+      "bytes": 388702,
+      "sha256": "7f2b2b2b01b97224595589a121087aaf373829aae72e87247ce1a1ea0afd4f88",
+      "width": 1200,
+      "height": 690
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/top.png",
+      "bytes": 1564597,
+      "sha256": "de73806349c7c6784dc8a42076faa3d7949eabfbd88465f65456dba15c7d3894",
+      "width": 1200,
+      "height": 960
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/blender/workshop-detail.png",
+      "bytes": 2128124,
+      "sha256": "7b78b80a9f5171a2d707daaba88db5610300631ee8b5b86d8d96fcea5e8473aa",
+      "width": 1200,
+      "height": 960
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/browser-summary.json",
+      "bytes": 25607,
+      "sha256": "8e5871453ac03e146f7eed910c2bd575d113c009e93ed521bfc5ab15266aad53"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/diagnostics/checkpoint-a-initial-failure.json",
+      "bytes": 360,
+      "sha256": "513a0df2caea14301152ce6b57556c7208eec04e123256a4cfbe89a9522d05e6"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/diagnostics/continuous-render-interruption.json",
+      "bytes": 12124,
+      "sha256": "b5362836b0a6167b6fcc2c15e2aa4d556f027f453a52df00a10965bb27c1a280"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/c-entrance.png",
+      "bytes": 536429,
+      "sha256": "ec59a17d7940c974a7336ce8d8e38eb331462aa0cb9bfc8682e71ba5bc1afa5d",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/c-hero.png",
+      "bytes": 584996,
+      "sha256": "4751902fe064840425e2d55718260db3354ec4d986d5700b7b3dd605bb25eac1",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/c-top.png",
+      "bytes": 515579,
+      "sha256": "750e8919291b4186144b7a34a0e7313d4d8dd2ad1152c538210f28960e2f1feb",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/capture-record.json",
+      "bytes": 14982,
+      "sha256": "3fd6614531047b9fb3bfd02050b0ad5cb85244232e7ed9a293444916a16c6163"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/desktop-native.png",
+      "bytes": 460579,
+      "sha256": "03e72061decd187bb360dc562f51fe8e909b7fe984ca3030b62edf9cfd4d9e5c",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/mobile-landscape.png",
+      "bytes": 350141,
+      "sha256": "d3578692cd33c22fb53be60287247fc5dfa2ebfc1f6054a3e45402495f44c639",
+      "width": 932,
+      "height": 430
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/mobile-native.png",
+      "bytes": 204849,
+      "sha256": "5a69a2c366eb869355d51751fb06ac91b62381e2ad71076a3e1cd1e2fa8e0d66",
+      "width": 430,
+      "height": 932
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/mobile-panorama.png",
+      "bytes": 106460,
+      "sha256": "71400685e016dfa2a7f19d5ad8759e3de8cd4ed5e1735d270b00a8c3505ee2aa",
+      "width": 430,
+      "height": 932
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/mobile-porch-landscape.png",
+      "bytes": 366765,
+      "sha256": "b4451d04b352ad587a23c3969f01e987f10de0c0606452d63595537262fc5bd6",
+      "width": 932,
+      "height": 430
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/mobile-porch-native.png",
+      "bytes": 240855,
+      "sha256": "7f2371ef434c05fe920b20ac704a9415f5d647bb42cc3246cc17a28ae3c532a3",
+      "width": 430,
+      "height": 932
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/porch-capture-record.json",
+      "bytes": 2899,
+      "sha256": "39b298130f70309762374e8f1ff57cedaf461505625ca31462715a449e110de4"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/s14-player.png",
+      "bytes": 487941,
+      "sha256": "18397e638fef4315c9a93109684fa30d3007fdb91c4e04b1c7fe566b77bc953c",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/s15-player.png",
+      "bytes": 527748,
+      "sha256": "ec5b9c60c22e5ec88d3be80e9387dd566f2dbee0505952253332faa2b4b25a10",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/s16-player.png",
+      "bytes": 484705,
+      "sha256": "0e84e657386b75f985a3bc00afa758addd3a1db40660e43de9fbef9f5323ea69",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/workshop-detail.png",
+      "bytes": 512589,
+      "sha256": "fa6dc88e85c8e0ed932fddb7bb345d3fa49536b4e5397620009c7ce683fd3d94",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/game/yuan-panorama.png",
+      "bytes": 205232,
+      "sha256": "673496f5f4ac3b38e89a4b677ad8939c655a622fa5eb3170a9eafc635e9bb898",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/geometry-audit.json",
+      "bytes": 3907,
+      "sha256": "78d26a61b78f24d6326a8b0922acd4f38e5e903579ea5aa5c89dabb0b577ceae"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/interactions-desktop.json",
+      "bytes": 2792,
+      "sha256": "da89734ce2814dae99a1d1ca21f4521a9c4fe7b4d0782f9288f352403a3ca1b6"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/interactions-mobile.json",
+      "bytes": 2778,
+      "sha256": "6fbf8d94237ed3cdaf4e5ae25dd40f0340e161d16c39bb97c2ecc31cb4816aa4"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/legacy-report-preservation.json",
+      "bytes": 380,
+      "sha256": "a061331b75d2383f2a16bf2f6e277f0ee6b63dcd9a8896e77863bf0a6c7b6bc7"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/network-comparison.json",
+      "bytes": 4573,
+      "sha256": "74652c490e0d976e4f49d0b2808540f331057f0e0fbc5c706cf36674d0a323ea"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/performance.json",
+      "bytes": 12255,
+      "sha256": "517c78ebaa16351ef6e45809120a838243e3a6c6533b7556a2b61ab554a4d052"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/recovery-inventory.json",
+      "bytes": 1455,
+      "sha256": "368a17da4fc7cc745e04678f8b2ad168e12bcd4e1483baa27bcf410b26566e06"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/reference-comparison.png",
+      "bytes": 609346,
+      "sha256": "be81b94d7cdb3657bc119cf9ef565fb1d32ee27b85c8c260396c29a4faad0ff3",
+      "width": 1440,
+      "height": 650
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/routes-desktop-checkpoint-a.json",
+      "bytes": 1893,
+      "sha256": "9b8e012d12be6c2933ba38dac4c779c151de9897e972e09b8556d7456d69bf1c"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/routes-desktop.json",
+      "bytes": 3469,
+      "sha256": "a33fc0d254d061c5ec8c4494d35020cf2db280c0ff8ca0a65a1a7ed87e96bf6e"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v1/routes-mobile.json",
+      "bytes": 3483,
+      "sha256": "0f2f169b31577ba4827448120b754451782eff0ac5514418f31f43ac26262d4c"
+    },
+    {
+      "path": "public/models/industry-youth-c/industry-youth-c.glb",
+      "bytes": 2587016,
+      "sha256": "8f950bb916cebb967102b58c8b92cb11bc85ddb67689d9cd2193c76f9050be63"
+    },
+    {
+      "path": "scripts/blender/build_industry_c.py",
+      "bytes": 8624,
+      "sha256": "32385da85ceaeaea3b43faec5ba00a186d402a4aaa4d82220e52c4918bd928bc"
+    },
+    {
+      "path": "scripts/bridge-landscape-domain.mjs",
+      "bytes": 8750,
+      "sha256": "810b53b79d9dd22e81117b49e5dc98ba15147b933226da55bdee409e666ea28b"
+    },
+    {
+      "path": "scripts/industry/audit_c.py",
+      "bytes": 3744,
+      "sha256": "6bb06f8d41e8fc71ffec01898e9a9d7c9e39e49c12c06916c79e0d8a751ce83a"
+    },
+    {
+      "path": "scripts/industry/prepare_c.py",
+      "bytes": 8740,
+      "sha256": "8520627e43defd075cd27f6f76d7ac98a41aba17fcc9c6a226446bc4824fd77b"
+    },
+    {
+      "path": "scripts/qa/capture-industry-c.mjs",
+      "bytes": 4745,
+      "sha256": "10759c13f3a5737aac10883d8243375ec2a6b750b6587e721e1e8a09d28dfc32"
+    },
+    {
+      "path": "scripts/qa/check-industry-c.mjs",
+      "bytes": 4196,
+      "sha256": "50a6e960e756a21e4d41ead4633750335f037ea183a828c58f687c88e6e11187"
+    },
+    {
+      "path": "scripts/qa/finalize-industry-c.py",
+      "bytes": 16429,
+      "sha256": "725aea8f065c6f4db854c6ef191aab7c5a8f4e31f9351494bf1d09375cf313cd"
+    },
+    {
+      "path": "src/data/bridge-landscape.json",
+      "bytes": 186332,
+      "sha256": "a68a58e211bed39ec46a036676e265f101e1d5ae50d4f23dec1cc0ac5bd86d36"
+    },
+    {
+      "path": "src/data/industry-youth-collision.json",
+      "bytes": 1256154,
+      "sha256": "35f1c6ec0147037fdd7ae1bb78e8a81f8d02ada08f817bef5bb45a4d65d715fc"
+    },
+    {
+      "path": "src/data/industry-youth-plan.json",
+      "bytes": 4275,
+      "sha256": "99743161c8808b2a6a4dc74e18912c11c17e177197b6ba84899529de50d07b92"
+    },
+    {
+      "path": "src/data/yuan-plan.json",
+      "bytes": 48508,
+      "sha256": "e9498ef68d0505c005544cc18eb416bbb4448fac17da7c04dbc7d965271fc867"
+    },
+    {
+      "path": "src/data/yuan-surface.json",
+      "bytes": 345878,
+      "sha256": "45be23c759227de17a591909df156331677c62b08c7c78858f78904e1b8c6ecf"
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 12056,
+      "sha256": "5f7088a990544fc16885e3b21c6561558933f6a987a96466d8925187c72f1489"
+    },
+    {
+      "path": "src/world/bridges.js",
+      "bytes": 4475,
+      "sha256": "06ff0ee36071c804ac0268640d0f120274e65f4b97cd53689dce945d44920b12"
+    },
+    {
+      "path": "src/world/industry-youth.js",
+      "bytes": 4737,
+      "sha256": "a3d9b1a0a7cc4a54646f9b132f9379835177c89c0db977ca639eed0be99a30ec"
+    },
+    {
+      "path": "src/world/islands.js",
+      "bytes": 8058,
+      "sha256": "3d3aece82c3e03af5990147836e8b942a321e2600f4969c3cd03610ca4b7038f"
+    },
+    {
+      "path": "test/app.e2e.js",
+      "bytes": 5462,
+      "sha256": "c8aceabd3c8e85606364698a050b329aa811c2ca31629da08a51c635f7f6a219"
+    },
+    {
+      "path": "test/controls.e2e.js",
+      "bytes": 4167,
+      "sha256": "81d0f721e73115b507d3bff98e970963734ce34c8797e174a27e2eae6feca51f"
+    },
+    {
+      "path": "test/elevated-station.e2e.js",
+      "bytes": 8584,
+      "sha256": "80a5c98abfc50e1b19c71610039f84d2ce4122d4f4019c4f8f60ce2fc024b5f2"
+    },
+    {
+      "path": "test/flood-interactions.e2e.js",
+      "bytes": 4242,
+      "sha256": "d5ed11fcafb1e279cd662dcd0edc5eb0b8e7b64943564f3fc76828ec99e8c0e8"
+    },
+    {
+      "path": "test/helpers/software-qa.js",
+      "bytes": 852,
+      "sha256": "ade00495203783fb92c3b393083d81d1a72f499f398dd931025bbb5d81db6ec9"
+    },
+    {
+      "path": "test/industry-youth.e2e.js",
+      "bytes": 3181,
+      "sha256": "14119bf518280eff67ff66203dbe1c29a2979c31c5de8d8a030a482cea9936ec"
+    },
+    {
+      "path": "test/industry-youth.test.js",
+      "bytes": 4352,
+      "sha256": "695ab4661d9dc8339b17a2312fd885ebbc4ca5d8de630d856f906d16fe86b8b7"
+    },
+    {
+      "path": "test/panorama.e2e.js",
+      "bytes": 4856,
+      "sha256": "f6c8b7ffdeb437d6069cb3100cbb22dbef4ab2990a2b572c5ebc006c9862ed2d"
+    },
+    {
+      "path": "test/parent-child.e2e.js",
+      "bytes": 5988,
+      "sha256": "50c1a77475c6ded70db52fba7b35803c0ec4fd4a023955aa07a8e33b20fd99e4"
+    },
+    {
+      "path": "test/transport-walk.e2e.js",
+      "bytes": 3421,
+      "sha256": "2351bfddacc2aee9e09069ca2799c14f9cd6f7b4185e0bae077ede6e6e941887"
+    },
+    {
+      "path": "test/ux.e2e.js",
+      "bytes": 4499,
+      "sha256": "d46a6c742bec4e12e1532c18fb5a4ac448c6dc401ef919e1b4ec8a88b69b778d"
+    },
+    {
+      "path": "test/walkways.e2e.js",
+      "bytes": 7850,
+      "sha256": "19753ec7f7b0e67fcfe002e4dcedb190ae676a81802d3f21d8231863976c691f"
+    },
+    {
+      "path": "test/walkways.test.js",
+      "bytes": 8631,
+      "sha256": "ed243ec520d379b9a0091c60d8c76680a24124ba221a32ef2db45d01799bd150"
+    }
+  ]
+}

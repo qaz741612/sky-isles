@@ -1,0 +1,807 @@
+{
+  "mode": "SwiftShader engineering mode, native rAF/input/physics; real first and explicit frames; not hardware FPS",
+  "broadStats": {
+    "startTime": "2026-10-30T06:45:20.416Z",
+    "duration": 1203918.131,
+    "expected": 41,
+    "skipped": 3,
+    "unexpected": 2,
+    "flaky": 0
+  },
+  "finalTargetedStats": {
+    "startTime": "2026-10-30T07:02:11.330Z",
+    "duration": 236491.983,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "effectiveCounts": {
+    "passed": 43,
+    "skipped": 3,
+    "failed": 0
+  },
+  "initialBroadResults": [
+    {
+      "file": "app.e2e.js",
+      "title": "loads without console errors and renders non-uniform pixels",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 109313,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "getState exposes the core game state",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 31469,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "all eight policies open from the menu and have no invented content",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 33643,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "world label opens matching policy and Escape closes the dialog",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 31136,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "teleport moves the player and fall respawns at last ground",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 30756,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "loads without console errors and renders non-uniform pixels",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 25246,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "getState exposes the core game state",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 12619,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "all eight policies open from the menu and have no invented content",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 15057,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "world label opens matching policy and Escape closes the dialog",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 12224,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "teleport moves the player and fall respawns at last ground",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 16635,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyW moves the character along the camera-relative forward direction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 42053,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyS moves the character along the camera-relative back direction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 35413,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyA moves the character along the camera-relative left direction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 38999,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyD moves the character along the camera-relative right direction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 20668,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "touch joystick up moves the character forward",
+      "project": "desktop",
+      "status": "skipped",
+      "durationMs": 284,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyW moves the character along the camera-relative forward direction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 30474,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyS moves the character along the camera-relative back direction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 32948,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyA moves the character along the camera-relative left direction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 34723,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyD moves the character along the camera-relative right direction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 29065,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "touch joystick up moves the character forward",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 35881,
+      "errors": []
+    },
+    {
+      "file": "elevated-station.e2e.js",
+      "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 28567,
+      "errors": []
+    },
+    {
+      "file": "elevated-station.e2e.js",
+      "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 28025,
+      "errors": []
+    },
+    {
+      "file": "flood-interactions.e2e.js",
+      "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 17536,
+      "errors": []
+    },
+    {
+      "file": "flood-interactions.e2e.js",
+      "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 12309,
+      "errors": []
+    },
+    {
+      "file": "industry-youth.e2e.js",
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "project": "desktop",
+      "status": "failed",
+      "durationMs": 18317,
+      "errors": [
+        "Error: page.evaluate: Error: walked through C rail\n    at eval (eval at evaluate (:303:30), <anonymous>:58:63)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at eval (eval at evaluate (:303:30), <anonymous>:58:63)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/sky-isles-industry-c-preflight/test/industry-youth.e2e.js:7:26"
+      ]
+    },
+    {
+      "file": "industry-youth.e2e.js",
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 13489,
+      "errors": []
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "desktop",
+      "status": "failed",
+      "durationMs": 23941,
+      "errors": [
+        "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 1\n\n  Array [\n    -53.352,\n-   1.1920928910669204e-8,\n+   1.1920929021691506e-8,\n    87.048,\n  ]\n\n  39 |  await page.locator('#panorama-btn').click();await expect.poll(()=>page.evaluate(()=>window.__skyisles.getState().panoramaMode),{timeout:30000}).toBe('explore');\n  40 |  const after=await page.evaluate(()=>{const w=window.__skyisles.world;return{pos:w.player.pos.toArray(),checkpoint:w.player.lastGrounded.toArray(),orbit:{...w.player.orbit},progress:w.puzzle.unlocked};});\n> 41 |  expect(after.pos).toEqual(before.pos);expect(after.checkpoint).toEqual(before.checkpoint);expect(after.orbit).toEqual(before.orbit);expect(after.progress).toBe(before.progress);\n     |                    ^\n  42 |  await page.locator('#policy-menu summary').click();await page.locator('#policy-list button').first().click();await expect(page.locator('#policy-title')).toHaveText('交通大升級');expect(errors).toEqual([]);\n  43 | });\n  44 |\n    at /workspace/sky-isles-industry-c-preflight/test/panorama.e2e.js:41:20"
+      ]
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 17964,
+      "errors": []
+    },
+    {
+      "file": "parent-child.e2e.js",
+      "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 25601,
+      "errors": []
+    },
+    {
+      "file": "parent-child.e2e.js",
+      "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 20458,
+      "errors": []
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "transport portrait and landscape keep policy, panorama and existing input available",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 18582,
+      "errors": []
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "original home chime responds to native keyboard or touchscreen interaction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 15904,
+      "errors": []
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "transport portrait and landscape keep policy, panorama and existing input available",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 16640,
+      "errors": []
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "original home chime responds to native keyboard or touchscreen interaction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 11791,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 17557,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 17811,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+      "project": "desktop",
+      "status": "skipped",
+      "durationMs": 238,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 13242,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 14812,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 53166,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "walk every island without jumping through keyboard or a single joystick pointer",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 36254,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 15198,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+      "project": "desktop",
+      "status": "skipped",
+      "durationMs": 381,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "walk every island without jumping through keyboard or a single joystick pointer",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 80388,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 25746,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 34223,
+      "errors": []
+    }
+  ],
+  "finalTargetedResults": [
+    {
+      "file": "industry-youth.e2e.js",
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 35747,
+      "errors": []
+    },
+    {
+      "file": "industry-youth.e2e.js",
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 14707,
+      "errors": []
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 150658,
+      "errors": []
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 31566,
+      "errors": []
+    }
+  ],
+  "effectiveResults": [
+    {
+      "file": "app.e2e.js",
+      "title": "loads without console errors and renders non-uniform pixels",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 109313,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "getState exposes the core game state",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 31469,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "all eight policies open from the menu and have no invented content",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 33643,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "world label opens matching policy and Escape closes the dialog",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 31136,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "teleport moves the player and fall respawns at last ground",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 30756,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "loads without console errors and renders non-uniform pixels",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 25246,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "getState exposes the core game state",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 12619,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "all eight policies open from the menu and have no invented content",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 15057,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "world label opens matching policy and Escape closes the dialog",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 12224,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "teleport moves the player and fall respawns at last ground",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 16635,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyW moves the character along the camera-relative forward direction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 42053,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyS moves the character along the camera-relative back direction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 35413,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyA moves the character along the camera-relative left direction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 38999,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyD moves the character along the camera-relative right direction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 20668,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "touch joystick up moves the character forward",
+      "project": "desktop",
+      "status": "skipped",
+      "durationMs": 284,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyW moves the character along the camera-relative forward direction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 30474,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyS moves the character along the camera-relative back direction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 32948,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyA moves the character along the camera-relative left direction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 34723,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyD moves the character along the camera-relative right direction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 29065,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "touch joystick up moves the character forward",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 35881,
+      "errors": []
+    },
+    {
+      "file": "elevated-station.e2e.js",
+      "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 28567,
+      "errors": []
+    },
+    {
+      "file": "elevated-station.e2e.js",
+      "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 28025,
+      "errors": []
+    },
+    {
+      "file": "flood-interactions.e2e.js",
+      "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 17536,
+      "errors": []
+    },
+    {
+      "file": "flood-interactions.e2e.js",
+      "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 12309,
+      "errors": []
+    },
+    {
+      "file": "industry-youth.e2e.js",
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 35747,
+      "errors": []
+    },
+    {
+      "file": "industry-youth.e2e.js",
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 14707,
+      "errors": []
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 150658,
+      "errors": []
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 31566,
+      "errors": []
+    },
+    {
+      "file": "parent-child.e2e.js",
+      "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 25601,
+      "errors": []
+    },
+    {
+      "file": "parent-child.e2e.js",
+      "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 20458,
+      "errors": []
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "transport portrait and landscape keep policy, panorama and existing input available",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 18582,
+      "errors": []
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "original home chime responds to native keyboard or touchscreen interaction",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 15904,
+      "errors": []
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "transport portrait and landscape keep policy, panorama and existing input available",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 16640,
+      "errors": []
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "original home chime responds to native keyboard or touchscreen interaction",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 11791,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 17557,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 17811,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+      "project": "desktop",
+      "status": "skipped",
+      "durationMs": 238,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 13242,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 14812,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 53166,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "walk every island without jumping through keyboard or a single joystick pointer",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 36254,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+      "project": "desktop",
+      "status": "passed",
+      "durationMs": 15198,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+      "project": "desktop",
+      "status": "skipped",
+      "durationMs": 381,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "walk every island without jumping through keyboard or a single joystick pointer",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 80388,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 25746,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+      "project": "mobile",
+      "status": "passed",
+      "durationMs": 34223,
+      "errors": []
+    }
+  ],
+  "resolutions": [
+    "C rail probe changed from a radial push that can slide around finite segment ends to a perpendicular push across each sampled segment. Runtime rail geometry was not removed.",
+    "Panorama positional assertions use 1e-10 tolerance for observed ~1e-16 ground Float32 settling; orbit and progress equality retained."
+  ],
+  "continuousRenderAttempt": "Initial unbounded continuous SwiftShader run interrupted after timeouts; diagnostic summary below, not counted as passing."
+}

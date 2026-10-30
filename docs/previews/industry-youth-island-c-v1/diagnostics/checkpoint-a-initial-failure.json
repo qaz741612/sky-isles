@@ -1,0 +1,5 @@
+{
+  "error": "page.evaluate: TypeError: w.panorama.exit is not a function\n    at eval (eval at evaluate (:303:30), <anonymous>:10:152)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "errors": [],
+  "status": "Historical checkpoint-A probe/API failure; resolved, not a current acceptance result"
+}
