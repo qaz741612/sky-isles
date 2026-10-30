@@ -1,0 +1,27 @@
+{
+  "editableObjects": 727,
+  "runtimeMeshes": 66,
+  "triangles": 44552,
+  "materials": 39,
+  "textures": 0,
+  "boundsBlender": [
+    [
+      -15.056821823120117,
+      -12.377004623413086,
+      -6.400000095367432
+    ],
+    [
+      14.7785062789917,
+      13.126145362854004,
+      5.1377434730529785
+    ]
+  ],
+  "blendBytes": 13730716,
+  "glbBytes": 2587016,
+  "refinement": "Original V2.2 components, actual workshop wall shell/interior, subtle edge bevels, clear tinted glass, material batches; no route or other asset edits",
+  "closedInteriors": [
+    "workshop",
+    "greenhouse"
+  ],
+  "renderer": "Blender Cycles CPU, 48 samples, AgX"
+}
