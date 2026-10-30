@@ -18,6 +18,7 @@ import { buildChimes } from './world/chimes.js';
 import {loadParentChildModel,buildParentChildModel,parentChildCameraConstraint} from './world/parent-child-model.js';
 import {loadElevatedStation,elevatedCameraConstraint} from './world/elevated-station.js';
 import {loadFloodControl,buildFloodControl} from './world/flood-control.js';
+import {loadIndustryYouth,buildIndustryYouth} from './world/industry-youth.js';
 import { buildTransport, TRANSPORT_NOTICE } from './world/transport.js';
 import { PolicyUI, loadPolicies } from './policies.js';
 
@@ -48,13 +49,14 @@ const bridges = buildBridges(scene, islands.islands, rng);
 const clouds = buildClouds(scene, rng);
 
 const chimes = buildChimes(islands.islands);
-let stationSource,familySource,floodSource;
-try { [stationSource,familySource,floodSource]=await Promise.all([loadElevatedStation(),loadParentChildModel(),loadFloodControl()]); } catch(error) { document.getElementById('loading').textContent='建築模型載入失敗，請重新整理重試'; throw error; }
+let stationSource,familySource,floodSource,industrySource;
+try { [stationSource,familySource,floodSource,industrySource]=await Promise.all([loadElevatedStation(),loadParentChildModel(),loadFloodControl(),loadIndustryYouth()]); } catch(error) { document.getElementById('loading').textContent='建築模型載入失敗，請重新整理重試'; throw error; }
 const transport = buildTransport(islands.islands[0],undefined,stationSource);
 scene.updateMatrixWorld(true);
 const family=buildParentChildModel(familySource,islands.islands.find(i=>i.name==='tree'));
 const flood=buildFloodControl(floodSource,islands.islands.find(i=>i.name==='crystal'));
-const props=buildPolicyScenery(islands.islands,{tree:family,crystal:flood});
+const industry=buildIndustryYouth(industrySource,islands.islands.find(i=>i.name==='koi'));
+const props=buildPolicyScenery(islands.islands,{tree:family,crystal:flood,koi:industry});
 // Only this static imported island casts/receives the new shadow. Existing light
 // direction and all other islands stay unchanged; bake the map once at runtime.
 const familySun=scene.children.find(o=>o.isDirectionalLight);
@@ -78,7 +80,7 @@ const colliders = [
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
-player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transport.station.constrainHead(pos,y,move)||bridges.landscape.constrainHead(pos,y,move)||flood.constrainHead(pos,y,move);
+player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transport.station.constrainHead(pos,y,move)||bridges.landscape.constrainHead(pos,y,move)||flood.constrainHead(pos,y,move)||industry.constrainHead(pos,y,move);
 scene.updateMatrixWorld(true);
 player.cameraConstraint = elevatedCameraConstraint(parentChildCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='tree')),transport.station.bounds);
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
@@ -232,7 +234,7 @@ window.__skyisles = {
       started = true;
     }
   },
-  world: { props, panorama, policyUI, scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, family, flood, ui }
+  world: { props, panorama, policyUI, scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, family, flood, industry, ui }
 };
 
 // ----- main loop -----

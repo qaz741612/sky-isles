@@ -1,0 +1,157 @@
+{
+  "status": "STATIC_LAYOUT_CHECK_PASSED",
+  "notRuntimeVerification": true,
+  "worldCentreXYZ": [
+    -20.358,
+    0,
+    38.61
+  ],
+  "siteBoundsLocalXZ": [
+    -14.924,
+    -13.117,
+    14.779,
+    12.283
+  ],
+  "siteArea": 571.11,
+  "approvedRouteIds": [
+    "S14",
+    "S15",
+    "S16"
+  ],
+  "roadsSource": "PR#15 cubic Bezier controls, sampled 641 steps on each, buffered 4.8 units",
+  "NPCReservationLocalXZ": {
+    "center": [
+      0.5,
+      8.35
+    ],
+    "rect": [
+      -1,
+      6.85,
+      2,
+      9.85
+    ],
+    "existingNPCOriginal": [
+      1,
+      4.8
+    ]
+  },
+  "npcSolidIntersections": [],
+  "blockingSolidIntersections": [],
+  "mushroomRetained": {
+    "localXZ": [
+      3.0560736586,
+      3.4380828659
+    ],
+    "duplicateMeshIncluded": false
+  },
+  "buildingFootprints": {
+    "workshop_podium": {
+      "bboxXYZ": [
+        [
+          5.535,
+          -0.05,
+          -2.125
+        ],
+        [
+          12.885,
+          0.33,
+          4.125
+        ]
+      ],
+      "roadCoreOverlapArea": 0.0,
+      "outsideIslandArea": 0.0
+    },
+    "workshop_envelope": {
+      "bboxXYZ": [
+        [
+          4.88,
+          0.03,
+          -2.05
+        ],
+        [
+          12.99,
+          5.05,
+          4.025
+        ]
+      ],
+      "roadCoreOverlapArea": 0.0,
+      "outsideIslandArea": 0.0
+    },
+    "greenhouse": {
+      "bboxXYZ": [
+        [
+          4.15,
+          -0.015,
+          5.105
+        ],
+        [
+          9.85,
+          0.415,
+          8.975
+        ]
+      ],
+      "roadCoreOverlapArea": 0.0,
+      "outsideIslandArea": 0.0
+    },
+    "exhibition_pavilion": {
+      "bboxXYZ": [
+        [
+          -10.675,
+          0.01,
+          -0.45
+        ],
+        [
+          -6.725,
+          0.39,
+          3.15
+        ]
+      ],
+      "roadCoreOverlapArea": 0.0,
+      "outsideIslandArea": 0.0
+    }
+  },
+  "nearbyExistingLamps": {
+    "S14-L2": {
+      "localXZ": [
+        -8.618,
+        -13.04
+      ],
+      "insideNewIsland": false
+    },
+    "S15-L2": {
+      "localXZ": [
+        11.973,
+        -10.547
+      ],
+      "insideNewIsland": false
+    },
+    "S16-L1": {
+      "localXZ": [
+        -10.991,
+        11.315
+      ],
+      "insideNewIsland": false
+    }
+  },
+  "assets": {
+    "C_IndustryYouth_V2_DesignReference.glb": {
+      "geometryBatches": 31,
+      "triangles": 44468,
+      "bytes": 1474344,
+      "sha256": "6a4efb2af3091ca2741e223fca67ade5c7d4842991e7d795d025cf028ba8aeb7"
+    },
+    "C_IndustryYouth_V2_RuntimeAssetCandidate.glb": {
+      "geometryBatches": 31,
+      "triangles": 37448,
+      "bytes": 1266956,
+      "sha256": "ee52e3b7c321a1a9262df3d52a77e969153c8ea6b27bb313780a157a0c2495b7"
+    }
+  },
+  "failures": [],
+  "limitations": [
+    "No Blender .blend generated in this environment; GLB import and editable Python source provided.",
+    "No Sky Isles game runtime or Playwright test was run.",
+    "Runtime candidate excludes visual bridge stubs and perimeter rail for correct collision regeneration.",
+    "Static XY tests are not game collision tests."
+  ]
+}

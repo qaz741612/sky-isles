@@ -177,12 +177,12 @@ export function buildIslands(scene, rng) {
     addOutline(grass, 0.018);
     grass.userData.island = def.name;
     isle.add(grass);
-    if(def.name==='home'){grass.visible=false;const floor=buildTransportFoundation();isle.add(floor);colliders.push(floor);}else if(def.name==='crystal'){grass.visible=false;}else colliders.push(grass);
+    if(def.name==='home'){grass.visible=false;const floor=buildTransportFoundation();isle.add(floor);colliders.push(floor);}else if(def.name==='crystal'||def.name==='koi'){grass.visible=false;}else colliders.push(grass);
 
     const depth = 3.2 + def.r * 0.55;
     const rock = buildRockBase(def.r, depth);
     rock.position.y = -1.05;
-    if(def.name!=='home'&&def.name!=='crystal')isle.add(rock); // V9 includes its own foundation, not two stacked island caps.
+    if(def.name!=='home'&&def.name!=='crystal'&&def.name!=='koi')isle.add(rock); // V9 includes its own foundation, not two stacked island caps.
 
     if (def.name !== 'stepping') {
       const before = isle.children.length;

@@ -43,6 +43,14 @@ export function compileLandscape({paths,nodes,coreDomain,islePolys,footprint,con
  for(const z of zones)if(z.beds.length&&platforms.length)z.beds=clean(polygon.difference(z.beds,...platforms.map(p=>p.domain)));
  let domain=coreDomain;for(const add of additions)domain=polygon.union(domain,add);domain=clean(domain);
  let ownedBeds=[];for(const z of zones){if(z.shoulders.length)z.shoulders=clean(polygon.union(...z.shoulders.map(r=>[r])));if(z.beds.length){z.beds=clean(polygon.difference(polygon.union(...z.beds.map(r=>[r])),ownedBeds));ownedBeds=polygon.union(ownedBeds,z.beds);}}
+ // Preserve approved lamp anchors when an enlarged island changes shoulder taper.
+ // A real connected structural foot replaces the tapered-away shoulder; never move a lamp.
+ for(const l of config.lamps.filter(l=>config.retainedLampAnchors?.includes(l.id))){
+  const path=paths.find(p=>p.id===l.route),q=sample(path,l.t),offset=l.type==='seven'?3.02:2.9,x=q.x+q.nx*offset*l.side,z=q.z+q.nz*offset*l.side;
+  if(contains(domain,x,z))continue;
+  const ring=[[-.40,2.20],[.40,2.20],[.40,offset+.36],[-.40,offset+.36],[-.40,2.20]].map(([t,n])=>[q.x+q.tx*t+q.nx*n*l.side,q.z+q.tz*t+q.nz*n*l.side]);
+  domain=clean(polygon.union(domain,snap([ring])));
+ }
  const safeFromRoad=(x,z,r=.18)=>paths.every(p=>p.points.every((a,i)=>i===0||distance(x,z,[p.points[i-1].x,p.points[i-1].z],[a.x,a.z])>2.4+r));
  const guides=[];for(const p of paths.filter(p=>active(p.id)&&zoneFor(p.id).id===3))for(const t of[.35,.65]){const q=sample(p,t);if(isleDistance(q.x,q.z)>.5)guides.push({route:p.id,position:[q.x,q.z],tangent:[q.tx,q.tz]});}
  const lamps=[],rejected=[];
