@@ -1,0 +1,19 @@
+{
+  "build": true,
+  "lint": true,
+  "unitTests": 64,
+  "unitFailures": 0,
+  "protectedFiles": 17,
+  "terrainVerticesUnchanged": 9200,
+  "gamePNGs": 17,
+  "blenderPNGs": 9,
+  "browserEffectiveCounts": {
+    "passed": 60,
+    "skipped": 4,
+    "failed": 0,
+    "timedOut": 0,
+    "interrupted": 0
+  },
+  "humanArtAcceptance": "PENDING",
+  "hardwareAcceptance": "UNVERIFIED"
+}

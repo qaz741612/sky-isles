@@ -34,7 +34,7 @@ for device in ['desktop','mobile']:
 check=(R/'work/v3-check-final.log').read_text();assert 'ℹ fail 0'in check and '✓ built in'in check
 sourceMap=json.loads(next((R/'work/v3-delivery-dist/assets').glob('*.js.map')).read_text());assert any(name.endswith('src/world/industry-youth.js')and content.strip()==camera.read_text().strip()for name,content in zip(sourceMap['sources'],sourceMap['sourcesContent'])),'preview camera build stale'
 assert sha(R/'work/v3-delivery-dist/public/models/industry-youth-c/industry-youth-c.glb')==sha(asset)if (R/'work/v3-delivery-dist/public/models/industry-youth-c/industry-youth-c.glb').exists()else sha(R/'work/v3-delivery-dist/models/industry-youth-c/industry-youth-c.glb')==sha(asset)
-reports=[('broad','work/v3-browser-all.json'),('finalC','work/v3-browser-final-c.json'),('fixedPaths','work/v3-browser-fixedpaths.json')]
+reports=[('broad','work/v3-browser-all.json'),('finalC','work/v3-browser-final-c.json'),('fixedPaths','work/v3-browser-fixedpaths.json'),('outputDirectoryFix','work/v3-browser-f-output.json')]
 rows=[];stats={}
 assert all((R/p).exists() and (R/p).stat().st_size for _,p in reports),'browser reports not ready'
 for kind,p in reports:
@@ -46,6 +46,8 @@ counts={s:sum(r['status']==s for r in effective.values())for s in ['passed','ski
 save(O/'browser-summary.json',{'mode':'SwiftShader engineering samples; native input/rAF/physics/UI; not real-device FPS','stats':stats,'builds':{'broad':'4232: final visible model, before last C-only camera refinement','finalC':'4233: final model and final C camera; industry and eight-place orbit regression','routes':'4233: all22 both directions and C campus/cameras on desktop+mobile'},'effectiveCounts':counts,'history':rows,'effectiveResults':list(effective.values())})
 before=read('docs/design/industry-youth-island-c-v2.2/model-report.json');after=json.loads((D/'model-report.json').read_text())
 bg=read('docs/previews/industry-youth-island-c-v3/before/game/capture-record.json')
+before['materialsDeclaredInOldBlenderReport']=before['materials'];before['materials']=bg['records'][0]['industry']['materials'];before['materialMetric']='unique materials actually loaded by GLTFLoader; old report counted unused Blender datablocks'
+assert before['materials']==33 and after['materials']==29
 perf={'modelBefore':before,'modelAfter':after,'delta':{k:after[k]-before[k]for k in ['triangles','runtimeMeshes','materials','glbBytes','blendBytes']},'collisionProxyBytes':collision.stat().st_size,'profiles':records,'sameCameraBeforeProfiles':bg['records'],'hardwareFPS':'UNVERIFIED','thermalsAndSustainedInput':'UNVERIFIED','network':'Local loopback only','softwareQA':'Draw first/explicit frames only, native simulation retained. Observed draw costs do not establish sustained FPS.'}
 save(O/'performance.json',perf)
 comparison=O/'comparisons';comparison.mkdir(exist_ok=True)

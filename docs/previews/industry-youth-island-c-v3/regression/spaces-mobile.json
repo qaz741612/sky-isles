@@ -1,0 +1,495 @@
+{
+  "records": [
+    {
+      "island": "home",
+      "route": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -2.3
+        ],
+        [
+          -5,
+          -1.8
+        ],
+        [
+          0,
+          -1.8
+        ],
+        [
+          5.5,
+          -1.4
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "end": [
+        -0.3096373895732655,
+        -1.1102230246251565e-16,
+        0.07300169793342677
+      ],
+      "edgeProbes": 0,
+      "excludedEdgeStarts": [],
+      "orbitProbes": 8
+    },
+    {
+      "island": "tree",
+      "route": [
+        [
+          1.1,
+          1.7
+        ],
+        [
+          1.1,
+          3
+        ],
+        [
+          1.1,
+          5.9
+        ],
+        [
+          -2.5,
+          6
+        ],
+        [
+          1.1,
+          5.9
+        ],
+        [
+          1.1,
+          3
+        ],
+        [
+          1.1,
+          2.2
+        ],
+        [
+          -2,
+          2.8
+        ]
+      ],
+      "end": [
+        -24.792099141105915,
+        0.0729999989271164,
+        -16.802519890617653
+      ],
+      "edgeProbes": 18,
+      "excludedEdgeStarts": [
+        {
+          "reason": "solid occupies inward test start",
+          "x": -27.46377795571191,
+          "z": -11.835772925759315
+        },
+        {
+          "reason": "short junction tessellation",
+          "length": 0.1183925973543874
+        },
+        {
+          "reason": "short junction tessellation",
+          "length": 0.013693402737976573
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -29.080743896932105,
+          "z": -26.18674389693211
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -27.46377795571191,
+          "z": -27.476227074240686
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -14.729772925759315,
+          "z": -24.569777955711913
+        },
+        {
+          "reason": "short junction tessellation",
+          "length": 0.3761844624014317
+        },
+        {
+          "reason": "short junction tessellation",
+          "length": 0.07258793423496682
+        },
+        {
+          "reason": "short junction tessellation",
+          "length": 0.06931352803191095
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -17.211724788528198,
+          "z": -12.10250081225274
+        }
+      ],
+      "orbitProbes": 8
+    },
+    {
+      "island": "temple",
+      "route": [
+        [
+          0,
+          0
+        ],
+        [
+          -2.6,
+          0
+        ],
+        [
+          -2.6,
+          -1.2
+        ],
+        [
+          -2.6,
+          -2.4
+        ]
+      ],
+      "end": [
+        -44.72803590722934,
+        1.1920928910669204e-8,
+        -3.995909686662029
+      ],
+      "edgeProbes": 20,
+      "excludedEdgeStarts": [
+        {
+          "reason": "solid occupies inward test start",
+          "x": -36.43245110306789,
+          "z": 4.283548896932108
+        }
+      ],
+      "orbitProbes": 8
+    },
+    {
+      "island": "koi",
+      "route": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4.9,
+          -1.05
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0.5,
+          6.95
+        ],
+        [
+          0.5,
+          8.35
+        ]
+      ],
+      "end": [
+        -19.86638185661788,
+        -0.10000000149011612,
+        47.16870413415786
+      ],
+      "edgeProbes": 64,
+      "excludedEdgeStarts": [
+        {
+          "reason": "short junction tessellation",
+          "length": 0.16236358858977062
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -30.892384230029194,
+          "z": 46.00490900109111
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -31.65893993369829,
+          "z": 45.41881784900332
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -33.48611500603208,
+          "z": 38.52273406241416
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -33.19073290176561,
+          "z": 37.72189771318595
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -32.910094481583954,
+          "z": 36.96115137001983
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -31.501272662400208,
+          "z": 34.39624750133466
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -31.012044778742663,
+          "z": 33.79145781722282
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -9.426862797798531,
+          "z": 33.152208575803705
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -9.26129422142246,
+          "z": 33.97317510259841
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -8.67463152518066,
+          "z": 35.650965784236654
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -8.228685901755393,
+          "z": 36.427262401868695
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -7.748037320666394,
+          "z": 37.15744959203953
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -11.50809157094486,
+          "z": 47.440469773743416
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -13.515913079584275,
+          "z": 47.74123413698098
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -14.47332022331071,
+          "z": 47.97579478750294
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -21.676877883407332,
+          "z": 49.95897997242956
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": -22.589886829199965,
+          "z": 49.92095524768158
+        }
+      ],
+      "orbitProbes": 8
+    },
+    {
+      "island": "meadow",
+      "route": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3.3,
+          4
+        ]
+      ],
+      "end": [
+        30.17831064004302,
+        1.1920928910669204e-8,
+        -14.289151469432037
+      ],
+      "edgeProbes": 20,
+      "excludedEdgeStarts": [
+        {
+          "reason": "short junction tessellation",
+          "length": 0.10765841043248223
+        },
+        {
+          "reason": "short junction tessellation",
+          "length": 0.2603286247722185
+        },
+        {
+          "reason": "short junction tessellation",
+          "length": 0.14266640652047224
+        }
+      ],
+      "orbitProbes": 8
+    },
+    {
+      "island": "windmill",
+      "route": [
+        [
+          0,
+          0
+        ],
+        [
+          -3.3,
+          0
+        ],
+        [
+          -3.3,
+          -1.5
+        ],
+        [
+          -3.3,
+          -2.8
+        ],
+        [
+          -3.3,
+          -3.3
+        ]
+      ],
+      "end": [
+        -56.65164486479086,
+        1.1920928910669204e-8,
+        83.72555063484607
+      ],
+      "edgeProbes": 25,
+      "excludedEdgeStarts": [],
+      "orbitProbes": 8
+    },
+    {
+      "island": "crystal",
+      "route": [
+        [
+          0,
+          0
+        ],
+        [
+          6.8,
+          0
+        ],
+        [
+          6.8,
+          1.5
+        ],
+        [
+          0,
+          1.5
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "end": [
+        44.96234103212775,
+        0,
+        48.47778071039488
+      ],
+      "edgeProbes": 36,
+      "excludedEdgeStarts": [
+        {
+          "reason": "short junction tessellation",
+          "length": 0.32879941645291105
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": 43.432614531777965,
+          "z": 57.337589264478375
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": 40.97738731883,
+          "z": 57.17711188689615
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": 32.86978471346448,
+          "z": 51.940842635651144
+        },
+        {
+          "reason": "short junction tessellation",
+          "length": 0.00644880213612942
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": 34.656076081268836,
+          "z": 36.01585535497117
+        },
+        {
+          "reason": "no dry inward test start",
+          "x": 35.2629861188815,
+          "z": 35.509697989095045
+        },
+        {
+          "reason": "no dry inward test start",
+          "x": 36.38166447809836,
+          "z": 34.7647008451869
+        },
+        {
+          "reason": "solid occupies inward test start",
+          "x": 37.682099639355776,
+          "z": 34.15881148263712
+        }
+      ],
+      "orbitProbes": 8
+    },
+    {
+      "island": "lookout",
+      "route": [
+        [
+          0,
+          0
+        ],
+        [
+          1.9,
+          0
+        ],
+        [
+          1.9,
+          -2.4
+        ],
+        [
+          1.9,
+          -3.8
+        ]
+      ],
+      "end": [
+        52.4483936153347,
+        1.1920929021691506e-8,
+        84.48335803461325
+      ],
+      "edgeProbes": 23,
+      "excludedEdgeStarts": [
+        {
+          "reason": "short junction tessellation",
+          "length": 0.21258781177714067
+        }
+      ],
+      "orbitProbes": 8
+    }
+  ],
+  "respawns": 0,
+  "cameraIndex": {
+    "queries": 39759,
+    "candidates": 224041,
+    "maxCandidates": 57
+  },
+  "description": "Accelerated integration audit using the actual Player, not a normal-operation video."
+}

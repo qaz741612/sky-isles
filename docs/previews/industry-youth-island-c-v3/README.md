@@ -2,6 +2,8 @@
 
 延續 Draft PR #17；兩棟主建築、弧形溫室已接回原遊戲 C 島。工程結果與人工驗收限制見 [REPORT.md](REPORT.md)，各項測試狀態以 [validation-summary.json](validation-summary.json) 及 [browser-summary.json](browser-summary.json) 為準。
 
+工程檢查：64單元、lint、build通過；瀏覽器逐項最終60通過、4桌機觸控專項略過。初測失敗及重測歷史完整保留。人工美術與真機效能未驗收。手機貼近工坊柱位仍可能局部遮住角色，詳REPORT。
+
 ## 真正遊戲畫面
 
 ![V3遊戲主視角（QA鏡頭）](game/c-hero.png)

@@ -1,0 +1,26 @@
+{
+  "build": 4232,
+  "description": "Broad suite before final C-only camera patch; historical G/bridge reports preserved here, original tracked files restored without reset or clean. Current final C/space evidence is frozen separately at build4233.",
+  "historicalReports": [
+    {
+      "originalReport": "docs/previews/flood-control-island-g-v1/routes-desktop.json",
+      "newBroadRunCopy": "docs/previews/industry-youth-island-c-v3/regression/broad-generated/flood-control-island-g-v1-routes-desktop.json",
+      "historicalTrackedReportRestored": true
+    },
+    {
+      "originalReport": "docs/previews/flood-control-island-g-v1/routes-mobile.json",
+      "newBroadRunCopy": "docs/previews/industry-youth-island-c-v3/regression/broad-generated/flood-control-island-g-v1-routes-mobile.json",
+      "historicalTrackedReportRestored": true
+    },
+    {
+      "originalReport": "docs/previews/yuan-bridges-landscape-v1/zone-check-desktop.json",
+      "newBroadRunCopy": "docs/previews/industry-youth-island-c-v3/regression/broad-generated/yuan-bridges-landscape-v1-zone-check-desktop.json",
+      "historicalTrackedReportRestored": true
+    },
+    {
+      "originalReport": "docs/previews/yuan-bridges-landscape-v1/zone-check-mobile.json",
+      "newBroadRunCopy": "docs/previews/industry-youth-island-c-v3/regression/broad-generated/yuan-bridges-landscape-v1-zone-check-mobile.json",
+      "historicalTrackedReportRestored": true
+    }
+  ]
+}
