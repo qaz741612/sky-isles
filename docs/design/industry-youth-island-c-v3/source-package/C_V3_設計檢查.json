@@ -1,0 +1,58 @@
+{
+  "source_pr": "https://github.com/qaz741612/sky-isles/pull/17",
+  "massing_only": true,
+  "not_game_ready": true,
+  "dimensions_proxy": [
+    29.7,
+    25.4
+  ],
+  "entries_world_XZ": {
+    "S14": [
+      -29.747,
+      29.351
+    ],
+    "S15": [
+      -12.351,
+      28.459
+    ],
+    "S16": [
+      -27.839,
+      49.872
+    ]
+  },
+  "npc_local": [
+    0.5,
+    8.35
+  ],
+  "npc_standing_zone_local_x": [
+    -1,
+    2
+  ],
+  "npc_standing_zone_local_z": [
+    6.85,
+    9.85
+  ],
+  "open_source": "C_island_v3_geometry.py",
+  "mesh_count": 439,
+  "triangle_count": 10158,
+  "site_constraint": "Approximate shape, do not import duplicate land/roads into PR17",
+  "approx_straight_centerline_clearance_to_buildings": {
+    "workshop": {
+      "S14": 6.3,
+      "S15": 2.5,
+      "S16": 6.3
+    },
+    "youth": {
+      "S14": 2.755,
+      "S15": 5.8,
+      "S16": 2.618
+    },
+    "greenhouse": {
+      "S14": 6.093,
+      "S15": 5.967,
+      "S16": 6.093
+    }
+  },
+  "road_core_half_width": 2.4,
+  "warning": "These distances only check approximate straight centerlines, NOT actual PR17 Bezier curves, roof/camera collision or precise footprint. Must recheck in engine. The architectural GLB includes proxy terrain and paths; do NOT import whole into PR17."
+}

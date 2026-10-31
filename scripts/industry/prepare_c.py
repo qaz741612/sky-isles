@@ -56,8 +56,8 @@ def write(path,value):
     path=ROOT/path;path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(value,separators=(',',':'),ensure_ascii=False)+'\n')
 
-def build():
-    g,parts=source('--refine' in sys.argv)
+def build(override=None,preserve_site=False):
+    g,parts=override if override is not None else source('--refine' in sys.argv)
     # Floor is extracted from authored level slabs, not from foliage or all meshes.
     floor_names=('landscape-turf','NW-grass-terrace','SW-garden-terrace','NE-landscape-terrace',
       'three-road-structural-core','public-path','main-plaza','plaza-inlay-ring',
@@ -78,13 +78,14 @@ def build():
     ground=[];roof=[];support=[];camera=[];ceiling=[];solids=[];editable=[]
     for mesh,mat,name in parts:
         v=np.asarray(mesh.vertices);faces=np.asarray(mesh.faces);lo,hi=mesh.bounds
+        role=g.get('collisionRoles',{}).get(name)
         editable.append({'name':name,'material':mat,'vertices':v.tolist(),'faces':faces.tolist()})
-        if name.startswith(floor_names):
+        if name.startswith(floor_names)or role=='floor':
             for t in v[faces]:
                 if np.ptp(t[:,1])<1e-5 and abs(t[0,1]-hi[1])<1e-4:
                     if np.cross(t[1]-t[0],t[2]-t[0])[1]<0:t=t[[0,2,1]]
                     ground.extend(t.flatten().tolist())
-        if name.startswith(solid_names) and hi[1]>.25 and hi[1]-lo[1]>.02:
+        if (name.startswith(solid_names)or role=='solid') and hi[1]>.25 and hi[1]-lo[1]>.02:
             hull=MultiPoint(v[:,[0,2]]).convex_hull
             if isinstance(hull,Polygon) and hull.area>.0001:
                 solids.append({'name':name,'base':round(float(lo[1]),5),'top':round(float(hi[1]),5),'polygon':list(hull.exterior.coords)[:-1]})
@@ -93,7 +94,7 @@ def build():
                     if np.ptp(t[:,1])<1e-5 and abs(t[0,1]-hi[1])<1e-4:
                         if np.cross(t[1]-t[0],t[2]-t[0])[1]<0:t=t[[0,2,1]]
                         support.extend(t.flatten().tolist())
-        if any(s in name for s in ['roof','canopy','lintel','greenhouse-arched-truss','curved-glass-panel']):
+        if role=='roof'or any(s in name for s in ['roof','canopy','lintel','greenhouse-arched-truss','curved-glass-panel']):
             camera.extend(v[faces].flatten().tolist());ceiling.extend(v[faces].flatten().tolist())
             # Real top support allows deliberate jumps; roof is never a checkpoint.
             for t in v[faces]:
@@ -102,7 +103,7 @@ def build():
                     if n[1]<0:t=t[[0,2,1]]
                     roof.extend(t.flatten().tolist())
     footprint=list(g['foot'].exterior.coords)[:-1]
-    write(Path('src/data/industry-youth-plan.json'),{'centre':[-20.358,0,38.610],'footprintLocal':footprint,'kind':'blender-industry-campus','npc':[{'id':'industry-guide-reserved','position':[.5,0,8.35],'playerStop':[.5,0,6.95],'groundElevation':-.1,'standingSize':[3,3],'facingYaw':math.pi,'interactionRadius':1.6,'implemented':False}],'entrances':['S14','S15','S16'],'mushroomLocal':[3.0560736586,0,3.4380828659],'sourceSHA256':hashlib.sha256(SOURCE.read_bytes()).hexdigest()})
+    if not preserve_site:write(Path('src/data/industry-youth-plan.json'),{'centre':[-20.358,0,38.610],'footprintLocal':footprint,'kind':'blender-industry-campus','npc':[{'id':'industry-guide-reserved','position':[.5,0,8.35],'playerStop':[.5,0,6.95],'groundElevation':-.1,'standingSize':[3,3],'facingYaw':math.pi,'interactionRadius':1.6,'implemented':False}],'entrances':['S14','S15','S16'],'mushroomLocal':[3.0560736586,0,3.4380828659],'sourceSHA256':hashlib.sha256(SOURCE.read_bytes()).hexdigest()})
     # Collision is already rendered/queried as Float32. Quantize generated
     # proxies to the generator's 1e-5 grid, without touching visible geometry.
     # This avoids shipping long repeated Float64 decimal strings to phones.
@@ -112,9 +113,10 @@ def build():
         if isinstance(v,tuple):return[quantize(x)for x in v]
         if isinstance(v,dict):return{k:quantize(x)for k,x in v.items()}
         return v
-    write(Path('src/data/industry-youth-collision.json'),quantize({'groundPositions':ground,'supportPositions':support,'roofPositions':roof,'ceilingPositions':ceiling,'cameraPositions':camera,'solids':solids,'source':'V2.2 semantic components, not all mesh raycast; 1e-5 proxy precision'}))
+    write(Path('src/data/industry-youth-collision.json'),quantize({'groundPositions':ground,'supportPositions':support,'roofPositions':roof,'ceilingPositions':ceiling,'cameraPositions':camera,'solids':solids,'source':g.get('description','V2.2 semantic components, not all mesh raycast; 1e-5 proxy precision')}))
     write(Path('work/industry-editable-parts.json'),{'colours':g['COL'],'parts':editable})
-    p=ROOT/'src/data/yuan-plan.json';plan=json.loads(p.read_text());plan['landscapeRetainedLampAnchors']=list(dict.fromkeys(plan.get('landscapeRetainedLampAnchors',[])+['S14-L2','S15-L2','S16-L1']));plan.setdefault('islandFootprintsXZ',{})['C']=[[x-20.358,z+38.610]for x,z in footprint];p.write_text(json.dumps(plan,ensure_ascii=False,indent=2)+'\n')
+    if not preserve_site:
+        p=ROOT/'src/data/yuan-plan.json';plan=json.loads(p.read_text());plan['landscapeRetainedLampAnchors']=list(dict.fromkeys(plan.get('landscapeRetainedLampAnchors',[])+['S14-L2','S15-L2','S16-L1']));plan.setdefault('islandFootprintsXZ',{})['C']=[[x-20.358,z+38.610]for x,z in footprint];p.write_text(json.dumps(plan,ensure_ascii=False,indent=2)+'\n')
     print('C site prepared: %s parts, %s solids, %s dry triangles'%(len(parts),len(solids),len(ground)//9))
 
 if __name__=='__main__':build()
