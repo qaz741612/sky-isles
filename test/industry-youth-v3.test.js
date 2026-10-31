@@ -31,3 +31,20 @@ test('actual V3 GLB has two substantial closed architectural silhouettes and a d
  const roofs=[];g.scene.traverse(o=>{if(o.isMesh&&o.name.startsWith('03_Exhibition')&&o.name.includes('roof')){const p=o.geometry.attributes.position;for(let i=0;i<p.count;i++)roofs.push(p.getY(i));}});
  assert.ok(roofs.some(y=>y>5.6)&&roofs.some(y=>y<5.1),'youth roofs must show a real height step');
 });
+
+test('C V3 covered approaches retain a clear camera ray through full user orbit',async()=>{
+ const {worldCameraConstraint}=await import('../src/sim/camera-clearance.js');
+ const {industryCameraConstraint}=await import('../src/world/industry-youth.js');
+ const bytes=fs.readFileSync('public/models/industry-youth-c/industry-youth-c.glb');
+ const gltf=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');
+ const group=new THREE.Group();group.position.set(-20.358,0,38.610);const built=buildIndustryYouth(gltf.scene,{group,pos:group.position});group.updateMatrixWorld(true,true);
+ const orbit={yaw:0,pitch:.67,dist:22},constrain=industryCameraConstraint(worldCameraConstraint(built.cameraObstacles),{pos:group.position},()=>orbit),ray=new THREE.Raycaster();
+ for(const [x,z] of [[4.9,-1.05],[-5.3,-.55],[6,9.8],[.5,6.95]]){
+  const target=new THREE.Vector3(x-20.358,1.4,z+38.610),camera=target.clone().add(new THREE.Vector3(0,10,16));
+  for(let j=0;j<8;j++){orbit.yaw=j*Math.PI/4;const saved={...orbit},desired=target.clone().add(new THREE.Vector3(Math.sin(orbit.yaw)*Math.cos(orbit.pitch)*22,Math.sin(orbit.pitch)*22,Math.cos(orbit.yaw)*Math.cos(orbit.pitch)*22));
+   for(let k=0;k<90;k++){camera.lerp(desired,8/60);constrain(target,camera);}
+   assert.ok(camera.distanceTo(target)>2.7,`camera trapped ${x},${z}, yaw ${orbit.yaw}`);
+   ray.set(target,camera.clone().sub(target).normalize());ray.far=target.distanceTo(camera)-.03;assert.equal(ray.intersectObjects(built.cameraObstacles,false).length,0,'camera ray crosses structure');assert.deepEqual(orbit,saved);
+  }
+ }
+});

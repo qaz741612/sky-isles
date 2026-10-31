@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';import fs from 'node:fs';
+import {test,expect} from './helpers/software-qa.js';import fs from 'node:fs';
 test('G Blender park: 22 routes, public circuit, water barriers, policy and camera',async({page,isMobile})=>{
  test.setTimeout(600000);const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.addInitScript(()=>{const raf=requestAnimationFrame.bind(window);window.requestAnimationFrame=fn=>(fn.name==='frame'||fn.toString().includes('.render('))?(window.__qaFrame=fn,0):raf(fn);});await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
  const result=await page.evaluate(()=>{const w=window.__skyisles.world,p=w.player,step=p.update.bind(p);w.renderer.render=()=>{};p.update=()=>{};let ticks=0;const tick=(x=0,z=0)=>step(1/60,{x,z,jumpPressed:false,jumpHeld:false},++ticks/60),routes=[];

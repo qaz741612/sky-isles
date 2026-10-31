@@ -1,4 +1,4 @@
-// MIT. User-approved V2.2 C campus: separate visible asset, floor, solids and camera.
+// MIT. C campus V3 refinement on preserved V2.2 site: separate visible asset, floor, solids and camera.
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {stationHeadroom} from './station-model.js';
@@ -32,15 +32,17 @@ export function buildIndustryYouth(source,island){
 export function industryCameraConstraint(constrain,island,getOrbit){
  let lastOffset=0;
  const wrapped=(target,position)=>{
-  const desired=position.clone(),blocked=constrain(target,position);
-  if(!blocked||Math.hypot(target.x-island.pos.x,target.z-island.pos.z)>16||position.distanceTo(target)>3.2)return blocked;
-  const o=getOrbit?.(),dx=desired.x-target.x,dz=desired.z-target.z,r=o?Math.cos(o.pitch)*o.dist:Math.max(6,Math.hypot(dx,dz)),yaw=o?.yaw??Math.atan2(dx,dz);
+  const desired=position.clone(),blocked=constrain(target,position),o=getOrbit?.();
+  // A technically clear ray only centimetres from a glass pier still fills the
+  // portrait screen with that pier. Seek a useful public-space view sooner.
+  if(!blocked||Math.hypot(target.x-island.pos.x,target.z-island.pos.z)>16||position.distanceTo(target)>Math.min(8,(o?.dist??16)*.5))return blocked;
+  const dx=desired.x-target.x,dz=desired.z-target.z,r=o?Math.cos(o.pitch)*o.dist:Math.max(6,Math.hypot(dx,dz)),yaw=o?.yaw??Math.atan2(dx,dz);
   let best=position.clone(),offset=lastOffset;
   outer:for(const height of[o?target.y+Math.sin(o.pitch)*o.dist:desired.y,target.y+.3]){
-   for(const a of new Set([lastOffset,0,-.35,.35,-.7,.7,-1.05,1.05])){
+   for(const a of new Set([lastOffset,0,-.35,.35,-.7,.7,-1.05,1.05,-1.4,1.4,-1.8,1.8,-2.4,2.4,Math.PI])){
     const candidate=new THREE.Vector3(target.x+Math.sin(yaw+a)*r,height,target.z+Math.cos(yaw+a)*r);constrain(target,candidate);
     if(candidate.distanceTo(target)>best.distanceTo(target)+.15){best=candidate;offset=a;}
-    if(best.distanceTo(target)>Math.min(6,r*.7))break outer;
+    if(best.distanceTo(target)>Math.min(10,r*.7))break outer;
    }
   }
   lastOffset=offset;position.copy(best);return blocked;

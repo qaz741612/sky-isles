@@ -18,5 +18,5 @@ test('C real model picking, original spring, NPC approach and live boundary guar
   return{walkingVy,springVy,outerEdges:checked,npc:w.industry.config.npc,model:w.industry.stats,originalPadPosition:pos.toArray()};
  });
  await page.mouse.click((await page.viewportSize()).width/2,(await page.viewportSize()).height/2);await expect(page.locator('#policy-dialog')).toBeVisible();await expect(page.locator('#policy-title')).toHaveText('產業青年');await page.locator('#policy-close').click();await expect(page.locator('#policy-dialog')).not.toBeVisible();expect(errors).toEqual([]);
- fs.writeFileSync(`docs/previews/industry-youth-island-c-v1/interactions-${isMobile?'mobile':'desktop'}.json`,JSON.stringify({...result,modelPicking:true,errors},null,2)+'\n');
+ fs.mkdirSync(process.env.C_QA_DIR??'docs/previews/industry-youth-island-c-v1',{recursive:true});fs.writeFileSync(`${process.env.C_QA_DIR??'docs/previews/industry-youth-island-c-v1'}/interactions-${isMobile?'mobile':'desktop'}.json`,JSON.stringify({...result,modelPicking:true,errors},null,2)+'\n');
 });

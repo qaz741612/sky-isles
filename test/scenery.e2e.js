@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './helpers/software-qa.js';
 test('all authored policy places render and retain their readable policy entry',async({page})=>{
  test.setTimeout(240000);const errors=[];page.on('pageerror',e=>errors.push(String(e)));await page.goto('/');await page.waitForFunction(()=>window.__skyisles);await page.locator('#title-screen .tap').click();if(await page.locator('#touch-help').isVisible())await page.locator('#help-close').click();
  const names=await page.evaluate(()=>window.__skyisles.world.islands.islands.map(i=>i.name));
