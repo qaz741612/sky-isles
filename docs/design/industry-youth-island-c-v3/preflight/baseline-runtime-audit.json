@@ -1,0 +1,2104 @@
+{
+  "basis": "PR17 0c7cab7 measured before V3; V3 package not yet located",
+  "worldCentre": [
+    -20.358,
+    0,
+    38.61
+  ],
+  "model": {
+    "path": "public/models/industry-youth-c/industry-youth-c.glb",
+    "sha256": "8f950bb916cebb967102b58c8b92cb11bc85ddb67689d9cd2193c76f9050be63",
+    "bytes": 2587016,
+    "triangles": 44552,
+    "meshes": 66,
+    "materials": 33,
+    "boundsLocal": {
+      "min": [
+        -15.056821823120117,
+        -6.400000095367432,
+        -13.126145362854004
+      ],
+      "max": [
+        14.7785062789917,
+        5.1377434730529785,
+        12.377004623413086
+      ],
+      "dimensions": [
+        29.835328102111816,
+        11.53774356842041,
+        25.50314998626709
+      ]
+    },
+    "areas": {
+      "00_TerrainAndPlaza": {
+        "min": [
+          -15.056821823120117,
+          -6.400000095367432,
+          -13.126145362854004
+        ],
+        "max": [
+          14.7785062789917,
+          0.4749999940395355,
+          12.377004623413086
+        ],
+        "dimensions": [
+          29.835328102111816,
+          6.875000089406967,
+          25.50314998626709
+        ]
+      },
+      "04_GardensAndFurniture": {
+        "min": [
+          -12.737853050231934,
+          -1.3595823049545288,
+          -12.20669937133789
+        ],
+        "max": [
+          13.49935531616211,
+          3.809807300567627,
+          10.825861930847168
+        ],
+        "dimensions": [
+          26.237208366394043,
+          5.169389605522156,
+          23.03256130218506
+        ]
+      },
+      "01_Workshop": {
+        "min": [
+          3.75,
+          -0.05000000074505806,
+          -2.190000057220459
+        ],
+        "max": [
+          13.0809907913208,
+          5.1377434730529785,
+          4.179999828338623
+        ],
+        "dimensions": [
+          9.3309907913208,
+          5.187743473798037,
+          6.369999885559082
+        ]
+      },
+      "02_Greenhouse": {
+        "min": [
+          1.3550240993499756,
+          -0.03999999910593033,
+          3.8198132514953613
+        ],
+        "max": [
+          9.850000381469727,
+          3.7445361614227295,
+          8.975000381469727
+        ],
+        "dimensions": [
+          8.494976282119751,
+          3.78453616052866,
+          5.155187129974365
+        ]
+      },
+      "03_Exhibition": {
+        "min": [
+          -10.925000190734863,
+          0.009999999776482582,
+          -1.4079999923706055
+        ],
+        "max": [
+          -6.271999835968018,
+          2.8949999809265137,
+          4.9079999923706055
+        ],
+        "dimensions": [
+          4.653000354766846,
+          2.884999981150031,
+          6.315999984741211
+        ]
+      },
+      "signs": {
+        "min": [
+          3.9860000093467534,
+          2.5587399427313358,
+          -0.45718008279800415
+        ],
+        "max": [
+          4.00400000018999,
+          2.941289946436882,
+          7.526219993829727
+        ],
+        "dimensions": [
+          0.017999990843236446,
+          0.38255000370554626,
+          7.983400076627731
+        ]
+      }
+    }
+  },
+  "terrain": {
+    "source": "src/data/industry-youth-plan.json + yuan-plan.json",
+    "footprintArea": 571.1096845677617,
+    "coreClippedArea": 177.79614497300224,
+    "localXZBounds": [
+      -14.923727464488657,
+      -13.117006913007412,
+      14.778506121464666,
+      12.28299308699259
+    ]
+  },
+  "lockedEntrances": [
+    {
+      "id": "S14",
+      "from": "B",
+      "to": "C",
+      "meaning": "夕：左弧",
+      "kind": "cubic",
+      "controlPointsXZ": [
+        [
+          -42.12,
+          -1.4040000000000001
+        ],
+        [
+          -44.577,
+          10.881
+        ],
+        [
+          -34.047,
+          27.027
+        ],
+        [
+          -20.357999999999997,
+          38.61
+        ]
+      ],
+      "flatFrom": 8.72508,
+      "flatTo": 7.0200000000000005
+    },
+    {
+      "id": "S15",
+      "from": "F",
+      "to": "C",
+      "meaning": "夕：內弧與斜撇上段",
+      "kind": "cubic",
+      "controlPointsXZ": [
+        [
+          0,
+          0
+        ],
+        [
+          -1.4040000000000001,
+          14.04
+        ],
+        [
+          -10.53,
+          27.027
+        ],
+        [
+          -20.357999999999997,
+          38.61
+        ]
+      ],
+      "flatFrom": 15.7287,
+      "flatTo": 7.0200000000000005
+    },
+    {
+      "id": "S16",
+      "from": "C",
+      "to": "D",
+      "meaning": "夕：長斜撇",
+      "kind": "cubic",
+      "controlPointsXZ": [
+        [
+          -20.357999999999997,
+          38.61
+        ],
+        [
+          -33.345,
+          55.458
+        ],
+        [
+          -35.802,
+          71.253
+        ],
+        [
+          -53.352,
+          87.048
+        ]
+      ],
+      "flatFrom": 7.0200000000000005,
+      "flatTo": 6.24
+    }
+  ],
+  "npc": {
+    "id": "industry-guide-reserved",
+    "position": [
+      0.5,
+      0,
+      8.35
+    ],
+    "playerStop": [
+      0.5,
+      0,
+      6.95
+    ],
+    "groundElevation": -0.1,
+    "standingSize": [
+      3,
+      3
+    ],
+    "facingYaw": 3.141592653589793,
+    "interactionRadius": 1.6,
+    "implemented": false,
+    "full3x3OutsideArea": 0
+  },
+  "collision": {
+    "sourceSHA256": "35f1c6ec0147037fdd7ae1bb78e8a81f8d02ada08f817bef5bb45a4d65d715fc",
+    "solids": [
+      {
+        "name": "factory-west-glazing",
+        "min": [
+          5.045,
+          0.955,
+          -2.08
+        ],
+        "max": [
+          5.105,
+          3.405,
+          -1.22
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-west-glazing",
+        "min": [
+          5.045,
+          0.955,
+          -1.08
+        ],
+        "max": [
+          5.105,
+          3.405,
+          -0.22
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-west-glazing",
+        "min": [
+          5.045,
+          0.955,
+          -0.08
+        ],
+        "max": [
+          5.105,
+          3.405,
+          0.78
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-west-glazing",
+        "min": [
+          5.045,
+          0.955,
+          0.92
+        ],
+        "max": [
+          5.105,
+          3.405,
+          1.78
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-west-glazing",
+        "min": [
+          5.045,
+          0.955,
+          1.92
+        ],
+        "max": [
+          5.105,
+          3.405,
+          2.78
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-west-glazing",
+        "min": [
+          5.045,
+          0.955,
+          2.92
+        ],
+        "max": [
+          5.105,
+          3.405,
+          3.78
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-post-west",
+        "min": [
+          4.895,
+          -0.05,
+          -0.03
+        ],
+        "max": [
+          5.085,
+          3.65,
+          0.11
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-post-west",
+        "min": [
+          4.895,
+          -0.05,
+          0.99
+        ],
+        "max": [
+          5.085,
+          3.65,
+          1.13
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-post-west",
+        "min": [
+          4.895,
+          -0.05,
+          2.01
+        ],
+        "max": [
+          5.085,
+          3.65,
+          2.15
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-post-west",
+        "min": [
+          4.895,
+          -0.05,
+          3.03
+        ],
+        "max": [
+          5.085,
+          3.65,
+          3.17
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-front-timber-fins",
+        "min": [
+          4.82,
+          0.46,
+          -1.635
+        ],
+        "max": [
+          4.93,
+          3.06,
+          -1.565
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-front-timber-fins",
+        "min": [
+          4.82,
+          0.46,
+          -1.255
+        ],
+        "max": [
+          4.93,
+          3.06,
+          -1.185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-front-timber-fins",
+        "min": [
+          4.82,
+          0.46,
+          1.415
+        ],
+        "max": [
+          4.93,
+          3.06,
+          1.485
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-front-timber-fins",
+        "min": [
+          4.82,
+          0.46,
+          1.815
+        ],
+        "max": [
+          4.93,
+          3.06,
+          1.885
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-front-timber-fins",
+        "min": [
+          4.82,
+          0.46,
+          2.265
+        ],
+        "max": [
+          4.93,
+          3.06,
+          2.335
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-front-timber-fins",
+        "min": [
+          4.82,
+          0.46,
+          2.685
+        ],
+        "max": [
+          4.93,
+          3.06,
+          2.755
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-front-timber-fins",
+        "min": [
+          4.82,
+          0.46,
+          3.065
+        ],
+        "max": [
+          4.93,
+          3.06,
+          3.135
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "entry-planter-plinth",
+        "min": [
+          4.89,
+          0.125,
+          -1.74
+        ],
+        "max": [
+          5.45,
+          0.375,
+          -0.86
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "entry-planter-plinth",
+        "min": [
+          4.49,
+          0.125,
+          1.46
+        ],
+        "max": [
+          5.05,
+          0.375,
+          2.34
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-identity-pylon",
+        "min": [
+          4.145,
+          0.29,
+          2.13
+        ],
+        "max": [
+          4.415,
+          4.01,
+          3.07
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          4.2743,
+          0.48,
+          5.213
+        ],
+        "max": [
+          4.3757,
+          2.48,
+          5.31185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          5.16597,
+          0.48,
+          5.213
+        ],
+        "max": [
+          5.26736,
+          2.48,
+          5.31185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          6.05764,
+          0.48,
+          5.213
+        ],
+        "max": [
+          6.15903,
+          2.48,
+          5.31185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          6.9493,
+          0.48,
+          5.213
+        ],
+        "max": [
+          7.0507,
+          2.48,
+          5.31185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          7.84097,
+          0.48,
+          5.213
+        ],
+        "max": [
+          7.94236,
+          2.48,
+          5.31185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          8.73264,
+          0.48,
+          5.213
+        ],
+        "max": [
+          8.83403,
+          2.48,
+          5.31185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          9.6243,
+          0.48,
+          5.213
+        ],
+        "max": [
+          9.7257,
+          2.48,
+          5.31185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          4.2743,
+          0.48,
+          8.763
+        ],
+        "max": [
+          4.3757,
+          2.48,
+          8.86185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          5.16597,
+          0.48,
+          8.763
+        ],
+        "max": [
+          5.26736,
+          2.48,
+          8.86185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          6.05764,
+          0.48,
+          8.763
+        ],
+        "max": [
+          6.15903,
+          2.48,
+          8.86185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          6.9493,
+          0.48,
+          8.763
+        ],
+        "max": [
+          7.0507,
+          2.48,
+          8.86185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          7.84097,
+          0.48,
+          8.763
+        ],
+        "max": [
+          7.94236,
+          2.48,
+          8.86185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          8.73264,
+          0.48,
+          8.763
+        ],
+        "max": [
+          8.83403,
+          2.48,
+          8.86185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-corner-frame",
+        "min": [
+          9.6243,
+          0.48,
+          8.763
+        ],
+        "max": [
+          9.7257,
+          2.48,
+          8.86185
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          4.41,
+          0.465,
+          5.99
+        ],
+        "max": [
+          5.19,
+          0.915,
+          6.65
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          4.41,
+          0.465,
+          7.41
+        ],
+        "max": [
+          5.19,
+          0.915,
+          8.07
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          5.485,
+          0.465,
+          5.99
+        ],
+        "max": [
+          6.265,
+          0.915,
+          6.65
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          5.485,
+          0.465,
+          7.41
+        ],
+        "max": [
+          6.265,
+          0.915,
+          8.07
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          6.56,
+          0.465,
+          5.99
+        ],
+        "max": [
+          7.34,
+          0.915,
+          6.65
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          6.56,
+          0.465,
+          7.41
+        ],
+        "max": [
+          7.34,
+          0.915,
+          8.07
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          7.635,
+          0.465,
+          5.99
+        ],
+        "max": [
+          8.415,
+          0.915,
+          6.65
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          7.635,
+          0.465,
+          7.41
+        ],
+        "max": [
+          8.415,
+          0.915,
+          8.07
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          8.71,
+          0.465,
+          5.99
+        ],
+        "max": [
+          9.49,
+          0.915,
+          6.65
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-raised-bed",
+        "min": [
+          8.71,
+          0.465,
+          7.41
+        ],
+        "max": [
+          9.49,
+          0.915,
+          8.07
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "greenhouse-entrance",
+        "min": [
+          4.2775,
+          0.46,
+          6.55
+        ],
+        "max": [
+          4.3325,
+          2.28,
+          7.53
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-wood-columns",
+        "min": [
+          -10.35,
+          0.01,
+          -0.075
+        ],
+        "max": [
+          -10.2,
+          2.51,
+          0.075
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-wood-columns",
+        "min": [
+          -10.35,
+          0.01,
+          2.625
+        ],
+        "max": [
+          -10.2,
+          2.51,
+          2.775
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-wood-columns",
+        "min": [
+          -7.2,
+          0.01,
+          -0.075
+        ],
+        "max": [
+          -7.05,
+          2.51,
+          0.075
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-wood-columns",
+        "min": [
+          -7.2,
+          0.01,
+          2.625
+        ],
+        "max": [
+          -7.05,
+          2.51,
+          2.775
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-rear-glass",
+        "min": [
+          -10.175,
+          0.505,
+          -0.17
+        ],
+        "max": [
+          -7.225,
+          2.355,
+          -0.09
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-vertical-fins",
+        "min": [
+          -10.2525,
+          0.32,
+          -0.26
+        ],
+        "max": [
+          -10.1975,
+          2.52,
+          -0.14
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-vertical-fins",
+        "min": [
+          -9.87125,
+          0.32,
+          -0.26
+        ],
+        "max": [
+          -9.81625,
+          2.52,
+          -0.14
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-vertical-fins",
+        "min": [
+          -9.49,
+          0.32,
+          -0.26
+        ],
+        "max": [
+          -9.435,
+          2.52,
+          -0.14
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-vertical-fins",
+        "min": [
+          -9.10875,
+          0.32,
+          -0.26
+        ],
+        "max": [
+          -9.05375,
+          2.52,
+          -0.14
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-vertical-fins",
+        "min": [
+          -8.7275,
+          0.32,
+          -0.26
+        ],
+        "max": [
+          -8.6725,
+          2.52,
+          -0.14
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-vertical-fins",
+        "min": [
+          -8.34625,
+          0.32,
+          -0.26
+        ],
+        "max": [
+          -8.29125,
+          2.52,
+          -0.14
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-vertical-fins",
+        "min": [
+          -7.965,
+          0.32,
+          -0.26
+        ],
+        "max": [
+          -7.91,
+          2.52,
+          -0.14
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-vertical-fins",
+        "min": [
+          -7.58375,
+          0.32,
+          -0.26
+        ],
+        "max": [
+          -7.52875,
+          2.52,
+          -0.14
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-vertical-fins",
+        "min": [
+          -7.2025,
+          0.32,
+          -0.26
+        ],
+        "max": [
+          -7.1475,
+          2.52,
+          -0.14
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-machinery-table",
+        "min": [
+          -9.775,
+          0.15,
+          0.575
+        ],
+        "max": [
+          -8.825,
+          0.95,
+          1.325
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "exhibit-machinery-table",
+        "min": [
+          -8.675,
+          0.15,
+          1.025
+        ],
+        "max": [
+          -7.725,
+          0.95,
+          1.775
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "abstract-art-spine",
+        "min": [
+          -10.08471,
+          0.18615,
+          -1.28921
+        ],
+        "max": [
+          -9.79133,
+          1.21292,
+          -1.01621
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "abstract-art-spine",
+        "min": [
+          -6.68471,
+          0.18615,
+          4.61079
+        ],
+        "max": [
+          -6.39133,
+          1.21292,
+          4.88379
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "overlook-support",
+        "min": [
+          -10.98287,
+          -1.3,
+          6.115
+        ],
+        "max": [
+          -10.81713,
+          0.45,
+          6.27658
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "overlook-support",
+        "min": [
+          -10.88287,
+          -1.3,
+          7.115
+        ],
+        "max": [
+          -10.71713,
+          0.45,
+          7.27658
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "overlook-support",
+        "min": [
+          -9.68287,
+          -1.3,
+          8.015
+        ],
+        "max": [
+          -9.51713,
+          0.45,
+          8.17658
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "innovation-sculpture-stem",
+        "min": [
+          -9.46829,
+          0.2502,
+          4.6824
+        ],
+        "max": [
+          -9.05541,
+          1.52086,
+          5.07945
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "innovation-sculpture-stem",
+        "min": [
+          -9.9322,
+          0.24904,
+          4.88418
+        ],
+        "max": [
+          -9.53822,
+          1.51939,
+          5.29988
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "innovation-sculpture-stem",
+        "min": [
+          -10.14459,
+          0.2502,
+          4.42055
+        ],
+        "max": [
+          -9.73171,
+          1.52086,
+          4.8176
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "tree-trunk",
+        "min": [
+          0.21402,
+          0.15,
+          -10.73045
+        ],
+        "max": [
+          0.44402,
+          1.48654,
+          -10.50045
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "tree-trunk",
+        "min": [
+          11.13067,
+          0.15,
+          6.24164
+        ],
+        "max": [
+          11.36067,
+          1.7501,
+          6.47164
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "tree-trunk",
+        "min": [
+          2.63624,
+          0.15,
+          -9.20675
+        ],
+        "max": [
+          2.86624,
+          1.41076,
+          -8.97675
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "tree-trunk",
+        "min": [
+          9.94773,
+          0.15,
+          -5.40604
+        ],
+        "max": [
+          10.17773,
+          1.82868,
+          -5.17604
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "tree-trunk",
+        "min": [
+          2.3686,
+          0.15,
+          -11.4517
+        ],
+        "max": [
+          2.5986,
+          1.34662,
+          -11.2217
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "tree-trunk",
+        "min": [
+          -12.00285,
+          0.15,
+          0.92584
+        ],
+        "max": [
+          -11.77285,
+          1.83824,
+          1.15584
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "architectural-raised-planter",
+        "min": [
+          10.5,
+          0.09,
+          -4.56
+        ],
+        "max": [
+          12.3,
+          0.51,
+          -4.04
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "architectural-raised-planter",
+        "min": [
+          10.3,
+          0.09,
+          4.79
+        ],
+        "max": [
+          12.1,
+          0.51,
+          5.31
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "architectural-raised-planter",
+        "min": [
+          6.6,
+          0.09,
+          -3.47
+        ],
+        "max": [
+          7.8,
+          0.51,
+          -3.03
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "architectural-raised-planter",
+        "min": [
+          8.975,
+          0.09,
+          10.4
+        ],
+        "max": [
+          10.825,
+          0.51,
+          10.8
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "architectural-raised-planter",
+        "min": [
+          -10.975,
+          0.09,
+          3.65
+        ],
+        "max": [
+          -10.625,
+          0.51,
+          4.75
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "plaza-bench-seat",
+        "min": [
+          -11.16736,
+          0.325,
+          -5.08344
+        ],
+        "max": [
+          -9.83264,
+          0.475,
+          -4.21656
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "plaza-bench-seat",
+        "min": [
+          -11.3545,
+          0.325,
+          7.62435
+        ],
+        "max": [
+          -10.2455,
+          0.475,
+          8.87565
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "plaza-bench-seat",
+        "min": [
+          10.83609,
+          0.325,
+          8.62982
+        ],
+        "max": [
+          11.56391,
+          0.475,
+          9.97018
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "plaza-bench-seat",
+        "min": [
+          -3.56698,
+          0.325,
+          10.27684
+        ],
+        "max": [
+          -2.23302,
+          0.475,
+          10.92316
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "plaza-bench-seat",
+        "min": [
+          10.12948,
+          0.325,
+          -5.6302
+        ],
+        "max": [
+          11.47052,
+          0.475,
+          -4.8698
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "courtyard-low-bollard",
+        "min": [
+          11.135,
+          0.08,
+          8.835
+        ],
+        "max": [
+          11.265,
+          0.88,
+          8.965
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "courtyard-low-bollard-light",
+        "min": [
+          11.105,
+          0.85,
+          8.8
+        ],
+        "max": [
+          11.295,
+          0.95,
+          9
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "courtyard-low-bollard",
+        "min": [
+          1.335,
+          0.08,
+          10.535
+        ],
+        "max": [
+          1.465,
+          0.88,
+          10.665
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "courtyard-low-bollard-light",
+        "min": [
+          1.305,
+          0.85,
+          10.5
+        ],
+        "max": [
+          1.495,
+          0.95,
+          10.7
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "maker-portal-frame",
+        "min": [
+          4.105,
+          0.05,
+          1.735
+        ],
+        "max": [
+          4.235,
+          2.95,
+          1.865
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "maker-portal-frame",
+        "min": [
+          4.105,
+          0.05,
+          3.235
+        ],
+        "max": [
+          4.235,
+          2.95,
+          3.365
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "outdoor-makers-table",
+        "min": [
+          -12.36,
+          0.61,
+          -1.615
+        ],
+        "max": [
+          -10.94,
+          0.71,
+          -0.885
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "outdoor-makers-table",
+        "min": [
+          -10.21,
+          0.61,
+          -1.615
+        ],
+        "max": [
+          -8.79,
+          0.71,
+          -0.885
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-rear-wall",
+        "min": [
+          12.51,
+          0.075,
+          -2.025
+        ],
+        "max": [
+          12.69,
+          3.525,
+          4.025
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-base",
+        "min": [
+          5.21,
+          0.335,
+          -2.05
+        ],
+        "max": [
+          12.69,
+          0.985,
+          -1.87
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-upper",
+        "min": [
+          5.21,
+          3.06,
+          -2.05
+        ],
+        "max": [
+          12.69,
+          3.44,
+          -1.87
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          5.12,
+          0.815,
+          -2.055
+        ],
+        "max": [
+          5.28,
+          3.065,
+          -1.865
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          6.53,
+          0.815,
+          -2.055
+        ],
+        "max": [
+          6.69,
+          3.065,
+          -1.865
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          7.88,
+          0.815,
+          -2.055
+        ],
+        "max": [
+          8.04,
+          3.065,
+          -1.865
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          9.23,
+          0.815,
+          -2.055
+        ],
+        "max": [
+          9.39,
+          3.065,
+          -1.865
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          10.58,
+          0.815,
+          -2.055
+        ],
+        "max": [
+          10.74,
+          3.065,
+          -1.865
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          12.52,
+          0.815,
+          -2.055
+        ],
+        "max": [
+          12.68,
+          3.065,
+          -1.865
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-base",
+        "min": [
+          5.21,
+          0.335,
+          3.87
+        ],
+        "max": [
+          12.69,
+          0.985,
+          4.05
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-upper",
+        "min": [
+          5.21,
+          3.06,
+          3.87
+        ],
+        "max": [
+          12.69,
+          3.44,
+          4.05
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          5.12,
+          0.815,
+          3.865
+        ],
+        "max": [
+          5.28,
+          3.065,
+          4.055
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          6.53,
+          0.815,
+          3.865
+        ],
+        "max": [
+          6.69,
+          3.065,
+          4.055
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          7.88,
+          0.815,
+          3.865
+        ],
+        "max": [
+          8.04,
+          3.065,
+          4.055
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          9.23,
+          0.815,
+          3.865
+        ],
+        "max": [
+          9.39,
+          3.065,
+          4.055
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          10.58,
+          0.815,
+          3.865
+        ],
+        "max": [
+          10.74,
+          3.065,
+          4.055
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-side-pier",
+        "min": [
+          12.52,
+          0.815,
+          3.865
+        ],
+        "max": [
+          12.68,
+          3.065,
+          4.055
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-front-base",
+        "min": [
+          5.1,
+          0.33,
+          -2.01
+        ],
+        "max": [
+          5.26,
+          0.95,
+          4.01
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-front-upper",
+        "min": [
+          5.1,
+          3.12,
+          -2.01
+        ],
+        "max": [
+          5.26,
+          3.44,
+          4.01
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-main-glass-doors",
+        "min": [
+          4.9475,
+          0.33,
+          -0.55
+        ],
+        "max": [
+          4.9925,
+          2.53,
+          1.05
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-entry-door-frame",
+        "min": [
+          4.895,
+          0.32,
+          -0.5725
+        ],
+        "max": [
+          4.965,
+          2.54,
+          -0.5275
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-entry-door-frame",
+        "min": [
+          4.895,
+          0.32,
+          0.2275
+        ],
+        "max": [
+          4.965,
+          2.54,
+          0.2725
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      },
+      {
+        "name": "factory-entry-door-frame",
+        "min": [
+          4.895,
+          0.32,
+          1.0275
+        ],
+        "max": [
+          4.965,
+          2.54,
+          1.0725
+        ],
+        "roadCoreOverlapArea": 0,
+        "npcOverlapArea": 0
+      }
+    ],
+    "coreConflicts": [],
+    "npcConflicts": []
+  },
+  "retainedLamps": [
+    {
+      "id": "S14-L1",
+      "route": "S14",
+      "t": 0.38,
+      "side": 1,
+      "type": "seven",
+      "zone": 4,
+      "position": [
+        -41.54749896392754,
+        0,
+        17.30634496943154
+      ],
+      "yaw": 0.45079495681131343
+    },
+    {
+      "id": "S14-L2",
+      "route": "S14",
+      "t": 0.67,
+      "side": -1,
+      "type": "seven",
+      "zone": 4,
+      "position": [
+        -28.976232568229463,
+        0,
+        25.570298769693267
+      ],
+      "yaw": -2.4589943294711336
+    },
+    {
+      "id": "S15-L1",
+      "route": "S15",
+      "t": 0.32,
+      "side": 1,
+      "type": "seven",
+      "zone": 4,
+      "position": [
+        -6.473210288691053,
+        0,
+        12.434887243824495
+      ],
+      "yaw": -0.4069787116030419
+    },
+    {
+      "id": "S15-L2",
+      "route": "S15",
+      "t": 0.65,
+      "side": -1,
+      "type": "seven",
+      "zone": 4,
+      "position": [
+        -8.385034510556537,
+        0,
+        28.06336282436639
+      ],
+      "yaw": -3.7452876163177002
+    },
+    {
+      "id": "S16-L1",
+      "route": "S16",
+      "t": 0.26,
+      "side": 1,
+      "type": "seven",
+      "zone": 4,
+      "position": [
+        -31.34936300447256,
+        0,
+        49.92462198439783
+      ],
+      "yaw": -0.517292012914875
+    },
+    {
+      "id": "S16-L2",
+      "route": "S16",
+      "t": 0.52,
+      "side": -1,
+      "type": "seven",
+      "zone": 4,
+      "position": [
+        -33.429191925348874,
+        0,
+        66.34790611463875
+      ],
+      "yaw": -3.6569008781905303
+    },
+    {
+      "id": "S16-L3",
+      "route": "S16",
+      "t": 0.75,
+      "side": 1,
+      "type": "seven",
+      "zone": 4,
+      "position": [
+        -45.81459602732358,
+        0,
+        74.4202886596302
+      ],
+      "yaw": -0.6428846501002032
+    }
+  ],
+  "limits": [
+    "No V3 GLB/source available; no V3 bounding boxes or fit decision claimed.",
+    "Only existing PR17 static data audited; no new gameplay test or model export in this step."
+  ]
+}

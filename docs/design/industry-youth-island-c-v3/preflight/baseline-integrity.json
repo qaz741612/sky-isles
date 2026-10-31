@@ -1,0 +1,31 @@
+{
+  "baseCommit": "0c7cab7e7e2a75537363a7736206aaa8134787f6",
+  "checks": [
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/industry-youth-c.blend",
+      "sha256": "90fcf437d0075d634ade8b609e194b7816482ca048bb306f3e76baab4c29c4b3",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/industry-youth-c/industry-youth-c.glb",
+      "sha256": "8f950bb916cebb967102b58c8b92cb11bc85ddb67689d9cd2193c76f9050be63",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/yuan-plan.json",
+      "sha256": "e9498ef68d0505c005544cc18eb416bbb4448fac17da7c04dbc7d965271fc867",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/industry-youth-plan.json",
+      "sha256": "99743161c8808b2a6a4dc74e18912c11c17e177197b6ba84899529de50d07b92",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/industry-youth-collision.json",
+      "sha256": "35f1c6ec0147037fdd7ae1bb78e8a81f8d02ada08f817bef5bb45a4d65d715fc",
+      "unchanged": true
+    }
+  ],
+  "V3ConstructionStarted": false
+}

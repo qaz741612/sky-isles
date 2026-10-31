@@ -1,0 +1,17 @@
+{
+  "baseCommit": "0c7cab7e7e2a75537363a7736206aaa8134787f6",
+  "backupPath": "/workspace/recovery-backups/industry-c-before-v3-20261031T055237Z.tar.gz",
+  "bytes": 5415246,
+  "sha256": "4923d89bea06ddc040d5bbbeb29741796718a0ef225e31863d47adf90385b917",
+  "files": [
+    "docs/design/industry-youth-island-c-v2.2/industry-youth-c.blend",
+    "docs/design/industry-youth-island-c-v2.2/industry-youth-c.blend1",
+    "public/models/industry-youth-c/industry-youth-c.glb",
+    "src/data/industry-youth-collision.json",
+    "src/data/industry-youth-plan.json",
+    "src/data/yuan-plan.json",
+    "scripts/industry/prepare_c.py",
+    "scripts/blender/build_industry_c.py"
+  ],
+  "note": "Local recovery backup only, not added to Git. Existing work/, dependencies and .blend1 left in place."
+}
