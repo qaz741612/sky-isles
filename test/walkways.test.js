@@ -121,10 +121,10 @@ test('every ordered junction turn stays walkable with actual transport decks pre
 
 test('all six covered policy places support an actual falling Player; the open park pergola has no fake roof',()=>{
  const {scene,player}=fixture(),roofs=new Map();
- scene.traverse(mesh=>{if(mesh.userData.support==='roof'&&mesh.userData.island!=='home'&&!roofs.has(mesh.userData.island))roofs.set(mesh.userData.island,mesh);});
+ scene.traverse(mesh=>{if(mesh.userData.support==='roof'&&mesh.userData.island!=='home'){if(!roofs.has(mesh.userData.island))roofs.set(mesh.userData.island,[]);roofs.get(mesh.userData.island).push(mesh);}});
  assert.deepEqual([...roofs.keys()].sort(),['tree','temple','koi','windmill','crystal','lookout'].sort());
- for(const[name,mesh]of roofs){const box=new THREE.Box3().setFromObject(mesh),centre=box.getCenter(new THREE.Vector3()),ray=new THREE.Raycaster(new THREE.Vector3(centre.x,box.max.y+2,centre.z),new THREE.Vector3(0,-1,0));const expected=ray.intersectObject(mesh,false)[0];assert.ok(expected,name);player.teleport(centre.x,expected.point.y+1,centre.z);
+ for(const[name,meshes]of roofs){const mesh=meshes[0],box=new THREE.Box3().setFromObject(mesh),centre=box.getCenter(new THREE.Vector3()),ray=new THREE.Raycaster(new THREE.Vector3(centre.x,box.max.y+2,centre.z),new THREE.Vector3(0,-1,0));const expected=ray.intersectObjects(meshes,false)[0];assert.ok(expected,name);player.teleport(centre.x,expected.point.y+1,centre.z);
  for(let i=0;i<180;i++)player.update(1/60,{x:0,z:0,jumpHeld:false,jumpPressed:false},i/60);
- assert.ok(player.move.grounded,name);assert.ok(Math.abs(player.pos.y-expected.point.y)<.04,`${name} roof support`);assert.equal(player.respawnCount,0);
+ assert.ok(player.move.grounded,name);assert.ok(Math.abs(player.pos.y-expected.point.y)<.04,`${name} roof support expected=${expected.point.y} actual=${player.pos.y} at ${player.pos.toArray()}`);assert.equal(player.respawnCount,0);
  }
 });

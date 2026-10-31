@@ -97,9 +97,12 @@ def build(override=None,preserve_site=False):
         if role=='roof'or any(s in name for s in ['roof','canopy','lintel','greenhouse-arched-truss','curved-glass-panel']):
             camera.extend(v[faces].flatten().tolist());ceiling.extend(v[faces].flatten().tolist())
             # Real top support allows deliberate jumps; roof is never a checkpoint.
+            allowed=g.get('roofSupportNames')
+            if allowed is not None and name not in allowed:continue
             for t in v[faces]:
                 n=np.cross(t[1]-t[0],t[2]-t[0])
                 if abs(n[1])>max(abs(n[0]),abs(n[2])):
+                    if allowed is not None and len(faces)>2 and n[1]<0:continue
                     if n[1]<0:t=t[[0,2,1]]
                     roof.extend(t.flatten().tolist())
     footprint=list(g['foot'].exterior.coords)[:-1]

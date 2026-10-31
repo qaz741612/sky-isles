@@ -45,8 +45,8 @@ def author():
         n=prefix+'-v3-'+name[2:].replace(' ','-')
         mesh=placed(m,group)
         if name.startswith('w sawtooth roof panel'):
-            v=mesh.vertices.copy();verts=np.concatenate((v,v-[0,.075,0]));mesh=trimesh.Trimesh(vertices=verts,faces=[[0,1,2],[0,2,3],[4,6,5],[4,7,6],[0,4,5],[0,5,1],[1,5,6],[1,6,2],[2,6,7],[2,7,3],[3,7,4],[3,4,0]],process=False)
-        role='roof'if any(k in name for k in ['roof','canopy','lintel','arch rib','arch rail','blueglass'])else'floor'if name in ['w base slab','y plinth','g low plinth']else'solid'
+            v=mesh.vertices.copy();verts=np.concatenate((v,v-[0,.075,0]));mesh=trimesh.Trimesh(vertices=verts,faces=[[0,2,1],[0,3,2],[4,5,6],[4,6,7],[0,1,5],[0,5,4],[1,2,6],[1,6,5],[2,3,7],[2,7,6],[3,0,4],[3,4,7]],process=False)
+        role='roof'if any(k in name for k in ['roof','canopy','lintel','arch rib','arch rail','blueglass','w solar'])else'floor'if name in ['w base slab','y plinth','g low plinth']else'solid'
         if 'seedlings'in name:role=None
         # Faceted glazed roof panels are real thin surfaces, not massive boxes.
         add(mesh,palette[col],n,role)
@@ -128,7 +128,9 @@ def author():
         for xx in[6.98,9.82]:
             for yy in np.linspace(3.15,6.85,5):
                 for dx,dz,s in [(-.17,0,.16),(.13,.07,.19),(0,-.1,.14)]:
-                    p=cfg['greenhouse'];dxw,dzw=p['translationXZ'];a.sphere([xx+dx+dxw,.91,yy+dz+dzw],s,'plant_leaf'if s>.15 else'plant_yellow','greenhouse-v3-growing-leaf',1,scale=[1,.65,.7])
+                    p=cfg['greenhouse'];dxw,dzw=p['translationXZ']
+                    a.rod([xx+dx+dxw,.70,yy+dz+dzw],[xx+dx+dxw,.91,yy+dz+dzw],.018,'plant_bush','greenhouse-v3-growing-stem',6)
+                    a.sphere([xx+dx+dxw,.91,yy+dz+dzw],s,'plant_leaf'if s>.15 else'plant_yellow','greenhouse-v3-growing-leaf',1,scale=[1,.65,.7])
     # Three deliberate shared-lifecycle landscape areas, with no scattered props.
     for i,(x,z)in enumerate(cfg['treesXZ']):
         a.rod([x,-.1,z],[x,1.4,z],.13,'wood','v3-garden-trunk',8);roles['v3-garden-trunk']='solid'
@@ -145,7 +147,9 @@ def author():
     # Ground approach only: no change to original roads or circular plaza.
     for points in [[(3.0,8.4),(3,9.4),(5.4,9.8),(6.0,9.8)],[(-3,0),(-4.6,-.55)],[(3.1,-1),(4.4,-1.2)]]:
         a.polygon(LineString(points).buffer(.65,cap_style=2,join_style=1).intersection(base['foot'].buffer(-.15)),-.1,.025,'path','v3-local-approach');roles['v3-local-approach']='floor'
-    base['collisionRoles']=roles;base['description']='C V3 architectural refinement on unchanged PR17 ground; semantic proxies at 1e-5'
+    base['collisionRoles']=roles
+    base['roofSupportNames']={n for m,mat,n in a.parts if any(k in n for k in ['factory-v3-sawtooth-roof-panel','factory-v3-warm-entry-canopy','factory-v3-solar-','exhibition-v3-lower-roof','exhibition-v3-raised-roof','exhibition-v3-long-roof-plate','greenhouse-v3-blueglass','greenhouse-v3-arch-rib','greenhouse-v3-arch-rail'])}
+    base['description']='C V3 architectural refinement on unchanged PR17 ground; semantic proxies at 1e-5'
     return base,a.parts,cfg
 
 def main():

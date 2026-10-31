@@ -90,7 +90,7 @@ for name,pos,energy,size in [('Key',(-15,-18,28),2200,16),('Fill',(16,-8,18),150
     l=bpy.data.lights.new(name,'AREA');l.energy=energy;l.shape='DISK';l.size=size;o=bpy.data.objects.new(name,l);scene.collection.objects.link(o);o.location=pos;o.rotation_euler=(Vector((0,0,0))-o.location).to_track_quat('-Z','Y').to_euler()
 cam=bpy.data.objects.new('Camera',bpy.data.cameras.new('Camera'));scene.collection.objects.link(cam);scene.camera=cam;cam.data.type='ORTHO';cam.data.lens=45
 views={'hero':(-32,36,29),'front':(0,-45,5),'back':(0,45,5),'left':(-45,0,5),'right':(45,0,5),'top':(0,0,55),'workshop-detail':(-7,-14,10),'greenhouse-detail':(1,-15,9)}
-if V3:views.update({'hero':(-32,36,29)if PASS1 else(32,36,29),'workshop-detail':(20,16,12),'youth-detail':(2,-12,9)})
+if V3:views.update({'hero':(-32,36,29)if PASS1 else(32,-36,29),'workshop-detail':(20,16,12),'youth-detail':(2,-12,9)})
 def view(name):
     target=Vector((0,0,-.6));scale=37
     if name=='workshop-detail':target=Vector((8.1,-.7,2.0));scale=13
@@ -108,7 +108,7 @@ bpy.ops.export_scene.gltf(filepath=str(glb),export_format='GLB',use_selection=Tr
 blend=OUT/('industry-youth-c-v3.blend'if V3 else'industry-youth-c.blend');bpy.ops.wm.save_as_mainfile(filepath=str(blend),compress=V3)
 triangles=sum(sum(len(p.vertices)-2 for p in o.data.polygons)for o in display.objects if o.type=='MESH')
 allv=[o.matrix_world@v.co for o in display.objects if o.type=='MESH'for v in o.data.vertices]
-report={'version':'C-V3'if V3 else'C-V2.2','editableObjects':len(editable.objects),'runtimeMeshes':len(display.objects),'triangles':triangles,'materials':len(materials),'textures':0,'boundsBlender':[[min(v[i]for v in allv)for i in range(3)],[max(v[i]for v in allv)for i in range(3)]],'blendBytes':blend.stat().st_size,'glbBytes':glb.stat().st_size,'refinement':'V3 workshop / enclosed youth centre / curved greenhouse on unchanged original PR17 terrain'if V3 else'Original V2.2 components, actual workshop wall shell/interior, subtle edge bevels, clear tinted glass, material batches; no route or other asset edits','closedInteriors':['workshop','greenhouse','youth']if V3 else['workshop','greenhouse'],'renderer':'Blender Cycles CPU, %d samples, AgX'%scene.cycles.samples}
+report={'version':'C-V3'if V3 else'C-V2.2','editableObjects':len(editable.objects),'runtimeMeshes':len(display.objects),'triangles':triangles,'materials':len({m.name for o in display.objects if o.type=='MESH'for m in o.data.materials}),'textures':0,'boundsBlender':[[min(v[i]for v in allv)for i in range(3)],[max(v[i]for v in allv)for i in range(3)]],'blendBytes':blend.stat().st_size,'glbBytes':glb.stat().st_size,'refinement':'V3 workshop / enclosed youth centre / curved greenhouse on unchanged original PR17 terrain'if V3 else'Original V2.2 components, actual workshop wall shell/interior, subtle edge bevels, clear tinted glass, material batches; no route or other asset edits','closedInteriors':['workshop','greenhouse','youth']if V3 else['workshop','greenhouse'],'renderer':'Blender Cycles CPU, %d samples, AgX'%scene.cycles.samples}
 (OUT/'model-report.json').write_text(json.dumps(report,indent=2)+'\n')
 if '--render' in sys.argv:
     records=[]

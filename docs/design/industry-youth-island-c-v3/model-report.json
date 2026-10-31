@@ -1,9 +1,9 @@
 {
   "version": "C-V3",
-  "editableObjects": 614,
-  "runtimeMeshes": 59,
-  "triangles": 36580,
-  "materials": 42,
+  "editableObjects": 721,
+  "runtimeMeshes": 61,
+  "triangles": 41768,
+  "materials": 29,
   "textures": 0,
   "boundsBlender": [
     [
@@ -14,16 +14,16 @@
     [
       14.7785062789917,
       13.126145362854004,
-      6.645159721374512
+      6.651038646697998
     ]
   ],
-  "blendBytes": 2392464,
-  "glbBytes": 1891560,
+  "blendBytes": 2476076,
+  "glbBytes": 2225844,
   "refinement": "V3 workshop / enclosed youth centre / curved greenhouse on unchanged original PR17 terrain",
   "closedInteriors": [
     "workshop",
     "greenhouse",
     "youth"
   ],
-  "renderer": "Blender Cycles CPU, 16 samples, AgX"
+  "renderer": "Blender Cycles CPU, 32 samples, AgX"
 }
