@@ -1,0 +1,5 @@
+{
+  "error": "page.evaluate: Error: camera trapped 4.9,-1.05\n    at eval (eval at evaluate (:303:30), <anonymous>:9:313)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "errors": [],
+  "status": "Historical first full-route run failed at workshop porch camera; see final routes and new orbit test. Not counted as a pass."
+}

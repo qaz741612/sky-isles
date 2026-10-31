@@ -1,0 +1,37 @@
+{
+  "status": "Historical run: C interactions passed; family test path crossed existing toy bucket. Corrected path retest pending at checkpoint.",
+  "stats": {
+    "startTime": "2026-10-31T09:08:41.657Z",
+    "duration": 356848.017,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "device": "desktop",
+      "status": "passed",
+      "error": ""
+    },
+    {
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "device": "mobile",
+      "status": "passed",
+      "error": ""
+    },
+    {
+      "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+      "device": "desktop",
+      "status": "failed",
+      "error": "Error: page.evaluate: Error: blocked target -25.049999999999997,-17.456; actual {\"x\":-24.589032502851992,\"y\":0.11749999970197689,\"z\":-15.111381335011249}\n    at walk (eval at evaluate (:303:30), <anonymous>:29:33)\n    at eval (eval at evaluate (:303:30), <anonymous>:46:48)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+      "device": "mobile",
+      "status": "failed",
+      "error": "Error: page.evaluate: Error: blocked target -25.049999999999997,-17.456; actual {\"x\":-24.589032502851992,\"y\":0.11749999970197689,\"z\":-15.111381335011249}\n    at walk (eval at evaluate (:303:30), <anonymous>:29:33)\n    at eval (eval at evaluate (:303:30), <anonymous>:46:48)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    }
+  ]
+}

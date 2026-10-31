@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './helpers/software-qa.js';
 
 test('compact portrait and landscape menu remain usable with first-visit help', async ({ page, isMobile }) => {
   test.skip(!isMobile, 'touch layouts');

@@ -1,0 +1,84 @@
+{
+  "baseCommit": "584ffe9",
+  "files": [
+    {
+      "path": "src/data/yuan-plan.json",
+      "sha256": "e9498ef68d0505c005544cc18eb416bbb4448fac17da7c04dbc7d965271fc867"
+    },
+    {
+      "path": "src/data/yuan-layout.json",
+      "sha256": "fee22925d10b48e81972753d232e8ad07e220a6534f67bda78b5f253df116e34"
+    },
+    {
+      "path": "src/data/yuan-surface.json",
+      "sha256": "45be23c759227de17a591909df156331677c62b08c7c78858f78904e1b8c6ecf"
+    },
+    {
+      "path": "src/data/bridge-landscape.json",
+      "sha256": "a68a58e211bed39ec46a036676e265f101e1d5ae50d4f23dec1cc0ac5bd86d36"
+    },
+    {
+      "path": "src/data/industry-youth-plan.json",
+      "sha256": "99743161c8808b2a6a4dc74e18912c11c17e177197b6ba84899529de50d07b92"
+    },
+    {
+      "path": "src/data/flood-control-collision.json",
+      "sha256": "971bb0bd12e76f0f80ec84d3979419f7b9c0d0c44c7b00acafc4b8a0a141cae6"
+    },
+    {
+      "path": "src/world/islands.js",
+      "sha256": "3d3aece82c3e03af5990147836e8b942a321e2600f4969c3cd03610ca4b7038f"
+    },
+    {
+      "path": "src/world/flood-control.js",
+      "sha256": "038e5e29800e1b54e2c00a2db27916fbe4d1db3d404cf65e59ddaeb977baa015"
+    },
+    {
+      "path": "src/world/parent-child-model.js",
+      "sha256": "61c7b7eb9bb437b025f4584d24ddc93fabc36f739af56ebe50564f8727991d57"
+    },
+    {
+      "path": "src/world/elevated-station.js",
+      "sha256": "cda24e5a2e2502e6fb1b36eaf4fdafd0bf80b11b11c30402d668d60b6b3ee086"
+    },
+    {
+      "path": "src/sim/player.js",
+      "sha256": "026fe21a032de3aee88e31521a29e10a73f10a27a67698da9529be5b1ff7d1eb"
+    },
+    {
+      "path": "src/sim/movement.js",
+      "sha256": "1aa6f30fffc45466484ceeee974af3e8372740dbf1a8f22433d8075862d2882a"
+    },
+    {
+      "path": "public/data/policies.json",
+      "sha256": "83e6373ff9808bf8c65148b37e835a03fb32ac5041005229c15058de3e3c56ce"
+    },
+    {
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "sha256": "758833dc90065fed371a6e854f560c68b6e790e05008a4021febb28c43c9059b"
+    },
+    {
+      "path": "public/models/parent-child-centre/parent-child-centre.glb",
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44"
+    },
+    {
+      "path": "public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb",
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-v2.2/industry-youth-c.blend",
+      "sha256": "90fcf437d0075d634ade8b609e194b7816482ca048bb306f3e76baab4c29c4b3"
+    }
+  ],
+  "terrainVertexSignature": {
+    "base": {
+      "uniqueVertices": 9200,
+      "sha256": "1aab63faf859769486b0319e1b968e6209341a291dae059f56f5004517555b58"
+    },
+    "current": {
+      "uniqueVertices": 9200,
+      "sha256": "1aab63faf859769486b0319e1b968e6209341a291dae059f56f5004517555b58"
+    },
+    "unchanged": true
+  }
+}

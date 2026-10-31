@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './helpers/software-qa.js';
 
 // Regression test for the inverted-controls bug: the camera-relative wish
 // direction must match the camera frame, so forward on the stick / W key

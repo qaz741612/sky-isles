@@ -1,0 +1,35 @@
+{
+  "status": "WIP: recovered preflight only; no current C construction assets found",
+  "inspectionTimeUTC": "20261029T235225Z",
+  "sourceCommit": "3f1c27205397d598783eef4d7401c14e5253650e",
+  "workingDirectory": "/workspace/sky-isles-industry-c-preflight",
+  "initialTrackedAndUntrackedChanges": 0,
+  "preservedFiles": [
+    {
+      "path": "docs/design/industry-youth-island-c-preflight/README.md",
+      "bytes": 5276,
+      "sha256": "280ae97c19876c5297d90183e112b8d48cd8db1a8d1b9c742a021fa8683dba50"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-preflight/audit.json",
+      "bytes": 6862,
+      "sha256": "5fafc33626dc0e229ec3c52a0022bf4187e0f41f64d43eade2575c54c0d7f6e0"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-preflight/audit.mjs",
+      "bytes": 6590,
+      "sha256": "6a7d5a62d3d217ea75903352f6d7c9fc378e6c197f08ebe4dddae586bd2d2390"
+    },
+    {
+      "path": "docs/design/industry-youth-island-c-preflight/existing-space.svg",
+      "bytes": 7928,
+      "sha256": "63ccae08820ba989c5c31bd4d5211cae1cfb911d5c293ea803acdce197722593"
+    }
+  ],
+  "constructionAssetsRecovered": [],
+  "excludedOldAssets": [
+    "/workspace/sky-isles/docs/design/seven-policy-islands-blender-v1/industry/industry.blend",
+    "/workspace/sky-isles/docs/design/seven-policy-islands-blender-v1/industry/industry.glb"
+  ],
+  "tests": "Not rerun: documentation-only recovery checkpoint; no construction completion asserted"
+}

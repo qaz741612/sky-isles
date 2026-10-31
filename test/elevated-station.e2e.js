@@ -1,6 +1,7 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './helpers/software-qa.js';
 import fs from 'node:fs';
 const output=process.env.SKYISLES_QA_OUTPUT_DIR||'docs/previews/transport-elevated-station-v9-game-integration';
+fs.mkdirSync(output,{recursive:true});
 test('V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information',async({page,isMobile})=>{
  test.setTimeout(600000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});

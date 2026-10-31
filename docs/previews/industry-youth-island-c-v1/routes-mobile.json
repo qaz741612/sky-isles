@@ -1,0 +1,249 @@
+{
+  "passed": true,
+  "errors": [],
+  "routes": [
+    {
+      "id": "S01",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S02",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S03",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S04",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S05",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S06",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S07",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S08",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S09",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S10",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S11",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S12",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S13",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S14",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S15",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S16",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S17",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S18",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S19",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S20",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S21",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S22",
+      "bidirectional": true,
+      "noJump": true
+    }
+  ],
+  "campusLoop": [
+    [
+      0,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3.6,
+      0
+    ],
+    [
+      4.2,
+      0
+    ],
+    [
+      3.6,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0.5,
+      6.95
+    ],
+    [
+      0.5,
+      8.35
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1.7,
+      4.4
+    ],
+    [
+      3.4,
+      5.3
+    ],
+    [
+      3.7,
+      7.04
+    ],
+    [
+      3.4,
+      5.3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      -4,
+      3
+    ],
+    [
+      -5.7,
+      2
+    ],
+    [
+      -7.5,
+      2.7
+    ],
+    [
+      -8.5,
+      2.7
+    ],
+    [
+      -7.5,
+      2.7
+    ],
+    [
+      -5.7,
+      2
+    ],
+    [
+      -4,
+      3
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "cameraSamples": 40,
+  "forcedRecovery": true,
+  "panoramaRestores": true,
+  "stats": {
+    "bytes": 2587016,
+    "downloadMilliseconds": 164.60000002384186,
+    "decodeMilliseconds": 44.09999996423721,
+    "totalMilliseconds": 208.69999998807907,
+    "triangles": 44552,
+    "runtimeMeshes": 66,
+    "materials": 33,
+    "newLights": 0
+  },
+  "meshes": 66,
+  "npc": [
+    {
+      "id": "industry-guide-reserved",
+      "position": [
+        0.5,
+        0,
+        8.35
+      ],
+      "playerStop": [
+        0.5,
+        0,
+        6.95
+      ],
+      "groundElevation": -0.1,
+      "standingSize": [
+        3,
+        3
+      ],
+      "facingYaw": 3.141592653589793,
+      "interactionRadius": 1.6,
+      "implemented": false
+    }
+  ],
+  "ticks": 17136,
+  "mode": "fixed-60Hz engineering traversal; native physics and camera; no hardware FPS claim"
+}

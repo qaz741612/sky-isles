@@ -1,0 +1,10 @@
+{
+  "previewPort": 4233,
+  "bundle": "index-uUzcxQfG.js",
+  "sourceMapCameraMatchesWorkingSource": true,
+  "cameraSHA256": "b0ba8d95c2da7be13c6d09081e52e9830dd79add6ef6897ab45e7b90132475b8",
+  "servedModelBytes": 2225844,
+  "servedModelSHA256": "008c72da95ebf7fa299df3cb46f7a7f6ca523c0889b8c454895cbeea76db0f43",
+  "servedModelMatchesFinalAsset": true,
+  "note": "Local production-build preview response bytes and source-map proof; not a public deployment or hardware benchmark"
+}

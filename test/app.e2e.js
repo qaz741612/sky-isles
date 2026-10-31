@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './helpers/software-qa.js';
 
 async function waitForWorld(page) {
   await page.goto('/');
@@ -21,11 +21,13 @@ test.describe('苑裡政策島', () => {
     await expect(canvas).toBeVisible();
 
     // a rich pastel scene compresses poorly: screenshot must be sizable
+    await page.evaluate(()=>{const w=window.__skyisles.world;if(w.renderer.qaDraw)w.renderer.qaDraw(w.scene,w.camera);});
     const shotA = await page.screenshot();
     expect(shotA.length).toBeGreaterThan(30_000);
 
     // the world is alive: two frames apart must differ (clouds drift, leaves fall)
     await page.waitForTimeout(800);
+    await page.evaluate(()=>{const w=window.__skyisles.world;if(w.renderer.qaDraw)w.renderer.qaDraw(w.scene,w.camera);});
     const shotB = await page.screenshot();
     expect(shotB.equals(shotA)).toBeFalsy();
 
@@ -33,7 +35,7 @@ test.describe('苑裡政策島', () => {
     // synchronous task, so no preserveDrawingBuffer is needed)
     const varied = await page.evaluate(() => {
       const { renderer, scene, camera } = window.__skyisles.world;
-      renderer.render(scene, camera);
+      (renderer.qaDraw??renderer.render.bind(renderer))(scene,camera);
       const c = renderer.domElement;
       const g = document.createElement('canvas');
       g.width = 64;

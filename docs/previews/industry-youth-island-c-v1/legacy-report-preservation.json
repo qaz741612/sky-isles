@@ -1,0 +1,7 @@
+{
+  "note": "Only artifacts produced by this run outside the C delivery folder were backed up locally, then historical tracked reports restored. No source/model reset or clean.",
+  "paths": [
+    "docs/previews/transport-elevated-station-v9-game-integration/desktop-controller.json",
+    "docs/previews/transport-elevated-station-v9-game-integration/mobile-controller.json"
+  ]
+}

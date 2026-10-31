@@ -1,0 +1,43 @@
+{
+  "sourceCommit": "0c7cab7",
+  "sourceBlendSHA256": "90fcf437d0075d634ade8b609e194b7816482ca048bb306f3e76baab4c29c4b3",
+  "readOnlyOriginal": true,
+  "views": [
+    {
+      "name": "hero",
+      "location": [
+        32,
+        -36,
+        29
+      ],
+      "target": [
+        0,
+        0,
+        -0.6
+      ],
+      "orthoScale": 37,
+      "size": [
+        1000,
+        800
+      ]
+    },
+    {
+      "name": "top",
+      "location": [
+        0,
+        0,
+        55
+      ],
+      "target": [
+        0,
+        0,
+        -0.6
+      ],
+      "orthoScale": 37,
+      "size": [
+        1000,
+        800
+      ]
+    }
+  ]
+}

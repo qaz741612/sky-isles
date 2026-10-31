@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';import fs from 'node:fs';
+import {test,expect} from './helpers/software-qa.js';import fs from 'node:fs';
 test('active landscape zones preserve every route in both directions with the live Player',async({page,isMobile})=>{
  test.setTimeout(600000);const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
  const results=await page.evaluate(()=>{const w=window.__skyisles.world,p=w.player,step=p.update.bind(p);p.update=()=>{};w.renderer.render=()=>{};let ticks=0;const records=[];const tick=(x=0,z=0)=>step(1/60,{x,z,jumpPressed:false,jumpHeld:false},++ticks/60);

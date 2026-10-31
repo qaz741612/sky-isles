@@ -1,4 +1,4 @@
-import{test,expect}from'@playwright/test';
+import{test,expect}from'./helpers/software-qa.js';
 test('imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged',async({page})=>{
  test.setTimeout(240000);await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:150000});await page.evaluate(()=>{window.__skyisles.world.renderer.render=()=>{};});await page.locator('#title-screen .tap').click();if(await page.locator('#touch-help').isVisible())await page.locator('#help-close').click();
  const result=await page.evaluate(()=>{

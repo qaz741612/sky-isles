@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "errors": [],
+  "routes": [
+    {
+      "id": "S14",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S15",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S16",
+      "bidirectional": true,
+      "noJump": true
+    }
+  ],
+  "campusLoop": [
+    [
+      0,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3.6,
+      0
+    ],
+    [
+      4.2,
+      0
+    ],
+    [
+      3.6,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0.5,
+      6.45
+    ],
+    [
+      0.5,
+      8.35
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1.7,
+      4.4
+    ],
+    [
+      3.4,
+      5.3
+    ],
+    [
+      3.7,
+      7.04
+    ],
+    [
+      3.4,
+      5.3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      -4,
+      3
+    ],
+    [
+      -5.7,
+      2
+    ],
+    [
+      -7.5,
+      2.7
+    ],
+    [
+      -8.5,
+      2.7
+    ],
+    [
+      -7.5,
+      2.7
+    ],
+    [
+      -5.7,
+      2
+    ],
+    [
+      -4,
+      3
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "cameraSamples": 40,
+  "forcedRecovery": true,
+  "panoramaRestores": true,
+  "stats": {
+    "bytes": 1266956,
+    "downloadMilliseconds": 144.80000001192093,
+    "decodeMilliseconds": 36.59999996423721,
+    "totalMilliseconds": 181.39999997615814,
+    "triangles": 37448,
+    "runtimeMeshes": 31,
+    "materials": 31,
+    "newLights": 0
+  },
+  "meshes": 31,
+  "npc": [
+    {
+      "id": "industry-guide-reserved",
+      "position": [
+        0.5,
+        0,
+        8.35
+      ],
+      "playerStop": [
+        0.5,
+        0,
+        6.45
+      ],
+      "standingSize": [
+        3,
+        3
+      ],
+      "facingYaw": 3.141592653589793,
+      "interactionRadius": 1.6,
+      "implemented": false
+    }
+  ],
+  "ticks": 4657,
+  "mode": "fixed-60Hz engineering traversal; native physics and camera; no hardware FPS claim"
+}

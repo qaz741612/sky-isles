@@ -1,0 +1,200 @@
+{
+  "basis": "ae2a63f + user V2.2",
+  "nodesAnd22BezierControlsUnchanged": true,
+  "coreWidth": 4.8,
+  "CWorldCentre": [
+    -20.358,
+    0,
+    38.61
+  ],
+  "footprintBoundsLocal": [
+    -14.923727464488657,
+    -13.117006913007412,
+    14.778506121464666,
+    12.28299308699259
+  ],
+  "footprintArea": 571.1096845677611,
+  "entrances": [
+    {
+      "id": "S14",
+      "width": 4.8,
+      "newFootprintCrossingsWorldXZ": [
+        [
+          -29.74716462490704,
+          29.351243965720162
+        ]
+      ]
+    },
+    {
+      "id": "S15",
+      "width": 4.8,
+      "newFootprintCrossingsWorldXZ": [
+        [
+          -12.350754344722391,
+          28.459112621040898
+        ]
+      ]
+    },
+    {
+      "id": "S16",
+      "width": 4.8,
+      "newFootprintCrossingsWorldXZ": [
+        [
+          -27.838713492199684,
+          49.87212042457848
+        ]
+      ]
+    }
+  ],
+  "NPCReservation": [
+    [
+      -1,
+      6.85
+    ],
+    [
+      2,
+      9.85
+    ]
+  ],
+  "NPCPlayerStopDistance": 1.4,
+  "otherIslands": [
+    {
+      "id": "F",
+      "overlapArea": 0.0,
+      "groundGap": 21.2065350576985
+    },
+    {
+      "id": "A",
+      "overlapArea": 0.0,
+      "groundGap": 34.97288950057802
+    },
+    {
+      "id": "B",
+      "overlapArea": 0.0,
+      "groundGap": 22.337826035274666
+    },
+    {
+      "id": "E",
+      "overlapArea": 0.0,
+      "groundGap": 51.47223548171019
+    },
+    {
+      "id": "D",
+      "overlapArea": 0.0,
+      "groundGap": 36.0697551564069
+    },
+    {
+      "id": "G",
+      "overlapArea": 0.0,
+      "groundGap": 36.63805552543719
+    },
+    {
+      "id": "H",
+      "overlapArea": 0.0,
+      "groundGap": 62.46564496182769
+    }
+  ],
+  "nonCRoutes": [
+    {
+      "id": "S01",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S02",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S03",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S04",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S05",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S06",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S07",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S08",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S09",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S10",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S11",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S12",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S13",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S17",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S18",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S19",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S20",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S21",
+      "CIntersectionArea": 0.0
+    },
+    {
+      "id": "S22",
+      "CIntersectionArea": 0.0
+    }
+  ],
+  "coreAndNPCSolidConflicts": [],
+  "lampAnchorsUnchanged": true,
+  "protectedAssets": [
+    {
+      "path": "public/models/parent-child-centre/parent-child-centre.glb",
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44",
+      "matchesBase": true
+    },
+    {
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "sha256": "758833dc90065fed371a6e854f560c68b6e790e05008a4021febb28c43c9059b",
+      "matchesBase": true
+    },
+    {
+      "path": "public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb",
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
+      "matchesBase": true
+    },
+    {
+      "path": "public/prototypes/transport-station/transport-station.glb",
+      "sha256": "56a8d8f511242ae3c825e60af5b752b831f8287d372845b9ed06858602a6c6e4",
+      "matchesBase": true
+    }
+  ],
+  "limits": "Static geometry only. Live walking/camera evidence separate. No hardware FPS claim."
+}

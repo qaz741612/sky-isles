@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './helpers/software-qa.js';
 import { walkTour } from './helpers/walk-tour.js';
 
 async function enter(page) {

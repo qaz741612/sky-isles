@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './helpers/software-qa.js';
 
 test('transport scene preserves policy picking, jumping, orbit and locked elevated train display', async ({ page }) => {
   await page.goto('/');

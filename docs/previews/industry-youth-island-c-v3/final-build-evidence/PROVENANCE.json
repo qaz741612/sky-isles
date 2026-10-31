@@ -1,0 +1,31 @@
+{
+  "buildPort": 4233,
+  "sourceRuns": [
+    "work/v3-browser-final-c.json (C interaction cases passed)",
+    "work/v3-browser-fixedpaths.json (all4 passed)"
+  ],
+  "purpose": "Freeze successful final-build evidence before broad pre-camera-fix run can overwrite shared report filenames",
+  "cameraSHA256": "b0ba8d95c2da7be13c6d09081e52e9830dd79add6ef6897ab45e7b90132475b8",
+  "files": [
+    {
+      "path": "docs/previews/industry-youth-island-c-v3/final-build-evidence/interactions-desktop.json",
+      "bytes": 2779,
+      "sha256": "558900a5e9d9ae7e66f623e562054462790f3853e4d7a10661ab5d80f079e7f7"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v3/final-build-evidence/interactions-mobile.json",
+      "bytes": 2793,
+      "sha256": "71a9d0cf450c9bedcf7bbe0f20b6a1d26a47425442aa04042b41b156e67614e5"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v3/final-build-evidence/spaces-desktop.json",
+      "bytes": 10099,
+      "sha256": "6c4b0e096e6255df56419e3870d7667636ea504ab5516a6b07464da15875af8a"
+    },
+    {
+      "path": "docs/previews/industry-youth-island-c-v3/final-build-evidence/spaces-mobile.json",
+      "bytes": 10099,
+      "sha256": "6083401f15bb49ba89451f111328a355edb6663e28ee5bc2e3162b90563e8320"
+    }
+  ]
+}

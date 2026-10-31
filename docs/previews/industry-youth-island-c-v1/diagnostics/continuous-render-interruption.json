@@ -1,0 +1,344 @@
+{
+  "status": "interrupted; not a pass",
+  "stats": {
+    "startTime": "2026-10-30T06:21:14.933Z",
+    "duration": 1311257.3769999999,
+    "expected": 0,
+    "skipped": 37,
+    "unexpected": 3,
+    "flaky": 0
+  },
+  "results": [
+    {
+      "file": "app.e2e.js",
+      "title": "loads without console errors and renders non-uniform pixels",
+      "project": "desktop",
+      "status": "timedOut",
+      "durationMs": 131508,
+      "errors": [
+        "Test timeout of 120000ms exceeded.",
+        "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('canvas#scene')\nExpected: visible\nReceived: undefined\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for locator('canvas#scene')\n\n\n  19 |\n  20 |     const canvas = page.locator('canvas#scene');\n> 21 |     await expect(canvas).toBeVisible();\n     |                          ^\n  22 |\n  23 |     // a rich pastel scene compresses poorly: screenshot must be sizable\n  24 |     const shotA = await page.screenshot();\n    at /workspace/sky-isles-industry-c-preflight/test/app.e2e.js:21:26"
+      ]
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "getState exposes the core game state",
+      "project": "desktop",
+      "status": "timedOut",
+      "durationMs": 132703,
+      "errors": [
+        "Test timeout of 120000ms exceeded.",
+        "Error: page.evaluate: Test timeout of 120000ms exceeded.\n\n  55 |   test('getState exposes the core game state', async ({ page }) => {\n  56 |     await waitForWorld(page);\n> 57 |     const state = await page.evaluate(() => window.__skyisles.getState());\n     |                              ^\n  58 |     expect(state.chimesUnlocked).toBe(0);\n  59 |     expect(state.islandCount).toBe(8);\n  60 |     expect(typeof state.playerPos.x).toBe('number');\n    at /workspace/sky-isles-industry-c-preflight/test/app.e2e.js:57:30"
+      ]
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "all eight policies open from the menu and have no invented content",
+      "project": "desktop",
+      "status": "timedOut",
+      "durationMs": 131886,
+      "errors": [
+        "Test timeout of 120000ms exceeded.",
+        "Error: locator.click: Target page, context or browser has been closed\n\n  68 |     for (const name of names) {\n  69 |       await page.locator('#policy-menu summary').click();\n> 70 |       await page.locator('#policy-list').getByRole('button', { name, exact: true }).click();\n     |                                                                                     ^\n  71 |       await expect(page.getByRole('dialog')).toBeVisible();\n  72 |       await expect(page.locator('#policy-title')).toHaveText(name);\n  73 |       await expect(page.locator('#policy-content')).toContainText('政策內容尚未提供，待補充。');\n    at /workspace/sky-isles-industry-c-preflight/test/app.e2e.js:70:85"
+      ]
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "world label opens matching policy and Escape closes the dialog",
+      "project": "desktop",
+      "status": "interrupted",
+      "durationMs": 79545,
+      "errors": [
+        "Error: locator.click: Target page, context or browser has been closed\n\n  86 |     const label = page.locator('.island-label:visible').first();\n  87 |     const name = await label.textContent();\n> 88 |     await label.click();\n     |                 ^\n  89 |     await expect(page.locator('#policy-title')).toHaveText(name);\n  90 |     await page.keyboard.press('Escape');\n  91 |     await expect(page.getByRole('dialog')).not.toBeVisible();\n    at /workspace/sky-isles-industry-c-preflight/test/app.e2e.js:88:17"
+      ]
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "teleport moves the player and fall respawns at last ground",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "loads without console errors and renders non-uniform pixels",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "getState exposes the core game state",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "all eight policies open from the menu and have no invented content",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "world label opens matching policy and Escape closes the dialog",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "teleport moves the player and fall respawns at last ground",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyW moves the character along the camera-relative forward direction",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyS moves the character along the camera-relative back direction",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyA moves the character along the camera-relative left direction",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyD moves the character along the camera-relative right direction",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "touch joystick up moves the character forward",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyW moves the character along the camera-relative forward direction",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyS moves the character along the camera-relative back direction",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyA moves the character along the camera-relative left direction",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyD moves the character along the camera-relative right direction",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "touch joystick up moves the character forward",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "elevated-station.e2e.js",
+      "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "elevated-station.e2e.js",
+      "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "flood-interactions.e2e.js",
+      "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "flood-interactions.e2e.js",
+      "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "parent-child.e2e.js",
+      "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "parent-child.e2e.js",
+      "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "walk every island without jumping through keyboard or a single joystick pointer",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+      "project": "desktop",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "walk every island without jumping through keyboard or a single joystick pointer",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+      "project": "mobile",
+      "status": "not-run",
+      "durationMs": 0,
+      "errors": []
+    }
+  ]
+}

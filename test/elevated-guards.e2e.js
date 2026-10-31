@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './helpers/software-qa.js';
 import fs from 'node:fs';
 test('new V9 plinth visible north/east/west guards stop ordinary live Player walking',async({page,isMobile})=>{
  test.setTimeout(240000);await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:150000});

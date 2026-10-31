@@ -1,0 +1,190 @@
+{
+  "sourceCommit": "0c7cab7e7e2a75537363a7736206aaa8134787f6",
+  "sourceBlend": "docs/design/industry-youth-island-c-v2.2/industry-youth-c.blend",
+  "sourceBlendSHA256": "90fcf437d0075d634ade8b609e194b7816482ca048bb306f3e76baab4c29c4b3",
+  "readOnly": true,
+  "worldCentre": [
+    -20.358,
+    0,
+    38.61
+  ],
+  "displayObjects": 66,
+  "editableObjects": 727,
+  "wholeAssetBounds": {
+    "minLocalXYZ": [
+      -15.056821823120117,
+      -6.400000095367432,
+      -13.126145362854004
+    ],
+    "maxLocalXYZ": [
+      14.7785062789917,
+      5.1377434730529785,
+      12.377004623413086
+    ],
+    "dimensionsXYZ": [
+      29.835328102111816,
+      11.53774356842041,
+      25.50314998626709
+    ]
+  },
+  "renderAreaBounds": {
+    "00_TerrainAndPlaza": {
+      "objectCount": 13,
+      "bounds": {
+        "minLocalXYZ": [
+          -15.056821823120117,
+          -6.400000095367432,
+          -13.126145362854004
+        ],
+        "maxLocalXYZ": [
+          14.7785062789917,
+          0.4749999940395355,
+          12.377004623413086
+        ],
+        "dimensionsXYZ": [
+          29.835328102111816,
+          6.875000089406967,
+          25.50314998626709
+        ]
+      }
+    },
+    "01_Workshop": {
+      "objectCount": 18,
+      "bounds": {
+        "minLocalXYZ": [
+          3.75,
+          -0.05000000074505806,
+          -2.190000057220459
+        ],
+        "maxLocalXYZ": [
+          13.0809907913208,
+          5.1377434730529785,
+          4.179999828338623
+        ],
+        "dimensionsXYZ": [
+          9.3309907913208,
+          5.187743473798037,
+          6.369999885559082
+        ]
+      }
+    },
+    "02_Greenhouse": {
+      "objectCount": 11,
+      "bounds": {
+        "minLocalXYZ": [
+          1.3550240993499756,
+          -0.03999999910593033,
+          3.8198132514953613
+        ],
+        "maxLocalXYZ": [
+          9.850000381469727,
+          3.7445361614227295,
+          8.975000381469727
+        ],
+        "dimensionsXYZ": [
+          8.494976282119751,
+          3.78453616052866,
+          5.155187129974365
+        ]
+      }
+    },
+    "03_Exhibition": {
+      "objectCount": 7,
+      "bounds": {
+        "minLocalXYZ": [
+          -10.925000190734863,
+          0.009999999776482582,
+          -1.4079999923706055
+        ],
+        "maxLocalXYZ": [
+          -6.271999835968018,
+          2.8949999809265137,
+          4.9079999923706055
+        ],
+        "dimensionsXYZ": [
+          4.653000354766846,
+          2.884999981150031,
+          6.315999984741211
+        ]
+      }
+    },
+    "04_GardensAndFurniture": {
+      "objectCount": 15,
+      "bounds": {
+        "minLocalXYZ": [
+          -12.737853050231934,
+          -1.3595823049545288,
+          -12.20669937133789
+        ],
+        "maxLocalXYZ": [
+          13.49935531616211,
+          3.809807300567627,
+          10.825861930847168
+        ],
+        "dimensionsXYZ": [
+          26.237208366394043,
+          5.169389605522156,
+          23.03256130218506
+        ]
+      }
+    }
+  },
+  "architecturalBounds": {
+    "workshop_with_eaves": {
+      "minLocalXYZ": [
+        3.75,
+        -0.05000000074505806,
+        -2.190000057220459
+      ],
+      "maxLocalXYZ": [
+        13.0809907913208,
+        5.1377434730529785,
+        4.179999828338623
+      ],
+      "dimensionsXYZ": [
+        9.3309907913208,
+        5.187743473798037,
+        6.369999885559082
+      ]
+    },
+    "greenhouse_without_approach_paving": {
+      "minLocalXYZ": [
+        4.150000095367432,
+        -0.014999999664723873,
+        5.105000019073486
+      ],
+      "maxLocalXYZ": [
+        9.850000381469727,
+        3.7445361614227295,
+        8.975000381469727
+      ],
+      "dimensionsXYZ": [
+        5.700000286102295,
+        3.7595361610874534,
+        3.8700003623962402
+      ]
+    },
+    "old_exhibition_pavilion": {
+      "minLocalXYZ": [
+        -10.925000190734863,
+        0.009999999776482582,
+        -0.625
+      ],
+      "maxLocalXYZ": [
+        -6.474999904632568,
+        2.8949999809265137,
+        3.325000047683716
+      ],
+      "dimensionsXYZ": [
+        4.450000286102295,
+        2.884999981150031,
+        3.950000047683716
+      ]
+    }
+  },
+  "limits": [
+    "Existing PR17 measured, not V3 measurements.",
+    "Merged area bounds may include podium, canopy, plants, signs; use component/collision geometry for detailed clearance.",
+    "No Blender geometry saved, exported or rebuilt by this inspection."
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "surfaceCheck": {
+    "islandPavingArea": 116.1485367086998,
+    "exposedOuterSegments": 24
+  },
+  "baseCommit": "ae2a63ff2262612967996ab939b62b335069190d",
+  "scope": "Pre-model read-only geometry audit. G engineering retained; G art pending refinement. Await formal C design.",
+  "island": {
+    "id": "C",
+    "x": -20.357999999999997,
+    "y": 0,
+    "z": 38.61,
+    "r": 9,
+    "island": "koi",
+    "name": "產業青年"
+  },
+  "platform": {
+    "nominalRadius": 9,
+    "generatedRingVertices": 28,
+    "customFootprint": false,
+    "worldBounds": {
+      "minX": -29.357999999999997,
+      "maxX": -11.357999999999997,
+      "minZ": 29.61,
+      "maxZ": 47.61
+    },
+    "polygonArea": 252.33873910646054,
+    "coreRouteArea": 116.14853670869987,
+    "remainingGrossArea": 136.1902023977607,
+    "remainingGrossAreaWarning": "Not a buildable-area approval: includes existing structures, mushroom, NPC, landscaping and edge clearance."
+  },
+  "ports": [
+    {
+      "id": "S14",
+      "from": "B",
+      "to": "C",
+      "width": 4.8,
+      "length": 47.41573128367139,
+      "mouthLocalXZ": [
+        -6.525020367068128,
+        -6.122871191872742
+      ],
+      "mouthWorldXYZ": [
+        -26.883020367068127,
+        0,
+        32.48712880812726
+      ],
+      "outwardDirection": "西北"
+    },
+    {
+      "id": "S15",
+      "from": "F",
+      "to": "C",
+      "width": 4.8,
+      "length": 44.313202560388724,
+      "mouthLocalXZ": [
+        5.659035292162908,
+        -6.988856266777961
+      ],
+      "mouthWorldXYZ": [
+        -14.698964707837089,
+        0,
+        31.621143733222038
+      ],
+      "outwardDirection": "東北"
+    },
+    {
+      "id": "S16",
+      "from": "C",
+      "to": "D",
+      "width": 4.8,
+      "length": 58.89162345510876,
+      "mouthLocalXZ": [
+        -5.114706254016613,
+        7.348581870719843
+      ],
+      "mouthWorldXYZ": [
+        -25.47270625401661,
+        0,
+        45.95858187071984
+      ],
+      "outwardDirection": "西南"
+    }
+  ],
+  "reservation": {
+    "island": "koi",
+    "name": "產業青年",
+    "localFootprintXZ": [
+      [
+        2.3,
+        1.8
+      ],
+      [
+        6.3,
+        1.8
+      ],
+      [
+        6.3,
+        5.2
+      ],
+      [
+        2.3,
+        5.2
+      ],
+      [
+        2.3,
+        1.8
+      ]
+    ],
+    "heightEnvelope": 3.8,
+    "use": "future primary building replacement envelope",
+    "currentOccupancy": "Existing v1 scenery retained now; this reservation is not an empty construction permit or a finished building",
+    "gates": [
+      "S14",
+      "S15",
+      "S16"
+    ],
+    "npc": {
+      "position": [
+        1,
+        0,
+        4.8
+      ],
+      "playerStop": [
+        1,
+        0,
+        3.4
+      ],
+      "facingYaw": 3.14159,
+      "interactionRadius": 1.6,
+      "implemented": false,
+      "bodyRadius": 0.4,
+      "standingAreaRadius": 1.2,
+      "approachIsSharedPublicSpace": true
+    },
+    "preferredCamera": {
+      "localPosition": [
+        10.3,
+        5.8,
+        13.5
+      ],
+      "localTarget": [
+        4.3,
+        1.5,
+        3.5
+      ],
+      "status": "future envelope sight line; actual replacement building not built or art-approved"
+    },
+    "runtimeObjectsCreated": 0
+  },
+  "existingPlace": {
+    "name": "產業青年",
+    "kind": "open-workshop-yard",
+    "arrival": [
+      0,
+      3.5
+    ],
+    "building": [
+      5,
+      1,
+      2.4,
+      2.5,
+      2.8
+    ],
+    "shed": [
+      -5.9,
+      1.5,
+      2.2,
+      1.7,
+      1.95
+    ],
+    "court": [
+      0.5,
+      0.4,
+      5.3,
+      3.3
+    ],
+    "npc": {
+      "position": [
+        1,
+        0,
+        4.8
+      ],
+      "playerStop": [
+        1,
+        0,
+        3.4
+      ],
+      "facingYaw": 3.14159,
+      "interactionRadius": 1.6,
+      "implemented": false
+    },
+    "trees": [
+      [
+        -5.8,
+        2.7,
+        1.5
+      ],
+      [
+        6.6,
+        3.4,
+        1.2
+      ],
+      [
+        -7.2,
+        -0.1,
+        1.3
+      ]
+    ],
+    "benches": [
+      [
+        -6.7,
+        3.7,
+        0
+      ]
+    ],
+    "paths": [
+      [
+        [
+          -6,
+          -1.8
+        ],
+        [
+          -3,
+          -1.8
+        ],
+        [
+          -1.4,
+          -1.8
+        ],
+        [
+          3.3,
+          -1.8
+        ],
+        [
+          6.2,
+          -1.8
+        ],
+        [
+          6.2,
+          2.1
+        ],
+        [
+          3.4,
+          2.1
+        ],
+        [
+          2,
+          1.6
+        ],
+        [
+          -1.4,
+          1.6
+        ],
+        [
+          -3,
+          1.1
+        ],
+        [
+          -6,
+          1.1
+        ]
+      ]
+    ]
+  },
+  "retainedMushroom": {
+    "localXYZ": [
+      3.0560736586176303,
+      0,
+      3.438082865944834
+    ],
+    "worldXYZ": [
+      -17.301926341382366,
+      0,
+      42.048082865944835
+    ],
+    "capRadius": 0.62,
+    "avoidRadiusWithPlayer": 0.95,
+    "strength": 15,
+    "source": "src/world/islands.js; optional jump pad, keep out of mandatory routes"
+  },
+  "checks": {
+    "futureFootprintArea": 13.599999999999998,
+    "futureFootprintRoadOverlap": 0,
+    "futureFootprintMushroomOverlap": 1.2056892397658636,
+    "npcStandingCircleRoadOverlap": 0,
+    "npcStandingCircleFutureOverlap": 0,
+    "hypotheticalNpc3x3FutureOverlap": 0.37999999999999945,
+    "npcStopDistance": 1.4
+  },
+  "nearbyLamps": [
+    {
+      "id": "S14-L1",
+      "position": [
+        -41.54749896392754,
+        0,
+        17.30634496943154
+      ],
+      "distanceToC": 30.047305769465442
+    },
+    {
+      "id": "S14-L2",
+      "position": [
+        -28.976232568229463,
+        0,
+        25.570298769693267
+      ],
+      "distanceToC": 15.630346790002902
+    },
+    {
+      "id": "S15-L1",
+      "position": [
+        -6.473210288691053,
+        0,
+        12.434887243824495
+      ],
+      "distanceToC": 29.629780848426343
+    },
+    {
+      "id": "S15-L2",
+      "position": [
+        -8.385034510556537,
+        0,
+        28.06336282436639
+      ],
+      "distanceToC": 15.955671666396904
+    },
+    {
+      "id": "S16-L1",
+      "position": [
+        -31.34936300447256,
+        0,
+        49.92462198439783
+      ],
+      "distanceToC": 15.774369443686389
+    },
+    {
+      "id": "S16-L2",
+      "position": [
+        -33.429191925348874,
+        0,
+        66.34790611463875
+      ],
+      "distanceToC": 30.663455349549555
+    },
+    {
+      "id": "S16-L3",
+      "position": [
+        -45.81459602732358,
+        0,
+        74.4202886596302
+      ],
+      "distanceToC": 43.936488880933425
+    }
+  ],
+  "nearbyPlatforms": [
+    {
+      "id": "P14",
+      "position": [
+        -32.924380889724105,
+        0,
+        17.902860894015404
+      ]
+    },
+    {
+      "id": "P16",
+      "position": [
+        -39.1980539432998,
+        0,
+        61.771314131201336
+      ]
+    }
+  ]
+}
