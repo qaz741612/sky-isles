@@ -1,0 +1,211 @@
+{
+  "sameSource": true,
+  "frozenSource": "docs/design/flood-control-island-g-v5/flood-control-g-v5.blend",
+  "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+  "pass": "final after second self-review",
+  "engine": "Blender Cycles CPU",
+  "samples": 64,
+  "records": [
+    {
+      "name": "hero",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        -29.0,
+        42.0,
+        26.0
+      ],
+      "rotation": [
+        1.1132649183273315,
+        -4.616460103079589e-08,
+        -2.5809056758880615
+      ],
+      "orthoScale": 55.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 47.08274661505129
+    },
+    {
+      "name": "reference-hero",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        -39.0,
+        -43.0,
+        32.0
+      ],
+      "rotation": [
+        1.0803149938583374,
+        -4.47336105935392e-08,
+        -0.7366563677787781
+      ],
+      "orthoScale": 55.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 53.80803431198001
+    },
+    {
+      "name": "front",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        0.0,
+        65.0,
+        8.0
+      ],
+      "rotation": [
+        1.4635175466537476,
+        8.692020969647274e-08,
+        3.1415927410125732
+      ],
+      "orthoScale": 47.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 69.74494492297526
+    },
+    {
+      "name": "back",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        0.0,
+        -65.0,
+        8.0
+      ],
+      "rotation": [
+        1.463517427444458,
+        -0.0,
+        0.0
+      ],
+      "orthoScale": 47.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 59.74326055101119
+    },
+    {
+      "name": "left",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        -65.0,
+        0.0,
+        8.0
+      ],
+      "rotation": [
+        1.463517665863037,
+        -5.632328381466323e-08,
+        -1.5707964897155762
+      ],
+      "orthoScale": 47.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 50.967463577049784
+    },
+    {
+      "name": "right",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        65.0,
+        0.0,
+        8.0
+      ],
+      "rotation": [
+        1.463517665863037,
+        5.632328381466323e-08,
+        1.5707964897155762
+      ],
+      "orthoScale": 47.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 44.224541148985736
+    },
+    {
+      "name": "near-dam",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        -27.0,
+        27.0,
+        16.0
+      ],
+      "rotation": [
+        1.2563550472259521,
+        7.469943597016027e-08,
+        -2.6517138481140137
+      ],
+      "orthoScale": 20.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 129.64307148498483
+    },
+    {
+      "name": "near-command",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        27.0,
+        24.0,
+        14.0
+      ],
+      "rotation": [
+        1.2381504774093628,
+        -1.201214132606765e-07,
+        2.5702552795410156
+      ],
+      "orthoScale": 23.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 131.10768641496543
+    },
+    {
+      "name": "s22-crossing",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        -25.0,
+        20.0,
+        13.0
+      ],
+      "rotation": [
+        1.0550038814544678,
+        -1.367265696217146e-07,
+        -2.3969242572784424
+      ],
+      "orthoScale": 25.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 123.27008722198661
+    },
+    {
+      "name": "top",
+      "sourceBlendSHA256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a",
+      "cameraBlender": [
+        0.0010000000474974513,
+        0.0,
+        70.0
+      ],
+      "rotation": [
+        -1.2488969277149597e-12,
+        -2.8571430448209867e-05,
+        -3.141592502593994
+      ],
+      "orthoScale": 55.0,
+      "captureOnlyTopFramingOverride": true,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 80.51231074891984
+    }
+  ]
+}
