@@ -1,0 +1,85 @@
+{
+  "centre": [
+    44.928,
+    0,
+    45.279
+  ],
+  "newFootprintBounds": [
+    -18.94364210171939,
+    -16.908469073548414,
+    19.855028387229616,
+    17.55489431441116
+  ],
+  "area": 1036.626467890079,
+  "islandGaps": [
+    {
+      "id": "F",
+      "island": "home",
+      "edgeDistance": 34.996357649816275,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "A",
+      "island": "tree",
+      "edgeDistance": 64.91001049647278,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "B",
+      "island": "temple",
+      "edgeDistance": 70.69854854352712,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "C",
+      "island": "koi",
+      "edgeDistance": 32.226601406271904,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "E",
+      "island": "meadow",
+      "edgeDistance": 39.74192950954432,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "D",
+      "island": "windmill",
+      "edgeDistance": 78.082789039506,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "H",
+      "island": "lookout",
+      "edgeDistance": 17.108492877470002,
+      "overlapArea": 0.0
+    }
+  ],
+  "S20": {
+    "denseBezierSamples": 4097,
+    "centrelineGap": 6.4846591642709335,
+    "core4_8Gap": 4.087067955232826,
+    "outerRailEnvelope6_2Gap": 3.3877705192633814
+  },
+  "waterArea": 237.86386650069196,
+  "S22CoreWaterOverlap": 57.86039170739093,
+  "NPC": {
+    "count": 1,
+    "position": [
+      10.2,
+      0,
+      -9.1
+    ],
+    "reservationArea": 9.0,
+    "outsideIsland": 0.0,
+    "waterOverlap": 0.0
+  },
+  "issuesToResolve": [
+    "Reference gate piers stop above lower pool: add anchored submerged footings.",
+    "Reference dry strip separates upper/lower pools under gates: cut three real sluice throats.",
+    "Reference opaque podium blocks glazing: replace with actual walls/frames.",
+    "Reference S22 sketch balusters are incomplete and not collision: generate rails from dry shared boundary.",
+    "Reference perimeter coping crosses bridge mouths: regenerate exposed boundaries from expanded island union."
+  ],
+  "scope": "Preflight only; not game acceptance"
+}

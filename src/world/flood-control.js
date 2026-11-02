@@ -1,4 +1,4 @@
-// MIT. G-only Blender asset. Visible art, dry ground, walls and camera shells are separate.
+// MIT. G V5-only Blender asset. Visible art, dry ground, walls and camera shells are separate.
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {stationHeadroom} from './station-model.js';
@@ -26,7 +26,7 @@ export function buildFloodControl(source,island){
   const m=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:0xc6c2b1,roughness:.85,side:THREE.DoubleSide}));m.name='retained-lamp-structural-interface';m.userData={island:'crystal',noCheckpoint:true};group.add(m);colliders.push(m);interfaces.push({id:lamp.id,position:lamp.position,groundTop:.025,moved:false});
  }
  const barriers=[];for(const s of collision.solids){const pairs=s.segment?[s.segment]:s.polygon.map((p,i)=>[p,s.polygon[(i+1)%s.polygon.length]]);for(const[a,b]of pairs)barriers.push({a:{x:a[0]+island.pos.x,y:s.base,z:a[1]+island.pos.z},b:{x:b[0]+island.pos.x,y:s.base,z:b[1]+island.pos.z},height:s.top-s.base,thickness:s.thickness??.025,capsuleHeight:1.6,kind:'flood-control-solid',island:'crystal',source:s.name});}
- const meshes=[],materials=new Set();let triangles=0;source.traverse(o=>{if(!o.isMesh)return;o.userData.island='crystal';meshes.push(o);triangles+=(o.geometry.index?.count??o.geometry.attributes.position.count)/3;const ms=Array.isArray(o.material)?o.material:[o.material];ms.forEach(m=>materials.add(m));o.receiveShadow=true;o.castShadow=!ms.some(m=>m.transparent||/water|glass|blossom/i.test(m.name));});
+ const meshes=[],materials=new Set();let triangles=0;source.traverse(o=>{if(!o.isMesh)return;o.userData.island='crystal';meshes.push(o);triangles+=(o.geometry.index?.count??o.geometry.attributes.position.count)/3;const ms=Array.isArray(o.material)?o.material:[o.material];ms.forEach(m=>{materials.add(m);if(m.transparent){m.depthWrite=false;m.side=THREE.DoubleSide;}});o.receiveShadow=true;o.castShadow=!ms.some(m=>m.transparent||/water|glass|blossom/i.test(m.name));});
  group.updateWorldMatrix(true,true);const bounds=new THREE.Box3().setFromObject(source,true),head=stationHeadroom(ceilings,bounds,1.6);
  return{group,source,meshes,pickMeshes:meshes,colliders,ceilings,barriers,cameraObstacles,bounds,config:{...plan,kind:'blender-flood-park',npc:plan.npc},constrainHead:head,stats:{...source.userData.loadStats,triangles,runtimeMeshes:meshes.length,materials:materials.size,buildMilliseconds:performance.now()-begin,waterCollision:false,newLights:0,integrationTriangles:interfaces.length*12,retainedLampInterfaces:interfaces}};
 }
