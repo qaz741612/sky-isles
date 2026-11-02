@@ -22,7 +22,7 @@ roads=unary_union([lines[s].buffer(P['crossingHalfWidth'],cap_style=2,join_style
 inspection=box(*P['crosswalk']);accessible=dry.union(roads).union(inspection).intersection(shell);holes=shell.difference(accessible)
 path=LineString(P['publicCircuit']).buffer(.95,cap_style=2,join_style=1)
 npc=P['npc'][0];nx,_,nz=npc['position'];npcarea=box(nx-1.5,nz-1.5,nx+1.5,nz+1.5)
-paving=unary_union([roads,path,npcarea,box(5.0,-.7,10.5,1.15)]).intersection(accessible)
+paving=unary_union([roads,path,npcarea,inspection,box(5.0,-.7,10.5,1.15)]).intersection(accessible)
 def triangles(p,y):
  verts=[];faces=[]
  for poly in polygons(p):
@@ -42,6 +42,8 @@ if '--site'in sys.argv:
  save(R/'src/data/flood-control-site.json',site)
  for file,geom,y in [('flood-control-floor.json',accessible,0),('flood-control-paving.json',paving,P['publicY'])]:
   v,f=triangles(geom,y);save(R/'src/data'/file,{'vertices':v,'triangles':f})
+ vv,ff=triangles(roads.intersection(waters),-.395);ff=[list(reversed(f))for f in ff]
+ save(R/'src/data/flood-control-bridge-soffit.json',{'revision':'G-V5','vertices':vv,'triangles':ff,'minimumWaterClearance':1.405,'note':'S22 deck actual underside -.395, lower pool -1.8. No water floor collider.'})
  print('G V5 floor/water holes, crossing and footprint source generated');sys.exit(0)
 # Execute only the supplied geometry section, never its export or rasterizer.
 source=(D/'source-package/build.py').read_text();ns={};exec(compile(source[:source.index('# finish mesh assembly')],str(D/'source-package/build.py'),'exec'),ns)
@@ -73,17 +75,20 @@ core_omit={'control centre ground podium','upper command glazed volume','emergen
 for item in ns['items']:
  n=item['name'];m=item['mesh']
  if n.startswith(('public flood information','info ')):m.apply_translation([-1.795,0,4.829])
- if n.startswith(omit)or n in core_omit:continue
+ if n.startswith(('flood gauge podium','levee benchmark pole','high water warning head','vertical high water graduation')):m.apply_translation([9.6,0,2.2])
+ if n.startswith(omit)or n in core_omit or(not pass1 and (n=='hoist service catwalk'or n in ['control room glass panel','control room front mullion','glass side module','side mullion','rear control glass panel','rear control fin mullion','emergency wing glazing','emergency window dividers','command civic vertical fin'])):continue
+ if not pass1 and n=='massive dam bridge crossbeam':m.apply_translation([0,0,-.045])
  role='gate'if any(k in n for k in ['dam','gate','hoist','pier','sluice','gear'])else 'command'if any(k in n for k in ['command','control','facade','glass side','mullion','rear control','civic','observation','observatory','sensor mast','sensor cap','public entrance','entrance soffit','canopy support','closed command','emergency','annex','vent','front facade','sun shade','solar roof','side mullion','info '])else'props'
- is_rail=any(k in n for k in ['guardrail','baluster']);solid=not is_rail and any(k in n for k in ['major dam pier','shear wall','deep steel leaf','front mullion','side mullion','rear control fin','vertical fin','canopy support','closed command lobby','public flood information','flood gauge podium','benchmark pole','sensor podium','sensor pylon','layered flood protection earth berm','levee vegetated crest'])
+ is_rail=any(k in n for k in ['guardrail','baluster']);solid=(n in ['dam walkway baluster','dam walkway guardrail'])or (not is_rail and any(k in n for k in ['major dam pier','shear wall','deep steel leaf','front mullion','side mullion','rear control fin','vertical fin','canopy support','closed command lobby','public flood information','flood gauge podium','benchmark pole','sensor podium','sensor pylon','layered flood protection earth berm','levee vegetated crest']))
  roof=any(k in n for k in ['command cantilever roof','emergency centre wing roof','civic observation crown','hoist service catwalk','massive dam bridge crossbeam','public entrance canopy'])
  add(m,item['mat'],n,role,solid,roof,roof)
 # Replace all proxy land/floors, and cut real hydraulic throats between the pools.
 slab('Dry terrain with continuous hydraulic voids',dry,0,.32,'green','terrain',True)
 slab('Paved public floors and S22 full structural bridge deck',paving,P['publicY'],.30,'floor','terrain',True)
-slab('Inspection promenade structure',inspection.intersection(accessible),P['publicY'],.30,'concrete2','terrain',True)
+# Inspection promenade is already in the paved union; do not stack coplanar slabs.
 # A beam-backed slab also under the full wet crossing shoulders, not just the visible core.
 slab('S22 load bearing wet crossing underside',roads.intersection(waters),-.275,.12,'concrete2','crossing')
+vv,ff=triangles(roads.intersection(waters),-.395);ff=[list(reversed(f))for f in ff];add(trimesh.Trimesh(vertices=vv,faces=ff,process=False),'concrete2','S22 actual continuous soffit','crossing',False,False,True)
 for depth,scale,mat in [(-.32,1.0,'rock2'),(-2.3,.87,'rock'),(-4.3,.58,'rock3')]:
  ring=[(x*scale,z*scale)for x,z in P['footprintLocal']]
  slab('Layered floating foundation',Polygon(ring).difference(waters)if scale==1 else Polygon(ring),depth,1.45,mat,'terrain')
@@ -116,7 +121,7 @@ for e in site['waterRails']:
 for x,z,w,d,h,label in [(9.315,4.905,10.875,6.264,3.0,'Main'),(10.794,-2.229,6.786,3.567,3.0,'Emergency')]:
  for zz in [z-d/2,z+d/2]:
   cube(label+' masonry base',(x,.18,zz),(w,.36,.22));cube(label+' upper fascia',(x,h-.12,zz),(w,.24,.23))
-  count=8 if label=='Main'else 5
+  count=6 if label=='Main'else 5
   for k in range(count+1):cube(label+' facade pier',(x-w/2+w*k/count,1.55,zz),(.13,2.75,.24),'steel')
   for k in range(count):cube(label+' closed glazing cassette',(x-w/2+w*(k+.5)/count,1.55,zz),(w/count-.13,2.46,.065),'glass2')
  for xx in [x-w/2,x+w/2]:
@@ -126,8 +131,11 @@ for x,z,w,d,h,label in [(9.315,4.905,10.875,6.264,3.0,'Main'),(10.794,-2.229,6.7
  cube(label+' interior slab',(x,.09,z),(w-.3,.15,d-.3),'floor','command',False)
 # The upper command band is separately framed glazing, capped by the retained cantilever roof.
 for z in [1.75,8.06]:
- for k in range(9):
-  x=4.0+k*1.35;cube('Upper command clerestory',(x,4.04,z),(1.23,1.55,.065),'glass2');cube('Upper clerestory mullion',(x-.65,4.04,z),(.10,1.7,.17),'steel')
+ for k in range(6):
+  x=3.8775+10.875*(k+.5)/6;cube('Upper command clerestory',(x,4.04,z),(10.875/6-.12,1.55,.065),'glass2')
+ for k in range(7):
+  x=3.8775+10.875*k/6;cube('Upper clerestory mullion',(x,4.04,z),(.10,1.7,.17),'steel')
+  if not pass1 and z==1.75:cube('Continuous civic facade fin',(x,2.6,1.49),(.18,4.5,.27),'concrete2')
 for x in [3.9,14.85]:
  for k in range(5):cube('Upper return glass',(x,4.04,2.35+k*1.25),(.065,1.55,1.15),'glass');cube('Upper return post',(x,4.04,1.75+k*1.25),(.17,1.7,.1),'steel')
 cube('Actual upper command floor',(9.35,3.05,4.9),(10.9,.16,6.3),'floor','command',False)
@@ -147,32 +155,56 @@ for i,(x,z,rx,rz)in enumerate(P['gardenAnchors']):
  for j in range(7):
   t=j*2.3999;r=.2+.25*(j%3);xx=x+math.cos(t)*r*rx;zz=z+math.sin(t)*r*rz;m=trimesh.creation.icosphere(subdivisions=1,radius=1);m.apply_scale([.32,.27,.34]);m.apply_translation([xx,.48,zz]);add(m,'leaf2'if j%2 else'leaf1','Riparian planting','landscape')
 # Intentional benches facing the water/command court, not a random prop grid.
-for x,z in [(12.8,-7),(1.8,10.5),(-16,-5.3)]:
+for x,z in P['benchesXZ']:
  cube('Waterfront seat',(x,.48,z),(1.7,.16,.52),'wood','props',True)
  for dx in [-.6,.6]:cube('Seat metal foot',(x+dx,.23,z),(.08,.42,.4),'steel','props',True)
 if not pass1:
+ catwalk=box(-16.05,4.2,-2.65,8.0);openings=[box(x-.72,5.3,x+.72,6.9)for x in [-12.45,-9.35,-6.25]]
+ deck=catwalk.difference(unary_union(openings));slab('Open hoist service deck',deck,7.52,.2,'steel_lite','gate')
+ vv,ff=triangles(deck,7.32);ff=[list(reversed(f))for f in ff];add(trimesh.Trimesh(vertices=vv,faces=ff,process=False),'steel_lite','Service deck actual soffit','gate',False,False,True)
+ for p in parts:
+  if p['name']=='Open hoist service deck':p['roof']=True;p['head']=True
+ for opening in openings:
+  cs=list(opening.exterior.coords)
+  for a,b in zip(cs[:-1],cs[1:]):rail('Maintenance aperture protection',a,b,7.52)
+ habitat=LineString([(-14.1,13.2),(-10.5,15.1),(-5.8,14.8),(-2.8,13.7)]).buffer(.48,cap_style=1).intersection(dry.buffer(-.15))
+ slab('Continuous riparian habitat bank',habitat,.12,.12,'turf','landscape')
+ for poly in polygons(habitat):
+  line=poly.exterior
+  for k in range(0,int(line.length),2):
+   q=line.interpolate(k);x,z=q.x,q.y
+   for j in range(3):rod('Bank reed stand',[x+j*.10,.12,z],[x+j*.10+.07,.72+.1*j,z+.06],.018,'leaf2','landscape')
  for k in range(6):
   x=5.0+k*1.48;cube('Glazed command display console',(x,.92,6.0),(1.05,.16,.55),'interior','interior',False);cube('Console screen',(x,1.15,6.12),(.75,.4,.055),'steel','interior',False)
   cube('Control room chair',(x,.52,5.25),(.47,.12,.46),'chair','interior',False);cube('Chair back',(x,.82,5.05),(.47,.57,.1),'chair','interior',False)
+ for x,z,y in [(9.1,-2.2,.84),(12.3,-2.2,.84),(6.3,4.4,3.82),(11.8,6.3,3.82)]:
+  cube('Operations work surface',(x,y,z),(1.65,.13,.75),'interior','interior',False)
+  cube('Operations display',(x,y+.35,z+.18),(1.0,.55,.05),'steel','interior',False)
+ cube('Observation instrument table',(13.056,6.15,6.2),(1.4,.12,.7),'interior','interior',False)
+ rod('Closed visitor entry handle',[7.9,.85,1.42],[7.9,1.55,1.42],.035,'bronze','props')
  for x in [-12.45,-9.35,-6.25]:
+  for a in range(12):
+   angle=a*math.pi/6;cube('Hoist wheel gear tooth',(x+math.cos(angle)*.46,6.67,6.1+math.sin(angle)*.46),(.10,.12,.10),'gold','gate',False)
   for y in np.arange(4.3,6.6,.22):rod('Threaded hoist screw detail',[x-.12,y,6.15],[x+.12,y+.12,6.15],.028,'gold','gate')
   for dx in [-.72,.72]:cube('Gate leaf bolted flange',(x+dx,1.7,5.66),(.12,3.8,.1),'bronze','gate',False)
  for z in [2.4,3.7,5.0,6.3,7.6]:cube('Rear warm screening fin',(15.85*.87+1.05,1.55,z),(.12,2.7,.075),'wood','command')
  for x in [5.6,9.6]:cube('Entrance wall mounted warm luminaire',(x,2.7,1.32),(.26,.12,.14),'foam','command',False)
 # Geometry/proxy proof and bounded build input. No mesh binary is printed.
 solids=list(rails);ground=[];support=[];roof=[];ceiling=[];camera=[];issues=[]
-core=unary_union([lines[s].buffer(2.4,cap_style=2,join_style=2)for s in ['S21','S22']]);reserve=box(nx-1.5,nz-1.5,nx+1.5,nz+1.5)
+publicBody=LineString(P['publicCircuit']).buffer(.365,cap_style=1,join_style=1)
+core=unary_union([lines[s].buffer(2.4,cap_style=1,join_style=2)for s in ['S21','S22']]);reserve=box(nx-1.5,nz-1.5,nx+1.5,nz+1.5)
 for p in parts:
  m=p['mesh'];v=np.asarray(m.vertices);faces=np.asarray(m.faces);norm=np.asarray(m.face_normals)
  # Explicit floor only. Water and rocks are never in floor raycasts.
  if p.get('ground'):ground.extend(v[faces[norm[:,1]>.85]].reshape(-1).round(5).tolist())
  if p['solid']:
-  hull=MultiPoint(v[:,[0,2]]).convex_hull
+  hull=MultiPoint(np.round(v[:,[0,2]],5)).convex_hull.simplify(.00001,preserve_topology=True)
   if hull.geom_type=='Polygon'and hull.area>.00001:
    lo=float(v[:,1].min());hi=float(v[:,1].max());solids.append({'name':p['name'],'polygon':list(map(list,hull.exterior.coords))[:-1],'base':lo,'top':hi})
    if hi>.05 and lo<1.6:
     if hull.intersection(core).area>.02:issues.append({'name':p['name'],'kind':'road core solid','area':hull.intersection(core).area})
     if hull.intersection(reserve).area>.02:issues.append({'name':p['name'],'kind':'NPC solid'})
+    if hull.intersection(publicBody).area>.0001:issues.append({'name':p['name'],'kind':'authored public walking path blocked','area':hull.intersection(publicBody).area})
     if hull.difference(shell).area>.03:issues.append({'name':p['name'],'kind':'solid outside island','area':hull.difference(shell).area})
   support.extend(v[faces[norm[:,1]>.85]].reshape(-1).round(5).tolist())
  if p['roof']:
@@ -184,8 +216,13 @@ for p in parts:
 for x,z,rx,rz in P['gardenAnchors']:
  poly=scale(Point(x,z).buffer(1,quad_segs=12),rx,rz)
  if poly.difference(dry).area>.01:issues.append({'kind':'garden outside dry land','x':x,'z':z,'area':poly.difference(dry).area})
+ if poly.intersection(core).area>.02:issues.append({'kind':'raised bed blocks protected road core','x':x,'z':z})
+ if poly.intersection(publicBody).area>.0001:issues.append({'kind':'raised bed blocks public path','x':x,'z':z})
+ if poly.intersection(reserve).area>.001:issues.append({'kind':'raised bed blocks NPC','x':x,'z':z})
  solids.append({'name':'Curated raised garden bank','polygon':list(map(list,poly.exterior.coords))[:-1],'base':0,'top':.24})
 save(R/'src/data/flood-control-collision.json',{'revision':'G-V5','groundPositions':ground+support,'dryGroundFloats':len(ground),'roofSupportPositions':roof,'ceilingPositions':ceiling,'cameraPositions':camera,'solids':solids,'waterIsCollider':False})
 save(W/'parts.json',{'pass':1 if pass1 else 2,'materials':mats,'parts':[{k:v for k,v in p.items()if k!='mesh'}|{'vertices':p['mesh'].vertices.round(7).tolist(),'faces':p['mesh'].faces.tolist()}for p in parts]})
 save(D/'placement-audit.json',{'pass':1 if pass1 else 2,'issues':issues,'parts':len(parts),'trianglesBeforeBevel':sum(len(p['mesh'].faces)for p in parts),'floorArea':accessible.area,'waterArea':waters.area,'waterHolesArea':holes.area,'crossingArea':roads.intersection(waters).area,'npcCount':1,'scale':1,'newRoadLamps':0,'centre':C,'sourceDesignUsedAs':'architecture only; all hydraulic voids, crossing, boundaries and collision regenerated'})
 print('G V5 parts/proxies generated:',len(parts),'parts;',len(issues),'placement issues (details saved)')
+
+if issues:raise SystemExit(2)

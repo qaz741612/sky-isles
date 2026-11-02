@@ -1,0 +1,4 @@
+{
+  "error": "page.evaluate: Error: nonfinite state S22 time 17.316666666666965 {\"pos\":[null,0.01888888926141792,null],\"camera\":[null,9.903735135687592,null],\"input\":[-0.6337142960851712,-0.7735671857940176],\"orbit\":{\"yaw\":0.16,\"pitch\":0.6,\"dist\":16,\"fov\":55}}\n    at tick (eval at evaluate (:303:30), <anonymous>:2:317)\n    at walk (eval at evaluate (:303:30), <anonymous>:2:626)\n    at eval (eval at evaluate (:303:30), <anonymous>:3:230)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "errors": []
+}

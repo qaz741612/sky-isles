@@ -18,7 +18,7 @@ for key,color in P['materials'].items():
  m=bpy.data.materials.new(actual);m.diffuse_color=(*P['materials'].get(actual,color),1);m.use_nodes=True;b=m.node_tree.nodes.get('Principled BSDF');b.inputs['Base Color'].default_value=m.diffuse_color;b.inputs['Roughness'].default_value=.65
  if actual in ['steel','steel_lite','glass_dark','bronze','gold']:b.inputs['Metallic'].default_value=.35;b.inputs['Roughness'].default_value=.36
  if actual in ['glass','glass2']:
-  alpha=.64 if PASS1 else .32;m.diffuse_color=(*color,alpha);b.inputs['Base Color'].default_value=(*color,alpha);b.inputs['Alpha'].default_value=alpha;b.inputs['Roughness'].default_value=.22;m.surface_render_method='DITHERED';m.use_transparency_overlap=False
+  alpha=.64 if PASS1 else .18;m.diffuse_color=(*color,alpha);b.inputs['Base Color'].default_value=(*color,alpha);b.inputs['Alpha'].default_value=alpha;b.inputs['Roughness'].default_value=.22;m.surface_render_method='DITHERED';m.use_transparency_overlap=False
  if actual.startswith('water')or actual=='ripple':b.inputs['Metallic'].default_value=.1;b.inputs['Roughness'].default_value=.21
  if actual=='foam':b.inputs['Emission Color'].default_value=(*color,1);b.inputs['Emission Strength'].default_value=.12
  materials[key]=m;materials[actual]=m
@@ -28,16 +28,16 @@ for idx,p in enumerate(P['parts']):
   bevel=o.modifiers.new('Fabricated edge thickness','BEVEL');bevel.width=.015 if PASS1 else .025;bevel.segments=1 if PASS1 else 2
   o.modifiers.new('Area weighted fabricated normals','WEIGHTED_NORMAL')
 # Saved source contains all editable components, not a flattened imported study GLB.
-s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=16 if PASS1 else 32;s.cycles.use_denoising=False;s.render.resolution_x=1000;s.render.resolution_y=800;s.render.resolution_percentage=100
+s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=16 if PASS1 else 64;s.cycles.use_denoising=False;s.render.resolution_x=1000;s.render.resolution_y=800;s.render.resolution_percentage=100
 s.world=bpy.data.worlds.new('Warm studio');s.world.use_nodes=True;s.world.node_tree.nodes['Background'].inputs[0].default_value=(.62,.68,.72,1);s.world.node_tree.nodes['Background'].inputs[1].default_value=.45;s.view_settings.view_transform='AgX';s.view_settings.exposure=.65
 for name,pos,energy,size in [('Key',(-22,-25,35),3200,20),('Fill',(25,-13,24),2300,18),('Rim',(0,25,30),2600,16)]:
  light=bpy.data.lights.new(name,'AREA');light.energy=energy;light.shape='DISK';light.size=size;o=bpy.data.objects.new(name,light);s.collection.objects.link(o);o.location=pos;o.rotation_euler=(Vector((0,0,1))-o.location).to_track_quat('-Z','Y').to_euler()
-views={'hero':([-39,32,43],[0,1,0],55),'front':([0,8,-65],[0,1,0],47),'back':([0,8,65],[0,1,0],47),'left':([-65,8,0],[0,1,0],47),'right':([65,8,0],[0,1,0],47),'top':([.001,70,0],[0,0,0],47),'near-dam':([-27,16,-27],[-9.35,3.8,6.1],20),'near-command':([27,14,-24],[9,2.5,4.0],23),'s22-crossing':([-25,13,-20],[-9.7,.2,-3.4],25)}
+views={'hero':([-29,26,-42],[-2,1,1],55),'reference-hero':([-39,32,43],[0,1,0],55),'front':([0,8,-65],[0,1,0],47),'back':([0,8,65],[0,1,0],47),'left':([-65,8,0],[0,1,0],47),'right':([65,8,0],[0,1,0],47),'top':([.001,70,0],[0,0,0],47),'near-dam':([-27,16,-27],[-9.35,3.8,6.1],20),'near-command':([27,14,-24],[9,2.5,4.0],23),'s22-crossing':([-25,13,-20],[-9.7,.2,-3.4],25)}
 for name,(pos,target,scale)in views.items():
  camera=bpy.data.objects.new('VIEW_'+name,bpy.data.cameras.new('VIEW_'+name));s.collection.objects.link(camera);camera.location=(pos[0],-pos[2],pos[1]);t=Vector((target[0],-target[2],target[1]));camera.rotation_euler=(t-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.type='ORTHO';camera.data.ortho_scale=scale
 s.camera=bpy.data.objects['VIEW_hero'];bpy.ops.wm.save_as_mainfile(filepath=str(D/'flood-control-g-v5.blend'),compress=True)
 runtime=R/'public/models/flood-control-g/flood-control-g.glb';report=export_batched(root,runtime)
-report.update({'version':'G-V5','pass':P['pass'],'materials':len({m.name for o in root.children_recursive if o.type=='MESH'for m in o.data.materials}),'textures':0,'scale':1,'glbBytes':runtime.stat().st_size,'blendBytes':(D/'flood-control-g-v5.blend').stat().st_size,'sourceBlendSHA256':hashlib.sha256((D/'flood-control-g-v5.blend').read_bytes()).hexdigest(),'waterIsCollider':False,'upperWaterY':-.66,'lowerWaterY':-1.8,'newRoadLights':0,'renderEngine':'Cycles CPU, AgX','renderSamples':s.cycles.samples})
+report.update({'authoredPlanSHA256':hashlib.sha256((R/'src/data/flood-control-plan.json').read_bytes()).hexdigest(),'partsSHA256':hashlib.sha256((R/'work/g-v5/parts.json').read_bytes()).hexdigest(),'version':'G-V5','pass':P['pass'],'materials':len({m.name for o in root.children_recursive if o.type=='MESH'for m in o.data.materials}),'textures':0,'scale':1,'glbBytes':runtime.stat().st_size,'blendBytes':(D/'flood-control-g-v5.blend').stat().st_size,'sourceBlendSHA256':hashlib.sha256((D/'flood-control-g-v5.blend').read_bytes()).hexdigest(),'waterIsCollider':False,'upperWaterY':-.66,'lowerWaterY':-1.8,'newRoadLights':0,'renderEngine':'Cycles CPU, AgX','renderSamples':s.cycles.samples})
 (D/'model-report.json').write_text(json.dumps(report,indent=2)+'\n')
 records=[]
 if '--render'in sys.argv:

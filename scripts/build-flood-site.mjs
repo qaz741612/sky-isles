@@ -1,6 +1,7 @@
 // MIT. Single G design source -> shared world footprint + public surface with water holes.
 import fs from 'node:fs';import {ShapeUtils,Vector2} from 'three';import polygon from 'polygon-clipping';import {contains} from './bridge-landscape-domain.mjs';
 const p=JSON.parse(fs.readFileSync('src/data/flood-control-plan.json')),yuan=JSON.parse(fs.readFileSync('src/data/yuan-plan.json')),l=JSON.parse(fs.readFileSync('src/data/yuan-layout.json'));
+if(p.revision==='flood-g-v5')throw new Error('G V5 uses scripts/flood/prepare_v5.py --site; legacy V1 generator must not overwrite current water holes or retained anchors.');
 yuan.islandFootprintsXZ.G=p.footprintLocal.map(([x,z])=>[+(x+p.centre[0]).toFixed(5),+(z+p.centre[2]).toFixed(5)]);
 yuan.landscapeRetainedLampAnchors=p.preserveLampAnchors;fs.writeFileSync('src/data/yuan-plan.json',JSON.stringify(yuan,null,2)+'\n');
 const roads=l.paths.filter(r=>['S21','S22'].includes(r.id)).map(path=>{const edges=path.points.map((v,i,a)=>{const u=a[Math.max(0,i-1)],w=a[Math.min(a.length-1,i+1)],dx=w.x-u.x,dz=w.z-u.z,d=Math.hypot(dx,dz),x=v.x-p.centre[0],z=v.z-p.centre[2];return[[x-dz/d*2.55,z+dx/d*2.55],[x+dz/d*2.55,z-dx/d*2.55]];});const r=[...edges.map(x=>x[0]),...edges.toReversed().map(x=>x[1])];return[[...r,r[0]]];});

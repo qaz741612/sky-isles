@@ -869,5 +869,10 @@
       },
       "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
     }
-  ]
+  ],
+  "invalidNativeViews": [
+    "s22-player",
+    "command-porch-player"
+  ],
+  "acceptanceStatus": "Historical art/QA evidence only; listed nonfinite views are invalid and must not be delivered as final previews"
 }

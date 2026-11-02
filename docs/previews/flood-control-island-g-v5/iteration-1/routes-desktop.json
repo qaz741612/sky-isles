@@ -1,5 +1,5 @@
 {
-  "passed": true,
+  "passed": false,
   "routes": [
     {
       "id": "S21",
@@ -377,5 +377,7 @@
     ]
   },
   "waterIsCollider": false,
-  "mode": "actual Player, fixed60Hz engineering traversal; route starts teleported; not hardware FPS"
+  "mode": "actual Player, fixed60Hz engineering traversal; route starts teleported; not hardware FPS",
+  "valid": false,
+  "invalidReason": "Initial probe missed NaN from collapsed solid polygon edge; all route/camera/recovery conclusions invalid. Preserved as failure evidence; rerun requires per-frame finite assertions."
 }

@@ -1,0 +1,4 @@
+{
+  "error": "page.evaluate: Error: blocked G 2.5,9.8 47.4280000000004,0,56.38150999999999\n    at walk (eval at evaluate (:303:30), <anonymous>:2:804)\n    at eval (eval at evaluate (:303:30), <anonymous>:4:153)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+  "errors": []
+}
