@@ -88,7 +88,10 @@
     "samples": 4097,
     "centreGap": 6.4846587736907795,
     "coreGap": 4.087067506386742,
-    "conservativeOuterStructureGap": 3.3877700534230675
+    "conservativeOuterStructureGap": 3.3877700534230675,
+    "actualLandscapeAndRailMarginGapToGParts": 2.946995080432191,
+    "actualMethod": "Existing zone5 shoulders/beds/finishes clipped to S20 region plus.20 railing/post allowance; minimum across every authored G part XZ hull; conservative vertical projection.",
+    "lampBaseGap": 9.975569705318135
   },
   "mouths": {
     "S21": {

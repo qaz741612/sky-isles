@@ -1,0 +1,107 @@
+S01 PASS
+S02 PASS
+S04 PASS
+S05 PASS
+{"result":[{"gate":"S01","bidirectional":true,"respawns":0},{"gate":"S02","bidirectional":true,"respawns":0},{"gate":"S04","bidirectional":true,"respawns":0},{"gate":"S05","bidirectional":true,"respawns":0}],"ticks":5613,"runtimeMeshes":60,"barriers":3746}
+✔ real 7-arm underside stops a rising head; ordinary road jump outside the arm is unchanged (172.957532ms)
+✔ all installed seven lamps keep their real visible emitter aligned with the head collision (137.728313ms)
+✔ landscape beds stay outside the original shared road/island domain and lights respect the budget (221.720264ms)
+✔ real landscape geometry is instanced, bounded, has no live lights, and leaves the full player corridor clear (187.757917ms)
+✔ expanded surface retains the complete original walkable domain and has one outside boundary network (20.424125ms)
+✔ actual station roof no longer blocks the local target; other seven islands are unaffected (14.60291ms)
+✔ portrait camera has its own framing within controller zoom limits (0.262985ms)
+✔ transport foundation and four mouths have continuous level support across their walkable width (38.838311ms)
+✔ G physical solids leave fixed S21/S22 4.8 core and one NPC 3x3 space clear (11.325566ms)
+✔ real GLB is bounded, has materials, dry holes and every visible safety segment blocks motion (79.284657ms)
+✔ G V5 preserves PR17 F/A/C bytes, all centres/Bezier, non-G footprints and all36 existing lamps (91.703205ms)
+✔ G V5 west notch restores the actual S22 island mouth and leaves S20/non-G islands separate (4.644047ms)
+✔ single guide reserved on actual dry ground; gate throats join both water levels without collidable water (2.783993ms)
+✔ actual S21/S22 mesh floor spans the wet crossing and both mouths over the full4.8 core (53.403703ms)
+✔ G collision has no collapsed world-space edge; finite Player motion cannot be poisoned by a tree hull (55.004508ms)
+✔ G camera keeps both head and torso clear through desktop/mobile full orbit without changing desired controls (4861.928581ms)
+✔ expanded G records a safe checkpoint at the distant guide forecourt and respawns there, not at radius9/home (24.791877ms)
+✔ six future building envelopes remain inside their islands and outside every 4.8 route, without runtime construction (4.414172ms)
+✔ V3 preserves original land, 22 roads, NPC, other approved assets and player code (59.651681ms)
+✔ falling Player rests on actual visible workshop/PV, youth roofs and greenhouse arch (208.520509ms)
+✔ actual V3 GLB has two substantial closed architectural silhouettes and a distinct arch greenhouse (31.070595ms)
+✔ C V3 covered approaches retain a clear camera ray through full user orbit (651.371665ms)
+✔ C exact route core, NPC 3x3 and original mushroom stay unobstructed (36.033577ms)
+✔ C actual GLB is valid, floor is real, walls and visible outer guard have blocking data (54.525824ms)
+✔ ground jump then double jump, but no third jump (0.269465ms)
+✔ falling off a ledge still allows one air jump (but only one) (0.166209ms)
+✔ coyote time allows a jump just after leaving the ground (0.080281ms)
+✔ glide caps fall speed while jump is held (0.12667ms)
+✔ without holding jump, fall speed keeps growing past the glide cap (0.098979ms)
+✔ glide boosts forward speed (0.283446ms)
+✔ respawn triggers below the kill plane (0.079299ms)
+✔ gravity integration is stable and downward (0.075353ms)
+✔ orthographic panorama fits every actual footprint corner in landscape and portrait (0.642174ms)
+✔ transition is finite, pauses at the true ortho lens and returns to the saved camera pose (1.24485ms)
+✔ resizing during overview restores the current aspect without a final lens jump (0.255013ms)
+✔ approved GLB remains byte-identical; four actual gates and all destinations work with the real unchanged player (4106.695729ms)
+✔ seven distinct authored places use bounded material batches, explicit solids and no decoration ground colliders (83.43093ms)
+✔ all scenery preserves the 3.9-wide player-centre corridor along every fixed B route (1726.439324ms)
+✔ every island has independent exposed union edges and an accessible future NPC reservation (51.238249ms)
+✔ retained chime highlight uses a small geometric ring, not an opaque sprite square (4.764398ms)
+✔ chime definitions are unique pentatonic notes with colors and symbols (0.298459ms)
+✔ correct full order opens the portal (0.312279ms)
+✔ wrong note resets progress (0.09328ms)
+✔ playing a duplicate note mid-sequence counts as wrong and resets (0.078128ms)
+✔ partial sequences do not open the portal (0.065659ms)
+✔ after the portal opens, further plays are replays and keep state (0.074382ms)
+✔ music layers grow one per unlocked chime (0.08701ms)
+✔ mulberry32 is deterministic for the same seed (0.132149ms)
+✔ different seeds produce different sequences (0.10661ms)
+✔ Rng helpers stay in range (0.763527ms)
+✔ Rng pick returns items from the list deterministically (0.12652ms)
+✖ supplied GLB is unchanged; full station architecture, canopy and lettering retain original materials (36.982823ms)
+✔ station fits radius 9 without changing source proportions; original doorway clears the unchanged player (31.346599ms)
+✔ actual GLB lintel and canopy undersides stop rising heads without changing movement outside the station (37.067914ms)
+✔ locked elevated asset replaces old display meshes, keeps materials and introduces no lights (27.186855ms)
+✔ all visible island safety segments block either direction and southern shared gate has no fence (34.599901ms)
+✔ NPC reservation, interaction stop and approach stay outside physical solids (36.576737ms)
+✔ full 4.8-wide home approaches keep a 3.9-wide player-centre band unobstructed (540.322325ms)
+✔ every actual home structure, column, culture base, viewing seat and rail blocks swept crossing (49.207388ms)
+✔ compound facade collision protects the actual front and side woven surfaces, not only the cream wall (132.779934ms)
+✔ approved handwritten graph has 21 connected nodes, 22 real paths and eight distinct islands (0.394523ms)
+✔ actual Player walks every route in both directions without jumping dt=0.016666666666666666 (4669.564836ms)
+✔ actual Player walks every route in both directions without jumping dt=0.05 (2325.678935ms)
+✔ guards prevent high-speed horizontal crossing from either side, including endpoints (253.62996ms)
+✔ released stick decelerates to rest quickly, with a bounded stopping distance (0.182194ms)
+✔ every actual outer rail blocks crossing and matches rendered guard coordinates (244.257037ms)
+✔ all actual collision triangles have finite horizontal surfaces and <=10% grade (172.117275ms)
+✔ near-zero X movement never falls through a cylinder cap triangle seam (272.107288ms)
+✔ every ordered junction turn stays walkable with actual transport decks present (9116.127021ms)
+✔ all six covered policy places support an actual falling Player; the open park pergola has no fake roof (586.259663ms)
+✔ expanded islands retain the approved B centres, exact curves and 4.8 width without repeated scaling (10.094968ms)
+ℹ tests 71
+ℹ suites 0
+ℹ pass 70
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 31809.346445
+
+✖ failing tests:
+
+test at test/station-model.test.js:10:1
+✖ supplied GLB is unchanged; full station architecture, canopy and lettering retain original materials (36.982823ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(Math.abs(station.bounds.min.y)<1e-6)
+  
+      at TestContext.<anonymous> (file:///workspace/sky-isles-flood-g-v5/test/station-model.test.js:19:162)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

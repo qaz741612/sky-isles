@@ -1,0 +1,534 @@
+{
+  "method": "Same viewport and world-local player/camera poses; all eight islands loaded. Six gl.finish synchronized software-rendered frames after two warmups per view; five batches of100 real idle Player ticks. Local HTTP, no bandwidth throttling. Readiness is frozen-RAF loading screen + first controller initialization, not first interactive hardware frame.",
+  "limits": "Chromium ANGLE SwiftShader software GPU. Shared cloud CPU, samples are diagnostic observations, not hardware FPS, real phone smoothness, heat or production network performance. GPU/live-animation real-device validation pending.",
+  "results": [
+    {
+      "stage": "before",
+      "mobile": false,
+      "viewport": {
+        "width": 1200,
+        "height": 800
+      },
+      "dpr": 1,
+      "assetSHA256": "758833dc90065fed371a6e854f560c68b6e790e05008a4021febb28c43c9059b",
+      "navigationReadyAtMs": 21189.200000047684,
+      "assetLoad": {
+        "bytes": 2342896,
+        "downloadMilliseconds": 176.20000004768372,
+        "decodeMilliseconds": 17.199999928474426,
+        "totalMilliseconds": 193.39999997615814,
+        "triangles": 42773,
+        "runtimeMeshes": 33,
+        "materials": 17,
+        "buildMilliseconds": 12.100000023841858,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "allEightIslandsLoaded": 8,
+      "views": [
+        {
+          "name": "native",
+          "camera": [
+            47.03185584035639,
+            10.53427957432056,
+            57.115701391686926
+          ],
+          "drawCalls": 610,
+          "triangles": 1393160,
+          "memory": {
+            "geometries": 322,
+            "textures": 19
+          },
+          "softwareFrameMs": {
+            "samples": [
+              15.300000071525574,
+              15.600000023841858,
+              24.59999990463257,
+              37,
+              49.700000047683716,
+              60.200000047683716
+            ],
+            "median": 30.799999952316284,
+            "max": 60.200000047683716
+          },
+          "controllerCPUms": 0.22600000023841857
+        },
+        {
+          "name": "sluice-high-load",
+          "camera": [
+            15.927999999999997,
+            26,
+            3.2790000000000035
+          ],
+          "drawCalls": 173,
+          "triangles": 133642,
+          "memory": {
+            "geometries": 365,
+            "textures": 19
+          },
+          "softwareFrameMs": {
+            "samples": [
+              2.600000023841858,
+              6.299999952316284,
+              6.300000071525574,
+              6.600000023841858,
+              11.199999928474426,
+              42
+            ],
+            "median": 6.450000047683716,
+            "max": 42
+          },
+          "controllerCPUms": null
+        },
+        {
+          "name": "panorama",
+          "camera": [
+            0.08983500000000078,
+            240,
+            28.923
+          ],
+          "drawCalls": 1035,
+          "triangles": 1586000,
+          "memory": {
+            "geometries": 486,
+            "textures": 20
+          },
+          "softwareFrameMs": {
+            "samples": [
+              20.200000047683716,
+              22.5,
+              62.799999952316284,
+              86.09999990463257,
+              108.90000009536743,
+              111.79999995231628
+            ],
+            "median": 74.44999992847443,
+            "max": 111.79999995231628
+          },
+          "controllerCPUms": null
+        }
+      ],
+      "webGL": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": 0
+    },
+    {
+      "stage": "before",
+      "mobile": true,
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "dpr": 1,
+      "assetSHA256": "758833dc90065fed371a6e854f560c68b6e790e05008a4021febb28c43c9059b",
+      "navigationReadyAtMs": 13010.399999976158,
+      "assetLoad": {
+        "bytes": 2342896,
+        "downloadMilliseconds": 261.2999999523163,
+        "decodeMilliseconds": 5.700000047683716,
+        "totalMilliseconds": 267,
+        "triangles": 42773,
+        "runtimeMeshes": 33,
+        "materials": 17,
+        "buildMilliseconds": 10.799999952316284,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "allEightIslandsLoaded": 8,
+      "views": [
+        {
+          "name": "native",
+          "camera": [
+            46.99232647835641,
+            15.161691714804308,
+            61.19906821482913
+          ],
+          "drawCalls": 158,
+          "triangles": 113116,
+          "memory": {
+            "geometries": 305,
+            "textures": 17
+          },
+          "softwareFrameMs": {
+            "samples": [
+              2.5999999046325684,
+              3,
+              4.400000095367432,
+              6.100000023841858,
+              8.799999952316284,
+              25.100000023841858
+            ],
+            "median": 5.250000059604645,
+            "max": 25.100000023841858
+          },
+          "controllerCPUms": 0.565
+        },
+        {
+          "name": "sluice-high-load",
+          "camera": [
+            15.927999999999997,
+            26,
+            3.2790000000000035
+          ],
+          "drawCalls": 160,
+          "triangles": 115699,
+          "memory": {
+            "geometries": 346,
+            "textures": 17
+          },
+          "softwareFrameMs": {
+            "samples": [
+              2.8000000715255737,
+              2.899999976158142,
+              3.100000023841858,
+              3.799999952316284,
+              4.5,
+              5
+            ],
+            "median": 3.449999988079071,
+            "max": 5
+          },
+          "controllerCPUms": null
+        },
+        {
+          "name": "panorama",
+          "camera": [
+            0.08983500000000078,
+            240,
+            28.923
+          ],
+          "drawCalls": 1035,
+          "triangles": 1586000,
+          "memory": {
+            "geometries": 486,
+            "textures": 20
+          },
+          "softwareFrameMs": {
+            "samples": [
+              33.5,
+              35.89999997615814,
+              79.59999990463257,
+              80.70000004768372,
+              85.20000004768372,
+              85.39999997615814
+            ],
+            "median": 80.14999997615814,
+            "max": 85.39999997615814
+          },
+          "controllerCPUms": null
+        }
+      ],
+      "webGL": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": 0
+    },
+    {
+      "stage": "after",
+      "mobile": false,
+      "viewport": {
+        "width": 1200,
+        "height": 800
+      },
+      "dpr": 1,
+      "assetSHA256": "99030fd7b8c32d831926cf835914dc6b86496691cd2144bd53efd45144eb620e",
+      "navigationReadyAtMs": 39964.700000047684,
+      "assetLoad": {
+        "bytes": 3665000,
+        "downloadMilliseconds": 166.69999992847443,
+        "decodeMilliseconds": 7.5,
+        "totalMilliseconds": 174.19999992847443,
+        "triangles": 60211,
+        "runtimeMeshes": 50,
+        "materials": 23,
+        "buildMilliseconds": 12.099999904632568,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "allEightIslandsLoaded": 8,
+      "views": [
+        {
+          "name": "native",
+          "camera": [
+            47.03185584035639,
+            10.55927957469309,
+            57.115701391686926
+          ],
+          "drawCalls": 628,
+          "triangles": 1420768,
+          "memory": {
+            "geometries": 331,
+            "textures": 19
+          },
+          "softwareFrameMs": {
+            "samples": [
+              13.899999976158142,
+              16.600000023841858,
+              18.300000071525574,
+              20.800000071525574,
+              29.699999928474426,
+              57.39999997615814
+            ],
+            "median": 19.550000071525574,
+            "max": 57.39999997615814
+          },
+          "controllerCPUms": 0.23900000095367432
+        },
+        {
+          "name": "sluice-high-load",
+          "camera": [
+            15.927999999999997,
+            26,
+            3.2790000000000035
+          ],
+          "drawCalls": 194,
+          "triangles": 149331,
+          "memory": {
+            "geometries": 382,
+            "textures": 19
+          },
+          "softwareFrameMs": {
+            "samples": [
+              3,
+              3.1999999284744263,
+              3.600000023841858,
+              3.8000000715255737,
+              4.400000095367432,
+              7.299999952316284
+            ],
+            "median": 3.700000047683716,
+            "max": 7.299999952316284
+          },
+          "controllerCPUms": null
+        },
+        {
+          "name": "panorama",
+          "camera": [
+            1.215515,
+            240,
+            28.923
+          ],
+          "drawCalls": 1069,
+          "triangles": 1616466,
+          "memory": {
+            "geometries": 503,
+            "textures": 20
+          },
+          "softwareFrameMs": {
+            "samples": [
+              35.799999952316284,
+              40,
+              41.5,
+              63.60000002384186,
+              66.10000002384186,
+              81.5
+            ],
+            "median": 52.55000001192093,
+            "max": 81.5
+          },
+          "controllerCPUms": null
+        }
+      ],
+      "webGL": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": 0
+    },
+    {
+      "stage": "after",
+      "mobile": true,
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "dpr": 1,
+      "assetSHA256": "99030fd7b8c32d831926cf835914dc6b86496691cd2144bd53efd45144eb620e",
+      "navigationReadyAtMs": 63451.700000047684,
+      "assetLoad": {
+        "bytes": 3665000,
+        "downloadMilliseconds": 182.5,
+        "decodeMilliseconds": 11.099999904632568,
+        "totalMilliseconds": 193.59999990463257,
+        "triangles": 60211,
+        "runtimeMeshes": 50,
+        "materials": 23,
+        "buildMilliseconds": 14.900000095367432,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "allEightIslandsLoaded": 8,
+      "views": [
+        {
+          "name": "native",
+          "camera": [
+            46.99232647835643,
+            15.186691715176842,
+            61.19906821482916
+          ],
+          "drawCalls": 165,
+          "triangles": 120668,
+          "memory": {
+            "geometries": 310,
+            "textures": 17
+          },
+          "softwareFrameMs": {
+            "samples": [
+              2.200000047683716,
+              2.799999952316284,
+              3.100000023841858,
+              6.5,
+              8.300000071525574,
+              29.199999928474426
+            ],
+            "median": 4.800000011920929,
+            "max": 29.199999928474426
+          },
+          "controllerCPUms": 0.6739999997615814
+        },
+        {
+          "name": "sluice-high-load",
+          "camera": [
+            15.927999999999997,
+            26,
+            3.2790000000000035
+          ],
+          "drawCalls": 180,
+          "triangles": 131280,
+          "memory": {
+            "geometries": 362,
+            "textures": 17
+          },
+          "softwareFrameMs": {
+            "samples": [
+              3.299999952316284,
+              4,
+              5,
+              5.100000023841858,
+              8,
+              59.60000002384186
+            ],
+            "median": 5.050000011920929,
+            "max": 59.60000002384186
+          },
+          "controllerCPUms": null
+        },
+        {
+          "name": "panorama",
+          "camera": [
+            1.215515,
+            240,
+            28.923
+          ],
+          "drawCalls": 1069,
+          "triangles": 1616466,
+          "memory": {
+            "geometries": 503,
+            "textures": 20
+          },
+          "softwareFrameMs": {
+            "samples": [
+              38.5,
+              46.60000002384186,
+              64.60000002384186,
+              67.5,
+              68.89999997615814,
+              72.60000002384186
+            ],
+            "median": 66.05000001192093,
+            "max": 72.60000002384186
+          },
+          "controllerCPUms": null
+        }
+      ],
+      "webGL": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": 0
+    }
+  ]
+}

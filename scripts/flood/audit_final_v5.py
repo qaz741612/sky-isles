@@ -46,5 +46,18 @@ for q in y['nodes']:
  if not q.get('island')or q['id']=='G':continue
  shape=Polygon(y['islandFootprintsXZ'][q['id']])if q['id']in y['islandFootprintsXZ']else Point(q['x'],q['z']).buffer(q['r'],quad_segs=128)
  report['islandGaps'].append({'id':q['id'],'distance':land.distance(shape),'overlapArea':land.intersection(shape).area})
+# Also inspect actual existing landscape polygons; its .95 shoulder exceeds the
+# earlier6.2-envelope preflight. Include.20 rail/post margin and real G parts.
+landscape=read('src/data/bridge-landscape.json');zone=next(v for v in landscape['zones']if v['id']==5)
+structure=unary_union([multi(zone.get(k,[]))for k in ['beds','shoulders','finishes']]).intersection(roads['S20'].buffer(4.5));structure=structure.union(roads['S20'].buffer(2.4)).buffer(.20)
+parts=read('work/g-v5/parts.json')['parts'];actualGap=float('inf')
+from shapely.geometry import MultiPoint
+for v in parts:
+ hull=MultiPoint([(pt[0]+cen[0],pt[2]+cen[2])for pt in v['vertices']]).convex_hull
+ actualGap=min(actualGap,hull.distance(structure))
+report['S20']['actualLandscapeAndRailMarginGapToGParts']=actualGap
+report['S20']['actualMethod']='Existing zone5 shoulders/beds/finishes clipped to S20 region plus.20 railing/post allowance; minimum across every authored G part XZ hull; conservative vertical projection.'
+report['S20']['lampBaseGap']=min(land.distance(Point(l['position'][0],l['position'][2]))-.2 for l in landscape['lamps']if l['route']=='S20')
+assert actualGap>2.8
 assert all(v['unchangedControlPoints']for v in paths.values());assert not blocked;assert report['NPC']['wetOverlapArea']<1e-6;assert all(not v['solidIntrusions']for v in openings.values());assert report['S20']['conservativeOuterStructureGap']>3.3
 (O/'spatial-audit-final.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print('Final audit saved; 22 exact control lines, S20 %.3f gap, NPC dry/free, zero public-route intrusions'%report['S20']['conservativeOuterStructureGap'])

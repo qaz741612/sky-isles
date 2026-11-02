@@ -1,0 +1,57 @@
+
+> sky-isles@1.0.0 check
+> npm run test && npm run lint && npm run build
+
+
+> sky-isles@1.0.0 test
+> node --test test/*.test.js
+
+✔ test/bridge-lamp-headroom.test.js (634.08204ms)
+✔ test/bridge-landscape.test.js (833.385091ms)
+✔ test/camera-clearance.test.js (230.185753ms)
+✔ test/camera-profile.test.js (70.433544ms)
+✔ test/elevated-foundation.test.js (160.505374ms)
+✔ test/flood-control.test.js (294.58132ms)
+✔ test/flood-v5.test.js (4661.698476ms)
+✔ test/future-island-reservations.test.js (76.761334ms)
+✔ test/industry-youth-v3.test.js (935.01794ms)
+✔ test/industry-youth.test.js (308.974787ms)
+✔ test/movement.test.js (72.577458ms)
+✔ test/panorama.test.js (113.50758ms)
+✔ test/parent-child-model.test.js (4200.262107ms)
+✔ test/policy-scenery.test.js (2581.332786ms)
+✔ test/puzzle.test.js (58.543914ms)
+✔ test/rng.test.js (73.029672ms)
+✔ test/station-model.test.js (229.22921ms)
+✔ test/transport.test.js (1221.738342ms)
+✔ test/walkways.test.js (13014.754092ms)
+✔ test/yuan-size-b.test.js (63.158739ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 29864.107615
+
+> sky-isles@1.0.0 lint
+> eslint src test vite.config.js eslint.config.js playwright.config.js
+
+
+> sky-isles@1.0.0 build
+> vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 51 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   14.90 kB │ gzip:   4.42 kB
+dist/assets/index-CLCFpJn8.js  4,792.28 kB │ gzip: 800.53 kB │ map: 3,370.74 kB
+
+(!) Some chunks are larger than 2400 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.87s
