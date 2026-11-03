@@ -1,0 +1,383 @@
+{
+  "passed": false,
+  "routes": [
+    {
+      "id": "S21",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S22",
+      "bidirectional": true,
+      "noJump": true
+    }
+  ],
+  "circuit": [
+    [
+      0,
+      0
+    ],
+    [
+      6.1,
+      0
+    ],
+    [
+      7.75,
+      0.6
+    ],
+    [
+      6.1,
+      0
+    ],
+    [
+      6.1,
+      -6
+    ],
+    [
+      8.8,
+      -9.1
+    ],
+    [
+      10.2,
+      -9.1
+    ],
+    [
+      8.8,
+      -9.1
+    ],
+    [
+      6.1,
+      -6
+    ],
+    [
+      6.1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      6.2
+    ],
+    [
+      0,
+      10.8
+    ],
+    [
+      0,
+      6.2
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "cameras": [
+    {
+      "x": 0,
+      "z": 0,
+      "yaw": 0,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "yaw": 0.7853981633974483,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "yaw": 1.5707963267948966,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "yaw": 2.356194490192345,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "yaw": 3.141592653589793,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "yaw": 3.9269908169872414,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "yaw": 4.71238898038469,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "yaw": 5.497787143782138,
+      "distance": null
+    },
+    {
+      "x": 7.75,
+      "z": 0.6,
+      "yaw": 0,
+      "distance": null
+    },
+    {
+      "x": 7.75,
+      "z": 0.6,
+      "yaw": 0.7853981633974483,
+      "distance": null
+    },
+    {
+      "x": 7.75,
+      "z": 0.6,
+      "yaw": 1.5707963267948966,
+      "distance": null
+    },
+    {
+      "x": 7.75,
+      "z": 0.6,
+      "yaw": 2.356194490192345,
+      "distance": null
+    },
+    {
+      "x": 7.75,
+      "z": 0.6,
+      "yaw": 3.141592653589793,
+      "distance": null
+    },
+    {
+      "x": 7.75,
+      "z": 0.6,
+      "yaw": 3.9269908169872414,
+      "distance": null
+    },
+    {
+      "x": 7.75,
+      "z": 0.6,
+      "yaw": 4.71238898038469,
+      "distance": null
+    },
+    {
+      "x": 7.75,
+      "z": 0.6,
+      "yaw": 5.497787143782138,
+      "distance": null
+    },
+    {
+      "x": 8.8,
+      "z": -9.1,
+      "yaw": 0,
+      "distance": null
+    },
+    {
+      "x": 8.8,
+      "z": -9.1,
+      "yaw": 0.7853981633974483,
+      "distance": null
+    },
+    {
+      "x": 8.8,
+      "z": -9.1,
+      "yaw": 1.5707963267948966,
+      "distance": null
+    },
+    {
+      "x": 8.8,
+      "z": -9.1,
+      "yaw": 2.356194490192345,
+      "distance": null
+    },
+    {
+      "x": 8.8,
+      "z": -9.1,
+      "yaw": 3.141592653589793,
+      "distance": null
+    },
+    {
+      "x": 8.8,
+      "z": -9.1,
+      "yaw": 3.9269908169872414,
+      "distance": null
+    },
+    {
+      "x": 8.8,
+      "z": -9.1,
+      "yaw": 4.71238898038469,
+      "distance": null
+    },
+    {
+      "x": 8.8,
+      "z": -9.1,
+      "yaw": 5.497787143782138,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 10.8,
+      "yaw": 0,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 10.8,
+      "yaw": 0.7853981633974483,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 10.8,
+      "yaw": 1.5707963267948966,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 10.8,
+      "yaw": 2.356194490192345,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 10.8,
+      "yaw": 3.141592653589793,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 10.8,
+      "yaw": 3.9269908169872414,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 10.8,
+      "yaw": 4.71238898038469,
+      "distance": null
+    },
+    {
+      "x": 0,
+      "z": 10.8,
+      "yaw": 5.497787143782138,
+      "distance": null
+    },
+    {
+      "x": -9.7,
+      "z": -3.4,
+      "yaw": 0,
+      "distance": null
+    },
+    {
+      "x": -9.7,
+      "z": -3.4,
+      "yaw": 0.7853981633974483,
+      "distance": null
+    },
+    {
+      "x": -9.7,
+      "z": -3.4,
+      "yaw": 1.5707963267948966,
+      "distance": null
+    },
+    {
+      "x": -9.7,
+      "z": -3.4,
+      "yaw": 2.356194490192345,
+      "distance": null
+    },
+    {
+      "x": -9.7,
+      "z": -3.4,
+      "yaw": 3.141592653589793,
+      "distance": null
+    },
+    {
+      "x": -9.7,
+      "z": -3.4,
+      "yaw": 3.9269908169872414,
+      "distance": null
+    },
+    {
+      "x": -9.7,
+      "z": -3.4,
+      "yaw": 4.71238898038469,
+      "distance": null
+    },
+    {
+      "x": -9.7,
+      "z": -3.4,
+      "yaw": 5.497787143782138,
+      "distance": null
+    }
+  ],
+  "panoramaRestores": true,
+  "forcedRecovery": true,
+  "npc": [
+    {
+      "id": "zhang-guli-flood-guide",
+      "name": "張顧礫",
+      "position": [
+        10.2,
+        0,
+        -9.1
+      ],
+      "playerStop": [
+        8.8,
+        0,
+        -9.1
+      ],
+      "reservation": [
+        3,
+        3
+      ],
+      "facing": -1.5707963267948966,
+      "interactionRadius": 1.65,
+      "implemented": false
+    }
+  ],
+  "stats": {
+    "bytes": 2392384,
+    "downloadMilliseconds": 209.10000002384186,
+    "decodeMilliseconds": 47.799999952316284,
+    "totalMilliseconds": 256.89999997615814,
+    "triangles": 36414,
+    "runtimeMeshes": 45,
+    "materials": 21,
+    "buildMilliseconds": 22.600000023841858,
+    "waterCollision": false,
+    "newLights": 0,
+    "integrationTriangles": 24,
+    "retainedLampInterfaces": [
+      {
+        "id": "S21-L3",
+        "position": [
+          45.98585568461623,
+          0,
+          32.8410838841428
+        ],
+        "groundTop": 0.025,
+        "moved": false
+      },
+      {
+        "id": "S22-L1",
+        "position": [
+          36.142117348918624,
+          0,
+          37.56933897223424
+        ],
+        "groundTop": 0.025,
+        "moved": false
+      }
+    ]
+  },
+  "waterIsCollider": false,
+  "mode": "actual Player, fixed60Hz engineering traversal; route starts teleported; not hardware FPS",
+  "valid": false,
+  "invalidReason": "Initial probe missed NaN from collapsed solid polygon edge; all route/camera/recovery conclusions invalid. Preserved as failure evidence; rerun requires per-frame finite assertions."
+}

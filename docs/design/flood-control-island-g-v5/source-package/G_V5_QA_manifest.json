@@ -1,0 +1,86 @@
+{
+  "glbLoadable": true,
+  "meshes": 1621,
+  "glbTriangleCount": 22860,
+  "glbBytes": 1093388,
+  "staticSiteIssues": [],
+  "sourceSHA256": "eacfe73d5ee6d479a3c700f0d8d54ffd9bdfeb0c1f003ce82f658da679dff4b5",
+  "blenderGameValidation": "NOT RUN — design model only",
+  "package": [
+    {
+      "name": "build.py",
+      "bytes": 19312,
+      "sha256": "eacfe73d5ee6d479a3c700f0d8d54ffd9bdfeb0c1f003ce82f658da679dff4b5"
+    },
+    {
+      "name": "render_sw.py",
+      "bytes": 4795,
+      "sha256": "c0d2fd3d3cfe2689362ea9bce6bacb3fccdcd0a2fe6f6347123a06afbbb2b8fc"
+    },
+    {
+      "name": "compose.py",
+      "bytes": 2156,
+      "sha256": "f5817c0c6b932b53d678b063c592fa158fdebc3ddd9d197ac3db0082d2d8d09e"
+    },
+    {
+      "name": "audit_plot.py",
+      "bytes": 6688,
+      "sha256": "665dc8663bd3bf15b4e9d828d6267dd0bfe93083f4f02a41810baf0f4a7134e9"
+    },
+    {
+      "name": "CODEX_G_V5_FINAL.txt",
+      "bytes": 5516,
+      "sha256": "5f4f6ec47533e59746322e53d0da09a84655d109fb9281e547de387cbff4929e"
+    },
+    {
+      "name": "README_交付及限制.txt",
+      "bytes": 2203,
+      "sha256": "6e67324456e0034174ef153548f6325d35bde860c949f1fd396430a355856120"
+    },
+    {
+      "name": "G_V5_hydraulic_campus_design.glb",
+      "bytes": 1093388,
+      "sha256": "59d35f7f7562f6ed9138cbedd012436ae921b83dcb2ce3490dc1ea3853ec9327"
+    },
+    {
+      "name": "G_V5_design_manifest.json",
+      "bytes": 7162,
+      "sha256": "347dbce2e3673d19eaad090d58da742359850856174d3b8c59daf7d84d1b3084"
+    },
+    {
+      "name": "G_V5_spatial_audit.json",
+      "bytes": 885,
+      "sha256": "4085a97b1297e06a842457fa5e61a2599a5feae0f834086d5faaca56b10c0be7"
+    },
+    {
+      "name": "G_V5_six_views.jpg",
+      "bytes": 223558,
+      "sha256": "2e3907bb479ec581c9fabf57eb5d973e0e75d073db9e1c8e0cd1a41140a844ad"
+    },
+    {
+      "name": "G_V5_design_board.jpg",
+      "bytes": 215917,
+      "sha256": "a7bd76ae95901b55a4931ce35acc148edc3b2e45529f59c8ee4280eee7ffc76a"
+    },
+    {
+      "name": "G_V5_spatial_audit.png",
+      "bytes": 292945,
+      "sha256": "f3fe11857a43aa58acb2e059304f23aa68bdb696c202daa9a241a1fde1106e5b"
+    },
+    {
+      "name": "G_V5_hero_focus.png",
+      "bytes": 227151,
+      "sha256": "c7c2079632e5dd4d51ea182bce42b941cdef600239b19b608cf78b5c35c5dfe0"
+    },
+    {
+      "name": "G_V5_near_dam_focus.png",
+      "bytes": 303075,
+      "sha256": "83a6d5adae23763fadc26e96976b8507ee9472c1ff97a0704b8a513c12c408aa"
+    },
+    {
+      "name": "G_V5_near_command_focus.png",
+      "bytes": 318835,
+      "sha256": "17b8dc9131209848d12bad0e171ed5983db06768aefa0e58178871db5808944d"
+    }
+  ]
+}

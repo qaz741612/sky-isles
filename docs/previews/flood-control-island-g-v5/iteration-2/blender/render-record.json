@@ -1,0 +1,187 @@
+{
+  "sameSource": true,
+  "pass": 2,
+  "engine": "Blender Cycles CPU",
+  "records": [
+    {
+      "name": "hero",
+      "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+      "cameraGame": [
+        -39,
+        32,
+        43
+      ],
+      "targetGame": [
+        0,
+        1,
+        0
+      ],
+      "orthoScale": 55,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 30.780486000003293
+    },
+    {
+      "name": "front",
+      "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+      "cameraGame": [
+        0,
+        8,
+        -65
+      ],
+      "targetGame": [
+        0,
+        1,
+        0
+      ],
+      "orthoScale": 47,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 30.208157933084294
+    },
+    {
+      "name": "back",
+      "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+      "cameraGame": [
+        0,
+        8,
+        65
+      ],
+      "targetGame": [
+        0,
+        1,
+        0
+      ],
+      "orthoScale": 47,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 28.192410746007226
+    },
+    {
+      "name": "left",
+      "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+      "cameraGame": [
+        -65,
+        8,
+        0
+      ],
+      "targetGame": [
+        0,
+        1,
+        0
+      ],
+      "orthoScale": 47,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 23.33707048301585
+    },
+    {
+      "name": "right",
+      "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+      "cameraGame": [
+        65,
+        8,
+        0
+      ],
+      "targetGame": [
+        0,
+        1,
+        0
+      ],
+      "orthoScale": 47,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 23.16952658491209
+    },
+    {
+      "name": "top",
+      "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+      "cameraGame": [
+        0.001,
+        70,
+        0
+      ],
+      "targetGame": [
+        0,
+        0,
+        0
+      ],
+      "orthoScale": 47,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 58.550455427961424
+    },
+    {
+      "name": "near-dam",
+      "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+      "cameraGame": [
+        -27,
+        16,
+        -27
+      ],
+      "targetGame": [
+        -9.35,
+        3.8,
+        6.1
+      ],
+      "orthoScale": 20,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 73.67852589406539
+    },
+    {
+      "name": "near-command",
+      "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+      "cameraGame": [
+        27,
+        14,
+        -24
+      ],
+      "targetGame": [
+        9,
+        2.5,
+        4.0
+      ],
+      "orthoScale": 23,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 80.00598830298986
+    },
+    {
+      "name": "s22-crossing",
+      "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+      "cameraGame": [
+        -25,
+        13,
+        -20
+      ],
+      "targetGame": [
+        -9.7,
+        0.2,
+        -3.4
+      ],
+      "orthoScale": 25,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 87.35050717298873
+    }
+  ]
+}

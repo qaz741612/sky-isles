@@ -1,0 +1,2259 @@
+{
+  "baseCommit": "8849b89e99163c179973a31571498115c6c80e7c",
+  "scope": "G V5.1 final assets, actual renders/game captures, unchanged baseline dependencies and separately identified review history; not hardware or human art acceptance",
+  "excludes": [
+    "manifest self hash verified separately",
+    "GITHUB-VERIFIED receipt",
+    "work",
+    "node_modules",
+    ".blend1",
+    "__pycache__"
+  ],
+  "files": [
+    {
+      "path": "docs/design/flood-control-island-g-v5/flood-control-g-v5.blend",
+      "bytes": 849614,
+      "sha256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5/source-package/build.py",
+      "bytes": 19312,
+      "sha256": "eacfe73d5ee6d479a3c700f0d8d54ffd9bdfeb0c1f003ce82f658da679dff4b5"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/FINAL-LOCK.json",
+      "bytes": 1604,
+      "sha256": "a5a8b145d6182cd8df38d08b29c428321a72a9baac1972dc74ebd32bf4869be2"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/art-change-proof.json",
+      "bytes": 2045,
+      "sha256": "fbf5eda1501045a820173a1ccfb5174370c2970f98b042e378971d5dbf36ef00"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/baseline/flood-control-collision.json",
+      "bytes": 499245,
+      "sha256": "c5ba5c649d1887e4e109d7de03f1c1eba42303d3896012246941f55a907d7b01"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/baseline/flood-control-g-v5.blend",
+      "bytes": 849614,
+      "sha256": "3653b9334f1e303083d477773799a67bfc9888f619387bd1d3c4a01bdada0a2a"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/baseline/flood-control-g.glb",
+      "bytes": 3665000,
+      "sha256": "99030fd7b8c32d831926cf835914dc6b86496691cd2144bd53efd45144eb620e"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/baseline/flood-control-plan.json",
+      "bytes": 12932,
+      "sha256": "af54e7ff6349ba7dd8dcadfe1c2a0546efb8d1aec7f0d41b535b67d7517a7b27"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/baseline/flood-control.js",
+      "bytes": 6879,
+      "sha256": "6f9f396d15c932f07281c16325520c9ec56b13f838fabffc47f9feaa5455c2ad"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/baseline/model-report.json",
+      "bytes": 830,
+      "sha256": "cb19f41ece2a493eec5a3fa0c1d62a6642dfb1ad100ce2bb23c32f838bb945dd"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/flood-control-g-v5-1.blend",
+      "bytes": 1035877,
+      "sha256": "5159423458df4f4cb5b43aca91bd4534341acb95b40fc5d86dbfbfdb2e63aea3"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-1/flood-control-art.json",
+      "bytes": 1384,
+      "sha256": "8682abd81d2a232fd99e42e0ec0133f15c447b8c4bafd4080d037d7176f02215"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-1/flood-control-collision.json",
+      "bytes": 610926,
+      "sha256": "3c29133df25753c01d466d8900772906ac9c475f894629bd74f48ec4702cc56b"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-1/flood-control-g-v5-1.blend",
+      "bytes": 999171,
+      "sha256": "350328103b9aacf72f6da869bf9dd526013336c66e204f81bae9a29b1e15dece"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-1/flood-control-g.glb",
+      "bytes": 4913016,
+      "sha256": "49e70e46a9cb6d67f7be672b208e595f512e50bca6b23717db59e239b50c97b6"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-1/model-report.json",
+      "bytes": 1144,
+      "sha256": "0ed52d33c822758368a2867c5f28462dda9c73c3e2d479ca2ab8f862df203ec8"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-2/flood-control-art.json",
+      "bytes": 3024,
+      "sha256": "336e21c537d42e1d7b8e68abaf30a2632f929aec675d3dc8c2c34465c41bddde"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-2/flood-control-collision.json",
+      "bytes": 611234,
+      "sha256": "7e8517345f43e05d008a099de404ae783c5b1ed648a937a98810cc2f427a98e3"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-2/flood-control-g-v5-1.blend",
+      "bytes": 1024333,
+      "sha256": "a9cf59c35566a716fb3b956d7083c349632329ebaafbd381ba289e75c49dfa3e"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-2/flood-control-g.glb",
+      "bytes": 4626576,
+      "sha256": "334800621fa92df15048ba49542f341f524a94ea3106c93815ac51d46a7dcd70"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-2/model-report.json",
+      "bytes": 1145,
+      "sha256": "8c51d5f0767777c7c7da20af96f4cd0460d90d638a6086623985177dd4c33295"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-3/flood-control-art.json",
+      "bytes": 3024,
+      "sha256": "336e21c537d42e1d7b8e68abaf30a2632f929aec675d3dc8c2c34465c41bddde"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-3/flood-control-collision.json",
+      "bytes": 611450,
+      "sha256": "f6a9619502cbf61430f4b92a4be0ee5f19cf995458d1dcfe9b4f0846bf14f108"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-3/flood-control-g-v5-1.blend",
+      "bytes": 1030009,
+      "sha256": "d7876a5234ed9591dd57e6de50f7bc1d89204cddda29ea1ec897135f0275cf12"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-3/flood-control-g.glb",
+      "bytes": 4580808,
+      "sha256": "510219757646fc2a58775e01191e226ba0277c535b4b91ef293ee2f6d70c5bd0"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-3/model-report.json",
+      "bytes": 1145,
+      "sha256": "8b8a93973b4371c82cd5a5c14732201d4fa5b6c43e419155e37af13d0b6da9cb"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-4/flood-control-collision.json",
+      "bytes": 612107,
+      "sha256": "5a45aa2c8f615f3c49e08c40eddcfbff2e138ace8b0025e693901e754f264574"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-4/flood-control-g-v5-1.blend",
+      "bytes": 1030114,
+      "sha256": "72600545c6025f92affd653ce86b193ec1bf1bb9521eed43dfd6fbeb92aff494"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-4/flood-control-g.glb",
+      "bytes": 4585248,
+      "sha256": "e6ebc39401edd17acc20bda18a28544bed1a4c04f401865e8214813bab8fc096"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-4/model-report.json",
+      "bytes": 1145,
+      "sha256": "828e6a2bb37659970c6e1663e29ae701a2507756df6254bf8d296c66426eab97"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-5/FINAL-LOCK.json",
+      "bytes": 1273,
+      "sha256": "39e59ce01a40f4009297b71891b24ad62f423ccdb6828d9c9cb0c151a180ca9a"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-5/flood-control-collision.json",
+      "bytes": 615717,
+      "sha256": "6739da3deeed0a3dadc877f655cdcb434e4666499e5f755f66752bf4da7f48ee"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-5/flood-control-g-v5-1.blend",
+      "bytes": 1031493,
+      "sha256": "b44948a0deee35f5ab0e6a4b7d438e03a1a43175b0027fe9405ef8f754c0ce4a"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-5/flood-control-g.glb",
+      "bytes": 4612272,
+      "sha256": "a146aed3cbc3dfa7c7da56f11878c109a279e3294a735654fafe604346770332"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/iteration-5/model-report.json",
+      "bytes": 1145,
+      "sha256": "bd8aaa8d024a75e00447701f1552d2dbc70b1d2675db281cc83b5928d3176946"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/model-report.json",
+      "bytes": 1145,
+      "sha256": "67879c3ecc3122e7b37d93dc6e58455bd6aa0cb6743125d4e3ec9bb71fd34d55"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/placement-audit.json",
+      "bytes": 373,
+      "sha256": "2c47fad9b4fa839b9cd603d4a4b6b53c809930a663be25aa5436bc28a06863a4"
+    },
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/protected-baseline.json",
+      "bytes": 36962,
+      "sha256": "f866b74474ffef1404f39142e96ee698388f0a763ec294dfc5431eb5ea66fd58"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/FILE-LIST.md",
+      "bytes": 22740,
+      "sha256": "f24331660398ab7ff55135487c79b465489b033419c49ce8b0f5af39346d7ad8"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/README.md",
+      "bytes": 3104,
+      "sha256": "00b2cbeb19ca07fb887af848ebfafb6a6eda2b3d4a23466bc2bd99a277ae5083"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/REBUILD.md",
+      "bytes": 3040,
+      "sha256": "db0e129c5923f4d846e774d91d5eca73b5cddced7bb5f0ed579b35009c5b9180"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/RECOVERY.md",
+      "bytes": 1309,
+      "sha256": "5d62932ec27a5861ec336b7c25af6ef4006f740ecefddf7f22735a360065aa13"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/REPORT.md",
+      "bytes": 7870,
+      "sha256": "c688a1988ab29219db7c7a89004cac1bf34478bb845d0cf8c12b6a1473e59d46"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/SELF-REVIEW-FINAL.md",
+      "bytes": 4490,
+      "sha256": "cc39aff148746902b52dd55a8170dcdf1f525f5e0d2f29adb54830db55386574"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/back.png",
+      "bytes": 965295,
+      "sha256": "a2ed701fbe643f1184fdd0bc3b312c42e6af63f2d5ac0847f1fc621a3ec12a66",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/front.png",
+      "bytes": 978054,
+      "sha256": "5ce394937215ff321b50b942e56e6d4055a169156be10c6591b01c2d6354ef32",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/hero.png",
+      "bytes": 1017264,
+      "sha256": "fe2249d8ae2b3f509d18782a7cc8c9499e1e041521b66c8e16261dd2b30f8004",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/left.png",
+      "bytes": 945154,
+      "sha256": "8eee63593d2aeba1c8ea2b240ea2678d33d4c4d1a579d56f9bab32ef30f99255",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/near-command.png",
+      "bytes": 1297518,
+      "sha256": "5f8c86fc4206b5de856f04fa9532c5601ce163f5e33aacd1d0c86d408cd3c86b",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/near-dam.png",
+      "bytes": 1307875,
+      "sha256": "c340eccc0101cb8b2bd2c599858a69c7b70c97d5fe20de555286b074fa2d4c7e",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/reference-hero.png",
+      "bytes": 1001111,
+      "sha256": "eadd72ae2f9c494ec19e8c65632bdca14406e1ace57cb5afe4c2eb664078979f",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/render-record.json",
+      "bytes": 4711,
+      "sha256": "955bca895b9522f3dc485b69056b29a381ff683f1bbd43419d9ace64ce5377d5"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/right.png",
+      "bytes": 927715,
+      "sha256": "3b9e398ed366274303c81d1e7a5185c60b12221d900c6e3366c9a4d063ec2732",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/blender/top.png",
+      "bytes": 996763,
+      "sha256": "2ebdd6b19a9c5481d910f0705939103d68c2ee1b73752953dd154f2707a6d7c2",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/game/capture-record.json",
+      "bytes": 31485,
+      "sha256": "9ea9b9c176f168ecf77deaac177d5f93fdab4213f968b4c32f074fd5ba2581b9"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/game/desktop-native.png",
+      "bytes": 349193,
+      "sha256": "f5113fca8ae92712497a7165ff1883e8206353cdce43d0844b07abe6094366e8",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/game/desktop-waterfront-player.png",
+      "bytes": 400403,
+      "sha256": "47004a9802d6b77a5029bc796152dfff1b2f9e5c99d6625b32eeb005fccffe0f",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/game/g-hero.png",
+      "bytes": 508471,
+      "sha256": "92c348e06e875b2dde1279c9f7c3d3e6109f5547c38e3eaf0157163443bf4748",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/game/g-top.png",
+      "bytes": 478522,
+      "sha256": "c2f9cf51cb5b210f8e9e06d496e52c2c68da6a53e78a2fff7ea825ebe7a3be5a",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/game/mobile-landscape.png",
+      "bytes": 290685,
+      "sha256": "e574bb9a7713f6b514254fac502c2d8f4a3e8faa3d8e14739abd81793b6c4542",
+      "image": {
+        "width": 932,
+        "height": 430,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/game/mobile-native.png",
+      "bytes": 177981,
+      "sha256": "ee49fa72ba1264d00ccbfaf696894a06c299cf75d0556eda81e1bb44f3193f78",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/before/game/mobile-waterfront-player.png",
+      "bytes": 178919,
+      "sha256": "36a22ddd66785e3fd5b94b7bf35c2156fe9f92a9a25f20b99a635001094328f9",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/back.png",
+      "bytes": 970133,
+      "sha256": "3b7d3e5503a45e51b1e100ed28759c33b70c00c30383950eea71f8c606d5fb19",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/downstream-detail.png",
+      "bytes": 1348674,
+      "sha256": "c56001b540345b3ef29df679b8983ebe584f9e6980045238a4d5bef3082c59bf",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/front.png",
+      "bytes": 985853,
+      "sha256": "62cd747ad3854d36cf6391ebdb972b96fe23bbf429a3a4f0f2fbf30bf41ab561",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/hero.png",
+      "bytes": 1026090,
+      "sha256": "68857933a211e49fa34433bf03a8ff73db72c82ffd44755c763eae7c8452846a",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/left.png",
+      "bytes": 948099,
+      "sha256": "223008084125dfd2f610c9b6085c004429e9a639ac42a8ce63ec67ddf90c76e8",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/near-command.png",
+      "bytes": 1311077,
+      "sha256": "67d3973eb003d8e5e1fd3cff52d749c883e6241a934ba4a4e73a01d63cd26af9",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/near-dam.png",
+      "bytes": 1313100,
+      "sha256": "6ede27521666db4068116a397bd3ede63ff2914cfec5ab5ccf2f880fc7ca42ea",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/reference-hero.png",
+      "bytes": 1009317,
+      "sha256": "90fe76b2b0035a7421c894437fd77c62b1582fb67a37c95e92c253edc5843781",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/render-record.json",
+      "bytes": 4374,
+      "sha256": "dd04e994b69b09b56df79f22ebf52922bbb4ef4cdb3ca594c70c4265dcc37c05"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/right.png",
+      "bytes": 931385,
+      "sha256": "e1e370943bdc7e7d59bacd6f1ba114828ae4a93e68e9892c8084a1423b4e67d4",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/s22-crossing.png",
+      "bytes": 1300410,
+      "sha256": "7134346c58be4466913c5fde59c1b1041e3e31c4cc10bb5c938413966f3f4e39",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/top.png",
+      "bytes": 1025031,
+      "sha256": "dd867ee9f19caf6223e7feff8d92d60dc3fb5c08310738d5519cbd0c7321dc20",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/blender/tower-detail.png",
+      "bytes": 1313783,
+      "sha256": "fbba09b323471e79c8ee6518cef881b5932e785bffabf9d0a3302b3339c051af",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/comparison-blender.png",
+      "bytes": 2805742,
+      "sha256": "9af3a70c061cc2c1e4eba3809bff61ae41ad0cecbaf5289842b854db6e9a5dd3",
+      "image": {
+        "width": 1400,
+        "height": 2586,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/comparison-camera.png",
+      "bytes": 334226,
+      "sha256": "0ef8622f746a9d1755c8322c88fefc52a7089692bfdf02a3e22773ec8583f1c8",
+      "image": {
+        "width": 1000,
+        "height": 834,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/comparison-game.png",
+      "bytes": 950945,
+      "sha256": "827d5836069efdf6f615b6389d5133fc5df50e78a5aaf1cba9321043185f9ea7",
+      "image": {
+        "width": 1400,
+        "height": 1152,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/comparison-mobile.png",
+      "bytes": 644042,
+      "sha256": "549d3f39a502ce8988f24514d5e23438b5a35c87f435833d66532da7b179a7b4",
+      "image": {
+        "width": 1000,
+        "height": 1578,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/capture-record.json",
+      "bytes": 35387,
+      "sha256": "6ca1da285fad50e4c97f1df567cf0a2179db71250b5ebae305dea6670b1cb786"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/command-detail.png",
+      "bytes": 444221,
+      "sha256": "a078cb6f2334a12785470f66a7a19b607bdfdd1a3765e3eee42bdbbe5f7d862c",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/command-porch-player.png",
+      "bytes": 393757,
+      "sha256": "2cc26bd668cfdba7128eba390f912bc40eb658c784d22b320df6b9210d72875d",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/desktop-command-player.png",
+      "bytes": 379832,
+      "sha256": "af3af786120da93a2a30f579d44b70bdee27b8e689ba96a1f6ca2b1ca3559125",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/desktop-native.png",
+      "bytes": 365458,
+      "sha256": "912277d07c8e3625f7d944074053db9b998a143482c1901ff75667175a6bc95e",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/desktop-waterfront-player.png",
+      "bytes": 433843,
+      "sha256": "afa8d2072486c42c347fa0fc16b87eef5e715603bbab24f6adc8ed45ca40d145",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/g-entrance.png",
+      "bytes": 523336,
+      "sha256": "6332ed74bf01f3350069e804911a73206f05afc3fb897aa880ad11768ac5cd5d",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/g-hero.png",
+      "bytes": 580794,
+      "sha256": "32a9f092ab5e124062f024bc985d623f4881733791a219b4e5ed2e48643e5b0a",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/g-reference-hero.png",
+      "bytes": 564131,
+      "sha256": "01f4bf2a988e0aa6042bbec8eb9ebb170b90383ce19def4f8a07ab7b4756e0ed",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/g-top.png",
+      "bytes": 493092,
+      "sha256": "b242533f371a1ff660d704340a9691646cb1289f1161afc2d471f80ec2a44118",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/mobile-command-player.png",
+      "bytes": 194805,
+      "sha256": "fb0e903a72551bdc26403ebdfb69e543852319263e58eb154c4eda195b14cbf6",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/mobile-landscape.png",
+      "bytes": 307139,
+      "sha256": "2b98823b5eb14ce01d218974d1e836b339bf7ce2fdf4ebe9e8d0f18c050d5ac1",
+      "image": {
+        "width": 932,
+        "height": 430,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/mobile-native.png",
+      "bytes": 194182,
+      "sha256": "9b12a224997b74afa542c9a49470572f2f29e54cca59741a261f324bb22c4851",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/mobile-panorama.png",
+      "bytes": 105346,
+      "sha256": "00b0f0e67edcb50cd3184189f16b1d42c782cfc878851e7fa748dda491c2522f",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/mobile-waterfront-player.png",
+      "bytes": 200288,
+      "sha256": "6e9eae2b9d6ef3be81a6374f25a2e831efa0c47700d242056fa4a352369a7986",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/npc-player.png",
+      "bytes": 428723,
+      "sha256": "5eccf1ec37233944a241d305c0096b757b20455f7cc8f9df67fb049ddb0cd159",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/s21-player.png",
+      "bytes": 406463,
+      "sha256": "4bd8f67315ca82776526f6b93ab18e6b208d851c3e52b9ea872a7fc2f2e1be17",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/s22-player.png",
+      "bytes": 487873,
+      "sha256": "a9316b529a016f331d2ef56f1dc494490ef1e6543c7ad7633247e6243fbcf4f9",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/sluice-detail.png",
+      "bytes": 431749,
+      "sha256": "4f6076d298bb0ca236131872ddf7daf636d2db3dd099af66f101c2b71eca82ee",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/game/yuan-panorama.png",
+      "bytes": 203361,
+      "sha256": "88c75a416c32b441eb864fed77128d36744df385d5844568c9f6e823f4704a89",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/hydraulic-geometry-comparison.json",
+      "bytes": 4173,
+      "sha256": "f4f526c69f6e0d5cb55ded3654dd8b08ecdf4dfc18a1c7e603e9a0c083954098"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-1/SELF-REVIEW.md",
+      "bytes": 1516,
+      "sha256": "5668ff8e5cf3956429bcd2bf428b905274a73d3d36c7ed6eb5f9ae850e8567df"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-1/blender/hero.png",
+      "bytes": 1017912,
+      "sha256": "3fe6ab8a8511ca350301cde256498e009eb16a198209d55f9c7cf34c5b076ed5",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-1/blender/near-command.png",
+      "bytes": 1290970,
+      "sha256": "6aaad06112386bcef35e9cb3f1eedc8d7a3b106331ad835f52ea0748eec28724",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-1/blender/near-dam.png",
+      "bytes": 1301133,
+      "sha256": "180959bf6782865714b7fcaf5012c9a93251d6c0d9fad305f505d839adc1af65",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-1/blender/render-record.json",
+      "bytes": 1679,
+      "sha256": "76ab0377542121b39649277590b0ed7ee3382afbb5fa0ec621e5944e12743218"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-1/blender/top.png",
+      "bytes": 1017161,
+      "sha256": "417134bbae08ec8f6f574b0bee59c9bb644366216ac70b3321cdd10a16a51177",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-2/SELF-REVIEW.md",
+      "bytes": 1298,
+      "sha256": "4349cdb26a3c85cae0867b57c6ac66a79670b3d693e35301b257e5030e04bd01"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-2/blender/hero.png",
+      "bytes": 1024283,
+      "sha256": "4fb3b0bf13940aa2c37ecc73de0d35c7967dfc4eb6d4b61e3a841a2b20d6c258",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-2/blender/near-command.png",
+      "bytes": 1310673,
+      "sha256": "26ec89973c22910b56203de2cad8f216bb2c5f0febcb337d7802b4c312b1cd84",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-2/blender/near-dam.png",
+      "bytes": 1308268,
+      "sha256": "17c739041d6a8f4349fcd52a1f6afe8db663dff3a8faee85a94f368102c4acca",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-2/blender/render-record.json",
+      "bytes": 1680,
+      "sha256": "853c41f32df30028aeb4b4de09a3ed56123ee21aafc40d0af05ac2e610ee6c04"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-2/blender/top.png",
+      "bytes": 1025127,
+      "sha256": "c79ce4ded136b682acdaa0a839b368c2a74ae205af099e9dd0b625ef798c9811",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/SELF-REVIEW.md",
+      "bytes": 655,
+      "sha256": "6bfb0feeea05533b58e1b4e2869d7f557d7916a922cca0837c5e02a5cfb84e63"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/back.png",
+      "bytes": 969922,
+      "sha256": "47e4e54f6114856f1ee84327b310ec84e618ffe02fdde663b6304f9da10584db",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/downstream-detail.png",
+      "bytes": 1343370,
+      "sha256": "d4cdd67d142f1458909f1ec43f9fb595a122f2013a511ec0bbd79e3b2d2407fb",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/front.png",
+      "bytes": 985684,
+      "sha256": "95ae2d2d135f8ece612689d9a0b0539b99f3228de27dd22d58da812ebf40bffb",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/hero.png",
+      "bytes": 1024691,
+      "sha256": "5313eee7859c6329d3e331f8d76897b84214420da2c4882a03a90730bd8d0e1b",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/left.png",
+      "bytes": 947789,
+      "sha256": "2800e212ca3a711cebaa7851601e98e940dc7c7b49fce3f50969032a5c01b285",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/near-command.png",
+      "bytes": 1310722,
+      "sha256": "91634c8699715978813dd748ee57471b5690c940afa59af47c3e1646beca236d",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/near-dam.png",
+      "bytes": 1308285,
+      "sha256": "85cb5bc8248a851821890d85789c04dfbbac5435f704e26200f118b5b3bcbc89",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/reference-hero.png",
+      "bytes": 1009016,
+      "sha256": "65e2b3654e141f269b2b7a94235d1cde261d22c6262670bdef3ec46e6ad288d8",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/render-record.json",
+      "bytes": 4374,
+      "sha256": "01b6841f8284baf539dd9b5e8c88dadf33495976200c337eb0cbe06950580f1a"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/right.png",
+      "bytes": 931054,
+      "sha256": "5645eb13632a30bedbfbcf88877b0451977f0df928645a40cab5661b39de9590",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/s22-crossing.png",
+      "bytes": 1296917,
+      "sha256": "bb53ffb270edc4b7e2a0baea1ac630224cced0ddace4c0b87d975d692d6a7ca0",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/top.png",
+      "bytes": 1024984,
+      "sha256": "baa71e8c234b605b4244931281f659f8b6fdc40790acb789c11c9b0eb191392d",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/blender/tower-detail.png",
+      "bytes": 1313723,
+      "sha256": "6a13753783c27acdc5c519fe09e6faacd449b4196f595f21a73e574c6920b2c2",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/capture-record.json",
+      "bytes": 35445,
+      "sha256": "277cb92496c9eb7c6fd72d1187d027a644dc86413914e490c0d067f4f61596d9"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/command-detail.png",
+      "bytes": 459666,
+      "sha256": "cae1b271aa915a6c44ae785f3be1b72bd7c4b4074978a516b8b4024a13dc0221",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/command-porch-player.png",
+      "bytes": 391214,
+      "sha256": "6199f54f7709cb26687b4d27a87ff4e49fba045081084a018b1bd522150711a7",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/desktop-command-player.png",
+      "bytes": 371761,
+      "sha256": "79ae627d5c95a1db61981589ebf8bbeade4de9855b657801cffac56c4b723a12",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/desktop-native.png",
+      "bytes": 380291,
+      "sha256": "49f7b8cd8a84f9e688aa1750931dd47757a58d89155d6bb6b0b887f18b21df76",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/desktop-waterfront-player.png",
+      "bytes": 437639,
+      "sha256": "c920fc64197ca019b00d77dd19776360d6750d5e0122bdc67755ef30d37ff0a5",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/g-entrance.png",
+      "bytes": 512784,
+      "sha256": "73d292779ce84e8c85cd0b51b663ef08622e6cfc047d290d9abbb10509a67471",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/g-hero.png",
+      "bytes": 522149,
+      "sha256": "8cc1f18cf6cee7f02080cedb11ee1c48b42e5d762c48cf727fd2db973fff51e9",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/g-reference-hero.png",
+      "bytes": 559169,
+      "sha256": "cd825956e8b68038329dff37b905dde7b40417f781cfbe77c0d54581c688a92b",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/g-top.png",
+      "bytes": 496169,
+      "sha256": "f9bf4e37572efea6e1cbb9f7f32f766d14570147a76d5f7ea1fe8a474a444e28",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/mobile-command-player.png",
+      "bytes": 185718,
+      "sha256": "982efe071437373293ec267a4ec79d29eac23d688e85cc577adbc9b9845a746f",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/mobile-landscape.png",
+      "bytes": 308245,
+      "sha256": "249f7cb638be9f1c5f778a992c399aac5aa3e80afecd2985fefd6c592a04135f",
+      "image": {
+        "width": 932,
+        "height": 430,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/mobile-native.png",
+      "bytes": 194765,
+      "sha256": "58c567aefbecfb97d2e09d46c1122df47a88ef8455b288360e67770a425819b4",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/mobile-panorama.png",
+      "bytes": 105373,
+      "sha256": "20ac7ca44c2e11e7b7815a2f8799dad65c6f841c8cbecc0456ab71206fee7443",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/mobile-waterfront-player.png",
+      "bytes": 200101,
+      "sha256": "430f4f14796ef44d73df4ef7955db15b03d15c91c882dd864cbdc61bee62e6b2",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/npc-player.png",
+      "bytes": 430113,
+      "sha256": "7647db9c05693ac35d5924b89119e9dd6a4ce170ed74a456fc55ff57e368b4c5",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/s21-player.png",
+      "bytes": 409522,
+      "sha256": "21de9fb8ca4662edca6a03a5ab262de804e612900717753edb6c2774d1453191",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/s22-player.png",
+      "bytes": 495062,
+      "sha256": "a9d8425bb0c057b41e096f2c99862450cf71800ffbd070837edf6a2895f32dc1",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/sluice-detail.png",
+      "bytes": 432578,
+      "sha256": "68f925a194865014047e1780842877b6b48de8a2c7e344b0aa5f4b0104e8cf39",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-3/game/yuan-panorama.png",
+      "bytes": 203462,
+      "sha256": "851a5b25f7dfe5e5906b992cd8a572e584fc1d92bdc15f966051f50816182eb4",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/SELF-REVIEW.md",
+      "bytes": 613,
+      "sha256": "465747e2fd0503a0dccc03ab75b62a65cce1d950854317601f461587eb1a9af8"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/back.png",
+      "bytes": 969881,
+      "sha256": "8df13fa9e80e55e0b44e9776703671e01a6ef0071954cb9028ce9876d28ccc33",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/downstream-detail.png",
+      "bytes": 1343242,
+      "sha256": "b30fe1035faddca3579a3ee4ce113cd3b52b3b761b0adb21e670a13ac9c90118",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/front.png",
+      "bytes": 985720,
+      "sha256": "7fccc1c72ca89f76820ac97e819476f5e215f57e1b69c81d1806898aca8df2d2",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/hero.png",
+      "bytes": 1024932,
+      "sha256": "00eadfccddeba852effec8790d32e12081bb5ef7cff90c1bd42210f9ea40bd2a",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/left.png",
+      "bytes": 947839,
+      "sha256": "bff9b73991ba97a9e4fbbbc44843da4c12222fa3cf2bc05d4ce23262d0ab6c3e",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/near-command.png",
+      "bytes": 1310715,
+      "sha256": "fbc6c070c15030dfa98a2d2ea12ee4b30207c18a9c95f3a26c2a4b4649cf767b",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/near-dam.png",
+      "bytes": 1308505,
+      "sha256": "13b7faf22e43c76ba8ae8705f287d166d1f037711bff98395c10acb00cc1d233",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/reference-hero.png",
+      "bytes": 1009092,
+      "sha256": "8d30d00687c1555aad8ecbb1361daa3ca9add36c7963b2ab9dff216aa699cd26",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/render-record.json",
+      "bytes": 4374,
+      "sha256": "e359347e9fec8360810e53f7485fa34ded485b357dd1fd57032555d5849ee473"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/right.png",
+      "bytes": 931179,
+      "sha256": "57daad5dd7068d46b8eb1ad4b49727d46e70ff90650119322fd80630db1c70b8",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/s22-crossing.png",
+      "bytes": 1296946,
+      "sha256": "988148c81a77ca60ee92413f4d2a8429b23c2f99390bed64fb3d1131f2a2f928",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/top.png",
+      "bytes": 1024771,
+      "sha256": "9a62a6a1b0b8f25428b6230496a6ce87a7a1e9761097eed5a85a134b5ef71f3d",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/blender/tower-detail.png",
+      "bytes": 1313711,
+      "sha256": "5fce50d6109c9357924f2347b936a1fb349a74890de9e48d054b96f44e7ef235",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-4/wet-probe-grid-before.json",
+      "bytes": 1883,
+      "sha256": "ec6e9edd8c7e9ea25430ca9f58f7a4847286315d13c5d2cea296df3ce1a10c9e"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/SELF-REVIEW.md",
+      "bytes": 572,
+      "sha256": "6c142ded94dc1b532bfcb554ff254da0d3d57785431941359a8d6374300996e5"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/back.png",
+      "bytes": 970142,
+      "sha256": "b3c5eb4e2748db50b31ad270740e375d421cf600959388ddbf761d7099468ac0",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/downstream-detail.png",
+      "bytes": 1348674,
+      "sha256": "587fcadcf5e68b71a2dcc95a3f306407fea737a989487c3b5f5e86351cfc3c3b",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/front.png",
+      "bytes": 985784,
+      "sha256": "77ee2b127e406733fcfabe470ca30084a97c8473a1d02222222560afed13f6e1",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/hero.png",
+      "bytes": 1026324,
+      "sha256": "685e280aaff61f668cc3e928e9dc0b2ac551320bedaafc85edba686c2395c494",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/left.png",
+      "bytes": 948173,
+      "sha256": "62295ad0e1fe04cfd73c00045a5497e5c49f6499db64ac20c88ec2459e28552b",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/near-command.png",
+      "bytes": 1311061,
+      "sha256": "95373e4efdc5afaed40e0c0bee025fdb2b5beb8a75ebd911968efc163e3cb0ca",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/near-dam.png",
+      "bytes": 1312684,
+      "sha256": "8b982ffd75b07729a2c23ccc634c26386a8af7c9e63fa2728454bdae0cf05c07",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/reference-hero.png",
+      "bytes": 1009253,
+      "sha256": "19faf598a59cc4efa0b058f18a8c0b93b02c82bab3073a4574be0a6ab071eb64",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/render-record.json",
+      "bytes": 4372,
+      "sha256": "33b79a6386822daa382abd4ff5f0c96b52bd897e08a5091d6f6caa6cbdf416ff"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/right.png",
+      "bytes": 931350,
+      "sha256": "f255b696ce765bfcb982191d12e0b9629f24b8a9f353dc972f637e18775d8ef3",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/s22-crossing.png",
+      "bytes": 1300342,
+      "sha256": "358c97298e10df9933776f7e2c27b85cd1900b34789738e8d592d876e1e026d9",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/top.png",
+      "bytes": 1025167,
+      "sha256": "773b969b91232ffd8aef5c84ac0bc85d1d522c958dcacd31d6c5a2e41b222472",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/blender/tower-detail.png",
+      "bytes": 1313632,
+      "sha256": "52aebf38281c1c6f1ec5700437c97594a5dae0038e8e62f3b8416218541aab46",
+      "image": {
+        "width": 1000,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/capture-record.json",
+      "bytes": 35309,
+      "sha256": "c8a98a2a113bb4d9e5f4f1709995066ce5f40d2ffb3f55c740a29facef8551d8"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/command-detail.png",
+      "bytes": 434458,
+      "sha256": "3a0f31bb58df81fe0f7c64ed9043b2a9947555d9ffee2fbeea75aab5cd0a28e8",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/command-porch-player.png",
+      "bytes": 391744,
+      "sha256": "4e1ae6357c0da528ba073134f89bd54c621687ee0a11a91fef6c4cfb02860ca0",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/desktop-command-player.png",
+      "bytes": 371962,
+      "sha256": "a9815ab97a07db409928ac83dbcbf66174d379afb08f07bc2a84a9c4d072be6c",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/desktop-native.png",
+      "bytes": 364510,
+      "sha256": "cd45bcfe9617d3800c976d251118fef047a31b188479a5d38e9931104ff7e284",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/desktop-waterfront-player.png",
+      "bytes": 434304,
+      "sha256": "74a45b5e9864787de088320fa767801bfb76d72090eb2ce19ef1c77cf4f95722",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/g-entrance.png",
+      "bytes": 548255,
+      "sha256": "cf079e59d3736bb452e4e222954692ce788a7d6f75ca8a8c382fc5b97789903e",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/g-hero.png",
+      "bytes": 549151,
+      "sha256": "ea16f86de7532f930214f50defd55d26c46ab28cfc0137a52e035f55b260a1c2",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/g-reference-hero.png",
+      "bytes": 595849,
+      "sha256": "5457574b9388198bc92067c1a9913f1cbac21ad3f17e57b860c6a412aa8a6b5f",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/g-top.png",
+      "bytes": 509726,
+      "sha256": "899217bcb1f04b96074bed4c6b78b7d28f11896ed5555a71f097d52618c9929c",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/mobile-command-player.png",
+      "bytes": 185791,
+      "sha256": "19e8905d9fc4031c23ba5a848de9ce2d3776016f847919fde83dca44c0fb4961",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/mobile-landscape.png",
+      "bytes": 308732,
+      "sha256": "700de6daa616585051fd776fec8d30a38cb0ee25a186cd1a7b29358361321d12",
+      "image": {
+        "width": 932,
+        "height": 430,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/mobile-native.png",
+      "bytes": 193647,
+      "sha256": "528d7b882337115836645233e8e9667232f9804fd2760e858420e7edef62f159",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/mobile-panorama.png",
+      "bytes": 105334,
+      "sha256": "8e6e8608a8c2ee7da2d4f09eac1ebb7186c949d40833190bcf41e64dc767ee0c",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/mobile-waterfront-player.png",
+      "bytes": 199932,
+      "sha256": "e5552c94ba9d8a6ed09d0c82f1c01e2fc5828630c73b329a498d7c5e21b2b147",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/npc-player.png",
+      "bytes": 437874,
+      "sha256": "1d84e6a6c90faf066f755ace1a972016ca0dfdd149816cda1f31409028c997f4",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/s21-player.png",
+      "bytes": 413490,
+      "sha256": "78bd8e5cd73f1d3fecd0b8baf38b31d60dc11f93c86849324ec603c5168261f3",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/s22-player.png",
+      "bytes": 504633,
+      "sha256": "d985eabb1c793eb6beda2e9ddc97aef51e747d6088190f8c6fe5a54461f0bb5f",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/sluice-detail.png",
+      "bytes": 428998,
+      "sha256": "421fe40d89b8571a846b493c6694a6960c1dbe688b3e5db5a89613d6d73dc5aa",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-5/game/yuan-panorama.png",
+      "bytes": 203412,
+      "sha256": "d4617f35840ec8d2fb0fcd042f09907a07086ab4fad26874389d16cb914c0611",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/SELF-REVIEW.md",
+      "bytes": 677,
+      "sha256": "23146ebbdb77dbb2c47503afd80c545a4079be3b83682bf08311d925ba927e68"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/capture-record.json",
+      "bytes": 35410,
+      "sha256": "9cac090e348cda56e3674737b47f2f26dca57eaa9c83cdda766d8c4c35e05006"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/command-detail.png",
+      "bytes": 459512,
+      "sha256": "06043eae91345ff046f04f60d58d50102b2bb08dd14328a8cb382d34131d4894",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/command-porch-player.png",
+      "bytes": 393670,
+      "sha256": "8f6eb4043379c77bb7737fa2e9825828a3888775d7a5ccbf3259e89d4ff13315",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/desktop-command-player.png",
+      "bytes": 371183,
+      "sha256": "637fa7b0b9f027faa06113739827b9b432f76e1256ec92902d42932ff9bee6d0",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/desktop-native.png",
+      "bytes": 365273,
+      "sha256": "b1c663997820e6e0379000ab90b0a233081f487b5076438cae45e98409d9b90e",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/desktop-waterfront-player.png",
+      "bytes": 433593,
+      "sha256": "df1a3c3c3198cae5c18fe7e514f8e92c56b01e57c7a5973aa3177fe1834122b5",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/g-entrance.png",
+      "bytes": 525786,
+      "sha256": "42fe4721399c2a45f2e731be3747cda5001af93460da1e917324729c264248c8",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/g-hero.png",
+      "bytes": 598087,
+      "sha256": "e5c0f178b59d5f1ba967b17983ae2f202afddfd53db8ce29c658bd4e23c4516d",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/g-reference-hero.png",
+      "bytes": 586792,
+      "sha256": "6ba3109055086027fac0bcd4aee4b5e5f8003f1cf8ac3ff0cc6f9e924c53345c",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/g-top.png",
+      "bytes": 501343,
+      "sha256": "ad7e6e19fcb71a68eabbec547364b0d12652e6c1c80782ab5ae4800cec1af420",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/mobile-command-player.png",
+      "bytes": 185458,
+      "sha256": "6e8c906d54b470fbe66706210095e397124ede6cd4edd92e2d1c0c08ef0c148b",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/mobile-landscape.png",
+      "bytes": 307718,
+      "sha256": "dbb154f379701bcad9e40f4dc5d89de3aebf99eb82a8e054c62fc3350112607e",
+      "image": {
+        "width": 932,
+        "height": 430,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/mobile-native.png",
+      "bytes": 194482,
+      "sha256": "8321da341000b25714893bd9b65b6ba5e1f4ab94afcab016e6ed8343892d6f15",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/mobile-panorama.png",
+      "bytes": 105309,
+      "sha256": "5d1a516ce1bf9067125579b35c6ba3e7a10266ed93eade084d83d806f83ae0e0",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/mobile-waterfront-player.png",
+      "bytes": 200269,
+      "sha256": "fdbacb70860bb03bb626f1ac87d9e0410eb086f277181b5f2699d86ab8c9c161",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/npc-player.png",
+      "bytes": 431209,
+      "sha256": "83737cdfc0ca3ac75875e712e9442becf48e192d4b539c0caca9915e2b87fe7f",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/s21-player.png",
+      "bytes": 406697,
+      "sha256": "d0bbb0ecb16ba6ccd0740cf6da47ac6abea7cb8f4e5002e7c6f0ec2498a87e12",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/s22-player.png",
+      "bytes": 484613,
+      "sha256": "38ad628f535bea88dfa72df22bad1c668b0bc3791482ae692b5b1bcb9c2b1215",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/sluice-detail.png",
+      "bytes": 435348,
+      "sha256": "8c8c7dbb44a73718d2d2958bb10296dab3fbfbf85929d7b6a3ed485dc8f3c668",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/game/yuan-panorama.png",
+      "bytes": 203350,
+      "sha256": "73cced647e948b7058690260262225a140123e3e4d23177e8b26337114c4d7bd",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/iteration-6/performance-comparison.json",
+      "bytes": 14453,
+      "sha256": "57f38f0cf9744377be86c440c58e4eb12770c6dd9517d593ea9291f5d3c381f9"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/performance-comparison.json",
+      "bytes": 14584,
+      "sha256": "4cc4b613df66bb42ecefac8659146e685780c421e144f7e28050a7919e8f9c5d"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/browser-routes-desktop.json",
+      "bytes": 3764,
+      "sha256": "c78210658bce4a2882dd4e6fa55d7c621d9f596eb4556227b3d8c37c1b11f429"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/browser-routes-mobile.json",
+      "bytes": 3780,
+      "sha256": "c0da3f347d60fc05815f648b19cadb6fadd2fc2e02d44caa24d8f480061564c0"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/desktop-controller.json",
+      "bytes": 16990,
+      "sha256": "495c4c62b79433c935aac8336cd627a0486ac71c69eae4b8c61f7a6c2703d3c7"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/interactions-desktop.json",
+      "bytes": 2792,
+      "sha256": "f57ed89afd1abc3a1a7c9f2f9461e19bad7fdecab4ace3a2ab5110e8da8d4981"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/interactions-mobile.json",
+      "bytes": 2793,
+      "sha256": "3800b7ff9fddd50be012bd924ac81feeec87fe8db28223f4bdb495fd1da28d49"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/mobile-controller.json",
+      "bytes": 17021,
+      "sha256": "c9c0e5db93731569466b2f82c8624b21e646c9ea3c9d2e4565ce655ce2474a4e"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/spaces-desktop.json",
+      "bytes": 10916,
+      "sha256": "1e336b402fdffffd2aebd09aa47c31d24d1d8cf8e306ca84227f4892370ac023"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/spaces-mobile.json",
+      "bytes": 10916,
+      "sha256": "a5dde63a51b2f67c36315c22da631226b9829bc4127d027af70c9e1c6392b04c"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/water-interactions-desktop.json",
+      "bytes": 6812,
+      "sha256": "741921cd3066a20f9611cfa1f4c45af43ef8f06620ed4c63ae0581bd91bc58b4"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression/water-interactions-mobile.json",
+      "bytes": 6814,
+      "sha256": "e2ff9647976c9abe3a6a67e9804c605f6819a844c27a6c34fd67838c653c23fa"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/browser-routes-desktop.json",
+      "bytes": 3766,
+      "sha256": "90041fd5a869c128275c1c68fc53ffd4f74585f9c82f865534c854e5f86feac4"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/browser-routes-mobile.json",
+      "bytes": 3763,
+      "sha256": "24728d3695c06c35d0ebd285d3b24e246497d09d8813fbd99cca136efca2acf1"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/landscape-zone-check-desktop.json",
+      "bytes": 2985,
+      "sha256": "b4ae10edf1c048d09fc8e24942011192539d9a4f9eba5b1a9645e31bd079a812"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/landscape-zone-check-mobile.json",
+      "bytes": 2986,
+      "sha256": "b2393404cfd541df202ce56022d17c4779e3719c7b533a889c689a2bcd6dc703"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/transport-spaces-desktop.json",
+      "bytes": 10916,
+      "sha256": "3327894a2a6fc98f7b416dfe57aeee759a90b376b61b06570f5019dacbfad51d"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/transport-spaces-mobile.json",
+      "bytes": 10916,
+      "sha256": "78c8a52d856604dc3f4107907b78ddcd0aa84dea55f302fb0ba370c3e71a54df"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/water-interactions-desktop.json",
+      "bytes": 6812,
+      "sha256": "741921cd3066a20f9611cfa1f4c45af43ef8f06620ed4c63ae0581bd91bc58b4"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/water-interactions-mobile.json",
+      "bytes": 6814,
+      "sha256": "e2ff9647976c9abe3a6a67e9804c605f6819a844c27a6c34fd67838c653c23fa"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/wet-recovery-desktop.json",
+      "bytes": 3294,
+      "sha256": "f352b8b9da5618390338ec5b0d7b45ba4231845fe912019601098189051bf7e3"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-camera/wet-recovery-mobile.json",
+      "bytes": 3295,
+      "sha256": "6e9d465288f51ce177f74b9dc60be8c2cd2ff8337db333acce7d82a2b7882e8d"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-delivery/browser-routes-desktop.json",
+      "bytes": 3751,
+      "sha256": "805cd951f84b1933422eec0b9f956b05751246027f575502d19d7e0c6154ba93"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-delivery/browser-routes-mobile.json",
+      "bytes": 3750,
+      "sha256": "13f33a6bcccc788fce9ad0817f6d2e5f70fabc5da36478e17ec506279e0fba5e"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-delivery/spaces-desktop.json",
+      "bytes": 10916,
+      "sha256": "d1f3bd67cf5336db21f610014c328ef09180cc9406cfd448a3b26db389d66f90"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-delivery/spaces-mobile.json",
+      "bytes": 10916,
+      "sha256": "a5dde63a51b2f67c36315c22da631226b9829bc4127d027af70c9e1c6392b04c"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-delivery/water-interactions-desktop.json",
+      "bytes": 6812,
+      "sha256": "741921cd3066a20f9611cfa1f4c45af43ef8f06620ed4c63ae0581bd91bc58b4"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-delivery/water-interactions-mobile.json",
+      "bytes": 6814,
+      "sha256": "e2ff9647976c9abe3a6a67e9804c605f6819a844c27a6c34fd67838c653c23fa"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-delivery/wet-recovery-desktop.json",
+      "bytes": 3004,
+      "sha256": "da3b24f6439b6e6a9ac2755586e861279fcccc34f3569c4d4310c26d71c2859d"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-delivery/wet-recovery-mobile.json",
+      "bytes": 3004,
+      "sha256": "da3b24f6439b6e6a9ac2755586e861279fcccc34f3569c4d4310c26d71c2859d"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/broad64.json",
+      "bytes": 94281,
+      "sha256": "70340f86c3fe1588fec4d647bc29bcc9547c3a8f83c50598066ae94728003b7b"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/build-lint-unit.log",
+      "bytes": 9636,
+      "sha256": "2b4d6f8de0a9d4fa7e433b7fca86d701e6be3128cf186058fe8c107565b4ab7f"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/cancelled-driver.json",
+      "bytes": 9967,
+      "sha256": "4cd6400b9409b1f4c5e734db38135c9db045e42b6bfd1d409587eda71467dda4"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/final-camera-app2.json",
+      "bytes": 4919,
+      "sha256": "448bcd35c5cef1969080c70c5e94388f0723d5f8bdc6788b14618570c594f0b5"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/final-camera10.json",
+      "bytes": 13938,
+      "sha256": "43c648e02ef24dbce1fa7b3e7c645d4bf212936f5cd9bb055588ca0082411d1b"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/hydraulic-app2.json",
+      "bytes": 4945,
+      "sha256": "15bb878e9a35ff574af47abe087a1241e44a52e7e034ce035db1f3a73101d3ab"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/hydraulic10.json",
+      "bytes": 13970,
+      "sha256": "caafe2e303759703eb13424d30256a943a4736c66d00a9d044e5e185db169e9d"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/routes.log",
+      "bytes": 85,
+      "sha256": "8859eafe9efeefeae547029a32fd354e8ab3f1cc37f2cd41c6e64a4bf9a751d0"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/supported-app2.json",
+      "bytes": 4952,
+      "sha256": "80550ce1d8f1ba7b4f3008854ba31b34a903a27c1cb91c4ed9363bd308254022"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-evidence/supported10.json",
+      "bytes": 13964,
+      "sha256": "f580188a67339f7ffe42f37447dee3b20f8ffb4a53030727eed04f8b30c054bc"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-locked/browser-routes-desktop.json",
+      "bytes": 3779,
+      "sha256": "b7804aed27f3112fac2053c7dcb250c12c0997c73ddaa3cb3beb9b1451f08982"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-locked/browser-routes-mobile.json",
+      "bytes": 3740,
+      "sha256": "a3ef8c3c4984d93438c5daaff0221cb05dbc78727a63c43cbc4d3fb47244719a"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-locked/spaces-desktop.json",
+      "bytes": 10916,
+      "sha256": "d1f3bd67cf5336db21f610014c328ef09180cc9406cfd448a3b26db389d66f90"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-locked/spaces-mobile.json",
+      "bytes": 10916,
+      "sha256": "d87613c306a71676a0b5f4cdbddc2cf69bb17b793a2961815d3f2911d52ed7d1"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-locked/water-interactions-desktop.json",
+      "bytes": 6812,
+      "sha256": "741921cd3066a20f9611cfa1f4c45af43ef8f06620ed4c63ae0581bd91bc58b4"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-locked/water-interactions-mobile.json",
+      "bytes": 6814,
+      "sha256": "e2ff9647976c9abe3a6a67e9804c605f6819a844c27a6c34fd67838c653c23fa"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-locked/wet-recovery-desktop.json",
+      "bytes": 3294,
+      "sha256": "f352b8b9da5618390338ec5b0d7b45ba4231845fe912019601098189051bf7e3"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/regression-locked/wet-recovery-mobile.json",
+      "bytes": 3004,
+      "sha256": "da3b24f6439b6e6a9ac2755586e861279fcccc34f3569c4d4310c26d71c2859d"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/routes-desktop.json",
+      "bytes": 22057,
+      "sha256": "aef12640d036f061061b80808e7023bf140e64be1e6a7163ba0fce0ef96336a3"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/routes-mobile.json",
+      "bytes": 22011,
+      "sha256": "50d5a506b19cde9821fbebfdd532672c124124c0664b31eba2729557b9989bf9"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/six-views.png",
+      "bytes": 1595200,
+      "sha256": "063e25a0b459698238dc0154ee43e50bd00950b95345c6ba1e973acfdc8c324f",
+      "image": {
+        "width": 1400,
+        "height": 1962,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/spatial-audit-final.json",
+      "bytes": 7828,
+      "sha256": "293078f8084ebbba8b0b102b80d3aa3fd16099fe24800533ad9a296303d44fe0"
+    },
+    {
+      "path": "docs/previews/flood-control-island-g-v5-1/test-summary.json",
+      "bytes": 24853,
+      "sha256": "79b3595d8cbad969b6f062e252249696fc1faa5acb53ec0969a486fb826fb3db"
+    },
+    {
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "bytes": 4626100,
+      "sha256": "0346a6aff20bf016d7fc71fd808f8bae483055906557f487667585ddea4b6075"
+    },
+    {
+      "path": "scripts/blender/build_flood_v51.py",
+      "bytes": 5969,
+      "sha256": "88205f7b6008d0543bb97855ce47c23c398780ab811dd071c165c4569de2f780"
+    },
+    {
+      "path": "scripts/blender/flood_export.py",
+      "bytes": 4029,
+      "sha256": "8d99631377e8cefda58d6037e212bc65bf55dcc282421047447a24198964afd5"
+    },
+    {
+      "path": "scripts/blender/render_saved_flood_v51.py",
+      "bytes": 1571,
+      "sha256": "e1e66978e61dc65ad86714eac5010ded575202e0351146e0707b6f04fd79b871"
+    },
+    {
+      "path": "scripts/flood/audit_final_v5.py",
+      "bytes": 7199,
+      "sha256": "2691d5be676e1997d0ba9867c266e849e60dd63fcd723a024794f2bb8364215f"
+    },
+    {
+      "path": "scripts/flood/audit_v51.py",
+      "bytes": 3618,
+      "sha256": "e810fc5931d989d4a490e2341bb3158673646576feba38cd43b509ab65236748"
+    },
+    {
+      "path": "scripts/flood/compose_final_v51.py",
+      "bytes": 3098,
+      "sha256": "bf333557058804c200c2039b0012188aba7a7375d3c3da99c3f8745f0a5ca351"
+    },
+    {
+      "path": "scripts/flood/prepare_v5.py",
+      "bytes": 21020,
+      "sha256": "ad66f1886a8ab0f8acfe43c31ffe7fc2845f46e7bda466e690a42231bd0697e7"
+    },
+    {
+      "path": "scripts/flood/prepare_v51.py",
+      "bytes": 17857,
+      "sha256": "1380c082826e8d9a351a5a555e2a295be0af3b2111fc9b7326c5282fb90d14d9"
+    },
+    {
+      "path": "scripts/qa/audit-flood-v51.mjs",
+      "bytes": 2567,
+      "sha256": "00c46a632c9e34c0543be860acb38d7a851ee4190cd023b7fa63ed8bb59b441e"
+    },
+    {
+      "path": "scripts/qa/capture-flood-v51.mjs",
+      "bytes": 5974,
+      "sha256": "ea437a861964ebcc8952a78eee0c4122731f1e1939e8aa1670f3086a80b21a9f"
+    },
+    {
+      "path": "scripts/qa/check-flood-v5.mjs",
+      "bytes": 4594,
+      "sha256": "393b41aa96c120837dad2dc9f2865d4f0c8896e3ea1f144dbdb8a9a5f2ed02fc"
+    },
+    {
+      "path": "scripts/qa/manifest-flood-v51.py",
+      "bytes": 3270,
+      "sha256": "12a4d26a4c6c0747c106305ecc53a68e16f2a95aedfabf9a81346addd750339a"
+    },
+    {
+      "path": "scripts/qa/measure-flood-v51.mjs",
+      "bytes": 4413,
+      "sha256": "093741cb373cec47bc2681e22935c3e55558f34d95f6193be76642ef218afe14"
+    },
+    {
+      "path": "scripts/qa/report-flood-v51.py",
+      "bytes": 9275,
+      "sha256": "f5520116b96a9b3eb4f9444c853eb848ccf5969ae004261366036d05af617a8d"
+    },
+    {
+      "path": "scripts/qa/summarize-flood-v51.py",
+      "bytes": 6104,
+      "sha256": "fe04238712e8c22ba7454eae6d7dcdb11d4ceb06271a8dfbd8ca11a31e571c40"
+    },
+    {
+      "path": "scripts/qa/verify-flood-v51.py",
+      "bytes": 1635,
+      "sha256": "c6ae81d4134c23a704b27c821d15ca1970eda035d017cb190df3a1ee11d87a96"
+    },
+    {
+      "path": "src/data/flood-control-art.json",
+      "bytes": 3024,
+      "sha256": "336e21c537d42e1d7b8e68abaf30a2632f929aec675d3dc8c2c34465c41bddde"
+    },
+    {
+      "path": "src/data/flood-control-collision.json",
+      "bytes": 620925,
+      "sha256": "6f5d9227c42127c4269a58352e038035c9644db91fb6897909f84017a9caaf75"
+    },
+    {
+      "path": "src/data/flood-control-plan.json",
+      "bytes": 12932,
+      "sha256": "af54e7ff6349ba7dd8dcadfe1c2a0546efb8d1aec7f0d41b535b67d7517a7b27"
+    },
+    {
+      "path": "src/data/yuan-layout.json",
+      "bytes": 60614,
+      "sha256": "35da8e6e773dd6a8adb80898457c32b97d9eeb3fb09c52b6757824957cdbaa9a"
+    },
+    {
+      "path": "src/data/yuan-plan.json",
+      "bytes": 50380,
+      "sha256": "c828677651fd3a6b7b5b6cdbda73a7fd741b4795f1f2eb6ab4d6461b5c77c0c0"
+    },
+    {
+      "path": "src/data/yuan-surface.json",
+      "bytes": 346316,
+      "sha256": "e05ea0161e44fd2752ff54f907e83a8b05767fa407fb5802585afbc9fd34c788"
+    },
+    {
+      "path": "src/world/flood-control.js",
+      "bytes": 8081,
+      "sha256": "e676774c9ddf09e9a26792e6e12b990b7ee57e050771664661498ba8c06527cf"
+    },
+    {
+      "path": "test/flood-v5.test.js",
+      "bytes": 10375,
+      "sha256": "bebc548be8cc582413233263e5b75dc5b7608c3ef71eccec185947573ccadb0e"
+    },
+    {
+      "path": "test/flood-v51.e2e.js",
+      "bytes": 3971,
+      "sha256": "6f3b8f7436142b41579e2e541dc9bb1da90061af4eea1060e2712999379a24a1"
+    },
+    {
+      "path": "test/flood-v51.test.js",
+      "bytes": 7478,
+      "sha256": "6bfd66deedfbf1dc919d82cde58074708e71aba3a0fe05eb0e9a6c1a0e6d5760"
+    }
+  ]
+}

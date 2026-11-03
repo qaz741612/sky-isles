@@ -1,0 +1,502 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/sky-isles-flood-g-v5/node_modules/.bin/playwright",
+      "test",
+      "test/flood-control.e2e.js",
+      "test/flood-interactions.e2e.js",
+      "test/world-spaces.e2e.js",
+      "test/panorama.e2e.js",
+      "--retries=0",
+      "--output=work/g-v5-browser-final-results",
+      "--reporter=json"
+    ],
+    "configFile": "/workspace/sky-isles-flood-g-v5/playwright.config.js",
+    "rootDir": "/workspace/sky-isles-flood-g-v5/test",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/sky-isles-flood-g-v5/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/workspace/sky-isles-flood-g-v5/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "flood-control.e2e.js",
+      "file": "flood-control.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "G Blender park: 22 routes, public circuit, water barriers, policy and camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 135176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T13:46:13.438Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "151af4c9152cd3bf06d1-c9e74c8ffddabd6bee15",
+          "file": "flood-control.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "G Blender park: 22 routes, public circuit, water barriers, policy and camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30961,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T13:59:12.625Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "151af4c9152cd3bf06d1-b27e818760927beb7061",
+          "file": "flood-control.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "flood-interactions.e2e.js",
+      "file": "flood-interactions.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 152502,
+                  "error": {
+                    "message": "Error: page.evaluate: Error: water crossing {\"wall\":{\"a\":{\"x\":41.32906917312412,\"y\":0,\"z\":42.072387628605895},\"b\":{\"x\":40.728,\"y\":0,\"z\":40.678999999999995},\"height\":1.3,\"thickness\":0.07,\"capsuleHeight\":1.6,\"kind\":\"flood-control-solid\",\"island\":\"crystal\",\"source\":\"Water edge safety\"},\"side\":-3.899764271113443,\"pos\":[45.18626462938211,0.02500000037252903,41.16844370609641]}\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+                    "stack": "Error: page.evaluate: Error: water crossing {\"wall\":{\"a\":{\"x\":41.32906917312412,\"y\":0,\"z\":42.072387628605895},\"b\":{\"x\":40.728,\"y\":0,\"z\":40.678999999999995},\"height\":1.3,\"thickness\":0.07,\"capsuleHeight\":1.6,\"kind\":\"flood-control-solid\",\"island\":\"crystal\",\"source\":\"Water edge safety\"},\"side\":-3.899764271113443,\"pos\":[45.18626462938211,0.02500000037252903,41.16844370609641]}\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/sky-isles-flood-g-v5/test/flood-interactions.e2e.js:4:26",
+                    "location": {
+                      "file": "eval at evaluate (:303:30), <anonymous>",
+                      "column": 51,
+                      "line": 45
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "eval at evaluate (:303:30), <anonymous>",
+                        "column": 51,
+                        "line": 45
+                      },
+                      "message": "Error: page.evaluate: Error: water crossing {\"wall\":{\"a\":{\"x\":41.32906917312412,\"y\":0,\"z\":42.072387628605895},\"b\":{\"x\":40.728,\"y\":0,\"z\":40.678999999999995},\"height\":1.3,\"thickness\":0.07,\"capsuleHeight\":1.6,\"kind\":\"flood-control-solid\",\"island\":\"crystal\",\"source\":\"Water edge safety\"},\"side\":-3.899764271113443,\"pos\":[45.18626462938211,0.02500000037252903,41.16844370609641]}\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/sky-isles-flood-g-v5/test/flood-interactions.e2e.js:4:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T13:48:30.430Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results/flood-interactions.e2e.js--6f47f--panorama-state-restoration-desktop/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results/flood-interactions.e2e.js--6f47f--panorama-state-restoration-desktop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results/flood-interactions.e2e.js--6f47f--panorama-state-restoration-desktop/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "eval at evaluate (:303:30), <anonymous>",
+                    "column": 51,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "02286109d98e13b8e36b-065bd63d03cb4e324fab",
+          "file": "flood-interactions.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13825,
+                  "error": {
+                    "message": "Error: page.evaluate: Error: water crossing {\"wall\":{\"a\":{\"x\":41.32906917312412,\"y\":0,\"z\":42.072387628605895},\"b\":{\"x\":40.728,\"y\":0,\"z\":40.678999999999995},\"height\":1.3,\"thickness\":0.07,\"capsuleHeight\":1.6,\"kind\":\"flood-control-solid\",\"island\":\"crystal\",\"source\":\"Water edge safety\"},\"side\":-3.899764271113443,\"pos\":[45.18626462938211,0.02500000037252903,41.16844370609641]}\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+                    "stack": "Error: page.evaluate: Error: water crossing {\"wall\":{\"a\":{\"x\":41.32906917312412,\"y\":0,\"z\":42.072387628605895},\"b\":{\"x\":40.728,\"y\":0,\"z\":40.678999999999995},\"height\":1.3,\"thickness\":0.07,\"capsuleHeight\":1.6,\"kind\":\"flood-control-solid\",\"island\":\"crystal\",\"source\":\"Water edge safety\"},\"side\":-3.899764271113443,\"pos\":[45.18626462938211,0.02500000037252903,41.16844370609641]}\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/sky-isles-flood-g-v5/test/flood-interactions.e2e.js:4:26",
+                    "location": {
+                      "file": "eval at evaluate (:303:30), <anonymous>",
+                      "column": 51,
+                      "line": 45
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "eval at evaluate (:303:30), <anonymous>",
+                        "column": 51,
+                        "line": 45
+                      },
+                      "message": "Error: page.evaluate: Error: water crossing {\"wall\":{\"a\":{\"x\":41.32906917312412,\"y\":0,\"z\":42.072387628605895},\"b\":{\"x\":40.728,\"y\":0,\"z\":40.678999999999995},\"height\":1.3,\"thickness\":0.07,\"capsuleHeight\":1.6,\"kind\":\"flood-control-solid\",\"island\":\"crystal\",\"source\":\"Water edge safety\"},\"side\":-3.899764271113443,\"pos\":[45.18626462938211,0.02500000037252903,41.16844370609641]}\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at eval (eval at evaluate (:303:30), <anonymous>:45:51)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/sky-isles-flood-g-v5/test/flood-interactions.e2e.js:4:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T13:59:44.851Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results/flood-interactions.e2e.js--6f47f--panorama-state-restoration-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results/flood-interactions.e2e.js--6f47f--panorama-state-restoration-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results/flood-interactions.e2e.js--6f47f--panorama-state-restoration-mobile/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "eval at evaluate (:303:30), <anonymous>",
+                    "column": 51,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "02286109d98e13b8e36b-e59e9db3791699d34e06",
+          "file": "flood-interactions.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "panorama.e2e.js",
+      "file": "panorama.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 324014,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/sky-isles-flood-g-v5/test/panorama.e2e.js",
+                        "column": 273,
+                        "line": 35
+                      },
+                      "message": "Error: page.screenshot: Test timeout of 300000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\n\n  33 |  const locked=await page.evaluate(()=>window.__skyisles.world.player.pos.toArray());for(let i=0;i<3;i++)expect(locked[i]).toBeCloseTo(before.pos[i],10);\n  34 |  await page.evaluate(()=>{const w=window.__skyisles.world;w.renderer.qaDraw?.(w.scene,w.panorama.camera);});await page.screenshot({path:`${folder}/${isMobile?'mobile-portrait-panorama':'panorama-pure'}.png`});\n> 35 |  if(!isMobile){await page.evaluate(()=>window.__skyisles.world.panorama.labelled=true);await expect(page.locator('.island-label:visible')).toHaveCount(8);await page.evaluate(()=>{const w=window.__skyisles.world;w.renderer.qaDraw?.(w.scene,w.panorama.camera);});await page.screenshot({path:`${folder}/panorama-labelled.png`});await page.evaluate(()=>window.__skyisles.world.panorama.labelled=false);}\n     |                                                                                                                                                                                                                                                                                 ^\n  36 |  await page.setViewportSize(isMobile?{width:844,height:390}:{width:1280,height:720});\n  37 |  const fitted=await page.evaluate(()=>{const w=window.__skyisles.world,b=w.bridges.bounds;return [[b.minX,b.minZ],[b.maxX,b.maxZ]].map(([x,z])=>w.player.pos.clone().set(x,0,z).project(w.panorama.camera).toArray());});\n  38 |  for(const p of fitted){expect(Math.abs(p[0])).toBeLessThan(.86);expect(Math.abs(p[1])).toBeLessThan(.86);}\n    at /workspace/sky-isles-flood-g-v5/test/panorama.e2e.js:35:273"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T13:51:10.044Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results/panorama.e2e.js-real-3D-pa-f5fbd-urns-the-exploration-camera-desktop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/sky-isles-flood-g-v5/work/g-v5-browser-final-results/panorama.e2e.js-real-3D-pa-f5fbd-urns-the-exploration-camera-desktop/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a94bc67d421d660343fe-5b39cdcc78ef722781ef",
+          "file": "panorama.e2e.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 125371,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T13:59:59.414Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a94bc67d421d660343fe-7a66fe56e7a8555bc173",
+          "file": "panorama.e2e.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "world-spaces.e2e.js",
+      "file": "world-spaces.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 139347,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T13:56:49.556Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b412ae6cfb0a5765fcc-d24c84ebdd240a39690e",
+          "file": "world-spaces.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 50873,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T14:02:05.115Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b412ae6cfb0a5765fcc-f8d3f3946575d058b087",
+          "file": "world-spaces.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-02T13:46:10.526Z",
+    "duration": 1005906.552,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

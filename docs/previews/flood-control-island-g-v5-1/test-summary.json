@@ -1,0 +1,835 @@
+{
+  "baseCommit": "8849b89e99163c179973a31571498115c6c80e7c",
+  "finalAssetSHA256": "0346a6aff20bf016d7fc71fd808f8bae483055906557f487667585ddea4b6075",
+  "finalGModuleSHA256": "e676774c9ddf09e9a26792e6e12b990b7ee57e050771664661498ba8c06527cf",
+  "method": "Incremental regression, NOT one final66-case run. Original64 on first art model; all ten affected G/world/panorama cases plus app2 rerun on final frozen geometry and G-local camera. Latest result per exact file/title/project; all unsuccessful/interrupted reports retained. Common player/camera/main, F/A/C, roads and policy files byte-protected.",
+  "build": {
+    "passed": true,
+    "lintPassed": true,
+    "unit": {
+      "tests": 76,
+      "pass": 76,
+      "fail": 0,
+      "skipped": 0
+    },
+    "log": "regression-evidence/build-lint-unit.log"
+  },
+  "runs": [
+    {
+      "name": "broad64",
+      "port": 4261,
+      "stats": {
+        "startTime": "2026-11-03T05:44:33.508Z",
+        "duration": 3804009.764,
+        "expected": 58,
+        "skipped": 4,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "purpose": "73655 triangles, original G camera; two rendering timeouts retained"
+    },
+    {
+      "name": "hydraulic10",
+      "port": 4263,
+      "stats": {
+        "startTime": "2026-11-03T06:30:50.304Z",
+        "duration": 1014133.3099999999,
+        "expected": 10,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "purpose": "74207 triangles; scoped geometry regression"
+    },
+    {
+      "name": "hydraulic-app2",
+      "port": 4263,
+      "stats": {
+        "startTime": "2026-11-03T06:47:46.045Z",
+        "duration": 81391.375,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "purpose": "desktop rendering and panorama timeout rechecks"
+    },
+    {
+      "name": "supported10",
+      "port": 4264,
+      "stats": {
+        "startTime": "2026-11-03T06:52:36.812Z",
+        "duration": 349107.999,
+        "expected": 10,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "purpose": "74463 frozen geometry, original G camera"
+    },
+    {
+      "name": "supported-app2",
+      "port": 4264,
+      "stats": {
+        "startTime": "2026-11-03T06:58:26.888Z",
+        "duration": 116572.073,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "purpose": "74463 frozen geometry, original G camera"
+    },
+    {
+      "name": "cancelled-driver",
+      "port": 4265,
+      "stats": {
+        "startTime": "2026-11-03T07:57:56.907Z",
+        "duration": 162233.429,
+        "expected": 1,
+        "skipped": 5,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "purpose": "Intentionally interrupted: missing requested test filename and software-render budget flag; superseded by corrected10. Its skipped cases are NOT final acceptance."
+    },
+    {
+      "name": "final-camera10",
+      "port": 4265,
+      "stats": {
+        "startTime": "2026-11-03T08:00:47.141Z",
+        "duration": 300564.185,
+        "expected": 10,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "purpose": "Frozen74463 geometry plus G-only silhouette/idle stability fix, correct G tests and software QA"
+    },
+    {
+      "name": "final-camera-app2",
+      "port": 4265,
+      "stats": {
+        "startTime": "2026-11-03T08:05:48.438Z",
+        "duration": 71133.994,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "purpose": "Same final runtime; real WebGL non-uniform pixels and console errors"
+    }
+  ],
+  "effectiveCaseCount": 66,
+  "effectiveCounts": {
+    "expected": 62,
+    "skipped": 4,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "file": "app.e2e.js",
+      "title": "loads without console errors and renders non-uniform pixels",
+      "project": "desktop",
+      "status": "expected",
+      "run": "final-camera-app2",
+      "durationMs": 40525,
+      "error": null
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "getState exposes the core game state",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 95985,
+      "error": null
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "all eight policies open from the menu and have no invented content",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 118338,
+      "error": null
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "world label opens matching policy and Escape closes the dialog",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 131997,
+      "error": null
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "teleport moves the player and fall respawns at last ground",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 112245,
+      "error": null
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "loads without console errors and renders non-uniform pixels",
+      "project": "mobile",
+      "status": "expected",
+      "run": "final-camera-app2",
+      "durationMs": 29040,
+      "error": null
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "getState exposes the core game state",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 13250,
+      "error": null
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "all eight policies open from the menu and have no invented content",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 14425,
+      "error": null
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "world label opens matching policy and Escape closes the dialog",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 13691,
+      "error": null
+    },
+    {
+      "file": "app.e2e.js",
+      "title": "teleport moves the player and fall respawns at last ground",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 12748,
+      "error": null
+    },
+    {
+      "file": "bridge-landscape.e2e.js",
+      "title": "active landscape zones preserve every route in both directions with the live Player",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 140899,
+      "error": null
+    },
+    {
+      "file": "bridge-landscape.e2e.js",
+      "title": "active landscape zones preserve every route in both directions with the live Player",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 18549,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyW moves the character along the camera-relative forward direction",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 43731,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyS moves the character along the camera-relative back direction",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 48904,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyA moves the character along the camera-relative left direction",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 22833,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyD moves the character along the camera-relative right direction",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 18906,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "touch joystick up moves the character forward",
+      "project": "desktop",
+      "status": "skipped",
+      "run": "broad64",
+      "durationMs": 272,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyW moves the character along the camera-relative forward direction",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 13801,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyS moves the character along the camera-relative back direction",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 14545,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyA moves the character along the camera-relative left direction",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 14083,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "KeyD moves the character along the camera-relative right direction",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 13866,
+      "error": null
+    },
+    {
+      "file": "controls.e2e.js",
+      "title": "touch joystick up moves the character forward",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 13660,
+      "error": null
+    },
+    {
+      "file": "elevated-guards.e2e.js",
+      "title": "new V9 plinth visible north/east/west guards stop ordinary live Player walking",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 16750,
+      "error": null
+    },
+    {
+      "file": "elevated-guards.e2e.js",
+      "title": "new V9 plinth visible north/east/west guards stop ordinary live Player walking",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 11190,
+      "error": null
+    },
+    {
+      "file": "elevated-station.e2e.js",
+      "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 27303,
+      "error": null
+    },
+    {
+      "file": "elevated-station.e2e.js",
+      "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 65583,
+      "error": null
+    },
+    {
+      "file": "flood-control.e2e.js",
+      "title": "G Blender park: 22 routes, public circuit, water barriers, policy and camera",
+      "project": "desktop",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 25582,
+      "error": null
+    },
+    {
+      "file": "flood-control.e2e.js",
+      "title": "G Blender park: 22 routes, public circuit, water barriers, policy and camera",
+      "project": "mobile",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 19767,
+      "error": null
+    },
+    {
+      "file": "flood-interactions.e2e.js",
+      "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+      "project": "desktop",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 17383,
+      "error": null
+    },
+    {
+      "file": "flood-interactions.e2e.js",
+      "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+      "project": "mobile",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 14730,
+      "error": null
+    },
+    {
+      "file": "industry-youth.e2e.js",
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 103906,
+      "error": null
+    },
+    {
+      "file": "industry-youth.e2e.js",
+      "title": "C real model picking, original spring, NPC approach and live boundary guards",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 71550,
+      "error": null
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "desktop",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 46938,
+      "error": null
+    },
+    {
+      "file": "panorama.e2e.js",
+      "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+      "project": "mobile",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 27717,
+      "error": null
+    },
+    {
+      "file": "parent-child.e2e.js",
+      "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 116762,
+      "error": null
+    },
+    {
+      "file": "parent-child.e2e.js",
+      "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 145238,
+      "error": null
+    },
+    {
+      "file": "responsive.e2e.js",
+      "title": "compact portrait and landscape menu remain usable with first-visit help",
+      "project": "desktop",
+      "status": "skipped",
+      "run": "broad64",
+      "durationMs": 785,
+      "error": null
+    },
+    {
+      "file": "responsive.e2e.js",
+      "title": "compact portrait and landscape menu remain usable with first-visit help",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 225665,
+      "error": null
+    },
+    {
+      "file": "scenery.e2e.js",
+      "title": "all authored policy places render and retain their readable policy entry",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 117537,
+      "error": null
+    },
+    {
+      "file": "scenery.e2e.js",
+      "title": "all authored policy places render and retain their readable policy entry",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 111104,
+      "error": null
+    },
+    {
+      "file": "station-headroom.e2e.js",
+      "title": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 98740,
+      "error": null
+    },
+    {
+      "file": "station-headroom.e2e.js",
+      "title": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 92632,
+      "error": null
+    },
+    {
+      "file": "transport-v4.e2e.js",
+      "title": "V9 replaces legacy transport geometry without changing the policy or chime identities",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 99292,
+      "error": null
+    },
+    {
+      "file": "transport-v4.e2e.js",
+      "title": "V9 replaces legacy transport geometry without changing the policy or chime identities",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 46946,
+      "error": null
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "transport portrait and landscape keep policy, panorama and existing input available",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 35020,
+      "error": null
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "original home chime responds to native keyboard or touchscreen interaction",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 25495,
+      "error": null
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "transport portrait and landscape keep policy, panorama and existing input available",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 51640,
+      "error": null
+    },
+    {
+      "file": "transport-walk.e2e.js",
+      "title": "original home chime responds to native keyboard or touchscreen interaction",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 35281,
+      "error": null
+    },
+    {
+      "file": "transport.e2e.js",
+      "title": "transport scene preserves policy picking, jumping, orbit and locked elevated train display",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 19971,
+      "error": null
+    },
+    {
+      "file": "transport.e2e.js",
+      "title": "transport scene preserves policy picking, jumping, orbit and locked elevated train display",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 26628,
+      "error": null
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 17812,
+      "error": null
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 20264,
+      "error": null
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+      "project": "desktop",
+      "status": "skipped",
+      "run": "broad64",
+      "durationMs": 326,
+      "error": null
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 31759,
+      "error": null
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 29973,
+      "error": null
+    },
+    {
+      "file": "ux.e2e.js",
+      "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 58359,
+      "error": null
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "walk every island without jumping through keyboard or a single joystick pointer",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 40275,
+      "error": null
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+      "project": "desktop",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 17871,
+      "error": null
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+      "project": "desktop",
+      "status": "skipped",
+      "run": "broad64",
+      "durationMs": 323,
+      "error": null
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "walk every island without jumping through keyboard or a single joystick pointer",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 86994,
+      "error": null
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 25623,
+      "error": null
+    },
+    {
+      "file": "walkways.e2e.js",
+      "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+      "project": "mobile",
+      "status": "expected",
+      "run": "broad64",
+      "durationMs": 26119,
+      "error": null
+    },
+    {
+      "file": "world-spaces.e2e.js",
+      "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+      "project": "desktop",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 28962,
+      "error": null
+    },
+    {
+      "file": "world-spaces.e2e.js",
+      "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+      "project": "mobile",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 22478,
+      "error": null
+    },
+    {
+      "file": "flood-v51.e2e.js",
+      "title": "V5.1 nine real wet falls recover the dry checkpoint and retain policy-puzzle progress",
+      "project": "desktop",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 49912,
+      "error": null
+    },
+    {
+      "file": "flood-v51.e2e.js",
+      "title": "V5.1 nine real wet falls recover the dry checkpoint and retain policy-puzzle progress",
+      "project": "mobile",
+      "status": "expected",
+      "run": "final-camera10",
+      "durationMs": 45084,
+      "error": null
+    }
+  ],
+  "strictRealPlayer": {
+    "desktop": {
+      "routes": 22,
+      "bidirectional": true,
+      "noJump": true,
+      "cameraSamples": 160,
+      "checkpoint": true,
+      "panoramaRestores": true,
+      "forcedRecovery": true,
+      "routeStartsTeleported": true,
+      "fixedHz": 60
+    },
+    "mobile": {
+      "routes": 22,
+      "bidirectional": true,
+      "noJump": true,
+      "cameraSamples": 160,
+      "checkpoint": true,
+      "panoramaRestores": true,
+      "forcedRecovery": true,
+      "routeStartsTeleported": true,
+      "fixedHz": 60
+    }
+  },
+  "waterEdges": {
+    "desktop": {
+      "actualPushes": 18,
+      "midpointsNotPushed": 4,
+      "minFiniteRailDistance": 0.3650099999999936,
+      "modelPolicyPicking": true,
+      "panoramaRestores": true,
+      "forcedRecovery": {
+        "distance": 0.4,
+        "count": 1,
+        "checkpoint": [
+          44.928,
+          0.02500000037252892,
+          45.279
+        ]
+      }
+    },
+    "mobile": {
+      "actualPushes": 18,
+      "midpointsNotPushed": 4,
+      "minFiniteRailDistance": 0.3650099999999936,
+      "modelPolicyPicking": true,
+      "panoramaRestores": true,
+      "forcedRecovery": {
+        "distance": 0.4,
+        "count": 1,
+        "checkpoint": [
+          44.928,
+          0.02500000037252892,
+          45.279
+        ]
+      }
+    }
+  },
+  "wetFalls": {
+    "desktop": {
+      "actualWetFalls": 9,
+      "allReturnDryCheckpoint": true,
+      "progressPreserved": true,
+      "nativeEntryCamera": {
+        "clearProbes": 6,
+        "position": [
+          43.20504751373183,
+          10.559279574693095,
+          36.67873023406815
+        ],
+        "orbit": {
+          "yaw": 3.3015926535897933,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "panoramaRestored": true
+      }
+    },
+    "mobile": {
+      "actualWetFalls": 9,
+      "allReturnDryCheckpoint": true,
+      "progressPreserved": true,
+      "nativeEntryCamera": {
+        "clearProbes": 6,
+        "position": [
+          40.30785658362996,
+          15.186691715176842,
+          33.86493610188109
+        ],
+        "orbit": {
+          "yaw": 3.3015926535897933,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "panoramaRestored": true
+      }
+    }
+  },
+  "limits": [
+    "Four desktop touch-only cases remain inapplicable skips; corresponding mobile cases pass.",
+    "Four water-edge midpoints lack isolated dry approach; NOT counted as actual browser pushes. All segments have additional unit sweeps.",
+    "Nine wet falls deliberately start below water to test recovery; not a claim that every possible manual jump was walked.",
+    "Fixed60Hz real Player with route-start teleports is not a continuous human tour.",
+    "G camera unit matrix additionally checks six silhouette rays and idle stability; real browser entry verifies six rays and panorama camera state. This does not prove every freely chosen hand-controlled composition.",
+    "SwiftShader, DPR1 and software QA render scheduling do not establish real-device FPS, heat or long-term touch comfort.",
+    "Art quality, C V3 style threshold and cultural interpretation require human acceptance; no automatic art pass is claimed."
+  ]
+}

@@ -1,0 +1,8 @@
+// Run the existing files in separate Node processes, exposing each contained case.
+// A restricted sandbox can suppress Node child launches; reject spawn errors explicitly.
+import fs from'node:fs';import{spawnSync}from'node:child_process';
+const dir='docs/previews/flood-control-island-g-v5/regression-final/unit-files';fs.mkdirSync(dir,{recursive:true});const records=[];
+for(const file of fs.readdirSync('test').filter(f=>f.endsWith('.test.js')).sort()){
+ const r=spawnSync(process.execPath,['test/'+file],{encoding:'utf8',timeout:180000,maxBuffer:2*1024*1024}),output=(r.stdout??'')+(r.stderr??'');fs.writeFileSync(dir+'/'+file+'.log',output);const number=name=>Number(output.match(new RegExp('(?:#|ℹ) '+name+' (\\d+)'))?.[1]??NaN);records.push({file,exit:r.status,cases:number('tests'),pass:number('pass'),fail:number('fail'),skipped:number('skipped')});if(r.error||r.status!==0||!Number.isFinite(number('tests')))throw Error('Existing unit file failed; see saved log '+file);
+}
+const totals=Object.fromEntries(['cases','pass','fail','skipped'].map(key=>[key,records.reduce((n,r)=>n+r[key],0)]));fs.writeFileSync(dir+'/summary.json',JSON.stringify({method:'One fresh Node process per existing test file, direct node:test autorun, no shared-process GLTF caches. Use an execution profile allowing real Node child processes; reject EPERM, missing case counts or nonzero exits.',files:records.length,totals,records},null,2)+'\n');if(totals.fail||totals.cases!==71)throw Error('unexpected isolated unit total');console.log('Isolated existing units:',records.length,'files,',totals.pass,'cases passed');

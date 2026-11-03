@@ -1,0 +1,86 @@
+{
+  "version": "G-V5.1",
+  "source": "docs/design/flood-control-island-g-v5-1/iteration-2/flood-control-g-v5-1.blend",
+  "sourceBlendSHA256": "a9cf59c35566a716fb3b956d7083c349632329ebaafbd381ba289e75c49dfa3e",
+  "engine": "CYCLES",
+  "samples": 64,
+  "sameSource": true,
+  "records": [
+    {
+      "name": "hero",
+      "cameraBlender": [
+        -29.0,
+        42.0,
+        26.0
+      ],
+      "rotation": [
+        1.1132649183273315,
+        -4.616460103079589e-08,
+        -2.5809056758880615
+      ],
+      "orthoScale": 55.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 34.977785411989316
+    },
+    {
+      "name": "near-dam",
+      "cameraBlender": [
+        -27.0,
+        27.0,
+        16.0
+      ],
+      "rotation": [
+        1.2563550472259521,
+        7.469943597016027e-08,
+        -2.6517138481140137
+      ],
+      "orthoScale": 20.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 82.00251485395711
+    },
+    {
+      "name": "near-command",
+      "cameraBlender": [
+        27.0,
+        24.0,
+        14.0
+      ],
+      "rotation": [
+        1.2381504774093628,
+        -1.201214132606765e-07,
+        2.5702552795410156
+      ],
+      "orthoScale": 23.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 96.91956249496434
+    },
+    {
+      "name": "top",
+      "cameraBlender": [
+        0.0010000000474974513,
+        0.0,
+        70.0
+      ],
+      "rotation": [
+        -1.2488969277149597e-12,
+        -2.8571430448209867e-05,
+        -3.141592502593994
+      ],
+      "orthoScale": 55.0,
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 41.08198544301558
+    }
+  ]
+}

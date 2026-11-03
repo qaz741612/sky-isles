@@ -1,0 +1,21 @@
+{
+  "method": "Original saved Blender source stays independent; web export batches evaluated surfaces per logical assembly and PBR material, preserving custom normals.",
+  "meshPrimitives": 50,
+  "assemblyGroups": 10,
+  "triangles": 55357,
+  "originalSourceObjects": 2334,
+  "textures": 0,
+  "version": "G-V5",
+  "pass": 2,
+  "materials": 23,
+  "scale": 1,
+  "glbBytes": 3391280,
+  "blendBytes": 834310,
+  "sourceBlendSHA256": "ee8e604c181188a65b6423a3c0a226be2e77c56a9353dd39864c891aee4148d0",
+  "waterIsCollider": false,
+  "upperWaterY": -0.66,
+  "lowerWaterY": -1.8,
+  "newRoadLights": 0,
+  "renderEngine": "Cycles CPU, AgX",
+  "renderSamples": 64
+}

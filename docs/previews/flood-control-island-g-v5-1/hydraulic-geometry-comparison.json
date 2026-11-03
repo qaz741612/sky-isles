@@ -1,0 +1,173 @@
+{
+  "method": "Three.js GLTFLoader + actual exported triangle ray intersections; double-sided concrete, centre-out horizontal section, downward water sampling; not a water simulation or public-walk clearance claim.",
+  "rows": [
+    {
+      "version": "V5",
+      "path": "docs/design/flood-control-island-g-v5-1/baseline/flood-control-g.glb",
+      "sha256": "99030fd7b8c32d831926cf835914dc6b86496691cd2144bd53efd45144eb620e",
+      "bytes": 3665000,
+      "meshes": 50,
+      "materials": 23,
+      "triangles": 60211,
+      "waterAlphaModes": [
+        {
+          "name": "foam",
+          "alphaMode": "OPAQUE"
+        },
+        {
+          "name": "water_lower",
+          "alphaMode": "OPAQUE"
+        },
+        {
+          "name": "water_upper",
+          "alphaMode": "OPAQUE"
+        }
+      ],
+      "lanes": [
+        {
+          "x": -12.45,
+          "waterSampleZ": [
+            6.35,
+            5.4,
+            4.3
+          ],
+          "actualWaterY": [
+            -0.7541285233854234,
+            -0.9528440138506347,
+            -1.1829357299963155
+          ],
+          "measuredDescent": 0.4288072066108921,
+          "probeYZ": [
+            -1.72,
+            5.25
+          ],
+          "actualFreeWidth": 1.3000001907348633
+        },
+        {
+          "x": -9.35,
+          "waterSampleZ": [
+            6.35,
+            5.4,
+            4.3
+          ],
+          "actualWaterY": [
+            -0.7541285233854234,
+            -0.9528440138506347,
+            -1.1829357299963155
+          ],
+          "measuredDescent": 0.4288072066108921,
+          "probeYZ": [
+            -1.72,
+            5.25
+          ],
+          "actualFreeWidth": 1.3000001907348633
+        },
+        {
+          "x": -6.25,
+          "waterSampleZ": [
+            6.35,
+            5.4,
+            4.3
+          ],
+          "actualWaterY": [
+            -0.7541285233854234,
+            -0.9528440138506347,
+            -1.1829357299963155
+          ],
+          "measuredDescent": 0.4288072066108921,
+          "probeYZ": [
+            -1.72,
+            5.25
+          ],
+          "actualFreeWidth": 1.3000001907348633
+        }
+      ]
+    },
+    {
+      "version": "V5.1",
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "sha256": "0346a6aff20bf016d7fc71fd808f8bae483055906557f487667585ddea4b6075",
+      "bytes": 4626100,
+      "meshes": 60,
+      "materials": 24,
+      "triangles": 74463,
+      "waterAlphaModes": [
+        {
+          "name": "foam",
+          "alphaMode": "OPAQUE"
+        },
+        {
+          "name": "ripple",
+          "alphaMode": "OPAQUE"
+        },
+        {
+          "name": "water_lower",
+          "alphaMode": "OPAQUE"
+        },
+        {
+          "name": "water_upper",
+          "alphaMode": "OPAQUE"
+        }
+      ],
+      "lanes": [
+        {
+          "x": -12.45,
+          "waterSampleZ": [
+            6.35,
+            5.4,
+            4.3
+          ],
+          "actualWaterY": [
+            -0.6460000276565552,
+            -1.5697249549547752,
+            -1.7860000133514404
+          ],
+          "measuredDescent": 1.1399999856948853,
+          "probeYZ": [
+            -1.72,
+            5.25
+          ],
+          "actualFreeWidth": 2.109999656677246
+        },
+        {
+          "x": -9.35,
+          "waterSampleZ": [
+            6.35,
+            5.4,
+            4.3
+          ],
+          "actualWaterY": [
+            -0.6460000276565552,
+            -1.5697249549547752,
+            -1.7860000133514404
+          ],
+          "measuredDescent": 1.1399999856948853,
+          "probeYZ": [
+            -1.72,
+            5.25
+          ],
+          "actualFreeWidth": 2.109999656677246
+        },
+        {
+          "x": -6.25,
+          "waterSampleZ": [
+            6.35,
+            5.4,
+            4.3
+          ],
+          "actualWaterY": [
+            -0.6460000276565552,
+            -1.5697249549547752,
+            -1.7860000133514404
+          ],
+          "measuredDescent": 1.1399999856948853,
+          "probeYZ": [
+            -1.72,
+            5.25
+          ],
+          "actualFreeWidth": 2.109999656677246
+        }
+      ]
+    }
+  ]
+}

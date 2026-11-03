@@ -1,0 +1,43 @@
+{
+  "version": "G-V5.1",
+  "baseCommit": "8849b89e99163c179973a31571498115c6c80e7c",
+  "scope": "Final delivery model after all structural connection checks, no further optional geometry edits",
+  "files": [
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/flood-control-g-v5-1.blend",
+      "bytes": 1035877,
+      "sha256": "5159423458df4f4cb5b43aca91bd4534341acb95b40fc5d86dbfbfdb2e63aea3"
+    },
+    {
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "bytes": 4626100,
+      "sha256": "0346a6aff20bf016d7fc71fd808f8bae483055906557f487667585ddea4b6075"
+    },
+    {
+      "path": "src/data/flood-control-collision.json",
+      "bytes": 620925,
+      "sha256": "6f5d9227c42127c4269a58352e038035c9644db91fb6897909f84017a9caaf75"
+    },
+    {
+      "path": "src/data/flood-control-art.json",
+      "bytes": 3024,
+      "sha256": "336e21c537d42e1d7b8e68abaf30a2632f929aec675d3dc8c2c34465c41bddde"
+    },
+    {
+      "path": "src/data/flood-control-plan.json",
+      "bytes": 12932,
+      "sha256": "af54e7ff6349ba7dd8dcadfe1c2a0546efb8d1aec7f0d41b535b67d7517a7b27"
+    },
+    {
+      "path": "src/data/yuan-plan.json",
+      "bytes": 50380,
+      "sha256": "c828677651fd3a6b7b5b6cdbda73a7fd741b4795f1f2eb6ab4d6461b5c77c0c0"
+    },
+    {
+      "path": "src/world/flood-control.js",
+      "bytes": 8081,
+      "sha256": "e676774c9ddf09e9a26792e6e12b990b7ee57e050771664661498ba8c06527cf"
+    }
+  ],
+  "runtimeScope": "Only floodCameraConstraint extends silhouette probes and holds a clear G-local orbit offset; common player/camera and loader/builder prefix unchanged."
+}

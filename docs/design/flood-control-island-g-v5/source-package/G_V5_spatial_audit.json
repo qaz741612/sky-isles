@@ -1,0 +1,35 @@
+{
+  "islandArea": 1036.63,
+  "islandBounds": [
+    [
+      -18.94364210171939,
+      -16.908469073548414
+    ],
+    [
+      19.855028387229616,
+      17.55489431441116
+    ]
+  ],
+  "waterArea": 237.86,
+  "waterPercent": 22.9,
+  "actualBridgeCoreWidth": 4.8,
+  "S20WaterGGapAfterCore": 5.54,
+  "S20ConservativeSampleGap": 4.08,
+  "S22RoadWaterOverlap": 57.86,
+  "NPCNew": [
+    8.7,
+    -10.6,
+    11.7,
+    -7.6
+  ],
+  "npcBoundaryGap": 2.75,
+  "npcS21CoreGap": 2.38,
+  "issues": [],
+  "qualifiedOnlyFor": "2D static geometry; NO in-engine proof",
+  "knownOutstanding": [
+    "S22 road over basin requires actual continuous bridge structure and side-rails/collision",
+    "new water holes require regenerating dry ground, coping and camera collision",
+    "S20 G boundary must retain path buffer and scene clearance",
+    "full in-game camera and player walk tests not performed"
+  ]
+}

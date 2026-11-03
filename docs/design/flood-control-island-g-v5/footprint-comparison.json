@@ -1,0 +1,80 @@
+{
+  "bayCut": [
+    [
+      -30.0,
+      -12.0
+    ],
+    [
+      -16.0,
+      -9.7
+    ],
+    [
+      -13.2,
+      -8.9
+    ],
+    [
+      -11.7,
+      -7.6
+    ],
+    [
+      -11.0,
+      -6.3
+    ],
+    [
+      -12.1,
+      -4.8
+    ],
+    [
+      -16.0,
+      -3.9
+    ],
+    [
+      -30.0,
+      -3.9
+    ],
+    [
+      -30.0,
+      -12.0
+    ]
+  ],
+  "variants": [
+    {
+      "name": "full-reference",
+      "area": 1036.626467890079,
+      "bounds": [
+        -18.94364210171939,
+        -16.908469073548414,
+        19.855028387229616,
+        17.55489431441116
+      ],
+      "S22InsideLength": 16.5026083224197,
+      "S22OutsideLength": 0.0,
+      "S22CentrelineBoundaryCrossings": "LINESTRING EMPTY",
+      "S22EndOutsideIsland": false,
+      "waterArea": 237.86386650069198,
+      "S22WetCoreArea": 57.83934938236352
+    },
+    {
+      "name": "western-entry-notch",
+      "area": 1007.1737889290417,
+      "bounds": [
+        -18.94364210171939,
+        -16.908469073548414,
+        19.855028387229616,
+        17.55489431441116
+      ],
+      "S22InsideLength": 13.488267853966258,
+      "S22OutsideLength": 3.014340468453443,
+      "S22CentrelineBoundaryCrossings": "POINT (-11.287087320039706 -5.908517290854944)",
+      "S22EndOutsideIsland": true,
+      "waterArea": 226.78141523111503,
+      "S22WetCoreArea": 49.88058410583971
+    }
+  ],
+  "decision": "Use the western-entry notch: preserve exact S22 centreline/end and real west bridge interface. Clip only southwest pool bank and relocate affected decor, do not shrink buildings.",
+  "centreUnchanged": [
+    44.928,
+    0,
+    45.279
+  ]
+}
