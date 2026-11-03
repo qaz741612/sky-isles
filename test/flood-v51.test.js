@@ -27,6 +27,7 @@ test('V5.1 additional real banks/backrests remain clear of the exact guide reser
  assert.equal(collision.solids.filter(v=>v.name==='V51 arrival planted bank').length,2);
  const props=[];g.scene.traverse(o=>{if(o.isMesh&&/Civic_Props/.test(o.name))props.push(o);});const[sx,sz]=art.zones.overlook.sign;
  for(const y of[.08,.20,.40,.53,.80]){ray.set(new T.Vector3(plan.centre[0]+sx-.4,y,plan.centre[2]+sz),new T.Vector3(1,0,0));ray.far=.8;assert.ok(ray.intersectObjects(props,false).length,'water interpretation frame has no real ground mount at '+y);}
+ for(const[x,z]of plan.benchesXZ)for(const dx of[-.6,.6]){ray.set(new T.Vector3(plan.centre[0]+x+dx,.60,plan.centre[2]+z+.7),new T.Vector3(0,0,-1));ray.far=.8;assert.ok(ray.intersectObjects(props,false).length,'timber back lacks physical upright');}
 
 });
 

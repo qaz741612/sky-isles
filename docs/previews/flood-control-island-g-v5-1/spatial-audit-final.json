@@ -255,8 +255,8 @@
       16.72499990463257,
       34.55333137512207
     ],
-    "glbBytes": 4612272,
-    "sha256": "a146aed3cbc3dfa7c7da56f11878c109a279e3294a735654fafe604346770332",
+    "glbBytes": 4626100,
+    "sha256": "0346a6aff20bf016d7fc71fd808f8bae483055906557f487667585ddea4b6075",
     "meshes": 60,
     "materials": 24,
     "textures": 0
@@ -297,5 +297,48 @@
       "distance": 17.10849137540041,
       "overlapArea": 0.0
     }
-  ]
+  ],
+  "version": "G-V5.1",
+  "baseV5Commit": "8849b89e99163c179973a31571498115c6c80e7c",
+  "protectedV5Files": 214,
+  "protectedDrift": [],
+  "artBanks": [
+    {
+      "name": "arrival",
+      "actualRoadCentrelineGap": 2.8202124281272436,
+      "actualGuideReservationEdgeGap": 0.4474034100459617,
+      "outsideDryArea": 0.0
+    },
+    {
+      "name": "arrival-curve",
+      "actualRoadCentrelineGap": 5.11835960049702,
+      "actualGuideReservationEdgeGap": 13.121737689803131,
+      "outsideDryArea": 0.0
+    },
+    {
+      "name": "forecourt",
+      "actualRoadCentrelineGap": 9.009684862266939,
+      "actualGuideReservationEdgeGap": 1.2529964086141672,
+      "outsideDryArea": 0.0
+    }
+  ],
+  "hydraulicStructure": {
+    "footingY": [
+      -2.35,
+      -1.95
+    ],
+    "pierStemY": [
+      -2.175,
+      -1.125
+    ],
+    "originalPierY": [
+      -1.2,
+      6.4
+    ],
+    "footingSubmergence": 0.1499999999999999,
+    "stemToFootingOverlap": 0.22499999999999987,
+    "stemToPierOverlap": 0.07499999999999996
+  },
+  "publicDryGroundByteIdentical": true,
+  "submergedSupportTrianglesRemoved": 16
 }

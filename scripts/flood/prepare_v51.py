@@ -189,6 +189,7 @@ slab('V51 arrival flush water emblem',Polygon(outline).intersection(paving),P['p
 # Existing seats gain useful backs and refined timber construction in the same sites.
 for x,z in P['benchesXZ']:
  for h in [.70,.83]:cube('V51 retained seat timber back',(x,h,z+.22),(1.7,.09,.075),'wood','props',True)
+ for dx in [-.6,.6]:rod('V51 seat back structural upright',[x+dx,.42,z+.22],[x+dx,.90,z+.22],.035,'steel','props',True)
 # Water interpretation mounts to the bank, leaving the full promenade open.
 sx,sz=A['zones']['overlook']['sign'];cube('V51 waterside interpretation frame',(sx,.83,sz),(.12,.62,.85),'steel','props',True)
 rod('V51 bank interpretation ground mount',[sx,.025,sz],[sx,.55,sz],.045,'steel','props',True)
