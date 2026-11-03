@@ -1,0 +1,37 @@
+{
+  "version": "G-V5.1",
+  "baseCommit": "8849b89e99163c179973a31571498115c6c80e7c",
+  "scope": "Locked final hydraulic model after physical section/ground-mount review; final QA remains pending",
+  "files": [
+    {
+      "path": "docs/design/flood-control-island-g-v5-1/flood-control-g-v5-1.blend",
+      "bytes": 1031493,
+      "sha256": "b44948a0deee35f5ab0e6a4b7d438e03a1a43175b0027fe9405ef8f754c0ce4a"
+    },
+    {
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "bytes": 4612272,
+      "sha256": "a146aed3cbc3dfa7c7da56f11878c109a279e3294a735654fafe604346770332"
+    },
+    {
+      "path": "src/data/flood-control-collision.json",
+      "bytes": 615717,
+      "sha256": "6739da3deeed0a3dadc877f655cdcb434e4666499e5f755f66752bf4da7f48ee"
+    },
+    {
+      "path": "src/data/flood-control-art.json",
+      "bytes": 3024,
+      "sha256": "336e21c537d42e1d7b8e68abaf30a2632f929aec675d3dc8c2c34465c41bddde"
+    },
+    {
+      "path": "src/data/flood-control-plan.json",
+      "bytes": 12932,
+      "sha256": "af54e7ff6349ba7dd8dcadfe1c2a0546efb8d1aec7f0d41b535b67d7517a7b27"
+    },
+    {
+      "path": "src/data/yuan-plan.json",
+      "bytes": 50380,
+      "sha256": "c828677651fd3a6b7b5b6cdbda73a7fd741b4795f1f2eb6ab4d6461b5c77c0c0"
+    }
+  ]
+}

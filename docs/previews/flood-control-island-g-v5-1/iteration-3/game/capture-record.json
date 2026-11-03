@@ -1,0 +1,1503 @@
+{
+  "assetSHA256": "510219757646fc2a58775e01191e226ba0277c535b4b91ef293ee2f6d70c5bd0",
+  "collisionSHA256": "f6a9619502cbf61430f4b92a4be0ee5f19cf995458d1dcfe9b4f0846bf14f108",
+  "cameraSHA256": "f5f7d79253fc5d17a5fdaff95078a2e5f95b7d7570d6f8ccd7de2500aaa7fd3a",
+  "runtimeSHA256": "6f9f396d15c932f07281c16325520c9ec56b13f838fabffc47f9feaa5455c2ad",
+  "records": [
+    {
+      "name": "desktop-native",
+      "kind": "native",
+      "args": [
+        0,
+        -1.2
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        47.03183297788831,
+        10.559271155792564,
+        57.11567038471925
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        44.928,
+        0.02500000037252903,
+        44.079
+      ],
+      "grounded": true,
+      "observedAtMs": 111340.5,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 2,
+        "calls": 642,
+        "triangles": 1446936,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 338,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "desktop-waterfront-player",
+      "kind": "native-orbit",
+      "args": [
+        -9.7,
+        -3.4,
+        3.3015926535897933
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        33.124150192919565,
+        10.559277351812321,
+        28.84231302886609
+      ],
+      "orbit": {
+        "yaw": 3.3015926535897933,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        35.227999999999994,
+        0.02500000037252892,
+        41.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 165614.30000007153,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 3,
+        "calls": 177,
+        "triangles": 133460,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 390,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "desktop-command-player",
+      "kind": "native-orbit",
+      "args": [
+        7.75,
+        0.6,
+        3.3015926535897933
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        46.2314389081437,
+        10.559279574693095,
+        34.354086001970394
+      ],
+      "orbit": {
+        "yaw": 3.3015926535897933,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        52.678,
+        0.02500000037252903,
+        45.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 176029,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 4,
+        "calls": 156,
+        "triangles": 111086,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 391,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "s21-player",
+      "kind": "native",
+      "args": [
+        4.2,
+        -14
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        51.231852790948366,
+        10.559279574693095,
+        44.31569531678748
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        49.128,
+        0.02500000037252903,
+        31.279000000000003
+      ],
+      "grounded": true,
+      "observedAtMs": 183751.90000009537,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 5,
+        "calls": 468,
+        "triangles": 1271368,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 398,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "s22-player",
+      "kind": "native",
+      "args": [
+        -12.2,
+        -6.8
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        34.83186584157898,
+        10.534279589566335,
+        51.515697000901795
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        32.727999999999994,
+        0,
+        38.479000000000006
+      ],
+      "grounded": true,
+      "observedAtMs": 205126.5,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 6,
+        "calls": 638,
+        "triangles": 1434616,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 398,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "command-porch-player",
+      "kind": "native",
+      "args": [
+        7.75,
+        0.6
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        65.88260023263744,
+        10.559279574693095,
+        46.02156671857476
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        52.678,
+        0.02500000037252903,
+        45.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 281606.10000002384,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 7,
+        "calls": 786,
+        "triangles": 1526394,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 481,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "g-hero",
+      "kind": "qa",
+      "args": [
+        -29,
+        26,
+        -42,
+        -2,
+        1,
+        1
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        15.927999999999997,
+        26,
+        3.2790000000000035
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        52.678,
+        0.02500000037252903,
+        45.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 322330.5,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 8,
+        "calls": 204,
+        "triangles": 162775,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 481,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "g-reference-hero",
+      "kind": "qa",
+      "args": [
+        -37,
+        30,
+        40
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        7.927999999999997,
+        30,
+        85.279
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        52.678,
+        0.02500000037252903,
+        45.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 326812.3000000715,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 9,
+        "calls": 254,
+        "triangles": 328667,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 481,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "g-entrance",
+      "kind": "qa",
+      "args": [
+        18,
+        14,
+        -24
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        62.928,
+        14,
+        21.279000000000003
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        52.678,
+        0.02500000037252903,
+        45.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 340513,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 10,
+        "calls": 289,
+        "triangles": 204387,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 500,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "g-top",
+      "kind": "qa",
+      "args": [
+        0,
+        55,
+        0.001
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        44.928,
+        55,
+        45.28
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        52.678,
+        0.02500000037252903,
+        45.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 354134.60000002384,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 11,
+        "calls": 170,
+        "triangles": 172168,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 500,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "sluice-detail",
+      "kind": "qa",
+      "args": [
+        -25,
+        13,
+        -23,
+        -9.35,
+        3.5,
+        6.1
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        19.927999999999997,
+        13,
+        22.279000000000003
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        52.678,
+        0.02500000037252903,
+        45.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 363861.8000000715,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 12,
+        "calls": 186,
+        "triangles": 142222,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 500,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "npc-player",
+      "kind": "native",
+      "args": [
+        8.8,
+        -9.1
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        55.83183394508079,
+        10.559281063119482,
+        49.215684964857914
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        53.727999999999994,
+        0.02500000037252903,
+        36.179
+      ],
+      "grounded": true,
+      "observedAtMs": 374618.60000002384,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 13,
+        "calls": 477,
+        "triangles": 1274718,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 500,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "command-detail",
+      "kind": "qa",
+      "args": [
+        24,
+        12,
+        -23,
+        9,
+        2.5,
+        4
+      ],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        68.928,
+        12,
+        22.279000000000003
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        53.727999999999994,
+        0.02500000037252903,
+        36.179
+      ],
+      "grounded": true,
+      "observedAtMs": 401453.8000000715,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 14,
+        "calls": 244,
+        "triangles": 173781,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 500,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "yuan-panorama",
+      "kind": "overview",
+      "args": [],
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "camera": [
+        1.215515,
+        240,
+        28.923
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "player": [
+        53.727999999999994,
+        0.02500000037252903,
+        36.179
+      ],
+      "grounded": true,
+      "observedAtMs": 417146.90000009537,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 1267.2000000476837,
+        "decodeMilliseconds": 72.69999992847443,
+        "totalMilliseconds": 1339.8999999761581,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 141.39999997615814,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 15,
+        "calls": 1089,
+        "triangles": 1643354,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 513,
+        "textures": 20
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "mobile-native",
+      "kind": "native",
+      "args": [
+        0,
+        -1.2
+      ],
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "errors": [],
+      "camera": [
+        46.99232647835643,
+        15.186691715176842,
+        61.19906821482916
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "player": [
+        44.928,
+        0.02500000037252903,
+        44.079
+      ],
+      "grounded": true,
+      "observedAtMs": 24023.600000023842,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 301.89999997615814,
+        "decodeMilliseconds": 11.600000023841858,
+        "totalMilliseconds": 313.5,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 19,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 2,
+        "calls": 171,
+        "triangles": 132916,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 317,
+        "textures": 17
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "mobile-waterfront-player",
+      "kind": "native-orbit",
+      "args": [
+        -9.7,
+        -3.4,
+        3.3015926535897933
+      ],
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "errors": [],
+      "camera": [
+        32.48071005195177,
+        15.186686946262169,
+        24.855194166191293
+      ],
+      "orbit": {
+        "yaw": 3.3015926535897933,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "player": [
+        35.227999999999994,
+        0.02500000037252892,
+        41.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 28113.600000023842,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 301.89999997615814,
+        "decodeMilliseconds": 11.600000023841858,
+        "totalMilliseconds": 313.5,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 19,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 3,
+        "calls": 142,
+        "triangles": 107084,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 364,
+        "textures": 17
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "mobile-command-player",
+      "kind": "native-orbit",
+      "args": [
+        7.75,
+        0.6,
+        3.3015926535897933
+      ],
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "errors": [],
+      "camera": [
+        44.25983413626848,
+        15.186691715176842,
+        30.829326814832413
+      ],
+      "orbit": {
+        "yaw": 3.3015926535897933,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "player": [
+        52.678,
+        0.02500000037252903,
+        45.879000000000005
+      ],
+      "grounded": true,
+      "observedAtMs": 30738,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 301.89999997615814,
+        "decodeMilliseconds": 11.600000023841858,
+        "totalMilliseconds": 313.5,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 19,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 4,
+        "calls": 101,
+        "triangles": 95422,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 374,
+        "textures": 17
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "mobile-landscape",
+      "kind": "native",
+      "args": [
+        0,
+        -1.2
+      ],
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "errors": [],
+      "camera": [
+        46.99232481199856,
+        15.186691715176842,
+        61.19904969442673
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "player": [
+        44.928,
+        0.02500000037252903,
+        44.079
+      ],
+      "grounded": true,
+      "observedAtMs": 33915.60000002384,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 301.89999997615814,
+        "decodeMilliseconds": 11.600000023841858,
+        "totalMilliseconds": 313.5,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 19,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 5,
+        "calls": 369,
+        "triangles": 735232,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 406,
+        "textures": 19
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "mobile-panorama",
+      "kind": "overview",
+      "args": [],
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "errors": [],
+      "camera": [
+        1.215515,
+        240,
+        28.923
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "player": [
+        44.928,
+        0.02500000037252903,
+        44.079
+      ],
+      "grounded": true,
+      "observedAtMs": 41903.200000047684,
+      "flood": {
+        "bytes": 4580808,
+        "downloadMilliseconds": 301.89999997615814,
+        "decodeMilliseconds": 11.600000023841858,
+        "totalMilliseconds": 313.5,
+        "triangles": 73655,
+        "runtimeMeshes": 60,
+        "materials": 24,
+        "buildMilliseconds": 19,
+        "waterCollision": false,
+        "newLights": 0,
+        "integrationTriangles": 24,
+        "retainedLampInterfaces": [
+          {
+            "id": "S21-L3",
+            "position": [
+              45.98585568461623,
+              0,
+              32.8410838841428
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          },
+          {
+            "id": "S22-L1",
+            "position": [
+              36.142117348918624,
+              0,
+              37.56933897223424
+            ],
+            "groundTop": 0.025,
+            "moved": false
+          }
+        ]
+      },
+      "render": {
+        "frame": 6,
+        "calls": 1089,
+        "triangles": 1643354,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 513,
+        "textures": 20
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    }
+  ]
+}

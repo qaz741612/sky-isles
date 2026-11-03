@@ -1,7 +1,7 @@
 // Actual Three.js frames. Native poses retain original orbit/zoom; QA lenses are explicit.
 import{chromium}from'playwright';import fs from'node:fs';import{createHash}from'node:crypto';
 const sourceBytes=file=>fs.readFileSync(process.argv.includes('--baseline')&&file.endsWith('.glb')||process.argv.includes('--baseline')&&file.endsWith('flood-control-collision.json')?('docs/design/flood-control-island-g-v5-1/baseline/'+file.split('/').at(-1)):file),hash=bytes=>createHash('sha256').update(bytes).digest('hex');
-const dir=process.argv[2]??'docs/previews/flood-control-island-g-v5-1/game',port=process.argv[3]??4260,only=process.argv.find(x=>x.startsWith('--only='))?.slice(7)?.split(',');fs.mkdirSync(dir,{recursive:true});
+const dir=process.argv[2]??'docs/previews/flood-control-island-g-v5-1/game',port=process.argv[3]??4263,only=process.argv.find(x=>x.startsWith('--only='))?.slice(7)?.split(',');fs.mkdirSync(dir,{recursive:true});
 const header={assetSHA256:hash(sourceBytes('public/models/flood-control-g/flood-control-g.glb')),collisionSHA256:hash(sourceBytes('src/data/flood-control-collision.json')),cameraSHA256:hash(sourceBytes('src/main.js')),runtimeSHA256:hash(sourceBytes('src/world/flood-control.js'))};let records=[];
 if(only&&fs.existsSync(`${dir}/capture-record.json`)){const old=JSON.parse(fs.readFileSync(`${dir}/capture-record.json`));if(old.assetSHA256!==header.assetSHA256)throw Error('cannot merge captures from different assets');records=old.records;}
 const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
@@ -17,6 +17,7 @@ try{for(const mobile of(process.argv.includes('--desktop-only')?[false]:process.
  }
  await shot(mobile?'mobile-native':'desktop-native','native',[0,-1.2]);
  await shot(mobile?'mobile-waterfront-player':'desktop-waterfront-player','native-orbit',[-9.7,-3.4,Math.PI+.16]);
+ await shot(mobile?'mobile-command-player':'desktop-command-player','native-orbit',[7.75,.6,Math.PI+.16]);
  if(!mobile){await shot('s21-player','native',[4.2,-14]);await shot('s22-player','native',[-12.2,-6.8]);await shot('command-porch-player','native',[7.75,.6]);await shot('g-hero','qa',[-29,26,-42,-2,1,1]);await shot('g-reference-hero','qa',[-37,30,40]);await shot('g-entrance','qa',[18,14,-24]);await shot('g-top','qa',[0,55,.001]);await shot('sluice-detail','qa',[-25,13,-23,-9.35,3.5,6.1]);await shot('npc-player','native',[8.8,-9.1]);await shot('command-detail','qa',[24,12,-23,9,2.5,4]);await shot('yuan-panorama','overview',[]);}else{await page.setViewportSize({width:932,height:430});await shot('mobile-landscape','native',[0,-1.2]);await page.setViewportSize({width:430,height:932});await shot('mobile-panorama','overview',[]);}
  await ctx.close();
 }}finally{await browser.close();}

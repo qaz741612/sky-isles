@@ -8,6 +8,7 @@ import numpy as np
 import trimesh
 from shapely.geometry import Polygon,Point,LineString,box,MultiPoint
 from shapely.ops import unary_union
+if '--site' in sys.argv:raise SystemExit('V5.1 is art-only; approved site/roads must not be regenerated here')
 R=Path(__file__).resolve().parents[2];D=R/'docs/design/flood-control-island-g-v5-1';W=R/'work/g-v51';D.mkdir(exist_ok=True);W.mkdir(exist_ok=True)
 A=json.loads((R/'src/data/flood-control-art.json').read_text());source=(R/'scripts/flood/prepare_v5.py').read_text();marker='# Geometry/proxy proof and bounded build input.';ns={'__file__':str(R/'scripts/flood/prepare_v5.py')};exec(compile(source.split(marker)[0],str(R/'scripts/flood/prepare_v5.py'),'exec'),ns)
 parts=ns['parts'];mats=ns['mats'];mats.update({k:tuple(v)for k,v in A['materials'].items()});add=ns['add'];cube=ns['cube'];rod=ns['rod'];slab=ns['slab'];triangles=ns['triangles'];waters=ns['waters'];dry=ns['dry'];shell=ns['shell'];paving=ns['paving'];P=ns['P'];fromdomain=ns['fromdomain'];site=ns['site']
@@ -19,6 +20,8 @@ for p in parts:
  if n.startswith(('Continuous gate discharge','Surface-following discharge foam')):removed.append(n);continue
  # Lift the already-modelled gate leaves, not the concrete structure/catwalk.
  if n in ['sluice gate deep steel leaf','sluice leaf vertical ribs','vertical sluice steel ribs','upper gate header plate','Gate leaf bolted flange']:p['mesh'].apply_translation([0,A['gateLift'],0])
+ if n=='Anchored submerged pier foundation':
+  v=p['mesh'].vertices;v[:,1]=-2.35+(v[:,1]+2.35)*(.40/1.70)
  if n=='threaded gate screw':
   v=p['mesh'].vertices;lo=v[:,1].min();hi=v[:,1].max();v[:,1]=(v[:,1]-lo)*(hi-lo-A['gateLift'])/(hi-lo)+lo+A['gateLift']
  keep.append(p)
@@ -93,6 +96,9 @@ for lane,x in enumerate(lanes):
   for y in [1.0,2.2,3.4,4.6]:cube('V51 gate guide fastening',(x+side*1.37,y,5.61),(.15,.12,.07),'bronze','gate',False)
  cube('V51 hoist position indicator',(x,6.18,4.54),(.56,.29,.08),'steel','gate',False)
  for j in range(3):cube('V51 hoist indicator segments',(x-.17+j*.17,6.18,4.49),(.09,.045,.02),'foam','gate',False)
+# Piers continue down to the truly submerged spread footings; no exposed broad
+# block masks the falling sheet. These stems are outside the2m hydraulic throat.
+for px in [-14,-10.9,-7.8,-4.7]:cube('V51 continuous submerged pier stem',(px,-1.65,6.25),(.95,1.05,3.6),'concrete','gate',True)
 # Layered bank walls down into each real pool and continuous water-line bands.
 for poly,waterY in [(ns['up'],upY),(ns['low'],lowY)]:
  line=poly.exterior
@@ -135,7 +141,8 @@ for zz in [4.77,7.65]:
  cube('V51 observation transom',(tx,7.45,zz),(2.7,.06,.08),'wood','observation',False)
  cube('V51 observation lower console band',(tx,5.72,zz),(2.7,.27,.11),'steel_lite','observation',False)
 # Small weather/communications instruments, keeping retained maximum height.
-rod('V51 weather mast',[12.0,8.85,6.5],[12.0,9.65,6.5],.04,'steel','observation')
+cube('V51 weather mast anchorage',(12.0,8.84,6.5),(.18,.07,.18),'steel','observation',False)
+rod('V51 weather mast',[12.0,8.80,6.5],[12.0,9.65,6.5],.04,'steel','observation')
 rod('V51 anemometer beam',[11.57,9.45,6.5],[12.43,9.45,6.5],.025,'steel','observation')
 for x in [11.57,12.43]:
  m=trimesh.creation.icosphere(subdivisions=1,radius=.10);m.apply_scale([1,.45,1]);m.apply_translation([x,9.45,6.5]);add(m,'steel_lite','V51 wind measurement cup','observation')
@@ -184,6 +191,8 @@ for x,z in P['benchesXZ']:
  for h in [.70,.83]:cube('V51 retained seat timber back',(x,h,z+.22),(1.7,.09,.075),'wood','props',True)
 # Water interpretation mounts to the bank, leaving the full promenade open.
 sx,sz=A['zones']['overlook']['sign'];cube('V51 waterside interpretation frame',(sx,.83,sz),(.12,.62,.85),'steel','props',True)
+rod('V51 bank interpretation ground mount',[sx,.025,sz],[sx,.55,sz],.045,'steel','props',True)
+cube('V51 bank interpretation fixing plate',(sx,.035,sz),(.22,.025,.30),'steel','props',False)
 for j in range(5):cube('V51 water level interpretation mark',(sx+.066,.60+j*.10,sz),(.01,.025,.45-.045*j),'foam','props',False)
 # S22 concave edge receives a continuous fine coping profile at the existing rail,
 # never an inner fence. Floor geometry remains unchanged.
@@ -206,6 +215,9 @@ for bank in [bed,*arrivalBeds]:
 ns['D']=D;ns['W']=W;ns['parts']=parts;ns['mats']=mats;exec(compile(marker+source.split(marker)[1],str(R/'scripts/flood/prepare_v5.py'),'exec'),ns)
 collision=json.loads((R/'src/data/flood-control-collision.json').read_text());collision['solids'].append({'name':'V51 command rain-garden bank','polygon':list(map(list,bed.exterior.coords))[:-1],'base':0,'top':.34});
 for bank in arrivalBeds:collision['solids'].append({'name':'V51 arrival planted bank','polygon':list(map(list,bank.exterior.coords))[:-1],'base':0,'top':.28})
+# Submerged structural faces never become player floors. Keep the approved dry
+# triangles byte-identical; only non-public negative-height support is removed.
+cut=collision['dryGroundFloats'];f=np.asarray(collision['groundPositions'][cut:]).reshape((-1,3,3));retained=f[np.min(f[:,:,1],axis=1)>=-.001];collision['submergedSupportTrianglesRemoved']=int(len(f)-len(retained));collision['groundPositions']=collision['groundPositions'][:cut]+retained.reshape(-1).tolist()
 collision['artRevision']='G-V5.1';(R/'src/data/flood-control-collision.json').write_text(json.dumps(collision,separators=(',',':'))+'\n')
 proof={'baseCommit':A['baseCommit'],'baseParts':baseParts,'parts':len(parts),'removedOldFlowParts':len(removed),'redundantVisualPostsRemoved':removedPosts,'gateLeafLift':A['gateLift'],'headerTop':4.23+A['gateLift'],'retainedBeamUnderside':5.06,'headerClearance':5.06-(4.23+A['gateLift']),'waterLevels':P['waterHeights'],'geometryFloorUntouched':True,'newRealtimeLights':0,'newTransparentWater':0,'zones':A['zones']}
 (D/'art-change-proof.json').write_text(json.dumps(proof,ensure_ascii=False,indent=2)+'\n');print('V5.1 true-art parts prepared; header clearance %.3f; all site/core/guide domains retained'%proof['headerClearance'])
