@@ -32,6 +32,12 @@
       "path": "src/data/yuan-plan.json",
       "bytes": 50380,
       "sha256": "c828677651fd3a6b7b5b6cdbda73a7fd741b4795f1f2eb6ab4d6461b5c77c0c0"
+    },
+    {
+      "path": "src/world/flood-control.js",
+      "bytes": 8081,
+      "sha256": "e676774c9ddf09e9a26792e6e12b990b7ee57e050771664661498ba8c06527cf"
     }
-  ]
+  ],
+  "runtimeScope": "Only floodCameraConstraint extends silhouette probes and holds a clear G-local orbit offset; common player/camera and loader/builder prefix unchanged."
 }

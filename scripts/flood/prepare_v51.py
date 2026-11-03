@@ -8,7 +8,7 @@ import numpy as np
 import trimesh
 from shapely.geometry import Polygon,Point,LineString,box,MultiPoint
 from shapely.ops import unary_union
-if '--site' in sys.argv:raise SystemExit('V5.1 is art-only; approved site/roads must not be regenerated here')
+if '--site' in sys.argv or '--pass1' in sys.argv:raise SystemExit('V5.1 is art-only; approved site/roads must not be regenerated here')
 R=Path(__file__).resolve().parents[2];D=R/'docs/design/flood-control-island-g-v5-1';W=R/'work/g-v51';D.mkdir(exist_ok=True);W.mkdir(exist_ok=True)
 A=json.loads((R/'src/data/flood-control-art.json').read_text());source=(R/'scripts/flood/prepare_v5.py').read_text();marker='# Geometry/proxy proof and bounded build input.';ns={'__file__':str(R/'scripts/flood/prepare_v5.py')};exec(compile(source.split(marker)[0],str(R/'scripts/flood/prepare_v5.py'),'exec'),ns)
 parts=ns['parts'];mats=ns['mats'];mats.update({k:tuple(v)for k,v in A['materials'].items()});add=ns['add'];cube=ns['cube'];rod=ns['rod'];slab=ns['slab'];triangles=ns['triangles'];waters=ns['waters'];dry=ns['dry'];shell=ns['shell'];paving=ns['paving'];P=ns['P'];fromdomain=ns['fromdomain'];site=ns['site']

@@ -34,21 +34,36 @@ export function buildFloodControl(source,island){
 // G-only public-space camera clearance. Keep desired orbit/zoom unchanged;
 // reject views which hide the torso behind a nearby glass wall or roof edge.
 export function floodCameraConstraint(constrain,island,getOrbit){
- let lastOffset=0;
+ let lastOffset=0,nativeClearFrames=0;
  const wrapped=(target,position)=>{
   if(Math.hypot(target.x-island.pos.x,target.z-island.pos.z)>24)return constrain(target,position);
-  const body=target.clone().add(new THREE.Vector3(0,-.75,0));
-  const blocked=constrain(target,position),bodyProbe=position.clone(),bodyBlocked=constrain(body,bodyProbe);
-  if(!blocked&&!bodyBlocked)return false;
-  if(!bodyBlocked&&position.distanceTo(target)>8)return blocked;
-  const o=getOrbit(),r=Math.cos(o.pitch)*o.dist;let best=position.clone(),score=bodyBlocked?bodyProbe.distanceTo(target):position.distanceTo(target),offset=lastOffset;
-  outer:for(const y of[target.y+Math.sin(o.pitch)*o.dist,target.y+.35])for(const a of new Set([lastOffset,0,-.35,.35,-.7,.7,-1.05,1.05,-1.4,1.4,-1.8,1.8,-2.4,2.4,Math.PI])){
-   const candidate=new THREE.Vector3(target.x+Math.sin(o.yaw+a)*r,y,target.z+Math.cos(o.yaw+a)*r);
-   constrain(target,candidate);constrain(body,candidate);constrain(target,candidate);
-   const check=candidate.clone();if(constrain(body,check))continue;
-   const d=candidate.distanceTo(target);if(d>score+.15){best=candidate;score=d;offset=a;}
-   if(score>Math.min(10,r*.7))break outer;
+  // The visual avatar is shorter than the physical head target. Check its lower
+  // silhouette too; central head/torso rays can leave half of it behind an eave.
+  const body=target.clone().add(new THREE.Vector3(0,-.75,0)),feet=target.clone().add(new THREE.Vector3(0,-1.30,0));
+  const focuses=point=>{const right=new THREE.Vector3(point.z-target.z,0,target.x-point.x);if(right.lengthSq()<1e-9)right.set(1,0,0);right.normalize().multiplyScalar(.32);return[target,body,body.clone().add(right),body.clone().sub(right),feet.clone().addScaledVector(right,.78),feet.clone().addScaledVector(right,-.78)];};
+  const clear=point=>focuses(point).every(focus=>!constrain(focus,point.clone()));
+  const o=getOrbit(),r=Math.cos(o.pitch)*o.dist,y=target.y+Math.sin(o.pitch)*o.dist;
+  const pose=a=>new THREE.Vector3(target.x+Math.sin(o.yaw+a)*r,y,target.z+Math.cos(o.yaw+a)*r);
+  if(Math.abs(lastOffset)>.001){
+   const native=pose(0);nativeClearFrames=clear(native)?nativeClearFrames+1:0;
+   const preferred=pose(lastOffset);
+   // Hold a valid side while the native ray remains obstructed. Otherwise the
+   // common follow lerp pulls into the same eave and repeatedly snaps back.
+   if(nativeClearFrames<8&&clear(preferred)){position.copy(preferred);return true;}
+   if(nativeClearFrames>=8)lastOffset=0;
   }
-  lastOffset=offset;position.copy(best);return blocked||bodyBlocked;
+  const headBlocked=constrain(target,position),visible=clear(position);
+  if(visible&&(!headBlocked||position.distanceTo(target)>8))return headBlocked;
+  let best=position.clone(),bestDistance=visible?position.distanceTo(target):0,offset=lastOffset;
+  const steps=[.08,.16,.24,.32,.40,.48,.64,.80,1.05,1.4,1.8,2.4,Math.PI],angles=[lastOffset,...steps.flatMap(d=>[lastOffset-d,lastOffset+d]),0,...steps.flatMap(d=>[-d,d])];
+  outer:for(const height of[y,target.y+.35])for(const a of new Set(angles.map(v=>Math.atan2(Math.sin(v),Math.cos(v))))){
+   const candidate=pose(a);candidate.y=height;
+   for(const focus of focuses(candidate))constrain(focus,candidate);
+   if(!clear(candidate))continue;
+   const d=candidate.distanceTo(target);
+   if(d>bestDistance+.05){best=candidate;bestDistance=d;offset=a;}
+   if(d>Math.min(10,r*.7)){best=candidate;offset=a;break outer;}
+  }
+  lastOffset=offset;nativeClearFrames=0;position.copy(best);return headBlocked||!visible;
  };wrapped.stats=constrain.stats;return wrapped;
 }

@@ -1,7 +1,7 @@
 // Actual Three.js frames. Native poses retain original orbit/zoom; QA lenses are explicit.
 import{chromium}from'playwright';import fs from'node:fs';import{createHash}from'node:crypto';
 const sourceBytes=file=>fs.readFileSync(process.argv.includes('--baseline')&&file.endsWith('.glb')||process.argv.includes('--baseline')&&file.endsWith('flood-control-collision.json')?('docs/design/flood-control-island-g-v5-1/baseline/'+file.split('/').at(-1)):file),hash=bytes=>createHash('sha256').update(bytes).digest('hex');
-const dir=process.argv[2]??'docs/previews/flood-control-island-g-v5-1/game',port=process.argv[3]??4264,only=process.argv.find(x=>x.startsWith('--only='))?.slice(7)?.split(',');fs.mkdirSync(dir,{recursive:true});
+const dir=process.argv[2]??'docs/previews/flood-control-island-g-v5-1/game',port=process.argv[3]??4265,only=process.argv.find(x=>x.startsWith('--only='))?.slice(7)?.split(',');fs.mkdirSync(dir,{recursive:true});
 const header={assetSHA256:hash(sourceBytes('public/models/flood-control-g/flood-control-g.glb')),collisionSHA256:hash(sourceBytes('src/data/flood-control-collision.json')),cameraSHA256:hash(sourceBytes('src/main.js')),runtimeSHA256:hash(sourceBytes('src/world/flood-control.js'))};let records=[];
 if(only&&fs.existsSync(`${dir}/capture-record.json`)){const old=JSON.parse(fs.readFileSync(`${dir}/capture-record.json`));if(old.assetSHA256!==header.assetSHA256)throw Error('cannot merge captures from different assets');records=old.records;}
 const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});

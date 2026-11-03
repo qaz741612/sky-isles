@@ -302,6 +302,15 @@
   "baseV5Commit": "8849b89e99163c179973a31571498115c6c80e7c",
   "protectedV5Files": 214,
   "protectedDrift": [],
+  "wholeFilesUnchanged": 213,
+  "GCameraScopedChange": {
+    "path": "src/world/flood-control.js",
+    "function": "floodCameraConstraint only",
+    "oldSHA256": "6f9f396d15c932f07281c16325520c9ec56b13f838fabffc47f9feaa5455c2ad",
+    "newSHA256": "e676774c9ddf09e9a26792e6e12b990b7ee57e050771664661498ba8c06527cf",
+    "loaderAndBuilderPrefixIdentical": true,
+    "outsideGDelegation": "unit tested, common player/camera/main and F/A/C unchanged"
+  },
   "artBanks": [
     {
       "name": "arrival",
