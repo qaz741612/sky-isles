@@ -1,0 +1,59 @@
+{
+  "baseCommit": "8849b89e99163c179973a31571498115c6c80e7c",
+  "baseParts": 2385,
+  "parts": 2737,
+  "removedOldFlowParts": 36,
+  "redundantVisualPostsRemoved": 167,
+  "gateLeafLift": 0.78,
+  "headerTop": 5.010000000000001,
+  "retainedBeamUnderside": 5.06,
+  "headerClearance": 0.049999999999998934,
+  "waterLevels": {
+    "upstream": -0.66,
+    "downstream": -1.8
+  },
+  "geometryFloorUntouched": true,
+  "newRealtimeLights": 0,
+  "newTransparentWater": 0,
+  "zones": {
+    "arrival": {
+      "medallion": [
+        1.7,
+        -8.5
+      ],
+      "radius": 2.1,
+      "purpose": "flush water-cycle inlay and approach guidance; clear through space"
+    },
+    "forecourt": {
+      "bed": [
+        [
+          12.3,
+          -6.5
+        ],
+        [
+          15.0,
+          -6.5
+        ],
+        [
+          15.4,
+          -5.5
+        ],
+        [
+          12.3,
+          -5.5
+        ]
+      ],
+      "purpose": "integrated planted edge facing annex, outside guide reservation"
+    },
+    "overlook": {
+      "sign": [
+        -1.15,
+        8.5
+      ],
+      "purpose": "water level interpretation fixed to waterside edge, not policy-text duplication"
+    },
+    "s22Bay": {
+      "purpose": "continuous pale stone coping and flush edge inlays on actual concave shoreline"
+    }
+  }
+}
