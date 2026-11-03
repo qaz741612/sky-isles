@@ -1,7 +1,7 @@
 {
   "baseCommit": "8849b89e99163c179973a31571498115c6c80e7c",
   "baseParts": 2385,
-  "parts": 2737,
+  "parts": 2803,
   "removedOldFlowParts": 36,
   "redundantVisualPostsRemoved": 167,
   "gateLeafLift": 0.78,
@@ -22,7 +22,63 @@
         -8.5
       ],
       "radius": 2.1,
-      "purpose": "flush water-cycle inlay and approach guidance; clear through space"
+      "purpose": "flush water-cycle inlay and approach guidance; clear through space",
+      "bed": [
+        [
+          7.0,
+          -13.5
+        ],
+        [
+          11.8,
+          -12.7
+        ],
+        [
+          12.8,
+          -11.0
+        ],
+        [
+          10.5,
+          -11.1
+        ],
+        [
+          7.0,
+          -12.2
+        ]
+      ],
+      "curvedBed": [
+        [
+          -11.5,
+          -12.9
+        ],
+        [
+          -9.0,
+          -13.8
+        ],
+        [
+          -6.0,
+          -14.3
+        ],
+        [
+          -4.0,
+          -13.9
+        ],
+        [
+          -4.2,
+          -13.35
+        ],
+        [
+          -6.2,
+          -13.65
+        ],
+        [
+          -9.0,
+          -13.15
+        ],
+        [
+          -11.4,
+          -12.3
+        ]
+      ]
     },
     "forecourt": {
       "bed": [

@@ -30,7 +30,7 @@ for idx,p in enumerate(P['parts']):
  else:
   mesh=bpy.data.meshes.new(p['name']);mesh.from_pydata(verts,[],p['faces']);mesh.update();o=bpy.data.objects.new('V51_'+str(idx)+'_'+p['name'],mesh);s.collection.objects.link(o);new+=1
   if len(p['vertices'])==8 and p['mat']not in ['glass','glass2','water_upper','water_lower','foam']:
-   bevel=o.modifiers.new('Fabricated refined edges','BEVEL');bevel.width=.018;bevel.segments=2;o.modifiers.new('Area weighted fabricated normals','WEIGHTED_NORMAL')
+   bevel=o.modifiers.new('Fabricated refined edges','BEVEL');bevel.width=min(.018,min(np.ptp(np.asarray(verts),axis=0))*.24);bevel.segments=1 if min(np.ptp(np.asarray(verts),axis=0))<.14 else 2;o.modifiers.new('Area weighted fabricated normals','WEIGHTED_NORMAL')
  o.parent=roles[p['role']];o.data.materials.clear();o.data.materials.append(materials[p['mat']]);o['sourceComponent']=p['name'];o['semanticRole']=p['role'];o['solid']=p['solid'];o['floor']=p.get('ground',False);o['roofSupport']=p['roof'];o['source']='Approved V5 editable objects + authored V5.1 refinements';used.add(o)
 for o in old:
  if o not in used:bpy.data.objects.remove(o,do_unlink=True)

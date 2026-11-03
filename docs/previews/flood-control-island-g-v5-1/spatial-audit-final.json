@@ -1,0 +1,301 @@
+{
+  "scope": "G V5 final actual geometry; not human art approval or hardware FPS",
+  "base": "cd4bacba72b6a1f7bf607c687566dc14f12c4896",
+  "centre": [
+    44.928,
+    0,
+    45.279
+  ],
+  "footprint": {
+    "boundsLocal": [
+      -18.94364,
+      -16.908470000000005,
+      19.85503,
+      17.554889999999993
+    ],
+    "width": 38.79867,
+    "depth": 34.463359999999994,
+    "area": 1007.1738558196507,
+    "westNotch": true
+  },
+  "water": {
+    "surfaceArea": 227.85915722881887,
+    "openVoidArea": 166.16900907668804,
+    "levelHeights": {
+      "upstream": -0.66,
+      "downstream": -1.8
+    },
+    "drop": 1.1400000000000001,
+    "throats": [
+      [
+        [
+          -13.489999999999998,
+          5.3
+        ],
+        [
+          -11.41,
+          5.3
+        ],
+        [
+          -11.41,
+          7.25
+        ],
+        [
+          -13.489999999999998,
+          7.25
+        ]
+      ],
+      [
+        [
+          -10.39,
+          5.3
+        ],
+        [
+          -8.309999999999999,
+          5.3
+        ],
+        [
+          -8.309999999999999,
+          7.25
+        ],
+        [
+          -10.39,
+          7.25
+        ]
+      ],
+      [
+        [
+          -7.29,
+          5.3
+        ],
+        [
+          -5.21,
+          5.3
+        ],
+        [
+          -5.21,
+          7.25
+        ],
+        [
+          -7.29,
+          7.25
+        ]
+      ]
+    ],
+    "isCollider": false
+  },
+  "S20": {
+    "samples": 4097,
+    "centreGap": 6.4846587736907795,
+    "coreGap": 4.087067506386742,
+    "conservativeOuterStructureGap": 3.3877700534230675,
+    "actualLandscapeAndRailMarginGapToGParts": 2.946995080432191,
+    "actualMethod": "Existing zone5 shoulders/beds/finishes clipped to S20 region plus.20 railing/post allowance; minimum across every authored G part XZ hull; conservative vertical projection.",
+    "lampBaseGap": 9.975569705318135
+  },
+  "mouths": {
+    "S21": {
+      "solidIntrusions": [],
+      "insideIsland": 17.2995761246645,
+      "outsideIsland": 23.17394773042314,
+      "mouthCoreWidth": 4.8
+    },
+    "S22": {
+      "solidIntrusions": [],
+      "insideIsland": 13.492237009088281,
+      "outsideIsland": 3.0144429932223966,
+      "mouthCoreWidth": 4.8
+    }
+  },
+  "routes": {
+    "S01": {
+      "length": 21.878840093220422,
+      "unchangedControlPoints": true
+    },
+    "S02": {
+      "length": 49.251220073435036,
+      "unchangedControlPoints": true
+    },
+    "S03": {
+      "length": 28.45669976362555,
+      "unchangedControlPoints": true
+    },
+    "S04": {
+      "length": 17.63222012397669,
+      "unchangedControlPoints": true
+    },
+    "S05": {
+      "length": 22.146221431122303,
+      "unchangedControlPoints": true
+    },
+    "S06": {
+      "length": 15.191560215943117,
+      "unchangedControlPoints": true
+    },
+    "S07": {
+      "length": 22.25598158140608,
+      "unchangedControlPoints": true
+    },
+    "S08": {
+      "length": 29.852329029965247,
+      "unchangedControlPoints": true
+    },
+    "S09": {
+      "length": 12.305040796355836,
+      "unchangedControlPoints": true
+    },
+    "S10": {
+      "length": 15.109316761522821,
+      "unchangedControlPoints": true
+    },
+    "S11": {
+      "length": 30.90558524291874,
+      "unchangedControlPoints": true
+    },
+    "S12": {
+      "length": 8.515700961673351,
+      "unchangedControlPoints": true
+    },
+    "S13": {
+      "length": 18.348162855551184,
+      "unchangedControlPoints": true
+    },
+    "S14": {
+      "length": 47.41659001714253,
+      "unchangedControlPoints": true
+    },
+    "S15": {
+      "length": 44.31351877051831,
+      "unchangedControlPoints": true
+    },
+    "S16": {
+      "length": 58.89181759001927,
+      "unchangedControlPoints": true
+    },
+    "S17": {
+      "length": 8.224192908729867,
+      "unchangedControlPoints": true
+    },
+    "S18": {
+      "length": 71.36452844896814,
+      "unchangedControlPoints": true
+    },
+    "S19": {
+      "length": 59.87257030847718,
+      "unchangedControlPoints": true
+    },
+    "S20": {
+      "length": 28.64516794933122,
+      "unchangedControlPoints": true
+    },
+    "S21": {
+      "length": 40.4735238550877,
+      "unchangedControlPoints": true
+    },
+    "S22": {
+      "length": 16.50668000231068,
+      "unchangedControlPoints": true
+    }
+  },
+  "totalCentrelineLength": 667.5574687813013,
+  "beforeCentrelineLength": 667.5574687813013,
+  "publicCircuit": {
+    "capsuleRadius": 0.365,
+    "solidIntrusions": [],
+    "length": 74.08834217749929,
+    "dryMissingArea": 0.0
+  },
+  "NPC": {
+    "count": 1,
+    "personImplemented": false,
+    "data": {
+      "id": "zhang-guli-flood-guide",
+      "name": "張顧礫",
+      "position": [
+        10.2,
+        0,
+        -9.1
+      ],
+      "playerStop": [
+        8.8,
+        0,
+        -9.1
+      ],
+      "reservation": [
+        3,
+        3
+      ],
+      "facing": -1.5707963267948966,
+      "interactionRadius": 1.65,
+      "implemented": false
+    },
+    "outsideDryArea": 0.0,
+    "wetOverlapArea": 0.0,
+    "solidIntrusions": []
+  },
+  "floorTriangleGrade": {
+    "triangles": 308,
+    "max": 0.0
+  },
+  "model": {
+    "boundsLocalXYZ": [
+      [
+        -18.98862648010254,
+        -6.650000095367432,
+        -16.953441619873047
+      ],
+      [
+        19.9000301361084,
+        10.074999809265137,
+        17.599889755249023
+      ]
+    ],
+    "dimensionsXYZ": [
+      38.88865661621094,
+      16.72499990463257,
+      34.55333137512207
+    ],
+    "glbBytes": 4580808,
+    "sha256": "510219757646fc2a58775e01191e226ba0277c535b4b91ef293ee2f6d70c5bd0",
+    "meshes": 60,
+    "materials": 24,
+    "textures": 0
+  },
+  "islandGaps": [
+    {
+      "id": "F",
+      "distance": 34.99635795757855,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "A",
+      "distance": 64.90984673858972,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "B",
+      "distance": 70.83158611889436,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "C",
+      "distance": 32.22660351512729,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "E",
+      "distance": 39.741831691426285,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "D",
+      "distance": 78.08263327715363,
+      "overlapArea": 0.0
+    },
+    {
+      "id": "H",
+      "distance": 17.10849137540041,
+      "overlapArea": 0.0
+    }
+  ]
+}

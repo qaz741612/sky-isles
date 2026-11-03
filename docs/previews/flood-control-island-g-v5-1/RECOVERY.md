@@ -1,9 +1,11 @@
-# G V5.1 施工檢查點（未宣告完成）
+# G V5.1 最終驗證進行中
 
-基底PR18 `8849b89e99163c179973a31571498115c6c80e7c`，同一分支接續，未改寫歷史。原V5輸出完整保留，另存baseline原檔、GLB、碰撞及同機位圖。
+PR18同分支codex/flood-control-island-g-v5。V5基底8849b89，完整基準原檔/資產/214檔保護留存。第一輪ebc4d32已推送，兩輪自查圖及SELF-REVIEW已保存；第二輪發現側牆和消能塊遮水，已在最新版模型修正。
 
-已完成第一輪真實模型精修：三閘葉開度0.78（頂部離原梁0.05）、曲面出流／白沫／消能塊／內渠壁、觀測塔與入口構件、四功能區地坪及前庭植栽、保留樹冠與座椅精修；不改場址、路網、4.8核心及NPC資料。從原V5可編輯Blender保留2077個原物件，局部替換／新增660個，第一輪81081三角面／60批次。此版本只作第一輪自查，尚未通過遊戲及最終美術驗收。
+目前模型73655三角面/60批次，從原V5 .blend保留2077個原可編輯物件，沒有重新製作島台、道路或F/A/C。water仍不作地面，NPC預留和22中心線不動。真實落差1.14、三道開度0.78、頂部離原梁0.05。
 
-工作流程：Python虛擬環境執行scripts/flood/prepare_v51.py（重用V5幾何與碰撞生成段，但不寫舊V5稽核或世界地形），Blender執行scripts/blender/build_flood_v51.py（開啟原V5 .blend，保留匹配原物件，局部更新），唯讀render_saved_flood_v51.py出圖。需再實際看圖修正，優化新增小構件倒角，重新完整渲染與測試。
+最終Blender12張圖正在從同一凍結原檔唯讀渲染；正式build、lint、75單元及4261原遊戲逐幀22路往返正在驗證，尚未交付通過聲明。4260為第二輪，4254為原V5比較版，4261為最終模型。不得混舊圖當新版。後續需完整Playwright、實際桌機/手機圖、效能前後比較、manifest下載核對。
 
-V5.1原始調整集中src/data/flood-control-art.json；所有場址來源仍是原flood-control-plan.json，未更動。public G GLB與G collision將更新；F/A/C及原V5文檔的214檔保護SHA存於docs/design/flood-control-island-g-v5-1/protected-baseline.json。未新增透明水、即時燈、NPC或橋景。work/node_modules/.blend1不提交。不合併、不Production部署。
+流程prepare_v51.py→build_flood_v51.py（打開原V5 .blend並協調差異）→render_saved_flood_v51.py→audit_v51.py。不執行--site或重寫原V5檔案。原G5完整報告與圖片不變，新成果集中v5-1目錄。
+
+work/node_modules/.blend1保留於本地，不提交；不reset/clean，不合併或Production部署，不施工橋景或其他島。
