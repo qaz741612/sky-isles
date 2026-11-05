@@ -32,10 +32,10 @@ def footprint(mesh):
  return unary_union(polys).buffer(0)if polys else MultiPoint(mesh.vertices[:,[0,2]]).convex_hull
 def public_paths(code):
  if code=='B':return [[4.7,7],[7.2,-6.6],[7.2,-8.6],[7.2,-6.6],[7.2,-1.1],[4.4,-1.3],[.5,.2],[-1.9,-.7],[-3,-.55],[-1.9,-.7],[.5,.2],[4.7,7]]
- if code=='D':return [[0,0],[6.2,1.6],[6.1,2.72],[6.2,1.6],[8.8,1.0],[9.1,-3.55],[11.3,-3.55],[11.3,-5.25],[11.3,-7.25],[7,-7],[0,0],[-1.2,-5.5],[-1.2,-10.8],[-1.2,-5.5],[0,0]]
- if code=='E':return [[0,0],[4.7,2.8],[-1,2.4],[-6.6,7.8],[-4.6,9.8],[-6.6,7.8],[-1,2.4],[-2.4,-4.7],[-2.4,-7.9],[-7.2,-8.2],[-2.4,-7.9],[0,0]]
+ if code=='D':return [[0,0],[6.2,1.6],[6.1,2.72],[6.2,1.6],[8.8,1.0],[9.1,-3.55],[11.3,-3.55],[11.9,-4.9],[11.9,-6.35],[7,-7],[0,0],[-1.2,-5.5],[-1.2,-10.8],[-1.2,-5.5],[0,0]]
+ if code=='E':return [[0,0],[4.7,2.8],[-1,2.4],[-6,4],[-10.55,6.5],[-6,4],[-1,2.4],[-2.4,-4.7],[-2.4,-7.9],[-7.2,-8.2],[-2.4,-7.9],[0,0]]
  return [[0,0],[0,2.5],[-5.5,2.8],[6,2.8],[6,-1.5],[0,-8.1],[-2,-4.4],[-6.3,-4.3],[-6.3,-6.36],[-6.3,-4.3],[-2,-4.4],[0,0]]
-npcs={'B':{'position':[7.2,.15,-8.6],'playerStop':[7.2,.15,-7.15],'facing':0},'D':{'position':[11.3,.15,-5.25],'playerStop':[11.3,.15,-6.7],'facing':math.pi},'E':{'position':[-6.6,.15,9.8],'playerStop':[-5.15,.15,9.8],'facing':math.pi/2},'H':{'position':[0,.15,-10],'playerStop':[0,.15,-8.55],'facing':0}}
+npcs={'B':{'position':[7.2,.15,-8.6],'playerStop':[7.2,.15,-7.15],'facing':0},'D':{'position':[11.9,.15,-4.9],'playerStop':[11.9,.15,-6.35],'facing':math.pi},'E':{'position':[-12.0,.15,6.5],'playerStop':[-10.55,.15,6.5],'facing':math.pi/2},'H':{'position':[0,.15,-10],'playerStop':[0,.15,-8.55],'facing':0}}
 allAudit={};config={'revision':'BDEH-R21-game-v1','sourceBase':'2b4404927f33096ab28539a01f5e6236d670c038','stage':stage,'islands':{}}
 for code in 'BDEH':
  s=ref.Design(code);ref.bounded_floating_island(s);ref.bridge_approach(s)
@@ -45,7 +45,7 @@ for code in 'BDEH':
  active={id(m)for meshes in s.meshes.values()for m in meshes};s.named=[p for p in s.named if id(p['mesh'])in active and p['name']!='Protected42_4p8CorridorGround']
  # NPC research points were only checked against roads in the package. Resolve
  # two actual tree conflicts once, deliberately, and retain each tree as a group.
- relocations={'B':[((5.6,-8.7),(4.4,-11.0)),((-10.3,5.7),(-10.3,3.7)),((-8.4,5.7),(-8.4,3.7))],'D':[((10.9,-4.4),(12.5,-1.0))]}
+ relocations={'B':[((5.6,-8.7),(4.4,-11.0)),((-10.3,5.7),(-10.3,3.7)),((-8.4,5.7),(-8.4,3.7))],'D':[((10.9,-4.4),(12.5,-1.0))],'E':[((-11.3,5.2),(-13.5,4.1))]}
  for a,b in relocations.get(code,[]):
   for part in s.named:
    t=part['tree']
@@ -194,6 +194,6 @@ for code in 'BDEH':
  out={'code':code,'stage':stage,'materials':colours,'parts':serialized,'source':'User R21 named Python geometry, never R18/R20 buildings','centre':[node['x'],0,node['z']]};save(W/f'{code}-parts.json',out)
  collision={'version':'BDEH-R21','groundPositions':ground,'dryGroundFloats':dryCount,'supportPositions':support,'roofPositions':roofFaces,'ceilingPositions':ceilings,'cameraPositions':camera,'solids':solids};save(R/f'src/data/bdeh-{code.lower()}-collision.json',collision)
  config['islands'][code]={'name':theme[code],'centre':[node['x'],0,node['z']],'maxDimensions':ref.SIZES[code],'npc':[npc],'publicCircuit':public_paths(code),'kind':{'B':'r21-care-courtyard','D':'r21-civic-service-portal','E':'r21-living-green-spine','H':'r21-open-book-learning'}[code],'sizePolicy':'No world/model rescale; R21 footprint maximum retained','upperStructuresPublic':False}
- allAudit[code]={'stage':stage,'sourceTriangles':json.loads((D/'source-package/qa/geometry_audit.json').read_text())[code]['triangles'],'preparedTriangles':sum(len(p['faces'])for p in serialized),'objects':len(serialized),'lowSolidCoreIntrusions':intrusions,'NPC3x3SolidIntrusions':npcConflicts,'NPCOutsideLandArea':region.difference(site).area,'publicCorridorComponents':len(polygon_parts(pave)),'sceneBounds':np.array([np.min([np.min(p['vertices'],axis=0)for p in serialized],axis=0),np.max([np.max(p['vertices'],axis=0)for p in serialized],axis=0)]).tolist()}
+ allAudit[code]={'stage':stage,'sourceTriangles':json.loads((D/'source-package/qa/geometry_audit.json').read_text())[code]['triangles'],'preparedTriangles':sum(len(p['faces'])for p in serialized),'objects':len(serialized),'lowSolidCoreIntrusions':intrusions,'NPC3x3SolidIntrusions':npcConflicts,'NPCOutsideLandArea':region.difference(site).area,'NPC4p8CoreOverlapArea':region.intersection(pave).area,'NPCRoadEdgeClearance':region.distance(pave),'publicCorridorComponents':len(polygon_parts(pave)),'sceneBounds':np.array([np.min([np.min(p['vertices'],axis=0)for p in serialized],axis=0),np.max([np.max(p['vertices'],axis=0)for p in serialized],axis=0)]).tolist()}
  print(code,'named objects',len(serialized),'low core conflicts',len(intrusions),'NPC conflicts',len(npcConflicts),flush=True)
 save(R/'src/data/bdeh-plan.json',config);save(OUT/f'geometry-stage-{stage}.json',allAudit)

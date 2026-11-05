@@ -5,3 +5,6 @@
 仍需完成：E的NPC方形預留區與4.8路芯分離驗證／微調；全82單元、瀏覽器全回歸、原生桌手機最終截圖、效能及GitHub下載驗證。舊單元已更新過期世界快照與場景夾具；新增六個實際模型／Player／NPC／相機案例，不將未完成項目當作通過。
 
 Blender最終圖正在依各原檔SHA輸出；工作暫存work與node_modules未提交，不得reset/clean。F/A/C/G模型、模組及共用sim/UI/policies均在PROTECTED-BASELINE.json鎖定。保持Draft，不合併或部署。
+
+
+2026-11-05 checkpoint: all four editable Blender projects and 32 final Cycles views saved. E NPC plot independently corrected to (-12,6.5), real tree relocated; 33 protected baseline hashes. Latest `npm run check`: 82 named unit tests, lint and production build passed. Full 68-case browser run still in progress; checkpoint/fall test driver and final water/glass semantics remain to be reviewed. This is WIP, not final art or real-device acceptance.

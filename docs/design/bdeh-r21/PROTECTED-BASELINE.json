@@ -23,6 +23,11 @@
       "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44"
     },
     {
+      "path": "public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb",
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac"
+    },
+    {
       "path": "src/data/flood-control-art.json",
       "bytes": 3024,
       "sha256": "336e21c537d42e1d7b8e68abaf30a2632f929aec675d3dc8c2c34465c41bddde"

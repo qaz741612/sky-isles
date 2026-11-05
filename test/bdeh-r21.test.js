@@ -1,4 +1,5 @@
 import {test}from'node:test';import assert from'node:assert/strict';import fs from'node:fs';import{createHash}from'node:crypto';import*as T from'three';
+import polygon from'polygon-clipping';import surface from'../src/data/yuan-surface.json'with{type:'json'};
 import {GLTFLoader}from'three/addons/loaders/GLTFLoader.js';import {buildR21Places,r21CameraConstraint}from'../src/world/bdeh-r21.js';import {ISLANDS}from'../src/world/islands.js';import{buildBridges}from'../src/world/bridges.js';import{Player}from'../src/sim/player.js';import{guardIndex,moveWithGuards}from'../src/sim/walkways.js';import{worldCameraConstraint}from'../src/sim/camera-clearance.js';import{assertR21Contracts}from'./helpers/r21-contracts.js';
 const D='docs/design/bdeh-r21/',read=p=>JSON.parse(fs.readFileSync(p)),hash=b=>createHash('sha256').update(b).digest('hex');
 async function fixture(){
@@ -38,8 +39,9 @@ test('actual Player visits all four authored public circuits, courtyard, civic t
 test('each real NPC three-by-three plot is dry, empty and reachable; visible structural guards block swept ordinary movement',async()=>{
  const{places}=await fixture(),ray=new T.Raycaster();
  for(const p of Object.values(places)){
-  const n=p.config.npc[0],c=p.config.centre;assert.equal(n.implemented,false);assert.equal(p.config.npc.length,1);assert.deepEqual(n.reservation,[3,3]);assert.ok(Math.hypot(n.playerStop[0]-n.position[0],n.playerStop[2]-n.position[2])<=n.interactionRadius);
-  for(const dx of[-1.45,0,1.45])for(const dz of[-1.45,0,1.45]){const x=c[0]+n.position[0]+dx,z=c[2]+n.position[2]+dz;ray.set(new T.Vector3(x,1,z),new T.Vector3(0,-1,0));ray.far=1.1;const hit=ray.intersectObjects(p.colliders,false)[0];assert.ok(hit&&hit.point.y>=.05&&hit.point.y<.2,'NPC plot is not dry/flat');for(const w of p.barriers){if(w.a.y>1.8||w.a.y+w.height<.32)continue;const point={x,y:.15,z},copy={...point};moveWithGuards(copy,0,0,[w]);assert.ok(Math.hypot(copy.x-x,copy.z-z)<1e-4,'NPC plot contains '+w.source);}}
+  const n=p.config.npc[0],c=p.config.centre;const core=surface.islandPaving.find(patch=>patch.island===p.config.name).domain,half=1.85,xx=c[0]+n.position[0],zz=c[2]+n.position[2],square=[[[xx-half,zz-half],[xx+half,zz-half],[xx+half,zz+half],[xx-half,zz+half],[xx-half,zz-half]]];assert.equal(polygon.intersection(core,square).length,0,'NPC full3x3 plus .35 margin enters4.8 core '+p.config.name);assert.equal(n.implemented,false);assert.equal(p.config.npc.length,1);assert.deepEqual(n.reservation,[3,3]);assert.ok(Math.hypot(n.playerStop[0]-n.position[0],n.playerStop[2]-n.position[2])<=n.interactionRadius);
+  // Centres stay inset by the real .33 capsule radius inside the3x3 plot.
+  for(const dx of[-1.15,0,1.15])for(const dz of[-1.15,0,1.15]){const x=c[0]+n.position[0]+dx,z=c[2]+n.position[2]+dz;ray.set(new T.Vector3(x,1,z),new T.Vector3(0,-1,0));ray.far=1.1;const hit=ray.intersectObjects(p.colliders,false)[0];assert.ok(hit&&hit.point.y>=.05&&hit.point.y<.2,'NPC plot is not dry/flat');for(const w of p.barriers){if(w.a.y>1.8||w.a.y+w.height<.32)continue;const point={x,y:.15,z},copy={...point};moveWithGuards(copy,0,0,[w]);assert.ok(Math.hypot(copy.x-x,copy.z-z)<1e-4,'NPC plot '+p.config.name+' contains '+w.source);}}
   for(const w of p.barriers){const dx=w.b.x-w.a.x,dz=w.b.z-w.a.z,len=Math.hypot(dx,dz);if(len<.05||w.a.y>1.8||w.a.y+w.height<.4)continue;const point={x:(w.a.x+w.b.x)/2-dz/len,y:Math.max(.15,w.a.y),z:(w.a.z+w.b.z)/2+dx/len};assert.ok(moveWithGuards(point,2*dz/len,-2*dx/len,[w]),'nonblocking real structural segment '+w.source);}
  }
 });
