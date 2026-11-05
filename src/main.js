@@ -18,6 +18,7 @@ import { buildChimes } from './world/chimes.js';
 import {loadParentChildModel,buildParentChildModel,parentChildCameraConstraint} from './world/parent-child-model.js';
 import {loadElevatedStation,elevatedCameraConstraint} from './world/elevated-station.js';
 import {loadFloodControl,buildFloodControl,floodCameraConstraint} from './world/flood-control.js';
+import {loadR21Models,buildR21Places,r21CameraConstraint} from './world/bdeh-r21.js';
 import {loadIndustryYouth,buildIndustryYouth,industryCameraConstraint} from './world/industry-youth.js';
 import { buildTransport, TRANSPORT_NOTICE } from './world/transport.js';
 import { PolicyUI, loadPolicies } from './policies.js';
@@ -49,14 +50,15 @@ const bridges = buildBridges(scene, islands.islands, rng);
 const clouds = buildClouds(scene, rng);
 
 const chimes = buildChimes(islands.islands);
-let stationSource,familySource,floodSource,industrySource;
-try { [stationSource,familySource,floodSource,industrySource]=await Promise.all([loadElevatedStation(),loadParentChildModel(),loadFloodControl(),loadIndustryYouth()]); } catch(error) { document.getElementById('loading').textContent='建築模型載入失敗，請重新整理重試'; throw error; }
+let stationSource,familySource,floodSource,industrySource,r21Sources;
+try { [stationSource,familySource,floodSource,industrySource,r21Sources]=await Promise.all([loadElevatedStation(),loadParentChildModel(),loadFloodControl(),loadIndustryYouth(),loadR21Models()]); } catch(error) { document.getElementById('loading').textContent='建築模型載入失敗，請重新整理重試'; throw error; }
 const transport = buildTransport(islands.islands[0],undefined,stationSource);
 scene.updateMatrixWorld(true);
 const family=buildParentChildModel(familySource,islands.islands.find(i=>i.name==='tree'));
 const flood=buildFloodControl(floodSource,islands.islands.find(i=>i.name==='crystal'));
 const industry=buildIndustryYouth(industrySource,islands.islands.find(i=>i.name==='koi'));
-const props=buildPolicyScenery(islands.islands,{tree:family,crystal:flood,koi:industry});
+const r21=buildR21Places(r21Sources,islands.islands);
+const props=buildPolicyScenery(islands.islands,{tree:family,crystal:flood,koi:industry,...Object.fromEntries(Object.values(r21).map(p=>[p.config.name,p]))});
 // Only this static imported island casts/receives the new shadow. Existing light
 // direction and all other islands stay unchanged; bake the map once at runtime.
 const familySun=scene.children.find(o=>o.isDirectionalLight);
@@ -80,9 +82,10 @@ const colliders = [
 const puzzle = new ChimePuzzle();
 const audio = new AudioEngine();
 const player = new Player(scene, camera, colliders);
-player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transport.station.constrainHead(pos,y,move)||bridges.landscape.constrainHead(pos,y,move)||flood.constrainHead(pos,y,move)||industry.constrainHead(pos,y,move);
+player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transport.station.constrainHead(pos,y,move)||bridges.landscape.constrainHead(pos,y,move)||flood.constrainHead(pos,y,move)||industry.constrainHead(pos,y,move)||Object.values(r21).some(p=>p.constrainHead(pos,y,move));
 scene.updateMatrixWorld(true);
 player.cameraConstraint = elevatedCameraConstraint(parentChildCameraConstraint(industryCameraConstraint(floodCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='crystal'),()=>player.orbit),islands.islands.find(i=>i.name==='koi'),()=>player.orbit),islands.islands.find(i=>i.name==='tree')),transport.station.bounds);
+player.cameraConstraint = r21CameraConstraint(player.cameraConstraint,r21,()=>player.orbit);
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);
@@ -234,7 +237,7 @@ window.__skyisles = {
       started = true;
     }
   },
-  world: { props, panorama, policyUI, scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, family, flood, industry, ui }
+  world: { props, panorama, policyUI, scene, camera, renderer, islands, bridges, chimes, player, puzzle, transport, family, flood, industry, r21, ui }
 };
 
 // ----- main loop -----

@@ -1,0 +1,190 @@
+{
+  "README_四島政策設計_自我審查.md": {
+    "bytes": 5599,
+    "sha256": "7ce38cbd15b1f8a79d545f260cbd76736537a38fad975e972f735376a5a9abe6"
+  },
+  "base/BDEH_R18/data/road-candidate-r2.json": {
+    "bytes": 23605,
+    "sha256": "aad1111b77f6d262119ce7f51387aba46dbe8bac403481b569ba017dcdd58002"
+  },
+  "base/BDEH_R18/source/base_r12.py": {
+    "bytes": 29535,
+    "sha256": "8d8728127b267a56993b21211f1f4718f7163b44f1f3acb3c099c26d14014b41"
+  },
+  "base/BDEH_R18/source/build_r18.py": {
+    "bytes": 33614,
+    "sha256": "b1b52484fc87c8aba43bfbab5d67c9a0ea9866b106578e98faa46a3dd62a5d77"
+  },
+  "base/BDEH_R18/source/vendor_base.py": {
+    "bytes": 25687,
+    "sha256": "cac054ea46e0394a569124413a09d01911a4d983eb1ab7c77a1565ee3eac7ced"
+  },
+  "base/README_目前設計與自我審查.md": {
+    "bytes": 2501,
+    "sha256": "f292d52b75f4c3c4d36ab406e443e2adff1d6b3d94f1f06020b685bde2056368"
+  },
+  "base/build_r20.py": {
+    "bytes": 28869,
+    "sha256": "291b72f060fc4ea960a9a10fad8dadee4b83d4ae5abb3497407df612ff260703"
+  },
+  "base/eco_rewrite_snippet.py": {
+    "bytes": 3537,
+    "sha256": "fe227ab7356e61fed5a0499a2f277142b011c85141c8051a9b250dd17413a09d"
+  },
+  "build_r21.py": {
+    "bytes": 37903,
+    "sha256": "234b419b84a6d7d0289152f1bbdf1929c2f22c90deccf4d7b1c43b4f203d978d"
+  },
+  "make_boards.py": {
+    "bytes": 5999,
+    "sha256": "d3c3ae9a56f4b4bf2b2c1ad175778722ba15e03b8c41e56e553f083744c474d2"
+  },
+  "models/B_R21_policy_landmark.glb": {
+    "bytes": 505396,
+    "sha256": "8a2e6937650a2839e873b06076593ef0021380d65ec614beb0e4e4fcd8f5c481"
+  },
+  "models/D_R21_policy_landmark.glb": {
+    "bytes": 438468,
+    "sha256": "d964892c9ba95693c2f5706a8e197fbcdec7d3eb76a7f19c987e2c4dcdc567ac"
+  },
+  "models/E_R21_policy_landmark.glb": {
+    "bytes": 457984,
+    "sha256": "f390d7013cdeb016522ae52c916a65a215014872f6691f46a385620495fb49b5"
+  },
+  "models/H_R21_policy_landmark.glb": {
+    "bytes": 492108,
+    "sha256": "6f24c0f036189a1d360bd5ab4eb2756b2ad5aadf74c08398b9e8cb449e473701"
+  },
+  "qa/assets.json": {
+    "bytes": 762,
+    "sha256": "1b9fddee81f86845620508d2e727d7b9901c151da63a245c4fb445d6040626a8"
+  },
+  "qa/geometry_audit.json": {
+    "bytes": 2825,
+    "sha256": "bae9be4334910c995e1a4632fc95276522a56f893b84022b0e82bdce5f8ac2c8"
+  },
+  "renders/BDEH_四島主題設計_自我審查板.png": {
+    "bytes": 1238725,
+    "sha256": "54704249b3e8da8a26684e79f4c354bad4701f9fa1893343dba8dba43ffa3f13"
+  },
+  "renders/B_back.png": {
+    "bytes": 488620,
+    "sha256": "695061647435e6fc5a950e24e6df6cf00d2ab124673964436796ab9d68458d2b"
+  },
+  "renders/B_front.png": {
+    "bytes": 478877,
+    "sha256": "100ec2d806fb204e42543d1118f777f90d2cac633bac69bfe5c6165ac23f8721"
+  },
+  "renders/B_hero.png": {
+    "bytes": 476418,
+    "sha256": "7d1724086ac990ea01d2875f8ebd3e800be4e7d5e1ed04f98ccb5bc619158827"
+  },
+  "renders/B_left.png": {
+    "bytes": 499766,
+    "sha256": "9fff7f7ecfa30ffb6cd29dfebcafb6fbcee4219e3dd4d885b2481b23995c0bd6"
+  },
+  "renders/B_right.png": {
+    "bytes": 462600,
+    "sha256": "468efdc91ffc646e3f4246ae11ce9be744d89ce9e0d744c42edc4be35dc970cd"
+  },
+  "renders/B_top.png": {
+    "bytes": 413918,
+    "sha256": "bd1671ad06429ff5f17a2e7bbe5f23af155300d06caa68533b19e13162cb3873"
+  },
+  "renders/B_真實六視圖_候選.png": {
+    "bytes": 698746,
+    "sha256": "21b4298bb8ca3c7a2f333b03eb7df6c5bb8e1d4d6b12adb9bf653268966dd8ab"
+  },
+  "renders/D_back.png": {
+    "bytes": 480966,
+    "sha256": "82a4908269fd54abf228b03b91caf8bd4f2982896f35a2b7f73204cbf58764ad"
+  },
+  "renders/D_front.png": {
+    "bytes": 461820,
+    "sha256": "57d6c3908cc6319ff3c91d317e95045c4ffb5aff372c0146aeeea267576c4539"
+  },
+  "renders/D_hero.png": {
+    "bytes": 467479,
+    "sha256": "383c4317a709c0e546760b30e28d746823753aa6c3ab0f918e76280fde40c34f"
+  },
+  "renders/D_left.png": {
+    "bytes": 481627,
+    "sha256": "dd25d2cbf6502978466418009afd967956171a1e11c0e0bd5d356712aff4b856"
+  },
+  "renders/D_right.png": {
+    "bytes": 464431,
+    "sha256": "c983b55754f8dd4d8524cd015dadc8c07b909641601ca8262f88d9279822c60a"
+  },
+  "renders/D_top.png": {
+    "bytes": 385365,
+    "sha256": "4b7c6a1115155340491210622c9d24047fb2e7520947778dfdd6d07f5417be8b"
+  },
+  "renders/D_真實六視圖_候選.png": {
+    "bytes": 703804,
+    "sha256": "039b31cbb941e07770ea31c80d80c19b67396f3459a5fe2e53bcd1f3e240d1b0"
+  },
+  "renders/E_back.png": {
+    "bytes": 476655,
+    "sha256": "eb321d95a84ff93328a3a2bc7280caaca706312e09a47f181e6e5b4a75934883"
+  },
+  "renders/E_front.png": {
+    "bytes": 450507,
+    "sha256": "0c4629de565eec902d56fbe5f1fb180b7e0a2bb265d4da3a15a03488430d98ea"
+  },
+  "renders/E_hero.png": {
+    "bytes": 449435,
+    "sha256": "bb80ca8a807a7dfecc97809ba063ac427272678bfe88cdbadf698db4e9d206bd"
+  },
+  "renders/E_left.png": {
+    "bytes": 469430,
+    "sha256": "cb00568a463bb0699d78a095868fd1e39e93a757c2590bcf2655b4fa9e54369e"
+  },
+  "renders/E_right.png": {
+    "bytes": 457163,
+    "sha256": "25130d6b6a96d1917393f0567cabaa9073f2de41d374a79accfef309762cbe2c"
+  },
+  "renders/E_top.png": {
+    "bytes": 352106,
+    "sha256": "6abac741e0b7ad49cae0015971d3475ebdff129c12c2623a2a9f672d3236ed00"
+  },
+  "renders/E_真實六視圖_候選.png": {
+    "bytes": 676055,
+    "sha256": "4eba93c830624e37b7d17db20ae99dadd008279d0d1c809aae67e9fd5a415e5e"
+  },
+  "renders/H_back.png": {
+    "bytes": 506882,
+    "sha256": "359c67a4d3c0069dc6dc810784eb3ce017fce070ec2f5ca4f900004b321cb069"
+  },
+  "renders/H_front.png": {
+    "bytes": 463762,
+    "sha256": "f1cfa4976fcdcdf391fe205a49e7e55c71775d510ef36aaf51710f3f2da23fa6"
+  },
+  "renders/H_hero.png": {
+    "bytes": 485188,
+    "sha256": "f66edfb7bd2b7d94da4abebac650d97328b40e89a6c1c5d2b22cf5ba8964ed44"
+  },
+  "renders/H_left.png": {
+    "bytes": 476429,
+    "sha256": "e6d9b749a8503df061bfc9b59a90f4ac0c69c1631a6c58edf3a4a02c0f3fdb70"
+  },
+  "renders/H_right.png": {
+    "bytes": 463195,
+    "sha256": "af3789545fdc17bd649c4efbe7c736c68958b91b39ad750264a0f29f4ccc0c93"
+  },
+  "renders/H_top.png": {
+    "bytes": 374314,
+    "sha256": "c60a0064f0400860496576322b70e38a244467a9476c999afeeaabe177cd887f"
+  },
+  "renders/H_真實六視圖_候選.png": {
+    "bytes": 748424,
+    "sha256": "4734ab1038578d1e70736fd060e91b071644568ead77115a49a32667ebb4993a"
+  },
+  "renders/苑字路網_四島候選配置.png": {
+    "bytes": 226188,
+    "sha256": "9e05b962042cef1045b81ff2e214dfe41747122c32ec39ea15004d6c90bf3642"
+  },
+  "roadcheck.py": {
+    "bytes": 1677,
+    "sha256": "ffbc0c197cb49ec54e47117bbe820e3d7f4b6579d79f58649058d37e38c82b23"
+  }
+}
