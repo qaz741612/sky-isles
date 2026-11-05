@@ -1,0 +1,256 @@
+{
+  "routes": [
+    {
+      "id": "S01",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S02",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S03",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S04",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S05",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S06",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S07",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S08",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S09",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S10",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S11",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S12",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S13",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S14",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S15",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S16",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S17",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S18",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S19",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S20",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S21",
+      "bidirectional": true,
+      "noJump": true
+    },
+    {
+      "id": "S22",
+      "bidirectional": true,
+      "noJump": true
+    }
+  ],
+  "publicCircuit": [
+    [
+      0,
+      0
+    ],
+    [
+      6.1,
+      -0.7
+    ],
+    [
+      7.75,
+      0.6
+    ],
+    [
+      6.1,
+      -0.7
+    ],
+    [
+      6.1,
+      -6
+    ],
+    [
+      8.8,
+      -9.1
+    ],
+    [
+      10.2,
+      -9.1
+    ],
+    [
+      8.8,
+      -9.1
+    ],
+    [
+      6.1,
+      -6
+    ],
+    [
+      6.1,
+      -0.7
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      6.2
+    ],
+    [
+      0,
+      10.8
+    ],
+    [
+      2.5,
+      9.8
+    ],
+    [
+      7,
+      9.8
+    ],
+    [
+      2.5,
+      9.8
+    ],
+    [
+      0,
+      10.8
+    ],
+    [
+      0,
+      6.2
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "waterEdges": 32,
+  "cameras": 40,
+  "respawns": 0,
+  "ticks": 19004,
+  "stats": {
+    "bytes": 4626100,
+    "downloadMilliseconds": 378.90000000596046,
+    "decodeMilliseconds": 16.200000017881393,
+    "totalMilliseconds": 395.2000000178814,
+    "triangles": 74463,
+    "runtimeMeshes": 60,
+    "materials": 24,
+    "buildMilliseconds": 17.799999982118607,
+    "waterCollision": false,
+    "newLights": 0,
+    "integrationTriangles": 24,
+    "retainedLampInterfaces": [
+      {
+        "id": "S21-L3",
+        "position": [
+          45.98585568461623,
+          0,
+          32.8410838841428
+        ],
+        "groundTop": 0.025,
+        "moved": false
+      },
+      {
+        "id": "S22-L1",
+        "position": [
+          36.142117348918624,
+          0,
+          37.56933897223424
+        ],
+        "groundTop": 0.025,
+        "moved": false
+      }
+    ]
+  },
+  "npc": [
+    {
+      "id": "zhang-guli-flood-guide",
+      "name": "張顧礫",
+      "position": [
+        10.2,
+        0,
+        -9.1
+      ],
+      "playerStop": [
+        8.8,
+        0,
+        -9.1
+      ],
+      "reservation": [
+        3,
+        3
+      ],
+      "facing": -1.5707963267948966,
+      "interactionRadius": 1.65,
+      "implemented": false
+    }
+  ],
+  "modelMeshes": 60,
+  "waterCollision": false
+}

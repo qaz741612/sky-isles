@@ -1,0 +1,330 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/sky-isles-bdeh-r21/node_modules/.bin/playwright",
+      "test",
+      "test/bdeh-r21.e2e.js",
+      "test/world-spaces.e2e.js",
+      "test/bridge-landscape.e2e.js",
+      "--workers=1",
+      "--retries=0",
+      "--timeout=600000",
+      "--reporter=json",
+      "--output=work/bdeh-browser-recheck"
+    ],
+    "configFile": "/workspace/sky-isles-bdeh-r21/playwright.config.js",
+    "rootDir": "/workspace/sky-isles-bdeh-r21/test",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/sky-isles-bdeh-r21/work/bdeh-browser-recheck",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/sky-isles-bdeh-r21/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "/workspace/sky-isles-bdeh-r21/work/bdeh-browser-recheck",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/workspace/sky-isles-bdeh-r21/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "bdeh-r21.e2e.js",
+      "file": "bdeh-r21.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "R21 four real Blender places: public circuits, NPC dry plots, native camera, policy and panorama checkpoint recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33336,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T11:12:44.873Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd36bb3368bf391ef32b-4ff711a97d18d13dd6ee",
+          "file": "bdeh-r21.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "R21 four real Blender places: public circuits, NPC dry plots, native camera, policy and panorama checkpoint recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 46673,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T11:15:45.889Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd36bb3368bf391ef32b-6cb756e053368b78cdb9",
+          "file": "bdeh-r21.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "bridge-landscape.e2e.js",
+      "file": "bridge-landscape.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "active landscape zones preserve every route in both directions with the live Player",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 34118,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"records\":[{\"id\":\"S01\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S02\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S03\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S04\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S05\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S06\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S07\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S08\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S09\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S10\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S11\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S12\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S13\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S14\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S15\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S16\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S17\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S18\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S19\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S20\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S21\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S22\",\"bidirectional\":true,\"noJump\":true}],\"bays\":[{\"id\":\"P11\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P14\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P16\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P19\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true}],\"lampHeadroom\":{\"id\":\"S01-L1\",\"maxHead\":3.0125,\"minOverlappingClearance\":null,\"directHead\":3.0125,\"airborneQAStart\":true,\"verified\":true},\"ticks\":18690,\"respawns\":0,\"stats\":{\"lampCount\":36,\"sevenLampCount\":34,\"lowLightCount\":2,\"platformCount\":4,\"foliageInstances\":329,\"visibleMeshes\":87,\"triangles\":84024,\"collisionMeshes\":51,\"horizontalBarriers\":2137,\"buildMilliseconds\":273.69999998807907,\"newRealtimeLights\":0,\"geometryBatches\":55,\"perFrameRebuilds\":0,\"instanceBatches\":34}}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T11:13:18.606Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bc11ee9b00b48ae21c00-cb2869c0834ece67c711",
+          "file": "bridge-landscape.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "active landscape zones preserve every route in both directions with the live Player",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 53585,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"records\":[{\"id\":\"S01\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S02\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S03\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S04\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S05\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S06\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S07\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S08\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S09\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S10\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S11\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S12\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S13\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S14\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S15\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S16\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S17\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S18\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S19\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S20\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S21\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S22\",\"bidirectional\":true,\"noJump\":true}],\"bays\":[{\"id\":\"P11\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P14\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P16\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P19\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true}],\"lampHeadroom\":{\"id\":\"S01-L1\",\"maxHead\":3.0125,\"minOverlappingClearance\":null,\"directHead\":3.0125,\"airborneQAStart\":true,\"verified\":true},\"ticks\":18690,\"respawns\":0,\"stats\":{\"lampCount\":36,\"sevenLampCount\":34,\"lowLightCount\":2,\"platformCount\":4,\"foliageInstances\":329,\"visibleMeshes\":87,\"triangles\":84024,\"collisionMeshes\":51,\"horizontalBarriers\":2137,\"buildMilliseconds\":527.2000000178814,\"newRealtimeLights\":0,\"geometryBatches\":55,\"perFrameRebuilds\":0,\"instanceBatches\":34}}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T11:16:33.284Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bc11ee9b00b48ae21c00-13a639c5814173b41fcf",
+          "file": "bridge-landscape.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "world-spaces.e2e.js",
+      "file": "world-spaces.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 111824,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T11:13:52.774Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b412ae6cfb0a5765fcc-d24c84ebdd240a39690e",
+          "file": "world-spaces.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 108237,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T11:17:26.994Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b412ae6cfb0a5765fcc-f8d3f3946575d058b087",
+          "file": "world-spaces.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T11:12:44.320Z",
+    "duration": 391058.74,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
