@@ -21,7 +21,8 @@ for code in codes:
   if role not in groups:
    o=bpy.data.objects.new('ROLE_'+role,None);s.collection.objects.link(o);o.parent=root;groups[role]=o
  glass={'careGlass','civicGlass','mistglass','eduGlass','blueglass','glass2','darkglass','deepglass'};materials={}
- for key,color in P['materials'].items():
+ for key,swatch in P['materials'].items():
+  color=[v/12.92 if v<=.04045 else((v+.055)/1.055)**2.4 for v in swatch]if stage==2 else swatch
   m=bpy.data.materials.get(key)or bpy.data.materials.new(key);m.use_nodes=True;b=m.node_tree.nodes.get('Principled BSDF');m.diffuse_color=(*color,1);b.inputs['Base Color'].default_value=(*color,1);b.inputs['Roughness'].default_value=.73
   if key in glass:
    alpha=.52 if stage==1 else .27;m.diffuse_color=(*color,alpha);b.inputs['Base Color'].default_value=(*color,alpha);b.inputs['Alpha'].default_value=alpha;b.inputs['Roughness'].default_value=.19;b.inputs['Metallic'].default_value=.04;m.surface_render_method='DITHERED';m.use_transparency_overlap=False

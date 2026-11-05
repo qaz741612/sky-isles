@@ -27,10 +27,11 @@ export function buildR21Places(sources,islands){
    for(const v of cells.values()){
     const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(v,3));g.computeVertexNormals();g.computeBoundingBox();g.computeBoundingSphere();const mesh=new THREE.Mesh(g,hidden);mesh.visible=false;mesh.name=`R21-${code}-${name}`;mesh.userData={noCheckpoint:!publicFloor,ownerIsland:config.name};
     if(publicFloor)mesh.userData.walkway=`R21-${code}-authored-public-land`;
+    if(name==='roof-support'){mesh.userData.support='roof';mesh.userData.island=config.name;}
     group.add(mesh);list.push(mesh);
    }
   }
-  chunks(data.groundPositions,colliders,'public-ground',true);chunks(data.supportPositions,colliders,'physical-top-support');chunks(data.ceilingPositions,ceilings,'real-soffit');chunks(data.cameraPositions,cameraObstacles,'structural-camera');
+  chunks(data.groundPositions,colliders,'public-ground',true);chunks(data.supportPositions,colliders,'physical-top-support');chunks(data.roofPositions??[],colliders,'roof-support');chunks(data.ceilingPositions,ceilings,'real-soffit');chunks(data.cameraPositions,cameraObstacles,'structural-camera');
   const barriers=[];
   for(const solid of data.solids)for(const ring of[solid.polygon,...solid.holes])for(let i=0;i<ring.length;i++){
    const a=ring[i],b=ring[(i+1)%ring.length];if(Math.hypot(a[0]-b[0],a[1]-b[1])<1e-6)continue;

@@ -1,3 +1,4 @@
+import{R21,R21_WORLD_DERIVATIVES,assertR21Contracts}from'./helpers/r21-contracts.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -9,12 +10,13 @@ import {Player} from '../src/sim/player.js';
 import {ISLANDS} from '../src/world/islands.js';
 import {guardIndex} from '../src/sim/walkways.js';
 import locks from '../docs/design/industry-youth-island-c-v3/locked-runtime-baseline.json' with {type:'json'};
-test('V3 preserves original land, 22 roads, NPC, other approved assets and player code',()=>{
+test('C V3 original art, land, NPC and player remain locked across R21 integration',()=>{
  // The separately authorized G V5 changes only these world/G derivatives.
  // flood-v5.test.js now verifies every node, curve, non-G footprint and F/A/C byte lock.
+ if(R21)assertR21Contracts();
  const gV5=JSON.parse(fs.readFileSync('src/data/flood-control-plan.json')).revision==='flood-g-v5';
  const gDerivatives=new Set(['src/data/yuan-plan.json','src/data/yuan-layout.json','src/data/yuan-surface.json','src/data/bridge-landscape.json','src/data/flood-control-collision.json','src/world/flood-control.js','public/models/flood-control-g/flood-control-g.glb']);
- for(const f of locks.files){if(gV5&&gDerivatives.has(f.path))continue;assert.equal(crypto.createHash('sha256').update(fs.readFileSync(f.path)).digest('hex'),f.sha256,f.path);}
+ for(const f of locks.files){if(R21&&R21_WORLD_DERIVATIVES.has(f.path))continue;if(gV5&&gDerivatives.has(f.path))continue;assert.equal(crypto.createHash('sha256').update(fs.readFileSync(f.path)).digest('hex'),f.sha256,f.path);}
 });
 test('falling Player rests on actual visible workshop/PV, youth roofs and greenhouse arch',async()=>{
  const b=fs.readFileSync('public/models/industry-youth-c/industry-youth-c.glb'),g=await new GLTFLoader().parseAsync(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength),'');

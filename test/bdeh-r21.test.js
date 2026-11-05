@@ -1,0 +1,55 @@
+import {test}from'node:test';import assert from'node:assert/strict';import fs from'node:fs';import{createHash}from'node:crypto';import*as T from'three';
+import {GLTFLoader}from'three/addons/loaders/GLTFLoader.js';import {buildR21Places,r21CameraConstraint}from'../src/world/bdeh-r21.js';import {ISLANDS}from'../src/world/islands.js';import{buildBridges}from'../src/world/bridges.js';import{Player}from'../src/sim/player.js';import{guardIndex,moveWithGuards}from'../src/sim/walkways.js';import{worldCameraConstraint}from'../src/sim/camera-clearance.js';import{assertR21Contracts}from'./helpers/r21-contracts.js';
+const D='docs/design/bdeh-r21/',read=p=>JSON.parse(fs.readFileSync(p)),hash=b=>createHash('sha256').update(b).digest('hex');
+async function fixture(){
+ const scene=new T.Scene(),islands=ISLANDS.map(d=>{const group=new T.Group();group.position.set(d.x,d.y,d.z);scene.add(group);return{...d,group,pos:group.position};}),sources={};
+ for(const code of'BDEH'){const b=fs.readFileSync(`public/models/bdeh-r21/${code}.glb`);sources[code]=(await new GLTFLoader().parseAsync(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength),'')).scene;}
+ const places=buildR21Places(sources,islands),bridges=buildBridges(scene,islands);scene.updateMatrixWorld(true);return{scene,islands,places,bridges};
+}
+test('R21 original package, approved F/A/C/G assets and authorized four-island world remain traceable',()=>{
+ assertR21Contracts();const dir=D+'source-package/',manifest=read(dir+'qa/MANIFEST_SHA256.json');assert.equal(Object.keys(manifest).length,47);
+ for(const[path,entry]of Object.entries(manifest))assert.equal(hash(fs.readFileSync(dir+path)),typeof entry==='string'?entry:entry.sha256,path);
+});
+test('four actual refined GLBs fit R21 bounds, load complete PBR/normals, stay below budget and contain no lights or textures',async()=>{
+ const{places}=await fixture();
+ for(const[code,p]of Object.entries(places)){
+  const report=read(D+code+'/model-report.json'),bytes=fs.readFileSync(`public/models/bdeh-r21/${code}.glb`),size=p.bounds.getSize(new T.Vector3());assert.equal(hash(bytes),report.GLBSHA256);assert.equal(p.stats.triangles,report.triangles);assert.ok(p.stats.triangles<100000);assert.ok(bytes.length<6*1024*1024);assert.ok(p.stats.runtimeMeshes<=80);assert.ok(size.x<=p.config.maxDimensions[0]+.005&&size.z<=p.config.maxDimensions[1]+.005,code+' extends beyond maximum');
+  p.source.traverse(o=>{assert.ok(!o.isLight);if(!o.isMesh)return;assert.ok(o.geometry.attributes.position.array.every(Number.isFinite));assert.ok(o.geometry.attributes.normal?.array.every(Number.isFinite));for(const m of Array.isArray(o.material)?o.material:[o.material]){assert.ok(m.isMaterial);assert.equal(m.map,null);}});
+  assert.ok(report.sourceObjectsRetained>200,'refinement must retain native first-stage objects');assert.equal(report.scale,1);
+ }
+});
+test('R21 real GLB preserves completed care end facades, thick civic portal, raised green spine and two book leaves',async()=>{
+ const{places}=await fixture(),ray=new T.Raycaster();
+ const meshes=code=>{const p=places[code];p.source.traverse(o=>{if(o.isMesh)for(const m of Array.isArray(o.material)?o.material:[o.material])m.side=T.DoubleSide;});return p.meshes;};
+ const b=places.B,c=b.config.centre;for(const angle of[83,222]){const t=angle*Math.PI/180,point=new T.Vector3(c[0]-3.95+6*Math.cos(t),1.6,c[2]-3.9+6*Math.sin(t)),normal=new T.Vector3(-Math.sin(t),0,Math.cos(t));ray.set(point.clone().addScaledVector(normal,-.6),normal);ray.far=1.2;assert.ok(ray.intersectObjects(meshes('B'),false).length,'missing actual curved-wing end glazing');}
+ for(const[code,x,z,min]of[['D',0,0,6],['E',-2.2,.85,5]]){const p=places[code],c=p.config.centre;ray.set(new T.Vector3(c[0]+x,1.8,c[2]+z),new T.Vector3(0,1,0));ray.far=12;const hit=ray.intersectObjects(meshes(code),false)[0];assert.ok(hit&&hit.point.y>min,code+' overhead passage');}
+ const h=places.H,ys=[];for(const x of[-9,-.25,9]){ray.set(new T.Vector3(h.config.centre[0]+x,15,h.config.centre[2]+7),new T.Vector3(0,-1,0));ray.far=16;const hit=ray.intersectObjects(meshes('H'),false)[0];assert.ok(hit);ys.push(hit.point.y);}assert.ok(ys[0]>ys[1]+.4&&ys[2]>ys[1]+.4,'book leaves lost their occupied roof profile');
+});
+test('actual Player visits all four authored public circuits, courtyard, civic threshold, open ecology veranda and supported learning tiers without jumping',async()=>{
+ const{scene,places,bridges}=await fixture(),all=Object.values(places),walls=[...bridges.barriers,...all.flatMap(p=>p.barriers)],player=new Player(scene,new T.PerspectiveCamera(),[...bridges.colliders,...all.flatMap(p=>p.colliders)]);player.navigation={islands:ISLANDS,barriers:walls,nearby:guardIndex(walls)};player.orbit.yaw=0;const rows=[];let time=0;
+ const tick=(x=0,z=0)=>{player.update(1/60,{x,z,jumpPressed:false,jumpHeld:false},time+=1/60);assert.ok([...player.pos.toArray(),player.move.vy].every(Number.isFinite));};
+ for(const[code,p]of Object.entries(places)){
+  const c=p.config.centre,route=p.config.publicCircuit;player.teleport(c[0]+route[0][0],.2,c[2]+route[0][1]);for(let i=0;i<60;i++)tick();const visited=[];
+  for(const[x,z]of route){let limit=1400;while(Math.hypot(c[0]+x-player.pos.x,c[2]+z-player.pos.z)>.17&&limit-->0){const dx=c[0]+x-player.pos.x,dz=c[2]+z-player.pos.z,d=Math.hypot(dx,dz);tick(dx/d,dz/d);assert.ok(player.move.grounded,'airborne '+code);assert.equal(player.respawnCount,0);}assert.ok(limit>0,`blocked ${code} target ${x},${z} actual ${player.pos.toArray()}`);visited.push(player.pos.toArray());}
+  rows.push({code,passed:true,noJump:true,visited});
+ }
+ fs.mkdirSync('docs/previews/bdeh-r21/regression',{recursive:true});fs.writeFileSync('docs/previews/bdeh-r21/regression/node-public-circuits.json',JSON.stringify({method:'Actual exported GLB sources and game-derived colliders, real fixed60Hz Player, route starts teleported. Not a human continuous tour.',rows},null,2)+'\n');
+});
+test('each real NPC three-by-three plot is dry, empty and reachable; visible structural guards block swept ordinary movement',async()=>{
+ const{places}=await fixture(),ray=new T.Raycaster();
+ for(const p of Object.values(places)){
+  const n=p.config.npc[0],c=p.config.centre;assert.equal(n.implemented,false);assert.equal(p.config.npc.length,1);assert.deepEqual(n.reservation,[3,3]);assert.ok(Math.hypot(n.playerStop[0]-n.position[0],n.playerStop[2]-n.position[2])<=n.interactionRadius);
+  for(const dx of[-1.45,0,1.45])for(const dz of[-1.45,0,1.45]){const x=c[0]+n.position[0]+dx,z=c[2]+n.position[2]+dz;ray.set(new T.Vector3(x,1,z),new T.Vector3(0,-1,0));ray.far=1.1;const hit=ray.intersectObjects(p.colliders,false)[0];assert.ok(hit&&hit.point.y>=.05&&hit.point.y<.2,'NPC plot is not dry/flat');for(const w of p.barriers){if(w.a.y>1.8||w.a.y+w.height<.32)continue;const point={x,y:.15,z},copy={...point};moveWithGuards(copy,0,0,[w]);assert.ok(Math.hypot(copy.x-x,copy.z-z)<1e-4,'NPC plot contains '+w.source);}}
+  for(const w of p.barriers){const dx=w.b.x-w.a.x,dz=w.b.z-w.a.z,len=Math.hypot(dx,dz);if(len<.05||w.a.y>1.8||w.a.y+w.height<.4)continue;const point={x:(w.a.x+w.b.x)/2-dz/len,y:Math.max(.15,w.a.y),z:(w.a.z+w.b.z)/2+dx/len};assert.ok(moveWithGuards(point,2*dz/len,-2*dx/len,[w]),'nonblocking real structural segment '+w.source);}
+ }
+});
+test('R21 desktop and portrait camera poses keep head, torso and low silhouette visible without changing orbit or zoom',async()=>{
+ const{places}=await fixture(),obstacles=Object.values(places).flatMap(p=>p.cameraObstacles),base=worldCameraConstraint(obstacles),orbit={yaw:0,pitch:.6,dist:16},constrain=r21CameraConstraint(base,places,()=>orbit),ray=new T.Raycaster();let count=0;
+ for(const p of Object.values(places))for(const profile of[{pitch:.6,dist:16},{pitch:.67,dist:22}])for(const local of[p.config.publicCircuit[0],[p.config.npc[0].playerStop[0],p.config.npc[0].playerStop[2]]])for(let i=0;i<8;i++){
+  Object.assign(orbit,profile,{yaw:i*Math.PI/4});const saved={...orbit},c=p.config.centre,target=new T.Vector3(c[0]+local[0],1.65,c[2]+local[1]),position=new T.Vector3(target.x+Math.sin(orbit.yaw)*Math.cos(orbit.pitch)*orbit.dist,target.y+Math.sin(orbit.pitch)*orbit.dist,target.z+Math.cos(orbit.yaw)*Math.cos(orbit.pitch)*orbit.dist);constrain(target,position);assert.deepEqual(orbit,saved);assert.ok(position.toArray().every(Number.isFinite)&&position.distanceTo(target)>2.5);
+  const body=target.clone().add(new T.Vector3(0,-.75,0)),feet=target.clone().add(new T.Vector3(0,-1.3,0)),right=new T.Vector3(position.z-target.z,0,target.x-position.x).normalize().multiplyScalar(.32);
+  for(const focus of[target,body,body.clone().add(right),body.clone().sub(right),feet.clone().addScaledVector(right,.78),feet.clone().addScaledVector(right,-.78)]){ray.set(focus,position.clone().sub(focus).normalize());ray.far=focus.distanceTo(position)-.03;assert.equal(ray.intersectObjects(obstacles,false).length,0,'occluded native silhouette '+p.config.name+' '+i);}
+  count++;
+ }
+ assert.equal(count,128);
+});

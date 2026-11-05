@@ -5,7 +5,12 @@ import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import plan from '../data/bridge-landscape.json' with {type:'json'};
 const colors={stone:0xc7c4b3,rim:0xe0d7bf,soil:0x6a7954,wood:0xba9269,metal:0x355e63,green:0x769b62,flower:0xf2ddaf,finish:0xc8c6b7,rock:0x909d95,transit:0xa9b8b5,pink:0xe5c0b1,glow:0xffe9c9};
 function shape(rings){const s=new THREE.Shape(rings[0].slice(0,-1).map(([x,z])=>new THREE.Vector2(x,-z)));for(const r of rings.slice(1))s.holes.push(new THREE.Path(r.slice(0,-1).map(([x,z])=>new THREE.Vector2(x,-z))));return s;}
-const flat=(rings,y)=>{const g=new THREE.ShapeGeometry(shape(rings));g.rotateX(-Math.PI/2);g.translate(0,y,0);return g;};
+const flat=(rings,y)=>{const g=new THREE.ShapeGeometry(shape(rings));g.rotateX(-Math.PI/2);g.translate(0,y,0);
+ // Quantized long replacement curves can leave a collinear ear after Float32
+ // conversion. It has zero surface area; remove it before visible/support use.
+ const p=g.attributes.position,index=g.index,valid=[];
+ for(let i=0;i<index.count;i+=3){const[a,b,c]=[index.getX(i),index.getX(i+1),index.getX(i+2)],area=(p.getX(b)-p.getX(a))*(p.getZ(c)-p.getZ(a))-(p.getZ(b)-p.getZ(a))*(p.getX(c)-p.getX(a));if(Math.abs(area)>1e-10)valid.push(a,b,c);}
+ g.setIndex(valid);return g;};
 const extrude=(rings,base,height)=>{const g=new THREE.ExtrudeGeometry(shape(rings),{depth:height,bevelEnabled:false});g.rotateX(-Math.PI/2);g.translate(0,base,0);return g;};
 function sevenGeometry(){const p=new THREE.CurvePath();p.add(new THREE.LineCurve3(new THREE.Vector3(),new THREE.Vector3(0,2.91,0)));p.add(new THREE.CubicBezierCurve3(new THREE.Vector3(0,2.91,0),new THREE.Vector3(0,3.015,0),new THREE.Vector3(.085,3.1,0),new THREE.Vector3(.19,3.1,0)));p.add(new THREE.LineCurve3(new THREE.Vector3(.19,3.1,0),new THREE.Vector3(.75,3.1,0)));return new THREE.TubeGeometry(p,24,.052,6,false);}
 export function buildBridgeLandscape(parent){

@@ -31,11 +31,11 @@ def footprint(mesh):
   if p.area>1e-8:polys.append(p)
  return unary_union(polys).buffer(0)if polys else MultiPoint(mesh.vertices[:,[0,2]]).convex_hull
 def public_paths(code):
- if code=='B':return [[4.7,7],[7.2,-6.6],[7.2,-8.6],[7.2,-6.6],[4.4,-1.3],[.5,.2],[-1.9,-.7],[-3,-.55],[-1.9,-.7],[.5,.2],[4.7,7]]
- if code=='D':return [[0,0],[6.2,1.6],[11.3,-3.1],[11.3,-5.25],[11.3,-7.25],[7,-7],[0,0],[-1.2,-5.5],[-1.2,-10.8],[-1.2,-5.5],[0,0]]
+ if code=='B':return [[4.7,7],[7.2,-6.6],[7.2,-8.6],[7.2,-6.6],[7.2,-1.1],[4.4,-1.3],[.5,.2],[-1.9,-.7],[-3,-.55],[-1.9,-.7],[.5,.2],[4.7,7]]
+ if code=='D':return [[0,0],[6.2,1.6],[6.1,2.72],[6.2,1.6],[8.8,1.0],[9.1,-3.55],[11.3,-3.55],[11.3,-5.25],[11.3,-7.25],[7,-7],[0,0],[-1.2,-5.5],[-1.2,-10.8],[-1.2,-5.5],[0,0]]
  if code=='E':return [[0,0],[4.7,2.8],[-1,2.4],[-6.6,7.8],[-4.6,9.8],[-6.6,7.8],[-1,2.4],[-2.4,-4.7],[-2.4,-7.9],[-7.2,-8.2],[-2.4,-7.9],[0,0]]
  return [[0,0],[0,2.5],[-5.5,2.8],[6,2.8],[6,-1.5],[0,-8.1],[-2,-4.4],[-6.3,-4.3],[-6.3,-6.36],[-6.3,-4.3],[-2,-4.4],[0,0]]
-npcs={'B':{'position':[7.2,.15,-8.6],'playerStop':[7.2,.15,-6.6],'facing':0},'D':{'position':[11.3,.15,-5.25],'playerStop':[11.3,.15,-7.25],'facing':math.pi},'E':{'position':[-6.6,.15,9.8],'playerStop':[-4.6,.15,9.8],'facing':math.pi/2},'H':{'position':[0,.15,-10],'playerStop':[0,.15,-8.1],'facing':0}}
+npcs={'B':{'position':[7.2,.15,-8.6],'playerStop':[7.2,.15,-7.15],'facing':0},'D':{'position':[11.3,.15,-5.25],'playerStop':[11.3,.15,-6.7],'facing':math.pi},'E':{'position':[-6.6,.15,9.8],'playerStop':[-5.15,.15,9.8],'facing':math.pi/2},'H':{'position':[0,.15,-10],'playerStop':[0,.15,-8.55],'facing':0}}
 allAudit={};config={'revision':'BDEH-R21-game-v1','sourceBase':'2b4404927f33096ab28539a01f5e6236d670c038','stage':stage,'islands':{}}
 for code in 'BDEH':
  s=ref.Design(code);ref.bounded_floating_island(s);ref.bridge_approach(s)
@@ -54,6 +54,13 @@ for code in 'BDEH':
   for part in s.named:
    g=part.get('garden')
    if g and np.linalg.norm(np.array(g[:2])-[2,-10.6])<.01:part['mesh']=part['mesh'].copy();part['mesh'].apply_translation([1.8,0,-.5]);part['garden']=[3.8,-11.1,g[2]]
+ # Restore human-scale shade at R21's authored tree groups. Main courtyard
+ # specimens keep their approved larger sizes; no extra scattered trees.
+ if stage==2:
+  for part in s.named:
+   tree=part['tree']
+   if tree and tree[2]<.8:
+    ratio=max(tree[2],.94 if code in 'DEH'else .86)/tree[2];m=part['mesh'].copy();origin=[tree[0],.1,tree[1]];m.apply_translation(-np.array(origin));m.apply_scale(ratio);m.apply_translation(origin);part['mesh']=m;part['tree']=[tree[0],tree[1],tree[2]*ratio,tree[3]]
  # All public paving comes from the same regenerated 22-path domain.
  for poly in polygon_parts(pave):s.hardprism('RegeneratedSharedPublicPaving',list(poly.exterior.coords)[:-1],.075,.145,'paveLight')
  # Exact union exterior: open actual mouths, never duplicate interior rails.
@@ -66,6 +73,7 @@ for code in 'BDEH':
   if int(abs(a[0]*17+a[1]*11))%4==0:s.post('ActualUnionSafetyPost',a[0],a[1],.10,1.25,.038,'metal',role=None)
  # Enclosed interiors remain closed; ground-level thresholds and open verandas
  # are real public spaces. Low forum tiers need solid infill, not floating treads.
+ if code=='E'and stage==2:s.hardbox('OpenForumAccessibleLandingStep',-3.6,-8.1,.65,2.3,.075,.24,'stone2')
  if code=='H':
   for k in range(5):s.hardbox('SupportedLearningForumRiser',-6.3,-5.2-k*.58,6.7-k*.4,.62,.075,.35+k*.16,'paveLight')
  if stage==2:
@@ -103,7 +111,7 @@ for code in 'BDEH':
     if int(t*6)%3==0:s.girder('GreenSpineCrossLaminatedSoffit',current[0],current[1],.072,'ecoWood')
     last=current
    for x,z,y in [(-7.9,-7.85,4.12),(6.2,7.4,5.72)]:s.hardbox('GreenSpineBearingConnection',x,z,1.25,.9,y-.22,y+.15,'ecoWood')
-   for x,z in [(-9.1,-8.1),(-5.8,-8.4)]:ref.bench(s,'BioswaleForumCommunityBench',x,z,1.55,'ecoWood')
+   for x,z in [(-9.1,-9.15),(-5.8,-9.15)]:ref.bench(s,'BioswaleForumCommunityBench',x,z,1.55,'ecoWood')
    for t in np.linspace(math.pi,math.tau,13):
     x,z=-7.1+2.22*math.cos(t),-10.35+.88*math.sin(t)
     s.post('RainGardenNativeReedStem',x,z,.38,.85,.025,'ecoDeep',sides=5)
@@ -122,28 +130,50 @@ for code in 'BDEH':
    for x in [-9.7,-6.0,5.8,9.6]:
     y=7.16+2.45*(abs(x+.25)/11.4)**1.55-.34
     for z in [4.23,10.2]:s.girder('BookPageTriangularRoofBearing',(x,6.55,z),(x+.5,y,z),.095,'eduAmber')
+ # Purposeful planting follows the original beds/roof, not new scattered props.
+ if stage==2:
+  finished=[]
+  for part in s.named:
+   if part['name']=='E_NativeGreenRoofBioStrip':continue
+   if '_groupedPlants'in part['name']:
+    x,y,z=part['mesh'].bounds.mean(axis=0)
+    for dx,dz,scale in [(-.055,0,.13),(.07,.015,.115),(0,-.065,.105)]:
+     leaf=trimesh.creation.icosphere(subdivisions=1,radius=scale);leaf.apply_scale([1,.6,1]);leaf.apply_translation([x+dx,y+.025,z+dz]);finished.append({'name':'AuthoredBedNativeLeafCluster','mesh':leaf,'material':part['material'],'tree':None})
+   elif part['name']=='BiophilicRidgeLowNativePlant':
+    x,z=part['mesh'].bounds.mean(axis=0)[[0,2]];y=part['mesh'].bounds[0,1];verts=[];faces=[]
+    for theta in [0,2.1,4.2]:
+     q=len(verts);dx,dz=.13*math.cos(theta),.13*math.sin(theta);verts.extend([[x,y,z],[x+dx*.5-dz*.35,y+.16,z+dz*.5+dx*.35],[x+dx,y+.35,z+dz],[x+dx*.5+dz*.35,y+.16,z+dz*.5-dx*.35]]);faces.extend([[q,q+1,q+2],[q,q+2,q+3]])
+    finished.append({'name':'GreenSpineNativeLeafSpray','mesh':trimesh.Trimesh(vertices=verts,faces=faces,process=False),'material':'ecoDeep','tree':None})
+   else:finished.append(part)
+  s.named=finished
+  if code=='E':
+   for material,extra in [('ecoWood',.05),('ecoLeaf',.13)]:
+    grid=[[[float(x),5.6+.5*(z-4.4)/5.7+.42*math.sin((x-2.4)/9.2*math.pi)+extra,float(z)]for x in np.linspace(3,10.9,25)]for z in [9.0,9.4]]
+    s.patch('ConnectedRoofRainGardenPlanter'if material=='ecoWood'else'ContinuousNativeRoofPlanting',np.array(grid),material,.08)
  # Keep only current named meshes (source pruning must not resurrect R20 parts).
  parts=[p for p in s.named if p['name']!='Protected42_4p8CorridorGround']
  # Global boundary collision is owned by the generated shared union, while its
  # visible island section is in this model; these rails are not duplicated.
- ground=triangles(site,.075);dryCount=len(ground);support=[];ceilings=[];camera=[];solids=[];serialized=[];intrusions=[]
+ ground=triangles(site,.075);dryCount=len(ground);support=[];roofFaces=[];ceilings=[];camera=[];solids=[];serialized=[];intrusions=[]
  for idx,p in enumerate(parts):
+  
+  if p['name']=='TieredLearningAmphitheatre':continue # replaced by complete, gap-free supported risers
   mesh=p['mesh'].copy();mesh.merge_vertices();mesh.update_faces(mesh.nondegenerate_faces());mesh.remove_unreferenced_vertices()
   if not len(mesh.faces):continue
   try:trimesh.repair.fix_normals(mesh,multibody=True)
   except ValueError:pass
   n=p['name'];low,high=float(mesh.bounds[0,1]),float(mesh.bounds[1,1]);mat=p['material'];tree=p['tree']
-  terrain=n in ['FloatingRockFace','PlayableIslandTop'];rail=n.startswith('ActualUnion');paving=any(t in n for t in ['Paving','paving','PathPaver','PathInlay','PavingInlay','ColoredInlay']);land=bool(tree)or any(t in n for t in ['Garden','Flower','Plants','foliage','Reed','Leaf','Seat','Bench','CareChatPlace','RootZone']);roof=any(t in n for t in ['Roof','roof','Page','Spine','Rafter','Rib','Soffit','Canopy'])
+  terrain=n in ['FloatingRockFace','PlayableIslandTop'];rail=n.startswith('ActualUnion');paving=any(t in n for t in ['Paving','paving','PathPaver','PathInlay','PavingInlay','ColoredInlay']);land=bool(tree)or any(t in n for t in ['Garden','Flower','Plant','foliage','Reed','Leaf','Seat','Bench','CareChatPlace','RootZone']);roof=any(t in n for t in ['Roof','roof','Page','Spine','Rafter','Rib','Soffit','Canopy','PublicPortal','ElevatedWalkover'])
   role='terrain'if terrain else'rails'if rail else'paving'if paving else'landscape'if land else'roof'if roof else'building'
   glass=mat in ['careGlass','civicGlass','mistglass','eduGlass','blueglass','glass2','darkglass','deepglass']
   serialized.append({'name':f'{idx:04d}_{n}','sourceName':n,'role':role,'material':mat,'vertices':np.round(mesh.vertices,6).tolist(),'faces':mesh.faces.tolist(),'tree':tree})
   if terrain or rail:continue
   facePoints=mesh.vertices[mesh.faces];normals=mesh.face_normals
-  walkable=paving or any(t in n for t in ['Walkable','AccessibleFloor','ThresholdStep','ForumRiser','TieredLearning','AmphitheatreWood'])
+  walkable=paving or any(t in n for t in ['Walkable','AccessibleFloor','ForumFoundation','AccessibleLandingStep','ThresholdStep','ForumRiser','TieredLearning','AmphitheatreWood'])
   if walkable:
    ground.extend(facePoints[(normals[:,1]>.35)&(facePoints[:,:,1].min(axis=1)>-.01)].ravel().tolist())
   elif not land and not glass:
-   support.extend(facePoints[normals[:,1]>.35].ravel().tolist())
+   (roofFaces if role=='roof'else support).extend(facePoints[normals[:,1]>.35].ravel().tolist())
   if role in ['building','roof']:
    camera.extend(facePoints.ravel().tolist())
    ceilings.extend(facePoints[(normals[:,1]<-.35)&(facePoints[:,:,1].min(axis=1)>1.7)].ravel().tolist())
@@ -160,10 +190,10 @@ for code in 'BDEH':
  npc={**npcs[code],'id':f'{code.lower()}-policy-guide-reservation','reservation':[3,3],'interactionRadius':1.65,'implemented':False}
  region=Polygon([(npc['position'][0]+x,npc['position'][2]+z)for x,z in [(-1.5,-1.5),(1.5,-1.5),(1.5,1.5),(-1.5,1.5)]])
  npcConflicts=[x['name']for x in solids if x['base']<2 and x['top']>.32 and Polygon(x['polygon'],x['holes']).intersection(region).area>1e-5]
- colours={k:[v/255 for v in ref.r.base.rgb(ref.C[k])]for k in set(p['material']for p in serialized)}
+ colours={k:[v/255 for v in ref.r.base.rgb(ref.C[k])]for k in sorted(set(p['material']for p in serialized))}
  out={'code':code,'stage':stage,'materials':colours,'parts':serialized,'source':'User R21 named Python geometry, never R18/R20 buildings','centre':[node['x'],0,node['z']]};save(W/f'{code}-parts.json',out)
- collision={'version':'BDEH-R21','groundPositions':ground,'dryGroundFloats':dryCount,'supportPositions':support,'ceilingPositions':ceilings,'cameraPositions':camera,'solids':solids};save(R/f'src/data/bdeh-{code.lower()}-collision.json',collision)
- config['islands'][code]={'name':theme[code],'centre':[node['x'],0,node['z']],'maxDimensions':ref.SIZES[code],'npc':[npc],'publicCircuit':public_paths(code),'kind':'blender-r21-policy-place','sizePolicy':'No world/model rescale; R21 footprint maximum retained','upperStructuresPublic':False}
+ collision={'version':'BDEH-R21','groundPositions':ground,'dryGroundFloats':dryCount,'supportPositions':support,'roofPositions':roofFaces,'ceilingPositions':ceilings,'cameraPositions':camera,'solids':solids};save(R/f'src/data/bdeh-{code.lower()}-collision.json',collision)
+ config['islands'][code]={'name':theme[code],'centre':[node['x'],0,node['z']],'maxDimensions':ref.SIZES[code],'npc':[npc],'publicCircuit':public_paths(code),'kind':{'B':'r21-care-courtyard','D':'r21-civic-service-portal','E':'r21-living-green-spine','H':'r21-open-book-learning'}[code],'sizePolicy':'No world/model rescale; R21 footprint maximum retained','upperStructuresPublic':False}
  allAudit[code]={'stage':stage,'sourceTriangles':json.loads((D/'source-package/qa/geometry_audit.json').read_text())[code]['triangles'],'preparedTriangles':sum(len(p['faces'])for p in serialized),'objects':len(serialized),'lowSolidCoreIntrusions':intrusions,'NPC3x3SolidIntrusions':npcConflicts,'NPCOutsideLandArea':region.difference(site).area,'publicCorridorComponents':len(polygon_parts(pave)),'sceneBounds':np.array([np.min([np.min(p['vertices'],axis=0)for p in serialized],axis=0),np.max([np.max(p['vertices'],axis=0)for p in serialized],axis=0)]).tolist()}
  print(code,'named objects',len(serialized),'low core conflicts',len(intrusions),'NPC conflicts',len(npcConflicts),flush=True)
 save(R/'src/data/bdeh-plan.json',config);save(OUT/f'geometry-stage-{stage}.json',allAudit)
