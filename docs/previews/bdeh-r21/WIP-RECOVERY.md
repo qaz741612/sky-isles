@@ -8,3 +8,5 @@ Blender最終圖正在依各原檔SHA輸出；工作暫存work與node_modules未
 
 
 2026-11-05 checkpoint: all four editable Blender projects and 32 final Cycles views saved. E NPC plot independently corrected to (-12,6.5), real tree relocated; 33 protected baseline hashes. Latest `npm run check`: 82 named unit tests, lint and production build passed. Full 68-case browser run still in progress; checkpoint/fall test driver and final water/glass semantics remain to be reviewed. This is WIP, not final art or real-device acceptance.
+
+Final geometry checkpoint: refined Blender source, GLB and32 render SHA stay identical after semantic collision review. E water no longer creates floor/barrier; real concrete tray supports deliberate falls without taking a dry checkpoint. H thin clerestory glazing has physical collision. Latest npm run check:83 named tests,0 failures; lint and production build pass. Full browser initial run and final affected rechecks remain in progress. Final frozen QA build:work/bdeh-final-83-dist on local4274.

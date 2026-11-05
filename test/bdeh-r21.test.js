@@ -55,3 +55,12 @@ test('R21 desktop and portrait camera poses keep head, torso and low silhouette 
  }
  assert.equal(count,128);
 });
+
+test('ecology water is visual only above its real concrete basin, and book clerestory glass has physical thickness',async()=>{
+ const{places}=await fixture(),e=places.E,h=places.H,readCode=code=>read(`src/data/bdeh-${code}-collision.json`),data=readCode('e'),ray=new T.Raycaster(),c=e.config.centre;
+ assert.equal(data.solids.filter(s=>s.name==='RainGardenLivingWetlandWater').length,0,'water must never be a horizontal barrier');
+ ray.set(new T.Vector3(c[0]-7.1,1.3,c[2]-10.9),new T.Vector3(0,-1,0));ray.far=2;const hit=ray.intersectObjects(e.colliders,false)[0];assert.ok(hit);assert.ok(Math.abs(hit.point.y-.33)<.005,'ground is the real concrete tray, not the .37 water plane');assert.equal(hit.object.userData.noCheckpoint,true,'wet tray is not a dry public checkpoint');
+ e.source.traverse(o=>{if(o.isMesh)o.material.side=T.DoubleSide;});const visual=ray.intersectObjects(e.meshes,false);assert.ok(visual.some(v=>Math.abs(v.point.y-.37)<.005),'the actual GLB water plane is retained');
+ const glass=readCode('h').solids.filter(s=>s.name==='OccupiedBookPageClerestory');assert.ok(glass.length>=40,'closed glass facade must not disappear from collision because it is thin');
+ for(const g of glass){assert.ok(g.top>g.base);const walls=h.barriers.filter(w=>w.source===g.name&&Math.abs(w.a.y-g.base)<1e-6);assert.ok(walls.length);}
+});

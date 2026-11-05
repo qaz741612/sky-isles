@@ -169,20 +169,25 @@ for code in 'BDEH':
   serialized.append({'name':f'{idx:04d}_{n}','sourceName':n,'role':role,'material':mat,'vertices':np.round(mesh.vertices,6).tolist(),'faces':mesh.faces.tolist(),'tree':tree})
   if terrain or rail:continue
   facePoints=mesh.vertices[mesh.faces];normals=mesh.face_normals
+  water_surface=n=='RainGardenLivingWetlandWater'
+  basin_base=n=='RainGardenLivingWetlandBase'
   walkable=paving or any(t in n for t in ['Walkable','AccessibleFloor','ForumFoundation','AccessibleLandingStep','ThresholdStep','ForumRiser','TieredLearning','AmphitheatreWood'])
   if walkable:
    ground.extend(facePoints[(normals[:,1]>.35)&(facePoints[:,:,1].min(axis=1)>-.01)].ravel().tolist())
-  elif not land and not glass:
+  elif basin_base or (not land and not glass and not water_surface):
    (roofFaces if role=='roof'else support).extend(facePoints[normals[:,1]>.35].ravel().tolist())
   if role in ['building','roof']:
    camera.extend(facePoints.ravel().tolist())
    ceilings.extend(facePoints[(normals[:,1]<-.35)&(facePoints[:,:,1].min(axis=1)>1.7)].ravel().tolist())
   # Terrain-height paint, planted leaves and walkable terraces do not turn into
   # barriers. Tree trunks are real cylinders, not their whole crown envelopes.
-  blocking=not walkable and not terrain and not rail and high>.32 and not any(t in n for t in ['foliage','flowering_tree','Plants','Leaf','Reed','BioStrip','Planting'])
+  blocking=not walkable and not terrain and not rail and not water_surface and high>.32 and not any(t in n for t in ['foliage','flowering_tree','Plants','Leaf','Reed','BioStrip','Planting'])
   if tree and n!='trees':blocking=False
   if blocking:
    poly=footprint(mesh)
+   # Thin visible clerestory glazing has a line footprint; give that actual
+   # pane a 5cm physical shell, rather than omitting its collision entirely.
+   if n=='OccupiedBookPageClerestory'and poly.geom_type=='LineString':poly=poly.buffer(.025,cap_style=2)
    for component in polygon_parts(poly):
     if component.area<1e-7:continue
     solids.append({'name':n,'polygon':np.round(np.asarray(component.exterior.coords)[:-1],6).tolist(),'holes':[np.round(np.asarray(h.coords)[:-1],6).tolist()for h in component.interiors],'base':low,'top':high,'role':role})
