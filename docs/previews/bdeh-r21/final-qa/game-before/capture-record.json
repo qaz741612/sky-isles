@@ -1,0 +1,4104 @@
+{
+  "port": 4275,
+  "method": "Actual eight-island production game. Each centre/NPC initialization restores the original device orbit and player position, then idles5s. Same input recipe before/after. Left120px then right240px is one touch pointer; UI.poll drives the production camera, no direct native lens positioning. Only explicit QA-hero/top use custom lenses. Fixed60Hz poses, software GPU, not hardware performance.",
+  "expectedModels": {
+    "B.glb": "6c85316575c5e1b5648c2fa72ee49131ce0f4c217ba75d9fabf16a98ac4bdc2a",
+    "D.glb": "9009b49ec2715b133eacf65bd9ef0a2a87cda4ee602119f5a0a1c39d62cebb2c",
+    "E.glb": "6bff32a3180368c8332c6c6f122f7f991ee2a4d04a7da1d0900cd1ae6d8ba3cd",
+    "H.glb": "50467d750652cf7dbcab12e7863fd72cb641c340deee15d573af4ce0f4b9266d"
+  },
+  "servedModels": {
+    "D.glb": "9009b49ec2715b133eacf65bd9ef0a2a87cda4ee602119f5a0a1c39d62cebb2c",
+    "B.glb": "6c85316575c5e1b5648c2fa72ee49131ce0f4c217ba75d9fabf16a98ac4bdc2a",
+    "E.glb": "6bff32a3180368c8332c6c6f122f7f991ee2a4d04a7da1d0900cd1ae6d8ba3cd",
+    "H.glb": "50467d750652cf7dbcab12e7863fd72cb641c340deee15d573af4ce0f4b9266d"
+  },
+  "bundleSHA256": {
+    "index-ZsLfkSEY.js": "371f1875da95646fa0f989a16da13114f42306d201d4c98c4ffb0d5af0a16014"
+  },
+  "records": [
+    {
+      "name": "B-desktop-native",
+      "code": "B",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "camera": [
+        -52.89614415964356,
+        10.609279577300793,
+        17.036701391686936
+      ],
+      "quaternion": [
+        -0.294575046246926,
+        0.07634542316605761,
+        0.023616406877047903,
+        0.9522810424535577
+      ],
+      "lookTarget": [
+        -55,
+        1.5750000029802322,
+        4
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 2,
+        "calls": 110,
+        "triangles": 288413,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-desktop-single-finger-left",
+      "code": "B",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "camera": [
+        -45.902538979138704,
+        10.609279577300793,
+        13.571728739770325
+      ],
+      "quaternion": [
+        -0.2744391753220046,
+        0.3543537968104274,
+        0.10961447570215993,
+        0.8871872364113186
+      ],
+      "lookTarget": [
+        -55,
+        1.5750000029802322,
+        4
+      ],
+      "orbit": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 3,
+        "calls": 77,
+        "triangles": 79947,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-desktop-single-finger-right",
+      "code": "B",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "camera": [
+        -60.62468462686799,
+        10.609279577300793,
+        15.947581256275067
+      ],
+      "quaternion": [
+        -0.28839743562100056,
+        -0.2084825941744323,
+        -0.06449122646860354,
+        0.9323104680105792
+      ],
+      "lookTarget": [
+        -55,
+        1.5750000029802322,
+        4
+      ],
+      "orbit": {
+        "yaw": -0.44000000000000017,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 4,
+        "calls": 415,
+        "triangles": 1275002,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-desktop-NPC-native",
+      "code": "B",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          -47.8,
+          0.2,
+          -3.1500000000000004
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "camera": [
+        -45.6961441596436,
+        10.609279577300793,
+        9.886701391686953
+      ],
+      "quaternion": [
+        -0.2945750462469258,
+        0.07634542316605598,
+        0.02361640687704739,
+        0.9522810424535582
+      ],
+      "lookTarget": [
+        -47.8,
+        1.5750000029802322,
+        -3.1500000000000004
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 5,
+        "calls": 251,
+        "triangles": 799896,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-desktop-QA-hero",
+      "code": "B",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "QA-hero",
+      "initial": {
+        "kind": "explicit QA camera, not a native player view"
+      },
+      "errors": [],
+      "player": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "camera": [
+        -19,
+        30,
+        -38
+      ],
+      "quaternion": [
+        -0.08199289389601476,
+        0.9113180073469898,
+        0.22164789795475168,
+        0.3371184720063684
+      ],
+      "lookTarget": [
+        -47.8,
+        1.5750000029802322,
+        -3.1500000000000004
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 6,
+        "calls": 549,
+        "triangles": 1236608,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-desktop-QA-top",
+      "code": "B",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "QA-top",
+      "initial": {
+        "kind": "explicit QA camera, not a native player view"
+      },
+      "errors": [],
+      "player": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "camera": [
+        -54.999,
+        58,
+        4.001
+      ],
+      "quaternion": [
+        -0.6532735179110922,
+        0.27060134904765926,
+        0.27059475105744757,
+        0.6532894468685458
+      ],
+      "lookTarget": [
+        -47.8,
+        1.5750000029802322,
+        -3.1500000000000004
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 7,
+        "calls": 488,
+        "triangles": 1367524,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-desktop-native",
+      "code": "D",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -51.24814415964358,
+        10.67927957014824,
+        100.08470139168695
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605679,
+        0.02361640687704766,
+        0.9522810424535579
+      ],
+      "lookTarget": [
+        -53.352,
+        1.6449999958276749,
+        87.048
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 8,
+        "calls": 303,
+        "triangles": 712594,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-desktop-single-finger-left",
+      "code": "D",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -50.6142703029042,
+        6.653216280428104,
+        94.32140317734755
+      ],
+      "quaternion": [
+        -0.27777001581878713,
+        0.1717460989353231,
+        0.050545678960033154,
+        0.9438179009485878
+      ],
+      "lookTarget": [
+        -53.352,
+        1.6449999958276749,
+        87.048
+      ],
+      "orbit": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 9,
+        "calls": 221,
+        "triangles": 495356,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-desktop-single-finger-right",
+      "code": "D",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -58.976684946598716,
+        10.67927957014824,
+        98.9955812845088
+      ],
+      "quaternion": [
+        -0.2883974322834167,
+        -0.208482604145557,
+        -0.06449122890114704,
+        0.9323104666450114
+      ],
+      "lookTarget": [
+        -53.352,
+        1.6449999958276749,
+        87.048
+      ],
+      "orbit": {
+        "yaw": -0.44000000000000017,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 10,
+        "calls": 409,
+        "triangles": 813501,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-desktop-NPC-native",
+      "code": "D",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          -41.452,
+          0.2,
+          80.69800000000001
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "camera": [
+        -39.3481441596436,
+        10.609279577300793,
+        93.73470139168691
+      ],
+      "quaternion": [
+        -0.2945750462469267,
+        0.07634542316605625,
+        0.023616406877047552,
+        0.9522810424535577
+      ],
+      "lookTarget": [
+        -41.452,
+        1.5750000029802322,
+        80.69800000000001
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 11,
+        "calls": 358,
+        "triangles": 756259,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-desktop-QA-hero",
+      "code": "D",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "QA-hero",
+      "initial": {
+        "kind": "explicit QA camera, not a native player view"
+      },
+      "errors": [],
+      "player": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "camera": [
+        -17.351999999999997,
+        30,
+        45.048
+      ],
+      "quaternion": [
+        -0.08199289389601476,
+        0.9113180073469898,
+        0.22164789795475168,
+        0.3371184720063684
+      ],
+      "lookTarget": [
+        -41.452,
+        1.5750000029802322,
+        80.69800000000001
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 12,
+        "calls": 119,
+        "triangles": 94779,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-desktop-QA-top",
+      "code": "D",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "QA-top",
+      "initial": {
+        "kind": "explicit QA camera, not a native player view"
+      },
+      "errors": [],
+      "player": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "camera": [
+        -53.351,
+        58,
+        87.049
+      ],
+      "quaternion": [
+        -0.6532735179113929,
+        0.27060134904693406,
+        0.27059475105672237,
+        0.6532894468688462
+      ],
+      "lookTarget": [
+        -41.452,
+        1.5750000029802322,
+        80.69800000000001
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 13,
+        "calls": 146,
+        "triangles": 128402,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-desktop-native",
+      "code": "E",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        34.603855840356395,
+        10.679279570148246,
+        -7.463298608313049
+      ],
+      "quaternion": [
+        -0.2945750462469262,
+        0.076345423166056,
+        0.023616406877047424,
+        0.9522810424535579
+      ],
+      "lookTarget": [
+        32.5,
+        1.6449999958276749,
+        -20.5
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 14,
+        "calls": 92,
+        "triangles": 71430,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-desktop-single-finger-left",
+      "code": "E",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        36.14937854626281,
+        10.67927957014824,
+        -7.808907501751831
+      ],
+      "quaternion": [
+        -0.29262883584012284,
+        0.13331062922587672,
+        0.041237810077831734,
+        0.945989473297795
+      ],
+      "lookTarget": [
+        32.5,
+        1.6449999958276749,
+        -20.5
+      ],
+      "orbit": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 15,
+        "calls": 95,
+        "triangles": 77495,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-desktop-single-finger-right",
+      "code": "E",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        26.875314521952973,
+        10.67927957014824,
+        -8.552418829063326
+      ],
+      "quaternion": [
+        -0.28839742895770565,
+        -0.20848262296733538,
+        -0.06449123422517,
+        0.9323104630965799
+      ],
+      "lookTarget": [
+        32.5,
+        1.6449999958276749,
+        -20.5
+      ],
+      "orbit": {
+        "yaw": -0.44000000000000017,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 16,
+        "calls": 90,
+        "triangles": 71426,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-desktop-NPC-native",
+      "code": "E",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          21.95,
+          0.2,
+          -14
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "camera": [
+        24.053855840356423,
+        10.609279577300804,
+        -0.9632986083130518
+      ],
+      "quaternion": [
+        -0.29457504624692615,
+        0.07634542316605704,
+        0.023616406877047743,
+        0.9522810424535577
+      ],
+      "lookTarget": [
+        21.95,
+        1.5750000029802322,
+        -14
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 17,
+        "calls": 122,
+        "triangles": 228591,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-desktop-QA-hero",
+      "code": "E",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "QA-hero",
+      "initial": {
+        "kind": "explicit QA camera, not a native player view"
+      },
+      "errors": [],
+      "player": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "camera": [
+        68.5,
+        30,
+        -62.5
+      ],
+      "quaternion": [
+        -0.08199289389601476,
+        0.9113180073469898,
+        0.22164789795475168,
+        0.3371184720063684
+      ],
+      "lookTarget": [
+        21.95,
+        1.5750000029802322,
+        -14
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 18,
+        "calls": 1209,
+        "triangles": 1930272,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-desktop-QA-top",
+      "code": "E",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "QA-top",
+      "initial": {
+        "kind": "explicit QA camera, not a native player view"
+      },
+      "errors": [],
+      "player": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "camera": [
+        32.501,
+        58,
+        -20.499
+      ],
+      "quaternion": [
+        -0.6532735179111524,
+        0.2706013490475142,
+        0.2705947510573026,
+        0.6532894468686059
+      ],
+      "lookTarget": [
+        21.95,
+        1.5750000029802322,
+        -14
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 19,
+        "calls": 267,
+        "triangles": 547675,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-desktop-native",
+      "code": "H",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "camera": [
+        60.87072727125524,
+        9.196061782118164,
+        92.348400950605
+      ],
+      "quaternion": [
+        -0.24306598987170625,
+        0.5433591650809676,
+        0.1680806863171626,
+        0.7857662662505644
+      ],
+      "lookTarget": [
+        50.544,
+        1.6449999958276749,
+        88.452
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 20,
+        "calls": 346,
+        "triangles": 719333,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-desktop-single-finger-left",
+      "code": "H",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "camera": [
+        63.373372759759015,
+        10.67927957014824,
+        85.3232642866219
+      ],
+      "quaternion": [
+        -0.18253857023364825,
+        0.751300646492548,
+        0.23240452431529016,
+        0.59009757331709
+      ],
+      "lookTarget": [
+        50.544,
+        1.6449999958276749,
+        88.452
+      ],
+      "orbit": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 21,
+        "calls": 174,
+        "triangles": 164104,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-desktop-single-finger-right",
+      "code": "H",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "camera": [
+        57.061580826722114,
+        6.91041009257951,
+        92.54542806620566
+      ],
+      "quaternion": [
+        -0.2586317415471603,
+        0.46219890145193815,
+        0.1429748747488304,
+        0.8360861097706747
+      ],
+      "lookTarget": [
+        50.544,
+        1.6449999958276749,
+        88.452
+      ],
+      "orbit": {
+        "yaw": -0.44000000000000017,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 22,
+        "calls": 316,
+        "triangles": 625683,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-desktop-NPC-native",
+      "code": "H",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          79.902
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "camera": [
+        52.647855840356435,
+        10.609279577300798,
+        92.9387013916869
+      ],
+      "quaternion": [
+        -0.2945750462469267,
+        0.07634542316605779,
+        0.02361640687704803,
+        0.9522810424535575
+      ],
+      "lookTarget": [
+        50.544,
+        1.5750000029802322,
+        79.902
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 23,
+        "calls": 349,
+        "triangles": 775006,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-desktop-QA-hero",
+      "code": "H",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "QA-hero",
+      "initial": {
+        "kind": "explicit QA camera, not a native player view"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "camera": [
+        86.544,
+        30,
+        46.452
+      ],
+      "quaternion": [
+        -0.08199289389601476,
+        0.9113180073469898,
+        0.22164789795475168,
+        0.3371184720063684
+      ],
+      "lookTarget": [
+        50.544,
+        1.5750000029802322,
+        79.902
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 24,
+        "calls": 239,
+        "triangles": 220759,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-desktop-QA-top",
+      "code": "H",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "QA-top",
+      "initial": {
+        "kind": "explicit QA camera, not a native player view"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "camera": [
+        50.544999999999995,
+        58,
+        88.453
+      ],
+      "quaternion": [
+        -0.6532735179113929,
+        0.27060134904693406,
+        0.27059475105672237,
+        0.6532894468688462
+      ],
+      "lookTarget": [
+        50.544,
+        1.5750000029802322,
+        79.902
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 25,
+        "calls": 149,
+        "triangles": 144948,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "world-desktop-panorama",
+      "code": "world",
+      "profile": "desktop",
+      "size": {
+        "width": 1200,
+        "height": 800
+      },
+      "kind": "panorama",
+      "initial": {
+        "kind": "ordinary panorama button endpoint"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "camera": [
+        -6.248285000000003,
+        240,
+        31.045930000000002
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "lookTarget": [
+        50.544,
+        1.5750000029802322,
+        79.902
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 1.5,
+      "canvas": [
+        1200,
+        800
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 26,
+        "calls": 1187,
+        "triangles": 1929986,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-portrait-native",
+      "code": "B",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "camera": [
+        -52.935673521643544,
+        15.23669171778454,
+        21.120068214829146
+      ],
+      "quaternion": [
+        -0.32817756288217903,
+        0.0566306259260667,
+        0.019714316632560566,
+        0.9427108809956776
+      ],
+      "lookTarget": [
+        -55,
+        1.5750000029802322,
+        4
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 2,
+        "calls": 75,
+        "triangles": 80767,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-portrait-single-finger-left",
+      "code": "B",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "camera": [
+        -43.62952477044111,
+        15.23669171778454,
+        16.964198964172223
+      ],
+      "quaternion": [
+        -0.30769404724200883,
+        0.3326912718066916,
+        0.11581685915639864,
+        0.8838706614039327
+      ],
+      "lookTarget": [
+        -55,
+        1.5750000029802322,
+        4
+      ],
+      "orbit": {
+        "yaw": 0.72,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 3,
+        "calls": 68,
+        "triangles": 66841,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-portrait-single-finger-right",
+      "code": "B",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "camera": [
+        -62.962944142375726,
+        15.23669171778454,
+        19.295412049327723
+      ],
+      "quaternion": [
+        -0.3193460326605097,
+        -0.22448849647872604,
+        -0.07814919290974848,
+        0.9173416648230192
+      ],
+      "lookTarget": [
+        -55,
+        1.5750000029802322,
+        4
+      ],
+      "orbit": {
+        "yaw": -0.4799999618530274,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 4,
+        "calls": 238,
+        "triangles": 797718,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-portrait-NPC-native",
+      "code": "B",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          -47.8,
+          0.2,
+          -3.1500000000000004
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "camera": [
+        -45.735673521643584,
+        15.23669171778454,
+        13.970068214829162
+      ],
+      "quaternion": [
+        -0.3281775628821788,
+        0.0566306259260655,
+        0.019714316632560135,
+        0.9427108809956777
+      ],
+      "lookTarget": [
+        -47.8,
+        1.5750000029802322,
+        -3.1500000000000004
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 5,
+        "calls": 77,
+        "triangles": 84289,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-portrait-native",
+      "code": "D",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -51.28767352164356,
+        15.306691710631988,
+        104.16806821482916
+      ],
+      "quaternion": [
+        -0.328177562882179,
+        0.05663062592606608,
+        0.01971431663256035,
+        0.9427108809956776
+      ],
+      "lookTarget": [
+        -53.352,
+        1.6449999958276749,
+        87.048
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 6,
+        "calls": 147,
+        "triangles": 128193,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-portrait-single-finger-left",
+      "code": "D",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -47.927590117404236,
+        15.306691710631988,
+        103.41668830771863
+      ],
+      "quaternion": [
+        -0.3245698944322735,
+        0.1504617568386775,
+        0.052378914534364655,
+        0.9323476243705687
+      ],
+      "lookTarget": [
+        -53.352,
+        1.6449999958276749,
+        87.048
+      ],
+      "orbit": {
+        "yaw": 0.72,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 7,
+        "calls": 120,
+        "triangles": 109789,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-portrait-single-finger-right",
+      "code": "D",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -61.31494512290285,
+        15.306691710631988,
+        102.34341209125947
+      ],
+      "quaternion": [
+        -0.3193460243899804,
+        -0.22448851963765126,
+        -0.07814919923133633,
+        0.9173416614962557
+      ],
+      "lookTarget": [
+        -53.352,
+        1.6449999958276749,
+        87.048
+      ],
+      "orbit": {
+        "yaw": -0.4799999618530274,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 8,
+        "calls": 304,
+        "triangles": 627324,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-portrait-NPC-native",
+      "code": "D",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          -41.452,
+          0.2,
+          80.69800000000001
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "camera": [
+        -39.387673521643585,
+        15.23669171778454,
+        97.81806821482913
+      ],
+      "quaternion": [
+        -0.3281775628821794,
+        0.05663062592606562,
+        0.01971431663256022,
+        0.9427108809956776
+      ],
+      "lookTarget": [
+        -41.452,
+        1.5750000029802322,
+        80.69800000000001
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 9,
+        "calls": 202,
+        "triangles": 477858,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-portrait-native",
+      "code": "E",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        34.56432647835641,
+        15.306691710631982,
+        -3.3799317851708417
+      ],
+      "quaternion": [
+        -0.32817756288217886,
+        0.056630625926065506,
+        0.019714316632560142,
+        0.9427108809956777
+      ],
+      "lookTarget": [
+        32.5,
+        1.6449999958276749,
+        -20.5
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 10,
+        "calls": 94,
+        "triangles": 71434,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-portrait-single-finger-left",
+      "code": "E",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        37.92440988259576,
+        15.306691710631988,
+        -4.131311692281368
+      ],
+      "quaternion": [
+        -0.32456989443227346,
+        0.15046175683867744,
+        0.052378914534364635,
+        0.9323476243705687
+      ],
+      "lookTarget": [
+        32.5,
+        1.6449999958276749,
+        -20.5
+      ],
+      "orbit": {
+        "yaw": 0.72,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 11,
+        "calls": 95,
+        "triangles": 72041,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-portrait-single-finger-right",
+      "code": "E",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        24.537050899774016,
+        15.306691710631988,
+        -5.204589479167339
+      ],
+      "quaternion": [
+        -0.31934600900843363,
+        -0.22448863325297685,
+        -0.0781492372071679,
+        0.9173416358121622
+      ],
+      "lookTarget": [
+        32.5,
+        1.6449999958276749,
+        -20.5
+      ],
+      "orbit": {
+        "yaw": -0.4799999618530274,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 12,
+        "calls": 98,
+        "triangles": 74397,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-portrait-NPC-native",
+      "code": "E",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          21.95,
+          0.2,
+          -14
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "camera": [
+        24.014326478356445,
+        15.23669171778455,
+        3.1200682148291556
+      ],
+      "quaternion": [
+        -0.3281775628821791,
+        0.05663062592606637,
+        0.01971431663256046,
+        0.9427108809956776
+      ],
+      "lookTarget": [
+        21.95,
+        1.5750000029802322,
+        -14
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 13,
+        "calls": 81,
+        "triangles": 69233,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-portrait-native",
+      "code": "H",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "camera": [
+        56.34527021979875,
+        7.45018758286929,
+        92.54383701820791
+      ],
+      "quaternion": [
+        -0.2983539434366614,
+        0.4334594658075922,
+        0.15466308248350913,
+        0.8361681331253239
+      ],
+      "lookTarget": [
+        50.544,
+        1.6449999958276749,
+        88.452
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 14,
+        "calls": 153,
+        "triangles": 183931,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-portrait-single-finger-left",
+      "code": "H",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "camera": [
+        67.44706594235386,
+        15.306691710631988,
+        85.03959011282583
+      ],
+      "quaternion": [
+        -0.20820606369420427,
+        0.7308932926248634,
+        0.2544393878717295,
+        0.5980851341877763
+      ],
+      "lookTarget": [
+        50.544,
+        1.6449999958276749,
+        88.452
+      ],
+      "orbit": {
+        "yaw": 0.7200000000000001,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 15,
+        "calls": 122,
+        "triangles": 107737,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-portrait-single-finger-right",
+      "code": "H",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "camera": [
+        57.45484883280308,
+        7.95696923684992,
+        92.41619866355728
+      ],
+      "quaternion": [
+        -0.28449183081639445,
+        0.4733507445231397,
+        0.16478338890286037,
+        0.8172208426122122
+      ],
+      "lookTarget": [
+        50.544,
+        1.6449999958276749,
+        88.452
+      ],
+      "orbit": {
+        "yaw": -0.4799999618530273,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 16,
+        "calls": 145,
+        "triangles": 149417,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-portrait-NPC-native",
+      "code": "H",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          79.902
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "camera": [
+        52.60832647835645,
+        15.236691717784545,
+        97.02206821482912
+      ],
+      "quaternion": [
+        -0.3281775628821794,
+        0.05663062592606678,
+        0.019714316632560624,
+        0.9427108809956773
+      ],
+      "lookTarget": [
+        50.544,
+        1.5750000029802322,
+        79.902
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 17,
+        "calls": 223,
+        "triangles": 207015,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "world-portrait-panorama",
+      "code": "world",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "panorama",
+      "initial": {
+        "kind": "ordinary panorama button endpoint"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "camera": [
+        -6.248285000000003,
+        240,
+        31.045930000000002
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "lookTarget": [
+        50.544,
+        1.5750000029802322,
+        79.902
+      ],
+      "orbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 18,
+        "calls": 1187,
+        "triangles": 1929986,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-landscape-native",
+      "code": "B",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "camera": [
+        -52.63316217959901,
+        11.738564524090863,
+        18.666289065647806
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605746,
+        0.02361640687704786,
+        0.9522810424535577
+      ],
+      "lookTarget": [
+        -55,
+        1.5750000029802322,
+        4
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 2,
+        "calls": 309,
+        "triangles": 894578,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-landscape-single-finger-left",
+      "code": "B",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "camera": [
+        -44.76535855909186,
+        11.738564524090863,
+        14.768196581549647
+      ],
+      "quaternion": [
+        -0.2744391891899801,
+        0.3543537126122098,
+        0.1096144511965228,
+        0.887187268779019
+      ],
+      "lookTarget": [
+        -55,
+        1.5750000029802322,
+        4
+      ],
+      "orbit": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 3,
+        "calls": 94,
+        "triangles": 91432,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-landscape-single-finger-right",
+      "code": "B",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "camera": [
+        -61.3277637731144,
+        11.738564524090863,
+        17.441030826073536
+      ],
+      "quaternion": [
+        -0.28839746477681427,
+        -0.20848238498512137,
+        -0.06449116537424843,
+        0.9323105099964781
+      ],
+      "lookTarget": [
+        -55,
+        1.5750000029802322,
+        4
+      ],
+      "orbit": {
+        "yaw": -0.4399999237060548,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 4,
+        "calls": 581,
+        "triangles": 1440816,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "B-landscape-NPC-native",
+      "code": "B",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          -47.8,
+          0.2,
+          -3.1500000000000004
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "camera": [
+        -45.43316217959905,
+        11.738564524090863,
+        11.516289065647822
+      ],
+      "quaternion": [
+        -0.2945750462469258,
+        0.07634542316605603,
+        0.023616406877047406,
+        0.9522810424535579
+      ],
+      "lookTarget": [
+        -47.8,
+        1.5750000029802322,
+        -3.1500000000000004
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 5,
+        "calls": 315,
+        "triangles": 914430,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-landscape-native",
+      "code": "D",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -50.98516217959903,
+        11.808564516938311,
+        101.71428906564782
+      ],
+      "quaternion": [
+        -0.29457504624692604,
+        0.07634542316605673,
+        0.02361640687704764,
+        0.9522810424535577
+      ],
+      "lookTarget": [
+        -53.352,
+        1.6449999958276749,
+        87.048
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 6,
+        "calls": 405,
+        "triangles": 785384,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-landscape-single-finger-left",
+      "code": "D",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -49.246449135454334,
+        11.808564516938311,
+        101.32547906052919
+      ],
+      "quaternion": [
+        -0.29262883584012284,
+        0.1333106292258768,
+        0.041237810077831755,
+        0.945989473297795
+      ],
+      "lookTarget": [
+        -53.352,
+        1.6449999958276749,
+        87.048
+      ],
+      "orbit": {
+        "yaw": 0.76,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 7,
+        "calls": 822,
+        "triangles": 1592034,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-landscape-single-finger-right",
+      "code": "D",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -59.679764724104295,
+        11.808564516938311,
+        100.48903086478761
+      ],
+      "quaternion": [
+        -0.28839745650968707,
+        -0.20848241191094352,
+        -0.06449117212660806,
+        0.9323105060655892
+      ],
+      "lookTarget": [
+        -53.352,
+        1.6449999958276749,
+        87.048
+      ],
+      "orbit": {
+        "yaw": -0.4399999237060547,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 8,
+        "calls": 453,
+        "triangles": 860007,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "D-landscape-NPC-native",
+      "code": "D",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          -41.452,
+          0.2,
+          80.69800000000001
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "camera": [
+        -39.08516217959905,
+        11.738564524090863,
+        95.36428906564778
+      ],
+      "quaternion": [
+        -0.29457504624692665,
+        0.07634542316605625,
+        0.02361640687704754,
+        0.9522810424535577
+      ],
+      "lookTarget": [
+        -41.452,
+        1.5750000029802322,
+        80.69800000000001
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 9,
+        "calls": 824,
+        "triangles": 1589160,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-landscape-native",
+      "code": "E",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        34.866837820400946,
+        11.808564516938306,
+        -5.8337109343521805
+      ],
+      "quaternion": [
+        -0.2945750462469259,
+        0.07634542316605603,
+        0.02361640687704741,
+        0.9522810424535582
+      ],
+      "lookTarget": [
+        32.5,
+        1.6449999958276749,
+        -20.5
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 10,
+        "calls": 103,
+        "triangles": 85066,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-landscape-single-finger-left",
+      "code": "E",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        36.60555086454566,
+        11.808564516938311,
+        -6.222520939470808
+      ],
+      "quaternion": [
+        -0.29262883584012284,
+        0.13331062922587678,
+        0.04123781007783175,
+        0.945989473297795
+      ],
+      "lookTarget": [
+        32.5,
+        1.6449999958276749,
+        -20.5
+      ],
+      "orbit": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 11,
+        "calls": 110,
+        "triangles": 89251,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-landscape-single-finger-right",
+      "code": "E",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        26.17223527589571,
+        11.808564516938311,
+        -7.058969135212398
+      ],
+      "quaternion": [
+        -0.2883974565096872,
+        -0.20848241191094333,
+        -0.06449117212660802,
+        0.9323105060655892
+      ],
+      "lookTarget": [
+        32.5,
+        1.6449999958276749,
+        -20.5
+      ],
+      "orbit": {
+        "yaw": -0.4399999237060548,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 12,
+        "calls": 94,
+        "triangles": 74615,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "E-landscape-NPC-native",
+      "code": "E",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          21.95,
+          0.2,
+          -14
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "camera": [
+        24.316837820400977,
+        11.738564524090874,
+        0.6662890656478165
+      ],
+      "quaternion": [
+        -0.29457504624692615,
+        0.07634542316605707,
+        0.02361640687704775,
+        0.9522810424535577
+      ],
+      "lookTarget": [
+        21.95,
+        1.5750000029802322,
+        -14
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 13,
+        "calls": 358,
+        "triangles": 1172762,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-landscape-native",
+      "code": "H",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "camera": [
+        57.67107760163668,
+        7.721321783687017,
+        92.55374341767849
+      ],
+      "quaternion": [
+        -0.27082651882822556,
+        0.47546790113854026,
+        0.15661051597850706,
+        0.8222265004068173
+      ],
+      "lookTarget": [
+        50.544,
+        1.6449999958276749,
+        88.452
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 14,
+        "calls": 322,
+        "triangles": 476401,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-landscape-single-finger-left",
+      "code": "H",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "single-finger-left",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "camera": [
+        64.97704435472889,
+        11.808564516938311,
+        84.93217232244965
+      ],
+      "quaternion": [
+        -0.18253857023364828,
+        0.7513006464925481,
+        0.2324045243152902,
+        0.5900975733170899
+      ],
+      "lookTarget": [
+        50.544,
+        1.6449999958276749,
+        88.452
+      ],
+      "orbit": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 15,
+        "calls": 281,
+        "triangles": 271963,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-landscape-single-finger-right",
+      "code": "H",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "single-finger-right",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "camera": [
+        58.415628081045796,
+        7.718885425808385,
+        92.5580248276784
+      ],
+      "quaternion": [
+        -0.2527073878489823,
+        0.49526374964535613,
+        0.15320303088289386,
+        0.8169342848369513
+      ],
+      "lookTarget": [
+        50.544,
+        1.6449999958276749,
+        88.452
+      ],
+      "orbit": {
+        "yaw": -0.4399999237060548,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 16,
+        "calls": 378,
+        "triangles": 691148,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "H-landscape-NPC-native",
+      "code": "H",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "NPC-native",
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          79.902
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "camera": [
+        52.910837820400985,
+        11.738564524090869,
+        94.56828906564778
+      ],
+      "quaternion": [
+        -0.2945750462469266,
+        0.07634542316605761,
+        0.02361640687704796,
+        0.9522810424535575
+      ],
+      "lookTarget": [
+        50.544,
+        1.5750000029802322,
+        79.902
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 17,
+        "calls": 448,
+        "triangles": 861428,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    {
+      "name": "world-landscape-panorama",
+      "code": "world",
+      "profile": "landscape",
+      "size": {
+        "width": 932,
+        "height": 430
+      },
+      "kind": "panorama",
+      "initial": {
+        "kind": "ordinary panorama button endpoint"
+      },
+      "errors": [],
+      "player": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "camera": [
+        -6.248285000000003,
+        240,
+        31.045930000000002
+      ],
+      "quaternion": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "lookTarget": [
+        50.544,
+        1.5750000029802322,
+        79.902
+      ],
+      "orbit": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "actualCameraFOV": 55,
+      "aspect": 2.167441860465116,
+      "canvas": [
+        932,
+        430
+      ],
+      "grounded": true,
+      "discovery": null,
+      "render": {
+        "frame": 18,
+        "calls": 1187,
+        "triangles": 1929986,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    }
+  ]
+}

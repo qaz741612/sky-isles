@@ -13,8 +13,9 @@ try{for(const[stage,port,dist]of cases)for(const mobile of[false,true]){
  const report=await page.evaluate(()=>{
   const w=window.__skyisles.world,p=w.player;window.__skyisles.start();const draw=w.renderer.render.bind(w.renderer),step=p.update.bind(p);w.renderer.render=()=>{};p.update=()=>{};window.__qaFrame();
   const ready=performance.now(),gl=w.renderer.getContext(),ext=gl.getExtension('WEBGL_debug_renderer_info'),views=[];
-  for(const name of['F-native','panorama']){
-   if(name==='F-native'){p.teleport(0,.5,3.5);for(let i=0;i<100;i++)step(1/60,{x:0,z:0,jumpPressed:false,jumpHeld:false},i/60);}else{w.panorama.enter();w.panorama.update(2);}
+  const originalOrbit={...p.orbit};
+  for(const name of['F-native','D-native','E-native','H-native','panorama']){
+   if(name==='panorama'){w.panorama.enter();w.panorama.update(2);}else{Object.assign(p.orbit,originalOrbit);p.cameraConstraint.resetVisit?.();const c=name==='F-native'?[0,.5,3.5]:w.r21[name[0]].config.centre;p.teleport(c[0],.5,c[2]);for(let i=0;i<300;i++){p.cameraConstraint.setDelta?.(1/60);step(1/60,{x:0,z:0,jumpPressed:false,jumpHeld:false},i/60);}}
    const camera=w.panorama.camera;w.scene.updateMatrixWorld(true);for(let i=0;i<2;i++){draw(w.scene,camera);gl.finish();}
    const times=[];for(let i=0;i<6;i++){const t=performance.now();draw(w.scene,camera);gl.finish();times.push(performance.now()-t);}times.sort((a,b)=>a-b);
    const cpu=[];if(name==='F-native')for(let i=0;i<5;i++){const t=performance.now();for(let k=0;k<100;k++)step(1/60,{x:0,z:0,jumpPressed:false,jumpHeld:false},10+i+k/60);cpu.push((performance.now()-t)/100);}cpu.sort((a,b)=>a-b);
