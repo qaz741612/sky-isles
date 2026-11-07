@@ -7,14 +7,14 @@ const out='docs/previews/bdeh-r21/final-qa/operation';fs.mkdirSync(out,{recursiv
 const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
 try{for(const code of process.argv[2]??'BDEH'){
  const context=await browser.newContext({viewport:{width:430,height:932},deviceScaleFactor:1,isMobile:true,hasTouch:true}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.addInitScript(()=>{const raf=requestAnimationFrame.bind(window);window.requestAnimationFrame=fn=>(fn.name==='frame'||fn.toString().includes('.render('))?(window.__qaFrame=fn,0):raf(fn);});
+ await page.addInitScript(()=>{const get=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(kind,attrs){return get.call(this,kind,/^webgl/.test(kind)?{...attrs,preserveDrawingBuffer:true}:attrs);};const raf=requestAnimationFrame.bind(window);window.requestAnimationFrame=fn=>(fn.name==='frame'||fn.toString().includes('.render('))?(window.__qaFrame=fn,0):raf(fn);});
  await page.goto('http://127.0.0.1:4280/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
  const setup=await page.evaluate(code=>{
   const api=window.__skyisles,w=api.world,p=w.player;api.start();w.draw=w.renderer.render.bind(w.renderer);w.renderer.render=()=>{};w.step=p.update.bind(p);p.update=()=>{};w.qt=0;w.replayCode=code;window.__qaFrame();document.querySelector('#title-screen').getAnimations().forEach(a=>a.finish());
   const place=w.r21[code],c=place.config.centre,road=w.bridges.walkPlans.find(v=>v.id===place.config.finalQA.entryRoad);let pts=road.points.slice();if(Math.hypot(pts[0].x-c[0],pts[0].z-c[2])<Math.hypot(pts.at(-1).x-c[0],pts.at(-1).z-c[2]))pts.reverse();let start=pts.length-1;while(start>0&&Math.hypot(pts[start].x-c[0],pts[start].z-c[2])<Math.max(...place.config.maxDimensions)/2+2.1)start--;
   const guides={B:[[7.2,-6.6],[7.2,-7.15]],D:[[6.2,1.6],[8.8,1],[9.1,-3.55],[11.3,-3.55],[11.9,-4.9],[11.9,-6.35]],E:[[4.7,2.8],[-1,2.4],[-6,4],[-10.55,6.5]],H:[[0,-8.1],[0,-8.55]]};
   w.route=[...pts.slice(start+1),...guides[code].map(([x,z])=>({x:c[0]+x,z:c[2]+z}))];w.ri=0;w.paused=false;w.pause=30;w.finished=false;p.teleport(pts[start].x,.15,pts[start].z);p.cameraConstraint.resetVisit();
-  for(let k=0;k<90;k++){p.cameraConstraint.setDelta(1/60);w.step(1/60,w.ui.poll(p.orbit),w.qt+=1/60);}const r=document.querySelector('#joystick').getBoundingClientRect();return{code,entryRoad:road.id,initialPlayer:p.pos.toArray(),originalOrbit:{...p.orbit},stick:{x:r.x+r.width/2,y:r.y+r.height/2,radius:r.width/2-10},method:'One trusted CDP touch controls actual UI.poll and real Player at60Hz; four physics ticks per trace frame, simulation interval1/15s. Sample actual framebuffer every2 simulation seconds and at stops. Start initialized once on bridge. Automated accelerated engineering replay, no human video/live frame cadence/physical-phone FPS claim.'};
+  for(let k=0;k<90;k++){p.cameraConstraint.setDelta(1/60);w.step(1/60,w.ui.poll(p.orbit),w.qt+=1/60);}const r=document.querySelector('#joystick').getBoundingClientRect();return{code,entryRoad:road.id,initialPlayer:p.pos.toArray(),originalOrbit:{...p.orbit},stick:{x:r.x+r.width/2,y:r.y+r.height/2,radius:r.width/2-10},method:'One trusted CDP touch controls actual UI.poll and real Player at60Hz; four physics ticks per trace frame, simulation interval1/15s. Sample actual framebuffer every2 simulation seconds and at stops. Start initialized once on bridge. Automated accelerated engineering replay of actual UI/Player/camera; environment animation is not a real-time recording. No human video/live frame cadence/physical-phone FPS claim.'};
  },code);
  const cdp=await context.newCDPSession(page),dir=`${out}/${code}`;fs.mkdirSync(dir,{recursive:true});const frames=[];let active=false;
  for(let frame=0;frame<1000;frame++){
@@ -25,5 +25,18 @@ try{for(const code of process.argv[2]??'BDEH'){
   if(frame%50===0){fs.writeFileSync(`${out}/${code}-trace.json`,JSON.stringify({...setup,errors,complete:false,frames})+'\n');console.log(code,'frame',frame,'waypoint',state.waypoint);}
   if(control.done){fs.writeFileSync(`${out}/${code}-trace.json`,JSON.stringify({...setup,errors,complete:true,frames})+'\n');break;}if(frame===999)throw Error('Replay route incomplete '+code);
  }
+ // Separate manual-camera phase: centre initialization is explicitly outside
+ // the continuous bridge-to-guide route above. No intermediate route teleport.
+ await page.evaluate(()=>{const w=window.__skyisles.world,p=w.player,c=w.r21[w.replayCode].config.centre;p.teleport(c[0],.2,c[2]);p.cameraConstraint.resetVisit();for(let k=0;k<300;k++){p.cameraConstraint.setDelta(1/60);w.step(1/60,w.ui.poll(p.orbit),w.qt+=1/60);}w.manualTrace=[];w.manualLast=null;w.manualMaxAngle=0;w.manualMaxStep=0;});
+ for(const[start,delta]of[[320,-120],[100,240]]){
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:start,y:560,id:1}]});
+  for(let segment=1;segment<=24;segment++){
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:start+delta*segment/24,y:560,id:1}]});
+   await page.evaluate(()=>{const w=window.__skyisles.world,p=w.player,ray=new p.ray.constructor(),obstacles=Object.values(w.r21).flatMap(v=>v.cameraObstacles);for(let k=0;k<6;k++){p.cameraConstraint.setDelta(1/60);w.step(1/60,w.ui.poll(p.orbit),w.qt+=1/60);const now={position:w.camera.position.toArray(),quaternion:w.camera.quaternion.toArray(),orbit:{...p.orbit}};if(w.manualLast){w.manualMaxAngle=Math.max(w.manualMaxAngle,w.camera.quaternion.angleTo(p.camera.quaternion.clone().fromArray(w.manualLast.quaternion)));w.manualMaxStep=Math.max(w.manualMaxStep,w.camera.position.distanceTo(p.pos.clone().fromArray(w.manualLast.position)));}const head=p.pos.clone().add(p.pos.clone().set(0,1.5,0));ray.set(head,w.camera.position.clone().sub(head).normalize());ray.far=head.distanceTo(w.camera.position)-.03;if(ray.intersectObjects(obstacles,false).length)throw Error('Manual sweep hides avatar');w.manualTrace.push(now);w.manualLast=now;}});
+  }
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+ }
+ const manual=await page.evaluate(()=>{const w=window.__skyisles.world;return{method:'Separate centre pose followed by trusted single-pointer120px left /240px right,24 segments per sweep,6 actual physics ticks per segment, no direct orbit assignment during gestures; not hardware cadence or human comfort acceptance',frames:w.manualTrace,maxRadiansPer60HzTick:w.manualMaxAngle,maxWorldUnitsPer60HzTick:w.manualMaxStep,manualHandoff:w.player.cameraConstraint.state().manual};});
+ fs.writeFileSync(`${out}/${code}-manual-turn-trace.json`,JSON.stringify(manual)+'\n');if(!manual.manualHandoff||manual.maxRadiansPer60HzTick>.15||manual.maxWorldUnitsPer60HzTick>3)throw Error('Abrupt normal one-pointer sweep '+code);
  await context.close();
 }}finally{await browser.close();}

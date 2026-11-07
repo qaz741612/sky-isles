@@ -30,7 +30,7 @@ test('actual Player visits all four authored public circuits, courtyard, civic t
  const{scene,places,bridges}=await fixture(),all=Object.values(places),walls=[...bridges.barriers,...all.flatMap(p=>p.barriers)],player=new Player(scene,new T.PerspectiveCamera(),[...bridges.colliders,...all.flatMap(p=>p.colliders)]);player.navigation={islands:ISLANDS,barriers:walls,nearby:guardIndex(walls)};player.orbit.yaw=0;const rows=[];let time=0;
  const tick=(x=0,z=0)=>{player.update(1/60,{x,z,jumpPressed:false,jumpHeld:false},time+=1/60);assert.ok([...player.pos.toArray(),player.move.vy].every(Number.isFinite));};
  for(const[code,p]of Object.entries(places)){
-  const c=p.config.centre,route=p.config.publicCircuit;player.teleport(c[0]+route[0][0],.2,c[2]+route[0][1]);for(let i=0;i<60;i++)tick();const visited=[];
+  const c=p.config.centre,route=code==='B'?p.config.publicCircuit.flatMap(pt=>pt[0]===-1.9&&pt[1]===-.7?[pt,...p.config.finalQA.companionApproach.slice(1),pt]:[pt]):p.config.publicCircuit;player.teleport(c[0]+route[0][0],.2,c[2]+route[0][1]);for(let i=0;i<60;i++)tick();const visited=[];
   for(const[x,z]of route){let limit=1400;while(Math.hypot(c[0]+x-player.pos.x,c[2]+z-player.pos.z)>.17&&limit-->0){const dx=c[0]+x-player.pos.x,dz=c[2]+z-player.pos.z,d=Math.hypot(dx,dz);tick(dx/d,dz/d);assert.ok(player.move.grounded,'airborne '+code);assert.equal(player.respawnCount,0);}assert.ok(limit>0,`blocked ${code} target ${x},${z} actual ${player.pos.toArray()}`);visited.push(player.pos.toArray());}
   rows.push({code,passed:true,noJump:true,visited});
  }

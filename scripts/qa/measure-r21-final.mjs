@@ -18,7 +18,7 @@ try{for(const[stage,port,dist]of cases)for(const mobile of[false,true]){
    if(name==='panorama'){w.panorama.enter();w.panorama.update(2);}else{Object.assign(p.orbit,originalOrbit);p.cameraConstraint.resetVisit?.();const c=name==='F-native'?[0,.5,3.5]:w.r21[name[0]].config.centre;p.teleport(c[0],.5,c[2]);for(let i=0;i<300;i++){p.cameraConstraint.setDelta?.(1/60);step(1/60,{x:0,z:0,jumpPressed:false,jumpHeld:false},i/60);}}
    const camera=w.panorama.camera;w.scene.updateMatrixWorld(true);for(let i=0;i<2;i++){draw(w.scene,camera);gl.finish();}
    const times=[];for(let i=0;i<6;i++){const t=performance.now();draw(w.scene,camera);gl.finish();times.push(performance.now()-t);}times.sort((a,b)=>a-b);
-   const cpu=[];if(name==='F-native')for(let i=0;i<5;i++){const t=performance.now();for(let k=0;k<100;k++)step(1/60,{x:0,z:0,jumpPressed:false,jumpHeld:false},10+i+k/60);cpu.push((performance.now()-t)/100);}cpu.sort((a,b)=>a-b);
+   const cpu=[];if(name!=='panorama')for(let i=0;i<5;i++){const t=performance.now();for(let k=0;k<100;k++)step(1/60,{x:0,z:0,jumpPressed:false,jumpHeld:false},10+i+k/60);cpu.push((performance.now()-t)/100);}cpu.sort((a,b)=>a-b);
    views.push({name,camera:camera.position.toArray(),player:p.pos.toArray(),orbit:{...p.orbit},drawCalls:w.renderer.info.render.calls,triangles:w.renderer.info.render.triangles,memory:{...w.renderer.info.memory},synchronizedSoftwareFrameMs:{samples:times,median:(times[2]+times[3])/2,max:times.at(-1)},controllerCPUms:cpu[2]??null});
   }
   return{allEightLoaded:w.islands.islands.length,navigationReadyAtMs:ready,GLBLoads:Object.fromEntries(Object.entries(w.r21??{}).map(([c,v])=>[c,v.stats])),views,webGL:ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):'unknown',webGLError:gl.getError()};

@@ -18,4 +18,4 @@ for code in'BDEH':
 board([O/c/'blender/hero.png'for c in'BDEH'],[c+' final Blender hero'for c in'BDEH'],P/'four-islands-blender.jpg',(560,420),2)
 board([O/'game-after'/f'{c}-portrait-native.png'for c in'BDEH'],[c+' original portrait profile + local discovery'for c in'BDEH'],P/'four-islands-native-portrait.jpg',(280,607),4)
 board([O/'game-after'/f'{c}-desktop-native.png'for c in'BDEH'],[c+' original desktop profile + local discovery'for c in'BDEH'],P/'four-islands-native-desktop.jpg',(560,375),2)
-print('21 comparison/contact boards created from actual source PNGs')
+print('19 comparison/contact boards created from actual source PNGs')

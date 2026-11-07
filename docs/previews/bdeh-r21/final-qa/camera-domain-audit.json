@@ -1,0 +1,41 @@
+{
+  "method": "Full local camera domain disks vs actual F/C/G footprint polygons and actual A configured radius circle; all16 intersections zero",
+  "rows": [
+    {
+      "code": "B",
+      "protectedSiteOverlap": {
+        "A": 0.0,
+        "C": 0.0,
+        "F": 0.0,
+        "G": 0.0
+      }
+    },
+    {
+      "code": "D",
+      "protectedSiteOverlap": {
+        "A": 0.0,
+        "C": 0.0,
+        "F": 0.0,
+        "G": 0.0
+      }
+    },
+    {
+      "code": "E",
+      "protectedSiteOverlap": {
+        "A": 0.0,
+        "C": 0.0,
+        "F": 0.0,
+        "G": 0.0
+      }
+    },
+    {
+      "code": "H",
+      "protectedSiteOverlap": {
+        "A": 0.0,
+        "C": 0.0,
+        "F": 0.0,
+        "G": 0.0
+      }
+    }
+  ]
+}
