@@ -1,0 +1,218 @@
+{
+  "B": {
+    "realPhysicalChanges": [
+      {
+        "name": "FinalQA_CompanionCourtSeat",
+        "footprintArea": 0.54674709229635,
+        "base": 0.62,
+        "top": 0.74,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_CompanionCourtBack",
+        "footprintArea": 0.1218943846957901,
+        "base": 0.74,
+        "top": 1.14,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_CompanionCourtFoot",
+        "footprintArea": 0.0071923577791799765,
+        "base": 0.28,
+        "top": 0.65,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_CompanionCourtFoot",
+        "footprintArea": 0.007192352646165021,
+        "base": 0.28,
+        "top": 0.65,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_CompanionCourtSeat",
+        "footprintArea": 0.5467472461144051,
+        "base": 0.62,
+        "top": 0.74,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_CompanionCourtBack",
+        "footprintArea": 0.12189439496924998,
+        "base": 0.74,
+        "top": 1.14,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_CompanionCourtFoot",
+        "footprintArea": 0.0071923545463700046,
+        "base": 0.28,
+        "top": 0.65,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_CompanionCourtFoot",
+        "footprintArea": 0.007192352646164999,
+        "base": 0.28,
+        "top": 0.65,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "SensoryHerbRing",
+        "footprintArea": 16.131899543878106,
+        "base": 0.29,
+        "top": 0.41,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      }
+    ],
+    "originalGroundRoofCameraUnchanged": true,
+    "newWaterPlaneIsCollision": false,
+    "NPC3x3Unchanged": true
+  },
+  "D": {
+    "realPhysicalChanges": [],
+    "originalGroundRoofCameraUnchanged": true,
+    "newWaterPlaneIsCollision": false,
+    "NPC3x3Unchanged": true
+  },
+  "E": {
+    "realPhysicalChanges": [
+      {
+        "name": "FinalQA_RainGardenStoneBank",
+        "footprintArea": 1.8243388755003718,
+        "base": 0.15,
+        "top": 0.49,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_RainGardenInterpretationPost",
+        "footprintArea": 0.008100008999979879,
+        "base": 0.085,
+        "top": 0.995,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_RainGardenInterpretationDesk",
+        "footprintArea": 0.38249978500002035,
+        "base": 0.965,
+        "top": 1.035,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "RainGardenLivingWetlandBase",
+        "footprintArea": 9.406353114824899,
+        "base": 0.13,
+        "top": 0.33,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "trees",
+        "footprintArea": 0.07833984087005023,
+        "base": 0.1,
+        "top": 1.914678,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "PolicyCommonsAccessibleSeat_seat",
+        "footprintArea": 0.7196587089802201,
+        "base": 0.53,
+        "top": 0.67,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "PolicyCommonsAccessibleSeat_back",
+        "footprintArea": 0.1649294796929101,
+        "base": 0.64,
+        "top": 1.26,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "PolicyCommonsAccessibleSeat_leg",
+        "footprintArea": 0.011585319176520005,
+        "base": 0.14,
+        "top": 0.55,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "PolicyCommonsAccessibleSeat_leg",
+        "footprintArea": 0.011585308250990013,
+        "base": 0.14,
+        "top": 0.55,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      }
+    ],
+    "originalGroundRoofCameraUnchanged": true,
+    "newWaterPlaneIsCollision": false,
+    "NPC3x3Unchanged": true
+  },
+  "H": {
+    "realPhysicalChanges": [
+      {
+        "name": "FinalQA_LearningForumBookStand",
+        "footprintArea": 0.039999920000040025,
+        "base": 0.08,
+        "top": 0.88,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_LearningForumSlopedLecternSupport",
+        "footprintArea": 0.10800043200024034,
+        "base": 0.86,
+        "top": 1.1266,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      },
+      {
+        "name": "FinalQA_LearningForumBookBase",
+        "footprintArea": 0.32490039900006046,
+        "base": 0.085,
+        "top": 0.275,
+        "outsideIslandArea": 0.0,
+        "roadCoreOverlap": 0.0,
+        "NPCOverlap": 0.0
+      }
+    ],
+    "originalGroundRoofCameraUnchanged": true,
+    "newWaterPlaneIsCollision": false,
+    "NPC3x3Unchanged": true
+  }
+}

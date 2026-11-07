@@ -1,0 +1,27 @@
+{
+  "sameSource": true,
+  "sourceBlendSHA256": "e8b46de68157b12f84bd82e7dc9a898b104f547fda2d8fe93eec667110628b52",
+  "engine": "Cycles CPU, no denoiser available",
+  "samples": 64,
+  "records": [
+    {
+      "name": "hero",
+      "cameraBlender": [
+        36.0,
+        42.0,
+        30.0
+      ],
+      "rotation": [
+        1.0936275720596313,
+        -8.561841013943194e-09,
+        2.432966470718384
+      ],
+      "orthoScale": 45.0,
+      "size": [
+        800,
+        600
+      ],
+      "seconds": 35.98158830596367
+    }
+  ]
+}

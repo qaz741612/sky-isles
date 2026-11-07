@@ -3,8 +3,9 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { stationHeadroom } from './station-model.js';
-import { floodCameraConstraint } from './flood-control.js';
+import { r21DiscoveryCamera } from '../sim/r21-camera.js';
 import plan from '../data/bdeh-plan.json' with {type:'json'};
+import finalQA from '../data/bdeh-final-qa.json' with {type:'json'};
 import B from '../data/bdeh-b-collision.json' with {type:'json'};
 import D from '../data/bdeh-d-collision.json' with {type:'json'};
 import E from '../data/bdeh-e-collision.json' with {type:'json'};
@@ -18,7 +19,8 @@ export async function loadR21Models(){
  })));
 }
 export function buildR21Places(sources,islands){
- return Object.fromEntries(Object.entries(plan.islands).map(([code,config])=>{
+ return Object.fromEntries(Object.entries(plan.islands).map(([code,entry])=>{
+  const config={...entry,finalQA:finalQA[code]};
   const begin=performance.now(),island=islands.find(i=>i.name===config.name),source=sources[code],data=collisions[code];if(!island||!source)throw Error(`Missing R21 ${code}`);
   const group=new THREE.Group();group.name=`policy-place-${config.name}`;group.userData.blenderR21=code;group.add(source);island.group.add(group);
   const colliders=[],ceilings=[],cameraObstacles=[],hidden=new THREE.MeshBasicMaterial({side:THREE.DoubleSide});
@@ -43,12 +45,6 @@ export function buildR21Places(sources,islands){
   return[code,{group,source,meshes,pickMeshes:meshes,colliders,ceilings,cameraObstacles,barriers,bounds,config,constrainHead:stationHeadroom(ceilings,bounds,1.6),stats:{...source.userData.loadStats,triangles,runtimeMeshes:meshes.length,materials:materials.size,buildMilliseconds:performance.now()-begin,scale:1,newLights:0}}];
  }));
 }
-export function r21CameraConstraint(constrain,places,getOrbit){
- // Reuse the existing six-probe algorithm without changing G's module or its
- // current wrapper. Each new island keeps its own stable local offset state.
- const wrappers=Object.values(places).map(place=>({centre:place.config.centre,apply:floodCameraConstraint(constrain,{pos:place.group.parent.position},getOrbit)}));
- const wrapped=(target,position)=>{
-  const entry=wrappers.find(w=>Math.hypot(target.x-w.centre[0],target.z-w.centre[2])<24);
-  return entry?entry.apply(target,position):constrain(target,position);
- };wrapped.stats=constrain.stats;return wrapped;
+export function r21CameraConstraint(constrain,places,getOrbit,getPlayer){
+ return r21DiscoveryCamera(constrain,places,getOrbit,getPlayer);
 }

@@ -2,8 +2,10 @@
 import bpy,json,sys,hashlib,time
 from pathlib import Path
 R=Path(__file__).resolve().parents[2];only=sys.argv[sys.argv.index('--only')+1]if '--only'in sys.argv else None
-for code in 'BDEH':
- source=R/f'docs/design/bdeh-r21/{code}/{code}-r21.blend';sha=hashlib.sha256(source.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;out=R/f'docs/previews/bdeh-r21/{code}/blender';out.mkdir(parents=True,exist_ok=True);record=out/'render-record.json';records=[]
+codes=[sys.argv[sys.argv.index('--code')+1]]if '--code'in sys.argv else list('BDEH')
+output=sys.argv[sys.argv.index('--output')+1]if '--output'in sys.argv else 'docs/previews/bdeh-r21'
+for code in codes:
+ source=R/f'docs/design/bdeh-r21/{code}/{code}-r21.blend';sha=hashlib.sha256(source.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;out=R/output/code/'blender';out.mkdir(parents=True,exist_ok=True);record=out/'render-record.json';records=[]
  if '--resume'in sys.argv and record.exists():
   old=json.loads(record.read_text());assert old['sourceBlendSHA256']==sha,'Cannot mix renders of different .blend versions';records=old['records']
  for name in ['hero','front','back','left','right','top','architecture','public-space']:

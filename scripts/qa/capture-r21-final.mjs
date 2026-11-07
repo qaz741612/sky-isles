@@ -1,0 +1,19 @@
+// Real game views under identical initial player/profile and idle/drag inputs.
+// No QA lens is used for native/gesture/NPC frames.
+import {chromium}from'playwright';import fs from'node:fs';import{createHash}from'node:crypto';
+const port=Number(process.argv[2]??4276),out=process.argv[3]??'work/r21-final-qa/camera-study-1',study=process.argv.includes('--study');fs.mkdirSync(out,{recursive:true});
+const hash=b=>createHash('sha256').update(b).digest('hex'),records=[];
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
+try{for(const profile of(study?['portrait']:['desktop','portrait','landscape'])){
+ const size=profile==='portrait'?{width:430,height:932}:profile==='landscape'?{width:932,height:430}:{width:1200,height:800};
+ const context=await browser.newContext({viewport:size,deviceScaleFactor:1,isMobile:profile!=='desktop',hasTouch:profile!=='desktop'}),page=await context.newPage(),errors=[],served={};page.on('pageerror',e=>errors.push(e.message));
+ page.on('response',async r=>{if(/\/models\/bdeh-r21\/[BDEH]\.glb$/.test(r.url()))served[r.url().split('/').at(-1)]=hash(await r.body());});
+ await page.addInitScript(()=>{const get=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(kind,attrs){return get.call(this,kind,/^webgl/.test(kind)?{...attrs,preserveDrawingBuffer:true}:attrs);};const raf=requestAnimationFrame.bind(window);window.requestAnimationFrame=fn=>(fn.name==='frame'||fn.toString().includes('.render('))?(window.__qaFrame=fn,0):raf(fn);});
+ await page.goto(`http://127.0.0.1:${port}/`);await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
+ await page.evaluate(()=>{const api=window.__skyisles,w=api.world;api.start();w.nativeOrbit={...w.player.orbit};w.draw=w.renderer.render.bind(w.renderer);w.renderer.render=()=>{};w.step=w.player.update.bind(w.player);w.player.update=()=>{};window.__qaFrame();document.querySelector('#title-screen').getAnimations().forEach(a=>a.finish());});
+ for(const code of(process.argv.includes('--variants')?'DE':'BDEH'))for(const variant of(process.argv.includes('--variants')?(code==='D'?[-.8,1.45,2.25,-2.8]:[-1.2,-1.6,-1.9,2.65]):[null])){
+  const row=await page.evaluate(({code,variant})=>{const w=window.__skyisles.world,p=w.player,c=w.r21[code].config.centre;Object.assign(p.orbit,w.nativeOrbit);p.cameraConstraint.resetVisit?.();p.cameraConstraint.setDelta?.(1/60);p.teleport(c[0],.2,c[2]);for(let i=0;i<60;i++)w.step(1/60,{x:0,z:0,jumpPressed:false,jumpHeld:false},i/60);if(variant!==null)p.orbit.yaw=variant;for(let i=60;i<300;i++)w.step(1/60,{x:0,z:0,jumpPressed:false,jumpHeld:false},i/60);window.__qaFrame();w.draw(w.scene,w.camera);const gl=w.renderer.getContext();gl.finish();return{code,kind:'native',player:p.pos.toArray(),camera:w.camera.position.toArray(),quaternion:w.camera.quaternion.toArray(),orbit:{...p.orbit},aspect:w.camera.aspect,grounded:p.move.grounded,discovery:p.cameraConstraint.state?.(),metrics:p.cameraConstraint.discovery,render:{...w.renderer.info.render}};},{code,variant});
+  await page.screenshot({path:`${out}/${code}-${profile}-${variant===null?'native':'yaw'+variant}.png`,animations:'disabled',timeout:180000});records.push({variant,profile,size,initialOrbit:await page.evaluate(()=>window.__skyisles.world.nativeOrbit),idleSeconds:5,errors:[...errors],...row});fs.writeFileSync(`${out}/capture-record.json`,JSON.stringify({port,method:'Actual eight-island Three.js world. Same player centre, original profile, five seconds idle. Native view uses production local rig, never QA positioning.',served,records},null,2)+'\n');console.log('saved',code,profile);
+ }
+ await context.close();
+}}finally{await browser.close();}

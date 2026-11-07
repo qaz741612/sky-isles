@@ -85,7 +85,7 @@ const player = new Player(scene, camera, colliders);
 player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transport.station.constrainHead(pos,y,move)||bridges.landscape.constrainHead(pos,y,move)||flood.constrainHead(pos,y,move)||industry.constrainHead(pos,y,move)||Object.values(r21).some(p=>p.constrainHead(pos,y,move));
 scene.updateMatrixWorld(true);
 player.cameraConstraint = elevatedCameraConstraint(parentChildCameraConstraint(industryCameraConstraint(floodCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='crystal'),()=>player.orbit),islands.islands.find(i=>i.name==='koi'),()=>player.orbit),islands.islands.find(i=>i.name==='tree')),transport.station.bounds);
-player.cameraConstraint = r21CameraConstraint(player.cameraConstraint,r21,()=>player.orbit);
+player.cameraConstraint = r21CameraConstraint(player.cameraConstraint,r21,()=>player.orbit,()=>player);
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);
@@ -255,6 +255,7 @@ function frame() {
     ? ui.poll(player.orbit)
     : { x: 0, z: 0, jumpPressed: false, jumpHeld: false };
 
+  player.cameraConstraint.setDelta(dt);
   if(!panorama.active)player.update(dt, input, t);
   panorama.update(realDt);
   panoramaButton.hidden=!started;
