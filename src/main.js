@@ -85,7 +85,9 @@ const player = new Player(scene, camera, colliders);
 player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transport.station.constrainHead(pos,y,move)||bridges.landscape.constrainHead(pos,y,move)||flood.constrainHead(pos,y,move)||industry.constrainHead(pos,y,move)||Object.values(r21).some(p=>p.constrainHead(pos,y,move));
 scene.updateMatrixWorld(true);
 player.cameraConstraint = elevatedCameraConstraint(parentChildCameraConstraint(industryCameraConstraint(floodCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='crystal'),()=>player.orbit),islands.islands.find(i=>i.name==='koi'),()=>player.orbit),islands.islands.find(i=>i.name==='tree')),transport.station.bounds);
-player.cameraConstraint = r21CameraConstraint(player.cameraConstraint,r21,()=>player.orbit,()=>player);
+const r21Shells=new Set(Object.values(r21).flatMap(p=>p.cameraObstacles));
+const r21Environment=[...transport.cameraObstacles,...props.cameraObstacles.filter(mesh=>!r21Shells.has(mesh))];
+player.cameraConstraint = r21CameraConstraint(player.cameraConstraint,r21,()=>player.orbit,()=>player,r21Environment);
 // Preserve the original physics method and its input contract. Player reuses
 // its private wish vector as a head-target scratch vector before camera work,
 // so give the local camera the actual input at the public update boundary.

@@ -24,7 +24,7 @@ export function buildR21Places(sources,islands){
   const config={...entry,finalQA:finalQA[code]};
   const begin=performance.now(),island=islands.find(i=>i.name===config.name),source=sources[code],data=collisions[code];if(!island||!source)throw Error(`Missing R21 ${code}`);
   const group=new THREE.Group();group.name=`policy-place-${config.name}`;group.userData.blenderR21=code;group.add(source);island.group.add(group);
-  const colliders=[],ceilings=[],cameraObstacles=[],cameraVegetation=[],hidden=new THREE.MeshBasicMaterial({side:THREE.DoubleSide});
+  const colliders=[],ceilings=[],cameraObstacles=[],opaqueCameraObstacles=[],cameraVegetation=[],hidden=new THREE.MeshBasicMaterial({side:THREE.DoubleSide});
   function chunks(values,list,name,publicFloor=false){
    const cells=new Map();for(let i=0;i<values.length;i+=9){const key=`${Math.floor(values[i]/6)},${Math.floor(values[i+2]/6)}`;if(!cells.has(key))cells.set(key,[]);cells.get(key).push(...values.slice(i,i+9));}
    for(const v of cells.values()){
@@ -36,6 +36,9 @@ export function buildR21Places(sources,islands){
   }
   chunks(data.groundPositions,colliders,'public-ground',true);chunks(data.supportPositions,colliders,'physical-top-support');chunks(data.roofPositions??[],colliders,'roof-support');chunks(data.ceilingPositions,ceilings,'real-soffit');chunks(data.cameraPositions,cameraObstacles,'structural-camera');
   for(const canopy of canopyData.islands[code].canopies)chunks(canopy.positions,cameraVegetation,'opaque-canopy-camera');
+  const glass=new Set(canopyData.islands[code].transparentCameraTriangles),opaque=[];
+  for(let i=0;i<data.cameraPositions.length;i+=9)if(!glass.has(i/9))opaque.push(...data.cameraPositions.slice(i,i+9));
+  chunks(opaque,opaqueCameraObstacles,'opaque-sightline-camera');
   const barriers=[];
   for(const solid of data.solids)for(const ring of[solid.polygon,...solid.holes])for(let i=0;i<ring.length;i++){
    const a=ring[i],b=ring[(i+1)%ring.length];if(Math.hypot(a[0]-b[0],a[1]-b[1])<1e-6)continue;
@@ -44,9 +47,9 @@ export function buildR21Places(sources,islands){
   const meshes=[],materials=new Set();let triangles=0;
   source.traverse(o=>{if(!o.isMesh)return;meshes.push(o);o.userData.island=config.name;triangles+=(o.geometry.index?.count??o.geometry.attributes.position.count)/3;const ms=Array.isArray(o.material)?o.material:[o.material];ms.forEach(m=>{materials.add(m);if(m.transparent){m.depthWrite=false;m.side=THREE.DoubleSide;}});o.receiveShadow=true;o.castShadow=!ms.some(m=>m.transparent);});
   group.updateWorldMatrix(true,true);const bounds=new THREE.Box3().setFromObject(source,true);
-  return[code,{group,source,meshes,pickMeshes:meshes,colliders,ceilings,cameraObstacles,cameraVegetation,barriers,bounds,config,constrainHead:stationHeadroom(ceilings,bounds,1.6),stats:{...source.userData.loadStats,triangles,runtimeMeshes:meshes.length,materials:materials.size,buildMilliseconds:performance.now()-begin,scale:1,newLights:0}}];
+  return[code,{group,source,meshes,pickMeshes:meshes,colliders,ceilings,cameraObstacles,opaqueCameraObstacles,cameraVegetation,barriers,bounds,config,constrainHead:stationHeadroom(ceilings,bounds,1.6),stats:{...source.userData.loadStats,triangles,runtimeMeshes:meshes.length,materials:materials.size,buildMilliseconds:performance.now()-begin,scale:1,newLights:0}}];
  }));
 }
-export function r21CameraConstraint(constrain,places,getOrbit,getPlayer){
- return r21DiscoveryCamera(constrain,places,getOrbit,getPlayer);
+export function r21CameraConstraint(constrain,places,getOrbit,getPlayer,environment=null){
+ return r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environment);
 }
