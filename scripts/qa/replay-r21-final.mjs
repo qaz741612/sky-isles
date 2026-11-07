@@ -3,12 +3,13 @@
 // Samples are a filmstrip, never presented as continuous human-operated video.
 // Only the starting bridge position is initialized; never teleport along the route.
 import{chromium}from'playwright';import fs from'node:fs';
+const port=Number(process.argv[2]??4296),codes=process.argv[3]??'BDEH';
 const out='docs/previews/bdeh-r21/final-qa/operation';fs.mkdirSync(out,{recursive:true});
 const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
-try{for(const code of process.argv[2]??'BDEH'){
+try{for(const code of codes){
  const context=await browser.newContext({viewport:{width:430,height:932},deviceScaleFactor:1,isMobile:true,hasTouch:true}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.addInitScript(()=>{const get=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(kind,attrs){return get.call(this,kind,/^webgl/.test(kind)?{...attrs,preserveDrawingBuffer:true}:attrs);};const raf=requestAnimationFrame.bind(window);window.requestAnimationFrame=fn=>(fn.name==='frame'||fn.toString().includes('.render('))?(window.__qaFrame=fn,0):raf(fn);});
- await page.goto('http://127.0.0.1:4281/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
+ await page.goto(`http://127.0.0.1:${port}/`);await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
  const setup=await page.evaluate(code=>{
   const api=window.__skyisles,w=api.world,p=w.player;api.start();w.draw=w.renderer.render.bind(w.renderer);w.renderer.render=()=>{};w.step=p.update.bind(p);p.update=()=>{};w.qt=0;w.replayCode=code;window.__qaFrame();document.querySelector('#title-screen').getAnimations().forEach(a=>a.finish());
   const place=w.r21[code],c=place.config.centre,road=w.bridges.walkPlans.find(v=>v.id===place.config.finalQA.entryRoad);let pts=road.points.slice();if(Math.hypot(pts[0].x-c[0],pts[0].z-c[2])<Math.hypot(pts.at(-1).x-c[0],pts.at(-1).z-c[2]))pts.reverse();let start=pts.length-1;while(start>0&&Math.hypot(pts[start].x-c[0],pts[start].z-c[2])<Math.max(...place.config.maxDimensions)/2+2.1)start--;
@@ -32,11 +33,11 @@ try{for(const code of process.argv[2]??'BDEH'){
   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:start,y:560,id:1}]});
   for(let segment=1;segment<=24;segment++){
    await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:start+delta*segment/24,y:560,id:1}]});
-   await page.evaluate(()=>{const w=window.__skyisles.world,p=w.player,ray=new p.ray.constructor(),obstacles=Object.values(w.r21).flatMap(v=>v.cameraObstacles);for(let k=0;k<6;k++){p.cameraConstraint.setDelta(1/60);w.step(1/60,w.ui.poll(p.orbit),w.qt+=1/60);const now={position:w.camera.position.toArray(),quaternion:w.camera.quaternion.toArray(),orbit:{...p.orbit}};if(w.manualLast){w.manualMaxAngle=Math.max(w.manualMaxAngle,w.camera.quaternion.angleTo(p.camera.quaternion.clone().fromArray(w.manualLast.quaternion)));w.manualMaxStep=Math.max(w.manualMaxStep,w.camera.position.distanceTo(p.pos.clone().fromArray(w.manualLast.position)));}const head=p.pos.clone().add(p.pos.clone().set(0,1.5,0));ray.set(head,w.camera.position.clone().sub(head).normalize());ray.far=head.distanceTo(w.camera.position)-.03;if(ray.intersectObjects(obstacles,false).length)throw Error('Manual sweep hides avatar');w.manualTrace.push(now);w.manualLast=now;}});
+   await page.evaluate(()=>{const w=window.__skyisles.world,p=w.player,ray=new p.ray.constructor(),obstacles=p.cameraConstraint.opaqueObstacles??Object.values(w.r21).flatMap(v=>v.cameraObstacles);for(let k=0;k<6;k++){p.cameraConstraint.setDelta(1/60);w.step(1/60,w.ui.poll(p.orbit),w.qt+=1/60);const now={position:w.camera.position.toArray(),quaternion:w.camera.quaternion.toArray(),orbit:{...p.orbit}};if(w.manualLast){w.manualMaxAngle=Math.max(w.manualMaxAngle,w.camera.quaternion.angleTo(p.camera.quaternion.clone().fromArray(w.manualLast.quaternion)));w.manualMaxStep=Math.max(w.manualMaxStep,w.camera.position.distanceTo(p.pos.clone().fromArray(w.manualLast.position)));}const head=p.pos.clone().add(p.pos.clone().set(0,1.5,0));ray.set(head,w.camera.position.clone().sub(head).normalize());ray.far=head.distanceTo(w.camera.position)-.03;if(ray.intersectObjects(obstacles,false).length)throw Error('Manual sweep hides avatar');w.manualTrace.push(now);w.manualLast=now;}});
   }
   await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
  }
  const manual=await page.evaluate(()=>{const w=window.__skyisles.world;return{method:'Separate centre pose followed by trusted single-pointer120px left /240px right,24 segments per sweep,6 actual physics ticks per segment, no direct orbit assignment during gestures; not hardware cadence or human comfort acceptance',frames:w.manualTrace,maxRadiansPer60HzTick:w.manualMaxAngle,maxWorldUnitsPer60HzTick:w.manualMaxStep,manualHandoff:w.player.cameraConstraint.state().manual};});
- fs.writeFileSync(`${out}/${code}-manual-turn-trace.json`,JSON.stringify(manual)+'\n');if(!manual.manualHandoff||manual.maxRadiansPer60HzTick>.15||manual.maxWorldUnitsPer60HzTick>3)throw Error('Abrupt normal one-pointer sweep '+code);
+ fs.writeFileSync(`${out}/${code}-manual-turn-trace.json`,JSON.stringify(manual)+'\n');if(!manual.manualHandoff||manual.maxRadiansPer60HzTick>.05||manual.maxWorldUnitsPer60HzTick>.65)throw Error('Abrupt normal one-pointer sweep '+code);
  await context.close();
 }}finally{await browser.close();}

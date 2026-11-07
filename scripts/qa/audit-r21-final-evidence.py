@@ -12,6 +12,11 @@ for c in'BDEH':
  assert len(render['records'])==8 and {v['name']for v in render['records']}=={'hero','front','back','left','right','top','architecture','public-space'}
  assert all((O/f'{c}/blender'/f"{v['name']}.png").is_file()for v in render['records'])
  models[c]={'blendSHA256':sha(blend),'glbSHA256':sha(glb),'renderedViews':8,'triangles':report['triangles'],'GLBBytes':report['glbBytes'],'meshPrimitives':report['meshPrimitives'],'materials':report['materials'],'textures':report['textures'],'newLights':report['newLights']}
+canopies=json.loads((R/'src/data/bdeh-camera-canopies.json').read_text())
+for c,m in models.items():
+ row=canopies['islands'][c];assert row['sourceBlendSHA256']==m['blendSHA256'];assert row['triangles']==sum(len(v['positions'])//9 for v in row['canopies'])
+ faces=len(json.loads((R/f'src/data/bdeh-{c.lower()}-collision.json').read_text())['cameraPositions'])//9
+ assert all(0<=i<faces for i in row['transparentCameraTriangles'])
 captures={s:json.loads((O/f'game-{s}/capture-record.json').read_text())for s in['before','after']}
 assert len(captures['before']['records'])==len(captures['after']['records'])==59
 before={r['name']:r for r in captures['before']['records']};pairs=[]

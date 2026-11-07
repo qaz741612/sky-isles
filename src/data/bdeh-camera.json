@@ -25,16 +25,16 @@
     "fallbackYaw": 1.45
   },
   "E": {
-    "pitch": 0.32,
+    "pitch": 0.46,
     "focus": [
-      8,
-      2.8,
-      0.5
+      7,
+      3,
+      6
     ],
-    "fallbackYaw": -2.7,
+    "fallbackYaw": -3.0,
     "arrivalFocus": [
-      1.2,
-      1.6
+      0,
+      1.2
     ]
   },
   "H": {

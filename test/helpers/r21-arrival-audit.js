@@ -1,5 +1,5 @@
 // Shared actual-Player arrival audit. Renderless diagnostics and GPU tests use the same route, input and assertions.
-export function auditR21Arrival(){
+export function auditR21Arrival(codes='BDEH'){
   const api=window.__skyisles,w=api.world,p=w.player;api.start();w.renderer.render=()=>{};const step=p.update.bind(p);p.update=()=>{};const profile={...p.orbit},rows=[];let time=0,recording=false,trace=[],last=null,maxAngle=0,maxStep=0,maxAngleFrame=null,maxStepFrame=null;
   const ray=new p.ray.constructor(),obstacles=p.cameraConstraint.opaqueObstacles??Object.values(w.r21).flatMap(v=>v.cameraObstacles);
   const tick=(x=0,z=0)=>{
@@ -16,11 +16,11 @@ export function auditR21Arrival(){
   if(Math.hypot(p.move.vx,p.move.vz)>.08||Math.hypot(p.pos.x-(dc[0]-2.0),p.pos.z-(dc[2]-6))>1)throw Error('wall-intent probe did not meet the actual D wall '+JSON.stringify({position:p.pos.toArray(),velocity:[p.move.vx,p.move.vz]}));
   if(!p.cameraConstraint.state().movingIntent)throw Error('actual held input did not reach the camera');
   const blockedInput={player:p.pos.toArray(),velocity:[p.move.vx,p.move.vz],movingIntent:p.cameraConstraint.state().movingIntent,yaw:p.orbit.yaw,seconds:5};
-  const landmarks={B:[[-7.8,2.8,-3.9]],D:[[-2.65,2.8,-6.5]],E:[[2.25,3.4,5]],H:[[0,4.3,4.1]]};
-  for(const[code,place]of Object.entries(w.r21)){
+  const landmarks={B:[[-7.8,2.8,-3.9]],D:[[-2.65,2.8,-6.5]],E:[[5,2.8,4.45]],H:[[0,4.3,4.1]]};
+  for(const[code,place]of Object.entries(w.r21).filter(([c])=>codes.includes(c))){
    const c=place.config.centre,local=([x,z])=>({x:c[0]+x,z:c[2]+z});Object.assign(p.orbit,profile);p.cameraConstraint.resetVisit();p.teleport(c[0],.2,c[2]);idle(300);w.camera.updateMatrixWorld();
    const points=[...landmarks[code]];if(code==='E'){const garden=place.config.finalQA.rainGarden;points.push([garden.centre[0],garden.waterTop,garden.centre[1]]);}
-   const projection=points.map(([x,y,z])=>p.pos.clone().set(c[0]+x,y,c[2]+z).project(w.camera).toArray());if(projection.some(v=>Math.abs(v[0])>1||Math.abs(v[1])>1||v[2]<-1||v[2]>1))throw Error('native landmark off screen '+code+' '+JSON.stringify(projection));
+   const projection=points.map(([x,y,z])=>p.pos.clone().set(c[0]+x,y,c[2]+z).project(w.camera).toArray());if(projection.some(v=>Math.abs(v[0])>1||Math.abs(v[1])>1||v[2]<-1||v[2]>1))throw Error('native landmark off screen '+code+' '+JSON.stringify({projection,camera:w.camera.position.toArray(),player:p.pos.toArray(),orbit:p.orbit}));
    // Check actual visible opaque model triangles as well as the simplified
    // structural shells: a tree crown must not hide the small visual avatar.
    const opaque=place.meshes.filter(mesh=>(Array.isArray(mesh.material)?mesh.material:[mesh.material]).every(m=>!m.transparent&&m.opacity>.95));

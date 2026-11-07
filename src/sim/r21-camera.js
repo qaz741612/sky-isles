@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import views from '../data/bdeh-camera.json' with {type:'json'};
 import {floodCameraConstraint} from '../world/flood-control.js';
 import {worldCameraConstraint} from './camera-clearance.js';
-import {moveWithGuards} from './walkways.js';
+import {moveWithGuards,nearestOnSegment} from './walkways.js';
 const angle=a=>Math.atan2(Math.sin(a),Math.cos(a));
 export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environment=null){
  let dt=1/60,active=null,idle=0,manual=false,expected=null,previous=null,previousHead=null,detouring=false,movingIntent=false;
@@ -15,13 +15,16 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
  const opaqueMeshes=environment===null?null:[...environment,...Object.values(places).flatMap(p=>p.opaqueCameraObstacles??p.cameraObstacles??[])];
  const opaqueConstrain=opaqueMeshes?worldCameraConstraint(opaqueMeshes):constrain;
  const foliage=worldCameraConstraint(Object.values(places).flatMap(p=>p.cameraVegetation??[]));
- const avatarHead=new THREE.Vector3(),forecast=new THREE.Vector3(),forecastPath=[];
+ const avatarHead=new THREE.Vector3(),forecast=new THREE.Vector3(),forecastPath=[],foliageCache=new Map(),plannedCache=new Map();
  const localConstrain=(target,position,shift=null)=>{
   let blocked=opaqueConstrain(target,position);
   // Tree crowns obscure the visible1.1m character, not its taller physics
   // capsule. Do not make a harmless leaf above the visual head an obstacle.
-  for(const y of[-.4,-.8]){const visual=avatarHead.clone().add(new THREE.Vector3(0,y,0));if(shift)visual.add(shift);blocked=foliage(visual,position)||blocked;}
-  return blocked;
+  const key=`${position.x},${position.y},${position.z};${shift?.x??0},${shift?.z??0}`,cached=foliageCache.get(key);
+  if(cached){position.copy(cached.position);return cached.blocked||blocked;}
+  let leaves=false;
+  for(const y of[-.4,-.8]){const visual=avatarHead.clone().add(new THREE.Vector3(0,y,0));if(shift)visual.add(shift);leaves=foliage(visual,position)||leaves;}
+  foliageCache.set(key,{position:position.clone(),blocked:leaves});return leaves||blocked;
  };
  const forecastConstrain=(target,position)=>{
   let blocked=localConstrain(target,position);
@@ -34,6 +37,7 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
  const apply=(target,position)=>{
   const entry=entries.find(e=>Math.hypot(target.x-e.centre[0],target.z-e.centre[2])<e.radius);
   if(!entry){reset();return constrain(target,position);}
+  foliageCache.clear();plannedCache.clear();
   const o=getOrbit(),player=getPlayer?.(),preset=views[entry.code];
   const newVisit=active!==entry.code;
   if(newVisit){active=entry.code;idle=0;manual=false;expected={...o};previous=position.clone();previousHead=target.clone();detouring=false;metrics.arrivals++;}
@@ -58,6 +62,11 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
   const distance=Math.hypot(target.x-entry.centre[0],target.z-entry.centre[2]);
   const blend=THREE.MathUtils.smoothstep(entry.radius-distance,0,3);
   const portrait=o.fov===58,basePitch=portrait?.67:.60;
+  // Shorten the travelling boom before a nearby facade corner, not after
+  // crossing its shadow. Only real tall walls/columns of this island count;
+  // original zoom remains stored and is restored on the open public ground.
+  let range=o.dist;
+  if(moving&&player?.pos){let clearance=Infinity;for(const wall of entry.p.barriers??[]){if(wall.height<2)continue;const near=nearestOnSegment(player.pos,wall.a,wall.b);clearance=Math.min(clearance,Math.hypot(near.x-player.pos.x,near.z-player.pos.z));}range=Math.min(range,Math.max(2.2,2+4*clearance));}
   // Preserve manual pitch deltas and zoom, lower the ordinary arrival view so
   // the near roof edge frames facades instead of filling the portrait canvas.
   const pitch=THREE.MathUtils.clamp(o.pitch+blend*(preset.pitch-basePitch),.12,1.2);
@@ -81,23 +90,26 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
   }
   const body=head.clone().add(new THREE.Vector3(0,-.75,0)),feet=head.clone().add(new THREE.Vector3(0,-1.30,0));
   const probes=point=>{const r=new THREE.Vector3(point.z-head.z,0,head.x-point.x).normalize().multiplyScalar(.32);return[head,body,body.clone().add(r),body.clone().sub(r),feet.clone().addScaledVector(r,.78),feet.clone().addScaledVector(r,-.78)];};
-  const visible=point=>probes(point).every(focus=>!localConstrain(focus,point.clone()));
-  const planned=point=>probes(point).every(focus=>!forecastConstrain(focus,point.clone()));
+  // The centre of the visible head/torso is the hard visibility bound.
+  // Wider capsule/foot probes remain predictive clearance margins, rather
+  // than forcing an instantaneous zoom when one edge grazes a thin column.
+  const visible=point=>[head,body,head.clone().add(new THREE.Vector3(0,-.4,0))].every(focus=>!localConstrain(focus,point.clone()));
+  const planned=point=>{const key=`${point.x},${point.y},${point.z}`;if(plannedCache.has(key))return plannedCache.get(key);const clear=probes(point).every(focus=>!forecastConstrain(focus,point.clone()));plannedCache.set(key,clear);return clear;};
   // Keep focus near the player: this is an ordinary third-person view, not a
   // distant QA lens. No field-of-view, model scale or orbit-distance change.
   const delta=look.clone().sub(target);if(delta.length()>1.8)delta.setLength(1.8);look.copy(target).add(delta);
-  const desired=head.clone().add(new THREE.Vector3(Math.sin(o.yaw)*Math.cos(pitch)*o.dist,Math.sin(pitch)*o.dist,Math.cos(o.yaw)*Math.cos(pitch)*o.dist));
-  effectiveOrbit={...o,pitch};
+  const desired=head.clone().add(new THREE.Vector3(Math.sin(o.yaw)*Math.cos(pitch)*range,Math.sin(pitch)*range,Math.cos(o.yaw)*Math.cos(pitch)*range));
+  effectiveOrbit={...o,pitch,dist:range};
   if(manual||moving){
    // User orbit takes priority over the automatic distant composition. Seek
    // a clear lower/closer lens at the requested azimuth before choosing a side.
    let best=null,score=-Infinity;
    for(const elevation of new Set([pitch,Math.min(pitch,.25),Math.min(pitch,.12),.02,Math.max(pitch,.75),Math.max(pitch,1.15)])){
-    if(o.dist-5*Math.abs(elevation-pitch)<=score)continue;
-    const candidate=head.clone().add(new THREE.Vector3(Math.sin(o.yaw)*Math.cos(elevation)*o.dist,Math.sin(elevation)*o.dist,Math.cos(o.yaw)*Math.cos(elevation)*o.dist));
+    if(range-5*Math.abs(elevation-pitch)<=score)continue;
+    const candidate=head.clone().add(new THREE.Vector3(Math.sin(o.yaw)*Math.cos(elevation)*range,Math.sin(elevation)*range,Math.cos(o.yaw)*Math.cos(elevation)*range));
     for(let pass=0;pass<3&&!planned(candidate);pass++)for(const focus of probes(candidate))forecastConstrain(focus,candidate);
     const distance=candidate.distanceTo(head),value=distance-5*Math.abs(elevation-pitch);
-    if(distance>=1.8&&planned(candidate)&&value>score){best=candidate;score=value;if(distance>=o.dist-.01&&Math.abs(elevation-pitch)<.001)break;}
+    if(distance>=1.8&&planned(candidate)&&value>score){best=candidate;score=value;if(distance>=range-.01&&Math.abs(elevation-pitch)<.001)break;}
    }
    if(best)desired.copy(best);else safe.get(entry.code)(head,desired);
   }else safe.get(entry.code)(head,desired);
@@ -146,7 +158,7 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
     }
    }
   }else position.copy(desired);
-  look.copy(head).lerp(look,Math.min(1,(position.distanceTo(head)/10)**2));
+  look.sub(head).multiplyScalar(Math.min(1,(position.distanceTo(head)/10)**2)).add(head);
   look.y-=.75*(1-Math.min(1,position.distanceTo(head)/10));
   target.copy(look);previous=position.clone();previousHead=head.clone();metrics.localFrames++;
   return true;
