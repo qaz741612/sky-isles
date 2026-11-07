@@ -1,0 +1,500 @@
+{
+  "method": "All eight islands loaded, same F player spawn and native original profile, complete orthographic panorama. Six gl.finish frames after two warmups, five batches of100 idle real Player ticks. Local HTTP. Loading-screen readiness is not a hardware first-interactive-frame measure.",
+  "limits": "Chromium ANGLE SwiftShader, shared cloud two-core CPU. This is diagnostic software timing, not hardware FPS, real mobile heat, bandwidth or long-touch acceptance.",
+  "results": [
+    {
+      "stage": "before",
+      "base": "PR18 2b44049",
+      "mobile": false,
+      "viewport": {
+        "width": 1200,
+        "height": 800
+      },
+      "dpr": 1,
+      "verifiedBundles": [
+        {
+          "path": "assets/index-BhwlHMMU.js",
+          "sha256": "004e87c874d226b066c6566713a76cc6da5437be55377fda78f333de99988ac1"
+        }
+      ],
+      "allEightLoaded": 8,
+      "navigationReadyAtMs": 16898.5,
+      "GLBLoads": {},
+      "views": [
+        {
+          "name": "F-native",
+          "camera": [
+            2.1038558403564127,
+            10.534279574320571,
+            16.536701391686936
+          ],
+          "player": [
+            0,
+            -3.3306690738754696e-16,
+            3.5
+          ],
+          "orbit": {
+            "yaw": 0.16,
+            "pitch": 0.6,
+            "dist": 16,
+            "fov": 55
+          },
+          "drawCalls": 505,
+          "triangles": 1285998,
+          "memory": {
+            "geometries": 246,
+            "textures": 19
+          },
+          "synchronizedSoftwareFrameMs": {
+            "samples": [
+              7.399999976158142,
+              7.800000011920929,
+              14.5,
+              19.69999998807907,
+              28.80000001192093,
+              56
+            ],
+            "median": 17.099999994039536,
+            "max": 56
+          },
+          "controllerCPUms": 0.745
+        },
+        {
+          "name": "panorama",
+          "camera": [
+            1.215515,
+            240,
+            28.923
+          ],
+          "player": [
+            0,
+            -3.3306690738754696e-16,
+            3.5
+          ],
+          "orbit": {
+            "yaw": 0.16,
+            "pitch": 0.6,
+            "dist": 16,
+            "fov": 55
+          },
+          "drawCalls": 1089,
+          "triangles": 1644970,
+          "memory": {
+            "geometries": 513,
+            "textures": 20
+          },
+          "synchronizedSoftwareFrameMs": {
+            "samples": [
+              16.5,
+              18.30000001192093,
+              18.5,
+              25,
+              51,
+              55.39999997615814
+            ],
+            "median": 21.75,
+            "max": 55.39999997615814
+          },
+          "controllerCPUms": null
+        }
+      ],
+      "webGL": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "webGLError": 0
+    },
+    {
+      "stage": "before",
+      "base": "PR18 2b44049",
+      "mobile": true,
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "dpr": 1,
+      "verifiedBundles": [
+        {
+          "path": "assets/index-BhwlHMMU.js",
+          "sha256": "004e87c874d226b066c6566713a76cc6da5437be55377fda78f333de99988ac1"
+        }
+      ],
+      "allEightLoaded": 8,
+      "navigationReadyAtMs": 81253.90000000596,
+      "GLBLoads": {},
+      "views": [
+        {
+          "name": "F-native",
+          "camera": [
+            2.0643264783564335,
+            15.161691714804318,
+            20.620068214829146
+          ],
+          "player": [
+            0,
+            -3.3306690738754696e-16,
+            3.5
+          ],
+          "orbit": {
+            "yaw": 0.12,
+            "pitch": 0.67,
+            "dist": 22,
+            "fov": 58
+          },
+          "drawCalls": 355,
+          "triangles": 1041902,
+          "memory": {
+            "geometries": 210,
+            "textures": 17
+          },
+          "synchronizedSoftwareFrameMs": {
+            "samples": [
+              24,
+              24.700000017881393,
+              40.099999994039536,
+              55.400000005960464,
+              58.69999998807907,
+              67.09999999403954
+            ],
+            "median": 47.75,
+            "max": 67.09999999403954
+          },
+          "controllerCPUms": 1.2409999999403953
+        },
+        {
+          "name": "panorama",
+          "camera": [
+            1.215515,
+            240,
+            28.923
+          ],
+          "player": [
+            0,
+            -3.3306690738754696e-16,
+            3.5
+          ],
+          "orbit": {
+            "yaw": 0.12,
+            "pitch": 0.67,
+            "dist": 22,
+            "fov": 58
+          },
+          "drawCalls": 1089,
+          "triangles": 1644970,
+          "memory": {
+            "geometries": 513,
+            "textures": 20
+          },
+          "synchronizedSoftwareFrameMs": {
+            "samples": [
+              21.700000017881393,
+              22.899999976158142,
+              26.200000017881393,
+              31.399999976158142,
+              51.5,
+              66.19999998807907
+            ],
+            "median": 28.799999997019768,
+            "max": 66.19999998807907
+          },
+          "controllerCPUms": null
+        }
+      ],
+      "webGL": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "webGLError": 0
+    },
+    {
+      "stage": "after",
+      "base": "R21 final83 frozen production build",
+      "mobile": false,
+      "viewport": {
+        "width": 1200,
+        "height": 800
+      },
+      "dpr": 1,
+      "verifiedBundles": [
+        {
+          "path": "assets/index-ZsLfkSEY.js",
+          "sha256": "371f1875da95646fa0f989a16da13114f42306d201d4c98c4ffb0d5af0a16014"
+        }
+      ],
+      "allEightLoaded": 8,
+      "navigationReadyAtMs": 52286.09999999404,
+      "GLBLoads": {
+        "B": {
+          "bytes": 2688464,
+          "downloadMilliseconds": 244.09999999403954,
+          "decodeMilliseconds": 9.099999994039536,
+          "totalMilliseconds": 253.19999998807907,
+          "triangles": 42012,
+          "runtimeMeshes": 30,
+          "materials": 21,
+          "buildMilliseconds": 28.400000005960464,
+          "scale": 1,
+          "newLights": 0
+        },
+        "D": {
+          "bytes": 2017996,
+          "downloadMilliseconds": 124.60000002384186,
+          "decodeMilliseconds": 22.899999976158142,
+          "totalMilliseconds": 147.5,
+          "triangles": 32412,
+          "runtimeMeshes": 33,
+          "materials": 23,
+          "buildMilliseconds": 43.099999994039536,
+          "scale": 1,
+          "newLights": 0
+        },
+        "E": {
+          "bytes": 1876328,
+          "downloadMilliseconds": 257.09999999403954,
+          "decodeMilliseconds": 8,
+          "totalMilliseconds": 265.09999999403954,
+          "triangles": 30492,
+          "runtimeMeshes": 30,
+          "materials": 20,
+          "buildMilliseconds": 14.400000005960464,
+          "scale": 1,
+          "newLights": 0
+        },
+        "H": {
+          "bytes": 2211576,
+          "downloadMilliseconds": 335,
+          "decodeMilliseconds": 5,
+          "totalMilliseconds": 340,
+          "triangles": 36492,
+          "runtimeMeshes": 32,
+          "materials": 22,
+          "buildMilliseconds": 27.5,
+          "scale": 1,
+          "newLights": 0
+        }
+      },
+      "views": [
+        {
+          "name": "F-native",
+          "camera": [
+            2.1038558403564127,
+            10.534279574320571,
+            16.536701391686936
+          ],
+          "player": [
+            0,
+            -3.3306690738754696e-16,
+            3.5
+          ],
+          "orbit": {
+            "yaw": 0.16,
+            "pitch": 0.6,
+            "dist": 16,
+            "fov": 55
+          },
+          "drawCalls": 522,
+          "triangles": 1350690,
+          "memory": {
+            "geometries": 264,
+            "textures": 18
+          },
+          "synchronizedSoftwareFrameMs": {
+            "samples": [
+              11.700000017881393,
+              12.099999994039536,
+              12.5,
+              12.899999976158142,
+              38.80000001192093,
+              75.40000000596046
+            ],
+            "median": 12.699999988079071,
+            "max": 75.40000000596046
+          },
+          "controllerCPUms": 1.2219999998807907
+        },
+        {
+          "name": "panorama",
+          "camera": [
+            -6.248285000000003,
+            240,
+            31.045930000000002
+          ],
+          "player": [
+            0,
+            -3.3306690738754696e-16,
+            3.5
+          ],
+          "orbit": {
+            "yaw": 0.16,
+            "pitch": 0.6,
+            "dist": 16,
+            "fov": 55
+          },
+          "drawCalls": 1187,
+          "triangles": 1929986,
+          "memory": {
+            "geometries": 562,
+            "textures": 19
+          },
+          "synchronizedSoftwareFrameMs": {
+            "samples": [
+              15.299999982118607,
+              21.700000017881393,
+              39,
+              56.19999998807907,
+              58.79999998211861,
+              91.80000001192093
+            ],
+            "median": 47.599999994039536,
+            "max": 91.80000001192093
+          },
+          "controllerCPUms": null
+        }
+      ],
+      "webGL": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "webGLError": 0
+    },
+    {
+      "stage": "after",
+      "base": "R21 final83 frozen production build",
+      "mobile": true,
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "dpr": 1,
+      "verifiedBundles": [
+        {
+          "path": "assets/index-ZsLfkSEY.js",
+          "sha256": "371f1875da95646fa0f989a16da13114f42306d201d4c98c4ffb0d5af0a16014"
+        }
+      ],
+      "allEightLoaded": 8,
+      "navigationReadyAtMs": 83556.59999999404,
+      "GLBLoads": {
+        "B": {
+          "bytes": 2688464,
+          "downloadMilliseconds": 316.40000000596046,
+          "decodeMilliseconds": 3.7000000178813934,
+          "totalMilliseconds": 320.10000002384186,
+          "triangles": 42012,
+          "runtimeMeshes": 30,
+          "materials": 21,
+          "buildMilliseconds": 44.79999998211861,
+          "scale": 1,
+          "newLights": 0
+        },
+        "D": {
+          "bytes": 2017996,
+          "downloadMilliseconds": 109.90000000596046,
+          "decodeMilliseconds": 13,
+          "totalMilliseconds": 122.90000000596046,
+          "triangles": 32412,
+          "runtimeMeshes": 33,
+          "materials": 23,
+          "buildMilliseconds": 22.200000017881393,
+          "scale": 1,
+          "newLights": 0
+        },
+        "E": {
+          "bytes": 1876328,
+          "downloadMilliseconds": 262.69999998807907,
+          "decodeMilliseconds": 13.700000017881393,
+          "totalMilliseconds": 276.40000000596046,
+          "triangles": 30492,
+          "runtimeMeshes": 30,
+          "materials": 20,
+          "buildMilliseconds": 13.199999988079071,
+          "scale": 1,
+          "newLights": 0
+        },
+        "H": {
+          "bytes": 2211576,
+          "downloadMilliseconds": 320,
+          "decodeMilliseconds": 4.0999999940395355,
+          "totalMilliseconds": 324.09999999403954,
+          "triangles": 36492,
+          "runtimeMeshes": 32,
+          "materials": 22,
+          "buildMilliseconds": 14.200000017881393,
+          "scale": 1,
+          "newLights": 0
+        }
+      },
+      "views": [
+        {
+          "name": "F-native",
+          "camera": [
+            2.0643264783564335,
+            15.161691714804318,
+            20.620068214829146
+          ],
+          "player": [
+            0,
+            -3.3306690738754696e-16,
+            3.5
+          ],
+          "orbit": {
+            "yaw": 0.12,
+            "pitch": 0.67,
+            "dist": 22,
+            "fov": 58
+          },
+          "drawCalls": 353,
+          "triangles": 1050794,
+          "memory": {
+            "geometries": 242,
+            "textures": 17
+          },
+          "synchronizedSoftwareFrameMs": {
+            "samples": [
+              6.699999988079071,
+              13.600000023841858,
+              19.599999994039536,
+              22.099999994039536,
+              25.30000001192093,
+              42.400000005960464
+            ],
+            "median": 20.849999994039536,
+            "max": 42.400000005960464
+          },
+          "controllerCPUms": 1.01
+        },
+        {
+          "name": "panorama",
+          "camera": [
+            -6.248285000000003,
+            240,
+            31.045930000000002
+          ],
+          "player": [
+            0,
+            -3.3306690738754696e-16,
+            3.5
+          ],
+          "orbit": {
+            "yaw": 0.12,
+            "pitch": 0.67,
+            "dist": 22,
+            "fov": 58
+          },
+          "drawCalls": 1187,
+          "triangles": 1929986,
+          "memory": {
+            "geometries": 562,
+            "textures": 19
+          },
+          "synchronizedSoftwareFrameMs": {
+            "samples": [
+              16.399999976158142,
+              26.599999994039536,
+              32.80000001192093,
+              52.5,
+              66.90000000596046,
+              69.80000001192093
+            ],
+            "median": 42.650000005960464,
+            "max": 69.80000001192093
+          },
+          "controllerCPUms": null
+        }
+      ],
+      "webGL": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "webGLError": 0
+    }
+  ]
+}

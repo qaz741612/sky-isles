@@ -1,0 +1,43 @@
+{
+  "baseCommit": "2b4404927f33096ab28539a01f5e6236d670c038",
+  "basePR": 18,
+  "draftPR": 19,
+  "branch": "codex/bdeh-r21-game-integration",
+  "protectedFiles": 33,
+  "protectedSHA256AllMatch": true,
+  "unitCasesPassed": 83,
+  "lintPassed": true,
+  "productionBuildPassed": true,
+  "initialBrowser": {
+    "passed": 60,
+    "skipped": 4,
+    "failed": 4
+  },
+  "finalAffectedBrowser": {
+    "passed": 6,
+    "skipped": 0,
+    "failed": 0
+  },
+  "aggregateUniqueCases": {
+    "passed": 64,
+    "skipped": 4,
+    "note": "Two runs with explicit affected rechecks; not one final full-suite run"
+  },
+  "finalRenderedViews": 32,
+  "actualGameCaptures": 38,
+  "compiledGameSHA256": {
+    "/assets/index-ZsLfkSEY.js": "371f1875da95646fa0f989a16da13114f42306d201d4c98c4ffb0d5af0a16014"
+  },
+  "finalGLBSHA256": {
+    "B": "6c85316575c5e1b5648c2fa72ee49131ce0f4c217ba75d9fabf16a98ac4bdc2a",
+    "D": "9009b49ec2715b133eacf65bd9ef0a2a87cda4ee602119f5a0a1c39d62cebb2c",
+    "E": "6bff32a3180368c8332c6c6f122f7f991ee2a4d04a7da1d0900cd1ae6d8ba3cd",
+    "H": "50467d750652cf7dbcab12e7863fd72cb641c340deee15d573af4ce0f4b9266d"
+  },
+  "capturedBundleMatchesFinalCheckBuild": true,
+  "allNPC3x3SolidAndRoadOverlapsZero": true,
+  "manualArtApproval": false,
+  "realDeviceFPSVerified": false,
+  "merged": false,
+  "productionDeployed": false
+}

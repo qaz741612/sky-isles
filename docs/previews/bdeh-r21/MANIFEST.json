@@ -1,0 +1,3073 @@
+{
+  "baseCommit": "2b4404927f33096ab28539a01f5e6236d670c038",
+  "scope": "R21 final assets, source files, Blender/game evidence, test reports and clearly separate historical review evidence; not hardware or human approval",
+  "excludes": [
+    "manifest self and GitHub receipt",
+    "work",
+    "node_modules",
+    ".blend1",
+    "pycache"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1090,
+      "sha256": "2edb38544e575afa000dc3f5541546a59e5163f2d1bd221d2d28694b74f35726"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/B-r21.blend",
+      "bytes": 574565,
+      "sha256": "4e8fa6695251019074b63e9e2377b3773a222574a0fffbba02809cb7e0b300fc"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/iteration-1/B-r21.blend",
+      "bytes": 468394,
+      "sha256": "fe16d6b19e3daa27e4f2e7d7a8b391d1d1d6d1773ac6610745ec4ae9523168f3"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/iteration-1/B-r21.glb",
+      "bytes": 1413196,
+      "sha256": "814d468460f2423238071fd1ef8bbe8469284f2717df741615618a10de0ecf9e"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/iteration-1/model-report.json",
+      "bytes": 802,
+      "sha256": "786a9080919aabc37987e9a422c08aa6205b78476c077a54bbae64a4b4653bb8"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/iteration-2/B-r21.blend",
+      "bytes": 574708,
+      "sha256": "a27c72ea7a16c35b668cad87f918bd6e0f53d8b2cd923abd4a73fded42ff7a6b"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/iteration-2/B-r21.glb",
+      "bytes": 2688680,
+      "sha256": "bb617c102aa961408d5f058f3c7d7f927af7798152d664fabfaadf3b86fbf1be"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/iteration-2/model-report.json",
+      "bytes": 792,
+      "sha256": "0f6d5874b514c6b91a0659d37631cf0a4494aa7a2b561145b401a77ccf108f21"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/iteration-3/B-r21.blend",
+      "bytes": 573948,
+      "sha256": "a31461345fd8575b163ca843561e0c97f82df9a07c6b08ef2cc8c4b4ce1a38cf"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/iteration-3/B-r21.glb",
+      "bytes": 2688704,
+      "sha256": "0e41298d785fd93675cb036b34bfda07f36fb97b3878f126269037371dd92da6"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/iteration-3/model-report.json",
+      "bytes": 792,
+      "sha256": "0bc6a10ead2d22cbfc09352c696d4c16d28986456f077030f18190c1d4eb8272"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/model-report.json",
+      "bytes": 792,
+      "sha256": "c86214a0e01c485fbb9ad90ebe3bd3287e741697ad5b3b986a9be8a4d148b7b3"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/D-r21.blend",
+      "bytes": 499937,
+      "sha256": "70b8cb2be84bc620276502091f2b73f6c8d83e3b239a709435c0e5a1ef7a6c92"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/iteration-1/D-r21.blend",
+      "bytes": 473165,
+      "sha256": "2c6ef60e5ab4edc313e5397f5cd043f8ca7f41d25dfbb9310aa8fe3db08c8380"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/iteration-1/D-r21.glb",
+      "bytes": 1310792,
+      "sha256": "25f4f1c2bd7484d092ded480fd3eb28341a8152aa1ccf4ddc04cafc546bd987e"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/iteration-1/model-report.json",
+      "bytes": 802,
+      "sha256": "13b2b96633ef8a87308f3fc6be95c58722094465fa185288d298c5d7862ee5e3"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/iteration-3/D-r21.blend",
+      "bytes": 499658,
+      "sha256": "244ebb5ab22a1328a5277ccac922b0245dcbd501ce8632a075b647b2bd1e6b40"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/iteration-3/D-r21.glb",
+      "bytes": 2017732,
+      "sha256": "6f36d86eb00d43a0823de4397b067bf5138fee291eccead4d12ae564b54ec2a6"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/iteration-3/model-report.json",
+      "bytes": 792,
+      "sha256": "0fb7e161c3e575aa57ff5db24d74c7eca9535d55cab29a233a52dee613282af7"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/model-report.json",
+      "bytes": 792,
+      "sha256": "cd950d4a48dbb2b29c4901f8f8cd96a9ffff0b66979e347048f87114bf7d7b6b"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/E-r21.blend",
+      "bytes": 473512,
+      "sha256": "9985d562b86c871eeaecf314449b3973d670a9c57f81f8806bc23fc9ea62e958"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/iteration-1/E-r21.blend",
+      "bytes": 414745,
+      "sha256": "5316172c2ecb90d006bf4b8d3ab81dd06504d359dec01e50b6c1e4133518230b"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/iteration-1/E-r21.glb",
+      "bytes": 1187208,
+      "sha256": "d16749d0c63f5dc317e4ae87ee35050061a997ec919bad10abb3ac01a9fc81c6"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/iteration-1/model-report.json",
+      "bytes": 802,
+      "sha256": "c9ac2f866b06e40bbd734cd7a1a39827170f543ee15c6461784154e6dc46de9a"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/iteration-3/E-r21.blend",
+      "bytes": 472681,
+      "sha256": "6cb752e8c37c5fec412ab003cf73e86a354c71e535cd287eb15a32cdfb1de241"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/iteration-3/E-r21.glb",
+      "bytes": 1873540,
+      "sha256": "4056aecb0b6b41558cbf4a2e0e025ee3268eb08009bfc981e5a4c044c3cdd08d"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/iteration-3/model-report.json",
+      "bytes": 792,
+      "sha256": "ec8a76463470d072bed1e9bfda5a7e4a58b012c7764ee6e08d686ca80807088c"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/iteration-4/E-r21.blend",
+      "bytes": 472460,
+      "sha256": "7c24d6414aaf0a5e393e1db333164b44a4bf949d2a7f28e1033d8369d28ca036"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/iteration-4/E-r21.glb",
+      "bytes": 1876424,
+      "sha256": "5415c24d8dccdeeabd53ed47832288ee024c7f5e7494036e153be878fe0b86f9"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/iteration-4/model-report.json",
+      "bytes": 792,
+      "sha256": "1a945c2908a5f0fd43ce95f8402aee781231550fdb4b397e89d79da2df94c455"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/model-report.json",
+      "bytes": 792,
+      "sha256": "60e2ece0f94589d1236cf660924a1835670f87e3feb3ec515550eb0719612d6c"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/H-r21.blend",
+      "bytes": 545994,
+      "sha256": "97729b0045dd2a04cd0723b423401fc9d61f89696b0f6b95af7dc0a6837e86bb"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/iteration-1/H-r21.blend",
+      "bytes": 473525,
+      "sha256": "dc8dc1b4559ce02b7aa3d585100a2a410e01cdd9e52807a46bd21558bf76db5f"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/iteration-1/H-r21.glb",
+      "bytes": 1299456,
+      "sha256": "6351a7941c636fb51948d2c484d761ae577e7e897d5923a0c1666b682c575571"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/iteration-1/model-report.json",
+      "bytes": 802,
+      "sha256": "b6de7c42811a4a4b54c1861eb3ee59f0e791568523a453eb3dfc76ee8b1d73eb"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/iteration-2/H-r21.blend",
+      "bytes": 548399,
+      "sha256": "2077dae20cde16369a55d41898ff27b4ae19c2a93ec7ac509886f192823038d1"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/iteration-2/H-r21.glb",
+      "bytes": 2225664,
+      "sha256": "9919dd8cff62ac9262380778aae8ac226ae20fb431d9dc1be881c18911961e82"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/iteration-2/model-report.json",
+      "bytes": 792,
+      "sha256": "49abeac2e11f17e069cd2e9b8b3a9ded4d4359d01dd6752d9e2ec3dbd592aef1"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/iteration-3/H-r21.blend",
+      "bytes": 548938,
+      "sha256": "698d37a77dd705a2836db24f513e4de23b758523fc54d76d83a5341a2b05946d"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/iteration-3/H-r21.glb",
+      "bytes": 2211476,
+      "sha256": "42b668e23660069471e974ff6bb5097e0b9a489d836186e161395c84e8826002"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/iteration-3/model-report.json",
+      "bytes": 792,
+      "sha256": "395fcaaaa741991c11e5070f5773919b778e8da1af71d31cb39d3158aa2d88ce"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/model-report.json",
+      "bytes": 792,
+      "sha256": "ee52a6fadcf1ed090e3320ce162e45a3c88ac2c0109a08b4cf2127e89f588880"
+    },
+    {
+      "path": "docs/design/bdeh-r21/PROTECTED-BASELINE.json",
+      "bytes": 5739,
+      "sha256": "dff9216bd7da4c131402c95e78359a4df293d5075642e41abef210efb9a115ba"
+    },
+    {
+      "path": "docs/design/bdeh-r21/SOURCE-INVENTORY.json",
+      "bytes": 12825,
+      "sha256": "2d2631292c83047a7f9f58674df00a1178ac2fabcb1ed0fc6ee2ad09d7ac17b8"
+    },
+    {
+      "path": "docs/design/bdeh-r21/SOURCE-VERIFIED.json",
+      "bytes": 40,
+      "sha256": "2f9bde379148ac4beb050f91a6d9e685949c032ecd52db3d99ca345444d67a98"
+    },
+    {
+      "path": "docs/design/bdeh-r21/baseline/bridge-landscape.json",
+      "bytes": 184403,
+      "sha256": "0017c7b21bfce0e84f60ec0222c27d05c2cd93a44f578e18b9c58adff317905f"
+    },
+    {
+      "path": "docs/design/bdeh-r21/baseline/yuan-layout.json",
+      "bytes": 60614,
+      "sha256": "35da8e6e773dd6a8adb80898457c32b97d9eeb3fb09c52b6757824957cdbaa9a"
+    },
+    {
+      "path": "docs/design/bdeh-r21/baseline/yuan-plan.json",
+      "bytes": 50380,
+      "sha256": "c828677651fd3a6b7b5b6cdbda73a7fd741b4795f1f2eb6ab4d6461b5c77c0c0"
+    },
+    {
+      "path": "docs/design/bdeh-r21/baseline/yuan-surface.json",
+      "bytes": 346316,
+      "sha256": "e05ea0161e44fd2752ff54f907e83a8b05767fa407fb5802585afbc9fd34c788"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/README_四島政策設計_自我審查.md",
+      "bytes": 5599,
+      "sha256": "7ce38cbd15b1f8a79d545f260cbd76736537a38fad975e972f735376a5a9abe6"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/base/BDEH_R18/data/road-candidate-r2.json",
+      "bytes": 23605,
+      "sha256": "aad1111b77f6d262119ce7f51387aba46dbe8bac403481b569ba017dcdd58002"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/base/BDEH_R18/source/base_r12.py",
+      "bytes": 29535,
+      "sha256": "8d8728127b267a56993b21211f1f4718f7163b44f1f3acb3c099c26d14014b41"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/base/BDEH_R18/source/build_r18.py",
+      "bytes": 33614,
+      "sha256": "b1b52484fc87c8aba43bfbab5d67c9a0ea9866b106578e98faa46a3dd62a5d77"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/base/BDEH_R18/source/vendor_base.py",
+      "bytes": 25687,
+      "sha256": "cac054ea46e0394a569124413a09d01911a4d983eb1ab7c77a1565ee3eac7ced"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/base/README_目前設計與自我審查.md",
+      "bytes": 2501,
+      "sha256": "f292d52b75f4c3c4d36ab406e443e2adff1d6b3d94f1f06020b685bde2056368"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/base/build_r20.py",
+      "bytes": 28869,
+      "sha256": "291b72f060fc4ea960a9a10fad8dadee4b83d4ae5abb3497407df612ff260703"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/base/eco_rewrite_snippet.py",
+      "bytes": 3537,
+      "sha256": "fe227ab7356e61fed5a0499a2f277142b011c85141c8051a9b250dd17413a09d"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/build_r21.py",
+      "bytes": 37903,
+      "sha256": "234b419b84a6d7d0289152f1bbdf1929c2f22c90deccf4d7b1c43b4f203d978d"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/make_boards.py",
+      "bytes": 5999,
+      "sha256": "d3c3ae9a56f4b4bf2b2c1ad175778722ba15e03b8c41e56e553f083744c474d2"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/models/B_R21_policy_landmark.glb",
+      "bytes": 505396,
+      "sha256": "8a2e6937650a2839e873b06076593ef0021380d65ec614beb0e4e4fcd8f5c481"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/models/D_R21_policy_landmark.glb",
+      "bytes": 438468,
+      "sha256": "d964892c9ba95693c2f5706a8e197fbcdec7d3eb76a7f19c987e2c4dcdc567ac"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/models/E_R21_policy_landmark.glb",
+      "bytes": 457984,
+      "sha256": "f390d7013cdeb016522ae52c916a65a215014872f6691f46a385620495fb49b5"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/models/H_R21_policy_landmark.glb",
+      "bytes": 492108,
+      "sha256": "6f24c0f036189a1d360bd5ab4eb2756b2ad5aadf74c08398b9e8cb449e473701"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/qa/MANIFEST_SHA256.json",
+      "bytes": 6531,
+      "sha256": "a82ee40d92f448163f0c2f4ac2ccc72dc72958884b8b42f3a7268afb27a13c11"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/qa/assets.json",
+      "bytes": 762,
+      "sha256": "1b9fddee81f86845620508d2e727d7b9901c151da63a245c4fb445d6040626a8"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/qa/geometry_audit.json",
+      "bytes": 2825,
+      "sha256": "bae9be4334910c995e1a4632fc95276522a56f893b84022b0e82bdce5f8ac2c8"
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/BDEH_四島主題設計_自我審查板.png",
+      "bytes": 1238725,
+      "sha256": "54704249b3e8da8a26684e79f4c354bad4701f9fa1893343dba8dba43ffa3f13",
+      "image": {
+        "width": 2600,
+        "height": 1780,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/B_back.png",
+      "bytes": 488620,
+      "sha256": "695061647435e6fc5a950e24e6df6cf00d2ab124673964436796ab9d68458d2b",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/B_front.png",
+      "bytes": 478877,
+      "sha256": "100ec2d806fb204e42543d1118f777f90d2cac633bac69bfe5c6165ac23f8721",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/B_hero.png",
+      "bytes": 476418,
+      "sha256": "7d1724086ac990ea01d2875f8ebd3e800be4e7d5e1ed04f98ccb5bc619158827",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/B_left.png",
+      "bytes": 499766,
+      "sha256": "9fff7f7ecfa30ffb6cd29dfebcafb6fbcee4219e3dd4d885b2481b23995c0bd6",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/B_right.png",
+      "bytes": 462600,
+      "sha256": "468efdc91ffc646e3f4246ae11ce9be744d89ce9e0d744c42edc4be35dc970cd",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/B_top.png",
+      "bytes": 413918,
+      "sha256": "bd1671ad06429ff5f17a2e7bbe5f23af155300d06caa68533b19e13162cb3873",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/B_真實六視圖_候選.png",
+      "bytes": 698746,
+      "sha256": "21b4298bb8ca3c7a2f333b03eb7df6c5bb8e1d4d6b12adb9bf653268966dd8ab",
+      "image": {
+        "width": 2060,
+        "height": 1500,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/D_back.png",
+      "bytes": 480966,
+      "sha256": "82a4908269fd54abf228b03b91caf8bd4f2982896f35a2b7f73204cbf58764ad",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/D_front.png",
+      "bytes": 461820,
+      "sha256": "57d6c3908cc6319ff3c91d317e95045c4ffb5aff372c0146aeeea267576c4539",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/D_hero.png",
+      "bytes": 467479,
+      "sha256": "383c4317a709c0e546760b30e28d746823753aa6c3ab0f918e76280fde40c34f",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/D_left.png",
+      "bytes": 481627,
+      "sha256": "dd25d2cbf6502978466418009afd967956171a1e11c0e0bd5d356712aff4b856",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/D_right.png",
+      "bytes": 464431,
+      "sha256": "c983b55754f8dd4d8524cd015dadc8c07b909641601ca8262f88d9279822c60a",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/D_top.png",
+      "bytes": 385365,
+      "sha256": "4b7c6a1115155340491210622c9d24047fb2e7520947778dfdd6d07f5417be8b",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/D_真實六視圖_候選.png",
+      "bytes": 703804,
+      "sha256": "039b31cbb941e07770ea31c80d80c19b67396f3459a5fe2e53bcd1f3e240d1b0",
+      "image": {
+        "width": 2060,
+        "height": 1500,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/E_back.png",
+      "bytes": 476655,
+      "sha256": "eb321d95a84ff93328a3a2bc7280caaca706312e09a47f181e6e5b4a75934883",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/E_front.png",
+      "bytes": 450507,
+      "sha256": "0c4629de565eec902d56fbe5f1fb180b7e0a2bb265d4da3a15a03488430d98ea",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/E_hero.png",
+      "bytes": 449435,
+      "sha256": "bb80ca8a807a7dfecc97809ba063ac427272678bfe88cdbadf698db4e9d206bd",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/E_left.png",
+      "bytes": 469430,
+      "sha256": "cb00568a463bb0699d78a095868fd1e39e93a757c2590bcf2655b4fa9e54369e",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/E_right.png",
+      "bytes": 457163,
+      "sha256": "25130d6b6a96d1917393f0567cabaa9073f2de41d374a79accfef309762cbe2c",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/E_top.png",
+      "bytes": 352106,
+      "sha256": "6abac741e0b7ad49cae0015971d3475ebdff129c12c2623a2a9f672d3236ed00",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/E_真實六視圖_候選.png",
+      "bytes": 676055,
+      "sha256": "4eba93c830624e37b7d17db20ae99dadd008279d0d1c809aae67e9fd5a415e5e",
+      "image": {
+        "width": 2060,
+        "height": 1500,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/H_back.png",
+      "bytes": 506882,
+      "sha256": "359c67a4d3c0069dc6dc810784eb3ce017fce070ec2f5ca4f900004b321cb069",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/H_front.png",
+      "bytes": 463762,
+      "sha256": "f1cfa4976fcdcdf391fe205a49e7e55c71775d510ef36aaf51710f3f2da23fa6",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/H_hero.png",
+      "bytes": 485188,
+      "sha256": "f66edfb7bd2b7d94da4abebac650d97328b40e89a6c1c5d2b22cf5ba8964ed44",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/H_left.png",
+      "bytes": 476429,
+      "sha256": "e6d9b749a8503df061bfc9b59a90f4ac0c69c1631a6c58edf3a4a02c0f3fdb70",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/H_right.png",
+      "bytes": 463195,
+      "sha256": "af3789545fdc17bd649c4efbe7c736c68958b91b39ad750264a0f29f4ccc0c93",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/H_top.png",
+      "bytes": 374314,
+      "sha256": "c60a0064f0400860496576322b70e38a244467a9476c999afeeaabe177cd887f",
+      "image": {
+        "width": 1100,
+        "height": 850,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/H_真實六視圖_候選.png",
+      "bytes": 748424,
+      "sha256": "4734ab1038578d1e70736fd060e91b071644568ead77115a49a32667ebb4993a",
+      "image": {
+        "width": 2060,
+        "height": 1500,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/renders/苑字路網_四島候選配置.png",
+      "bytes": 226188,
+      "sha256": "9e05b962042cef1045b81ff2e214dfe41747122c32ec39ea15004d6c90bf3642",
+      "image": {
+        "width": 1980,
+        "height": 1494,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/design/bdeh-r21/source-package/roadcheck.py",
+      "bytes": 1677,
+      "sha256": "ffbc0c197cb49ec54e47117bbe820e3d7f4b6579d79f58649058d37e38c82b23"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/SELF-REVIEW.md",
+      "bytes": 2702,
+      "sha256": "9910f6f97b03ef950a602a9694b98c298e521c79442248fbdc215788f043682a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/before-after-blender.png",
+      "bytes": 666088,
+      "sha256": "c55a7b4145940554ebd3bb39bb5a96e82a155cdeab8e02efa4c608d196315645",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/before-after-game-hero.png",
+      "bytes": 659204,
+      "sha256": "7dee949cd88bfbebde06008ff11d96fc7573fab0cbbb1acd9e8e90d160e19a34",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/before-after-game-mobile-facing.png",
+      "bytes": 434214,
+      "sha256": "c6ce549802ed51d462ff660d1391fca042fbba79fa85c31a44837a3f9b542be7",
+      "image": {
+        "width": 1200,
+        "height": 832,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/before-after-game-mobile-native.png",
+      "bytes": 325906,
+      "sha256": "2d0856c3702428287a7cb2efea92e0d7ede04b5580938406050dc3a8e5db4438",
+      "image": {
+        "width": 1200,
+        "height": 832,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/before-after-game-top.png",
+      "bytes": 582673,
+      "sha256": "75323f372bca20c6c18aca5d1bc6903b3ca11025c0562e317d5e58b6015f0d5d",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/blender/architecture.png",
+      "bytes": 701435,
+      "sha256": "1f71b72c29d113e05eda8c4621d6538e5a57170961751f97f4dcacf16cc6e3a5",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/blender/back.png",
+      "bytes": 605747,
+      "sha256": "5db50abbb68a712663e1ba907026360850bd031a2e4c0dec4534f5cfb399dffa",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/blender/front.png",
+      "bytes": 595811,
+      "sha256": "651edb9d22892e4bec3d69c9056acd44185ff9116180d7bc71047921f514b7a4",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/blender/hero.png",
+      "bytes": 600773,
+      "sha256": "7d57f6858a7a96f3043282c4e2fca1012ffa3fc4f421a7a6bd12331ba18e2eb0",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/blender/left.png",
+      "bytes": 595470,
+      "sha256": "1bcf00a8a0124aaec37f00115a7c0e18e03030476a8467d7db2f1ca67375bf95",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/blender/public-space.png",
+      "bytes": 656947,
+      "sha256": "e7d98685c485a16dc71194a095db485a97937c51ba27e4253504a844f1093d24",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/blender/render-record.json",
+      "bytes": 2916,
+      "sha256": "478fc6e637d8c45115064b818644378ab05e0451ff7d20601bd5a4e1b530a6ee"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/blender/right.png",
+      "bytes": 611487,
+      "sha256": "b7c699e404c3ec34040ca07562045fda9714fda88e883cfbec8ac37ec2b538ff",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/blender/top.png",
+      "bytes": 623022,
+      "sha256": "223c89eb6d838eefc94e10ad44e5f1ea3de6ab2685ffa190d9ae104fff022f7e",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-1/blender/hero.png",
+      "bytes": 608538,
+      "sha256": "c1322fc0af7a26e919be11d216562e426dadd0374d980bb5c777d567e1646b0e",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-1/blender/render-record.json",
+      "bytes": 528,
+      "sha256": "7ec7d439a5f8ae456d953a81c7b8e38c68f99dd378472e40ff5f06f0e3e81f21"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-2/blender/back.png",
+      "bytes": 591052,
+      "sha256": "de049f97a5093e09d45d4b3ccbb0536b4191fdcb7b8f82b2dfdd9d2e8a3ed59d",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-2/blender/front.png",
+      "bytes": 582700,
+      "sha256": "4f4f9f9c13e9abd12a765d2d8dc0755901f4af8377a2babd4cfe1a1e4b808fec",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-2/blender/hero.png",
+      "bytes": 582847,
+      "sha256": "3acbf04be8eba0e97e402a2b6f8a8b01ad86cbd2a9d7da0ec553e7cd11d7741c",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-2/blender/left.png",
+      "bytes": 582122,
+      "sha256": "c16ba5b53b2127ddd603cf8b6ebde8031e9e19241c2e8de6c761c0a29b9aec8d",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-2/blender/render-record.json",
+      "bytes": 1842,
+      "sha256": "5a9c8e160cc2b3ed46ab87355c34da6b52e4298d8f9c154f8ba2c8acdf639049"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-2/blender/right.png",
+      "bytes": 593942,
+      "sha256": "c33519ef005a087b76c2400df9652cdaff012443085f8d2817d7c65048a2240d",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-3/blender/architecture.png",
+      "bytes": 699730,
+      "sha256": "7ebb680fb36326f64c4eb45011aed6a0271dd6a2eec751f578488e649103bcbb",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-3/blender/back.png",
+      "bytes": 604801,
+      "sha256": "23b8d31368aad22a11dd7d790b457106303267f3d93b093e4b60b41ed1783f9f",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-3/blender/front.png",
+      "bytes": 594620,
+      "sha256": "ac9a139d24c898c40044760fea8669a908a096e47f985bbbea7cac5cd5d942bc",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-3/blender/hero.png",
+      "bytes": 599628,
+      "sha256": "5d41d2ea95a15693d804eacf9abb36a4001dcb5615438cd0d45b61a79cfaaca6",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-3/blender/left.png",
+      "bytes": 595077,
+      "sha256": "fd0dcbd6c642f797887f4b8f932d1389de36d2b4ec4f48f1309e77226c610f1c",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-3/blender/public-space.png",
+      "bytes": 654640,
+      "sha256": "d187a2a8ae9f60c7e10b4fcd38a09feebb1639c1ade250f92dd6e0d97521f3a4",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-3/blender/render-record.json",
+      "bytes": 2914,
+      "sha256": "1ddedd9689f08fcea40da4ac308717ed44c4bf068eea9b058700ff9c3088cd95"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-3/blender/right.png",
+      "bytes": 610961,
+      "sha256": "f5cc8e7ab5f1aa8659949459ff9aa335e1f5ac50b6cd72fef3ef10e8cfc9b883",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/iteration-3/blender/top.png",
+      "bytes": 619285,
+      "sha256": "c998a01d82c48155119f44a26f645a65f047352e238ee04bbdb17de5064a03c1",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/B/six-views.png",
+      "bytes": 1859158,
+      "sha256": "04b233ab26a4ef247c8b834d78f9695a156c12d09b924b6e6462c0c353f5ca27",
+      "image": {
+        "width": 2400,
+        "height": 1264,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/SELF-REVIEW.md",
+      "bytes": 2599,
+      "sha256": "d074ebe0b2737c6235d5781491bc8eeaa618703956cffacc26af798aa180d98b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/before-after-blender.png",
+      "bytes": 727721,
+      "sha256": "461aaa6243c99ec0f7584570fd94c5cd7d5d4a81d483efc65bc31fd4c5c37f6c",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/before-after-game-hero.png",
+      "bytes": 474664,
+      "sha256": "bb4a0cda9a18557cf368d6c5f0d11c67a9c56b8cef4dac481ee81df0c9966b65",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/before-after-game-mobile-facing.png",
+      "bytes": 274643,
+      "sha256": "6be6a8df17ba2dcd6ff5aa287332b8e0daf5bb9d779d0896f2894b478179df38",
+      "image": {
+        "width": 1200,
+        "height": 832,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/before-after-game-mobile-native.png",
+      "bytes": 319727,
+      "sha256": "b517ef429edde27dcc18b1927d5ed9708c26a0829c3e7dfbcab9831807598379",
+      "image": {
+        "width": 1200,
+        "height": 832,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/before-after-game-top.png",
+      "bytes": 540081,
+      "sha256": "23329c9485d19d2c6a921c3ca34c4f302047a826671ec0c40bff16de88482a0a",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/blender/architecture.png",
+      "bytes": 723215,
+      "sha256": "71486c90374199c30b47fed1ad97a086f2945b73ecc0cba8c234067527b66c07",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/blender/back.png",
+      "bytes": 623375,
+      "sha256": "39049b76c7efc3cddcf25292ce6c02e10a495b373b6f57b4457fcbd7bb28ed22",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/blender/front.png",
+      "bytes": 625464,
+      "sha256": "81d4b3c9fae6a9ccebbd71304b24c44e2a8c4008eb35dfe084bf24dc6c16fd9a",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/blender/hero.png",
+      "bytes": 619465,
+      "sha256": "02539900e5ddb370c1c562f39e47d88d2385f351b40fdbade4fd373bc47282fa",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/blender/left.png",
+      "bytes": 622725,
+      "sha256": "789f99f728ad85821177d34a29f449b286dca9641ec5a466e6a35410827a8570",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/blender/public-space.png",
+      "bytes": 703340,
+      "sha256": "c647bb11dc515471dd2303376ca68f65e741e482103f6d8d8943b50d696a0392",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/blender/render-record.json",
+      "bytes": 2914,
+      "sha256": "0c776b7a4530d3d5d8f2fa94be25be60f9d1098102d2420448f9e4bc09d36fc4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/blender/right.png",
+      "bytes": 615267,
+      "sha256": "6c8748bead80f52ee4bbf5ef4c12416e0cb3d78f5c6e40cdd696af7d55f8472c",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/blender/top.png",
+      "bytes": 649079,
+      "sha256": "9a325e084966e5e762db97764898390b65560e7af7a10967e21267fafd922ebe",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-1/blender/hero.png",
+      "bytes": 623504,
+      "sha256": "cf541d23215270c66cb35419f55c97ab8693531d1ce065ca960c58c1de222313",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-1/blender/render-record.json",
+      "bytes": 528,
+      "sha256": "c45ffdb37da0b3926b1210436a9b43c181d76d36b8b121e22196cfac579b2cc5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-3/blender/architecture.png",
+      "bytes": 721066,
+      "sha256": "fbff6096ec8dfa26ecc427caae78c58d71ed23ad1455d3173b17b07cabc52cf2",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-3/blender/back.png",
+      "bytes": 621609,
+      "sha256": "676edad3d6e533bec3fc248683ec4563c0e6943de23aff00978d472f38292598",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-3/blender/front.png",
+      "bytes": 623620,
+      "sha256": "c4f91c9e88ac4e23bcea00116918bacabee9eb621f168e6a8ffa393673d36043",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-3/blender/hero.png",
+      "bytes": 616053,
+      "sha256": "5adf59c68ef1f1bfeef6243c93eb8e2dfa8d3f0383e1526ce2de873e9eeaccc6",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-3/blender/left.png",
+      "bytes": 619020,
+      "sha256": "c22b58e2005b036a01384d25199a006bfa15e772664e130016c559c2ec55e90c",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-3/blender/public-space.png",
+      "bytes": 699863,
+      "sha256": "6de5fee135c1c0799d502c65a97c4baa5acdb7e491d9f46f8ca1ad4321443d91",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-3/blender/render-record.json",
+      "bytes": 2912,
+      "sha256": "c2d92759d85c27144b5471a4dcb5d441739b5bef088a525e9c5b47b36120230c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-3/blender/right.png",
+      "bytes": 611839,
+      "sha256": "f1e8f126265cf4839e4279eddf2e29ac5c266e4b594bb1149f7c59c7c651303b",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/iteration-3/blender/top.png",
+      "bytes": 641518,
+      "sha256": "f285bc9b3687fbf5606db4393ebb9fedd416a36a97a8d03b02ab47f31e40eb84",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/D/six-views.png",
+      "bytes": 2037317,
+      "sha256": "18167ffc7feb68ece99254d071660debd75bcdbfccd7b98f71977b632731b974",
+      "image": {
+        "width": 2400,
+        "height": 1264,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/SELF-REVIEW.md",
+      "bytes": 2753,
+      "sha256": "b483a1b9acb7d13d88bb8ee0e4e2f98960f88c4d25c5871c5aa0d2f3218fb1ea"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/before-after-blender.png",
+      "bytes": 696065,
+      "sha256": "911f7b9ab908c631c3f3ce79ce1489444dafaed3187deeef045d4614e29b12a1",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/before-after-game-hero.png",
+      "bytes": 718664,
+      "sha256": "b5f3d935fe07b3df8c9be1e7cf27643476cb48869dcf6df9721257e732b6137e",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/before-after-game-mobile-facing.png",
+      "bytes": 299312,
+      "sha256": "196dc95f0c307ee5f6f4791c55987c90d198a2d01daf44fbf58df7a83889a3d6",
+      "image": {
+        "width": 1200,
+        "height": 832,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/before-after-game-mobile-native.png",
+      "bytes": 311577,
+      "sha256": "e54de8a0c46f1c5efb2f7c591bae96993be8668cd8c0d52663d75d20200c6f88",
+      "image": {
+        "width": 1200,
+        "height": 832,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/before-after-game-top.png",
+      "bytes": 616413,
+      "sha256": "3a94609977ce4a3f12d90dd529106fbea8d5132459f358d5b58107396ab35c90",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/blender/architecture.png",
+      "bytes": 698149,
+      "sha256": "2f197267a76508d932df8e0b8fcc28b1d9192ef331c4f7e830f42fa5ed8bce8b",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/blender/back.png",
+      "bytes": 604475,
+      "sha256": "f54e0c9122599b061ffc5711d4fccdfe54a1f23dc9db4388bc1459968fe6bb23",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/blender/front.png",
+      "bytes": 611091,
+      "sha256": "b6357a84b3fccb787ea0669556b9cb36284c4fefae2828115fa5dcd360e8bb03",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/blender/hero.png",
+      "bytes": 605525,
+      "sha256": "c00056081b59c072a0fb94d8e168187ea5e438a63baf8347466209d6de797292",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/blender/left.png",
+      "bytes": 597028,
+      "sha256": "0610479d4dea89319c5706c035ac6d85440a51753280edbcc8e995d4242fb9a0",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/blender/public-space.png",
+      "bytes": 674717,
+      "sha256": "0ac3fa718a3167b5502d361b7022466f481106c4b0a1a0888b3c91f97177fca6",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/blender/render-record.json",
+      "bytes": 2912,
+      "sha256": "5ac325de39a674244cbebf796b91c8f8cda5c5bb0f2cffb1309ef5620c73b6a2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/blender/right.png",
+      "bytes": 589540,
+      "sha256": "f2c134edf001a8ec54a3c26aff8ba1a3ba54a3f9fec4e8094a72e86c043ba416",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/blender/top.png",
+      "bytes": 643494,
+      "sha256": "00c56c8717d9436bfce883fef0ea6cabcf43fb623656b1d0d22d10e4c3d11664",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-1/blender/hero.png",
+      "bytes": 611993,
+      "sha256": "451c86549cad84552bd8252c0dff7368a45cdcf52812fedd2ec6a008356238e1",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-1/blender/render-record.json",
+      "bytes": 528,
+      "sha256": "ffaa7bd8a57bbd3023ac735511e143947a41de6e3a487361938d06721abecd49"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-3/blender/architecture.png",
+      "bytes": 693040,
+      "sha256": "ec6d6c25f766bc44fe8e980a54e192cda736278b70a2a46d1f559f8a446333a8",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-3/blender/back.png",
+      "bytes": 600491,
+      "sha256": "ad5d2aaeaf7013dcf7877aa6970e0d561bd35c6f5eae37703d55ed1dc6254e51",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-3/blender/front.png",
+      "bytes": 605905,
+      "sha256": "b4d62f6beb9b36a4f46b498502cbcee238cfdb031bca8c78c6b0b243590a16cf",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-3/blender/hero.png",
+      "bytes": 601051,
+      "sha256": "33f743b65f6bc75c8523185398be63da6bbb37601d2274dd0595f3bcbc834243",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-3/blender/left.png",
+      "bytes": 595219,
+      "sha256": "6e235f8d251281b51d9614feeaedf39035ddabedf6921ea400ea8655de804808",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-3/blender/public-space.png",
+      "bytes": 669471,
+      "sha256": "6c4b06b4a2de3837f638353198c99a1e7a615bc56a633bcbcb659c321aaa9f6d",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-3/blender/render-record.json",
+      "bytes": 2918,
+      "sha256": "63a656eeedaeae46ec5b8040b19ee881c214524f9c7106c1872a9e30d323f5b9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-3/blender/right.png",
+      "bytes": 586567,
+      "sha256": "ea4d0e6161075a80eab2586f60e8e65aba2940822070f293c835e980b7a53645",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-3/blender/top.png",
+      "bytes": 635066,
+      "sha256": "2098177e3bfce2116706bb0f73af99480f6931114100c7a6ad1801843213a4fc",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-4/blender/back.png",
+      "bytes": 604151,
+      "sha256": "49e54fcfef37581bfbe8903be836b1a149ed031cbe559b89ffe0cfea8f00321b",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-4/blender/front.png",
+      "bytes": 611104,
+      "sha256": "9fed22398c0d044b9ded78631f27a4be9dcff1deb6c482b395aa7d71cdf994eb",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-4/blender/hero.png",
+      "bytes": 605047,
+      "sha256": "f5c93565754dd4991eecea7fd1e91470f0f85fc5e474f822b803bb60248c98e9",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-4/blender/left.png",
+      "bytes": 597011,
+      "sha256": "8a8765fc4503ef9b8a353907f879fcf695a4d888f11b0dc43f3893f9d4e12b8c",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/iteration-4/blender/render-record.json",
+      "bytes": 1517,
+      "sha256": "4a1d614b1eea965a8e734c090cbc64334d8e24d024432bca5de7f2f99b9b85cb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/E/six-views.png",
+      "bytes": 1945652,
+      "sha256": "2fa26d398969fa2a246da182f6ab37bcb0c459cdbcf815364c242700b725abae",
+      "image": {
+        "width": 2400,
+        "height": 1264,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/FILE-LIST.md",
+      "bytes": 22694,
+      "sha256": "a9ddd5dbe8a282aac489d2834fc8947252459ff1fece200cb1f00b4a606ea7d4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/FINAL-CHECKS.json",
+      "bytes": 1327,
+      "sha256": "a28d94580cdb8d963a94529eea8a481b619d1d563fc4fe2c23dde8b477360b36"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/SELF-REVIEW.md",
+      "bytes": 2697,
+      "sha256": "95cc6d857f8e876cb3cd413a6459de0c842c287c195c37a7b364ddd60cada0bb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/before-after-blender.png",
+      "bytes": 822581,
+      "sha256": "6f4a61bc5ab324137bc18da592c25c8ae2f1432eec4c3dfbdc5e4a6df16b290f",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/before-after-game-hero.png",
+      "bytes": 562151,
+      "sha256": "75057d9e9626fa0f78b9a392d621d6b723cc0574df7efc48e51e3ef9b89b9ae1",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/before-after-game-mobile-facing.png",
+      "bytes": 315635,
+      "sha256": "027673f49629b2e1cb693649effd657b32a957ea0b009bca7ad002682d1e7848",
+      "image": {
+        "width": 1200,
+        "height": 832,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/before-after-game-mobile-native.png",
+      "bytes": 286130,
+      "sha256": "319fb610d5fad7e69a93a6abf765c923a284579d5c4548a5ddea452ce889054f",
+      "image": {
+        "width": 1200,
+        "height": 832,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/before-after-game-top.png",
+      "bytes": 594160,
+      "sha256": "5a87ea762f099cd4cf681098074e2b7bed47ac21bae4344d26bf8d520fb09342",
+      "image": {
+        "width": 1600,
+        "height": 632,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/blender/architecture.png",
+      "bytes": 817911,
+      "sha256": "f0c7c073b68490042d26b64175d7d165ba6d1286c1eff8180f693b839e0959ae",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/blender/back.png",
+      "bytes": 640603,
+      "sha256": "0bf3a992bbd693049dfd2500e7b88f7f6aac2ec4c762778983f69fdf4a1bb826",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/blender/front.png",
+      "bytes": 670763,
+      "sha256": "91ccb7a386d39c155c44170d99e99d301ed326fc3f388682598c3f20c9cfac36",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/blender/hero.png",
+      "bytes": 679503,
+      "sha256": "19d3685e3556f9c907c0d3f2293cdf8b142bbb68432039268a53a48d172b1f5e",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/blender/left.png",
+      "bytes": 610329,
+      "sha256": "fdf035759b081acc83ee0068092e1cfc733bc451162bb052fa619e701608e28e",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/blender/public-space.png",
+      "bytes": 776372,
+      "sha256": "2fd7568ad985280f6c85134378371fbdd93b43ff77e9dce5b9b3958f1ec904bb",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/blender/render-record.json",
+      "bytes": 2915,
+      "sha256": "c9b9601a7bfe3b2e9194ad33ea5c8e556f02604a43f1e58ff8ec68e9d3fa3346"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/blender/right.png",
+      "bytes": 607471,
+      "sha256": "039a4b678f47405d4365fc63e2e059463280e9ee7cc3a97dd723600990f33b0b",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/blender/top.png",
+      "bytes": 665200,
+      "sha256": "c7c40141a0013ae22fe12d2fec66cd7708fbac967488ff305a3b995fd3ebf8e1",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-1/blender/hero.png",
+      "bytes": 689603,
+      "sha256": "1020a8922c1a2dc2e16170e88f4f80747d251b582592fcd6bdc9d4bc476bfa71",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-1/blender/render-record.json",
+      "bytes": 529,
+      "sha256": "427ffad524302dcb10a4e0eae72323c4cd4f671335beaac9a5dba76842897995"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-2/blender/hero.png",
+      "bytes": 676355,
+      "sha256": "f3c84620560c48b0ef639fdbdecc1fd3734af65f55958ebc7c5b0591be0a5818",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-2/blender/render-record.json",
+      "bytes": 537,
+      "sha256": "2ab79dcb5a1e4b3179609d140ae69b424b564c0f06e7abadc930eabc8c5884fb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-3/blender/architecture.png",
+      "bytes": 812729,
+      "sha256": "06265edec39707e29f9d2e7d37c95c8460bf6357bf8d9b8944a021d1d87b27c6",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-3/blender/back.png",
+      "bytes": 637410,
+      "sha256": "76d2279e0e55eb7d35f5db393c67f4da21bb3c217ee3444b58bf5f27a0ff1d7e",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-3/blender/front.png",
+      "bytes": 665749,
+      "sha256": "c661294390f08ed2ee2ad876fbcbdb6b25f816044af09f44b3633820594afb71",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-3/blender/hero.png",
+      "bytes": 675437,
+      "sha256": "250e156d6f6dab7adb899db596e347a56734231e70407e78bcf0257807136d72",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-3/blender/left.png",
+      "bytes": 606664,
+      "sha256": "83d6e6b2977480cb2793c531cff3f14ea5d99d7f34d4c8f9a422663cffd1d7e9",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-3/blender/public-space.png",
+      "bytes": 771374,
+      "sha256": "dbb79676dfaaea5013e3b943d9ed056c376282e076b2afc28fcf5b7b9d9cb312",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-3/blender/render-record.json",
+      "bytes": 2913,
+      "sha256": "8e95322fc344694073e65c22755c6ecd30b5e819d601e100a16fd6b0f8152176"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-3/blender/right.png",
+      "bytes": 602966,
+      "sha256": "56b5f0b6c167a863c632903eb2bf22f07b1a79c8b425985119ce3cb61975e827",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/iteration-3/blender/top.png",
+      "bytes": 656562,
+      "sha256": "0c5b5a6358b72dd84bc45807d4327cd9aac5b2681c1a6d985d02c0e92567500c",
+      "image": {
+        "width": 800,
+        "height": 600,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/H/six-views.png",
+      "bytes": 2151642,
+      "sha256": "1f832fb92f4d743127c9cce5cf7020a8618b489df96905622b351c336e66cd35",
+      "image": {
+        "width": 2400,
+        "height": 1264,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/README.md",
+      "bytes": 5393,
+      "sha256": "1278263c3a2705c68a45d287f6c66d4971f6a09b868d597db2cc1a826b4657aa"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/REBUILD.md",
+      "bytes": 3811,
+      "sha256": "ba810a90aef15792f3cf660aa9c3ea36e200c953672f87c483d1625f70da27de"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/REPORT.md",
+      "bytes": 12369,
+      "sha256": "92f50f9cc02810bfe2c8eb0a15a3d269d5e3901201981d8a34783c2942e658f9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/ROAD-CONFLICTS.md",
+      "bytes": 1295,
+      "sha256": "746a79bbf19010da4c05e28c9ac1fce747fbf30f69587a87438e0140700edb2d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/SITE-PREFLIGHT.json",
+      "bytes": 1038,
+      "sha256": "2906125b1158035facacbf3a567079155fdf85ab9da2a6e22088aaf1edff585c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/WIP-RECOVERY.md",
+      "bytes": 2707,
+      "sha256": "c04ab23240cf829ca32e806f34e58ae6345a0e7bdcd1c8cce3fed4afafc9bc80"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/four-island-blender-overview.png",
+      "bytes": 1430330,
+      "sha256": "908f3d70e069730eddfc61fa97af278abd9464148316fabf67890cefed5fb54f",
+      "image": {
+        "width": 1600,
+        "height": 1264,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/four-island-game-overview.png",
+      "bytes": 1345655,
+      "sha256": "937401336b85fdad20b195f45597d67370f0061f8db3fa9761a8136b5b614228",
+      "image": {
+        "width": 1600,
+        "height": 1264,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/four-island-mobile-overview.png",
+      "bytes": 604432,
+      "sha256": "0f49e0f59f50b4a955584cda4c53d967ddd3fe460cd639fffadeb58b29cd296d",
+      "image": {
+        "width": 1720,
+        "height": 964,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/B-desktop-facing.png",
+      "bytes": 401192,
+      "sha256": "532e4724bbef0889385e864029c023e4eea879f85356d0f1c5524c1462929a21",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/B-desktop-native.png",
+      "bytes": 315818,
+      "sha256": "f13762a817fc29298b12ef72783bf0f234d14c31dadcc64c2cf4c2237752e568",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/B-desktop-npc-reservation.png",
+      "bytes": 342450,
+      "sha256": "e84313e1b21d14c7e6b4d2fa3bf6c39d9bdc893201ee819983525cf2c97094f4",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/B-hero.png",
+      "bytes": 605664,
+      "sha256": "5951426f5061d6b3f5db5e26d39e51691c54a9200dc4bd2888614991f0068a1f",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/B-mobile-facing.png",
+      "bytes": 202447,
+      "sha256": "ce2381877dc27acd031f9c16f468ccd08c7d8dfd164e3b3759a5f4ab461e01b5",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/B-mobile-landscape.png",
+      "bytes": 308860,
+      "sha256": "0ffb2d9b7cd89491d13304587df1a7706273fd1989f751f2dcd62bc495e21647",
+      "image": {
+        "width": 932,
+        "height": 430,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/B-mobile-native.png",
+      "bytes": 160729,
+      "sha256": "d8914a6195aef619db876174f9197c9c7f291fbcaea5e64490dbd89e402485be",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/B-mobile-npc-reservation.png",
+      "bytes": 170296,
+      "sha256": "611fa6bfa330ca1fdd1a7cb363889527023fc7cbb88c7f2eb3690390b83ed5d9",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/B-top.png",
+      "bytes": 536673,
+      "sha256": "8d224ee4cbaab5253c652b2cf56795c5b0ecf8324550018be0edaecdbb304f9b",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/D-desktop-facing.png",
+      "bytes": 238176,
+      "sha256": "5638034edc6d21b6fd003475a8e8de263a95d5a00ef957bd914a8d72bf030ba9",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/D-desktop-native.png",
+      "bytes": 248970,
+      "sha256": "454c979df49030c3e782a19c1031c66de6bae33bd0d1530a9e098f9d79af6fb2",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/D-desktop-npc-reservation.png",
+      "bytes": 342753,
+      "sha256": "c04268c7928935d22acec899106d1cee132dfc71a48f9868336d4a7225853f25",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/D-hero.png",
+      "bytes": 445267,
+      "sha256": "cafc01a23e14f5f325fe3de122520b64616f33b6388423ef7e38c9bd22d8537c",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/D-mobile-facing.png",
+      "bytes": 121383,
+      "sha256": "41a4a0533cca60d1c8c5e3c45d2323063f7330f0fe6bbadf8f8a97b11559e546",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/D-mobile-landscape.png",
+      "bytes": 235222,
+      "sha256": "9bdd1d07ba56081c842c8c7e8c5e417f8969661b68e9bd74bdca2d4f728140ce",
+      "image": {
+        "width": 932,
+        "height": 430,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/D-mobile-native.png",
+      "bytes": 143726,
+      "sha256": "a8b43f0229ac3d840b7da0a8f8a5058a72f1e492451e85cfc8f2a748182eb37b",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/D-mobile-npc-reservation.png",
+      "bytes": 159677,
+      "sha256": "5ab290ff413fee3258f8a033325e6457c75a5b0766cde8321cf08d645a6b30ea",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/D-top.png",
+      "bytes": 501387,
+      "sha256": "c56d13cc56178b7b4456de63288f3197feb2525f3da3d95cc45828bf4ebb6359",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/E-desktop-facing.png",
+      "bytes": 282954,
+      "sha256": "431e3955aedce6b2fad72c6a5da554a8dd660d3123ea60123ff55f29a3df9445",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/E-desktop-native.png",
+      "bytes": 228317,
+      "sha256": "c04b707ddff296f19869d83b443b7434f097fbfc7a8f98f8c4e1051d8247f505",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/E-desktop-npc-reservation.png",
+      "bytes": 510117,
+      "sha256": "e3cb07a79d6a4e70dd05b79232762d603ed35b9fd321c65bb92228dfd8e8fdd7",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/E-hero.png",
+      "bytes": 684824,
+      "sha256": "e3ea57b604b692355bda2d4e5a172457500bcabfd8b4249694fb50f17d7547ba",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/E-mobile-facing.png",
+      "bytes": 160017,
+      "sha256": "90f83404af2170e52a7be2735acab1defb5cb82db1033126561e04f91f366718",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/E-mobile-landscape.png",
+      "bytes": 278012,
+      "sha256": "5590c0a1934ed13b67e8b1b6b30568f88bc3ee2d6ec023753a54d7de1f2ad74f",
+      "image": {
+        "width": 932,
+        "height": 430,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/E-mobile-native.png",
+      "bytes": 153767,
+      "sha256": "1289d2fe4aea00f2a41c2f44c1457629d22fe0024994ef074d13fe118bf3e5aa",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/E-mobile-npc-reservation.png",
+      "bytes": 224112,
+      "sha256": "7d5c83d82540256216fe54bbebf90fa3473bc6d22770ce20947f0365e48f60b2",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/E-top.png",
+      "bytes": 610669,
+      "sha256": "15e83aed7a595e8fd856367902081111818953bf523db149129a4c0f74261cb2",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/H-desktop-facing.png",
+      "bytes": 338425,
+      "sha256": "f049a1150c3bee9ea1f7bc2bd0f74f84c56d77c72c7faa3f1f85baeb6ec2f952",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/H-desktop-native.png",
+      "bytes": 236870,
+      "sha256": "1f9edb83c54ad695bc1c85f1f92f59736c8eb1b4ce7d566bc5e3e88fd101c10e",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/H-desktop-npc-reservation.png",
+      "bytes": 291590,
+      "sha256": "46c4c40cab1410515a4eb4b26e95851d59a3d268a8dfb6686f1edcc1acb893ef",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/H-hero.png",
+      "bytes": 532218,
+      "sha256": "5323c5652951c07b2ecf6fa05b423cf1083756a5338d1512cd2c52e39e88892a",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/H-mobile-facing.png",
+      "bytes": 139711,
+      "sha256": "aea3355318c0737bdb2640dec9b6c8861e66f54a8e8f6b0a8482be048e1609c8",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/H-mobile-landscape.png",
+      "bytes": 245947,
+      "sha256": "b00063c0cd59844b10091c478cc2923bd3866bc1e6decb981cc171b1a02bd49e",
+      "image": {
+        "width": 932,
+        "height": 430,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/H-mobile-native.png",
+      "bytes": 110834,
+      "sha256": "f98a66bd3fda8e29d33a0230102e77542b09332916a763aa192edc81e7057956",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/H-mobile-npc-reservation.png",
+      "bytes": 155114,
+      "sha256": "693581bb71484e0a9180c4f952a0876b9969b8509c290013b365b8f627cce839",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/H-top.png",
+      "bytes": 543350,
+      "sha256": "4a5de054e47402985ffe241b3e5a619629b8813c89703b5ed2a7f5d83b68b966",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/capture-record.json",
+      "bytes": 52752,
+      "sha256": "a96407ce8255bf8598636efe27f3064d4b1b5f9352edef3ed641f1bc10680305"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/yuan-desktop-panorama.png",
+      "bytes": 210741,
+      "sha256": "a89de82b951acf7691853884e0c43cef3249724979fceed92e47e0a91ad69031",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/game/yuan-mobile-panorama.png",
+      "bytes": 109253,
+      "sha256": "b8d0f41559e1d970533ca9e0c3c240331670c209768b74af1ed35805f3c79ca1",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/geometry-stage-1.json",
+      "bytes": 1059,
+      "sha256": "0ac0f44f4a57d28bb00877f62f53ef98ed06bd9317670395d6a35ee7a6f59421"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/geometry-stage-2.json",
+      "bytes": 1337,
+      "sha256": "011798d092013f4bd2644ea8f5c7cc7a590f08e50491d7c1097fc4d3bfb42b19"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/B-desktop-facing.png",
+      "bytes": 365425,
+      "sha256": "a91f1ed0df9535b2e045d97e4b076e519adc4c7a3b11c593cc7ff511ea0bcee3",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/B-desktop-native.png",
+      "bytes": 264807,
+      "sha256": "c6d6d7ff701685b6f1ad014e0ed55c32f7afbac484e858d6f6d9a45be004a023",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/B-hero.png",
+      "bytes": 588019,
+      "sha256": "8e638999b33db2a8598e13a8355583873c3782da1c7a9d01ded4ac3613caf913",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/B-mobile-facing.png",
+      "bytes": 190722,
+      "sha256": "cd6076f4bb1d4fad61a6370b0454b85b16a38db42ed2c9cd0c4075c3f2b2056a",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/B-mobile-native.png",
+      "bytes": 145139,
+      "sha256": "48107ad9bdc73a3e53212d2219cd06d182a08a522df6f62f4cb75d7ada3994f7",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/B-top.png",
+      "bytes": 519514,
+      "sha256": "ab5925409389bf075ee4f3adbbea3e56edaca7139b21f056056186490a69d735",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/D-desktop-facing.png",
+      "bytes": 220390,
+      "sha256": "20a4e438c2202d1c30e15aca0c740a00073984bff090cebebe7313d0737012e2",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/D-desktop-native.png",
+      "bytes": 233624,
+      "sha256": "502fbf4edb6388de864e24bf3fb1b05c91b46da966cb0c03737cff0ead2102ce",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/D-hero.png",
+      "bytes": 436676,
+      "sha256": "8ad123758a5d56cc6a95d5a49f89cc13d6dfd930468fc98b59e9ef02ddbb3e70",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/D-mobile-facing.png",
+      "bytes": 114279,
+      "sha256": "b411b370985e97acfa7f8094d2efcf7cf058fcd9a62e45538bbb04015ae62fca",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/D-mobile-native.png",
+      "bytes": 136806,
+      "sha256": "a911562f394704da5bd4986dd88fa6cd752466dcd8264414ad29d786e9df1972",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/D-top.png",
+      "bytes": 490870,
+      "sha256": "f639240364acff50f3406f96d71ce3285499f218c1397e903af0c404be3570dc",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/E-desktop-facing.png",
+      "bytes": 266546,
+      "sha256": "af78eb05bc3d5b915e0883f7e37e34e680ebd217de4fc297bec44b993d3e08d0",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/E-desktop-native.png",
+      "bytes": 216246,
+      "sha256": "eebb37aa518fe36de9a4c81d83ef1a1ebe5037cfd7618aef3f50df670a0c79e7",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/E-hero.png",
+      "bytes": 694022,
+      "sha256": "17112f448e0cb5371eeba871e40102f57f9ea60c75b8d245646bb793f23ce880",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/E-mobile-facing.png",
+      "bytes": 143626,
+      "sha256": "e92c7072ed737ff034892e809a52f36f84b3bcb7f3f68753c5b504c01be3e0f8",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/E-mobile-native.png",
+      "bytes": 136886,
+      "sha256": "5d5630cda2861e8384be17ec482002ed36c05935b151123c697fb5d66c805b6f",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/E-top.png",
+      "bytes": 600018,
+      "sha256": "ebd24f8e40704a6cffd78057a2aa453762a2f5001a3b980f79eff5e5d55ad8d9",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/H-desktop-facing.png",
+      "bytes": 268304,
+      "sha256": "f80ce16a087c1cbb2f922c57f71441a6d4a0f0196112fc79dc3c8473e3ffe50b",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/H-desktop-native.png",
+      "bytes": 184706,
+      "sha256": "cef262cbd32c232f5ef5e9aef2d3afa43f62d0c41104dd00b489f51f982d1939",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/H-hero.png",
+      "bytes": 528059,
+      "sha256": "bac8838a60330bde92c4bea4b401a827676ae3fa34f0d5b5e0a9cd2206b00afc",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/H-mobile-facing.png",
+      "bytes": 116396,
+      "sha256": "60f6e07f1423623a534a13e8b14965eee9c84b4af93b477e25614ac1c4e0cff9",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/H-mobile-native.png",
+      "bytes": 116966,
+      "sha256": "45ae0602d61e5e40577d4eb0d29c7b7c6cdeec6c99e0d7b3f5448a956e4ac3ce",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/H-top.png",
+      "bytes": 529124,
+      "sha256": "e5d87fbef27c6af23b7f6362481f484895107f6c029b85e9d5ae84d9b0922348",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/capture-record.json",
+      "bytes": 33614,
+      "sha256": "4a5a9b0ebb6afef089262c24c5210565b4fe2840f115f8b65c1740261a5a2268"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/yuan-desktop-panorama.png",
+      "bytes": 205756,
+      "sha256": "ffbd57ca9555a7f1041f5a5315183a1dabb8debc67d9dc6b5bcc8de767530f3d",
+      "image": {
+        "width": 1200,
+        "height": 800,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/game/yuan-mobile-panorama.png",
+      "bytes": 107370,
+      "sha256": "cf39183bc908c496477c6dc251d34ef5741f2d954b8cf7d8cb25e85bb1eaa163",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/runtime-assets/B.glb",
+      "bytes": 1416124,
+      "sha256": "b74d760d07c2ddbc8f6379edb8964273afa10d5e3692b902f22aee0955023b0f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/runtime-assets/D.glb",
+      "bytes": 1310792,
+      "sha256": "25f4f1c2bd7484d092ded480fd3eb28341a8152aa1ccf4ddc04cafc546bd987e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/runtime-assets/E.glb",
+      "bytes": 1185072,
+      "sha256": "0e229307e9a9f571164c063e077354f9d82666f692462a479a3bccdc2d131334"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-1/runtime-assets/H.glb",
+      "bytes": 1299456,
+      "sha256": "6351a7941c636fb51948d2c484d761ae577e7e897d5923a0c1666b682c575571"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-5-capture-driver/D-mobile-native.png",
+      "bytes": 43500,
+      "sha256": "ff3a5c931e8614c8099dc651854cd7a7f429722c8cc48550944f1345fb239c34",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-5-capture-driver/E-mobile-native.png",
+      "bytes": 43138,
+      "sha256": "6fc42cbb1ffadd316581452675acdf67a62461fde293891b46499aff3c6b9f5f",
+      "image": {
+        "width": 430,
+        "height": 932,
+        "format": "PNG"
+      }
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-5-capture-driver/README.md",
+      "bytes": 318,
+      "sha256": "8d243ab4862f849a00010a3592caa526dc5fbee6f055bccbf9cf4e9c097193e1"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/iteration-5-capture-driver/capture-record.json",
+      "bytes": 49316,
+      "sha256": "8b9be05e14e97bfe27b5884ff8bb4d8b810cc361d81be25fe7c16cf232a98c3e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/network-comparison-r21.json",
+      "bytes": 3778,
+      "sha256": "53ab74559d823c07839e8384e5948f07d8e5aa5e242aa200a8d222b6b0d3cace"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/network-comparison.json",
+      "bytes": 4575,
+      "sha256": "a5522f02a30a79b0613ecadc6750acf234a04162c92e50e9507c95d26c0b50a0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/performance.json",
+      "bytes": 13637,
+      "sha256": "d3bb04fac28f196016e36b2651fa4b5338c0e3a460777af010a2adeac8f53c84"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression/node-public-circuits.json",
+      "bytes": 6092,
+      "sha256": "50c66c4fe6539c0fedb0757667af659776afd35524c9518da30fe9d82f02d80f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/browser-routes-desktop.json",
+      "bytes": 3781,
+      "sha256": "03b027594674fa99e94f64757720aeaac892e6ace0f4c18e21f952ef6f077040"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/browser-routes-mobile.json",
+      "bytes": 3768,
+      "sha256": "3be72e48b2550dc1c661103fd849410c67edf9729336d261a851471b8591525f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/check-83.log",
+      "bytes": 10545,
+      "sha256": "5eb2be57bc217591497a11d988672df23fa6ed73190139f665f6f2a0574c28c4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/desktop-controller.json",
+      "bytes": 16973,
+      "sha256": "b43b413680c081a9c9e1293c1a799be3ab668e91ee485c21573cf1cacb30b80e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/full-initial-summary.json",
+      "bytes": 16263,
+      "sha256": "9e3c04f21ce7a79f34d41536f38faaa12262472712c7bbfd4a92600c7f55f0c5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/inherited-industry-youth-island-c-v1-interactions-desktop.json",
+      "bytes": 2795,
+      "sha256": "e7ded5060ac1f1be518ae3dcf4cde746726b8dfd0ae071bb00a335d9bd87ecae"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/inherited-industry-youth-island-c-v1-interactions-mobile.json",
+      "bytes": 2794,
+      "sha256": "c04c8c3c65d345eda0b3be9b315eef2fe2e3c1dd8a3aee61cefd4d6bf4e09c96"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/inherited-yuan-bridges-landscape-v1-zone-check-desktop.json",
+      "bytes": 2881,
+      "sha256": "6d086477b2e053d01f2af535f2249da1e1a5f0e7c0724da736fbba3e866abc82"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/inherited-yuan-bridges-landscape-v1-zone-check-mobile.json",
+      "bytes": 2880,
+      "sha256": "7af050af244865f28c9af0f70bf9eb24758334c2f0d754f9999fd7d2e2a3efd5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/mobile-controller.json",
+      "bytes": 16990,
+      "sha256": "8b16211a8d6af5fd613e3c12bfb7cc142a36fbecbf273d3d369381647b866192"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/playwright-affected-recheck.json",
+      "bytes": 13702,
+      "sha256": "57ab591cc9c5e25eed1f9c6d50d1d289417607ce21b0fd12877e4480697d7400"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/r21-desktop.json",
+      "bytes": 13682,
+      "sha256": "ea85519e3c95e9762115d8da847c5f9ea648880f5bff6dd3bf516bc644534ab7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/r21-mobile.json",
+      "bytes": 13668,
+      "sha256": "3eba61407d6c9c1400341b6acc7fa84064348dcc6ba915f280b732ec7645eb15"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/spaces-desktop.json",
+      "bytes": 10668,
+      "sha256": "a24b32c36dab7c1d36012388cbaafdc8460038d1b8788ffc7e880de6fffbc400"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/spaces-mobile.json",
+      "bytes": 10668,
+      "sha256": "3fcdbaac7df058dc670f446148d2d8c7eb282afee5b2a841cbb67373420e2703"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/water-interactions-desktop.json",
+      "bytes": 6812,
+      "sha256": "741921cd3066a20f9611cfa1f4c45af43ef8f06620ed4c63ae0581bd91bc58b4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/water-interactions-mobile.json",
+      "bytes": 6814,
+      "sha256": "e2ff9647976c9abe3a6a67e9804c605f6819a844c27a6c34fd67838c653c23fa"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/wet-recovery-desktop.json",
+      "bytes": 3294,
+      "sha256": "f352b8b9da5618390338ec5b0d7b45ba4231845fe912019601098189051bf7e3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-final/wet-recovery-mobile.json",
+      "bytes": 3295,
+      "sha256": "6e9d465288f51ce177f74b9dc60be8c2cd2ff8337db333acce7d82a2b7882e8d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/regression-initial/playwright.json",
+      "bytes": 102534,
+      "sha256": "9081f304f4256e9b5d36dfea88338d21f73067120dd9bc47fe273497d0611719"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/render-provenance.json",
+      "bytes": 960,
+      "sha256": "c27e8e9d6697b32fc5661859bccbdadcb9bcb20674fe9bb92e6538827e0b08b9"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 75829,
+      "sha256": "31b673b8d064007438e8a0af06a53c66a15d8d0da59c53ed144d68753ad6ab06"
+    },
+    {
+      "path": "package.json",
+      "bytes": 922,
+      "sha256": "385faa68d6888fb65008a5dbd81458845cfc8eee9c3de319a17439551c0a415f"
+    },
+    {
+      "path": "public/data/policies.json",
+      "bytes": 957,
+      "sha256": "83e6373ff9808bf8c65148b37e835a03fb32ac5041005229c15058de3e3c56ce"
+    },
+    {
+      "path": "public/models/bdeh-r21/B.glb",
+      "bytes": 2688464,
+      "sha256": "6c85316575c5e1b5648c2fa72ee49131ce0f4c217ba75d9fabf16a98ac4bdc2a"
+    },
+    {
+      "path": "public/models/bdeh-r21/D.glb",
+      "bytes": 2017996,
+      "sha256": "9009b49ec2715b133eacf65bd9ef0a2a87cda4ee602119f5a0a1c39d62cebb2c"
+    },
+    {
+      "path": "public/models/bdeh-r21/E.glb",
+      "bytes": 1876328,
+      "sha256": "6bff32a3180368c8332c6c6f122f7f991ee2a4d04a7da1d0900cd1ae6d8ba3cd"
+    },
+    {
+      "path": "public/models/bdeh-r21/H.glb",
+      "bytes": 2211576,
+      "sha256": "50467d750652cf7dbcab12e7863fd72cb641c340deee15d573af4ce0f4b9266d"
+    },
+    {
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "bytes": 4626100,
+      "sha256": "0346a6aff20bf016d7fc71fd808f8bae483055906557f487667585ddea4b6075"
+    },
+    {
+      "path": "public/models/industry-youth-c/industry-youth-c.glb",
+      "bytes": 2225844,
+      "sha256": "008c72da95ebf7fa299df3cb46f7a7f6ca523c0889b8c454895cbeea76db0f43"
+    },
+    {
+      "path": "public/models/parent-child-centre/parent-child-centre.glb",
+      "bytes": 20239060,
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44"
+    },
+    {
+      "path": "public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb",
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac"
+    },
+    {
+      "path": "scripts/bdeh/configure_site.py",
+      "bytes": 4395,
+      "sha256": "19035d02aad1f176abba274295b2f3894957663d6723e6b002fd6056785f2f60"
+    },
+    {
+      "path": "scripts/bdeh/prepare.py",
+      "bytes": 17578,
+      "sha256": "34566a2d0a4e7073691f22040c0964e9fd7217e0b4ef0cf8572cb368318c7d20"
+    },
+    {
+      "path": "scripts/bdeh/reference.py",
+      "bytes": 1850,
+      "sha256": "b9e52a1474df28c66521bd32440ceaa7bc780a28982c93dd6e6fcfbec6e321c2"
+    },
+    {
+      "path": "scripts/blender/build_bdeh_r21.py",
+      "bytes": 8114,
+      "sha256": "624124a653df0d90ba3b73280eda6cb0d21cb23d24ff8b0319ccec32c05cb3bb"
+    },
+    {
+      "path": "scripts/blender/flood_export.py",
+      "bytes": 4073,
+      "sha256": "d482ae72e0e6ccafdd280b405043a8ab0e898e61e65c853b497d45b993984b18"
+    },
+    {
+      "path": "scripts/blender/render_bdeh_r21.py",
+      "bytes": 1615,
+      "sha256": "f357f9818fe4ec9057eb1fd62dd6c313d78605cb74245197f79a3900de69180d"
+    },
+    {
+      "path": "scripts/bridge-landscape-domain.mjs",
+      "bytes": 8794,
+      "sha256": "1686755f5aa4ccfbc20c53d49250fa299277a0c6a9366f07093704d89fe61740"
+    },
+    {
+      "path": "scripts/build-yuan-world.mjs",
+      "bytes": 9222,
+      "sha256": "d167f47a387e03aded5ccdb949ed333c8dbee64fb45f6ef319500b6d66b034f9"
+    },
+    {
+      "path": "scripts/island-approaches.mjs",
+      "bytes": 2836,
+      "sha256": "55e9fceacdf36ac9422c5eb140860cf06c04e2c625b7f9613f39f90108bfa354"
+    },
+    {
+      "path": "scripts/qa/capture-bdeh-r21.mjs",
+      "bytes": 6203,
+      "sha256": "ce6766cdf45ee1b9e7c9b7f260424aece325639b488ff043e324b3d6565bc14f"
+    },
+    {
+      "path": "scripts/qa/exhibit-bdeh-r21.py",
+      "bytes": 5027,
+      "sha256": "5863110e8ca45a56aa847fd97732123f63e3539a6eaa85cb425801b929c8540e"
+    },
+    {
+      "path": "scripts/qa/manifest-bdeh-r21.py",
+      "bytes": 2807,
+      "sha256": "e201daed70b6aca31597eeeeb5563943dc5fc174ffe720bd993e79b34676a212"
+    },
+    {
+      "path": "scripts/qa/measure-bdeh-r21.mjs",
+      "bytes": 4142,
+      "sha256": "b846e49239371dd421b01ffe5a1e70db79cb186a7b5ba1894061a0f502797b7f"
+    },
+    {
+      "path": "scripts/qa/report-bdeh-r21.py",
+      "bytes": 19590,
+      "sha256": "fd06f0c6cb44469a53ed26113e515fd27e411def7d00e2ecfdd42f3640b7e003"
+    },
+    {
+      "path": "scripts/qa/verify-bdeh-r21.py",
+      "bytes": 1613,
+      "sha256": "603e741c927a734a212fb6382a7d3365818a76b2228d42c63426ca7669f57a5c"
+    },
+    {
+      "path": "src/data/bdeh-b-collision.json",
+      "bytes": 3377763,
+      "sha256": "f2120ad8eafb1e35d7482b6e5f8f53c23f070672ba1807c262bbbb66c12e568d"
+    },
+    {
+      "path": "src/data/bdeh-d-collision.json",
+      "bytes": 2836976,
+      "sha256": "19325b28caf24d5476b1a2dddc8812cbdee8e10d200a3ff558554558938d0f05"
+    },
+    {
+      "path": "src/data/bdeh-e-collision.json",
+      "bytes": 2925508,
+      "sha256": "97a9d440845c0f8f104625d2efe4981870130dcec55e137fbdfd7df3c32ed052"
+    },
+    {
+      "path": "src/data/bdeh-h-collision.json",
+      "bytes": 2951379,
+      "sha256": "1be8476583fa66a7d90f94439b1089f902a41c745f34497b85cdaa13865d36af"
+    },
+    {
+      "path": "src/data/bdeh-plan.json",
+      "bytes": 2241,
+      "sha256": "43ed47f159be22a1db022268cc12c72951d70323f14aae6a8a730c406a7832d1"
+    },
+    {
+      "path": "src/data/bridge-landscape.json",
+      "bytes": 213911,
+      "sha256": "f1fa1391238740ccf23374b247af2e53f205735d124b6319218716ecc83df77e"
+    },
+    {
+      "path": "src/data/flood-control-art.json",
+      "bytes": 3024,
+      "sha256": "336e21c537d42e1d7b8e68abaf30a2632f929aec675d3dc8c2c34465c41bddde"
+    },
+    {
+      "path": "src/data/flood-control-bridge-soffit.json",
+      "bytes": 6820,
+      "sha256": "e389f617b2227d0ddc7cb6ba55945c006444145bead2672d2c8d4ab35aaf2d18"
+    },
+    {
+      "path": "src/data/flood-control-collision.json",
+      "bytes": 620925,
+      "sha256": "6f5d9227c42127c4269a58352e038035c9644db91fb6897909f84017a9caaf75"
+    },
+    {
+      "path": "src/data/flood-control-floor.json",
+      "bytes": 16679,
+      "sha256": "139120e0b0dc6ec336a33c7aa410bd692f1998a97516c839da1d79e98f6a4a68"
+    },
+    {
+      "path": "src/data/flood-control-paving.json",
+      "bytes": 22364,
+      "sha256": "106a28e2ffd6398b2b8fc1c8d74ddbded04a9b19566e927de3abfcc231f34a7c"
+    },
+    {
+      "path": "src/data/flood-control-plan.json",
+      "bytes": 12932,
+      "sha256": "af54e7ff6349ba7dd8dcadfe1c2a0546efb8d1aec7f0d41b535b67d7517a7b27"
+    },
+    {
+      "path": "src/data/flood-control-site.json",
+      "bytes": 29711,
+      "sha256": "7a948201e33b5414aa6d9634540c7e93fd04310bf31662c71977a2de351ebd2c"
+    },
+    {
+      "path": "src/data/industry-youth-collision.json",
+      "bytes": 1282361,
+      "sha256": "a4dd2151edc1222509e875f62b113e96f58790d7985da2ecefae4d5d30ac597c"
+    },
+    {
+      "path": "src/data/industry-youth-plan.json",
+      "bytes": 4275,
+      "sha256": "99743161c8808b2a6a4dc74e18912c11c17e177197b6ba84899529de50d07b92"
+    },
+    {
+      "path": "src/data/industry-youth-v3-buildings.json",
+      "bytes": 1253,
+      "sha256": "d35f09a1f55f53dfcc144640e6a792042f231d352ab7c8e2350b427f40dd4312"
+    },
+    {
+      "path": "src/data/parent-child-collision.json",
+      "bytes": 1034450,
+      "sha256": "3ecda08b9e10dc58e412aa6c7b90cde055c71b7d87f62080e3dc172bdb392156"
+    },
+    {
+      "path": "src/data/parent-child-model.json",
+      "bytes": 3335,
+      "sha256": "73932f1fcd8a0ac74012a022e1cd1288842d003160675be6d8e7a6aa0768b600"
+    },
+    {
+      "path": "src/data/station-model.json",
+      "bytes": 946,
+      "sha256": "09819aef6cc55fc8850a4890c0709603e726b59c0f41fa632d23ffa69b514a1c"
+    },
+    {
+      "path": "src/data/transport.json",
+      "bytes": 1638,
+      "sha256": "858d6f58940fee8f4ff5dfa92524936d73825f93a51a5000ec0e6d64b58927eb"
+    },
+    {
+      "path": "src/data/yuan-layout.json",
+      "bytes": 80308,
+      "sha256": "9b784a0978f1eb2945519b8a6c5ad20887c2631b55382143b5947af291c8053a"
+    },
+    {
+      "path": "src/data/yuan-plan.json",
+      "bytes": 86654,
+      "sha256": "869dccb512523d0c5092e6870eaaeaa68b83006579717674c52dcc3d2c969775"
+    },
+    {
+      "path": "src/data/yuan-surface.json",
+      "bytes": 452969,
+      "sha256": "c6d3ca9686195c6fced2ccd9fd3630b105732e1916d81d193db57408a8cafa02"
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 12563,
+      "sha256": "ec0298cf690c47257edb351b0ef1caf5004d6d5d045d41917e65eab811557267"
+    },
+    {
+      "path": "src/sim/audio.js",
+      "bytes": 8570,
+      "sha256": "d2a2f74f1d5f634d566c3dfab89ee0fbab6fab39ccbfedc66b9dee43e109bf84"
+    },
+    {
+      "path": "src/sim/camera-clearance.js",
+      "bytes": 1795,
+      "sha256": "9e75cefd34bbdd53c99f0b01e095a4b5144cbc58f5efafead6b3e69bc4f3d523"
+    },
+    {
+      "path": "src/sim/camera-profile.js",
+      "bytes": 403,
+      "sha256": "d61d3978fad50b6b4438b5c5ef494a4f0a6a14a0b0864b303f7e9964ce508e79"
+    },
+    {
+      "path": "src/sim/movement.js",
+      "bytes": 2471,
+      "sha256": "1aa6f30fffc45466484ceeee974af3e8372740dbf1a8f22433d8075862d2882a"
+    },
+    {
+      "path": "src/sim/panorama.js",
+      "bytes": 2575,
+      "sha256": "a14c372c992091484c0ffd47cfd1efd5b274756f3ee7879f5601a419db5db312"
+    },
+    {
+      "path": "src/sim/player.js",
+      "bytes": 8816,
+      "sha256": "026fe21a032de3aee88e31521a29e10a73f10a27a67698da9529be5b1ff7d1eb"
+    },
+    {
+      "path": "src/sim/puzzle.js",
+      "bytes": 2159,
+      "sha256": "6f225b6104c557963346bf3fde12f6bc99557cc8081fb790eb9f807080452f7c"
+    },
+    {
+      "path": "src/sim/rng.js",
+      "bytes": 871,
+      "sha256": "69d254e1d153a9cb2b5af90bc72fd353f62dc5a1423a51bafd58f8cd725cee71"
+    },
+    {
+      "path": "src/sim/walkways.js",
+      "bytes": 3098,
+      "sha256": "3d60a2760048b3df7530a495bc1996780d9462449570dd02f90228b8590cd1fe"
+    },
+    {
+      "path": "src/world/bdeh-r21.js",
+      "bytes": 5078,
+      "sha256": "897765a3202bc26a1fa6af82e5ce5cff350c28ce9bfcbd76774536d95bedd705"
+    },
+    {
+      "path": "src/world/bridge-landscape.js",
+      "bytes": 12116,
+      "sha256": "a600e20155b7f278e6f1116d883245c4cd3553d13b7be04ff0e0409f3a1aed83"
+    },
+    {
+      "path": "src/world/bridges.js",
+      "bytes": 4510,
+      "sha256": "393497718737db2ec250276b17cb937bf5e6eb88d576eb4bc32fe52b37e91400"
+    },
+    {
+      "path": "src/world/elevated-station.js",
+      "bytes": 7674,
+      "sha256": "cda24e5a2e2502e6fb1b36eaf4fdafd0bf80b11b11c30402d668d60b6b3ee086"
+    },
+    {
+      "path": "src/world/flood-control.js",
+      "bytes": 8081,
+      "sha256": "e676774c9ddf09e9a26792e6e12b990b7ee57e050771664661498ba8c06527cf"
+    },
+    {
+      "path": "src/world/industry-youth.js",
+      "bytes": 4973,
+      "sha256": "b0ba8d95c2da7be13c6d09081e52e9830dd79add6ef6897ab45e7b90132475b8"
+    },
+    {
+      "path": "src/world/islands.js",
+      "bytes": 8121,
+      "sha256": "c6dde35f11569f36adf50c277a21fb380bb80c16d84457e290e5c3aff6211db1"
+    },
+    {
+      "path": "src/world/parent-child-model.js",
+      "bytes": 8348,
+      "sha256": "61c7b7eb9bb437b025f4584d24ddc93fabc36f739af56ebe50564f8727991d57"
+    },
+    {
+      "path": "src/world/station-model.js",
+      "bytes": 6388,
+      "sha256": "83354b54c04aa91cde840c54bcdb3f48c6d3de9412e397b051609a994e16c207"
+    },
+    {
+      "path": "test/bdeh-r21.e2e.js",
+      "bytes": 5372,
+      "sha256": "1deb28e1f07fffdfe40421370b093d0b4b21ad1ff7a73da185d24c7b8eb67ec9"
+    },
+    {
+      "path": "test/bdeh-r21.test.js",
+      "bytes": 11408,
+      "sha256": "47df8be7c8f2fb4b3e31747eddd6c154c56709a9f2fcb06842e0eb6572ce73d8"
+    },
+    {
+      "path": "test/bridge-landscape.test.js",
+      "bytes": 2787,
+      "sha256": "2d1d067d7b9f8dfad2a26cf59cff4ffd62afc8af48ee99c3715948619ab7ecba"
+    },
+    {
+      "path": "test/flood-v5.test.js",
+      "bytes": 10463,
+      "sha256": "e0c029b132e79d3216a52ce9a65baa15680338d86cff01e8e95d8c5d7172703b"
+    },
+    {
+      "path": "test/flood-v51.test.js",
+      "bytes": 7638,
+      "sha256": "9a9106b1cd0e966c724381e359e6204b0d87a08f5b4d6109a58e34a9b251e324"
+    },
+    {
+      "path": "test/helpers/r21-contracts.js",
+      "bytes": 3110,
+      "sha256": "cdca539b863741af86129a58701116d640ac4ac3940d749fffb91e63760ce85b"
+    },
+    {
+      "path": "test/helpers/r21-fixture.js",
+      "bytes": 466,
+      "sha256": "6505d0d009da99321ba765fb2da121849e6196d323f3a02c2e35e10f32434143"
+    },
+    {
+      "path": "test/helpers/software-qa.js",
+      "bytes": 852,
+      "sha256": "ade00495203783fb92c3b393083d81d1a72f499f398dd931025bbb5d81db6ec9"
+    },
+    {
+      "path": "test/industry-youth-v3.test.js",
+      "bytes": 5981,
+      "sha256": "80cfeef90d833ef522a20b1ee67d9ef346e127df82d169fe0c2ae22e488b45b6"
+    },
+    {
+      "path": "test/policy-scenery.test.js",
+      "bytes": 3788,
+      "sha256": "ae2dfd0442e060673a4768bc1f74e508feefdc6c9913a17768bf546738000438"
+    },
+    {
+      "path": "test/walkways.test.js",
+      "bytes": 9675,
+      "sha256": "1d6215ca2cb09a6ab94e914db06e6201bae31b7804cb5c4abcba64c04e914ecf"
+    },
+    {
+      "path": "test/world-spaces.e2e.js",
+      "bytes": 4513,
+      "sha256": "7c88ae7c01e6379c5101195d79d9fcf0807a46d9bc769d69f50644218efabfc7"
+    },
+    {
+      "path": "test/yuan-size-b.test.js",
+      "bytes": 1749,
+      "sha256": "697e7137065249abe88bc2a5d1bb3b3fe51cc89fa3a4bc2524e3b9fa231180ac"
+    }
+  ]
+}

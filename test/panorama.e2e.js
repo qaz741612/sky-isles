@@ -16,6 +16,7 @@ test('real 3D panorama fits, locks movement, preserves progress and returns the 
  await expect.poll(()=>page.evaluate(()=>window.__skyisles.world.player.move.grounded),{timeout:60000}).toBe(true);
  await page.waitForTimeout(1200);
  const before=await page.evaluate(()=>{const w=window.__skyisles.world;return{pos:w.player.pos.toArray(),checkpoint:w.player.lastGrounded.toArray(),orbit:{...w.player.orbit},cam:w.camera.position.toArray(),quaternion:w.camera.quaternion.toArray(),progress:w.puzzle.unlocked};});
+ await page.evaluate(()=>{const w=window.__skyisles.world,onMode=w.panorama.onMode;w.panorama.onMode=active=>{onMode(active);const p=w.player,pose={pos:p.pos.toArray(),checkpoint:p.lastGrounded.toArray(),orbit:{...p.orbit},cam:w.camera.position.toArray(),quaternion:w.camera.quaternion.toArray(),progress:w.puzzle.unlocked};if(active)w.__panoramaEntry=pose;else w.__panoramaReturn=pose;};});
  expect(before.progress).toBe(1);expect(Math.hypot(before.checkpoint[0],before.checkpoint[2])).toBeGreaterThan(50);
  await page.locator('#panorama-btn').click();
  await expect.poll(()=>page.evaluate(()=>window.__skyisles.getState().panoramaMode),{timeout:30000}).toBe('overview');
@@ -38,6 +39,10 @@ test('real 3D panorama fits, locks movement, preserves progress and returns the 
  for(const p of fitted){expect(Math.abs(p[0])).toBeLessThan(.86);expect(Math.abs(p[1])).toBeLessThan(.86);}
  await page.locator('#panorama-btn').click();await expect.poll(()=>page.evaluate(()=>window.__skyisles.getState().panoramaMode),{timeout:30000}).toBe('explore');
  const after=await page.evaluate(()=>{const w=window.__skyisles.world;return{pos:w.player.pos.toArray(),checkpoint:w.player.lastGrounded.toArray(),orbit:{...w.player.orbit},progress:w.puzzle.unlocked};});
- for(const key of['pos','checkpoint'])for(let i=0;i<3;i++)expect(after[key][i]).toBeCloseTo(before[key][i],10);expect(after.orbit).toEqual(before.orbit);expect(after.progress).toBe(before.progress);
+ for(const key of['pos','checkpoint'])for(let i=0;i<3;i++)expect(after[key][i]).toBeCloseTo(before[key][i],10);expect(after.progress).toBe(before.progress);
+ // Compare the actual mode-change events, not asynchronous samples while the
+ // ordinary idle arrival view is still turning before/after the button click.
+ const events=await page.evaluate(()=>{const w=window.__skyisles.world;return{entry:w.__panoramaEntry,returned:w.__panoramaReturn,laterOrbit:{...w.player.orbit}};});expect(events.returned).toEqual(events.entry);
+ const evidence=process.env.SKYISLES_QA_OUTPUT_DIR??folder;fs.mkdirSync(evidence,{recursive:true});fs.writeFileSync(`${evidence}/panorama-events-${isMobile?'mobile':'desktop'}.json`,JSON.stringify({method:'Observe actual onMode callbacks without changing production panorama/player/camera behavior. Exact entry and return poses; later idle arrival may continue turning normally.',beforeClick:before,...events},null,2)+'\n');
  await page.locator('#policy-menu summary').click();await page.locator('#policy-list button').first().click();await expect(page.locator('#policy-title')).toHaveText('交通大升級');expect(errors).toEqual([]);
 });

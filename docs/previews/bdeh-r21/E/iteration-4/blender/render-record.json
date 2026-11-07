@@ -1,0 +1,84 @@
+{
+  "sameSource": true,
+  "sourceBlendSHA256": "7c24d6414aaf0a5e393e1db333164b44a4bf949d2a7f28e1033d8369d28ca036",
+  "engine": "Cycles CPU, no denoiser available",
+  "samples": 64,
+  "records": [
+    {
+      "name": "hero",
+      "cameraBlender": [
+        36.0,
+        42.0,
+        30.0
+      ],
+      "rotation": [
+        1.0936275720596313,
+        -8.561841013943194e-09,
+        2.432966470718384
+      ],
+      "orthoScale": 45.0,
+      "size": [
+        800,
+        600
+      ],
+      "seconds": 33.08030847401824
+    },
+    {
+      "name": "front",
+      "cameraBlender": [
+        0.0,
+        60.0,
+        13.0
+      ],
+      "rotation": [
+        1.3734006881713867,
+        8.572508392035161e-08,
+        3.1415927410125732
+      ],
+      "orthoScale": 39.0,
+      "size": [
+        800,
+        600
+      ],
+      "seconds": 38.174412705993745
+    },
+    {
+      "name": "back",
+      "cameraBlender": [
+        0.0,
+        -60.0,
+        13.0
+      ],
+      "rotation": [
+        1.3734008073806763,
+        -0.0,
+        0.0
+      ],
+      "orthoScale": 39.0,
+      "size": [
+        800,
+        600
+      ],
+      "seconds": 32.52522849699017
+    },
+    {
+      "name": "left",
+      "cameraBlender": [
+        -60.0,
+        0.0,
+        13.0
+      ],
+      "rotation": [
+        1.3734006881713867,
+        -6.518786932474541e-08,
+        -1.5707963705062866
+      ],
+      "orthoScale": 39.0,
+      "size": [
+        800,
+        600
+      ],
+      "seconds": 27.534210801997688
+    }
+  ]
+}

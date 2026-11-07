@@ -1,0 +1,281 @@
+{
+  "method": "Read actual glTF binary accessor buffers, index ranges and unit normals; transformed GLB scene bounds via trimesh; no appearance edits or proxy boxes",
+  "islands": {
+    "B": {
+      "fixedIslandXZ": [
+        30,
+        28
+      ],
+      "before": {
+        "path": "docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21/B.glb",
+        "bytes": 2688464,
+        "triangles": 42012,
+        "meshPrimitives": 30,
+        "materialDefinitions": 21,
+        "transparentMaterials": 1,
+        "textures": 0,
+        "normalsUnitRange": [
+          0.9999998807907104,
+          1.0000001192092896
+        ],
+        "boundsYup": [
+          [
+            -14.894164085388184,
+            -8.0,
+            -14.027536392211914
+          ],
+          [
+            14.946639060974121,
+            7.149190902709961,
+            13.813920021057129
+          ]
+        ],
+        "dimensionsXYZ": [
+          29.840803146362305,
+          15.149190902709961,
+          27.841456413269043
+        ],
+        "buffersFiniteAndIndicesValid": true
+      },
+      "after": {
+        "path": "public/models/bdeh-r21/B.glb",
+        "bytes": 2752080,
+        "triangles": 43036,
+        "meshPrimitives": 30,
+        "materialDefinitions": 21,
+        "transparentMaterials": 1,
+        "textures": 0,
+        "normalsUnitRange": [
+          0.9999998807907104,
+          1.0000001192092896
+        ],
+        "boundsYup": [
+          [
+            -14.894164085388184,
+            -8.0,
+            -14.027536392211914
+          ],
+          [
+            14.946639060974121,
+            7.149190902709961,
+            13.813920021057129
+          ]
+        ],
+        "dimensionsXYZ": [
+          29.840803146362305,
+          15.149190902709961,
+          27.841456413269043
+        ],
+        "buffersFiniteAndIndicesValid": true
+      },
+      "outerXZBoundsUnchanged": true
+    },
+    "D": {
+      "fixedIslandXZ": [
+        32,
+        29
+      ],
+      "before": {
+        "path": "docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21/D.glb",
+        "bytes": 2017996,
+        "triangles": 32412,
+        "meshPrimitives": 33,
+        "materialDefinitions": 23,
+        "transparentMaterials": 2,
+        "textures": 0,
+        "normalsUnitRange": [
+          0.9999998807907104,
+          1.0000001192092896
+        ],
+        "boundsYup": [
+          [
+            -15.882115364074707,
+            -8.0,
+            -14.52586555480957
+          ],
+          [
+            15.938405990600586,
+            10.083826065063477,
+            14.304605484008789
+          ]
+        ],
+        "dimensionsXYZ": [
+          31.820521354675293,
+          18.083826065063477,
+          28.83047103881836
+        ],
+        "buffersFiniteAndIndicesValid": true
+      },
+      "after": {
+        "path": "public/models/bdeh-r21/D.glb",
+        "bytes": 2021352,
+        "triangles": 32448,
+        "meshPrimitives": 35,
+        "materialDefinitions": 23,
+        "transparentMaterials": 2,
+        "textures": 0,
+        "normalsUnitRange": [
+          0.9999998807907104,
+          1.0000001192092896
+        ],
+        "boundsYup": [
+          [
+            -15.882115364074707,
+            -8.0,
+            -14.52586555480957
+          ],
+          [
+            15.938405990600586,
+            10.083826065063477,
+            14.304605484008789
+          ]
+        ],
+        "dimensionsXYZ": [
+          31.820521354675293,
+          18.083826065063477,
+          28.83047103881836
+        ],
+        "buffersFiniteAndIndicesValid": true
+      },
+      "outerXZBoundsUnchanged": true
+    },
+    "E": {
+      "fixedIslandXZ": [
+        34,
+        31
+      ],
+      "before": {
+        "path": "docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21/E.glb",
+        "bytes": 1876328,
+        "triangles": 30492,
+        "meshPrimitives": 30,
+        "materialDefinitions": 20,
+        "transparentMaterials": 1,
+        "textures": 0,
+        "normalsUnitRange": [
+          0.9999998807907104,
+          1.0000001192092896
+        ],
+        "boundsYup": [
+          [
+            -16.795339584350586,
+            -8.0,
+            -15.522491455078125
+          ],
+          [
+            16.85516929626465,
+            8.282567024230957,
+            15.285972595214844
+          ]
+        ],
+        "dimensionsXYZ": [
+          33.650508880615234,
+          16.282567024230957,
+          30.80846405029297
+        ],
+        "buffersFiniteAndIndicesValid": true
+      },
+      "after": {
+        "path": "public/models/bdeh-r21/E.glb",
+        "bytes": 2190360,
+        "triangles": 35668,
+        "meshPrimitives": 33,
+        "materialDefinitions": 23,
+        "transparentMaterials": 1,
+        "textures": 0,
+        "normalsUnitRange": [
+          0.9999998807907104,
+          1.0000001192092896
+        ],
+        "boundsYup": [
+          [
+            -16.795339584350586,
+            -8.0,
+            -15.522491455078125
+          ],
+          [
+            16.85516929626465,
+            8.542488098144531,
+            15.285972595214844
+          ]
+        ],
+        "dimensionsXYZ": [
+          33.650508880615234,
+          16.54248809814453,
+          30.80846405029297
+        ],
+        "buffersFiniteAndIndicesValid": true
+      },
+      "outerXZBoundsUnchanged": true
+    },
+    "H": {
+      "fixedIslandXZ": [
+        33,
+        30
+      ],
+      "before": {
+        "path": "docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21/H.glb",
+        "bytes": 2211576,
+        "triangles": 36492,
+        "meshPrimitives": 32,
+        "materialDefinitions": 22,
+        "transparentMaterials": 1,
+        "textures": 0,
+        "normalsUnitRange": [
+          0.9999998807907104,
+          1.0000001192092896
+        ],
+        "boundsYup": [
+          [
+            -16.301359176635742,
+            -8.0,
+            -15.024173736572266
+          ],
+          [
+            16.434154510498047,
+            9.985459327697754,
+            14.795292854309082
+          ]
+        ],
+        "dimensionsXYZ": [
+          32.73551368713379,
+          17.985459327697754,
+          29.819466590881348
+        ],
+        "buffersFiniteAndIndicesValid": true
+      },
+      "after": {
+        "path": "public/models/bdeh-r21/H.glb",
+        "bytes": 2221400,
+        "triangles": 36624,
+        "meshPrimitives": 35,
+        "materialDefinitions": 22,
+        "transparentMaterials": 1,
+        "textures": 0,
+        "normalsUnitRange": [
+          0.9999998807907104,
+          1.0000001192092896
+        ],
+        "boundsYup": [
+          [
+            -16.301359176635742,
+            -8.0,
+            -15.024173736572266
+          ],
+          [
+            16.434154510498047,
+            9.985459327697754,
+            14.795292854309082
+          ]
+        ],
+        "dimensionsXYZ": [
+          32.73551368713379,
+          17.985459327697754,
+          29.819466590881348
+        ],
+        "buffersFiniteAndIndicesValid": true
+      },
+      "outerXZBoundsUnchanged": true
+    }
+  }
+}

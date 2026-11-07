@@ -5,7 +5,7 @@ Baking preserves each evaluated corner normal, world position and original PBR m
 import bpy
 from mathutils import Vector
 
-def export_batched(model,path):
+def export_batched(model,path,asset_name='FloodControlPark',asset_role='G island V1; grouped by assembly and material'):
     scene=bpy.context.scene;deps=bpy.context.evaluated_depsgraph_get();groups={}
     def key(obj):
         chain=[];node=obj
@@ -32,7 +32,7 @@ def export_batched(model,path):
         o=bpy.data.objects.new(name,None);collection.objects.link(o);created.append(o)
         if parent:o.parent=parent
         return o
-    root=empty('FloodControlPark');root['role']='G island V1; grouped by assembly and material';parents={};triangles=0
+    root=empty(asset_name);root['role']=asset_role;parents={};triangles=0
     for(role,assembly,name),batch in groups.items():
         if role not in parents:parents[role]=empty(role,root)
         k=(role,assembly)

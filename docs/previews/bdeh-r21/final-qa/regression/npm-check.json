@@ -1,0 +1,10 @@
+{
+  "command": "npm run check",
+  "unitTests": 89,
+  "passed": 89,
+  "failed": 0,
+  "lint": "passed",
+  "productionBuild": "passed",
+  "rawLog": "npm-check.log",
+  "warning": "Large existing world JS bundle; final comparative sizes and software timings measured separately"
+}

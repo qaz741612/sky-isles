@@ -1,0 +1,1396 @@
+{
+  "designRevision": "BDEH R2 candidate: keep T4 moved right, E S03 skirts proposed E building, B north hall moved outside S13/S14",
+  "baseline": "PR18 / 2b4404927f33096ab28539a01f5e6236d670c038",
+  "revision": "design-only candidate; no GitHub write, collision game verification pending",
+  "nodes": {
+    "F": [
+      0,
+      0
+    ],
+    "A": [
+      -22.55,
+      -19.656
+    ],
+    "B": [
+      -55,
+      4
+    ],
+    "C": [
+      -20.358,
+      38.61
+    ],
+    "E": [
+      32.5,
+      -20.5
+    ],
+    "D": [
+      -53.352,
+      87.048
+    ],
+    "G": [
+      44.928,
+      45.279
+    ],
+    "H": [
+      50.544,
+      88.452
+    ],
+    "J1": [
+      -12.285,
+      -0.702
+    ],
+    "J2": [
+      15.093,
+      0.702
+    ],
+    "J3": [
+      44.226,
+      6.318
+    ],
+    "J4": [
+      -2.106,
+      71.253
+    ],
+    "T1": [
+      -43.875,
+      -23.517
+    ],
+    "T2": [
+      55.107,
+      -17.199
+    ],
+    "T3": [
+      -23.603,
+      -37.206
+    ],
+    "T4": [
+      51,
+      -47
+    ],
+    "T5": [
+      -36.153,
+      -7.371
+    ],
+    "T6": [
+      -76,
+      26
+    ],
+    "T7": [
+      -77,
+      109
+    ],
+    "T8": [
+      58.617,
+      65.286
+    ],
+    "T9": [
+      31.239,
+      37.557
+    ]
+  },
+  "originalNodes": {
+    "F": [
+      0,
+      0
+    ],
+    "A": [
+      -22.55,
+      -19.656
+    ],
+    "B": [
+      -42.12,
+      -1.404
+    ],
+    "C": [
+      -20.358,
+      38.61
+    ],
+    "E": [
+      26.676,
+      -18.252
+    ],
+    "D": [
+      -53.352,
+      87.048
+    ],
+    "G": [
+      44.928,
+      45.279
+    ],
+    "H": [
+      50.544,
+      88.452
+    ],
+    "J1": [
+      -12.285,
+      -0.702
+    ],
+    "J2": [
+      15.093,
+      0.702
+    ],
+    "J3": [
+      44.226,
+      6.318
+    ],
+    "J4": [
+      -2.106,
+      71.253
+    ],
+    "T1": [
+      -43.875,
+      -23.517
+    ],
+    "T2": [
+      55.107,
+      -17.199
+    ],
+    "T3": [
+      -23.603,
+      -37.206
+    ],
+    "T4": [
+      29.484,
+      -32.994
+    ],
+    "T5": [
+      -36.153,
+      -7.371
+    ],
+    "T6": [
+      -51.246,
+      14.04
+    ],
+    "T7": [
+      -59.67,
+      92.313
+    ],
+    "T8": [
+      58.617,
+      65.286
+    ],
+    "T9": [
+      31.239,
+      37.557
+    ]
+  },
+  "modifiedNodes": {
+    "B": [
+      -55,
+      4
+    ],
+    "E": [
+      32.5,
+      -20.5
+    ],
+    "T4": [
+      51,
+      -47
+    ],
+    "T6": [
+      -76,
+      26
+    ],
+    "T7": [
+      -77,
+      109
+    ]
+  },
+  "T4Revision": {
+    "priorCandidateXZ": [
+      29,
+      -47
+    ],
+    "newCandidateXZ": [
+      51,
+      -47
+    ],
+    "S06CtrlPointsXZ": [
+      [
+        51,
+        -47
+      ],
+      [
+        45.5,
+        -39
+      ],
+      [
+        36,
+        -25
+      ],
+      [
+        32.5,
+        -20.5
+      ]
+    ],
+    "expectedAppearance": "from upper-right T4 toward lower-left E in world-Z-down diagram",
+    "validatedAsGameCollision": false
+  },
+  "islands": [
+    {
+      "island": "B",
+      "center": [
+        -55,
+        4
+      ],
+      "candidateSize": [
+        31.4,
+        28.6
+      ],
+      "protectedGaps": {
+        "F": 29.136,
+        "C": 14.256,
+        "G": 68.998,
+        "A": 12.965,
+        "D": 52.775,
+        "E": 59.808,
+        "H": 103.81
+      }
+    },
+    {
+      "island": "D",
+      "center": [
+        -53.352,
+        87.048
+      ],
+      "candidateSize": [
+        34,
+        32
+      ],
+      "protectedGaps": {
+        "F": 73.276,
+        "C": 24.224,
+        "G": 66.044,
+        "A": 82.986,
+        "B": 52.775,
+        "E": 106.032,
+        "H": 69.914
+      }
+    },
+    {
+      "island": "E",
+      "center": [
+        32.5,
+        -20.5
+      ],
+      "candidateSize": [
+        31,
+        30
+      ],
+      "protectedGaps": {
+        "F": 8.789,
+        "C": 44.519,
+        "G": 33.874,
+        "A": 27.563,
+        "B": 59.808,
+        "D": 106.032,
+        "H": 80.373
+      }
+    },
+    {
+      "island": "H",
+      "center": [
+        50.544,
+        88.452
+      ],
+      "candidateSize": [
+        34,
+        30
+      ],
+      "protectedGaps": {
+        "F": 74.022,
+        "C": 51.161,
+        "G": 10.621,
+        "A": 102.862,
+        "B": 103.81,
+        "D": 69.914,
+        "E": 80.373
+      }
+    }
+  ],
+  "roads": [
+    {
+      "id": "S01",
+      "changed": false,
+      "oldLength": 21.879,
+      "newLength": 21.879,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S02",
+      "changed": true,
+      "oldLength": 49.251,
+      "newLength": 55.075,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S03",
+      "changed": true,
+      "oldLength": 28.457,
+      "newLength": 22.895,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S04",
+      "changed": false,
+      "oldLength": 17.632,
+      "newLength": 17.632,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S05",
+      "changed": false,
+      "oldLength": 22.146,
+      "newLength": 22.146,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S06",
+      "changed": true,
+      "oldLength": 15.192,
+      "newLength": 32.321,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S07",
+      "changed": true,
+      "oldLength": 22.256,
+      "newLength": 27.476,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S08",
+      "changed": true,
+      "oldLength": 29.852,
+      "newLength": 43.016,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S09",
+      "changed": false,
+      "oldLength": 12.305,
+      "newLength": 12.305,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S10",
+      "changed": false,
+      "oldLength": 15.109,
+      "newLength": 15.109,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S11",
+      "changed": false,
+      "oldLength": 30.905,
+      "newLength": 30.905,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S12",
+      "changed": true,
+      "oldLength": 8.516,
+      "newLength": 22.149,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S13",
+      "changed": true,
+      "oldLength": 18.348,
+      "newLength": 30.586,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S14",
+      "changed": true,
+      "oldLength": 47.416,
+      "newLength": 49.809,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S15",
+      "changed": false,
+      "oldLength": 44.313,
+      "newLength": 44.313,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S16",
+      "changed": false,
+      "oldLength": 58.892,
+      "newLength": 58.892,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S17",
+      "changed": true,
+      "oldLength": 8.224,
+      "newLength": 32.266,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S18",
+      "changed": false,
+      "oldLength": 71.364,
+      "newLength": 71.364,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S19",
+      "changed": false,
+      "oldLength": 59.871,
+      "newLength": 59.871,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S20",
+      "changed": false,
+      "oldLength": 28.645,
+      "newLength": 28.645,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S21",
+      "changed": false,
+      "oldLength": 40.473,
+      "newLength": 40.473,
+      "unexpectedProtectedIslandOverlap": []
+    },
+    {
+      "id": "S22",
+      "changed": false,
+      "oldLength": 16.506,
+      "newLength": 16.506,
+      "unexpectedProtectedIslandOverlap": []
+    }
+  ],
+  "protected": "F/A/C/G positions not modified",
+  "approximatedControlPointIDs": [],
+  "allRoutesProposed": [
+    {
+      "id": "S01",
+      "from": "T1",
+      "to": "A",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -43.875,
+          -23.517
+        ],
+        [
+          -39.004,
+          -20.358
+        ],
+        [
+          -31.325,
+          -20.358
+        ],
+        [
+          -22.55,
+          -19.656
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -43.875,
+          -23.517
+        ],
+        [
+          -39.004,
+          -20.358
+        ],
+        [
+          -31.325,
+          -20.358
+        ],
+        [
+          -22.55,
+          -19.656
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S02",
+      "from": "A",
+      "to": "E",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -22.55,
+          -19.656
+        ],
+        [
+          -8.159,
+          -18.603
+        ],
+        [
+          12.987,
+          -18.954
+        ],
+        [
+          26.676,
+          -18.252
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -22.55,
+          -19.656
+        ],
+        [
+          -8.159,
+          -18.603
+        ],
+        [
+          17.180280000000003,
+          -20.572560000000003
+        ],
+        [
+          32.5,
+          -20.5
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": true
+    },
+    {
+      "id": "S03",
+      "from": "E",
+      "to": "T2",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          26.676,
+          -18.252
+        ],
+        [
+          36.504,
+          -17.55
+        ],
+        [
+          45.63,
+          -17.199
+        ],
+        [
+          55.107,
+          -17.199
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          32.5,
+          -20.5
+        ],
+        [
+          40,
+          -22.5
+        ],
+        [
+          48,
+          -20.5
+        ],
+        [
+          55.107,
+          -17.199
+        ]
+      ],
+      "controlSource": "BDEH redesign planned S03 corridor clearance; unvalidated actual game; original PR18 retains old",
+      "changed": true
+    },
+    {
+      "id": "S04",
+      "from": "T3",
+      "to": "A",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -23.603,
+          -37.206
+        ],
+        [
+          -24.305,
+          -31.59
+        ],
+        [
+          -23.252,
+          -24.57
+        ],
+        [
+          -22.55,
+          -19.656
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -23.603,
+          -37.206
+        ],
+        [
+          -24.305,
+          -31.59
+        ],
+        [
+          -23.252,
+          -24.57
+        ],
+        [
+          -22.55,
+          -19.656
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S05",
+      "from": "A",
+      "to": "J1",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -22.55,
+          -19.656
+        ],
+        [
+          -21.146,
+          -14.391
+        ],
+        [
+          -18.295,
+          -3.51
+        ],
+        [
+          -12.285,
+          -0.702
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -22.55,
+          -19.656
+        ],
+        [
+          -21.146,
+          -14.391
+        ],
+        [
+          -18.295,
+          -3.51
+        ],
+        [
+          -12.285,
+          -0.702
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S06",
+      "from": "T4",
+      "to": "E",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          29.484,
+          -32.994
+        ],
+        [
+          29.835,
+          -27.027
+        ],
+        [
+          28.782,
+          -22.464
+        ],
+        [
+          26.676,
+          -18.252
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          51,
+          -47
+        ],
+        [
+          45.5,
+          -39
+        ],
+        [
+          36,
+          -25
+        ],
+        [
+          32.5,
+          -20.5
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": true
+    },
+    {
+      "id": "S07",
+      "from": "E",
+      "to": "J2",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          26.676,
+          -18.252
+        ],
+        [
+          24.219,
+          -11.934
+        ],
+        [
+          19.305,
+          -5.967
+        ],
+        [
+          15.093,
+          0.702
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          32.5,
+          -20.5
+        ],
+        [
+          28.412280000000003,
+          -13.55256
+        ],
+        [
+          19.305,
+          -5.967
+        ],
+        [
+          15.093,
+          0.702
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": true
+    },
+    {
+      "id": "S08",
+      "from": "B",
+      "to": "J1",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -42.12,
+          -1.404
+        ],
+        [
+          -31.59,
+          -1.404
+        ],
+        [
+          -19.656,
+          -1.404
+        ],
+        [
+          -12.285,
+          -0.702
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -55.0,
+          4.0
+        ],
+        [
+          -40.863600000000005,
+          2.4868799999999998
+        ],
+        [
+          -19.656,
+          -1.404
+        ],
+        [
+          -12.285,
+          -0.702
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": true
+    },
+    {
+      "id": "S09",
+      "from": "J1",
+      "to": "F",
+      "kind": "line",
+      "oldControlPointsXZ": [
+        [
+          -12.285,
+          -0.702
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -12.285,
+          -0.702
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S10",
+      "from": "F",
+      "to": "J2",
+      "kind": "line",
+      "oldControlPointsXZ": [
+        [
+          0,
+          0
+        ],
+        [
+          15.093,
+          0.702
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          0,
+          0
+        ],
+        [
+          15.093,
+          0.702
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S11",
+      "from": "J2",
+      "to": "J3",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          15.093,
+          0.702
+        ],
+        [
+          29.133,
+          1.404
+        ],
+        [
+          40.716,
+          -0.702
+        ],
+        [
+          44.226,
+          6.318
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          15.093,
+          0.702
+        ],
+        [
+          29.133,
+          1.404
+        ],
+        [
+          40.716,
+          -0.702
+        ],
+        [
+          44.226,
+          6.318
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S12",
+      "from": "T5",
+      "to": "B",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -36.153,
+          -7.371
+        ],
+        [
+          -37.908,
+          -4.212
+        ],
+        [
+          -40.365,
+          -2.808
+        ],
+        [
+          -42.12,
+          -1.404
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -36.153,
+          -7.371
+        ],
+        [
+          -37.908,
+          -4.212
+        ],
+        [
+          -49.638600000000004,
+          1.0828799999999998
+        ],
+        [
+          -55.0,
+          4.0
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": true
+    },
+    {
+      "id": "S13",
+      "from": "B",
+      "to": "T6",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -42.12,
+          -1.404
+        ],
+        [
+          -46.332,
+          4.212
+        ],
+        [
+          -51.948,
+          9.477
+        ],
+        [
+          -51.246,
+          14.04
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -55.0,
+          4.0
+        ],
+        [
+          -55.6056,
+          8.102879999999999
+        ],
+        [
+          -69.77088,
+          18.0882
+        ],
+        [
+          -76.0,
+          26.0
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": true
+    },
+    {
+      "id": "S14",
+      "from": "B",
+      "to": "C",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -42.12,
+          -1.404
+        ],
+        [
+          -44.577,
+          10.881
+        ],
+        [
+          -34.047,
+          27.027
+        ],
+        [
+          -20.358,
+          38.61
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -55.0,
+          4.0
+        ],
+        [
+          -53.8506,
+          14.77188
+        ],
+        [
+          -34.047,
+          27.027
+        ],
+        [
+          -20.358,
+          38.61
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": true
+    },
+    {
+      "id": "S15",
+      "from": "F",
+      "to": "C",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          0,
+          0
+        ],
+        [
+          -1.404,
+          14.04
+        ],
+        [
+          -10.53,
+          27.027
+        ],
+        [
+          -20.358,
+          38.61
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -1.404,
+          14.04
+        ],
+        [
+          -10.53,
+          27.027
+        ],
+        [
+          -20.358,
+          38.61
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S16",
+      "from": "C",
+      "to": "D",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -20.358,
+          38.61
+        ],
+        [
+          -33.345,
+          55.458
+        ],
+        [
+          -35.802,
+          71.253
+        ],
+        [
+          -53.352,
+          87.048
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -20.358,
+          38.61
+        ],
+        [
+          -33.345,
+          55.458
+        ],
+        [
+          -35.802,
+          71.253
+        ],
+        [
+          -53.352,
+          87.048
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S17",
+      "from": "D",
+      "to": "T7",
+      "kind": "line",
+      "oldControlPointsXZ": [
+        [
+          -53.352,
+          87.048
+        ],
+        [
+          -59.67,
+          92.313
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -53.352,
+          87.048
+        ],
+        [
+          -77,
+          109
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": true
+    },
+    {
+      "id": "S18",
+      "from": "F",
+      "to": "J4",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          0,
+          0
+        ],
+        [
+          2.457,
+          21.06
+        ],
+        [
+          -1.755,
+          47.385
+        ],
+        [
+          -2.106,
+          71.253
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.457,
+          21.06
+        ],
+        [
+          -1.755,
+          47.385
+        ],
+        [
+          -2.106,
+          71.253
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S19",
+      "from": "J4",
+      "to": "H",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          -2.106,
+          71.253
+        ],
+        [
+          -2.3073,
+          84.942
+        ],
+        [
+          24.57,
+          89.856
+        ],
+        [
+          50.544,
+          88.452
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          -2.106,
+          71.253
+        ],
+        [
+          -2.3073,
+          84.942
+        ],
+        [
+          24.57,
+          89.856
+        ],
+        [
+          50.544,
+          88.452
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S20",
+      "from": "H",
+      "to": "T8",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          50.544,
+          88.452
+        ],
+        [
+          59.319,
+          88.803
+        ],
+        [
+          60.021,
+          83.538
+        ],
+        [
+          58.617,
+          65.286
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          50.544,
+          88.452
+        ],
+        [
+          59.319,
+          88.803
+        ],
+        [
+          60.021,
+          83.538
+        ],
+        [
+          58.617,
+          65.286
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S21",
+      "from": "J3",
+      "to": "G",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          44.226,
+          6.318
+        ],
+        [
+          47.736,
+          13.338
+        ],
+        [
+          53.001,
+          33.696
+        ],
+        [
+          44.928,
+          45.279
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          44.226,
+          6.318
+        ],
+        [
+          47.736,
+          13.338
+        ],
+        [
+          53.001,
+          33.696
+        ],
+        [
+          44.928,
+          45.279
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    },
+    {
+      "id": "S22",
+      "from": "G",
+      "to": "T9",
+      "kind": "cubic",
+      "oldControlPointsXZ": [
+        [
+          44.928,
+          45.279
+        ],
+        [
+          37.908,
+          46.683
+        ],
+        [
+          36.504,
+          40.716
+        ],
+        [
+          31.239,
+          37.557
+        ]
+      ],
+      "proposedControlPointsXZ": [
+        [
+          44.928,
+          45.279
+        ],
+        [
+          37.908,
+          46.683
+        ],
+        [
+          36.504,
+          40.716
+        ],
+        [
+          31.239,
+          37.557
+        ]
+      ],
+      "controlSource": "GitHub yuan-plan.json @ 2b440492 checked in current conversation",
+      "changed": false
+    }
+  ],
+  "notes": [
+    "Geometry of B,D,E,H is design only; plaza corridor samples are not integrated gameplay navmesh",
+    "Four island safe 4.8 approaches audited separately in QA json",
+    "Before construction, recalculate actual Bezier bridge meshes, islands, lamps and collision on a new dedicated branch"
+  ]
+}

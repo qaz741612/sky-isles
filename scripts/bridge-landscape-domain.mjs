@@ -12,7 +12,7 @@ export function compileLandscape({paths,nodes,coreDomain,islePolys,footprint,con
  const weight=p=>Math.max(0,Math.min(1,(isleDistance(p.x,p.z)-1)/3));
  function band(path,a,b,points=path.points){const sides=points.map((p,i)=>{const v=sample(path,p.s/path.length),w=weight(p);return[[p.x+v.nx*a(w),p.z+v.nz*a(w)],[p.x+v.nx*b(w),p.z+v.nz*b(w)]];});const ring=[...sides.map(p=>p[0]),...sides.toReversed().map(p=>p[1])];return snap([[...ring,ring[0]]]);}
  const protectedRoads=paths.map(p=>band(p,()=>-2.55,()=>2.55));
- const protectedDomain=polygon.union(coreDomain,...protectedRoads);
+ const protectedDomain=protectedRoads.reduce((domain,road)=>polygon.union(snap(domain),road),snap(coreDomain));
  const additions=[],zones=config.zones.map(z=>({...z,beds:[],shoulders:[],finishes:[],islandFinishes:[],platforms:[],foliage:[]})),routes=[];
  const circleDomain=polygon.union(...islePolys);
  for(const path of paths){const z=zoneFor(path.id),out=zones.find(v=>v.id===z.id),inside=path.points.every(p=>contains(circleDomain,p.x,p.z));routes.push({id:path.id,zone:z.id,length:path.length,mode:inside?'island-walk':path.id==='S09'?'junction-connector':'landscaped-bridge',active:active(path.id)});if(!active(path.id))continue;

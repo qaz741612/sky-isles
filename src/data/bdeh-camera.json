@@ -1,0 +1,49 @@
+{
+  "scope": "R21 final QA; local framing only, original F/A/C/G profiles unchanged",
+  "idleDelay": 0.45,
+  "maximumIdleYawRate": 0.95,
+  "B": {
+    "pitch": 0.46,
+    "focus": [
+      -3.8,
+      2.8,
+      -3.5
+    ],
+    "fallbackYaw": 0.78
+  },
+  "D": {
+    "pitch": 0.35,
+    "focus": [
+      -4,
+      3.5,
+      -4
+    ],
+    "arrivalFocus": [
+      0,
+      0
+    ],
+    "fallbackYaw": 1.45
+  },
+  "E": {
+    "pitch": 0.32,
+    "focus": [
+      8,
+      2.8,
+      0.5
+    ],
+    "fallbackYaw": -2.7,
+    "arrivalFocus": [
+      1.2,
+      1.6
+    ]
+  },
+  "H": {
+    "pitch": 0.42,
+    "focus": [
+      0,
+      4.1,
+      6.8
+    ],
+    "fallbackYaw": 3.141592653589793
+  }
+}

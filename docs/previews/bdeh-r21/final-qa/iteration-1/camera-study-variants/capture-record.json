@@ -1,0 +1,548 @@
+{
+  "port": 4276,
+  "method": "Actual eight-island Three.js world. Same player centre, original profile, five seconds idle. Native view uses production local rig, never QA positioning.",
+  "served": {
+    "D.glb": "9009b49ec2715b133eacf65bd9ef0a2a87cda4ee602119f5a0a1c39d62cebb2c",
+    "B.glb": "6c85316575c5e1b5648c2fa72ee49131ce0f4c217ba75d9fabf16a98ac4bdc2a",
+    "E.glb": "6bff32a3180368c8332c6c6f122f7f991ee2a4d04a7da1d0900cd1ae6d8ba3cd",
+    "H.glb": "50467d750652cf7dbcab12e7863fd72cb641c340deee15d573af4ce0f4b9266d"
+  },
+  "records": [
+    {
+      "variant": -0.8,
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "initialOrbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "idleSeconds": 5,
+      "errors": [],
+      "code": "D",
+      "kind": "native",
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -68.17702421808919,
+        9.188751759847605,
+        101.44627997560524
+      ],
+      "quaternion": [
+        -0.15458744747890113,
+        -0.3838943977216985,
+        -0.06535852449612072,
+        0.9079956364187785
+      ],
+      "orbit": {
+        "yaw": -0.8,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "aspect": 0.4613733905579399,
+      "grounded": true,
+      "discovery": {
+        "island": "D",
+        "idle": 4.999999999999988,
+        "manual": true,
+        "orbit": {
+          "yaw": -0.8,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        }
+      },
+      "metrics": {
+        "arrivals": 1,
+        "idleTurns": 33,
+        "manualOverrides": 1,
+        "localFrames": 300,
+        "maximumIdleYawStep": 0.022500000000000003
+      },
+      "render": {
+        "frame": 2,
+        "calls": 371,
+        "triangles": 459588,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "variant": 1.45,
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "initialOrbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "idleSeconds": 5,
+      "errors": [],
+      "code": "D",
+      "kind": "native",
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -32.83639509966406,
+        9.188751759847605,
+        89.53833429405739
+      ],
+      "quaternion": [
+        -0.12562535579573114,
+        0.6537287890958825,
+        0.11129818337937039,
+        0.7378818703999165
+      ],
+      "orbit": {
+        "yaw": 1.45,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "aspect": 0.4613733905579399,
+      "grounded": true,
+      "discovery": {
+        "island": "D",
+        "idle": 4.999999999999988,
+        "manual": true,
+        "orbit": {
+          "yaw": 1.45,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        }
+      },
+      "metrics": {
+        "arrivals": 2,
+        "idleTurns": 66,
+        "manualOverrides": 2,
+        "localFrames": 600,
+        "maximumIdleYawStep": 0.022500000000000003
+      },
+      "render": {
+        "frame": 3,
+        "calls": 72,
+        "triangles": 43470,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "variant": 2.25,
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "initialOrbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "idleSeconds": 5,
+      "errors": [],
+      "code": "D",
+      "kind": "native",
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -37.27218394540233,
+        9.188751759847605,
+        74.06603847744304
+      ],
+      "quaternion": [
+        -0.07236706100762362,
+        0.8894688230836979,
+        0.1514332332200263,
+        0.4250602276380952
+      ],
+      "orbit": {
+        "yaw": 2.25,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "aspect": 0.4613733905579399,
+      "grounded": true,
+      "discovery": {
+        "island": "D",
+        "idle": 4.999999999999988,
+        "manual": true,
+        "orbit": {
+          "yaw": 2.25,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        }
+      },
+      "metrics": {
+        "arrivals": 3,
+        "idleTurns": 99,
+        "manualOverrides": 3,
+        "localFrames": 900,
+        "maximumIdleYawStep": 0.022500000000000003
+      },
+      "render": {
+        "frame": 4,
+        "calls": 97,
+        "triangles": 67126,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "variant": -2.8,
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "initialOrbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "idleSeconds": 5,
+      "errors": [],
+      "code": "D",
+      "kind": "native",
+      "player": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "camera": [
+        -55.98527078487974,
+        4.5144115575150146,
+        79.6413900605464
+      ],
+      "quaternion": [
+        0.026767131395119614,
+        0.9731528099302417,
+        0.15519271522596173,
+        -0.16784621039077657
+      ],
+      "orbit": {
+        "yaw": -2.8,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "aspect": 0.4613733905579399,
+      "grounded": true,
+      "discovery": {
+        "island": "D",
+        "idle": 4.999999999999988,
+        "manual": true,
+        "orbit": {
+          "yaw": -2.8,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        }
+      },
+      "metrics": {
+        "arrivals": 4,
+        "idleTurns": 132,
+        "manualOverrides": 4,
+        "localFrames": 1200,
+        "maximumIdleYawStep": 0.022500000000000003
+      },
+      "render": {
+        "frame": 5,
+        "calls": 66,
+        "triangles": 38743,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "variant": -1.2,
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "initialOrbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "idleSeconds": 5,
+      "errors": [],
+      "code": "E",
+      "kind": "native",
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        13.45786176151813,
+        9.805250322913293,
+        -13.096805695793005
+      ],
+      "quaternion": [
+        -0.15077410116801584,
+        -0.561117836912785,
+        -0.10482095398505875,
+        0.8071099746137178
+      ],
+      "orbit": {
+        "yaw": -1.2,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "aspect": 0.4613733905579399,
+      "grounded": true,
+      "discovery": {
+        "island": "E",
+        "idle": 4.999999999999988,
+        "manual": true,
+        "orbit": {
+          "yaw": -1.2,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        }
+      },
+      "metrics": {
+        "arrivals": 5,
+        "idleTurns": 165,
+        "manualOverrides": 5,
+        "localFrames": 1500,
+        "maximumIdleYawStep": 0.022500000000000003
+      },
+      "render": {
+        "frame": 6,
+        "calls": 92,
+        "triangles": 66167,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "variant": -1.6,
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "initialOrbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "idleSeconds": 5,
+      "errors": [],
+      "code": "E",
+      "kind": "native",
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        12.078089572390494,
+        9.805250322913293,
+        -21.096564402212323
+      ],
+      "quaternion": [
+        -0.12651072940792524,
+        -0.7094201458380471,
+        -0.13185120258076358,
+        0.6806859425622106
+      ],
+      "orbit": {
+        "yaw": -1.6,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "aspect": 0.4613733905579399,
+      "grounded": true,
+      "discovery": {
+        "island": "E",
+        "idle": 4.999999999999988,
+        "manual": true,
+        "orbit": {
+          "yaw": -1.6,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        }
+      },
+      "metrics": {
+        "arrivals": 6,
+        "idleTurns": 198,
+        "manualOverrides": 6,
+        "localFrames": 1800,
+        "maximumIdleYawStep": 0.022500000000000003
+      },
+      "render": {
+        "frame": 7,
+        "calls": 87,
+        "triangles": 61401,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "variant": -1.9,
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "initialOrbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "idleSeconds": 5,
+      "errors": [],
+      "code": "E",
+      "kind": "native",
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        13.166500626278575,
+        9.805250322913293,
+        -27.105006931533318
+      ],
+      "quaternion": [
+        -0.10534572797735953,
+        -0.8022799015596256,
+        -0.1486772732651474,
+        0.5684578309468857
+      ],
+      "orbit": {
+        "yaw": -1.9,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "aspect": 0.4613733905579399,
+      "grounded": true,
+      "discovery": {
+        "island": "E",
+        "idle": 4.999999999999988,
+        "manual": true,
+        "orbit": {
+          "yaw": -1.9,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        }
+      },
+      "metrics": {
+        "arrivals": 7,
+        "idleTurns": 231,
+        "manualOverrides": 7,
+        "localFrames": 2100,
+        "maximumIdleYawStep": 0.022500000000000003
+      },
+      "render": {
+        "frame": 8,
+        "calls": 89,
+        "triangles": 67234,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "variant": 2.65,
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "initialOrbit": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "idleSeconds": 5,
+      "errors": [],
+      "code": "E",
+      "kind": "native",
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        42.143877553374935,
+        9.805250322913293,
+        -38.51127259065306
+      ],
+      "quaternion": [
+        -0.04333290510137149,
+        0.9551843632452842,
+        0.17804221195578132,
+        0.23247808995487954
+      ],
+      "orbit": {
+        "yaw": 2.65,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "aspect": 0.4613733905579399,
+      "grounded": true,
+      "discovery": {
+        "island": "E",
+        "idle": 4.999999999999988,
+        "manual": true,
+        "orbit": {
+          "yaw": 2.65,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        }
+      },
+      "metrics": {
+        "arrivals": 8,
+        "idleTurns": 264,
+        "manualOverrides": 8,
+        "localFrames": 2400,
+        "maximumIdleYawStep": 0.022500000000000003
+      },
+      "render": {
+        "frame": 9,
+        "calls": 323,
+        "triangles": 418903,
+        "points": 0,
+        "lines": 0
+      }
+    }
+  ]
+}

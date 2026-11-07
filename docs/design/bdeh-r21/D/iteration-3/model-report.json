@@ -1,0 +1,21 @@
+{
+  "method": "Original saved Blender source stays independent; web export batches evaluated surfaces per logical assembly and PBR material, preserving custom normals.",
+  "meshPrimitives": 33,
+  "assemblyGroups": 6,
+  "triangles": 32412,
+  "originalSourceObjects": 760,
+  "textures": 0,
+  "code": "D",
+  "stage": 2,
+  "sourceObjectsRetained": 297,
+  "newOrChangedObjects": 463,
+  "partsSHA256": "15a91abdb5a95119ad7e079c5fe1033203743437d3e0ab08206edebc03b5c68c",
+  "sourceBlend": "docs/design/bdeh-r21/D/D-r21.blend",
+  "sourceBlendSHA256": "244ebb5ab22a1328a5277ccac922b0245dcbd501ce8632a075b647b2bd1e6b40",
+  "GLBSHA256": "6f36d86eb00d43a0823de4397b067bf5138fee291eccead4d12ae564b54ec2a6",
+  "glbBytes": 2017732,
+  "blendBytes": 499658,
+  "scale": 1,
+  "newLights": 0,
+  "materials": 23
+}
