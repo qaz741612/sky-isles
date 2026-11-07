@@ -40,7 +40,15 @@ for code in codes:
   faces +=[(0,1,2,3),(4*segments+3,4*segments+2,4*segments+1,4*segments)]
   return mesh(name,verts,faces,mat,physical=physical)
  def leaf(name,x,y,z,height,width,theta,mat):
-  # Closed folded lanceolate leaves, not spheres, spike markers or alpha cards.
+  # E uses closed biconvex, blunt-ended broad leaves. Low, overlapping
+  # perennial cover replaces the previous pointed lanceolate sprays; no balls,
+  # billboard cards, transparency or added tree canopies.
+  if code=='E':
+   dx,dz=math.cos(theta),math.sin(theta);v=[]
+   for along,side in[(0,.38),(.5,1),(1,.38),(1,-.38),(.5,-1),(0,-.38)]:
+    lift=height*(.04+.25*along+.05*math.sin(along*math.pi));v.append((x+dx*height*.82*along-dz*width*side,y+lift,z+dz*height*.82*along+dx*width*side))
+   v +=[(x+dx*height*.41,y+height*.35,z+dz*height*.41),(x+dx*height*.41,y+height*.16,z+dz*height*.41)]
+   return mesh(name,v,[(i,(i+1)%6,6)for i in range(6)]+[((i+1)%6,i,7)for i in range(6)],mat)
   dx,dz=math.cos(theta),math.sin(theta);lx,lz=-dz*width,dx*width
   v=[(x,y,z),(x+dx*height*.44+lx,y+height*.35,z+dz*height*.44+lz),(x+dx*height*.86,y+height*.78,z+dz*height*.86),(x+dx*height*.44-lx,y+height*.35,z+dz*height*.44-lz),(x+dx*height*.4,y+height*.22-.018,z+dz*height*.4)]
   return mesh(name,v,[(0,1,2),(0,2,3),(0,4,1),(1,4,2),(2,4,3),(3,4,0)],mat)
@@ -53,9 +61,9 @@ for code in codes:
     for side in[-1,1]:leaf(name+'Pinna',x,y+size*.28,z,size*.65,.25*size,angle+side*.6,'ecoLeaf')
   else:
    for i in range(3):
-    angle=phase+i*2.1;xx=x+.20*math.cos(angle);zz=z+.20*math.sin(angle);stem(name+'Stem',(xx,y,zz),(xx,y+size,zz),.012,'ecoDeep'if code=='E'else'careGarden')
+    angle=phase+i*2.1;xx=x+.20*math.cos(angle);zz=z+.20*math.sin(angle);flowerHeight=size*(.65 if code=='E'else 1);stem(name+'Stem',(xx,y,zz),(xx,y+flowerHeight,zz),.012,'ecoDeep'if code=='E'else'careGarden')
     leaf(name+'Basal',xx,y+.06,zz,size*.55,.10*size,angle,'FinalNativeSage'if code=='E'else'careGarden')
-    for j in range(4):leaf(name+'Blossom',xx,y+size-.03,zz,.10,.025,angle+j*math.pi/2,'FinalNativeFlower'if code=='E'else'flower')
+    for j in range(4):leaf(name+'Blossom',xx,y+flowerHeight-.03,zz,.10,.045 if code=='E'else .025,angle+j*math.pi/2,'FinalNativeFlower'if code=='E'else'flower')
  def local_top(objects,x,z):
   best=None
   for ob in objects:
@@ -122,9 +130,14 @@ for code in codes:
    faces +=[(0,1,n+1,n),(n-2,n-1,2*n-1,2*n-2)]
    mesh('ContinuousRoofTimberPlanter'if edge else'RoofPlantingSoil',vertices,faces,'ecoWood'if edge else'earthbrown')
   for i,(x,z)in enumerate(anchors):
-   for k,(dx,dz,scale)in enumerate([(-.20,.12,.62),(.22,-.10,.46),(0,.30,.84)]):
-    xx,zz=x+dx,z+dz;y=local_top(ribbon,xx,zz)+.07
-    clump('RoofNativeCommunity',xx,y,zz,scale,['low','fern','flower'][(i+k)%3],i*.8+k)
+   tangent=(Vector(anchors[min(i+1,len(anchors)-1)])-Vector(anchors[max(0,i-1)])).normalized();normal=Vector((-tangent.y,tangent.x));centre=Vector((x,z))+normal*.48
+   for k,(along,across,scale)in enumerate([(-.20,.08,.62),(.22,-.10,.46),(0,.18,.74)]):
+    q=centre+tangent*along+normal*across;y=local_top(ribbon,q.x,q.y)+.07
+    clump('RoofNativeCommunity',q.x,y,q.y,scale,['low','fern','flower'][(i+k)%3],i*.8+k)
+   if i<len(anchors)-1:
+    for t in[.33,.67]:
+     q=Vector((x,z)).lerp(Vector(anchors[i+1]),t)+normal*.48;y=local_top(ribbon,q.x,q.y)+.07
+     clump('RoofPerennialUnderstorey',q.x,y,q.y,.44 if i%2 else .51,'low',i*.9+t)
   rx,rz=rg['dimensions'][0]/2,rg['dimensions'][1]/2
   band('RainGardenStoneBank',wx,wz,rx+.05,rz+.05,.17,.15,.49,0,360,'stone2',True,40)
   for i,t in enumerate([30,70,110,150,190,235,280,320]):

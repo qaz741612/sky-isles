@@ -177,8 +177,8 @@
       },
       "after": {
         "path": "public/models/bdeh-r21/E.glb",
-        "bytes": 2190360,
-        "triangles": 35668,
+        "bytes": 2439356,
+        "triangles": 38860,
         "meshPrimitives": 33,
         "materialDefinitions": 23,
         "transparentMaterials": 1,
@@ -195,13 +195,13 @@
           ],
           [
             16.85516929626465,
-            8.542488098144531,
+            8.275229454040527,
             15.285972595214844
           ]
         ],
         "dimensionsXYZ": [
           33.650508880615234,
-          16.54248809814453,
+          16.275229454040527,
           30.80846405029297
         ],
         "buffersFiniteAndIndicesValid": true

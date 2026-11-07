@@ -1,0 +1,50 @@
+{
+  "sameFinalBlenderSources": true,
+  "engine": "Cycles CPU16, no denoiser",
+  "records": [
+    {
+      "code": "E",
+      "name": "rain-garden",
+      "kind": "Blender close inspection lens, never a native game/player camera",
+      "sourceBlendSHA256": "8d281049dae771ffa8de13b15b5048c797507a37caa41ebe2ff4f37a14787a54",
+      "cameraModelLocalYup": [
+        10,
+        7,
+        -17
+      ],
+      "targetModelLocalYup": [
+        -0.2,
+        0.3,
+        -7.8
+      ],
+      "orthoScale": 12,
+      "size": [
+        800,
+        600
+      ],
+      "seconds": 22.00172779103741
+    },
+    {
+      "code": "E",
+      "name": "roof-planting",
+      "kind": "Blender close inspection lens, never a native game/player camera",
+      "sourceBlendSHA256": "8d281049dae771ffa8de13b15b5048c797507a37caa41ebe2ff4f37a14787a54",
+      "cameraModelLocalYup": [
+        -12,
+        12,
+        -16
+      ],
+      "targetModelLocalYup": [
+        -3.5,
+        4,
+        -0.5
+      ],
+      "orthoScale": 17,
+      "size": [
+        800,
+        600
+      ],
+      "seconds": 24.997867470025085
+    }
+  ]
+}

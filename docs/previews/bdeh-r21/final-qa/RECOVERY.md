@@ -1,3 +1,9 @@
+## 最新恢復：E新增植栽已再修正，最終同源重渲染中
+
+來源為本輪正式E Blender/GLB，移除第一批新增尖葉外觀，換成鈍圓寬葉、低花叢及連續底層，根部對齊原植生槽。主建築、土地方向、所有實體碰撞和37保護檔案不變。新模型E38,860三角面。check-final25.log為89單元/lint/build通過；候選24完整回歸為中止的中間證據，不能計最終通過。E最終8張64sample渲染正在重輸出，未齊前不宣稱來源一致。已保存舊候選8b04603及iteration-3比較證據。
+
+繼續時先讀目前git status，勿reset/clean；Blender可用render_bdeh_r21.py --code E --output docs/previews/bdeh-r21/final-qa --resume接續（先核對record的sourceBlendSHA256）。最後E兩張details也需重輸出，B/D/H無需重建。新凍結測試端口4297、work/r21-final-candidate25-dist；完整70項回歸、最終擷取／效能／搖桿回放及GitHub雜湊尚待完成。
+
 ## 2026-11-07 續作檢查點：鏡頭連續性仍在複驗
 
 四份正式 Blender／GLB、32張同源主視／六視圖及5張補充近景仍存在。正在修正 D 島沿路行走穿越樹冠投影時的突然縮鏡；補上整段可達預測路徑的視線採樣，而非只看預測終點。已確認候選17實際HTTP bundle SHA，沒有用舊伺服器誤判。新增透明玻璃的鏡頭視線分類，原玩家玻璃碰撞不變；樹冠僅作鏡頭殼，不新增draw calls。**最終70項回歸、新版59張遊戲圖、效能與下載雜湊仍待完成，不能視為封版。**
