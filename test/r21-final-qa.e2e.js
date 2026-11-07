@@ -14,14 +14,19 @@ test('final R21 arrival: original-profile landmarks, continuous gate-to-guide ca
   const walk=target=>{let n=0;while(Math.hypot(target.x-p.pos.x,target.z-p.pos.z)>.18&&n++<1500){const dx=target.x-p.pos.x,dz=target.z-p.pos.z,d=Math.hypot(dx,dz),a=p.orbit.yaw;tick((dx*Math.cos(a)-dz*Math.sin(a))/d,(dx*Math.sin(a)+dz*Math.cos(a))/d);if(!p.move.grounded||p.respawnCount)throw Error('final route lost dry ground');}if(n>=1500)throw Error('final route blocked '+JSON.stringify({target,player:p.pos.toArray()}));};
   // Real guard-clamped movement, not a mocked zero-velocity state. The intent
   // remains held for5s at the actual D facade; the camera must not turn it.
-  const dc=w.r21.D.config.centre;Object.assign(p.orbit,profile,{yaw:0});p.cameraConstraint.resetVisit();p.teleport(dc[0]-3.1,.2,dc[2]-6);for(let k=0;k<300;k++)tick(-1,0);
-  if(Math.hypot(p.move.vx,p.move.vz)>.08||Math.hypot(p.pos.x-(dc[0]-3.1),p.pos.z-(dc[2]-6))>1)throw Error('wall-intent probe did not meet the actual D wall');
-  const blockedInput={player:p.pos.toArray(),velocity:[p.move.vx,p.move.vz],heldWish:p._wish.toArray(),yaw:p.orbit.yaw,seconds:5};
+  const dc=w.r21.D.config.centre;Object.assign(p.orbit,profile,{yaw:0});p.cameraConstraint.resetVisit();p.teleport(dc[0]-2.0,.2,dc[2]-6);for(let k=0;k<300;k++)tick(-1,0);
+  if(Math.hypot(p.move.vx,p.move.vz)>.08||Math.hypot(p.pos.x-(dc[0]-2.0),p.pos.z-(dc[2]-6))>1)throw Error('wall-intent probe did not meet the actual D wall '+JSON.stringify({position:p.pos.toArray(),velocity:[p.move.vx,p.move.vz]}));
+  if(!p.cameraConstraint.state().movingIntent)throw Error('actual held input did not reach the camera');
+  const blockedInput={player:p.pos.toArray(),velocity:[p.move.vx,p.move.vz],movingIntent:p.cameraConstraint.state().movingIntent,yaw:p.orbit.yaw,seconds:5};
   const landmarks={B:[[-7.8,2.8,-3.9]],D:[[-2.65,2.8,-6.5]],E:[[2.25,3.4,5]],H:[[0,4.3,4.1]]};
   for(const[code,place]of Object.entries(w.r21)){
    const c=place.config.centre,local=([x,z])=>({x:c[0]+x,z:c[2]+z});Object.assign(p.orbit,profile);p.cameraConstraint.resetVisit();p.teleport(c[0],.2,c[2]);idle(300);w.camera.updateMatrixWorld();
    const points=[...landmarks[code]];if(code==='E'){const garden=place.config.finalQA.rainGarden;points.push([garden.centre[0],garden.waterTop,garden.centre[1]]);}
    const projection=points.map(([x,y,z])=>p.pos.clone().set(c[0]+x,y,c[2]+z).project(w.camera).toArray());if(projection.some(v=>Math.abs(v[0])>1||Math.abs(v[1])>1||v[2]<-1||v[2]>1))throw Error('native landmark off screen '+code+' '+JSON.stringify(projection));
+   // Check actual visible opaque model triangles as well as the simplified
+   // structural shells: a tree crown must not hide the small visual avatar.
+   const opaque=place.meshes.filter(mesh=>(Array.isArray(mesh.material)?mesh.material:[mesh.material]).every(m=>!m.transparent&&m.opacity>.95));
+   for(const height of[.7,1.1]){const focus=p.pos.clone().add(p.pos.clone().set(0,height,0));ray.set(focus,w.camera.position.clone().sub(focus).normalize());ray.far=focus.distanceTo(w.camera.position)-.03;if(ray.intersectObjects(opaque,false).length)throw Error('actual opaque model hides native avatar '+code);}
    const path=w.bridges.walkPlans.find(r=>r.id===place.config.finalQA.entryRoad);let pointsOnRoad=path.points.slice();if(Math.hypot(pointsOnRoad[0].x-c[0],pointsOnRoad[0].z-c[2])<Math.hypot(pointsOnRoad.at(-1).x-c[0],pointsOnRoad.at(-1).z-c[2]))pointsOnRoad.reverse();
    let start=pointsOnRoad.length-1;while(start>0&&Math.hypot(pointsOnRoad[start].x-c[0],pointsOnRoad[start].z-c[2])<Math.max(...place.config.maxDimensions)/2+2.1)start--;
    Object.assign(p.orbit,profile);p.cameraConstraint.resetVisit();p.teleport(pointsOnRoad[start].x,.15,pointsOnRoad[start].z);idle(90);trace=[];last=null;maxAngle=0;maxStep=0;recording=true;let gatePaused=false;

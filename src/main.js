@@ -86,6 +86,11 @@ player.ceilingConstraint=(pos,y,move)=>family.constrainHead(pos,y,move)||transpo
 scene.updateMatrixWorld(true);
 player.cameraConstraint = elevatedCameraConstraint(parentChildCameraConstraint(industryCameraConstraint(floodCameraConstraint(worldCameraConstraint([...transport.cameraObstacles,...props.cameraObstacles]),islands.islands.find(i=>i.name==='crystal'),()=>player.orbit),islands.islands.find(i=>i.name==='koi'),()=>player.orbit),islands.islands.find(i=>i.name==='tree')),transport.station.bounds);
 player.cameraConstraint = r21CameraConstraint(player.cameraConstraint,r21,()=>player.orbit,()=>player);
+// Preserve the original physics method and its input contract. Player reuses
+// its private wish vector as a head-target scratch vector before camera work,
+// so give the local camera the actual input at the public update boundary.
+const originalPlayerUpdate=player.update.bind(player);
+player.update=(dt,input,time)=>{player.cameraConstraint.setInput?.(input);return originalPlayerUpdate(dt,input,time);};
 player.navigation = { islands: ISLANDS, barriers: allBarriers, nearby: guardIndex(allBarriers) };
 // Separate portrait framing; both profiles retain the same orbit controller.
 const initialView = cameraProfile(innerWidth, innerHeight);

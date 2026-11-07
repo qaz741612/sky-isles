@@ -18,3 +18,5 @@
 第三保存點：四島同源32圖、真實前後118圖與19張聯絡／比較板已保存到ec10c81。完整70瀏覽器首輪桌機35項為30pass、4原有touch限定skip、1全景異步取樣fail；事件觀察式fixture已修正，桌機／手機指定重測排在完整手機回歸之後；此時不可宣稱全套通過。B伴坐點增加往返巡迴後，最新87單元、lint、build再次通過，編譯bundle與candidate5完全相同。下一步為完成剩餘手機、全景指定重測、效能及單指UI回放採樣，最後彙整manifest並從GitHub回下載驗證。
 
 第四保存點：完整candidate5回歸為64pass/4觸控桌機skip/2同類全景取樣fail，事件式桌機與手機指定重測已2/2pass。追加真實D立面長按頂牆測試發現速度被guard歸零時會誤啟動idle轉向（held-wall-before-fix.json）；現已同時讀取Player既有_wish移動意圖，未改Player或任何F/A/C/G檔案。新增單元後88/88、lint、build通過。新凍結candidate6服務4281，正在重拍game-after59張，舊candidate5畫面已由Git ec10c81保留，且本機work/r21-final-qa/game-after-candidate5有原檔。其後完整70項重新從candidate6執行，不靠挑選舊通過。排程後續效能、單指搖桿／手勢採樣及5張同源近景。此時仍未宣稱最終完成。
+
+最新施工保存（仍待最後遊戲複驗）：修正了後插值再次使用stateful endpoint造成的轉向短跳，採按dt縮放的球面跟隨、可見性回退及逐步縮近繞障；同時驗證真實旋轉幅度，避免凍結相機。原Player._wish會被重用為頭部暫存，不能當輸入；改由main的原始update入口將input傳給局部相機setInput，Player.js仍逐位元不變。D長按牆面probe改到正式外側x=-2.0,z=-6（早期-3.1在基座內，不再使用）。新增由同源Blender只讀輸出的48塊樹冠共3840三角形，僅在四島局部鏡頭中檢查，不加入全域／玩家碰撞，不繪製，避免E前景葉冠遮掉角色。89單元、lint、build通過；最新candidate13服務4286，正在跑真實不透明GLB視線、單指時序與橋口到NPC兩平台preflight。未確認最後手機圖、70全套、效能與下載驗證前不得宣稱完工。
