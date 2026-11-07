@@ -23,5 +23,8 @@ for record in captures['after']['records']:
   assert record['orbit']['dist']==old['orbit']['dist']and record['orbit']['pitch']==old['orbit']['pitch']and record['actualCameraFOV']==old['actualCameraFOV'],record['name']+' changed global lens'
   pairs.append({'name':record['name'],'playerBefore':old['player'],'playerAfter':record['player'],'initial':record['initial'],'cameraBefore':old['camera'],'cameraAfter':record['camera'],'orbitBefore':old['orbit'],'orbitAfter':record['orbit'],'FOV':record['actualCameraFOV']})
 for c,m in models.items():assert captures['after']['servedModels'][c+'.glb']==m['glbSHA256']
-(O/'source-consistency.json').write_text(json.dumps({'protectedFiles':len(protected['files']),'protectedMismatches':0,'models':models,'beforeAfterPNGCount':118,'matchedNativeInputPairs':pairs,'servedFinalGLBVerified':True,'bundleSHA256':captures['after']['bundleSHA256'],'limits':'Sources and input recipes match; this is not a human art judgement or physical-device performance result.'},indent=2)+'\n')
-print('4 saved Blender/GLBs,32 same-source renders,118 actual captures and37 locks verified;48 matched native/gesture/NPC pairs')
+details=json.loads((O/'details/render-record.json').read_text());assert len(details['records'])==5
+for entry in details['records']:
+ assert entry['sourceBlendSHA256']==models[entry['code']]['blendSHA256']and(O/f"details/{entry['code']}-{entry['name']}.png").is_file()
+(O/'source-consistency.json').write_text(json.dumps({'protectedFiles':len(protected['files']),'protectedMismatches':0,'models':models,'beforeAfterPNGCount':118,'matchedNativeInputPairs':pairs,'servedFinalGLBVerified':True,'sameSourceExtraCloseViews':5,'bundleSHA256':captures['after']['bundleSHA256'],'limits':'Sources and input recipes match; this is not a human art judgement or physical-device performance result.'},indent=2)+'\n')
+print('4 saved Blender/GLBs,32 same-source renders +5 details,118 actual captures and37 locks verified;48 matched native/gesture/NPC pairs')

@@ -1,0 +1,173 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/sky-isles-bdeh-r21/node_modules/.bin/playwright",
+      "test",
+      "test/r21-final-qa.e2e.js",
+      "--project=mobile",
+      "--workers=1",
+      "--retries=0",
+      "--reporter=json",
+      "--output=work/r21-wall-old-proof"
+    ],
+    "configFile": "/workspace/sky-isles-bdeh-r21/playwright.config.js",
+    "rootDir": "/workspace/sky-isles-bdeh-r21/test",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/sky-isles-bdeh-r21/work/r21-wall-old-proof",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/sky-isles-bdeh-r21/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/workspace/sky-isles-bdeh-r21/work/r21-wall-old-proof",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/workspace/sky-isles-bdeh-r21/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "r21-final-qa.e2e.js",
+      "file": "r21-final-qa.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "final R21 arrival: original-profile landmarks, continuous gate-to-guide camera, manual orbit, dry checkpoint and panorama",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 88432,
+                  "error": {
+                    "message": "Error: page.evaluate: Error: idle discovery turned the moving player\n    at tick (eval at evaluate (:303:30), <anonymous>:31:80)\n    at eval (eval at evaluate (:303:30), <anonymous>:80:35)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+                    "stack": "Error: page.evaluate: Error: idle discovery turned the moving player\n    at tick (eval at evaluate (:303:30), <anonymous>:31:80)\n    at eval (eval at evaluate (:303:30), <anonymous>:80:35)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at tick (eval at evaluate (:303:30), <anonymous>:31:80)\n    at eval (eval at evaluate (:303:30), <anonymous>:80:35)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/sky-isles-bdeh-r21/test/r21-final-qa.e2e.js:4:26",
+                    "location": {
+                      "file": "eval at evaluate (:303:30), <anonymous>",
+                      "column": 80,
+                      "line": 31
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "eval at evaluate (:303:30), <anonymous>",
+                        "column": 80,
+                        "line": 31
+                      },
+                      "message": "Error: page.evaluate: Error: idle discovery turned the moving player\n    at tick (eval at evaluate (:303:30), <anonymous>:31:80)\n    at eval (eval at evaluate (:303:30), <anonymous>:80:35)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at tick (eval at evaluate (:303:30), <anonymous>:31:80)\n    at eval (eval at evaluate (:303:30), <anonymous>:80:35)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/sky-isles-bdeh-r21/test/r21-final-qa.e2e.js:4:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T05:20:48.875Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/sky-isles-bdeh-r21/work/r21-wall-old-proof/r21-final-qa.e2e.js-final--1ca69-dry-checkpoint-and-panorama-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/sky-isles-bdeh-r21/work/r21-wall-old-proof/r21-final-qa.e2e.js-final--1ca69-dry-checkpoint-and-panorama-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/sky-isles-bdeh-r21/work/r21-wall-old-proof/r21-final-qa.e2e.js-final--1ca69-dry-checkpoint-and-panorama-mobile/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "eval at evaluate (:303:30), <anonymous>",
+                    "column": 80,
+                    "line": 31
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "4002e46b4d8c34a57e33-dd3c673c39f3e2bbcf6e",
+          "file": "r21-final-qa.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-07T05:20:48.374Z",
+    "duration": 90326.996,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

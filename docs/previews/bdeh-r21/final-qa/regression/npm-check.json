@@ -1,0 +1,10 @@
+{
+  "command": "npm run check",
+  "unitTests": 88,
+  "passed": 88,
+  "failed": 0,
+  "lint": "passed",
+  "productionBuild": "passed",
+  "warning": "Existing17.2MB JS chunk warning retained; software-only browser timing, not physical phone FPS",
+  "rawLog": "npm-check.log"
+}

@@ -16,3 +16,5 @@
 2026-11-07 第二保存點：正式源模型已凍結於candidate5（本機4280）；E原樹最終位置(-0.2,-4.6)，並非前述研究岸線位置。87單元、lint、build已重新通過。32張同源Blender／前後118張遊戲PNG及48對原生輸入比對完整；來源與37LOCKS核對通過。所有PNG可解碼。完整70瀏覽器正單獨執行，不能提前聲稱全過；其後排程效能與單指UI連續路徑採樣。所有新畫面在final-qa，歷史根目錄圖不是本輪新版。
 
 第三保存點：四島同源32圖、真實前後118圖與19張聯絡／比較板已保存到ec10c81。完整70瀏覽器首輪桌機35項為30pass、4原有touch限定skip、1全景異步取樣fail；事件觀察式fixture已修正，桌機／手機指定重測排在完整手機回歸之後；此時不可宣稱全套通過。B伴坐點增加往返巡迴後，最新87單元、lint、build再次通過，編譯bundle與candidate5完全相同。下一步為完成剩餘手機、全景指定重測、效能及單指UI回放採樣，最後彙整manifest並從GitHub回下載驗證。
+
+第四保存點：完整candidate5回歸為64pass/4觸控桌機skip/2同類全景取樣fail，事件式桌機與手機指定重測已2/2pass。追加真實D立面長按頂牆測試發現速度被guard歸零時會誤啟動idle轉向（held-wall-before-fix.json）；現已同時讀取Player既有_wish移動意圖，未改Player或任何F/A/C/G檔案。新增單元後88/88、lint、build通過。新凍結candidate6服務4281，正在重拍game-after59張，舊candidate5畫面已由Git ec10c81保留，且本機work/r21-final-qa/game-after-candidate5有原檔。其後完整70項重新從candidate6執行，不靠挑選舊通過。排程後續效能、單指搖桿／手勢採樣及5張同源近景。此時仍未宣稱最終完成。

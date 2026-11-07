@@ -20,6 +20,13 @@ test('holding the one-hand movement input or being airborne never starts an auto
   const{orbit,player,tick}=make(code);player.move.vx=5;for(let i=0;i<180;i++)tick();assert.equal(orbit.yaw,.12);player.move.vx=0;player.move.grounded=false;for(let i=0;i<180;i++)tick();assert.equal(orbit.yaw,.12);
  }
 });
+test('held movement against a solid wall never counts as idle arrival when guards zero velocity',()=>{
+ for(const code of'BDEH'){
+  const{orbit,player,tick}=make(code);player._wish=new T.Vector3(5,0,0);
+  for(let i=0;i<300;i++)tick();assert.equal(orbit.yaw,.12);
+  player._wish.set(0,0,0);for(let i=0;i<300;i++)tick();assert.notEqual(orbit.yaw,.12);
+ }
+});
 test('one manual orbit or zoom overrides idle discovery for the rest of this island visit',()=>{
  for(const code of'BDEH'){
   const{orbit,rig,tick}=make(code);for(let i=0;i<120;i++)tick();orbit.yaw+=.4;orbit.pitch+=.12;orbit.dist-=2;const saved={...orbit};tick();assert.equal(rig.state().manual,true);for(let i=0;i<300;i++)tick();assert.deepEqual(orbit,saved);

@@ -12,6 +12,11 @@ test('final R21 arrival: original-profile landmarks, continuous gate-to-guide ca
   };
   const idle=n=>{for(let i=0;i<n;i++)tick();};
   const walk=target=>{let n=0;while(Math.hypot(target.x-p.pos.x,target.z-p.pos.z)>.18&&n++<1500){const dx=target.x-p.pos.x,dz=target.z-p.pos.z,d=Math.hypot(dx,dz),a=p.orbit.yaw;tick((dx*Math.cos(a)-dz*Math.sin(a))/d,(dx*Math.sin(a)+dz*Math.cos(a))/d);if(!p.move.grounded||p.respawnCount)throw Error('final route lost dry ground');}if(n>=1500)throw Error('final route blocked '+JSON.stringify({target,player:p.pos.toArray()}));};
+  // Real guard-clamped movement, not a mocked zero-velocity state. The intent
+  // remains held for5s at the actual D facade; the camera must not turn it.
+  const dc=w.r21.D.config.centre;Object.assign(p.orbit,profile,{yaw:0});p.cameraConstraint.resetVisit();p.teleport(dc[0]-3.1,.2,dc[2]-6);for(let k=0;k<300;k++)tick(-1,0);
+  if(Math.hypot(p.move.vx,p.move.vz)>.08||Math.hypot(p.pos.x-(dc[0]-3.1),p.pos.z-(dc[2]-6))>1)throw Error('wall-intent probe did not meet the actual D wall');
+  const blockedInput={player:p.pos.toArray(),velocity:[p.move.vx,p.move.vz],heldWish:p._wish.toArray(),yaw:p.orbit.yaw,seconds:5};
   const landmarks={B:[[-7.8,2.8,-3.9]],D:[[-2.65,2.8,-6.5]],E:[[2.25,3.4,5]],H:[[0,4.3,4.1]]};
   for(const[code,place]of Object.entries(w.r21)){
    const c=place.config.centre,local=([x,z])=>({x:c[0]+x,z:c[2]+z});Object.assign(p.orbit,profile);p.cameraConstraint.resetVisit();p.teleport(c[0],.2,c[2]);idle(300);w.camera.updateMatrixWorld();
@@ -28,6 +33,6 @@ test('final R21 arrival: original-profile landmarks, continuous gate-to-guide ca
    p.teleport(250,-50,250);idle(100);if(p.respawnCount!==1||!p.move.grounded||p.pos.distanceTo(safe)>.05)throw Error('expanded dry checkpoint recovery failed');p.respawnCount=0;
    rows.push({code,profile,landmarkNDC:projection,entryRoad:path.id,oneStartTeleportOnly:true,gatePauseSeconds:5,NPCStop:place.config.npc[0].playerStop,frames:trace,maximumCameraRotationRadiansPer60HzFrame:maxAngle,maximumCameraTranslationPer60HzFrame:maxStep,manualOverride:true,panoramaRestored:true,fallRecovered:true});
   }
-  return{method:'Actual loaded GLBs, real Player and production local camera at fixed60Hz; accelerated engineering input along a continuous gate-to-NPC path. Route starts are teleported; not a human operation or real-device FPS measurement.',rows};
+  return{method:'Actual loaded GLBs, real Player and production local camera at fixed60Hz; accelerated engineering input along a continuous gate-to-NPC path. Route starts are teleported; not a human operation or real-device FPS measurement.',blockedInput,rows};
  });expect(report.rows).toHaveLength(4);expect(errors).toEqual([]);const dir=process.env.SKYISLES_QA_OUTPUT_DIR??'docs/previews/bdeh-r21/final-qa/regression';fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(`${dir}/continuous-camera-${isMobile?'mobile':'desktop'}.json`,JSON.stringify({...report,errors})+'\n');
 });

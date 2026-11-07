@@ -2,7 +2,7 @@
 // Software GPU observations, never a real-device FPS certification.
 import{chromium}from'playwright';import fs from'node:fs';import{createHash}from'node:crypto';
 const output='docs/previews/bdeh-r21/final-qa/performance.json',hash=b=>createHash('sha256').update(b).digest('hex'),results=[];
-const cases=[['before',4275,'work/bdeh-final-83-dist'],['after',4280,'work/r21-final-candidate5-dist']];
+const cases=[['before',4275,'work/bdeh-final-83-dist'],['after',4281,'work/r21-final-candidate6-dist']];
 const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
 try{for(const[stage,port,dist]of cases)for(const mobile of[false,true]){
  const page=await browser.newPage({viewport:mobile?{width:430,height:932}:{width:1200,height:800},deviceScaleFactor:1,isMobile:mobile,hasTouch:mobile});
@@ -22,6 +22,6 @@ try{for(const[stage,port,dist]of cases)for(const mobile of[false,true]){
    views.push({name,camera:camera.position.toArray(),player:p.pos.toArray(),orbit:{...p.orbit},drawCalls:w.renderer.info.render.calls,triangles:w.renderer.info.render.triangles,memory:{...w.renderer.info.memory},synchronizedSoftwareFrameMs:{samples:times,median:(times[2]+times[3])/2,max:times.at(-1)},controllerCPUms:cpu[2]??null});
   }
   return{allEightLoaded:w.islands.islands.length,navigationReadyAtMs:ready,GLBLoads:Object.fromEntries(Object.entries(w.r21??{}).map(([c,v])=>[c,v.stats])),views,webGL:ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):'unknown',webGLError:gl.getError()};
- });results.push({stage,base:stage==='before'?'PR19 39f4194 frozen baseline':'PR19 final QA candidate5 verified production build',mobile,viewport:page.viewportSize(),dpr:1,verifiedBundles:verified,...report});
+ });results.push({stage,base:stage==='before'?'PR19 39f4194 frozen baseline':'PR19 final QA candidate6 verified production build',mobile,viewport:page.viewportSize(),dpr:1,verifiedBundles:verified,...report});
  fs.writeFileSync(output,JSON.stringify({method:'All eight islands loaded, same F player spawn and native original profile, complete orthographic panorama. Six gl.finish frames after two warmups, five batches of100 idle real Player ticks. Local HTTP. Loading-screen readiness is not a hardware first-interactive-frame measure.',limits:'Chromium ANGLE SwiftShader, shared cloud two-core CPU. This is diagnostic software timing, not hardware FPS, real mobile heat, bandwidth or long-touch acceptance.',results},null,2)+'\n');console.log(stage,mobile?'portrait':'desktop','measured');await page.close();
 }}finally{await browser.close();}

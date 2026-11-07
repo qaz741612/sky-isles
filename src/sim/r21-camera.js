@@ -23,7 +23,10 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer){
    if(!manual)metrics.manualOverrides++;
    manual=true;
   }
-  const moving=player?Math.hypot(player.move.vx,player.move.vz)>.08: true;
+  // Swept guards zero actual velocity at a wall. Held movement intent must
+  // still suppress arrival turning, or the joystick basis rotates under a
+  // player who is deliberately pushing against the wall.
+  const moving=player?(Math.hypot(player.move.vx,player.move.vz)>.08||Math.hypot(player._wish?.x??0,player._wish?.z??0)>.08):true;
   const grounded=player?.move.grounded??false;
   idle=(!moving&&grounded)?idle+dt:0;
   if(!manual&&idle>views.idleDelay&&player){
