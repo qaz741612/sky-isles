@@ -12,18 +12,18 @@ blender -b -t 1 --python-exit-code 1 --python scripts/blender/audit_bdeh_final.p
 blender -b -t 1 --python-exit-code 1 --python scripts/blender/render_bdeh_r21.py -- --output docs/previews/bdeh-r21/final-qa
 blender -b -t 1 --python-exit-code 1 --python scripts/blender/export_bdeh_camera_canopies.py
 npm run check
-npm run dev -- --port 4302 --strictPort
+npm run dev -- --port 4305 --strictPort
 ```
 
 Blender4.3.2；Python 碰撞工具使用現有 NumPy、trimesh、Shapely。沒有新增遊戲依賴。`polish_bdeh_final.py` 自動從 `docs/design/bdeh-r21/final-qa-baseline/` 的正式原檔開啟，保留主體，只做具名的局部增量；可使用 `--code E`。產出的 `work/r21-final-qa/*-polish-parts.json` 為碰撞計算暫存，不是另外一套場景。路網生成器本輪不執行。
 
 正式原檔仍在 `docs/design/bdeh-r21/{B,D,E,H}/`，執行中的 GLB 在 `public/models/bdeh-r21/`。渲染器只讀同一份最終 .blend，輸出每島8張，record 包含原檔SHA。遊戲截圖額外核對 HTTP 實際回傳 GLB 與編譯 JS 的SHA，不能以本機檔案存在代替載入證明。
 
-比較圖重建：分別啟動 `39f4194` 與本輪 production build 在4275及4302，執行：
+比較圖重建：分別啟動 `39f4194` 與本輪 production build 在4275及4305，執行：
 
 ```sh
 node scripts/qa/capture-r21-final.mjs 4275 docs/previews/bdeh-r21/final-qa/game-before --models docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21
-node scripts/qa/capture-r21-final.mjs 4302 docs/previews/bdeh-r21/final-qa/game-after --models public/models/bdeh-r21
+node scripts/qa/capture-r21-final.mjs 4305 docs/previews/bdeh-r21/final-qa/game-after --models public/models/bdeh-r21
 python scripts/qa/boards-r21-final.py
 ```
 
@@ -41,4 +41,6 @@ python scripts/qa/boards-r21-final.py
 
 最終鏡頭查詢使用 `src/sim/r21-triangle-index.js` 的局部靜態三角索引：仍保留原六探針、預測與 Three.js 三角交點規則；不以省略身體可見度檢查換取速度。索引只適用固定的四島鏡頭殼，動態／自訂 raycast 幾何退回原查詢；四島之外沿用原相機。1119組差分射線驗證包含本輪實際模型、鏡射、材質組及實例。索引約12MB CPU buffer 加 Map 管理成本，沒有新增可見網格或 Draw Calls。
 
-完整重驗：`SKY_SOFTWARE_QA=1 PLAYWRIGHT_BASE_URL=http://127.0.0.1:4302 npx playwright test --workers=1 --retries=0 --timeout=240000`。最終資料流水線與畫面輸出順序見 `scripts/qa/final-r21-pipeline.py`，效能基線仍須另開4275。H相同4132 tick CPU診斷的 before/after 明確是工程固定步進，不能當FPS。
+完整重驗：`SKY_SOFTWARE_QA=1 PLAYWRIGHT_BASE_URL=http://127.0.0.1:4305 npx playwright test --workers=1 --retries=0 --timeout=240000`。最終資料流水線與畫面輸出順序見 `scripts/qa/final-r21-pipeline.py`，效能基線仍須另開4275。H相同4132 tick CPU診斷的 before/after 明確是工程固定步進，不能當FPS。
+
+最終相同資產的CPU控制實驗（不會用於遊戲發布）：`npx vite build --config scripts/qa/native-r21-benchmark.config.mjs --outDir work/r21-final-visible-dist-native`，以4306啟動該靜態目錄。此獨立QA設定僅將局部三角查詢alias回原生Three.js，模型、場景、相機規則與正式來源完全相同。`profile-r21-spaces.mjs 4306 H`和`profile-r21-spaces.mjs 4305 H`序列量測，不與Blender或其它瀏覽器並跑。兩側HTTP實際四GLB SHA必須與最終檔相同，不能沿用移樹前的模型效能報告。

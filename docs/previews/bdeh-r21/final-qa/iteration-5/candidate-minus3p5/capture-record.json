@@ -1,0 +1,101 @@
+{
+  "port": 4304,
+  "method": "Actual eight-island production game. Each centre/NPC initialization restores the original device orbit and player position, then idles5s. Same input recipe before/after. Left120px then right240px is one touch pointer; UI.poll drives the production camera, no direct native lens positioning. Only explicit QA-hero/top use custom lenses. Fixed60Hz poses, software GPU, not hardware performance.",
+  "expectedModels": {
+    "B.glb": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+    "D.glb": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
+    "E.glb": "6c3470e9af3ff609a954360a98646bbb39778cbf8cdab25cf7946413c2281da1",
+    "H.glb": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9"
+  },
+  "servedModels": {
+    "D.glb": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
+    "B.glb": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+    "E.glb": "6c3470e9af3ff609a954360a98646bbb39778cbf8cdab25cf7946413c2281da1",
+    "H.glb": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9"
+  },
+  "bundleSHA256": {
+    "index-KcPt47I0.js": "5d8b3305b79b441291bce5b10143e23fdfe9471fb3a06910d71d49906e295af3"
+  },
+  "records": [
+    {
+      "name": "E-portrait-native",
+      "code": "E",
+      "profile": "portrait",
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "kind": "native",
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "errors": [],
+      "player": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "camera": [
+        39.350958108050754,
+        11.314150609727067,
+        -38.77392426866895
+      ],
+      "quaternion": [
+        -0.03149917311520267,
+        0.9656679654607849,
+        0.21602454812679403,
+        0.14080687903118005
+      ],
+      "lookTarget": [
+        33.62,
+        1.861799996495247,
+        -19.54
+      ],
+      "orbit": {
+        "yaw": 2.7831853071795867,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "actualCameraFOV": 58,
+      "aspect": 0.4613733905579399,
+      "canvas": [
+        430,
+        932
+      ],
+      "grounded": true,
+      "discovery": {
+        "island": "E",
+        "idle": 4.999999999999988,
+        "manual": false,
+        "movingIntent": false,
+        "orbit": {
+          "yaw": 2.7831853071795867,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        }
+      },
+      "render": {
+        "frame": 2,
+        "calls": 233,
+        "triangles": 244643,
+        "points": 0,
+        "lines": 0
+      },
+      "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    }
+  ]
+}

@@ -1,0 +1,2780 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/sky-isles-bdeh-r21/node_modules/.bin/playwright",
+      "test",
+      "--workers=1",
+      "--retries=0",
+      "--timeout=240000",
+      "--reporter=json,./scripts/qa/progress-reporter.cjs",
+      "--output=work/r21-final-spatial-test-output"
+    ],
+    "configFile": "/workspace/sky-isles-bdeh-r21/playwright.config.js",
+    "rootDir": "/workspace/sky-isles-bdeh-r21/test",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/sky-isles-bdeh-r21/work/r21-final-spatial-test-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/sky-isles-bdeh-r21/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "/workspace/sky-isles-bdeh-r21/work/r21-final-spatial-test-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/workspace/sky-isles-bdeh-r21/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 240000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ],
+      [
+        "/workspace/sky-isles-bdeh-r21/scripts/qa/progress-reporter.cjs"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "app.e2e.js",
+      "file": "app.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "苑裡政策島",
+          "file": "app.e2e.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "loads without console errors and renders non-uniform pixels",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 39056,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:23:15.745Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-29697578defd32dc363a",
+              "file": "app.e2e.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "getState exposes the core game state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16154,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:23:55.036Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-057c0f6cede6ea2aefa2",
+              "file": "app.e2e.js",
+              "line": 57,
+              "column": 3
+            },
+            {
+              "title": "all eight policies open from the menu and have no invented content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18470,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:24:11.205Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-7017a6b8d7e6b19fca8b",
+              "file": "app.e2e.js",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "world label opens matching policy and Escape closes the dialog",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17536,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:24:29.693Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-de29237ed997018e2973",
+              "file": "app.e2e.js",
+              "line": 86,
+              "column": 3
+            },
+            {
+              "title": "teleport moves the player and fall respawns at last ground",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15851,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:24:47.247Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-053fc059da7d19e879b2",
+              "file": "app.e2e.js",
+              "line": 96,
+              "column": 3
+            },
+            {
+              "title": "loads without console errors and renders non-uniform pixels",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22739,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:36:34.790Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-e98d436b39e2a8ba8d19",
+              "file": "app.e2e.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "getState exposes the core game state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11995,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:36:57.780Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-fe13ea7c80600770198b",
+              "file": "app.e2e.js",
+              "line": 57,
+              "column": 3
+            },
+            {
+              "title": "all eight policies open from the menu and have no invented content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13877,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:37:09.800Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-6ad9aa5bd2918ce46cad",
+              "file": "app.e2e.js",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "world label opens matching policy and Escape closes the dialog",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12703,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:37:23.697Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-d96fd2fc18e63308dcc4",
+              "file": "app.e2e.js",
+              "line": 86,
+              "column": 3
+            },
+            {
+              "title": "teleport moves the player and fall respawns at last ground",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12704,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:37:36.418Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4a47d6019056ecf7c243-0dbff3277a93cc877de9",
+              "file": "app.e2e.js",
+              "line": 96,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "bdeh-r21.e2e.js",
+      "file": "bdeh-r21.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "R21 four real Blender places: public circuits, NPC dry plots, native camera, policy and panorama checkpoint recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 44423,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:25:03.135Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd36bb3368bf391ef32b-4ff711a97d18d13dd6ee",
+          "file": "bdeh-r21.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "R21 four real Blender places: public circuits, NPC dry plots, native camera, policy and panorama checkpoint recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 52920,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:37:49.160Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd36bb3368bf391ef32b-6cb756e053368b78cdb9",
+          "file": "bdeh-r21.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "bridge-landscape.e2e.js",
+      "file": "bridge-landscape.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "active landscape zones preserve every route in both directions with the live Player",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 47637,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"records\":[{\"id\":\"S01\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S02\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S03\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S04\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S05\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S06\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S07\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S08\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S09\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S10\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S11\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S12\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S13\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S14\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S15\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S16\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S17\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S18\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S19\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S20\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S21\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S22\",\"bidirectional\":true,\"noJump\":true}],\"bays\":[{\"id\":\"P11\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P14\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P16\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P19\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true}],\"lampHeadroom\":{\"id\":\"S01-L1\",\"maxHead\":3.0125,\"minOverlappingClearance\":null,\"directHead\":3.0125,\"airborneQAStart\":true,\"verified\":true},\"ticks\":18690,\"respawns\":0,\"stats\":{\"lampCount\":36,\"sevenLampCount\":34,\"lowLightCount\":2,\"platformCount\":4,\"foliageInstances\":329,\"visibleMeshes\":87,\"triangles\":84024,\"collisionMeshes\":51,\"horizontalBarriers\":2137,\"buildMilliseconds\":223.5,\"newRealtimeLights\":0,\"geometryBatches\":55,\"perFrameRebuilds\":0,\"instanceBatches\":34}}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:25:47.593Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bc11ee9b00b48ae21c00-cb2869c0834ece67c711",
+          "file": "bridge-landscape.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "active landscape zones preserve every route in both directions with the live Player",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 63923,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"records\":[{\"id\":\"S01\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S02\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S03\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S04\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S05\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S06\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S07\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S08\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S09\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S10\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S11\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S12\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S13\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S14\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S15\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S16\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S17\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S18\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S19\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S20\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S21\",\"bidirectional\":true,\"noJump\":true},{\"id\":\"S22\",\"bidirectional\":true,\"noJump\":true}],\"bays\":[{\"id\":\"P11\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P14\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P16\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true},{\"id\":\"P19\",\"walkInAndReturn\":true,\"outerGuardHoldsOrdinaryWalk\":true}],\"lampHeadroom\":{\"id\":\"S01-L1\",\"maxHead\":3.0125,\"minOverlappingClearance\":null,\"directHead\":3.0125,\"airborneQAStart\":true,\"verified\":true},\"ticks\":18690,\"respawns\":0,\"stats\":{\"lampCount\":36,\"sevenLampCount\":34,\"lowLightCount\":2,\"platformCount\":4,\"foliageInstances\":329,\"visibleMeshes\":87,\"triangles\":84024,\"collisionMeshes\":51,\"horizontalBarriers\":2137,\"buildMilliseconds\":293.20000000018626,\"newRealtimeLights\":0,\"geometryBatches\":55,\"perFrameRebuilds\":0,\"instanceBatches\":34}}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:38:42.109Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bc11ee9b00b48ae21c00-13a639c5814173b41fcf",
+          "file": "bridge-landscape.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "controls.e2e.js",
+      "file": "controls.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "controls point where the player expects",
+          "file": "controls.e2e.js",
+          "line": 51,
+          "column": 6,
+          "specs": [
+            {
+              "title": "KeyW moves the character along the camera-relative forward direction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17126,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:26:35.251Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a53e3db50010505d261-e3821d548c6304c5578d",
+              "file": "controls.e2e.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "KeyS moves the character along the camera-relative back direction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16643,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:26:52.395Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a53e3db50010505d261-242ffbbfeabf6b5646e2",
+              "file": "controls.e2e.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "KeyA moves the character along the camera-relative left direction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16379,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:27:09.054Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a53e3db50010505d261-fe8c0d7582c19a67877d",
+              "file": "controls.e2e.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "KeyD moves the character along the camera-relative right direction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16322,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:27:25.454Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a53e3db50010505d261-3ce9cdfb708d7d2b4e2a",
+              "file": "controls.e2e.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "touch joystick up moves the character forward",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "joystick is only visible on coarse-pointer devices",
+                      "location": {
+                        "file": "/workspace/sky-isles-bdeh-r21/test/controls.e2e.js",
+                        "line": 78,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "desktop",
+                  "projectName": "desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 261,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:27:41.823Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "joystick is only visible on coarse-pointer devices",
+                          "location": {
+                            "file": "/workspace/sky-isles-bdeh-r21/test/controls.e2e.js",
+                            "line": 78,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a53e3db50010505d261-5982829285c83f35c125",
+              "file": "controls.e2e.js",
+              "line": 77,
+              "column": 3
+            },
+            {
+              "title": "KeyW moves the character along the camera-relative forward direction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13493,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:39:46.095Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a53e3db50010505d261-08140018c8b0690a1270",
+              "file": "controls.e2e.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "KeyS moves the character along the camera-relative back direction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12800,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:39:59.606Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a53e3db50010505d261-f8aa0dd2bf7c3ce9bd39",
+              "file": "controls.e2e.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "KeyA moves the character along the camera-relative left direction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13059,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:40:12.419Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a53e3db50010505d261-ac87879474fb61eda11f",
+              "file": "controls.e2e.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "KeyD moves the character along the camera-relative right direction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13630,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:40:25.493Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a53e3db50010505d261-3b688b075999ad243cf7",
+              "file": "controls.e2e.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "touch joystick up moves the character forward",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile",
+                  "projectName": "mobile",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13625,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-08T05:40:39.144Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a53e3db50010505d261-b4ec299398655055ef0e",
+              "file": "controls.e2e.js",
+              "line": 77,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "elevated-guards.e2e.js",
+      "file": "elevated-guards.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "new V9 plinth visible north/east/west guards stop ordinary live Player walking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15073,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:27:42.131Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "535f725ea683b77278b0-9571d18397ccb498b5a6",
+          "file": "elevated-guards.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "new V9 plinth visible north/east/west guards stop ordinary live Player walking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11185,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:40:52.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "535f725ea683b77278b0-68a11acebbd04bc81daf",
+          "file": "elevated-guards.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "elevated-station.e2e.js",
+      "file": "elevated-station.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25935,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:27:57.235Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1450a7c74b75e077bcdb-f8fa5d353adfd0bc1bc3",
+          "file": "elevated-station.e2e.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21205,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:41:04.007Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1450a7c74b75e077bcdb-f42f2669db5d4e402fa1",
+          "file": "elevated-station.e2e.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "flood-control.e2e.js",
+      "file": "flood-control.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "G Blender park: 22 routes, public circuit, water barriers, policy and camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 50366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:28:23.204Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "151af4c9152cd3bf06d1-c9e74c8ffddabd6bee15",
+          "file": "flood-control.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "G Blender park: 22 routes, public circuit, water barriers, policy and camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 57073,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:41:25.240Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "151af4c9152cd3bf06d1-b27e818760927beb7061",
+          "file": "flood-control.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "flood-interactions.e2e.js",
+      "file": "flood-interactions.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16955,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:29:13.603Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "02286109d98e13b8e36b-065bd63d03cb4e324fab",
+          "file": "flood-interactions.e2e.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "G actual water-edge walks, model policy picking and panorama state restoration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13090,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:42:22.378Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "02286109d98e13b8e36b-e59e9db3791699d34e06",
+          "file": "flood-interactions.e2e.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "flood-v51.e2e.js",
+      "file": "flood-v51.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "V5.1 nine real wet falls recover the dry checkpoint and retain policy-puzzle progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 50815,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:29:30.572Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "892091b226f1fd7d0a29-81d40dfe13a16303810b",
+          "file": "flood-v51.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "V5.1 nine real wet falls recover the dry checkpoint and retain policy-puzzle progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 40804,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:42:35.492Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "892091b226f1fd7d0a29-ab4f5268709f0f4f72b6",
+          "file": "flood-v51.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "industry-youth.e2e.js",
+      "file": "industry-youth.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "C real model picking, original spring, NPC approach and live boundary guards",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:30:21.416Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4fc9e61560f0fc744624-fab96d55d99caaba01a5",
+          "file": "industry-youth.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "C real model picking, original spring, NPC approach and live boundary guards",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13420,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:43:16.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4fc9e61560f0fc744624-5fb238a16670f8dd2bc9",
+          "file": "industry-youth.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "panorama.e2e.js",
+      "file": "panorama.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 37918,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:30:38.838Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a94bc67d421d660343fe-5b39cdcc78ef722781ef",
+          "file": "panorama.e2e.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "real 3D panorama fits, locks movement, preserves progress and returns the exploration camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 27059,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:43:29.759Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a94bc67d421d660343fe-7a66fe56e7a8555bc173",
+          "file": "panorama.e2e.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parent-child.e2e.js",
+      "file": "parent-child.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24288,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"gateCount\":4,\"cameraCases\":60,\"minimumCameraDistance\":3.4576197436245772,\"head\":[{\"x\":1.1,\"z\":0.4,\"floor\":0.125,\"ceiling\":2.7100000381469727,\"maxHead\":2.7050000381469728},{\"x\":7.5,\"z\":-3,\"floor\":0.10999999940395355,\"ceiling\":2.640000104904175,\"maxHead\":2.635000104904175}],\"sourceTriangles\":380999,\"selectedTriangles\":356223,\"runtimeMeshes\":60,\"npc\":\"reservation only; no NPC body/dialogue to test\",\"errors\":[]}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:31:16.779Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2ad479610a8af6844cea-4c9bf6b22ea3d8079c5c",
+          "file": "parent-child.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20387,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"gateCount\":4,\"cameraCases\":60,\"minimumCameraDistance\":3.4576197797313886,\"head\":[{\"x\":1.1,\"z\":0.4,\"floor\":0.125,\"ceiling\":2.7100000381469727,\"maxHead\":2.7050000381469728},{\"x\":7.5,\"z\":-3,\"floor\":0.10999999940395355,\"ceiling\":2.640000104904175,\"maxHead\":2.635000104904175}],\"sourceTriangles\":380999,\"selectedTriangles\":356223,\"runtimeMeshes\":60,\"npc\":\"reservation only; no NPC body/dialogue to test\",\"errors\":[]}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:43:56.856Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2ad479610a8af6844cea-04e683090da4d1b5012d",
+          "file": "parent-child.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "r21-final-qa.e2e.js",
+      "file": "r21-final-qa.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "final R21 arrival: original-profile landmarks, continuous gate-to-guide camera, manual orbit, dry checkpoint and panorama",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26532,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:31:41.092Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4002e46b4d8c34a57e33-81cdddde75595a0a94a4",
+          "file": "r21-final-qa.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "final R21 arrival: original-profile landmarks, continuous gate-to-guide camera, manual orbit, dry checkpoint and panorama",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24966,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:44:17.272Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4002e46b4d8c34a57e33-dd3c673c39f3e2bbcf6e",
+          "file": "r21-final-qa.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "responsive.e2e.js",
+      "file": "responsive.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "compact portrait and landscape menu remain usable with first-visit help",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "touch layouts",
+                  "location": {
+                    "file": "/workspace/sky-isles-bdeh-r21/test/responsive.e2e.js",
+                    "line": 4,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 259,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:32:07.640Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "touch layouts",
+                      "location": {
+                        "file": "/workspace/sky-isles-bdeh-r21/test/responsive.e2e.js",
+                        "line": 4,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "b7716de0f9d00e3fe955-211d7ebb6941d8c08130",
+          "file": "responsive.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "compact portrait and landscape menu remain usable with first-visit help",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18807,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:44:42.268Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7716de0f9d00e3fe955-c039834d0094f7dbf1ce",
+          "file": "responsive.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "scenery.e2e.js",
+      "file": "scenery.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all authored policy places render and retain their readable policy entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19922,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:32:07.912Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "18cdd04cb7aee82945b4-980eb15cc4326b16dd0d",
+          "file": "scenery.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "all authored policy places render and retain their readable policy entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15201,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:45:01.097Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "18cdd04cb7aee82945b4-5799d2baf0417475dd20",
+          "file": "scenery.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "station-headroom.e2e.js",
+      "file": "station-headroom.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14903,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"records\":[{\"name\":\"front-eave\",\"floor\":2.220446049250313e-16,\"ceiling\":2.694999933242798,\"maxFoot\":0.4700000476837157},{\"name\":\"rear-deck\",\"floor\":4.440892098500626e-16,\"ceiling\":3.2139999866485596,\"maxFoot\":1.5183333333333344},{\"name\":\"open-air\",\"floor\":-2.220446049250313e-16,\"maxFoot\":1.518333333333334}],\"baseline\":1.518333333333334,\"respawns\":0}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:32:27.853Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d98421aa2ef603ad808-9f5143cc43554f816443",
+          "file": "station-headroom.e2e.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12454,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"records\":[{\"name\":\"front-eave\",\"floor\":2.220446049250313e-16,\"ceiling\":2.694999933242798,\"maxFoot\":0.4700000476837157},{\"name\":\"rear-deck\",\"floor\":4.440892098500626e-16,\"ceiling\":3.2139999866485596,\"maxFoot\":1.5183333333333344},{\"name\":\"open-air\",\"floor\":-2.220446049250313e-16,\"maxFoot\":1.518333333333334}],\"baseline\":1.518333333333334,\"respawns\":0}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:45:16.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d98421aa2ef603ad808-2571198c4ab764794c84",
+          "file": "station-headroom.e2e.js",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "transport-v4.e2e.js",
+      "file": "transport-v4.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "V9 replaces legacy transport geometry without changing the policy or chime identities",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13637,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:32:42.770Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "432cf3bed89f8441cd81-d94e8003e4743d08c49b",
+          "file": "transport-v4.e2e.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "V9 replaces legacy transport geometry without changing the policy or chime identities",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10892,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:45:28.797Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "432cf3bed89f8441cd81-6ad90eb6bb20117945cd",
+          "file": "transport-v4.e2e.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "transport-walk.e2e.js",
+      "file": "transport-walk.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "transport portrait and landscape keep policy, panorama and existing input available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17045,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:32:56.420Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-c0bad9a03fd011fdec8d",
+          "file": "transport-walk.e2e.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "original home chime responds to native keyboard or touchscreen interaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15365,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:33:13.474Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-12782cf0d718a1d2adb5",
+          "file": "transport-walk.e2e.js",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "transport portrait and landscape keep policy, panorama and existing input available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16569,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:45:39.709Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-f1cbd3572b9c50466b46",
+          "file": "transport-walk.e2e.js",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "original home chime responds to native keyboard or touchscreen interaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12226,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:45:56.288Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2f68f12981dd65e644a-3d0aed152b926ad4c0c7",
+          "file": "transport-walk.e2e.js",
+          "line": 22,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "transport.e2e.js",
+      "file": "transport.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "transport scene preserves policy picking, jumping, orbit and locked elevated train display",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18131,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:33:28.866Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4665add15f7e581af58d-f749bb18fe3a7523f1bb",
+          "file": "transport.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "transport scene preserves policy picking, jumping, orbit and locked elevated train display",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15346,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:46:08.531Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4665add15f7e581af58d-db29efd480062b5c91fe",
+          "file": "transport.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "ux.e2e.js",
+      "file": "ux.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16607,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:33:47.026Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "78cfb4c6eb2ec5d5da0c-a946815ab09e274f7dd1",
+          "file": "ux.e2e.js",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17536,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:34:03.647Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "78cfb4c6eb2ec5d5da0c-7ba1b6b8099a793e6dca",
+          "file": "ux.e2e.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "touch introduction only",
+                  "location": {
+                    "file": "/workspace/sky-isles-bdeh-r21/test/ux.e2e.js",
+                    "line": 65,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 247,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:34:21.193Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "touch introduction only",
+                      "location": {
+                        "file": "/workspace/sky-isles-bdeh-r21/test/ux.e2e.js",
+                        "line": 65,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "78cfb4c6eb2ec5d5da0c-b86887a0082057fc79f3",
+          "file": "ux.e2e.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13026,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:46:23.907Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "78cfb4c6eb2ec5d5da0c-3379048e1dbea8ff77d8",
+          "file": "ux.e2e.js",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "camera zoom remains stable, follows movement and keeps world scale intact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15308,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:46:36.954Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "78cfb4c6eb2ec5d5da0c-1859130ae0003888a72d",
+          "file": "ux.e2e.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "mobile instructions dismiss once; pinch zoom does not open policy",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24282,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:46:52.281Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "78cfb4c6eb2ec5d5da0c-64f3dcf5f3ca9825337d",
+          "file": "ux.e2e.js",
+          "line": 64,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "walkways.e2e.js",
+      "file": "walkways.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "walk every island without jumping through keyboard or a single joystick pointer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 63562,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"device\":\"keyboard\",\"visited\":[\"F\",\"J1\",\"A\",\"T1\",\"E\",\"T2\",\"T4\",\"J2\",\"C\",\"B\",\"T5\",\"T6\",\"D\",\"T7\",\"J4\",\"H\",\"T8\",\"J3\",\"G\",\"T9\",\"T3\"],\"ticks\":104045,\"stopped\":{\"speed\":0,\"drift\":0,\"respawns\":0,\"checkpoint\":[0.06154251973752346,0,0.0035167154135731533]},\"endpoint\":[0.06154251973752346,0,0.0035167154135731533],\"returned\":[0.06154251973752346,0.4,0.0035167154135731533],\"yawUnchangedDuringMovement\":true,\"idleDiscoveryTurn\":true}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:34:21.490Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a0b80e7b535f1fd9370d-8b278f999f8db81357e7",
+          "file": "walkways.e2e.js",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13141,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:35:25.074Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a0b80e7b535f1fd9370d-1a330d45dd67abc7c5cf",
+          "file": "walkways.e2e.js",
+          "line": 75,
+          "column": 1
+        },
+        {
+          "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "native touch input",
+                  "location": {
+                    "file": "/workspace/sky-isles-bdeh-r21/test/walkways.e2e.js",
+                    "line": 99,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 252,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:35:38.229Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "native touch input",
+                      "location": {
+                        "file": "/workspace/sky-isles-bdeh-r21/test/walkways.e2e.js",
+                        "line": 99,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "a0b80e7b535f1fd9370d-3a22af254183ff35e184",
+          "file": "walkways.e2e.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "walk every island without jumping through keyboard or a single joystick pointer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 74024,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"device\":\"single-pointer joystick\",\"visited\":[\"F\",\"J1\",\"A\",\"T1\",\"E\",\"T2\",\"T4\",\"J2\",\"C\",\"B\",\"T5\",\"T6\",\"D\",\"T7\",\"J4\",\"H\",\"T8\",\"J3\",\"G\",\"T9\",\"T3\"],\"ticks\":108299,\"stopped\":{\"speed\":0,\"drift\":0,\"respawns\":0,\"checkpoint\":[0.0316978080871069,0,0.00181130331926363]},\"endpoint\":[0.0316978080871069,0,0.00181130331926363],\"returned\":[0.0316978080871069,0.4,0.00181130331926363],\"yawUnchangedDuringMovement\":true,\"idleDiscoveryTurn\":true}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:47:16.592Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a0b80e7b535f1fd9370d-b0e5951542f93006f506",
+          "file": "walkways.e2e.js",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11159,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:48:30.626Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a0b80e7b535f1fd9370d-324b3e76220944f3330e",
+          "file": "walkways.e2e.js",
+          "line": 75,
+          "column": 1
+        },
+        {
+          "title": "native single-finger release and cancellation reset the stick and stop without camera turning",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11322,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:48:41.801Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a0b80e7b535f1fd9370d-83595b5947a272715605",
+          "file": "walkways.e2e.js",
+          "line": 98,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "world-spaces.e2e.js",
+      "file": "world-spaces.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 55651,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:35:38.504Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b412ae6cfb0a5765fcc-d24c84ebdd240a39690e",
+          "file": "world-spaces.e2e.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 59554,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T05:48:53.142Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b412ae6cfb0a5765fcc-f8d3f3946575d058b087",
+          "file": "world-spaces.e2e.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T05:23:15.060Z",
+    "duration": 1597940.607,
+    "expected": 66,
+    "skipped": 4,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

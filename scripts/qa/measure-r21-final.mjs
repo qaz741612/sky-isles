@@ -9,7 +9,7 @@ try{for(const[stage,port,dist]of cases)for(const mobile of[false,true]){
  await page.addInitScript(()=>{const raf=requestAnimationFrame.bind(window);window.requestAnimationFrame=fn=>(fn.name==='frame'||fn.toString().includes('.render('))?(window.__qaFrame=fn,0):raf(fn);});
  const bundles=fs.readdirSync(`${dist}/assets`).filter(n=>/^index-.*\.js$/.test(n)),verified=[];
  const requests=bundles.map(n=>page.waitForResponse(r=>r.url().endsWith(`/assets/${n}`),{timeout:180000}).then(async r=>{const actual=hash(await r.body());if(actual!==hash(fs.readFileSync(`${dist}/assets/${n}`)))throw Error('stale benchmark bundle');verified.push({path:`assets/${n}`,sha256:actual});}));
- await page.goto(`http://127.0.0.1:${port}/`);await Promise.all(requests);await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
+ const allRequests=Promise.all(requests);allRequests.catch(()=>{});await page.goto(`http://127.0.0.1:${port}/`);await allRequests;await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
  const report=await page.evaluate(()=>{
   const w=window.__skyisles.world,p=w.player;window.__skyisles.start();const draw=w.renderer.render.bind(w.renderer),step=p.update.bind(p);w.renderer.render=()=>{};p.update=()=>{};window.__qaFrame();
   const ready=performance.now(),gl=w.renderer.getContext(),ext=gl.getExtension('WEBGL_debug_renderer_info'),views=[];
