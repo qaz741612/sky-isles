@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/sky-isles-bdeh-r21/scripts/blender/audit_bdeh_final.py", line 17, in <module>
+    assert before==after,('Approved structure changed',c,[k for k in before if before[k]!=after.get(k)])
+           ^^^^^^^^^^^^^
+AssertionError: ('Approved structure changed', 'B', ['0406_SensoryHerbRing'])
+Blender 4.3.2
+Read blend: "/workspace/sky-isles-bdeh-r21/docs/design/bdeh-r21/final-qa-baseline/docs/design/bdeh-r21/B/B-r21.blend"
+Read blend: "/workspace/sky-isles-bdeh-r21/docs/design/bdeh-r21/B/B-r21.blend"
+
+Blender quit

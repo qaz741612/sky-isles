@@ -1,0 +1,28 @@
+B frame 0 waypoint 0
+B frame 50 waypoint 3
+B frame 100 waypoint 3
+B frame 150 waypoint 11
+B frame 200 waypoint 11
+B frame 250 waypoint 11
+B frame 300 waypoint 11
+B frame 350 waypoint 11
+B frame 400 waypoint 11
+B frame 450 waypoint 11
+B frame 500 waypoint 11
+B frame 550 waypoint 11
+B frame 600 waypoint 11
+B frame 650 waypoint 11
+B frame 700 waypoint 11
+B frame 750 waypoint 11
+B frame 800 waypoint 11
+B frame 850 waypoint 11
+B frame 900 waypoint 11
+B frame 950 waypoint 11
+file:///workspace/sky-isles-bdeh-r21/scripts/qa/replay-r21-final.mjs:27
+  if(control.done){fs.writeFileSync(`${out}/${code}-trace.json`,JSON.stringify({...setup,errors,complete:true,frames})+'\n');break;}if(frame===999)throw Error('Replay route incomplete '+code);
+                                                                                                                                                         ^
+
+Error: Replay route incomplete B
+    at file:///workspace/sky-isles-bdeh-r21/scripts/qa/replay-r21-final.mjs:27:154
+
+Node.js v24.19.0

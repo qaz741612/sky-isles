@@ -1,0 +1,29 @@
+{
+  "beforeCommit": "cf8f209e30deff9257dec3816be99b2d99807486",
+  "before": {
+    "triangles": 38860,
+    "materials": 23,
+    "meshPrimitives": 33,
+    "glbBytes": 2439356,
+    "GLBSHA256": "6c3470e9af3ff609a954360a98646bbb39778cbf8cdab25cf7946413c2281da1",
+    "sourceBlendSHA256": "8d281049dae771ffa8de13b15b5048c797507a37caa41ebe2ff4f37a14787a54"
+  },
+  "after": {
+    "triangles": 38860,
+    "materials": 23,
+    "meshPrimitives": 33,
+    "glbBytes": 2439356,
+    "GLBSHA256": "c3cd1f41fa17479a724eebacaf2067b59c9ee6ed14b27d8d2e0bd23ddb78736f",
+    "sourceBlendSHA256": "874f3144cbbe35735db443a94e59d8604d538d9734a62301f28d36c55c7f88b3"
+  },
+  "treeLocalXZBefore": [
+    -0.2,
+    -4.6
+  ],
+  "treeLocalXZAfter": [
+    -3.4,
+    -4.6
+  ],
+  "cameraPresetsUnchanged": true,
+  "reason": "Clear native portrait avatar without sacrificing building/pond composition; no new geometry/materials, terrain or main architecture edits."
+}

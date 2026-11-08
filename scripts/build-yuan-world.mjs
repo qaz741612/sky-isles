@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import polygon from 'polygon-clipping';
 import {compileLandscape} from './bridge-landscape-domain.mjs';
+import {applyIslandApproach,applyProtectedApproach} from './island-approaches.mjs';
 import { ShapeUtils, Vector2 } from 'three';
 const source=JSON.parse(fs.readFileSync('docs/design/yuan-masterplan-v1/yuan-layout.json'));
 const plan=JSON.parse(fs.readFileSync('src/data/yuan-plan.json'));
@@ -13,7 +14,11 @@ const circle=(n,r=n.r,count=28)=>[Array.from({length:count+1},(_,i)=>[n.x+Math.s
 const paths=plan.edges.map(e=>{
  const cp=e.controlPointsXZ,a=byId.get(e.from),b=byId.get(e.to);
  const evaluate=t=> cp.length===2?cp[0].map((v,i)=>v+(cp[1][i]-v)*t):cp[0].map((v,i)=>(1-t)**3*v+3*(1-t)**2*t*cp[1][i]+3*(1-t)*t*t*cp[2][i]+t**3*cp[3][i]);
- const count=Math.ceil(source.edges.find(s=>s.id===e.id).length*scale/.9),points=Array.from({length:count+1},(_,i)=>{const p=evaluate(i/count);return{x:p[0],y:0,z:p[1],s:0};});
+ const original=plan.referenceBaselineEdges?.[e.id],changed=original&&JSON.stringify(original)!==JSON.stringify(cp);
+ const count=changed?Math.ceil(cp.slice(1).reduce((sum,p,i)=>sum+Math.hypot(p[0]-cp[i][0],p[1]-cp[i][1]),0)/.6):Math.ceil(source.edges.find(s=>s.id===e.id).length*scale/.9);
+ let points=Array.from({length:count+1},(_,i)=>{const p=evaluate(i/count);return{x:p[0],y:0,z:p[1],s:0};});
+ points=applyProtectedApproach(points,e,plan,Math.ceil(source.edges.find(s=>s.id===e.id).length*scale/.9));
+ points=applyIslandApproach(points,e,plan,byId);
  for(let i=1;i<points.length;i++)points[i].s=points[i-1].s+Math.hypot(points[i].x-points[i-1].x,points[i].z-points[i-1].z);
  const length=points.at(-1).s;
  // Keep all overlapping branches level until they have separated. Island radii are NOT scaled.

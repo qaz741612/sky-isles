@@ -1,0 +1,5 @@
+# Offline geometry audits and evidence utilities only; no browser/game dependency.
+numpy==2.3.5
+trimesh==5.2.0
+shapely==2.2.0
+Pillow==12.3.0

@@ -1,0 +1,38 @@
+✔ arrival framing changes only local idle yaw, never ordinary zoom, FOV or manual pitch (40.294542ms)
+✔ holding the one-hand movement input or being airborne never starts an automatic arrival turn (27.791147ms)
+✔ held movement against a solid wall never counts as idle arrival when guards zero velocity (26.720183ms)
+✔ one manual orbit or zoom overrides idle discovery for the rest of this island visit (21.471572ms)
+✔ F/A/C/G keep their original camera constraint and profile outside the four local domains (0.599163ms)
+✔ local arrival converges to the same view at20,60 and120 simulation Hz (18.444679ms)
+✔ stationary held-input camera still follows a later manual zoom and orbit (4.341103ms)
+✖ a nearby facade keeps the visible torso and requested azimuth instead of forcing a side view (70.339826ms)
+✔ local triangle camera matches native rays through transformed, grouped, mirrored and instanced geometry (30.406689ms)
+✔ local triangle camera matches native rays against the four actual architectural shells and tree crowns (431.677842ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 878.985326
+
+✖ failing tests:
+
+test at test/r21-final-camera.test.js:61:1
+✖ a nearby facade keeps the visible torso and requested azimuth instead of forcing a side view (70.339826ms)
+  AssertionError [ERR_ASSERTION]: an available overhead view should preserve the control basis
+      at TestContext.<anonymous> (file:///workspace/sky-isles-bdeh-r21/test/r21-final-camera.test.js:65:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

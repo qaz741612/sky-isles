@@ -1,0 +1,26 @@
+{
+  "B": {
+    "name": "B_R21_policy_landmark.glb",
+    "file_bytes": 505396,
+    "number_materials": 21,
+    "sha256": "8a2e6937650a2839e873b06076593ef0021380d65ec614beb0e4e4fcd8f5c481"
+  },
+  "D": {
+    "name": "D_R21_policy_landmark.glb",
+    "file_bytes": 438468,
+    "number_materials": 23,
+    "sha256": "d964892c9ba95693c2f5706a8e197fbcdec7d3eb76a7f19c987e2c4dcdc567ac"
+  },
+  "E": {
+    "name": "E_R21_policy_landmark.glb",
+    "file_bytes": 457984,
+    "number_materials": 21,
+    "sha256": "f390d7013cdeb016522ae52c916a65a215014872f6691f46a385620495fb49b5"
+  },
+  "H": {
+    "name": "H_R21_policy_landmark.glb",
+    "file_bytes": 492108,
+    "number_materials": 22,
+    "sha256": "6f24c0f036189a1d360bd5ab4eb2756b2ad5aadf74c08398b9e8cb449e473701"
+  }
+}

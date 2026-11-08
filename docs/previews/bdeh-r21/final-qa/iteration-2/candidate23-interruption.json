@@ -1,0 +1,1 @@
+{"reason": "Cache repeated identical visibility queries before final performance regression; algorithm and geometry unchanged. Partial run is not final pass.", "pids": [163742]}

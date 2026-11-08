@@ -1,0 +1,53 @@
+{
+  "baseCommit": "39f41940fd3af0f432b477ebd36ad5b677a71db1",
+  "newComponents": 97,
+  "editedComponents": [
+    "SensoryHerbRing"
+  ],
+  "removedOnlySparseRoofMarkers": 0,
+  "before": {
+    "method": "Original saved Blender source stays independent; web export batches evaluated surfaces per logical assembly and PBR material, preserving custom normals.",
+    "meshPrimitives": 30,
+    "assemblyGroups": 6,
+    "triangles": 42012,
+    "originalSourceObjects": 997,
+    "textures": 0,
+    "code": "B",
+    "stage": 2,
+    "sourceObjectsRetained": 426,
+    "newOrChangedObjects": 571,
+    "partsSHA256": "a2ac30d88914a659d6c67df73591bc317d8a5062f8e794c7ba9ff92831d66e21",
+    "sourceBlend": "docs/design/bdeh-r21/B/B-r21.blend",
+    "sourceBlendSHA256": "4e8fa6695251019074b63e9e2377b3773a222574a0fffbba02809cb7e0b300fc",
+    "GLBSHA256": "6c85316575c5e1b5648c2fa72ee49131ce0f4c217ba75d9fabf16a98ac4bdc2a",
+    "glbBytes": 2688464,
+    "blendBytes": 574565,
+    "scale": 1,
+    "newLights": 0,
+    "materials": 21
+  },
+  "after": {
+    "method": "Original saved Blender source stays independent; web export batches evaluated surfaces per logical assembly and PBR material, preserving custom normals.",
+    "meshPrimitives": 30,
+    "assemblyGroups": 6,
+    "triangles": 43036,
+    "originalSourceObjects": 1094,
+    "textures": 0,
+    "code": "B",
+    "stage": 2,
+    "rebuildOrigin": "Approved final39f4194 Blender source, incremental edits only",
+    "sourceObjectsRetained": 997,
+    "newOrChangedObjects": 98,
+    "sourceBlend": "docs/design/bdeh-r21/B/B-r21.blend",
+    "sourceBlendSHA256": "a6889d5b53a3362f9b9e415ed54d672e09251f368efe4bbcad9f3ce44b8f2e34",
+    "GLBSHA256": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+    "glbBytes": 2752080,
+    "blendBytes": 601920,
+    "partsSHA256": "b6dd9d8ff2453d77eb80ce7d97ff493481d9995cfa9e852a2514f362f0a68567",
+    "basePartsSHA256": "a2ac30d88914a659d6c67df73591bc317d8a5062f8e794c7ba9ff92831d66e21",
+    "baseBlendSHA256": "4e8fa6695251019074b63e9e2377b3773a222574a0fffbba02809cb7e0b300fc",
+    "scale": 1,
+    "newLights": 0,
+    "materials": 21
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "finalBlender": [
+    {
+      "code": "B",
+      "sourceBlendSHA256": "4e8fa6695251019074b63e9e2377b3773a222574a0fffbba02809cb7e0b300fc",
+      "renderViews": 8,
+      "blenderEngine": "Cycles CPU, no denoiser available"
+    },
+    {
+      "code": "D",
+      "sourceBlendSHA256": "70b8cb2be84bc620276502091f2b73f6c8d83e3b239a709435c0e5a1ef7a6c92",
+      "renderViews": 8,
+      "blenderEngine": "Cycles CPU, no denoiser available"
+    },
+    {
+      "code": "E",
+      "sourceBlendSHA256": "9985d562b86c871eeaecf314449b3973d670a9c57f81f8806bc23fc9ea62e958",
+      "renderViews": 8,
+      "blenderEngine": "Cycles CPU, no denoiser available"
+    },
+    {
+      "code": "H",
+      "sourceBlendSHA256": "97729b0045dd2a04cd0723b423401fc9d61f89696b0f6b95af7dc0a6837e86bb",
+      "renderViews": 8,
+      "blenderEngine": "Cycles CPU, no denoiser available"
+    }
+  ],
+  "pixelCompositionOnly": true,
+  "noAIImages": true,
+  "historicalImagesAreNotFinal": true
+}

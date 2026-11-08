@@ -1,0 +1,87 @@
+// MIT. Four local discovery views; no world, avatar, FOV or zoom scaling.
+// Idle arrival turns the real orbit (and hence movement basis), never an
+// invisible camera-only 180-degree offset. A deliberate orbit/zoom cancels it
+// for this visit. Movement and airborne states never initiate a yaw turn.
+import * as THREE from 'three';
+import views from '../data/bdeh-camera.json' with {type:'json'};
+import {floodCameraConstraint} from '../world/flood-control.js';
+const angle=a=>Math.atan2(Math.sin(a),Math.cos(a));
+export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer){
+ let dt=1/60,active=null,idle=0,manual=false,expected=null,previous=null;
+ const metrics={arrivals:0,idleTurns:0,manualOverrides:0,localFrames:0,maximumIdleYawStep:0};
+ const entries=Object.entries(places).map(([code,p])=>({code,p,centre:p.config.centre,radius:Math.max(...p.config.maxDimensions)/2+2.0}));
+ let effectiveOrbit;
+ const safe=new Map(entries.map(e=>[e.code,floodCameraConstraint(constrain,{pos:new THREE.Vector3(...e.centre)},()=>effectiveOrbit)]));
+ const reset=()=>{active=null;idle=0;manual=false;expected=null;previous=null;};
+ const apply=(target,position)=>{
+  const entry=entries.find(e=>Math.hypot(target.x-e.centre[0],target.z-e.centre[2])<e.radius);
+  if(!entry){reset();return constrain(target,position);}
+  const o=getOrbit(),player=getPlayer?.(),preset=views[entry.code];
+  const newVisit=active!==entry.code;
+  if(newVisit){active=entry.code;idle=0;manual=false;expected={...o};previous=position.clone();metrics.arrivals++;}
+  if(expected&&(Math.abs(angle(o.yaw-expected.yaw))>.001||Math.abs(o.pitch-expected.pitch)>.001||Math.abs(o.dist-expected.dist)>.01)){
+   if(!manual)metrics.manualOverrides++;
+   manual=true;
+  }
+  // Swept guards zero actual velocity at a wall. Held movement intent must
+  // still suppress arrival turning, or the joystick basis rotates under a
+  // player who is deliberately pushing against the wall.
+  const moving=player?(Math.hypot(player.move.vx,player.move.vz)>.08||Math.hypot(player._wish?.x??0,player._wish?.z??0)>.08):true;
+  const grounded=player?.move.grounded??false;
+  idle=(!moving&&grounded)?idle+dt:0;
+  if(!manual&&idle>views.idleDelay&&player){
+   const anchor=preset.arrivalFocus??[preset.focus[0],preset.focus[2]];
+   const dx=target.x-entry.centre[0]-anchor[0],dz=target.z-entry.centre[2]-anchor[1];
+   const desired=Math.hypot(dx,dz)>3?Math.atan2(dx,dz):preset.fallbackYaw;
+   const step=THREE.MathUtils.clamp(angle(desired-o.yaw),-views.maximumIdleYawRate*dt,views.maximumIdleYawRate*dt);
+   o.yaw+=step;metrics.idleTurns++;metrics.maximumIdleYawStep=Math.max(metrics.maximumIdleYawStep,Math.abs(step));
+  }
+  expected={...o};
+  const distance=Math.hypot(target.x-entry.centre[0],target.z-entry.centre[2]);
+  const blend=THREE.MathUtils.smoothstep(entry.radius-distance,0,3);
+  const portrait=o.fov===58,basePitch=portrait?.67:.60;
+  // Preserve manual pitch deltas and zoom, lower the ordinary arrival view so
+  // the near roof edge frames facades instead of filling the portrait canvas.
+  const pitch=THREE.MathUtils.clamp(o.pitch+blend*(preset.pitch-basePitch),.12,1.2);
+  const focus=new THREE.Vector3(entry.centre[0]+preset.focus[0],preset.focus[1],entry.centre[2]+preset.focus[2]);
+  const head=target.clone(),look=target.clone().lerp(focus,.16*blend);
+  const body=head.clone().add(new THREE.Vector3(0,-.75,0)),feet=head.clone().add(new THREE.Vector3(0,-1.30,0));
+  const probes=point=>{const r=new THREE.Vector3(point.z-head.z,0,head.x-point.x).normalize().multiplyScalar(.32);return[head,body,body.clone().add(r),body.clone().sub(r),feet.clone().addScaledVector(r,.78),feet.clone().addScaledVector(r,-.78)];};
+  const visible=point=>probes(point).every(focus=>!constrain(focus,point.clone()));
+  // Keep focus near the player: this is an ordinary third-person view, not a
+  // distant QA lens. No field-of-view, model scale or orbit-distance change.
+  const delta=look.clone().sub(target);if(delta.length()>1.8)delta.setLength(1.8);look.copy(target).add(delta);
+  const desired=head.clone().add(new THREE.Vector3(Math.sin(o.yaw)*Math.cos(pitch)*o.dist,Math.sin(pitch)*o.dist,Math.cos(o.yaw)*Math.cos(pitch)*o.dist));
+  effectiveOrbit={...o,pitch};
+  safe.get(entry.code)(head,desired);
+  // The older body-visibility clamp can settle at nine units under an eave.
+  // Prefer a nearby unobstructed ordinary orbit over a sudden apparent zoom.
+  if(desired.distanceTo(head)<o.dist*.78){
+   for(const shift of[.12,-.12,.24,-.24,.36,-.36,.48,-.48,.64,-.64]){
+    const candidate=head.clone().add(new THREE.Vector3(Math.sin(o.yaw+shift)*Math.cos(pitch)*o.dist,Math.sin(pitch)*o.dist,Math.cos(o.yaw+shift)*Math.cos(pitch)*o.dist));
+    for(const focus of probes(candidate))constrain(focus,candidate);
+    if(candidate.distanceTo(head)<o.dist*.80)continue;
+    if(!visible(candidate))continue;
+    desired.copy(candidate);break;
+   }
+  }
+  if(previous&&!newVisit&&previous.distanceTo(desired)<35){
+   // Follow the orbit arc rather than a chord through a roof. Crucially,
+   // only primitive visibility clamps run after interpolation: the stateful
+   // endpoint selector would overwrite the smoothed pose every pointer packet.
+   const from=previous.clone().sub(head),to=desired.clone().sub(head),a=1-Math.exp(-8*dt);
+   const azimuth=Math.atan2(from.x,from.z)+THREE.MathUtils.clamp(angle(Math.atan2(to.x,to.z)-Math.atan2(from.x,from.z))*a,-.08,.08);
+   const elevation=THREE.MathUtils.lerp(Math.atan2(from.y,Math.hypot(from.x,from.z)),Math.atan2(to.y,Math.hypot(to.x,to.z)),a),radius=THREE.MathUtils.lerp(from.length(),to.length(),a);
+   position.copy(head).add(new THREE.Vector3(Math.sin(azimuth)*Math.cos(elevation)*radius,Math.sin(elevation)*radius,Math.cos(azimuth)*Math.cos(elevation)*radius));
+   for(let pass=0;pass<3&&!visible(position);pass++)for(const focus of probes(position))constrain(focus,position);
+   if(!visible(position))position.copy(visible(previous)?previous:desired);
+  }else position.copy(desired);
+  target.copy(look);previous=position.clone();metrics.localFrames++;
+  return true;
+ };
+ apply.stats=constrain.stats;apply.discovery=metrics;
+ apply.setDelta=value=>{dt=THREE.MathUtils.clamp(value,1/240,.05);};
+ apply.resetVisit=reset;
+ apply.state=()=>({island:active,idle,manual,orbit:expected?{...expected}:null});
+ return apply;
+}

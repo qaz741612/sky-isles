@@ -1,0 +1,28 @@
+{
+  "beforeCommit": "8b04603",
+  "beforeBlendSHA256": "ebf3baabba3b1290466d4ebaf4c559935a9b3d69addde058782483f544e109a9",
+  "afterBlendSHA256": "8d281049dae771ffa8de13b15b5048c797507a37caa41ebe2ff4f37a14787a54",
+  "cameraUnchanged": true,
+  "bothCyclesSamples": 64,
+  "view": {
+    "name": "hero",
+    "cameraBlender": [
+      36.0,
+      42.0,
+      30.0
+    ],
+    "rotation": [
+      1.0936275720596313,
+      -8.561841013943194e-09,
+      2.432966470718384
+    ],
+    "orthoScale": 45.0,
+    "size": [
+      800,
+      600
+    ],
+    "seconds": 30.43227970501175
+  },
+  "geometryChanged": "Only new E landscape additions; main architecture and physical data unchanged",
+  "newGameValidation": "pending final25 complete regression"
+}

@@ -1,0 +1,171 @@
+{
+  "commit": "2b4404927f33096ab28539a01f5e6236d670c038",
+  "scope": "F/A/C/G models/modules/data and common sim/UI/policy; global roads and main integration intentionally separately audited",
+  "files": [
+    {
+      "path": "public/data/policies.json",
+      "bytes": 957,
+      "sha256": "83e6373ff9808bf8c65148b37e835a03fb32ac5041005229c15058de3e3c56ce"
+    },
+    {
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "bytes": 4626100,
+      "sha256": "0346a6aff20bf016d7fc71fd808f8bae483055906557f487667585ddea4b6075"
+    },
+    {
+      "path": "public/models/industry-youth-c/industry-youth-c.glb",
+      "bytes": 2225844,
+      "sha256": "008c72da95ebf7fa299df3cb46f7a7f6ca523c0889b8c454895cbeea76db0f43"
+    },
+    {
+      "path": "public/models/parent-child-centre/parent-child-centre.glb",
+      "bytes": 20239060,
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44"
+    },
+    {
+      "path": "public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb",
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac"
+    },
+    {
+      "path": "src/data/flood-control-art.json",
+      "bytes": 3024,
+      "sha256": "336e21c537d42e1d7b8e68abaf30a2632f929aec675d3dc8c2c34465c41bddde"
+    },
+    {
+      "path": "src/data/flood-control-bridge-soffit.json",
+      "bytes": 6820,
+      "sha256": "e389f617b2227d0ddc7cb6ba55945c006444145bead2672d2c8d4ab35aaf2d18"
+    },
+    {
+      "path": "src/data/flood-control-collision.json",
+      "bytes": 620925,
+      "sha256": "6f5d9227c42127c4269a58352e038035c9644db91fb6897909f84017a9caaf75"
+    },
+    {
+      "path": "src/data/flood-control-floor.json",
+      "bytes": 16679,
+      "sha256": "139120e0b0dc6ec336a33c7aa410bd692f1998a97516c839da1d79e98f6a4a68"
+    },
+    {
+      "path": "src/data/flood-control-paving.json",
+      "bytes": 22364,
+      "sha256": "106a28e2ffd6398b2b8fc1c8d74ddbded04a9b19566e927de3abfcc231f34a7c"
+    },
+    {
+      "path": "src/data/flood-control-plan.json",
+      "bytes": 12932,
+      "sha256": "af54e7ff6349ba7dd8dcadfe1c2a0546efb8d1aec7f0d41b535b67d7517a7b27"
+    },
+    {
+      "path": "src/data/flood-control-site.json",
+      "bytes": 29711,
+      "sha256": "7a948201e33b5414aa6d9634540c7e93fd04310bf31662c71977a2de351ebd2c"
+    },
+    {
+      "path": "src/data/industry-youth-collision.json",
+      "bytes": 1282361,
+      "sha256": "a4dd2151edc1222509e875f62b113e96f58790d7985da2ecefae4d5d30ac597c"
+    },
+    {
+      "path": "src/data/industry-youth-plan.json",
+      "bytes": 4275,
+      "sha256": "99743161c8808b2a6a4dc74e18912c11c17e177197b6ba84899529de50d07b92"
+    },
+    {
+      "path": "src/data/industry-youth-v3-buildings.json",
+      "bytes": 1253,
+      "sha256": "d35f09a1f55f53dfcc144640e6a792042f231d352ab7c8e2350b427f40dd4312"
+    },
+    {
+      "path": "src/data/parent-child-collision.json",
+      "bytes": 1034450,
+      "sha256": "3ecda08b9e10dc58e412aa6c7b90cde055c71b7d87f62080e3dc172bdb392156"
+    },
+    {
+      "path": "src/data/parent-child-model.json",
+      "bytes": 3335,
+      "sha256": "73932f1fcd8a0ac74012a022e1cd1288842d003160675be6d8e7a6aa0768b600"
+    },
+    {
+      "path": "src/data/station-model.json",
+      "bytes": 946,
+      "sha256": "09819aef6cc55fc8850a4890c0709603e726b59c0f41fa632d23ffa69b514a1c"
+    },
+    {
+      "path": "src/data/transport.json",
+      "bytes": 1638,
+      "sha256": "858d6f58940fee8f4ff5dfa92524936d73825f93a51a5000ec0e6d64b58927eb"
+    },
+    {
+      "path": "src/sim/audio.js",
+      "bytes": 8570,
+      "sha256": "d2a2f74f1d5f634d566c3dfab89ee0fbab6fab39ccbfedc66b9dee43e109bf84"
+    },
+    {
+      "path": "src/sim/camera-clearance.js",
+      "bytes": 1795,
+      "sha256": "9e75cefd34bbdd53c99f0b01e095a4b5144cbc58f5efafead6b3e69bc4f3d523"
+    },
+    {
+      "path": "src/sim/camera-profile.js",
+      "bytes": 403,
+      "sha256": "d61d3978fad50b6b4438b5c5ef494a4f0a6a14a0b0864b303f7e9964ce508e79"
+    },
+    {
+      "path": "src/sim/movement.js",
+      "bytes": 2471,
+      "sha256": "1aa6f30fffc45466484ceeee974af3e8372740dbf1a8f22433d8075862d2882a"
+    },
+    {
+      "path": "src/sim/panorama.js",
+      "bytes": 2575,
+      "sha256": "a14c372c992091484c0ffd47cfd1efd5b274756f3ee7879f5601a419db5db312"
+    },
+    {
+      "path": "src/sim/player.js",
+      "bytes": 8816,
+      "sha256": "026fe21a032de3aee88e31521a29e10a73f10a27a67698da9529be5b1ff7d1eb"
+    },
+    {
+      "path": "src/sim/puzzle.js",
+      "bytes": 2159,
+      "sha256": "6f225b6104c557963346bf3fde12f6bc99557cc8081fb790eb9f807080452f7c"
+    },
+    {
+      "path": "src/sim/rng.js",
+      "bytes": 871,
+      "sha256": "69d254e1d153a9cb2b5af90bc72fd353f62dc5a1423a51bafd58f8cd725cee71"
+    },
+    {
+      "path": "src/sim/walkways.js",
+      "bytes": 3098,
+      "sha256": "3d60a2760048b3df7530a495bc1996780d9462449570dd02f90228b8590cd1fe"
+    },
+    {
+      "path": "src/world/elevated-station.js",
+      "bytes": 7674,
+      "sha256": "cda24e5a2e2502e6fb1b36eaf4fdafd0bf80b11b11c30402d668d60b6b3ee086"
+    },
+    {
+      "path": "src/world/flood-control.js",
+      "bytes": 8081,
+      "sha256": "e676774c9ddf09e9a26792e6e12b990b7ee57e050771664661498ba8c06527cf"
+    },
+    {
+      "path": "src/world/industry-youth.js",
+      "bytes": 4973,
+      "sha256": "b0ba8d95c2da7be13c6d09081e52e9830dd79add6ef6897ab45e7b90132475b8"
+    },
+    {
+      "path": "src/world/parent-child-model.js",
+      "bytes": 8348,
+      "sha256": "61c7b7eb9bb437b025f4584d24ddc93fabc36f739af56ebe50564f8727991d57"
+    },
+    {
+      "path": "src/world/station-model.js",
+      "bytes": 6388,
+      "sha256": "83354b54c04aa91cde840c54bcdb3f48c6d3de9412e397b051609a994e16c207"
+    }
+  ]
+}

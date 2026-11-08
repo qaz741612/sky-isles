@@ -1,0 +1,31 @@
+{
+  "savedSourceCommit": "677208ff437a9eae355f9a9552e94d5583c3b519",
+  "stats": {
+    "startTime": "2026-11-07T14:18:44.930Z",
+    "duration": 4470725.896000001,
+    "expected": 64,
+    "skipped": 4,
+    "unexpected": 2,
+    "flaky": 0
+  },
+  "unresolved": [
+    {
+      "file": "r21-final-qa.e2e.js",
+      "project": "desktop",
+      "title": "final R21 arrival: original-profile landmarks, continuous gate-to-guide camera, manual orbit, dry checkpoint and panorama",
+      "status": "failed",
+      "duration": 32745,
+      "error": "Error: page.evaluate: Error: native landmark off screen E {\"projection\":[[-0.19407777812164342,0.2418012466722007,0.9904131255678738],[-0.11596191891143491,-1.2686031622583778,0.9761015165765934]],\"camera\":[30.478062395614398,8.744517002593316,-34.686098915381635],\"player\":[32.5,0.14499999582767498,-20.5],\"orbit\":{\"yaw\":3.2831853071795867,\"pitch\":0.6,\"dist\":16,\"fov\":55}}\n    at auditR21Arrival (eval at evaluate (:303:30), <anonymous>:137:104)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "file": "world-spaces.e2e.js",
+      "project": "mobile",
+      "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+      "status": "timedOut",
+      "duration": 439370,
+      "error": "\u001b[31mTest timeout of 420000ms exceeded.\u001b[39m"
+    }
+  ],
+  "environment": "One No usable execution environment error; new workspace context restored the existing directory without reset/clean. Local unstaged code and artifacts still present.",
+  "pending": "Fix E desktop arrival composition, investigate mobile8-island CPU timeout, then repeat affected QA and capture the final build. No art/hardware approval."
+}

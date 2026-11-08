@@ -1,0 +1,30 @@
+{
+  "status": "Current32+5 rendered-source checkpoint complete. Full renewed70-case regression and118 game capture linkage passed; authoritative final linkage is source-consistency.json.",
+  "models": [
+    {
+      "code": "B",
+      "blendSHA256": "a6889d5b53a3362f9b9e415ed54d672e09251f368efe4bbcad9f3ce44b8f2e34",
+      "GLBSHA256": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+      "views": 8
+    },
+    {
+      "code": "D",
+      "blendSHA256": "e8b46de68157b12f84bd82e7dc9a898b104f547fda2d8fe93eec667110628b52",
+      "GLBSHA256": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
+      "views": 8
+    },
+    {
+      "code": "E",
+      "blendSHA256": "874f3144cbbe35735db443a94e59d8604d538d9734a62301f28d36c55c7f88b3",
+      "GLBSHA256": "c3cd1f41fa17479a724eebacaf2067b59c9ee6ed14b27d8d2e0bd23ddb78736f",
+      "views": 8
+    },
+    {
+      "code": "H",
+      "blendSHA256": "a46127e6e151c7f33480c3a7ec79d7e435a7da7d614bbe9b1337f58e3c474e56",
+      "GLBSHA256": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9",
+      "views": 8
+    }
+  ],
+  "extraSameSourceDetails": 5
+}

@@ -8,6 +8,7 @@ import { guardIndex } from '../src/sim/walkways.js';
 import { buildTransport } from './helpers/elevated-fixture.js';
 import {buildFloodControl} from '../src/world/flood-control.js';
 import {buildIndustryYouth} from '../src/world/industry-youth.js';
+import {r21Replacements}from'./helpers/r21-fixture.js';
 import { Player } from '../src/sim/player.js';
 import { WALKWAY, planWalkways, moveWithGuards, nearestOnSegment } from '../src/sim/walkways.js';
 import { walkTour } from './helpers/walk-tour.js';
@@ -17,7 +18,7 @@ function fixture() {
   const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera();
   const colliders=[],islands=ISLANDS.map(d=> {
     const grass=new THREE.Mesh(new THREE.CylinderGeometry(d.r,d.r*0.9,1.1,28),new THREE.MeshBasicMaterial());
-    grass.position.set(d.x,d.y-0.55,d.z);grass.userData.island=d.name;scene.add(grass);if(d.name!=='crystal'&&d.name!=='koi')colliders.push(grass);
+    grass.position.set(d.x,d.y-0.55,d.z);grass.userData.island=d.name;scene.add(grass);if(!['crystal','koi','temple','windmill','meadow','lookout'].includes(d.name))colliders.push(grass);
     const group=new THREE.Group();group.position.set(d.x,d.y,d.z);scene.add(group);
     return { name:d.name,r:d.r,pos:new THREE.Vector3(d.x,d.y,d.z),group };
   });
@@ -26,7 +27,7 @@ function fixture() {
   const transport=buildTransport(trafficHome,()=>new THREE.Group());
   const flood=buildFloodControl(new THREE.Group(),islands.find(i=>i.name==='crystal'));
   const industry=buildIndustryYouth(new THREE.Group(),islands.find(i=>i.name==='koi'));
-  const scenery=buildPolicyScenery(islands,{crystal:flood,koi:industry});
+  const scenery=buildPolicyScenery(islands,{crystal:flood,koi:industry,...r21Replacements(islands)});
   const barriers=[...bridges.barriers,...scenery.barriers,...transport.barriers];
   const player=new Player(scene,camera,[...colliders,...bridges.colliders,...transport.colliders,...scenery.colliders]);
   player.orbit.yaw=0;player.navigation={islands:ISLANDS,barriers,nearby:guardIndex(barriers)};
@@ -119,12 +120,16 @@ test('every ordered junction turn stays walkable with actual transport decks pre
  assert.ok(turns>=60,`ordered port turns: ${turns}`);
 });
 
-test('all six covered policy places support an actual falling Player; the open park pergola has no fake roof',()=>{
+test('all seven real covered policy places support an actual falling Player, including R21 ecology',()=>{
  const {scene,player}=fixture(),roofs=new Map();
  scene.traverse(mesh=>{if(mesh.userData.support==='roof'&&mesh.userData.island!=='home'){if(!roofs.has(mesh.userData.island))roofs.set(mesh.userData.island,[]);roofs.get(mesh.userData.island).push(mesh);}});
- assert.deepEqual([...roofs.keys()].sort(),['tree','temple','koi','windmill','crystal','lookout'].sort());
- for(const[name,meshes]of roofs){const mesh=meshes[0],box=new THREE.Box3().setFromObject(mesh),centre=box.getCenter(new THREE.Vector3()),ray=new THREE.Raycaster(new THREE.Vector3(centre.x,box.max.y+2,centre.z),new THREE.Vector3(0,-1,0));const expected=ray.intersectObjects(meshes,false)[0];assert.ok(expected,name);player.teleport(centre.x,expected.point.y+1,centre.z);
+ assert.deepEqual([...roofs.keys()].sort(),['tree','temple','koi','windmill','crystal','lookout','meadow'].sort());
+ for(const[name,meshes]of roofs){const mesh=meshes[0],box=new THREE.Box3().setFromObject(mesh),centre=box.getCenter(new THREE.Vector3()),roofTop=Math.max(...meshes.map(m=>new THREE.Box3().setFromObject(m).max.y))+2,ray=new THREE.Raycaster(new THREE.Vector3(centre.x,roofTop,centre.z),new THREE.Vector3(0,-1,0));let expected=ray.intersectObjects(meshes,false)[0];
+ // A crescent roof's box centre can be an open courtyard. Sample an actual
+ // upward triangle rather than inventing a roof across its concave opening.
+ if(!expected){const a=mesh.geometry.attributes.position,index=mesh.geometry.index,n=index?.count??a.count,k=Math.floor(n/6)*3,at=j=>new THREE.Vector3().fromBufferAttribute(a,index?index.getX(j):j).applyMatrix4(mesh.matrixWorld),point=at(k).add(at(k+1)).add(at(k+2)).multiplyScalar(1/3);ray.set(new THREE.Vector3(point.x,roofTop,point.z),new THREE.Vector3(0,-1,0));expected=ray.intersectObjects(meshes,false)[0];}
+ assert.ok(expected,name);player.teleport(expected.point.x,expected.point.y+1,expected.point.z);
  for(let i=0;i<180;i++)player.update(1/60,{x:0,z:0,jumpHeld:false,jumpPressed:false},i/60);
- assert.ok(player.move.grounded,name);assert.ok(Math.abs(player.pos.y-expected.point.y)<.04,`${name} roof support expected=${expected.point.y} actual=${player.pos.y} at ${player.pos.toArray()}`);assert.equal(player.respawnCount,0);
+ assert.ok(player.move.grounded,name);ray.set(new THREE.Vector3(player.pos.x,roofTop,player.pos.z),new THREE.Vector3(0,-1,0));const landed=ray.intersectObjects(meshes,false)[0];assert.ok(landed&&Math.abs(player.pos.y-landed.point.y)<.04,`${name} does not rest on its actual curved roof at ${player.pos.toArray()}`);assert.equal(player.respawnCount,0);
  }
 });

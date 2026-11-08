@@ -1,0 +1,38 @@
+{
+  "method": "Same real Player helper, same H public path,8 requested orbit directions,22 valid boundary probes,4,132 fixed60Hz ticks; all8 models loaded. Renderer/native loop disabled in both. Same four GLB bytes in frozen snapshots, same final player position. Same final source, diagnostic Vite alias changes only the local query backend. Served GLB SHA verified in both. Shared2-core cloud CPU; not phone FPS or human comfort.",
+  "modelSHA256": {
+    "B": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+    "D": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
+    "E": "c3cd1f41fa17479a724eebacaf2067b59c9ee6ed14b27d8d2e0bd23ddb78736f",
+    "H": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9"
+  },
+  "beforeBundleSHA256": "c9ffa4e29e6b8e9078731e67743f8aa0c4119c74d2a4b6e8b145580b374df3ef",
+  "afterBundleSHA256": "35d57e9448b95773f12f100d18ca5aa1d80e24ad23fdab3c68fa6621678a9b44",
+  "beforeMs": 218933,
+  "afterMs": 15499,
+  "ratio": 14.125621007806956,
+  "ticks": 4132,
+  "actualEndDistance": 0.0,
+  "afterTriangleIndex": {
+    "opaque": {
+      "acceleration": "static-triangle-grid",
+      "queries": 650957,
+      "candidates": 86908132,
+      "maxCandidates": 1718,
+      "indexTriangles": 88128,
+      "indexCells": 259,
+      "indexReferences": 113988,
+      "bufferBytes": 11471952
+    },
+    "foliage": {
+      "acceleration": "static-triangle-grid",
+      "queries": 296207,
+      "candidates": 822664,
+      "maxCandidates": 293,
+      "indexTriangles": 3840,
+      "indexCells": 45,
+      "indexReferences": 4669,
+      "bufferBytes": 498676
+    }
+  }
+}

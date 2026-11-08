@@ -1,0 +1,130 @@
+{
+  "B": {
+    "code": "B",
+    "island_dimensions": [
+      30,
+      28
+    ],
+    "node_center": [
+      -55,
+      4
+    ],
+    "external_route_ids": [
+      "S08",
+      "S12",
+      "S13",
+      "S14"
+    ],
+    "number_of_expected_gates": 4,
+    "4p8_ground_corridor_connected_parts": 1,
+    "geometry_parts": 476,
+    "triangles": 19003,
+    "edge_and_low_route_errors": [],
+    "elevated_cautions": [],
+    "npc_research_spot": [
+      -0.7,
+      -11.2
+    ],
+    "npc_3x3_safe_from_outerroad": true,
+    "scope": "Offline candidate; not game collision or player camera QA",
+    "full_glb_width": 29.692,
+    "full_glb_depth": 27.692,
+    "size_limit_respected": true,
+    "glb_loaded_meshgroups": 21
+  },
+  "D": {
+    "code": "D",
+    "island_dimensions": [
+      32,
+      29
+    ],
+    "node_center": [
+      -53.352,
+      87.048
+    ],
+    "external_route_ids": [
+      "S16",
+      "S17"
+    ],
+    "number_of_expected_gates": 2,
+    "4p8_ground_corridor_connected_parts": 1,
+    "geometry_parts": 400,
+    "triangles": 19369,
+    "edge_and_low_route_errors": [],
+    "elevated_cautions": [],
+    "npc_research_spot": [
+      11.3,
+      -5.25
+    ],
+    "npc_3x3_safe_from_outerroad": true,
+    "scope": "Offline candidate; not game collision or player camera QA",
+    "full_glb_width": 31.671,
+    "full_glb_depth": 28.681,
+    "size_limit_respected": true,
+    "glb_loaded_meshgroups": 23
+  },
+  "E": {
+    "code": "E",
+    "island_dimensions": [
+      34,
+      31
+    ],
+    "node_center": [
+      32.5,
+      -20.5
+    ],
+    "external_route_ids": [
+      "S02",
+      "S03",
+      "S06",
+      "S07"
+    ],
+    "number_of_expected_gates": 4,
+    "4p8_ground_corridor_connected_parts": 1,
+    "geometry_parts": 223,
+    "triangles": 17804,
+    "edge_and_low_route_errors": [],
+    "elevated_cautions": [],
+    "npc_research_spot": [
+      -11.2,
+      7.2
+    ],
+    "npc_3x3_safe_from_outerroad": true,
+    "scope": "Offline candidate; not game collision or player camera QA",
+    "full_glb_width": 33.651,
+    "full_glb_depth": 30.659,
+    "size_limit_respected": true,
+    "glb_loaded_meshgroups": 21
+  },
+  "H": {
+    "code": "H",
+    "island_dimensions": [
+      33,
+      30
+    ],
+    "node_center": [
+      50.544,
+      88.452
+    ],
+    "external_route_ids": [
+      "S19",
+      "S20"
+    ],
+    "number_of_expected_gates": 2,
+    "4p8_ground_corridor_connected_parts": 1,
+    "geometry_parts": 476,
+    "triangles": 20798,
+    "edge_and_low_route_errors": [],
+    "elevated_cautions": [],
+    "npc_research_spot": [
+      -6.3,
+      -9.2
+    ],
+    "npc_3x3_safe_from_outerroad": true,
+    "scope": "Offline candidate; not game collision or player camera QA",
+    "full_glb_width": 32.661,
+    "full_glb_depth": 29.67,
+    "size_limit_respected": true,
+    "glb_loaded_meshgroups": 22
+  }
+}

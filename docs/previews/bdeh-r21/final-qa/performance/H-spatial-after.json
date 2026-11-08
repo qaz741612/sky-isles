@@ -1,0 +1,157 @@
+{
+  "port": 4305,
+  "codes": "H",
+  "names": [
+    "lookout"
+  ],
+  "bundleSHA256": "35d57e9448b95773f12f100d18ca5aa1d80e24ad23fdab3c68fa6621678a9b44",
+  "servedModels": {
+    "B": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+    "D": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
+    "E": "c3cd1f41fa17479a724eebacaf2067b59c9ee6ed14b27d8d2e0bd23ddb78736f",
+    "H": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9"
+  },
+  "method": "The exact production world-space Player route/eight-orbit/guard audit with explicit island filtering. Renderer and native loop disabled; fixed60Hz engineering steps. All8 models remain loaded. Cloud CPU diagnostic, no hardware FPS or human comfort claim.",
+  "elapsedMs": 15499,
+  "marks": [
+    {
+      "island": "lookout",
+      "phase": "start",
+      "ticks": 0,
+      "elapsedMs": 0.10000000149011612,
+      "endpointCacheHits": 0,
+      "endpointSearches": 0
+    },
+    {
+      "island": "lookout",
+      "phase": "route-and-eight-orbits",
+      "ticks": 1322,
+      "elapsedMs": 13579.60000000149,
+      "endpointCacheHits": 272,
+      "endpointSearches": 839
+    },
+    {
+      "island": "lookout",
+      "phase": "complete",
+      "ticks": 4132,
+      "elapsedMs": 15468.300000000745,
+      "endpointCacheHits": 2263,
+      "endpointSearches": 1658
+    }
+  ],
+  "result": {
+    "records": [
+      {
+        "island": "lookout",
+        "route": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2.5
+          ],
+          [
+            -5.5,
+            2.8
+          ],
+          [
+            6,
+            2.8
+          ],
+          [
+            6,
+            -1.5
+          ],
+          [
+            0,
+            -8.1
+          ],
+          [
+            -2,
+            -4.4
+          ],
+          [
+            -6.3,
+            -4.3
+          ],
+          [
+            -6.3,
+            -6.36
+          ],
+          [
+            -6.3,
+            -4.3
+          ],
+          [
+            -2,
+            -4.4
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "end": [
+          50.66090907749445,
+          0.14499999582767487,
+          88.74564443470057
+        ],
+        "edgeProbes": 22,
+        "availableBoundarySegments": 131,
+        "sampledBoundarySegments": 24,
+        "excludedEdgeStarts": [
+          {
+            "reason": "short junction tessellation",
+            "length": 0.027379755366977933
+          },
+          {
+            "reason": "solid occupies inward test start",
+            "x": 39.837265806771896,
+            "z": 98.52923971768315
+          }
+        ],
+        "orbitProbes": 8
+      }
+    ],
+    "respawns": 0,
+    "cameraIndex": {
+      "queries": 36,
+      "candidates": 0,
+      "maxCandidates": 0
+    },
+    "r21CameraMetrics": {
+      "arrivals": 1,
+      "idleTurns": 63,
+      "manualOverrides": 1,
+      "localFrames": 4132,
+      "maximumIdleYawStep": 0.01583333333333333,
+      "endpointCacheHits": 2263,
+      "endpointSearches": 1658
+    },
+    "r21CameraIndex": {
+      "opaque": {
+        "acceleration": "static-triangle-grid",
+        "queries": 650957,
+        "candidates": 86908132,
+        "maxCandidates": 1718,
+        "indexTriangles": 88128,
+        "indexCells": 259,
+        "indexReferences": 113988,
+        "bufferBytes": 11471952
+      },
+      "foliage": {
+        "acceleration": "static-triangle-grid",
+        "queries": 296207,
+        "candidates": 822664,
+        "maxCandidates": 293,
+        "indexTriangles": 3840,
+        "indexCells": 45,
+        "indexReferences": 4669,
+        "bufferBytes": 498676
+      }
+    },
+    "description": "Accelerated integration audit using the actual Player, not a normal-operation video."
+  }
+}

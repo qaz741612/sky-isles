@@ -1,0 +1,10 @@
+{
+  "command": "npm run check",
+  "unitTests": 93,
+  "passed": 93,
+  "failed": 0,
+  "lint": "passed",
+  "productionBuild": "passed",
+  "log": "npm-check.log",
+  "scope": "Final source; actual command complete log preserved, no real-device or human art approval."
+}

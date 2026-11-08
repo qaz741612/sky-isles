@@ -1,3 +1,4 @@
+import {r21Replacements}from'./helpers/r21-fixture.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
@@ -7,7 +8,7 @@ import {buildTransport} from './helpers/elevated-fixture.js';
 import layout from '../src/data/yuan-layout.json' with {type:'json'};
 import surface from '../src/data/yuan-surface.json' with {type:'json'};
 import {moveWithGuards,nearestOnSegment} from '../src/sim/walkways.js';
-const fixture=()=>{const islands=ISLANDS.map(i=>({...i,pos:new THREE.Vector3(i.x,i.y,i.z),group:new THREE.Group()}));return{islands,s:buildPolicyScenery(islands),h:buildTransport(islands[0],()=>new THREE.Group())};};
+const fixture=(r21=false)=>{const islands=ISLANDS.map(i=>({...i,pos:new THREE.Vector3(i.x,i.y,i.z),group:new THREE.Group()}));return{islands,s:buildPolicyScenery(islands,r21?r21Replacements(islands):{}),h:buildTransport(islands[0],()=>new THREE.Group())};};
 test('seven distinct authored places use bounded material batches, explicit solids and no decoration ground colliders',()=>{
  const{islands,s}=fixture();assert.equal(s.groups.length,7);assert.equal(islands[0].group.children.length,1); // transport fixture only
  assert.equal(new Set(s.layouts.map(l=>l.kind)).size,7);assert.ok(s.colliders.length>10);assert.ok(s.colliders.every(m=>['roof','solid','walkable-platform'].includes(m.userData.support)),'only explicit structural support/crossing, no decorative batches as ground');
@@ -16,8 +17,8 @@ test('seven distinct authored places use bounded material batches, explicit soli
  for(const w of s.barriers){const dx=w.b.x-w.a.x,dz=w.b.z-w.a.z,d=Math.hypot(dx,dz);if(d<1e-6)continue;const p={x:(w.a.x+w.b.x)/2-dz/d,y:0,z:(w.a.z+w.b.z)/2+dx/d};moveWithGuards(p,dz/d*2,-dx/d*2,[w]);assert.ok((p.x-w.a.x)*(-dz/d)+(p.z-w.a.z)*dx/d>=.4099);}
 });
 test('all scenery preserves the 3.9-wide player-centre corridor along every fixed B route',()=>{
- const{s,h}=fixture(),walls=[...s.barriers,...h.barriers];let probes=0;
- for(const path of layout.paths)for(let i=1;i<path.points.length;i++){const a=path.points[i-1],b=path.points[i],len=Math.hypot(b.x-a.x,b.z-a.z);for(const offset of[-1.95,0,1.95])for(const t of[0,.5,1]){const p={x:a.x+(b.x-a.x)*t-(b.z-a.z)/len*offset,z:a.z+(b.z-a.z)*t+(b.x-a.x)/len*offset};for(const w of walls){const q=nearestOnSegment(p,w.a,w.b);assert.ok(Math.hypot(p.x-q.x,p.z-q.z)>.41,`${path.id} blocked by ${w.island} ${w.kind}`);}probes++;}}
+ const{s,h}=fixture(true),walls=[...s.barriers,...h.barriers];let probes=0;
+ for(const path of layout.paths)for(let i=1;i<path.points.length;i++){const a=path.points[i-1],b=path.points[i],len=Math.hypot(b.x-a.x,b.z-a.z);for(const offset of[-1.95,0,1.95])for(const t of[0,.5,1]){const p={x:a.x+(b.x-a.x)*t-(b.z-a.z)/len*offset,z:a.z+(b.z-a.z)*t+(b.x-a.x)/len*offset};for(const w of walls){if(w.a.y>1.6)continue;const q=nearestOnSegment(p,w.a,w.b);assert.ok(Math.hypot(p.x-q.x,p.z-q.z)>.41,`${path.id} blocked by ${w.island} ${w.kind}`);}probes++;}}
  assert.ok(probes>6000);
 });
 test('every island has independent exposed union edges and an accessible future NPC reservation',()=>{

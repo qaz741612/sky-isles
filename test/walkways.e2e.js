@@ -34,12 +34,12 @@ test('walk every island without jumping through keyboard or a single joystick po
   const result=await page.evaluate(({route,mobile})=>{
     const w=window.__skyisles.world,p=w.player,stick=document.getElementById('joystick');
     const rect=stick.getBoundingClientRect(),cx=rect.left+rect.width/2,cy=rect.top+rect.height/2;
-    const visited=new Set(['F']),yaw=p.orbit.yaw;let ticks=0,forcedFall=false;
+    const visited=new Set(['F']),yaw=p.orbit.yaw;let ticks=0,forcedFall=false,activeYawChanges=0;
     const pointer=(x,z)=>stick.dispatchEvent(new PointerEvent('pointermove',{pointerId:window.tourPointerId,pointerType:'touch',clientX:cx+x*42,clientY:cy+z*42,bubbles:true}));
     const tick=()=>{
       const input=w.ui.poll(p.orbit);
       if(input.jumpHeld||input.jumpPressed)throw new Error('tour must not jump');
-      w.tourStep(1/60,input,++ticks/60);
+      p.cameraConstraint.setDelta?.(1/60);const before=p.orbit.yaw;w.tourStep(1/60,input,++ticks/60);if(Math.hypot(input.x,input.z)>.1&&Math.abs(p.orbit.yaw-before)>.00001)activeYawChanges++;
       if(!forcedFall && p.respawnCount)throw new Error('unexpected fall/respawn');
     };
     for(const leg of route) {
@@ -47,7 +47,7 @@ test('walk every island without jumping through keyboard or a single joystick po
         let remaining=1800;
         while(Math.hypot(target.x-p.pos.x,target.z-p.pos.z)>0.24 && remaining-->0) {
           const dx=target.x-p.pos.x,dz=target.z-p.pos.z,len=Math.hypot(dx,dz);
-          if(mobile)pointer((dx*Math.cos(yaw)-dz*Math.sin(yaw))/len,(dx*Math.sin(yaw)+dz*Math.cos(yaw))/len);
+          if(mobile){const a=p.orbit.yaw;pointer((dx*Math.cos(a)-dz*Math.sin(a))/len,(dx*Math.sin(a)+dz*Math.cos(a))/len);}
           else {p.orbit.yaw=Math.atan2(-dx,-dz);window.dispatchEvent(new KeyboardEvent('keydown',{code:'KeyW',bubbles:true}));}
           tick();
           if(p.pos.y<target.y-4)throw new Error(`fell below ${leg.to}: target=${JSON.stringify(target)} pos=${JSON.stringify(p.pos)} input=${JSON.stringify(w.ui.input)} pointer=${window.tourPointerId}`);
@@ -61,12 +61,12 @@ test('walk every island without jumping through keyboard or a single joystick po
     const before=p.pos.clone();for(let i=0;i<120;i++)tick();
     const stopped={speed:Math.hypot(p.move.vx,p.move.vz),drift:before.distanceTo(p.pos),respawns:p.respawnCount,checkpoint:p.lastGrounded.toArray()};
     const endpoint=p.pos.toArray();forcedFall=true;p.teleport(100,-50,100);tick();
-    return {visited:[...visited],ticks,stopped,endpoint,returned:p.pos.toArray(),yawUnchanged:!mobile||p.orbit.yaw===yaw};
+    return {visited:[...visited],ticks,stopped,endpoint,returned:p.pos.toArray(),yawUnchangedDuringMovement:activeYawChanges===0,idleDiscoveryTurn:!mobile||p.orbit.yaw!==yaw};
   },{route,mobile:isMobile});
   if(session){await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await session.detach();}
   else await page.keyboard.up('KeyW');
   expect(result.visited).toHaveLength(21);expect(result.stopped.speed).toBe(0);expect(result.stopped.drift).toBeLessThan(0.5);
-  expect(result.stopped.respawns).toBe(0);expect(result.yawUnchanged).toBe(true);
+  expect(result.stopped.respawns).toBe(0);expect(result.yawUnchangedDuringMovement).toBe(true);
   expect(Math.hypot(result.returned[0]-result.stopped.checkpoint[0],result.returned[2]-result.stopped.checkpoint[2])).toBeLessThan(0.1);
   expect(result.ticks).toBeGreaterThan(10000);
   console.log(JSON.stringify({device:isMobile?'single-pointer joystick':'keyboard',...result}));

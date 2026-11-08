@@ -1,7 +1,7 @@
 import {test,expect} from './helpers/software-qa.js';import fs from 'node:fs';
 test('active landscape zones preserve every route in both directions with the live Player',async({page,isMobile})=>{
  test.setTimeout(600000);const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');await page.waitForFunction(()=>window.__skyisles&&document.querySelector('#loading').classList.contains('hidden'),null,{timeout:180000});
- const results=await page.evaluate(()=>{const w=window.__skyisles.world,p=w.player,step=p.update.bind(p);p.update=()=>{};w.renderer.render=()=>{};let ticks=0;const records=[];const tick=(x=0,z=0)=>step(1/60,{x,z,jumpPressed:false,jumpHeld:false},++ticks/60);
+ const results=await page.evaluate(()=>{const w=window.__skyisles.world,p=w.player,step=p.update.bind(p);p.update=()=>{};w.renderer.render=()=>{};let ticks=0;const records=[];const tick=(x=0,z=0)=>{p.cameraConstraint.setDelta?.(1/60);return step(1/60,{x,z,jumpPressed:false,jumpHeld:false},++ticks/60);};
   const active=new Set(w.bridges.landscape.plan.routes.filter(r=>r.active).map(r=>r.id));
   for(const path of (w.bridges.walkPlans??w.bridges.plans).filter(p=>active.has(p.id))){p.teleport(path.points[0].x,.15,path.points[0].z);for(let i=0;i<50;i++)tick();
    for(const target of[...path.points,...path.points.toReversed()]){let frames=0;while(Math.hypot(target.x-p.pos.x,target.z-p.pos.z)>.20&&frames++<1400){const dx=target.x-p.pos.x,dz=target.z-p.pos.z,d=Math.hypot(dx,dz),yaw=p.orbit.yaw;tick((dx*Math.cos(yaw)-dz*Math.sin(yaw))/d,(dx*Math.sin(yaw)+dz*Math.cos(yaw))/d);if(!p.move.grounded||p.respawnCount)throw Error('landscape gap '+path.id+' '+JSON.stringify(p.pos));}if(frames>=1400)throw Error('landscape obstruction '+path.id+' '+JSON.stringify({target,pos:p.pos.toArray()}));}
@@ -14,5 +14,5 @@ test('active landscape zones preserve every route in both directions with the li
   p.teleport(lx+c*.5,1.35,lz-s*.5);p.move.vy=6;tick();const directHead=p.pos.y+1.6;if(directHead>3.025)throw Error('upward sweep missed real emitter '+directHead);const lampHeadroom={id:lamp.id,maxHead,minOverlappingClearance,directHead,airborneQAStart:true,verified:true};
   return{records,bays,lampHeadroom,ticks,respawns:p.respawnCount,stats:w.bridges.landscape.stats};
  });
- expect(results.respawns).toBe(0);expect(results.records.length).toBeGreaterThan(0);expect(errors).toEqual([]);fs.writeFileSync(`docs/previews/yuan-bridges-landscape-v1/zone-check-${isMobile?'mobile':'desktop'}.json`,JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify(results));
+ expect(results.respawns).toBe(0);expect(results.records.length).toBeGreaterThan(0);expect(errors).toEqual([]);const output=process.env.SKYISLES_QA_OUTPUT_DIR??'docs/previews/yuan-bridges-landscape-v1';fs.mkdirSync(output,{recursive:true});fs.writeFileSync(`${output}/zone-check-${isMobile?'mobile':'desktop'}.json`,JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify(results));
 });

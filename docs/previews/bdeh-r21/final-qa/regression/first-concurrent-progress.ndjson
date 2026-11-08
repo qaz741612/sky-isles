@@ -1,0 +1,2 @@
+{"title":"loads without console errors and renders non-uniform pixels","project":"desktop","status":"timedOut","duration":132551,"retry":0,"error":"\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"}
+{"title":"getState exposes the core game state","project":"desktop","status":"interrupted","duration":22654,"retry":0,"error":"Error: Object with guid handle@37a1cab8eae1f6e8f1ed31e32d2fad67 was not bound in the connection"}

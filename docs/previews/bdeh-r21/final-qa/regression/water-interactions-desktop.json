@@ -1,0 +1,193 @@
+{
+  "waterEdge": [
+    {
+      "length": 1.5175023012938345,
+      "side": -3.899764271113443,
+      "minimumDistance": 0.3650100000000023,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 2.9514237644394234,
+      "side": -0.05854869507736371,
+      "minimumDistance": 0.36500999999999645,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 3.710000000000001,
+      "skipped": "midpoint has no clear dry approach; whole segment covered by unit sweep"
+    },
+    {
+      "length": 2.5121820913128525,
+      "side": 0.3650100000000008,
+      "minimumDistance": 0.3650099999999946,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 1.2601188438226814,
+      "side": 0.3650100000000007,
+      "minimumDistance": 0.3650099999999994,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 1.2153473061493147,
+      "side": 0.36501000000000006,
+      "minimumDistance": 0.36501000000000006,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 2.7219493735544713,
+      "side": 0.36501000000000466,
+      "minimumDistance": 0.3650100000000043,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 4.086245909872965,
+      "side": 0.365009999999999,
+      "minimumDistance": 0.36500999999999756,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 4.509988913511873,
+      "side": 0.365009999999996,
+      "minimumDistance": 0.36500999999999784,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 2.8100000000000023,
+      "skipped": "midpoint has no clear dry approach; whole segment covered by unit sweep"
+    },
+    {
+      "length": 2.610000000000003,
+      "skipped": "midpoint has no clear dry approach; whole segment covered by unit sweep"
+    },
+    {
+      "length": 2.285525163047659,
+      "side": 0.36500999999999845,
+      "minimumDistance": 0.3650099999999975,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 1.5331993281820278,
+      "side": 0.3650099999999987,
+      "minimumDistance": 0.3650099999999936,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 1.592700147691535,
+      "side": 0.36500999999999406,
+      "minimumDistance": 0.365009999999998,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 1.5964319429508746,
+      "side": 0.365010000000007,
+      "minimumDistance": 0.3650099999999953,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 1.5667271807978376,
+      "side": 0.36500999999999795,
+      "minimumDistance": 0.36500999999999795,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 1.5593590922959786,
+      "side": 0.365010000000003,
+      "minimumDistance": 0.36500999999999384,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 1.4407027992337782,
+      "side": 0.3650099999999996,
+      "minimumDistance": 0.3650099999999947,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 4.2394199364699325,
+      "side": 0.36501000000000255,
+      "minimumDistance": 0.36500999999999884,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 2.751363298439524,
+      "side": 0.3650100000000002,
+      "minimumDistance": 0.3650099999999944,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 4.257933771208756,
+      "side": 0.36500999999999445,
+      "minimumDistance": 0.36500999999999795,
+      "blocked": true,
+      "criterion": "actual finite rail capsule clearance, swept crossing and dry grounded trajectory; moving around an endpoint on dry paving is allowed"
+    },
+    {
+      "length": 3.6099999999999994,
+      "skipped": "midpoint has no clear dry approach; whole segment covered by unit sweep"
+    }
+  ],
+  "forcedFallRecovery": {
+    "distance": 0.4,
+    "count": 1,
+    "checkpoint": [
+      44.928,
+      0.02500000037252892,
+      45.279
+    ]
+  },
+  "modelPicking": true,
+  "panoramaRestores": true,
+  "before": {
+    "pos": [
+      44.928,
+      0.02500000037252892,
+      45.279
+    ],
+    "checkpoint": [
+      44.928,
+      0.02500000037252892,
+      45.279
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    }
+  },
+  "after": {
+    "pos": [
+      44.928,
+      0.02500000037252892,
+      45.279
+    ],
+    "checkpoint": [
+      44.928,
+      0.02500000037252892,
+      45.279
+    ],
+    "orbit": {
+      "yaw": 0.16,
+      "pitch": 0.6,
+      "dist": 16,
+      "fov": 55
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/sky-isles-bdeh-r21/node_modules/.bin/playwright",
+      "test",
+      "r21-final-qa.e2e.js",
+      "world-spaces.e2e.js",
+      "--workers=1",
+      "--retries=0",
+      "--timeout=240000",
+      "--reporter=json,./scripts/qa/progress-reporter.cjs",
+      "--output=work/r21-final26-critical-output"
+    ],
+    "configFile": "/workspace/sky-isles-bdeh-r21/playwright.config.js",
+    "rootDir": "/workspace/sky-isles-bdeh-r21/test",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/sky-isles-bdeh-r21/work/r21-final26-critical-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/sky-isles-bdeh-r21/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "/workspace/sky-isles-bdeh-r21/work/r21-final26-critical-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/workspace/sky-isles-bdeh-r21/test",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.e2e\\.js/"
+        ],
+        "timeout": 240000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ],
+      [
+        "/workspace/sky-isles-bdeh-r21/scripts/qa/progress-reporter.cjs"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "r21-final-qa.e2e.js",
+      "file": "r21-final-qa.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "final R21 arrival: original-profile landmarks, continuous gate-to-guide camera, manual orbit, dry checkpoint and panorama",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 57923,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T04:09:56.588Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4002e46b4d8c34a57e33-81cdddde75595a0a94a4",
+          "file": "r21-final-qa.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "final R21 arrival: original-profile landmarks, continuous gate-to-guide camera, manual orbit, dry checkpoint and panorama",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 74611,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T04:17:08.918Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4002e46b4d8c34a57e33-dd3c673c39f3e2bbcf6e",
+          "file": "r21-final-qa.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "world-spaces.e2e.js",
+      "file": "world-spaces.e2e.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 372958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T04:10:55.359Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b412ae6cfb0a5765fcc-d24c84ebdd240a39690e",
+          "file": "world-spaces.e2e.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "eight current places: authored public circuits, accessible exterior guards and camera orbit",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 437691,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 420000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 420000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 420000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/sky-isles-bdeh-r21/test/world-spaces.e2e.js",
+                        "column": 26,
+                        "line": 5
+                      },
+                      "message": "Error: page.evaluate: Test timeout of 420000ms exceeded.\n\n  3 | test('eight current places: authored public circuits, accessible exterior guards and camera orbit',async({page,isMobile})=>{\n  4 |  test.setTimeout(420000);const outputDir=process.env.SKYISLES_QA_OUTPUT_DIR??'docs/previews/transport-station-glb-integration-v1';fs.mkdirSync(outputDir,{recursive:true});const progress=`${outputDir}/spaces-progress-${isMobile?'mobile':'desktop'}.ndjson`;fs.writeFileSync(progress,'');page.on('console',msg=>{const text=msg.text();if(text.startsWith('SPACE_QA '))fs.appendFileSync(progress,text.slice(9)+'\\n');});await page.goto('/');await page.waitForFunction(()=>window.__skyisles);await page.locator('#title-screen .tap').click();if(await page.locator('#touch-help').isVisible())await page.locator('#help-close').click();\n> 5 |  const result=await page.evaluate(()=>{\n    |                          ^\n  6 |  const w=window.__skyisles.world,p=w.player,step=p.update.bind(p);p.update=()=>{};p.orbit.yaw=0;let time=0,ticks=0;const records=[],started=performance.now(),mark=(island,phase)=>console.log('SPACE_QA '+JSON.stringify({island,phase,ticks,elapsedMs:performance.now()-started,endpointCacheHits:p.cameraConstraint.discovery?.endpointCacheHits??0,endpointSearches:p.cameraConstraint.discovery?.endpointSearches??0}));\n  7 |  const tick=(x=0,z=0)=>{ticks++;p.cameraConstraint.setDelta?.(1/60);return step(1/60,{x,z,jumpPressed:false,jumpHeld:false},time+=1/60);};\n  8 |  const land=(x,z)=>{p.teleport(x,.2,z);for(let i=0;i<60;i++)tick();if(!p.move.grounded)throw Error('cannot land');};\n    at /workspace/sky-isles-bdeh-r21/test/world-spaces.e2e.js:5:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-08T04:18:23.818Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/sky-isles-bdeh-r21/work/r21-final26-critical-output/world-spaces.e2e.js-eight--9f90a-ior-guards-and-camera-orbit-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/sky-isles-bdeh-r21/work/r21-final26-critical-output/world-spaces.e2e.js-eight--9f90a-ior-guards-and-camera-orbit-mobile/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6b412ae6cfb0a5765fcc-f8d3f3946575d058b087",
+          "file": "world-spaces.e2e.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-08T04:09:56.160Z",
+    "duration": 951537.505,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

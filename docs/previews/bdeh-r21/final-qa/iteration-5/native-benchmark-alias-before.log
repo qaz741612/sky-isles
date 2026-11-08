@@ -1,0 +1,17 @@
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 61 modules transformed.
+✗ Build failed in 2.49s
+error during build:
+[vite:load-fallback] Could not load ./workspace/sky-isles-bdeh-r21/scripts/qa/native-r21-query.mjs (imported by src/sim/r21-camera.js): ENOENT: no such file or directory, open './workspace/sky-isles-bdeh-r21/scripts/qa/native-r21-query.mjs'
+    at async open (node:internal/fs/promises:697:25)
+    at async Object.readFile (node:internal/fs/promises:1348:14)
+    at async Object.handler (file:///workspace/sky-isles/node_modules/vite/dist/node/chunks/config.js:33249:21)
+    at async PluginDriver.hookFirstAndGetPlugin (file:///workspace/sky-isles/node_modules/rollup/dist/es/shared/node-entry.js:22908:28)
+    at async file:///workspace/sky-isles/node_modules/rollup/dist/es/shared/node-entry.js:21894:33
+    at async Queue.work (file:///workspace/sky-isles/node_modules/rollup/dist/es/shared/node-entry.js:23136:32)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
