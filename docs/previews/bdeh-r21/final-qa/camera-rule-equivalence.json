@@ -1,0 +1,13 @@
+{
+  "referenceCommit": "9001863",
+  "cameraRuleBodyUnchanged": true,
+  "changesOnly": [
+    "Use local static triangle index in place of native mesh broadphase for R21 opaque shells and tree crowns",
+    "Expose read-only acceleration counters"
+  ],
+  "referenceSHA256": "0fb77b2d6a20c07c0805d2a559af6cd888d7d0ac349e2052afa61dc0b43cde81",
+  "actualSHA256": "84ce03c2530cf5182273f6d076103b312700f03b2e313eb6276340facf02c4b7",
+  "nativeDifferentialRays": 1119,
+  "fullSixProbePolicyRetained": true,
+  "F_A_C_G_originalConstraintOutsideLocalDomains": true
+}

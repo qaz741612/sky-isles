@@ -5,7 +5,7 @@
 import * as THREE from 'three';
 import views from '../data/bdeh-camera.json' with {type:'json'};
 import {floodCameraConstraint} from '../world/flood-control.js';
-import {worldCameraConstraint} from './camera-clearance.js';
+import {triangleCameraConstraint} from './r21-triangle-index.js';
 import {moveWithGuards,nearestOnSegment} from './walkways.js';
 const angle=a=>Math.atan2(Math.sin(a),Math.cos(a));
 export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environment=null){
@@ -13,8 +13,8 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
  const metrics={arrivals:0,idleTurns:0,manualOverrides:0,localFrames:0,maximumIdleYawStep:0,endpointCacheHits:0,endpointSearches:0};
  const entries=Object.entries(places).map(([code,p])=>({code,p,centre:p.config.centre,radius:Math.max(...p.config.maxDimensions)/2+2.0}));
  const opaqueMeshes=environment===null?null:[...environment,...Object.values(places).flatMap(p=>p.opaqueCameraObstacles??p.cameraObstacles??[])];
- const opaqueConstrain=opaqueMeshes?worldCameraConstraint(opaqueMeshes):constrain;
- const foliage=worldCameraConstraint(Object.values(places).flatMap(p=>p.cameraVegetation??[]));
+ const opaqueConstrain=opaqueMeshes?triangleCameraConstraint(opaqueMeshes):constrain;
+ const foliage=triangleCameraConstraint(Object.values(places).flatMap(p=>p.cameraVegetation??[]));
  const avatarHead=new THREE.Vector3(),forecast=new THREE.Vector3(),forecastPath=[],foliageCache=new Map(),plannedCache=new Map();
  const localConstrain=(target,position,shift=null)=>{
   let blocked=opaqueConstrain(target,position);
@@ -172,7 +172,7 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
   target.copy(look);previous=position.clone();previousHead=head.clone();metrics.localFrames++;
   return true;
  };
- apply.stats=constrain.stats;apply.discovery=metrics;
+ apply.stats=constrain.stats;apply.discovery=metrics;apply.acceleration={opaque:opaqueConstrain.stats,foliage:foliage.stats};
  apply.opaqueObstacles=opaqueMeshes;apply.canopyObstacles=Object.values(places).flatMap(p=>p.cameraVegetation??[]);
  apply.setDelta=value=>{dt=THREE.MathUtils.clamp(value,1/240,.05);};
  apply.setInput=input=>{movingIntent=Math.hypot(input.x,input.z)>.08;};

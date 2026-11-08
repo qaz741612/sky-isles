@@ -1,0 +1,155 @@
+
+> sky-isles@1.0.0 check
+> npm run test && npm run lint && npm run build
+
+
+> sky-isles@1.0.0 test
+> node --test test/*.test.js
+
+✔ R21 original package, approved F/A/C/G assets and authorized four-island world remain traceable (79.089142ms)
+✔ four actual refined GLBs fit R21 bounds, load complete PBR/normals, stay below budget and contain no lights or textures (394.063218ms)
+✔ R21 real GLB preserves completed care end facades, thick civic portal, raised green spine and two book leaves (314.615069ms)
+✔ actual Player visits all four authored public circuits, courtyard, civic threshold, open ecology veranda and supported learning tiers without jumping (1069.984256ms)
+✔ each real NPC three-by-three plot is dry, empty and reachable; visible structural guards block swept ordinary movement (278.974702ms)
+✔ R21 desktop and portrait camera poses keep head, torso and low silhouette visible without changing orbit or zoom (939.666101ms)
+✔ ecology water is visual only above its real concrete basin, and book clerestory glass has physical thickness (240.181452ms)
+✔ real 7-arm underside stops a rising head; ordinary road jump outside the arm is unchanged (148.146064ms)
+✔ all installed seven lamps keep their real visible emitter aligned with the head collision (99.812179ms)
+✔ landscape beds stay outside the original shared road/island domain and lights respect the budget (240.689831ms)
+✔ real landscape geometry is instanced, bounded, has no live lights, and leaves the full player corridor clear (245.709612ms)
+✔ expanded surface retains the complete original walkable domain and has one outside boundary network (25.144834ms)
+✔ actual station roof no longer blocks the local target; other seven islands are unaffected (31.547762ms)
+✔ portrait camera has its own framing within controller zoom limits (0.982027ms)
+✔ transport foundation and four mouths have continuous level support across their walkable width (44.243863ms)
+✔ G physical solids leave fixed S21/S22 4.8 core and one NPC 3x3 space clear (21.163375ms)
+✔ real GLB is bounded, has materials, dry holes and every visible safety segment blocks motion (81.517882ms)
+✔ G V5 approved assets stay locked across separately authorized R21 world changes (63.557043ms)
+✔ G V5 west notch restores the actual S22 island mouth and leaves S20/non-G islands separate (10.922061ms)
+✔ single guide reserved on actual dry ground; gate throats join both water levels without collidable water (7.490362ms)
+✔ actual S21/S22 mesh floor spans the wet crossing and both mouths over the full4.8 core (104.086906ms)
+✔ G collision has no collapsed world-space edge; finite Player motion cannot be poisoned by a tree hull (55.683738ms)
+✔ G camera keeps the visual silhouette clear through desktop/mobile full orbit without changing desired controls (27262.101813ms)
+✔ expanded G records a safe checkpoint at the distant guide forecourt and respawns there, not at radius9/home (26.871535ms)
+✔ G V5.1 art and archive locks plus authorized R21 world derivatives stay validated (175.102661ms)
+✔ exported real V5.1 water has measurable crest-to-outfall descent on all three sluice lanes (27.68392ms)
+✔ V5.1 surface details stay opaque and within bounded mobile asset cost; no texture or live water dependency (2.105986ms)
+✔ V5.1 additional real banks/backrests remain clear of the exact guide reservation and public walking corridor (51.422695ms)
+✔ actual Player falling at nine sluice-water points returns to the dry guide checkpoint without underwater support (122.806941ms)
+✔ six future building envelopes remain inside their islands and outside every 4.8 route, without runtime construction (12.376991ms)
+✔ C V3 original art, land, NPC and player remain locked across R21 integration (113.704783ms)
+✔ falling Player rests on actual visible workshop/PV, youth roofs and greenhouse arch (188.269061ms)
+✔ actual V3 GLB has two substantial closed architectural silhouettes and a distinct arch greenhouse (26.002387ms)
+✔ C V3 covered approaches retain a clear camera ray through full user orbit (338.530269ms)
+✔ C exact route core, NPC 3x3 and original mushroom stay unobstructed (44.588014ms)
+✔ C actual GLB is valid, floor is real, walls and visible outer guard have blocking data (86.853879ms)
+✔ ground jump then double jump, but no third jump (0.97739ms)
+✔ falling off a ledge still allows one air jump (but only one) (0.202492ms)
+✔ coyote time allows a jump just after leaving the ground (0.126549ms)
+✔ glide caps fall speed while jump is held (5.742003ms)
+✔ without holding jump, fall speed keeps growing past the glide cap (0.277264ms)
+✔ glide boosts forward speed (0.384485ms)
+✔ respawn triggers below the kill plane (0.139328ms)
+✔ gravity integration is stable and downward (0.199568ms)
+✔ orthographic panorama fits every actual footprint corner in landscape and portrait (2.06795ms)
+✔ transition is finite, pauses at the true ortho lens and returns to the saved camera pose (4.336138ms)
+✔ resizing during overview restores the current aspect without a final lens jump (0.398355ms)
+S01 PASS
+S02 PASS
+S04 PASS
+S05 PASS
+{"result":[{"gate":"S01","bidirectional":true,"respawns":0},{"gate":"S02","bidirectional":true,"respawns":0},{"gate":"S04","bidirectional":true,"respawns":0},{"gate":"S05","bidirectional":true,"respawns":0}],"ticks":5613,"runtimeMeshes":60,"barriers":3746}
+✔ approved GLB remains byte-identical; four actual gates and all destinations work with the real unchanged player (2923.813626ms)
+✔ seven distinct authored places use bounded material batches, explicit solids and no decoration ground colliders (96.951056ms)
+✔ all scenery preserves the 3.9-wide player-centre corridor along every fixed B route (5106.022504ms)
+✔ every island has independent exposed union edges and an accessible future NPC reservation (56.903856ms)
+✔ retained chime highlight uses a small geometric ring, not an opaque sprite square (4.5933ms)
+✔ chime definitions are unique pentatonic notes with colors and symbols (1.375154ms)
+✔ correct full order opens the portal (0.202543ms)
+✔ wrong note resets progress (0.885462ms)
+✔ playing a duplicate note mid-sequence counts as wrong and resets (0.123645ms)
+✔ partial sequences do not open the portal (0.155062ms)
+✔ after the portal opens, further plays are replays and keep state (0.122834ms)
+✔ music layers grow one per unlocked chime (0.123094ms)
+✔ arrival framing changes only local idle yaw, never ordinary zoom, FOV or manual pitch (31.098537ms)
+✔ holding the one-hand movement input or being airborne never starts an automatic arrival turn (16.36428ms)
+✔ held movement against a solid wall never counts as idle arrival when guards zero velocity (22.055169ms)
+✔ one manual orbit or zoom overrides idle discovery for the rest of this island visit (18.693148ms)
+✔ F/A/C/G keep their original camera constraint and profile outside the four local domains (0.545204ms)
+✔ local arrival converges to the same view at20,60 and120 simulation Hz (16.645851ms)
+✔ stationary held-input camera still follows a later manual zoom and orbit (5.181849ms)
+✔ a nearby facade keeps the torso visible and the camera responds to a deliberate orbit and zoom (60.636992ms)
+✔ local triangle camera matches native rays through transformed, grouped, mirrored and instanced geometry (25.091113ms)
+✔ local triangle camera matches native rays against the four actual architectural shells and tree crowns (417.055005ms)
+✔ mulberry32 is deterministic for the same seed (0.90948ms)
+✔ different seeds produce different sequences (0.224616ms)
+✔ Rng helpers stay in range (1.541366ms)
+✔ Rng pick returns items from the list deterministically (0.166629ms)
+✔ supplied GLB is unchanged; full station architecture, canopy and lettering retain original materials (38.50308ms)
+✔ station fits radius 9 without changing source proportions; original doorway clears the unchanged player (16.106094ms)
+✔ actual GLB lintel and canopy undersides stop rising heads without changing movement outside the station (19.870146ms)
+✔ locked elevated asset replaces old display meshes, keeps materials and introduces no lights (37.658887ms)
+✔ all visible island safety segments block either direction and southern shared gate has no fence (28.627987ms)
+✔ NPC reservation, interaction stop and approach stay outside physical solids (16.101258ms)
+✔ full 4.8-wide home approaches keep a 3.9-wide player-centre band unobstructed (427.05539ms)
+✔ every actual home structure, column, culture base, viewing seat and rail blocks swept crossing (45.102683ms)
+✔ compound facade collision protects the actual front and side woven surfaces, not only the cream wall (91.492813ms)
+✔ approved handwritten graph has 21 connected nodes, 22 real paths and eight distinct islands (1.376659ms)
+✔ actual Player walks every route in both directions without jumping dt=0.016666666666666666 (3934.581607ms)
+✔ actual Player walks every route in both directions without jumping dt=0.05 (2010.143829ms)
+✔ guards prevent high-speed horizontal crossing from either side, including endpoints (306.033283ms)
+✔ released stick decelerates to rest quickly, with a bounded stopping distance (0.233158ms)
+✔ every actual outer rail blocks crossing and matches rendered guard coordinates (326.969116ms)
+✔ all actual collision triangles have finite horizontal surfaces and <=10% grade (247.182151ms)
+✔ near-zero X movement never falls through a cylinder cap triangle seam (269.780191ms)
+✔ every ordered junction turn stays walkable with actual transport decks present (6196.302991ms)
+✔ all seven real covered policy places support an actual falling Player, including R21 ecology (660.323477ms)
+✔ current world keeps original compression and explicitly authorized island/curve changes (59.759559ms)
+ℹ tests 93
+ℹ suites 0
+ℹ pass 93
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 58939.769033
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+
+> sky-isles@1.0.0 lint
+> eslint src test vite.config.js eslint.config.js playwright.config.js
+
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+
+> sky-isles@1.0.0 build
+> vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 62 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                    14.90 kB │ gzip:     4.41 kB
+dist/assets/index-ChspoG1W.js  17,541.32 kB │ gzip: 2,067.97 kB │ map: 3,425.42 kB
+
+(!) Some chunks are larger than 2400 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 3.45s
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

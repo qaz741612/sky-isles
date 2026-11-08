@@ -1,3 +1,9 @@
+## 最新可恢復程式：局部靜態三角索引，93單元通過
+
+保留9001863的完整六探針／未來路徑／角速與位移約束，沒有放寬腳部或變更玩家物理。只將R21不透明殼與樹冠查詢改為靜態世界座標三角網格，含射線格內高度剔除。1,119條原生Three對照射線一致；npm run check93單元/lint/build通過。規則字串等價證據camera-rule-equivalence.json；原global camera-clearance.js與F/A/C/G模型、土地不改。
+
+完整32+5最終Blender視圖與模型仍為677208f。frozen spatial端口4302/work/r21-final-spatial-dist。先前有限搜尋試驗未改善H成本（198.9秒），已保留iteration-4並不採用；第一版XZ索引同H稽核20.7秒。新版含高度剔除正以同一路徑做前後CPU比較、接續單指操作與4個關鍵瀏覽器重測，再跑最終完整70及截圖／效能pipeline。不把舊64/4/2或逾時列為完成。
+
 ## 目前修正檢查點：候選26，90單元與E桌機到達測試通過
 
 E新增desktopFallbackYaw=-1.8（直式維持-3），不改dist/FOV或世界比例。修正final25桌機雨水花園出框。另對靜態鏡頭殼、完全相同的head/yaw/pitch/range/forecast/group-matrix輸入重用純端點搜尋，逐幀實際視線及插值仍照做；手動旋轉／縮放有新增真實位置斷言，90單元/lint/build已通過。world-spaces未放寬420秒限制，新增每島進度檔，候選26桌機目前已到第8島；手機仍待本輪重測。

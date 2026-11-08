@@ -57,3 +57,11 @@ test('stationary held-input camera still follows a later manual zoom and orbit',
  const before=Math.atan2(camera.x-head.x,camera.z-head.z);orbit.yaw+=.8;for(let i=0;i<180;i++)tick();const after=Math.atan2(camera.x-head.x,camera.z-head.z);
  assert.ok(Math.abs(Math.atan2(Math.sin(after-before),Math.cos(after-before))-.8)<.02,'a stable endpoint must not freeze manual orbit');
 });
+
+test('a nearby facade keeps the torso visible and the camera responds to a deliberate orbit and zoom',()=>{
+ const c=places.E.config.centre,orbit={yaw:0,pitch:.67,dist:22,fov:58},player={move:{vx:0,vz:0,grounded:true}},wall=new T.Mesh(new T.BoxGeometry(4,2.7,.15),new T.MeshBasicMaterial({side:T.DoubleSide}));wall.position.set(c[0],1.35,c[2]+1);wall.updateMatrixWorld(true);
+ const local={...places,E:{config:places.E.config,opaqueCameraObstacles:[wall]}},rig=r21DiscoveryCamera(()=>false,local,()=>orbit,()=>player,[]),head=new T.Vector3(c[0],1.645,c[2]),camera=head.clone().add(new T.Vector3(0,13,17));rig.setInput({x:1,z:0});
+ for(let i=0;i<360;i++){rig.setDelta(1/60);rig(head.clone(),camera);}
+ const before=camera.clone();orbit.yaw=1;orbit.dist=18;for(let i=0;i<180;i++){rig.setDelta(1/60);rig(head.clone(),camera);}assert.equal(orbit.yaw,1);assert.equal(orbit.dist,18);assert.ok(camera.distanceTo(before)>.3,'wall avoidance must not freeze orbit/zoom');
+ const ray=new T.Raycaster();for(const height of[0,-.4,-.75]){const target=head.clone();target.y+=height;ray.set(target,camera.clone().sub(target).normalize());ray.far=target.distanceTo(camera);assert.equal(ray.intersectObject(wall,false).length,0,'the physical head/torso sightline must remain clear');}
+});
