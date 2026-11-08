@@ -1,24 +1,25 @@
-"""Keep the failed full run and matching corrected rechecks separately visible."""
+"""Publish only one complete fresh70-case report; archive failures separately."""
 from pathlib import Path
 import json,shutil
-R=Path(__file__).resolve().parents[2];O=R/'docs/previews/bdeh-r21/final-qa/regression';W=R/'work/r21-final-qa'
+R=Path(__file__).resolve().parents[2];O=R/'docs/previews/bdeh-r21/final-qa/regression';W=R/'work/r21-final-qa';O.mkdir(exist_ok=True)
 def cases(report):
- result={}
- def walk(suites):
+ rows=[]
+ def visit(suites):
   for suite in suites:
    for spec in suite.get('specs',[]):
     for test in spec['tests']:
-     key=(spec['file'],spec['title'],test['projectName']);result[key]={'file':key[0],'title':key[1],'project':key[2],'status':test['results'][-1]['status'],'durationMs':test['results'][-1]['duration']}
-   walk(suite.get('suites',[]))
- walk(report['suites']);return result
-raw=json.loads((W/'playwright-serial.json').read_text());recheck=json.loads((W/'playwright-panorama-recheck.json').read_text());a=cases(raw);b=cases(recheck);assert len(a)==70 and len(b)==2
-assert all(v['status']=='passed'for v in b.values())and recheck['stats']['unexpected']==0
-assert all(k in a for k in b)
-replaced=[{'before':a[k],'recheck':v}for k,v in b.items()];a.update(b)
-finalReport=json.loads((W/'playwright-implementation-final.json').read_text());a=cases(finalReport);assert len(a)==70;assert finalReport['stats']['unexpected']==0 and finalReport['stats']['interrupted']==0
+     result=test['results'][-1];rows.append({'file':spec['file'],'title':spec['title'],'project':test['projectName'],'status':result['status'],'durationMs':result['duration']})
+   visit(suite.get('suites',[]))
+ visit(report['suites']);return rows
+report=json.loads((W/'playwright-implementation-final.json').read_text());rows=cases(report);stats={**report['stats'],'interrupted':sum(r['status']=='interrupted'for r in rows)};assert len(rows)==70 and stats['expected']==66 and stats['skipped']==4 and stats['unexpected']==0 and stats['flaky']==0
+assert all(r['status']in['passed','skipped']for r in rows)
+assert sum(r['status']=='passed'for r in rows)==66
+previous=json.loads((W/'playwright-implementation-final25.json').read_text());identity=lambda r:(r['file'],r['title'],r['project']);assert {identity(r)for r in rows}=={identity(r)for r in cases(previous)},'Do not drop or rename failed cases'
+history=[];folder=O/'history';folder.mkdir(exist_ok=True)
+for name in['playwright-serial.json','playwright-panorama-recheck.json','playwright-implementation-final25.json','playwright-final26-critical.json']:
+ p=W/name
+ if not p.exists():continue
+ old=json.loads(p.read_text());shutil.copyfile(p,folder/name);history.append({'file':'history/'+name,'stats':old.get('stats'), 'note':'Earlier run only; never counted as final passing cases.'})
 shutil.copyfile(W/'playwright-implementation-final.json',O/'playwright-implementation-final.json')
-stats={'expected':sum(v['status']=='passed'for v in a.values()),'skipped':sum(v['status']=='skipped'for v in a.values()),'unexpected':sum(v['status']not in['passed','skipped']for v in a.values()),'interrupted':sum(v['status']=='interrupted'for v in a.values()),'flaky':0}
-assert stats['expected']+stats['skipped']==70 and stats['unexpected']==0
-shutil.copyfile(W/'playwright-serial.json',O/'playwright-full-serial.json');shutil.copyfile(W/'playwright-panorama-recheck.json',O/'playwright-panorama-recheck.json')
-(O/'playwright-final.json').write_text(json.dumps({'method':'70 logical cases from a complete fresh full-suite run against final frozen build (including real held-input wall regression). Earlier candidate5 full-suite and2 corrected panorama rechecks remain historical. Final reported cases are wholly from final frozen build, not a cherry-picked merged pass. Four desktop touch-only cases retain original conditional skips. No production panorama behavior changed.','stats':stats,'originalFullRunStats':raw['stats'],'recheckStats':recheck['stats'],'finalFullRunStats':finalReport['stats'],'replaced':replaced,'cases':list(a.values())},indent=2)+'\n')
-print('Browser logical coverage:',stats['expected'],'passed,',stats['skipped'],'intentional skips,',stats['unexpected'],'unresolved; failed original and2 rechecks preserved')
+(O/'playwright-final.json').write_text(json.dumps({'method':'One complete fresh70-case suite against the final frozen spatial-index build, retries0. All66 reported passes and4 original desktop touch-only skips are from that run. No cherry-picked merged passing cases. Prior failed runs/rechecks are explicit history.','stats':stats,'cases':rows,'history':history},indent=2)+'\n')
+print('Final fresh suite:66 passed,4 original conditional skips,0 failed; history preserved.')

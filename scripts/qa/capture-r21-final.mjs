@@ -3,7 +3,7 @@
 import{chromium}from'playwright';import fs from'node:fs';import{createHash}from'node:crypto';
 const port=Number(process.argv[2]??4278),out=process.argv[3]??'docs/previews/bdeh-r21/final-qa/game',option=(key,fallback)=>process.argv.includes(key)?process.argv[process.argv.indexOf(key)+1]:fallback,modelRoot=option('--models','public/models/bdeh-r21'),study=process.argv.includes('--study');fs.mkdirSync(out,{recursive:true});
 const hash=b=>createHash('sha256').update(b).digest('hex'),expected=Object.fromEntries([...'BDEH'].map(c=>[`${c}.glb`,hash(fs.readFileSync(`${modelRoot}/${c}.glb`))])),records=[],browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
-try{for(const profile of(study?['portrait']:option('--profile',null)?[option('--profile')]:['desktop','portrait','landscape'])){
+try{for(const profile of(study?(option('--profile',null)?[option('--profile')]:['portrait']):option('--profile',null)?[option('--profile')]:['desktop','portrait','landscape'])){
  const size=profile==='portrait'?{width:430,height:932}:profile==='landscape'?{width:932,height:430}:{width:1200,height:800};
  const context=await browser.newContext({viewport:size,deviceScaleFactor:1,isMobile:profile!=='desktop',hasTouch:profile!=='desktop'}),page=await context.newPage(),errors=[],served={},bundles={};page.on('pageerror',e=>errors.push(e.message));
  page.on('response',async r=>{if(/\/models\/bdeh-r21\/[BDEH]\.glb$/.test(r.url()))served[r.url().split('/').at(-1)]=hash(await r.body());else if(/\/assets\/index-.*\.js$/.test(r.url()))bundles[r.url().split('/').at(-1)]=hash(await r.body());});
