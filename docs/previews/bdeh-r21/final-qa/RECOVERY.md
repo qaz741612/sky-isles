@@ -1,3 +1,9 @@
+## 最終可恢復成果：移樹後完整自動複驗與畫面檢查完成
+
+93單元/lint/build；同一4305凍結版本完整70為66通過／4原裝置條件跳過，0失敗／中斷／重試。32+5同源Blender渲染、前後118遊戲圖／48對同條件原生輸入、37保護檔無差異；四島真正CDP搖桿回放均完成。相同最終資產H原生／索引查詢隔離實驗218.933→15.499秒，非硬體FPS。最終圖片已實際看過，D近牆縮鏡、H NPC近景屋頂裁切及真機／人工美術未批准等限制見REPORT。
+
+正式遊戲snapshot work/r21-final-visible-dist（4305），4306是僅供CPU比較的原生查詢別名版本，不能作遊戲交付；原始before仍為4275。最終結果以REPORT、source-consistency、MANIFEST及GitHub下載收據GITHUB-VERIFIED為準。若收據尚不存在，先完成資產提交／推送及逐檔下載SHA核對，再用僅收據的後續提交保存；不要宣稱已完成網路驗證。維持Draft PR19，不合併／部署／開始後續工程。
+
 ## 最終模型與32+5渲染已同步；新完整70正在執行
 
 E原生、左右單指及NPC圖已看過，角色完整可見；相機預設完整恢復原設定。移樹後4關鍵案例通過，93單元/lint/build及4島單指時序通過；B真實CDP搖桿連續路線完成。E新8+2的source SHA均核對，所有32+5渲染對應目前.blend。完整70進度work/r21-final-qa/final-visible-progress.ndjson；完成後同一shell會跑final-r21-pipeline.py 4305 work/r21-final-visible-dist final-visible。該pipeline接著序列量測4306原生backend／4305索引backend的相同H稽核、59張新圖、整世界效能與4島單指回放，最後來源與19比較板。不要把前一版66/4當本次最終驗證；source-consistency暫明確pending，舊資料在iteration-5。新報告產生器會拒絕GLB／bundle不相符的舊結果。完成後還需親自看最終原生圖、產生REPORT／manifest、push、逐檔GitHub下載驗SHA、收據專用後續提交並更新Draft PR19。不得合併／部署。

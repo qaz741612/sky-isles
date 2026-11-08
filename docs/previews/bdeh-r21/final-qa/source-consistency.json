@@ -1,5 +1,2651 @@
 {
-  "status": "PENDING: final game captures and renewed complete regression after E tree placement. Do not reuse the pre-tree linkage.",
-  "currentModelPrecheck": "final-source-precheck.json",
-  "historicalLinkage": "iteration-5/pre-tree-source-consistency.json"
+  "protectedFiles": 37,
+  "protectedMismatches": 0,
+  "models": {
+    "B": {
+      "blendSHA256": "a6889d5b53a3362f9b9e415ed54d672e09251f368efe4bbcad9f3ce44b8f2e34",
+      "glbSHA256": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+      "renderedViews": 8,
+      "triangles": 43036,
+      "GLBBytes": 2752080,
+      "meshPrimitives": 30,
+      "materials": 21,
+      "textures": 0,
+      "newLights": 0
+    },
+    "D": {
+      "blendSHA256": "e8b46de68157b12f84bd82e7dc9a898b104f547fda2d8fe93eec667110628b52",
+      "glbSHA256": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
+      "renderedViews": 8,
+      "triangles": 32448,
+      "GLBBytes": 2021352,
+      "meshPrimitives": 35,
+      "materials": 23,
+      "textures": 0,
+      "newLights": 0
+    },
+    "E": {
+      "blendSHA256": "874f3144cbbe35735db443a94e59d8604d538d9734a62301f28d36c55c7f88b3",
+      "glbSHA256": "c3cd1f41fa17479a724eebacaf2067b59c9ee6ed14b27d8d2e0bd23ddb78736f",
+      "renderedViews": 8,
+      "triangles": 38860,
+      "GLBBytes": 2439356,
+      "meshPrimitives": 33,
+      "materials": 23,
+      "textures": 0,
+      "newLights": 0
+    },
+    "H": {
+      "blendSHA256": "a46127e6e151c7f33480c3a7ec79d7e435a7da7d614bbe9b1337f58e3c474e56",
+      "glbSHA256": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9",
+      "renderedViews": 8,
+      "triangles": 36624,
+      "GLBBytes": 2221400,
+      "meshPrimitives": 35,
+      "materials": 22,
+      "textures": 0,
+      "newLights": 0
+    }
+  },
+  "beforeAfterPNGCount": 118,
+  "matchedNativeInputPairs": [
+    {
+      "name": "B-desktop-native",
+      "playerBefore": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "playerAfter": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -52.89614415964356,
+        10.609279577300793,
+        17.036701391686936
+      ],
+      "cameraAfter": [
+        -44.45460754367246,
+        8.678169714428549,
+        13.712861472933362
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 0.8264709419879024,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "B-desktop-single-finger-left",
+      "playerBefore": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "playerAfter": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        -45.902538979138704,
+        10.609279577300793,
+        13.571728739770325
+      ],
+      "cameraAfter": [
+        -40.81221868081616,
+        8.678169714428549,
+        6.061999342720852
+      ],
+      "orbitBefore": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 1.426470941987902,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "B-desktop-single-finger-right",
+      "playerBefore": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "playerAfter": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        -60.62468462686799,
+        10.609279577300793,
+        15.947581256275067
+      ],
+      "cameraAfter": [
+        -51.78079315317469,
+        8.678169714428549,
+        17.970743979034047
+      ],
+      "orbitBefore": {
+        "yaw": -0.44000000000000017,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 0.2264709419879021,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "B-desktop-NPC-native",
+      "playerBefore": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "playerAfter": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "initial": {
+        "player": [
+          -47.8,
+          0.2,
+          -3.1500000000000004
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -45.6961441596436,
+        10.609279577300793,
+        9.886701391686953
+      ],
+      "cameraAfter": [
+        -34.1927069065019,
+        8.678169714428545,
+        -7.665147253191419
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 1.8911826255577022,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "D-desktop-native",
+      "playerBefore": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "playerAfter": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -51.24814415964358,
+        10.67927957014824,
+        100.08470139168695
+      ],
+      "cameraAfter": [
+        -38.43156872738395,
+        7.131361740364444,
+        88.85915141386711
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 1.45,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "D-desktop-single-finger-left",
+      "playerBefore": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "playerAfter": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        -50.6142703029042,
+        6.653216280428104,
+        94.32140317734755
+      ],
+      "cameraAfter": [
+        -40.01497347058618,
+        7.131364915114866,
+        80.11809932783132
+      ],
+      "orbitBefore": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 2.05,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "D-desktop-single-finger-right",
+      "playerBefore": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "playerAfter": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        -58.976684946598716,
+        10.67927957014824,
+        98.9955812845088
+      ],
+      "cameraAfter": [
+        -50.078833416658526,
+        3.235355073739343,
+        89.923365281074
+      ],
+      "orbitBefore": {
+        "yaw": -0.44000000000000017,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 0.8500000000000004,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "D-desktop-NPC-native",
+      "playerBefore": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "playerAfter": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "initial": {
+        "player": [
+          -41.452,
+          0.2,
+          80.69800000000001
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -39.3481441596436,
+        10.609279577300793,
+        93.73470139168691
+      ],
+      "cameraAfter": [
+        -28.191810183562275,
+        7.061364922267454,
+        73.62218442831814
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 2.060971707995016,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "E-desktop-native",
+      "playerBefore": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "playerAfter": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        34.603855840356395,
+        10.679279570148246,
+        -7.463298608313049
+      ],
+      "cameraAfter": [
+        18.538102369447216,
+        8.748169707275988,
+        -23.757360066730044
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": -1.8,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "E-desktop-single-finger-left",
+      "playerBefore": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "playerAfter": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        36.14937854626281,
+        10.67927957014824,
+        -7.808907501751831
+      ],
+      "cameraAfter": [
+        19.137502837491535,
+        8.748169707275991,
+        -15.304939881741856
+      ],
+      "orbitBefore": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": -1.2000000000000004,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "E-desktop-single-finger-right",
+      "playerBefore": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "playerAfter": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        26.875314521952973,
+        10.67927957014824,
+        -8.552418829063326
+      ],
+      "cameraAfter": [
+        24.615546490654285,
+        12.515700599806031,
+        -29.106655213504208
+      ],
+      "orbitBefore": {
+        "yaw": -0.44000000000000017,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": -2.4,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "E-desktop-NPC-native",
+      "playerBefore": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "playerAfter": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "initial": {
+        "player": [
+          21.95,
+          0.2,
+          -14
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        24.053855840356423,
+        10.609279577300804,
+        -0.9632986083130518
+      ],
+      "cameraAfter": [
+        9.138906721274465,
+        8.678169714428542,
+        -7.564095319680642
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": -1.1052547806646706,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "H-desktop-native",
+      "playerBefore": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "playerAfter": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        60.87072727125524,
+        9.196061782118164,
+        92.348400950605
+      ],
+      "cameraAfter": [
+        50.544020269403696,
+        8.169167244674034,
+        73.84257695525622
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 3.141592653589793,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "H-desktop-single-finger-left",
+      "playerBefore": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "playerAfter": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        63.373372759759015,
+        10.67927957014824,
+        85.3232642866219
+      ],
+      "cameraAfter": [
+        42.29490376327601,
+        8.169167244780798,
+        76.39431975109005
+      ],
+      "orbitBefore": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 3.7415926535897945,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "H-desktop-single-finger-right",
+      "playerBefore": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "playerAfter": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        57.061580826722114,
+        6.91041009257951,
+        92.54542806620566
+      ],
+      "cameraAfter": [
+        58.79308953861693,
+        8.169167244780798,
+        76.39431516867488
+      ],
+      "orbitBefore": {
+        "yaw": -0.44000000000000017,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 2.5415926535897952,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "H-desktop-NPC-native",
+      "playerBefore": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "playerAfter": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          79.902
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 16,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        52.647855840356435,
+        10.609279577300798,
+        92.9387013916869
+      ],
+      "cameraAfter": [
+        50.57219397646357,
+        7.560893780967861,
+        66.4979357783748
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 3.141592653589793,
+        "pitch": 0.6,
+        "dist": 16,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "B-portrait-native",
+      "playerBefore": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "playerAfter": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -52.935673521643544,
+        15.23669171778454,
+        21.120068214829146
+      ],
+      "cameraAfter": [
+        -40.50008537254964,
+        11.341858356221662,
+        17.3551845252834
+      ],
+      "orbitBefore": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 0.8264709419879024,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "B-portrait-single-finger-left",
+      "playerBefore": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "playerAfter": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        -43.62952477044111,
+        15.23669171778454,
+        16.964198964172223
+      ],
+      "cameraAfter": [
+        -35.4918019818998,
+        11.341858356221664,
+        6.835258011946954
+      ],
+      "orbitBefore": {
+        "yaw": 0.72,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 1.426470941987902,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "B-portrait-single-finger-right",
+      "playerBefore": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "playerAfter": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        -62.962944142375726,
+        15.23669171778454,
+        19.295412049327723
+      ],
+      "cameraAfter": [
+        -50.573559618099516,
+        11.341858356227469,
+        23.209765782101012
+      ],
+      "orbitBefore": {
+        "yaw": -0.4799999618530274,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 0.22647098013487457,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "B-portrait-NPC-native",
+      "playerBefore": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "playerAfter": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "initial": {
+        "player": [
+          -47.8,
+          0.2,
+          -3.1500000000000004
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -45.735673521643584,
+        15.23669171778454,
+        13.970068214829162
+      ],
+      "cameraAfter": [
+        -29.089971996348208,
+        11.34185835622167,
+        -9.358327472861255
+      ],
+      "orbitBefore": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 1.8911826255577022,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "D-portrait-native",
+      "playerBefore": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "playerAfter": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -51.28767352164356,
+        15.306691710631988,
+        104.16806821482916
+      ],
+      "cameraAfter": [
+        -32.837253778877255,
+        9.188436673632141,
+        89.53825194944315
+      ],
+      "orbitBefore": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 1.45,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "D-portrait-single-finger-left",
+      "playerBefore": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "playerAfter": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        -47.927590117404236,
+        15.306691710631988,
+        103.41668830771863
+      ],
+      "cameraAfter": [
+        -35.01358416726498,
+        9.18875175984439,
+        77.51939495685879
+      ],
+      "orbitBefore": {
+        "yaw": 0.72,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 2.05,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "D-portrait-single-finger-right",
+      "playerBefore": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "playerAfter": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        -61.31494512290285,
+        15.306691710631988,
+        102.34341209125947
+      ],
+      "cameraAfter": [
+        -50.077433400649106,
+        3.2355952451597054,
+        89.92220402676898
+      ],
+      "orbitBefore": {
+        "yaw": -0.4799999618530274,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 0.8500000381469729,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "D-portrait-NPC-native",
+      "playerBefore": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "playerAfter": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "initial": {
+        "player": [
+          -41.452,
+          0.2,
+          80.69800000000001
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -39.387673521643585,
+        15.23669171778454,
+        97.81806821482913
+      ],
+      "cameraAfter": [
+        -23.219239001791838,
+        9.118751767000166,
+        70.96875359007362
+      ],
+      "orbitBefore": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 2.060971707995016,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "E-portrait-native",
+      "playerBefore": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "playerAfter": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        34.56432647835641,
+        15.306691710631982,
+        -3.3799317851708417
+      ],
+      "cameraAfter": [
+        29.792211039327924,
+        11.075157417300469,
+        -39.34020281926645
+      ],
+      "orbitBefore": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": -3,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "E-portrait-single-finger-left",
+      "playerBefore": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "playerAfter": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        37.92440988259576,
+        15.306691710631988,
+        -4.131311692281368
+      ],
+      "cameraAfter": [
+        21.626951685508566,
+        16.6410122538479,
+        -32.36998024469953
+      ],
+      "orbitBefore": {
+        "yaw": 0.72,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": -2.3999999999999986,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "E-portrait-single-finger-right",
+      "playerBefore": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "playerAfter": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        24.537050899774016,
+        15.306691710631988,
+        -5.204589479167339
+      ],
+      "cameraAfter": [
+        41.22342869993249,
+        11.41185846482523,
+        -38.177959873108804
+      ],
+      "orbitBefore": {
+        "yaw": -0.4799999618530274,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": -3.599999961853025,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "E-portrait-NPC-native",
+      "playerBefore": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "playerAfter": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "initial": {
+        "player": [
+          21.95,
+          0.2,
+          -14
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        24.014326478356445,
+        15.23669171778455,
+        3.1200682148291556
+      ],
+      "cameraAfter": [
+        4.334746741750546,
+        11.341858356221673,
+        -5.150631064564553
+      ],
+      "orbitBefore": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": -1.1052547806646706,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "H-portrait-native",
+      "playerBefore": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "playerAfter": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        56.34527021979875,
+        7.45018758286929,
+        92.54383701820791
+      ],
+      "cameraAfter": [
+        50.544039003600965,
+        10.61572996219671,
+        68.36404331527692
+      ],
+      "orbitBefore": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 3.141592653589793,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "H-portrait-single-finger-left",
+      "playerBefore": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "playerAfter": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        67.44706594235386,
+        15.306691710631988,
+        85.03959011282583
+      ],
+      "cameraAfter": [
+        39.20150025164069,
+        10.615729963138218,
+        71.87268447395775
+      ],
+      "orbitBefore": {
+        "yaw": 0.7200000000000001,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 3.7415926535897945,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "H-portrait-single-finger-right",
+      "playerBefore": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "playerAfter": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        57.45484883280308,
+        7.95696923684992,
+        92.41619866355728
+      ],
+      "cameraAfter": [
+        61.8864684199839,
+        10.615729963148011,
+        71.87266312923941
+      ],
+      "orbitBefore": {
+        "yaw": -0.4799999618530273,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 2.541592691736768,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "H-portrait-NPC-native",
+      "playerBefore": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "playerAfter": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          79.902
+        ],
+        "orbit": {
+          "yaw": 0.12,
+          "pitch": 0.67,
+          "dist": 22,
+          "fov": 58
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        52.60832647835645,
+        15.236691717784545,
+        97.02206821482912
+      ],
+      "cameraAfter": [
+        50.654536506973194,
+        5.002542972691758,
+        72.22745844787877
+      ],
+      "orbitBefore": {
+        "yaw": 0.12,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "orbitAfter": {
+        "yaw": 3.141592653589793,
+        "pitch": 0.67,
+        "dist": 22,
+        "fov": 58
+      },
+      "FOV": 58
+    },
+    {
+      "name": "B-landscape-native",
+      "playerBefore": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "playerAfter": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -52.63316217959901,
+        11.738564524090863,
+        18.666289065647806
+      ],
+      "cameraAfter": [
+        -43.13643348663151,
+        9.566065928359588,
+        14.926969157050031
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 0.8264709419879024,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "B-landscape-single-finger-left",
+      "playerBefore": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "playerAfter": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        -44.76535855909186,
+        11.738564524090863,
+        14.768196581549647
+      ],
+      "cameraAfter": [
+        -39.03874707609984,
+        9.566065928359592,
+        6.319756555229326
+      ],
+      "orbitBefore": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 1.426470941987902,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "B-landscape-single-finger-right",
+      "playerBefore": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "playerAfter": [
+        -55,
+        0.07500000298023213,
+        4
+      ],
+      "initial": {
+        "player": [
+          -55,
+          0.2,
+          4
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        -61.3277637731144,
+        11.738564524090863,
+        17.441030826073536
+      ],
+      "cameraAfter": [
+        -51.37837364911725,
+        9.566065928359592,
+        19.717082679391652
+      ],
+      "orbitBefore": {
+        "yaw": -0.4399999237060548,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 0.22647101828184726,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "B-landscape-NPC-native",
+      "playerBefore": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "playerAfter": [
+        -47.8,
+        0.07500000298023224,
+        -3.1500000000000004
+      ],
+      "initial": {
+        "player": [
+          -47.8,
+          0.2,
+          -3.1500000000000004
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -45.43316217959905,
+        11.738564524090863,
+        11.516289065647822
+      ],
+      "cameraAfter": [
+        -32.49179526981463,
+        9.566065928359594,
+        -8.229540659840353
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 1.8911826255577022,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "D-landscape-native",
+      "playerBefore": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "playerAfter": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -50.98516217959903,
+        11.808564516938311,
+        101.71428906564782
+      ],
+      "cameraAfter": [
+        -36.56653984688784,
+        7.8171477752963705,
+        89.08554294098573
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 1.45,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "D-landscape-single-finger-left",
+      "playerBefore": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "playerAfter": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        -49.246449135454334,
+        11.808564516938311,
+        101.32547906052919
+      ],
+      "cameraAfter": [
+        -38.34784159139263,
+        7.817160530025672,
+        79.25186860106295
+      ],
+      "orbitBefore": {
+        "yaw": 0.76,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 2.05,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "D-landscape-single-finger-right",
+      "playerBefore": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "playerAfter": [
+        -53.352,
+        0.14499999582767475,
+        87.048
+      ],
+      "initial": {
+        "player": [
+          -53.352,
+          0.2,
+          87.048
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        -59.679764724104295,
+        11.808564516938311,
+        100.48903086478761
+      ],
+      "cameraAfter": [
+        -50.07863363386222,
+        3.235454843744861,
+        89.92341714239215
+      ],
+      "orbitBefore": {
+        "yaw": -0.4399999237060547,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 0.8500000762939456,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "D-landscape-NPC-native",
+      "playerBefore": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "playerAfter": [
+        -41.452,
+        0.07500000298023213,
+        80.69800000000001
+      ],
+      "initial": {
+        "player": [
+          -41.452,
+          0.2,
+          80.69800000000001
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        -39.08516217959905,
+        11.738564524090863,
+        95.36428906564778
+      ],
+      "cameraAfter": [
+        -26.53428645650753,
+        7.7471605371783605,
+        72.73770748185791
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 2.060971707995016,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "E-landscape-native",
+      "playerBefore": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "playerAfter": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        34.866837820400946,
+        11.808564516938306,
+        -5.8337109343521805
+      ],
+      "cameraAfter": [
+        16.7928651656281,
+        9.636065921207042,
+        -24.164530075071305
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": -1.8,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "E-landscape-single-finger-left",
+      "playerBefore": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "playerAfter": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        36.60555086454566,
+        11.808564516938311,
+        -6.222520939470808
+      ],
+      "cameraAfter": [
+        17.467188021131733,
+        9.636065921207035,
+        -14.655564237307743
+      ],
+      "orbitBefore": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": -1.2000000000000004,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "E-landscape-single-finger-right",
+      "playerBefore": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "playerAfter": [
+        32.5,
+        0.14499999582767498,
+        -20.5
+      ],
+      "initial": {
+        "player": [
+          32.5,
+          0.2,
+          -20.5
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        26.17223527589571,
+        11.808564516938311,
+        -7.058969135212398
+      ],
+      "cameraAfter": [
+        23.81982069827253,
+        13.587792642928664,
+        -29.969261975805242
+      ],
+      "orbitBefore": {
+        "yaw": -0.4399999237060548,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": -2.3999999237060545,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "E-landscape-NPC-native",
+      "playerBefore": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "playerAfter": [
+        21.95,
+        0.07500000298023224,
+        -14
+      ],
+      "initial": {
+        "player": [
+          21.95,
+          0.2,
+          -14
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        24.316837820400977,
+        11.738564524090874,
+        0.6662890656478165
+      ],
+      "cameraAfter": [
+        7.537520061433781,
+        9.566065928359585,
+        -6.759607234640725
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": -1.1052547806646706,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "H-landscape-native",
+      "playerBefore": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "playerAfter": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        57.67107760163668,
+        7.721321783687017,
+        92.55374341767849
+      ],
+      "cameraAfter": [
+        50.54402280308144,
+        8.984688150703171,
+        72.01639907483491
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 3.141592653589793,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "H-landscape-single-finger-left",
+      "playerBefore": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "playerAfter": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": -120,
+          "pointers": 1,
+          "steps": 8,
+          "after": "native"
+        }
+      },
+      "cameraBefore": [
+        64.97704435472889,
+        11.808564516938311,
+        84.93217232244965
+      ],
+      "cameraAfter": [
+        41.26377293316049,
+        8.984688150899938,
+        74.88710547869273
+      ],
+      "orbitBefore": {
+        "yaw": 0.7599999999999999,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 3.7415926535897945,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "H-landscape-single-finger-right",
+      "playerBefore": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "playerAfter": [
+        50.544,
+        0.14499999582767487,
+        88.452
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          88.452
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization",
+        "gesture": {
+          "dx": 240,
+          "pointers": 1,
+          "steps": 8,
+          "after": "left swipe"
+        }
+      },
+      "cameraBefore": [
+        58.415628081045796,
+        7.718885425808385,
+        92.5580248276784
+      ],
+      "cameraAfter": [
+        59.82420963628994,
+        8.984688150899942,
+        74.88709355384994
+      ],
+      "orbitBefore": {
+        "yaw": -0.4399999237060548,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 2.5415927298837406,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    },
+    {
+      "name": "H-landscape-NPC-native",
+      "playerBefore": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "playerAfter": [
+        50.544,
+        0.07500000298023224,
+        79.902
+      ],
+      "initial": {
+        "player": [
+          50.544,
+          0.2,
+          79.902
+        ],
+        "orbit": {
+          "yaw": 0.16,
+          "pitch": 0.6,
+          "dist": 18,
+          "fov": 55
+        },
+        "idleSeconds": 5,
+        "source": "original initial device cameraProfile; engineering pose initialization"
+      },
+      "cameraBefore": [
+        52.910837820400985,
+        11.738564524090869,
+        94.56828906564778
+      ],
+      "cameraAfter": [
+        50.62425384040431,
+        6.888462284905621,
+        68.00390669311258
+      ],
+      "orbitBefore": {
+        "yaw": 0.16,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "orbitAfter": {
+        "yaw": 3.141592653589793,
+        "pitch": 0.6,
+        "dist": 18,
+        "fov": 55
+      },
+      "FOV": 55
+    }
+  ],
+  "servedFinalGLBVerified": true,
+  "sameSourceExtraCloseViews": 5,
+  "bundleSHA256": {
+    "index-B5BwcPvW.js": "35d57e9448b95773f12f100d18ca5aa1d80e24ad23fdab3c68fa6621678a9b44"
+  },
+  "limits": "Sources and input recipes match; this is not a human art judgement or physical-device performance result."
 }

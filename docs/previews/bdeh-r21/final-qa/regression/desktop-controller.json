@@ -850,15 +850,15 @@
   "stats": {
     "bytes": 17633080,
     "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac",
-    "downloadMilliseconds": 482.29999999981374,
-    "decodeMilliseconds": 198.1000000005588,
-    "totalMilliseconds": 680.4000000003725,
+    "downloadMilliseconds": 430.69999999925494,
+    "decodeMilliseconds": 207.10000000149012,
+    "totalMilliseconds": 637.8000000007451,
     "triangles": 201740,
     "materials": 33,
     "runtimeMeshes": 50,
     "groundTriangles": 1890,
     "ceilingTriangles": 844,
-    "buildMilliseconds": 29.09999999962747,
+    "buildMilliseconds": 51.600000001490116,
     "scale": 1,
     "position": [
       0,
@@ -867,7 +867,7 @@
     ],
     "upperAccess": "closed display; not a usable stair or elevator",
     "train": "locked static display; not boardable",
-    "firstFrameMilliseconds": 3967.2000000001863
+    "firstFrameMilliseconds": 4081
   },
   "firstWorldRender": 524
 }

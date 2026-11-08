@@ -1,18 +1,24 @@
 {
-  "port": 4302,
+  "port": 4305,
   "codes": "H",
   "names": [
     "lookout"
   ],
-  "bundleSHA256": "87d4053d68f2a909a31b19b62a0803cc9b8b93dea6dd0afb679982d6bd0a0c7e",
+  "bundleSHA256": "35d57e9448b95773f12f100d18ca5aa1d80e24ad23fdab3c68fa6621678a9b44",
+  "servedModels": {
+    "B": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+    "D": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
+    "E": "c3cd1f41fa17479a724eebacaf2067b59c9ee6ed14b27d8d2e0bd23ddb78736f",
+    "H": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9"
+  },
   "method": "The exact production world-space Player route/eight-orbit/guard audit with explicit island filtering. Renderer and native loop disabled; fixed60Hz engineering steps. All8 models remain loaded. Cloud CPU diagnostic, no hardware FPS or human comfort claim.",
-  "elapsedMs": 15875,
+  "elapsedMs": 15499,
   "marks": [
     {
       "island": "lookout",
       "phase": "start",
       "ticks": 0,
-      "elapsedMs": 0.10000000009313226,
+      "elapsedMs": 0.10000000149011612,
       "endpointCacheHits": 0,
       "endpointSearches": 0
     },
@@ -20,7 +26,7 @@
       "island": "lookout",
       "phase": "route-and-eight-orbits",
       "ticks": 1322,
-      "elapsedMs": 13865.100000000093,
+      "elapsedMs": 13579.60000000149,
       "endpointCacheHits": 272,
       "endpointSearches": 839
     },
@@ -28,7 +34,7 @@
       "island": "lookout",
       "phase": "complete",
       "ticks": 4132,
-      "elapsedMs": 15848.600000000093,
+      "elapsedMs": 15468.300000000745,
       "endpointCacheHits": 2263,
       "endpointSearches": 1658
     }
@@ -142,8 +148,8 @@
         "maxCandidates": 293,
         "indexTriangles": 3840,
         "indexCells": 45,
-        "indexReferences": 4685,
-        "bufferBytes": 498740
+        "indexReferences": 4669,
+        "bufferBytes": 498676
       }
     },
     "description": "Accelerated integration audit using the actual Player, not a normal-operation video."

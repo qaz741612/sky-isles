@@ -145,9 +145,9 @@
   ],
   "model": {
     "bytes": 2225844,
-    "downloadMilliseconds": 369.90000000037253,
-    "decodeMilliseconds": 10.700000000186265,
-    "totalMilliseconds": 380.6000000005588,
+    "downloadMilliseconds": 190.39999999850988,
+    "decodeMilliseconds": 17.200000001117587,
+    "totalMilliseconds": 207.59999999962747,
     "triangles": 41768,
     "runtimeMeshes": 61,
     "materials": 29,

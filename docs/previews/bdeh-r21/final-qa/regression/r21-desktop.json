@@ -143,13 +143,13 @@
       "fallRecovered": true,
       "stats": {
         "bytes": 2752080,
-        "downloadMilliseconds": 333.09999999962747,
-        "decodeMilliseconds": 6,
-        "totalMilliseconds": 339.09999999962747,
+        "downloadMilliseconds": 602.4000000003725,
+        "decodeMilliseconds": 4.5,
+        "totalMilliseconds": 606.9000000003725,
         "triangles": 43036,
         "runtimeMeshes": 30,
         "materials": 21,
-        "buildMilliseconds": 36.5,
+        "buildMilliseconds": 35.09999999962747,
         "scale": 1,
         "newLights": 0
       }
@@ -306,13 +306,13 @@
       "fallRecovered": true,
       "stats": {
         "bytes": 2021352,
-        "downloadMilliseconds": 185.90000000037253,
-        "decodeMilliseconds": 13.5,
-        "totalMilliseconds": 199.40000000037253,
+        "downloadMilliseconds": 309.8999999994412,
+        "decodeMilliseconds": 18.90000000037253,
+        "totalMilliseconds": 328.79999999981374,
         "triangles": 32448,
         "runtimeMeshes": 35,
         "materials": 23,
-        "buildMilliseconds": 23.100000000558794,
+        "buildMilliseconds": 89.20000000018626,
         "scale": 1,
         "newLights": 0
       }
@@ -410,57 +410,57 @@
       ],
       "cameraSamples": [
         [
-          18.271264723588814,
-          8.678169714336683,
-          0.06081668886961111
+          18.2712647235888,
+          8.678169714336676,
+          0.060816688869600455
         ],
         [
-          30.169950478681763,
-          8.67816971442768,
-          -2.3083062877301224
+          30.169950478681752,
+          8.678169714427682,
+          -2.3083062877301117
         ],
         [
           35.971196749367294,
-          8.678169714428536,
-          -12.672663472696861
+          8.67816971442854,
+          -12.672663472696847
         ],
         [
           32.701985989421296,
-          5.236194199187368,
-          -22.714308593321583
+          5.236194199187363,
+          -22.714308593321565
         ],
         [
-          24.54025718186016,
-          6.230754309068002,
-          -23.12634758289522
+          24.540257181860163,
+          6.230754309067996,
+          -23.126347582895207
         ],
         [
-          17.386416459797367,
-          8.879083883823043,
-          -20.48274283517744
+          17.38641645979739,
+          8.879083883823021,
+          -20.482742835177433
         ],
         [
-          19.75742679367952,
-          2.809860791417746,
-          -15.469954161420038
+          19.757426793679542,
+          2.80986079141773,
+          -15.469954161420024
         ],
         [
-          19.21937117078369,
-          2.8160613622996373,
-          -13.415257483682062
+          19.219371170783713,
+          2.8160613622996262,
+          -13.415257483682067
         ]
       ],
       "panoramaRestored": true,
       "fallRecovered": true,
       "stats": {
         "bytes": 2439356,
-        "downloadMilliseconds": 526.0999999996275,
-        "decodeMilliseconds": 9.5,
-        "totalMilliseconds": 535.5999999996275,
+        "downloadMilliseconds": 1043.6000000005588,
+        "decodeMilliseconds": 50,
+        "totalMilliseconds": 1093.6000000005588,
         "triangles": 38860,
         "runtimeMeshes": 33,
         "materials": 23,
-        "buildMilliseconds": 44.39999999944121,
+        "buildMilliseconds": 67.40000000037253,
         "scale": 1,
         "newLights": 0
       }
@@ -602,13 +602,13 @@
       "fallRecovered": true,
       "stats": {
         "bytes": 2221400,
-        "downloadMilliseconds": 598.8999999994412,
-        "decodeMilliseconds": 4.800000000745058,
-        "totalMilliseconds": 603.7000000001863,
+        "downloadMilliseconds": 1208.7999999998137,
+        "decodeMilliseconds": 10.299999999813735,
+        "totalMilliseconds": 1219.0999999996275,
         "triangles": 36624,
         "runtimeMeshes": 35,
         "materials": 22,
-        "buildMilliseconds": 21.200000000186265,
+        "buildMilliseconds": 24.59999999962747,
         "scale": 1,
         "newLights": 0
       }

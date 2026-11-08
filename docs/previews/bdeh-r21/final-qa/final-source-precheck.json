@@ -1,5 +1,5 @@
 {
-  "status": "32 current Blender views +5 details match4 final models after E tree placement fix. Renewed full70 and all final game captures/performance still pending. Final authoritative linkage will be source-consistency.json.",
+  "status": "Current32+5 rendered-source checkpoint complete. Full renewed70-case regression and118 game capture linkage passed; authoritative final linkage is source-consistency.json.",
   "models": [
     {
       "code": "B",

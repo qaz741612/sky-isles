@@ -1,3 +1,5 @@
+> **請優先使用 [本輪重建程序](final-qa/REBUILD.md)。** 最終精修由39f4194正式Blender增量修改；不要重跑此頁早期stage1／R18／R20生成流程覆蓋已精修的四島。此頁保留來源歷史。
+
 # R21 可重建流程
 
 基準：PR18 `2b4404927f33096ab28539a01f5e6236d670c038`。本工作在獨立 worktree `codex/bdeh-r21-game-integration`，沒有重寫既有歷史。原始ZIP的48個檔案保存在 `docs/design/bdeh-r21/source-package/`，其中47個原始manifest項目逐項相符。`build_r21.py` 才是建築來源；R18/R20檔案是其幾何工具依賴，不是選用舊建築。

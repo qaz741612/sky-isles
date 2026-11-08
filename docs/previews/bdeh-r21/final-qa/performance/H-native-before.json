@@ -1,12 +1,18 @@
 {
-  "port": 4298,
+  "port": 4306,
   "codes": "H",
   "names": [
     "lookout"
   ],
-  "bundleSHA256": "1e0b70791c48fcc6c68b153e5d5e68a81ab1d7d1b76ce809d1cdf96a8a5b5fad",
+  "bundleSHA256": "c9ffa4e29e6b8e9078731e67743f8aa0c4119c74d2a4b6e8b145580b374df3ef",
+  "servedModels": {
+    "B": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+    "D": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
+    "E": "c3cd1f41fa17479a724eebacaf2067b59c9ee6ed14b27d8d2e0bd23ddb78736f",
+    "H": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9"
+  },
   "method": "The exact production world-space Player route/eight-orbit/guard audit with explicit island filtering. Renderer and native loop disabled; fixed60Hz engineering steps. All8 models remain loaded. Cloud CPU diagnostic, no hardware FPS or human comfort claim.",
-  "elapsedMs": 224577,
+  "elapsedMs": 218933,
   "marks": [
     {
       "island": "lookout",
@@ -20,7 +26,7 @@
       "island": "lookout",
       "phase": "route-and-eight-orbits",
       "ticks": 1322,
-      "elapsedMs": 211695.69999999972,
+      "elapsedMs": 204218.59999999963,
       "endpointCacheHits": 272,
       "endpointSearches": 839
     },
@@ -28,7 +34,7 @@
       "island": "lookout",
       "phase": "complete",
       "ticks": 4132,
-      "elapsedMs": 224569.09999999963,
+      "elapsedMs": 218922,
       "endpointCacheHits": 2263,
       "endpointSearches": 1658
     }
@@ -123,6 +129,18 @@
       "maximumIdleYawStep": 0.01583333333333333,
       "endpointCacheHits": 2263,
       "endpointSearches": 1658
+    },
+    "r21CameraIndex": {
+      "opaque": {
+        "queries": 650957,
+        "candidates": 4467392,
+        "maxCandidates": 12
+      },
+      "foliage": {
+        "queries": 296175,
+        "candidates": 1077072,
+        "maxCandidates": 23
+      }
     },
     "description": "Accelerated integration audit using the actual Player, not a normal-operation video."
   }

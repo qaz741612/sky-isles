@@ -1,3 +1,5 @@
+> 本輪 PR19 最終精修的驗收入口為 **[final-qa/README.md](final-qa/README.md)**，新模型、原生玩家比較與測試狀態以該目錄 REPORT 為準。下方為上一輪歷史交付；根目錄 MANIFEST／GitHub 收據只對其鎖定的 `03ba1c6` 提交有效，不能當本輪下載驗證。
+
 # B／D／E／H R21 Blender 精修與遊戲整合
 
 四島已在同一個真正Sky Isles世界載入，替換舊臨時造景；可編輯Blender、正式GLB、同源渲染、桌手機遊戲畫面及驗證資料已提交。維持Draft PR19，等待使用者人工美術及真機驗收。沒有合併、正式部署、NPC、室內、橋景或新路燈施工。

@@ -580,7 +580,7 @@
   ],
   "respawns": 0,
   "cameraIndex": {
-    "queries": 30396,
+    "queries": 30398,
     "candidates": 195003,
     "maxCandidates": 38
   },
@@ -596,8 +596,8 @@
   "r21CameraIndex": {
     "opaque": {
       "acceleration": "static-triangle-grid",
-      "queries": 1983529,
-      "candidates": 165080683,
+      "queries": 2029210,
+      "candidates": 164403682,
       "maxCandidates": 1922,
       "indexTriangles": 88128,
       "indexCells": 259,
@@ -606,13 +606,13 @@
     },
     "foliage": {
       "acceleration": "static-triangle-grid",
-      "queries": 794581,
-      "candidates": 1849790,
+      "queries": 816933,
+      "candidates": 2229808,
       "maxCandidates": 293,
       "indexTriangles": 3840,
       "indexCells": 45,
-      "indexReferences": 4685,
-      "bufferBytes": 498740
+      "indexReferences": 4669,
+      "bufferBytes": 498676
     }
   },
   "description": "Accelerated integration audit using the actual Player, not a normal-operation video."
