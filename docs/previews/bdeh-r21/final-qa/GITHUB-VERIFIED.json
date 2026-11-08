@@ -1,0 +1,2949 @@
+{
+  "repository": "qaz741612/sky-isles",
+  "commit": "9beaaa04990fc9a27cf03f5956be8ab8f8468dab",
+  "method": "Stream raw GitHub bytes and verify size + SHA256; no binary output",
+  "manifest": {
+    "path": "docs/previews/bdeh-r21/final-qa/MANIFEST.json",
+    "bytes": 145581,
+    "sha256": "aebc0d31ec02b6bbe7030c4e9b93dbad3199898adfe59d3d2e891b0b74d7e9bb"
+  },
+  "verified": 587,
+  "failed": 0,
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1090,
+      "sha256": "2edb38544e575afa000dc3f5541546a59e5163f2d1bd221d2d28694b74f35726"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/B-r21.blend",
+      "bytes": 601920,
+      "sha256": "a6889d5b53a3362f9b9e415ed54d672e09251f368efe4bbcad9f3ce44b8f2e34"
+    },
+    {
+      "path": "docs/design/bdeh-r21/B/model-report.json",
+      "bytes": 1053,
+      "sha256": "6432f5a0757222489bea58b07f1f358c3e2a9ee96dffecca99428a4234142673"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/D-r21.blend",
+      "bytes": 498125,
+      "sha256": "e8b46de68157b12f84bd82e7dc9a898b104f547fda2d8fe93eec667110628b52"
+    },
+    {
+      "path": "docs/design/bdeh-r21/D/model-report.json",
+      "bytes": 1051,
+      "sha256": "1c4fa5042912ffca0008488838dfbf8dbae12e3aed576f41920b6a16bf56b965"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/E-r21.blend",
+      "bytes": 658454,
+      "sha256": "874f3144cbbe35735db443a94e59d8604d538d9734a62301f28d36c55c7f88b3"
+    },
+    {
+      "path": "docs/design/bdeh-r21/E/model-report.json",
+      "bytes": 1054,
+      "sha256": "2d2862f4919bab731a1e1cb0e3b9317992f3a03bfc30b76ba976496822a37ded"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/H-r21.blend",
+      "bytes": 548167,
+      "sha256": "a46127e6e151c7f33480c3a7ec79d7e435a7da7d614bbe9b1337f58e3c474e56"
+    },
+    {
+      "path": "docs/design/bdeh-r21/H/model-report.json",
+      "bytes": 1052,
+      "sha256": "76d5a7831db8cd747a7ea261826d43e4148fa72a4285f7f8fe86e4a0e40d94be"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/LOCKS.json",
+      "bytes": 6162,
+      "sha256": "65ae4cbcb84475cc3fc62ca367a17e2a357265a139b8d940624ce2e7b555c360"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/docs/design/bdeh-r21/B/B-r21.blend",
+      "bytes": 574565,
+      "sha256": "4e8fa6695251019074b63e9e2377b3773a222574a0fffbba02809cb7e0b300fc"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/docs/design/bdeh-r21/B/model-report.json",
+      "bytes": 792,
+      "sha256": "c86214a0e01c485fbb9ad90ebe3bd3287e741697ad5b3b986a9be8a4d148b7b3"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/docs/design/bdeh-r21/D/D-r21.blend",
+      "bytes": 499937,
+      "sha256": "70b8cb2be84bc620276502091f2b73f6c8d83e3b239a709435c0e5a1ef7a6c92"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/docs/design/bdeh-r21/D/model-report.json",
+      "bytes": 792,
+      "sha256": "cd950d4a48dbb2b29c4901f8f8cd96a9ffff0b66979e347048f87114bf7d7b6b"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/docs/design/bdeh-r21/E/E-r21.blend",
+      "bytes": 473512,
+      "sha256": "9985d562b86c871eeaecf314449b3973d670a9c57f81f8806bc23fc9ea62e958"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/docs/design/bdeh-r21/E/model-report.json",
+      "bytes": 792,
+      "sha256": "60e2ece0f94589d1236cf660924a1835670f87e3feb3ec515550eb0719612d6c"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/docs/design/bdeh-r21/H/H-r21.blend",
+      "bytes": 545994,
+      "sha256": "97729b0045dd2a04cd0723b423401fc9d61f89696b0f6b95af7dc0a6837e86bb"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/docs/design/bdeh-r21/H/model-report.json",
+      "bytes": 792,
+      "sha256": "ee52a6fadcf1ed090e3320ce162e45a3c88ac2c0109a08b4cf2127e89f588880"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21/B.glb",
+      "bytes": 2688464,
+      "sha256": "6c85316575c5e1b5648c2fa72ee49131ce0f4c217ba75d9fabf16a98ac4bdc2a"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21/D.glb",
+      "bytes": 2017996,
+      "sha256": "9009b49ec2715b133eacf65bd9ef0a2a87cda4ee602119f5a0a1c39d62cebb2c"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21/E.glb",
+      "bytes": 1876328,
+      "sha256": "6bff32a3180368c8332c6c6f122f7f991ee2a4d04a7da1d0900cd1ae6d8ba3cd"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21/H.glb",
+      "bytes": 2211576,
+      "sha256": "50467d750652cf7dbcab12e7863fd72cb641c340deee15d573af4ce0f4b9266d"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/data/bdeh-b-collision.json",
+      "bytes": 3377763,
+      "sha256": "f2120ad8eafb1e35d7482b6e5f8f53c23f070672ba1807c262bbbb66c12e568d"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/data/bdeh-d-collision.json",
+      "bytes": 2836976,
+      "sha256": "19325b28caf24d5476b1a2dddc8812cbdee8e10d200a3ff558554558938d0f05"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/data/bdeh-e-collision.json",
+      "bytes": 2925508,
+      "sha256": "97a9d440845c0f8f104625d2efe4981870130dcec55e137fbdfd7df3c32ed052"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/data/bdeh-h-collision.json",
+      "bytes": 2951379,
+      "sha256": "1be8476583fa66a7d90f94439b1089f902a41c745f34497b85cdaa13865d36af"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/data/bdeh-plan.json",
+      "bytes": 2241,
+      "sha256": "43ed47f159be22a1db022268cc12c72951d70323f14aae6a8a730c406a7832d1"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/data/bridge-landscape.json",
+      "bytes": 213911,
+      "sha256": "f1fa1391238740ccf23374b247af2e53f205735d124b6319218716ecc83df77e"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/data/yuan-layout.json",
+      "bytes": 80308,
+      "sha256": "9b784a0978f1eb2945519b8a6c5ad20887c2631b55382143b5947af291c8053a"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/data/yuan-plan.json",
+      "bytes": 86654,
+      "sha256": "869dccb512523d0c5092e6870eaaeaa68b83006579717674c52dcc3d2c969775"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/data/yuan-surface.json",
+      "bytes": 452969,
+      "sha256": "c6d3ca9686195c6fced2ccd9fd3630b105732e1916d81d193db57408a8cafa02"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/main.js",
+      "bytes": 12563,
+      "sha256": "ec0298cf690c47257edb351b0ef1caf5004d6d5d045d41917e65eab811557267"
+    },
+    {
+      "path": "docs/design/bdeh-r21/final-qa-baseline/src/world/bdeh-r21.js",
+      "bytes": 5078,
+      "sha256": "897765a3202bc26a1fa6af82e5ce5cff350c28ce9bfcbd76774536d95bedd705"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/README.md",
+      "bytes": 5702,
+      "sha256": "a9e5f31c84ee8a58e01d193ad07be02beccd2c1c0345953211ded6f456e98d15"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/REBUILD.md",
+      "bytes": 4038,
+      "sha256": "17274d4017133c1d7fac3f438b200bd229bc8da80604fa36226f9ae1ebd7fdf8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/REPORT.md",
+      "bytes": 12559,
+      "sha256": "bfa505bba419d01e78077e93f122723dc0dd981e4b24982ce4694c4b5d790f1a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/ROAD-CONFLICTS.md",
+      "bytes": 1593,
+      "sha256": "7d5e82259e2e8cac979dae571c25329668005324e9a8eb06f91ed9e62047bea8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/blender/architecture.png",
+      "bytes": 701871,
+      "sha256": "63792d16ae7d3aa1d8ab9ea89d2285883344ac25c71d2a7748ddce1a211905d3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/blender/back.png",
+      "bytes": 605887,
+      "sha256": "e608f5c6b5c021df5ea6814ba0ccf9f0fdfabb520cdf9392d53d018191894655"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/blender/front.png",
+      "bytes": 596001,
+      "sha256": "be84603ffce64c9326be1f6f929c6c37aaac7df10a26daececb4f2ff52387e8f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/blender/hero.png",
+      "bytes": 600762,
+      "sha256": "befdfdc87242c23723d55aa8035b0954d3bf39caa46394565f863a077676f116"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/blender/left.png",
+      "bytes": 595603,
+      "sha256": "227dc3563679da7e80c5046c3da01dcf9801545a707b6a664c80c34f1e176a2a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/blender/public-space.png",
+      "bytes": 656945,
+      "sha256": "1660cdfc57258ee98343ded6f63b881449ffa8e99ac152a4ab7c6f307a23d37f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/blender/render-record.json",
+      "bytes": 2914,
+      "sha256": "1b6bf7916220e59578ffc627deba5350996bd4388d242e11bbe312e79f1e7ae9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/blender/right.png",
+      "bytes": 611560,
+      "sha256": "5e933c01465005b4c9dd785dffd60a7bb489cb21584b3c86452e06aeb6a03204"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/blender/top.png",
+      "bytes": 623305,
+      "sha256": "397cbaf1128375ce8a8af71353669ecb892b2e9b086c0e07d249776595999ed8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/B/model-changes.json",
+      "bytes": 2130,
+      "sha256": "a86aaef20f9a1927c373b889c3eb2f43dc4da5a39f43fdf5db9bbe093cfb432d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/blender/architecture.png",
+      "bytes": 723177,
+      "sha256": "354ee0957223e7e3c5bb55a4b4a2d94225462b2fc59003dfbe4a32f125c3e131"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/blender/back.png",
+      "bytes": 623276,
+      "sha256": "47fc940cceefeb6b0b2133cd5a75ccd4163713544d2c81461492be2837aef868"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/blender/front.png",
+      "bytes": 625416,
+      "sha256": "d18d2b61dc24b286b7eb861d907b3b7c083b3c1e70552a4d3247fc366321db7f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/blender/hero.png",
+      "bytes": 619545,
+      "sha256": "b5c14fa4fbc00e0deb2ce039e96ba8cd005a84034ea2ea977cdb00c592660719"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/blender/left.png",
+      "bytes": 622758,
+      "sha256": "59761099750d21904e0dd6a1b156c81674ecf8f5db2f00e9075a4ef4aa0a729a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/blender/public-space.png",
+      "bytes": 703506,
+      "sha256": "3999e620672e6d5c7ad7a6aa9db26e0c58a96c4e326916dfe2929120c6ecfa59"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/blender/render-record.json",
+      "bytes": 2914,
+      "sha256": "38d3ec734dc1e7135f3c74035fe1e1ba3b9af00ea9128000d786ff2e2b4794de"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/blender/right.png",
+      "bytes": 615481,
+      "sha256": "6412703c986e0811694dd23103939afc45e6b55e04e8a89418abfbfacc073b15"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/blender/top.png",
+      "bytes": 648754,
+      "sha256": "cb3805eb4667b628e644938904443bdfe3287ebae3c08439ea84f8e02026a073"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/D/model-changes.json",
+      "bytes": 2102,
+      "sha256": "9381c2e98359146d65e6a8dc496b5c23ca3a5300aeac864bb04024cfddd09be7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/blender/architecture.png",
+      "bytes": 706147,
+      "sha256": "333293a52e143f29d90fedd29e27afbbebf0900aa796f46c7f811c5eb8ccb87a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/blender/back.png",
+      "bytes": 606687,
+      "sha256": "f307a8c40700a36b8076fafce7f3112f861bbda568b3bbc54ee229066ff0f569"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/blender/front.png",
+      "bytes": 615321,
+      "sha256": "4d6c98061acca5f2c82c3db94c73cfe03c559688f692c40449717bfe317fa27c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/blender/hero.png",
+      "bytes": 611492,
+      "sha256": "79e8f35b51e732d96e4f3927a10d30d066e8e20655508ef59ed7f5aea7378790"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/blender/left.png",
+      "bytes": 602320,
+      "sha256": "a2ae12c98f5566436995a9c6d84c1329dbdad8999e12d0c1c1092f6043661a1c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/blender/public-space.png",
+      "bytes": 682556,
+      "sha256": "8441e31ac6903a4fbcdf4a05fb8fa0042c61d5f0b49544d1d08b3b8834730829"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/blender/render-record.json",
+      "bytes": 2911,
+      "sha256": "c0b7fd987acf0a0d38c6cfbd2609cfd1ba93e43488551e8114b7bfcec386f6f4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/blender/right.png",
+      "bytes": 593857,
+      "sha256": "741a71aa849be9ff01c8752429f29eb82418aa1c4e81601e170a2daba9b96484"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/blender/top.png",
+      "bytes": 657855,
+      "sha256": "7ba69457d071885227987367b92dbc31e5c4bb5035486da4f28a11c7a758505e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/E/model-changes.json",
+      "bytes": 3541,
+      "sha256": "e91908b2b7b28f605687fa2c7bace8d4ad4884db001817f48ced080c28ce92aa"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/FILE-LIST.md",
+      "bytes": 39335,
+      "sha256": "af9e9d3617ef0eef4d47da9f79b8597fe4c867edbc1a8ddc441c167d2e668001"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/blender/architecture.png",
+      "bytes": 818110,
+      "sha256": "8e79928b98aa2300b5fe75451874172a0320e17d7b71bf4c39fc13f8abd50a0b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/blender/back.png",
+      "bytes": 640699,
+      "sha256": "4282402fa05d847a407310652b08836598c39338dda2429c01ddf02c6a89dc64"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/blender/front.png",
+      "bytes": 670971,
+      "sha256": "bb23b785499c707828936fbe2184f8403919cedf34a88aba8e11be760e10ec23"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/blender/hero.png",
+      "bytes": 679785,
+      "sha256": "fbdfaf9a2dc703343d62c9e2d6a435ca8cd264d10f802964745375ccfd47813e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/blender/left.png",
+      "bytes": 610563,
+      "sha256": "0005510aacd5a3d43fee85048b4b1af57f48a8619c3af2644a4c433e9202ab5b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/blender/public-space.png",
+      "bytes": 776698,
+      "sha256": "cdfbface9eaee976ad4dbfa8ecc764a747f627751fd91fce3ecefc391646851f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/blender/render-record.json",
+      "bytes": 2915,
+      "sha256": "04ada7c003ba52d688b87c694a9d3690c72e152cd0206bbeb646a0c77cae9896"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/blender/right.png",
+      "bytes": 607464,
+      "sha256": "37d182afb7d7d0dbfe6884ce30b85d629446135c3a4a600e55b8baef334eec92"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/blender/top.png",
+      "bytes": 665413,
+      "sha256": "0f252cdeda771a44ea41c62a4cbeedbbd18cd7e61e0d02d96c685aae87649522"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/H/model-changes.json",
+      "bytes": 2104,
+      "sha256": "39583ff8da7a5fcfe71099919946111651c2c157c965a1c6ce7cf7ad929ec266"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/README.md",
+      "bytes": 2916,
+      "sha256": "3399e09c2c81d1aca087d1d655279f014e85ba4d6f32655eb9dd1e6d1e7e5050"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/REBUILD.md",
+      "bytes": 5624,
+      "sha256": "8e34863761d6e3ff4d05a5c35e484cfd9c1f6f39501cb99e70f7e0a403a33cdd"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/RECOVERY.md",
+      "bytes": 12574,
+      "sha256": "2c73d7a9d58b4e61b404e4ab693059c14d0314c3c7647509dab4bfdc1a848a45"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/REPORT.md",
+      "bytes": 13842,
+      "sha256": "00daaed13ea667f220e3cc3a71e22429935e38b4f0af8a3e43bf7607e38f1ee0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/REVIEW-5800199311.json",
+      "bytes": 3678,
+      "sha256": "0ca2acea17275560fac4a6aa5bab792f90901c91ef5e6f9f6e538da18fb5f0d7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/SELF-REVIEW.md",
+      "bytes": 9249,
+      "sha256": "fee2a44cba2c1358045550d0c742ced57a83929df16728bb6af10f64a64f7ce5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/architecture-preserved.json",
+      "bytes": 364597,
+      "sha256": "05aa1ee43d0463d9de2f16e4d55e33b01e9a155ed8d4634a25fe1726840c0ba7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/camera-domain-audit.json",
+      "bytes": 736,
+      "sha256": "ccf69842aa39738a2a8e160de7ff4d0452cfa8c70ae7f988d357763167524761"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/camera-rule-equivalence.json",
+      "bytes": 555,
+      "sha256": "fa3611ce13077cbba5cae0e7822b1467ba98878669dd4c85d71aefbaeabf3263"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/B-blender-eight.jpg",
+      "bytes": 74181,
+      "sha256": "02d7b310c576dc8ab0b964e76afb16e346c8dde1570464aa7889784e88178874"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/B-desktop-before-after.jpg",
+      "bytes": 227810,
+      "sha256": "5e534f1e7ec9b7ecef7359761794cbef26a885fbd448ddf0d44ab1a8abf99c9f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/B-landscape-before-after.jpg",
+      "bytes": 193270,
+      "sha256": "ba186b0dd4737334da2dbca217aa27d9f0670327daae887d4edab04a04d7c3ee"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/B-portrait-before-after.jpg",
+      "bytes": 173810,
+      "sha256": "5c257fe4457fb962fbd18f6a9c940443ecdc92ec58defcfc9b6aa2a0a419a972"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/D-blender-eight.jpg",
+      "bytes": 86644,
+      "sha256": "5984a56bb97767219d10eb7154d7f13f3f27ef2b8eaa58922061737089f7a1ea"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/D-desktop-before-after.jpg",
+      "bytes": 233139,
+      "sha256": "fa9940fe3bf8bbe77b7a95aa601ee5ac359c898801b0d2ae4871e9a5452a2b46"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/D-landscape-before-after.jpg",
+      "bytes": 205341,
+      "sha256": "2b717582c54d18d29a04834f03c2e506c739c78f5ee51141c2a3eb9855f88a70"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/D-portrait-before-after.jpg",
+      "bytes": 180070,
+      "sha256": "dc1ccbeca7505fcff7ecb17f6777621136411b13a181eb1532f914475a2454cd"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/E-blender-eight.jpg",
+      "bytes": 79233,
+      "sha256": "7069a2f47e7742e2fe6cee7fea4ba9bba49d07f13097f08923a8b5da8ed1196a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/E-desktop-before-after.jpg",
+      "bytes": 217213,
+      "sha256": "0627520a54fb49b7aa2f719e65a86b7cd73a773d0f9d36ffca0114bb0f18cca1"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/E-landscape-before-after.jpg",
+      "bytes": 200872,
+      "sha256": "ae3fa268ee2c50d7775eb1f1f4cf7f62f96abf48517ad3a46d53a6e2b778bc31"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/E-portrait-before-after.jpg",
+      "bytes": 175593,
+      "sha256": "96e124add281175e941aafdeb2d5497edf5affc45b936baefbf0ad3a98ed9f3f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/H-blender-eight.jpg",
+      "bytes": 92241,
+      "sha256": "058999f656edc712ba4bb8b0ad955c92a23b1642d6b2ef9b34a1625b2914e232"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/H-desktop-before-after.jpg",
+      "bytes": 238302,
+      "sha256": "dc0ae6529893a127f19e8d570a7b079f8432277d30b50c905607a260cbd010db"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/H-landscape-before-after.jpg",
+      "bytes": 202160,
+      "sha256": "597514a8119538b55667946628a5bdcee0da9c7529a6d46a3e48b3d84476663f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/H-portrait-before-after.jpg",
+      "bytes": 176273,
+      "sha256": "9a0114b903aa8e63f5fb8e4c0ee29776db48ce12bcf3bd19514061bb1457a002"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/four-islands-blender.jpg",
+      "bytes": 62195,
+      "sha256": "96d7fe88a74360d223b8baf9c78f4dabef444351f8097375d73e01072075e915"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/four-islands-native-desktop.jpg",
+      "bytes": 107923,
+      "sha256": "742ca3b9b7fb889d9508aaabae3064b24c0c20031ffae091e9193db308277834"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/comparisons/four-islands-native-portrait.jpg",
+      "bytes": 85319,
+      "sha256": "4c3979e6fe444692f2ff1c5b69ae154fb05ec03ed104c06bd0c4bc2b465b78ef"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/details/B-courtyard.png",
+      "bytes": 913271,
+      "sha256": "9620b1c1e662a3646dc939ed01c16d4d80fb224d39127cf63e7444c20c632042"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/details/D-service-threshold.png",
+      "bytes": 802922,
+      "sha256": "c3479cdc08de75f5855ecc08889e51e2abb808516602b07133fd23d74e3b9800"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/details/E-rain-garden.png",
+      "bytes": 756909,
+      "sha256": "1384616dd688ab3b3b70fe8b7cc80a21cb1d911b34df331c903acca8c422f5db"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/details/E-roof-planting.png",
+      "bytes": 843909,
+      "sha256": "970a91b5d4d3b61aec705e033e95dce49fa9971be72f2197c6a00a6362468fb1"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/details/H-reading-forum.png",
+      "bytes": 716526,
+      "sha256": "336148d4c953362e8cd77eb30f22cf7d292eaeb0fead07b2370cc1bf23258ab6"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/details/render-record.json",
+      "bytes": 2611,
+      "sha256": "f4be67725ddec753e65581673c62ad587e875a46787ef4f3a5c9151bae58d360"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/final-source-precheck.json",
+      "bytes": 1139,
+      "sha256": "87b9db1a4a2a786aef228ee5e184cbc2a9e4d9990bf9b6ff6b00922eb2b7c7f5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-desktop-NPC-native.png",
+      "bytes": 344597,
+      "sha256": "3b0e0651e8c27505f5d474ddea7f4e40244af63a070d6790d3ec8440acd6216a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-desktop-QA-hero.png",
+      "bytes": 558677,
+      "sha256": "54f338a4753d88dd511d79bb902c885d683a5951df4ce6e406ac39e2f1a76990"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-desktop-QA-top.png",
+      "bytes": 533005,
+      "sha256": "2419e1cbe72cb000e435cf582eb8fd6135fd34a7dd6a065985f362d25e867c22"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-desktop-native.png",
+      "bytes": 275119,
+      "sha256": "ec5702ffc9fd7c36ffbe321a915419ee44e92e511428e69f64338db23de69766"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-desktop-single-finger-left.png",
+      "bytes": 259623,
+      "sha256": "36a636455513a8429a35d035f0d7180cf282df2ecc2a9e041980a5bd7398c688"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-desktop-single-finger-right.png",
+      "bytes": 280814,
+      "sha256": "fd4eafb5ef34fa1c8ccbad446d65d1b12c7d1482266835eb97c893b2d1fda037"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-landscape-NPC-native.png",
+      "bytes": 221942,
+      "sha256": "aaa7b47fc412b69022f878162701afcb83943b16b5ae6ee4ff1e0d10df2e4a75"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-landscape-native.png",
+      "bytes": 199958,
+      "sha256": "2f42cd3f4dc467fea52c7046484ce8e6e6caf34368b9189315dc454141d88499"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-landscape-single-finger-left.png",
+      "bytes": 199745,
+      "sha256": "3b4555ae319041d06664a43d3ddcedb21152a480bf1e52ba94319f8495f2e666"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-landscape-single-finger-right.png",
+      "bytes": 213110,
+      "sha256": "af4734a14a7548458879def9cf9cef1d6c5e57bf5339c6e937c86012e81dfc65"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-portrait-NPC-native.png",
+      "bytes": 180153,
+      "sha256": "201d00909385e57a813dedafd48b2b977ccbe2295b73c471d55107870af20da5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-portrait-native.png",
+      "bytes": 142868,
+      "sha256": "57912b4de8d9b4ae6dbd88791cea5644b4bc43caa958a95d3b6f73d95fb2a19d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-portrait-single-finger-left.png",
+      "bytes": 143150,
+      "sha256": "6505a19e2db64f14a9e2ae787ecc927747e9a91b9704a086acf122f2fa145500"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/B-portrait-single-finger-right.png",
+      "bytes": 149683,
+      "sha256": "a94419a55f8983e0bd602dd245535af42fce529047009eb98bb72b02975fb6a0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-desktop-NPC-native.png",
+      "bytes": 373557,
+      "sha256": "1614859be82df1c6979ea1dadcf16fc2b50059f09b51d3fe84ae966745fb88e2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-desktop-QA-hero.png",
+      "bytes": 443475,
+      "sha256": "90adccb32fe2462330ca04e36f1464361527267af84b38cd8d6597916a4e562e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-desktop-QA-top.png",
+      "bytes": 500593,
+      "sha256": "fb051c7b549e8ec02f292e5c9710ebe769bad26b0131a77aa867436bf645f200"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-desktop-native.png",
+      "bytes": 202449,
+      "sha256": "1ec62b69f7a6c6e65343f23924f082addddbd98e8a3f64d0e30ce8abfdd14edf"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-desktop-single-finger-left.png",
+      "bytes": 219542,
+      "sha256": "91015221c5a25630019c9a54e83d6198a9a0e26df611ef90cb1f75a63a8b2729"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-desktop-single-finger-right.png",
+      "bytes": 149816,
+      "sha256": "b806acf3bfbe48dce2a58df0e09f3a8f5750b1a98b39ff62793a4e6ae0894871"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-landscape-NPC-native.png",
+      "bytes": 218924,
+      "sha256": "0d6d94909c0425c7b83a9e8c97c5131b77beb65a5147a4a9b4b85a9e47460678"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-landscape-native.png",
+      "bytes": 158388,
+      "sha256": "8be66df0f74c7cc82c8b82d91e2c3f72ef64a67bc4a89d49e4bea89cd7b5631d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-landscape-single-finger-left.png",
+      "bytes": 188055,
+      "sha256": "580a7a09cb1a0eee1d07bee28bd29a5e42098f583b09d04d01e8c27ed5b2f29e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-landscape-single-finger-right.png",
+      "bytes": 129791,
+      "sha256": "26e335910d7d2c30d69d461ba59f2a926feb637eecac777490bfe27f0031280b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-portrait-NPC-native.png",
+      "bytes": 167105,
+      "sha256": "f21918da32c39abf8dba48e046885e1d45aad190dcd937901647c7089e23c3cc"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-portrait-native.png",
+      "bytes": 112890,
+      "sha256": "703be31f3af2da5e952417e47ec341380f15e2adffc3ee07c87f448f85257248"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-portrait-single-finger-left.png",
+      "bytes": 97458,
+      "sha256": "5e030731d5301dc0c00b60d0be8645c5326d809c0431b6292cc4cf5d0bcdfc01"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/D-portrait-single-finger-right.png",
+      "bytes": 99109,
+      "sha256": "38f26554880ae63d0e8b67dd0deb5df270ce6fbc30b6e341d14d4c503965ecf2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-desktop-NPC-native.png",
+      "bytes": 386559,
+      "sha256": "2196412bccbb8afb961a78c5e85a79b355bf4fd413552a15f26c618625ac791d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-desktop-QA-hero.png",
+      "bytes": 701283,
+      "sha256": "63a0d59077b69ada223d0d7920b2364d84038b0e478c8fb195c92f929fe057f9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-desktop-QA-top.png",
+      "bytes": 621949,
+      "sha256": "9602275b94b39cd06a4503822301a9d8f2622a053b7804c1300ee77db1945f36"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-desktop-native.png",
+      "bytes": 259213,
+      "sha256": "f10863b2938662e93e1ae9026361505c54201edc2a394316acf352bbc0977615"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-desktop-single-finger-left.png",
+      "bytes": 235949,
+      "sha256": "93471ece60a08623c008b54ea761bddb9324d26ff22f88b9d0a2e9f1d86e98b2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-desktop-single-finger-right.png",
+      "bytes": 352903,
+      "sha256": "062482f3729bd8c083b43e95d24509a7b2cb5622b0d882b2fae07d4cf12decf7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-landscape-NPC-native.png",
+      "bytes": 244378,
+      "sha256": "89453bc1735515d526faf06bc530f4b6069d774f0f738bc0df849654db59cc31"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-landscape-native.png",
+      "bytes": 232636,
+      "sha256": "982732d47516bee55b497460941b4077829140132376556eb87e42a384304e28"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-landscape-single-finger-left.png",
+      "bytes": 199457,
+      "sha256": "abde39df9681a58447a69387aac443c148bde419f19496753bcd38186b208779"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-landscape-single-finger-right.png",
+      "bytes": 262311,
+      "sha256": "7ddf3aa6490e0fbbeb3a432fff5f2cfcfe11abd221253dc9c487f83af20dc344"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-portrait-NPC-native.png",
+      "bytes": 193440,
+      "sha256": "ce86514e312527ad741c31e63cba2a991e929c3d4f1564dc3e1ba6d42bc1e3ae"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-portrait-native.png",
+      "bytes": 195940,
+      "sha256": "59d3f9add1bd7624bcb103c859d126d48903fd2d38761221736c4568a790171f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-portrait-single-finger-left.png",
+      "bytes": 202262,
+      "sha256": "013e4c5b89328ecc17617556c9863039161fe9ba563f1ac8da49c5b4b78ffd7a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/E-portrait-single-finger-right.png",
+      "bytes": 203254,
+      "sha256": "767fac1ac55f27ccc27fd00874421879136df74b55a063154f2d48bc17f138f5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-desktop-NPC-native.png",
+      "bytes": 286758,
+      "sha256": "f6956b97594f626891d7f2fd81e8362cb80a510c2d5ce55d7f9a1f154eccea16"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-desktop-QA-hero.png",
+      "bytes": 540446,
+      "sha256": "5f84f74e4164eb82bad3c990c123a45096891305dd307d9f4766e4e91439ebda"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-desktop-QA-top.png",
+      "bytes": 541739,
+      "sha256": "d008392ca9b6d45577455a73f24c040c8104b564c4335a4ae06c6e0c62a01dfe"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-desktop-native.png",
+      "bytes": 283991,
+      "sha256": "3666d4b73f9d4e1eb46d4790215674cfab11a7d93b1a97c8ba94200f3fc0d893"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-desktop-single-finger-left.png",
+      "bytes": 305737,
+      "sha256": "808876412574e7e01b5d5725ddf0816830e07aca3c564a4eee6e80f3e3337950"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-desktop-single-finger-right.png",
+      "bytes": 321145,
+      "sha256": "025788b197ca7faf83a243d27d94a17862fef807ed4241ecb94581be53f91dd7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-landscape-NPC-native.png",
+      "bytes": 201586,
+      "sha256": "e5e2ca9bd9e3c9c3468f91a69760697e0028f232d0dd627c7ad0bbb5d5e4cd8f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-landscape-native.png",
+      "bytes": 197451,
+      "sha256": "642a187d92458851cfd43bb8bd8183181ae05acaf0914ccb4da37ddf5b75d5e2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-landscape-single-finger-left.png",
+      "bytes": 220604,
+      "sha256": "277aee58a01555832f922addd5a463b8327669dd4926f6a2038f73ec3be5ef6a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-landscape-single-finger-right.png",
+      "bytes": 235270,
+      "sha256": "d24c79ab8698f14abcf4341700cd13fb21a81151be240883f23f40dffd9e7adf"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-portrait-NPC-native.png",
+      "bytes": 114995,
+      "sha256": "b13eb7e506d6f5657b2d4dee3b2ae9373d0b6241d66a006dff677f5a0cb030a2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-portrait-native.png",
+      "bytes": 117865,
+      "sha256": "6d68a7388567edcd1835d3564af42c3aab6264b89a8204e2cde6fb892fec688e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-portrait-single-finger-left.png",
+      "bytes": 163672,
+      "sha256": "098f8830cf3128e572402416d760cf82530f698f983b29d9cec48144bfdfa179"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/H-portrait-single-finger-right.png",
+      "bytes": 159831,
+      "sha256": "2fff4c4b848e6ce0d21899286ae081ebe46a4cbd1f9402ad63c72907b87afd61"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/capture-record.json",
+      "bytes": 106130,
+      "sha256": "1a89fbad84039242a4f14402b03efc75f016063c9b1479847be4375e163ce0d8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/world-desktop-panorama.png",
+      "bytes": 211960,
+      "sha256": "74703af042a26d1de8a257cafb766826cff1a87efb33ffefc96feabb76de49cd"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/world-landscape-panorama.png",
+      "bytes": 107676,
+      "sha256": "8ac682b0deadef471ed05a5a7945506d5426e60162871cdb58796c0563562d33"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-after/world-portrait-panorama.png",
+      "bytes": 109636,
+      "sha256": "cc4de5662212cb0355528db67b5d381a5e48201aa38924161bb3f30af24fda30"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-desktop-NPC-native.png",
+      "bytes": 341993,
+      "sha256": "3e6d767558efb6d7efcc12b47a7aa1668f2980f705327b61bff70e9596b7e6be"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-desktop-QA-hero.png",
+      "bytes": 572334,
+      "sha256": "757d2d3cb19b57a3d4ddf128d465c39726685e2c856493ff173f90633988e94b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-desktop-QA-top.png",
+      "bytes": 438155,
+      "sha256": "2caa65b88d89b90e238ba133950ac45fc2c7cff89c38eb96f1a9d97877c5e078"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-desktop-native.png",
+      "bytes": 303044,
+      "sha256": "50c633b9ccae2b9acdad3b8e64775d9f7720debc63d45357456a12819154f627"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-desktop-single-finger-left.png",
+      "bytes": 291637,
+      "sha256": "8d7e6b46ef4998b25a883ce4c52af4ba719ba3250b79a255eeb8859d3f925e4f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-desktop-single-finger-right.png",
+      "bytes": 321035,
+      "sha256": "99749add9b8e4c82699ef508061065cdd9b78c699820bd9b16d754571a6d5efd"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-landscape-NPC-native.png",
+      "bytes": 279638,
+      "sha256": "8cd8d108ee557686e1acc5f212cb3402b69018e61a83dfb94f1abf8293bacb36"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-landscape-native.png",
+      "bytes": 235704,
+      "sha256": "50f752c52c8807b64a575a40421a5e2a693be1f9c939df6f557ff10eb76cdd7f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-landscape-single-finger-left.png",
+      "bytes": 211132,
+      "sha256": "782050ebe667d06ef8c2432db1713788d4adf01d97acb211421de55f07cd323a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-landscape-single-finger-right.png",
+      "bytes": 269540,
+      "sha256": "1ca476bc57443ca68554238402514307c2f4ff7ac6a74a6ed5a862a3e5dbcc7a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-portrait-NPC-native.png",
+      "bytes": 174501,
+      "sha256": "90860cbaf5006d5e717a8dbad913635b04cd012b06df61a2233b6818da6ebcd9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-portrait-native.png",
+      "bytes": 155339,
+      "sha256": "78eb0856c43ec5d5821b068771cbe85b2a26ae793532f468a20ced94039acb74"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-portrait-single-finger-left.png",
+      "bytes": 154474,
+      "sha256": "d787b2a820223a5ec7066b5605eb6e15d43b7d59e645f0be74ec6e93ab94e1ca"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/B-portrait-single-finger-right.png",
+      "bytes": 177816,
+      "sha256": "86c768eca45280a4a8580e881d8446a880b46fdd29bf14b850a140d5916faa5d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-desktop-NPC-native.png",
+      "bytes": 457885,
+      "sha256": "3d993457b64ec2cdd2429968641812d0c83bb7f9c9cd4296fdb3f7b12e531f74"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-desktop-QA-hero.png",
+      "bytes": 458633,
+      "sha256": "c85c10c7b98898a1657822b1f6f3633835bb996ed535f16682df83d2bf11fb60"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-desktop-QA-top.png",
+      "bytes": 497643,
+      "sha256": "ed710702b39d34a836421726ca3056ec52c082c6e12a21ddfd26cbc2c27c2ba0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-desktop-native.png",
+      "bytes": 248232,
+      "sha256": "ea08f48d1afa3ac0f376a223e2fca55304d134e3b2b0da71d1e8d21b456341ef"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-desktop-single-finger-left.png",
+      "bytes": 176068,
+      "sha256": "a54a7ea7f00234b5b8172d90e46ba1cc1669adcd5842f3e3c557cc895d4bea00"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-desktop-single-finger-right.png",
+      "bytes": 302408,
+      "sha256": "b00670d6605d06234a8c8f106919e7076bc26ca4f232a35a2deb3b5b55e2ee88"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-landscape-NPC-native.png",
+      "bytes": 286679,
+      "sha256": "48f403c182fe3dbb25620d49dbfc22938adb1b2346d13708815cfeba5b7b9b0b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-landscape-native.png",
+      "bytes": 201754,
+      "sha256": "d1c9e4e25db2b6cf205e862323d5a53a7a05be0c7abbadb0cb792b91993c4237"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-landscape-single-finger-left.png",
+      "bytes": 202060,
+      "sha256": "0df3c8ad3814ddffdcbaec8de296254907b6de79bff21b6b79105ff2144db2a4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-landscape-single-finger-right.png",
+      "bytes": 237827,
+      "sha256": "f255e2f43c67b7b1ac5e31dbc850e031d0133eb6544b94ef45d24ee0337a10d3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-portrait-NPC-native.png",
+      "bytes": 208229,
+      "sha256": "12d9236567a56f28a5013d0f006e6afe434d88821dba96f6bb0c45b9e1ca0d7a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-portrait-native.png",
+      "bytes": 143414,
+      "sha256": "b193eae69c664656251a6b27023d862474dae4875d25977f28965a7bf51d7bea"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-portrait-single-finger-left.png",
+      "bytes": 158792,
+      "sha256": "1447c5346b32c439bf33cfb5cd884de5810ece4669bb299b28adfe47114ca796"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/D-portrait-single-finger-right.png",
+      "bytes": 153040,
+      "sha256": "6d5303e44601d36ef07bec098c27c8d8c156118a24d9531237bf6b871d3cea43"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-desktop-NPC-native.png",
+      "bytes": 315517,
+      "sha256": "26c2274b1bc3dac2dbab26fc7a9a6372c542b2860af9ae7697f7360115c2587b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-desktop-QA-hero.png",
+      "bytes": 706677,
+      "sha256": "eafdf9392e3412345496e9f06487328922071e6070dcd376b4dcca081b4147dd"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-desktop-QA-top.png",
+      "bytes": 601610,
+      "sha256": "cdd772ab961ba24c61e938438c8ac973b6c58c91f30f0076eaf2055b6a4a567f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-desktop-native.png",
+      "bytes": 236611,
+      "sha256": "ec5ab3cfd70afc69563482fa5bad49205565c6227bf7bfb48a41abcb89469e4f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-desktop-single-finger-left.png",
+      "bytes": 245309,
+      "sha256": "1ef2a5441444fe766b47629d329c618690e2725f72f4f3ca29685f343cf0ec4e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-desktop-single-finger-right.png",
+      "bytes": 222164,
+      "sha256": "20fe874465cc8b3c1712968c08a66d2224e7c77e56e1f25337a8205734563aac"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-landscape-NPC-native.png",
+      "bytes": 255038,
+      "sha256": "4583d5ebefa4b985ec689988e0d4893b6a434136ac9055c26b9df003dbf8b757"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-landscape-native.png",
+      "bytes": 199283,
+      "sha256": "796b7fcc329086e943b216e3604e4dd41e282a8605a2d728234ef5b634cae04d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-landscape-single-finger-left.png",
+      "bytes": 207492,
+      "sha256": "dd0357b3c873d4575eaa5b05ddb5e11cc908b760726d803147f95aca50b9ef69"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-landscape-single-finger-right.png",
+      "bytes": 200833,
+      "sha256": "30a8f6bf86183dfc165387cf5939ec76d36fb74e04f86db922c3a02fa21b07fb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-portrait-NPC-native.png",
+      "bytes": 173490,
+      "sha256": "ea0a58b88284da28046985d8e8b0afd9b8beda0f1940638a5c847ed69d81bbba"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-portrait-native.png",
+      "bytes": 149673,
+      "sha256": "d8fd0f9a4ea08a49f08d3fad07ddf37c80c32879810c89266ea703dc39d8eafc"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-portrait-single-finger-left.png",
+      "bytes": 160603,
+      "sha256": "10a6512fe848dd7d85b7c76b3f383a570768608601da05a6facb57a51346fcfb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/E-portrait-single-finger-right.png",
+      "bytes": 119053,
+      "sha256": "4fca719e36b99a3fa02d00dd5d5bc6b82b12b3b129c9c455c652a54faa1d56e0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-desktop-NPC-native.png",
+      "bytes": 332585,
+      "sha256": "b06613f6e4f142b7b3e77983ebac0f19a93dc29355fff88d33d8ab93f2cca0c7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-desktop-QA-hero.png",
+      "bytes": 543451,
+      "sha256": "c58d53f41a5034bf95636fb3c2cc95e06efdd67ae904fdd931bbf6771e4dc032"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-desktop-QA-top.png",
+      "bytes": 536732,
+      "sha256": "7458bac1d487c14e63e9c571b671758dac953c3259d38afec4bb8c3cb83d3322"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-desktop-native.png",
+      "bytes": 276383,
+      "sha256": "cb055c51164d8b816cce9aecddb5dceda0a6799228b0da716caefaf5304f062f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-desktop-single-finger-left.png",
+      "bytes": 344079,
+      "sha256": "20367bd3ee584091f923e8bb5f2cb257bd63e5d89f8bbd9fa43b5ad75cd52ac0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-desktop-single-finger-right.png",
+      "bytes": 238919,
+      "sha256": "638ccba0aeb77c1ae14164c3d2c7fb62e5a6cb439a4145cd26a3475479b7f0d2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-landscape-NPC-native.png",
+      "bytes": 234837,
+      "sha256": "d03cdd9337b66be730a8a47866b52541b06978b998e7e8006cbc1a6d80fd2428"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-landscape-native.png",
+      "bytes": 168565,
+      "sha256": "1d2c00f820a71e9efa183fb6f5e4f88ddb29edee6f447d88894fa03f74f6c1db"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-landscape-single-finger-left.png",
+      "bytes": 266215,
+      "sha256": "244875a375b8d5ae226af3bc2d3072557feaaa3394b688890d935c5c433ce4e8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-landscape-single-finger-right.png",
+      "bytes": 173732,
+      "sha256": "0231c98d7ab21a95eb3fca292f1232511fbbb4fa99c76dc13263f6aed9a2abb9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-portrait-NPC-native.png",
+      "bytes": 171095,
+      "sha256": "e1542b91c99cbcf8108d0f5b3f15c9fecb9d18e686b9dfe9f4b26ddce821173c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-portrait-native.png",
+      "bytes": 109176,
+      "sha256": "d86974ab604b8e602563a8affad9f497665cbc993a799d98b8b899451873c25c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-portrait-single-finger-left.png",
+      "bytes": 168219,
+      "sha256": "319e95815469f4566ac5706bd8785fdb2afb295e97ebbc359219c6ac2ccdaf22"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/H-portrait-single-finger-right.png",
+      "bytes": 113627,
+      "sha256": "d68f66f52f4b1e919c188f77c13442aa027e2eacbd2f3900a0c945c3841581b3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/capture-record.json",
+      "bytes": 90598,
+      "sha256": "e1738d28cf30605f6718654cafd81b1134fd2de89953b01abadb37df76473aa8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/world-desktop-panorama.png",
+      "bytes": 210728,
+      "sha256": "c9df6d7fd1f285543b99a62e2a2b813950eec686343b038a3a8bafb18fc7cf6f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/world-landscape-panorama.png",
+      "bytes": 107374,
+      "sha256": "c95137dac908a510706022bc5909a6c0a5439939d8d26c53d764dacaad20f493"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/game-before/world-portrait-panorama.png",
+      "bytes": 109291,
+      "sha256": "d1934ded2786d425d2b0055e5107bf767b9e33536a7c4b0121dda9bc9f549c03"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/glb-integrity-and-sizes.json",
+      "bytes": 7051,
+      "sha256": "d89f3cc0b16195d7aad764ae0c36353e40bceb9c3e6de4f281ccc62589e3e425"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/B/blender/hero.png",
+      "bytes": 600762,
+      "sha256": "befdfdc87242c23723d55aa8035b0954d3bf39caa46394565f863a077676f116"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/B/blender/render-record.json",
+      "bytes": 537,
+      "sha256": "4f8dc323458dd0ddb16e298c8d149db72044c17fcd0fe5ca1ebaada57e89134d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/D/blender/hero.png",
+      "bytes": 619545,
+      "sha256": "b5c14fa4fbc00e0deb2ce039e96ba8cd005a84034ea2ea977cdb00c592660719"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/D/blender/render-record.json",
+      "bytes": 537,
+      "sha256": "59cc450a5d4d4eb2be6d4444c40851fd71287895e61fcf66c3c8f9d88006c048"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/E/blender/hero.png",
+      "bytes": 607287,
+      "sha256": "9931bb00aa6e8a672576d20ffc3d1aac07eb48402014b939060a52c872011a58"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/E/blender/render-record.json",
+      "bytes": 538,
+      "sha256": "9955173e2ac144983d4cf853b1b388dfb36fe857c2c2c51fff1a481e30ad7d09"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/E/blender-before-landscape-revision/hero.png",
+      "bytes": 607287,
+      "sha256": "9931bb00aa6e8a672576d20ffc3d1aac07eb48402014b939060a52c872011a58"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/E/blender-before-landscape-revision/render-record.json",
+      "bytes": 538,
+      "sha256": "9955173e2ac144983d4cf853b1b388dfb36fe857c2c2c51fff1a481e30ad7d09"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/H/blender/hero.png",
+      "bytes": 679641,
+      "sha256": "0dfaf50930d13d2b5f3b917bf694973e9ceeadc337159a2155b8b660841ecc02"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/H/blender/render-record.json",
+      "bytes": 537,
+      "sha256": "d9d96f5dec8d58d891f73c03b8cb8e38c1277429b9f664c8b840d6f95a32f4a8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-1/B-portrait-native.png",
+      "bytes": 141979,
+      "sha256": "05728c870b0c7ba268af840d20bfdc734365d9b2441ff04fa95623e5cf69d379"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-1/D-portrait-native.png",
+      "bytes": 185679,
+      "sha256": "519302696242560a52ba6af8dced12bb7c5d89d5d08e05710e34c37f619db9f7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-1/E-portrait-native.png",
+      "bytes": 117375,
+      "sha256": "83f9476fe44744883af38e0eb1caa6bab8f7a1b6d0dc6fdb6138de546623eaca"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-1/H-portrait-native.png",
+      "bytes": 117925,
+      "sha256": "019be90e89081ad37d9cc5fef6e78cc06c3617d162b3d9a76308842c1d923cd1"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-1/capture-record.json",
+      "bytes": 6108,
+      "sha256": "7a5070ca4d2fd5c78e8061a44906bc4789d77648c26e1bfb8b34518b0c6b542c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-1/contact.jpg",
+      "bytes": 96084,
+      "sha256": "e29a75095461dfd0ff993cd114e4bf8b8257bca7fccbc06cc99e9cd0f27fce2d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-2/B-portrait-native.png",
+      "bytes": 144690,
+      "sha256": "52963cb896447a1a34ab1df04a313b71a8d22c108a3b3c85f289bf6825e16b9c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-2/D-portrait-native.png",
+      "bytes": 113154,
+      "sha256": "4fbfbe193c978d0d06a61103f5d913f34086b492c4cea7d96f1c6716b1487718"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-2/E-portrait-native.png",
+      "bytes": 169957,
+      "sha256": "39de9de817aa8d2926bb01cf5e50a686d4d1ecd0ffcc07564a4f64590d884a74"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-2/H-portrait-native.png",
+      "bytes": 117925,
+      "sha256": "6f15d8800a14dc268773e3bff37904f82a0f81531c38440ac715ace41dc320c9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-2/capture-record.json",
+      "bytes": 6194,
+      "sha256": "904346f55a853e0b5e5b544794938ba10ed1aff6d4a3a8ff7da14db20c71337f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/D-contact.jpg",
+      "bytes": 92365,
+      "sha256": "670d85a53624565a2da022aa530df9a0e60677c59a97f29af9d121f2a6d31e6e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/D-portrait-yaw-0.8.png",
+      "bytes": 185586,
+      "sha256": "5686c0189f725b8f6f974c4596943936b1a0ac1c5885431cccc6a251323fbd83"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/D-portrait-yaw-2.8.png",
+      "bytes": 98527,
+      "sha256": "1491bf044bc2577b72d407c75246174ead48fd5e974ea5ba2a9c3afe58cd45f2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/D-portrait-yaw1.45.png",
+      "bytes": 112654,
+      "sha256": "e75ba13e88f0ccaa029748b0e8aea42e53ff7b93aa9534df542c60923b9bbe92"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/D-portrait-yaw2.25.png",
+      "bytes": 98580,
+      "sha256": "a5f8cffb1f8952328f91840934c218216b139e41df7336868c39b7553c196f44"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/E-contact.jpg",
+      "bytes": 82076,
+      "sha256": "29cc2f60364a2fb6fc330dfc8e8f5b188e54e1847385f0dd181a75d76b9612f0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/E-portrait-yaw-1.2.png",
+      "bytes": 133704,
+      "sha256": "5c9ea5cda4536ca29e014a83d760c58452d4c6e22231c63e9e8316008e58fad4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/E-portrait-yaw-1.6.png",
+      "bytes": 108977,
+      "sha256": "efd6516bdffcd1db89676830221cdc2a6e9430ffca2bddca33d0b933a48f5753"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/E-portrait-yaw-1.9.png",
+      "bytes": 110411,
+      "sha256": "3f1a8600474d2ced0c58776a20536f9eb93d46b94dac025acb021056df9cb4db"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/E-portrait-yaw2.65.png",
+      "bytes": 185032,
+      "sha256": "997decd540ee51e70ca4d00005136fd3667e331e9b0e6d20c91ead511444c091"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-1/camera-study-variants/capture-record.json",
+      "bytes": 11730,
+      "sha256": "3c26ae5fed332c6b9f49976c54008989acdac77b23108d3f5363043a37484a4f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/E/blender-before-final-structure-check/hero.png",
+      "bytes": 611785,
+      "sha256": "ac99619d7639ca9fd88ea17715ead50e3f26b35f7d81bea91fb36ba2827f5e59"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/E/blender-before-final-structure-check/render-record.json",
+      "bytes": 537,
+      "sha256": "57073364d022c9f20e97284f672b45cb903cef6ba9ee6af2d0a2f2dec197bee7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/E/blender-before-seat-clearance/hero.png",
+      "bytes": 611543,
+      "sha256": "f0cf502da281ebb8cd605a48507e7c4c4f6d1775c12cfcd572f85ef463aa1d07"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/E/blender-before-seat-clearance/render-record.json",
+      "bytes": 537,
+      "sha256": "307d820ba1fe5867eaa1639a09049b16101f1bd59360901e97cf9c34c7dca368"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/E-native-candidate23-framing.png",
+      "bytes": 198574,
+      "sha256": "f469f9d676e91c991aa9fd991c5624a99a3ec8d9d1f431272d3c4eea2a61c19c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/E-native-candidate23-record.json",
+      "bytes": 2995,
+      "sha256": "f9fd5d353982c16b5d0531eef7fd46fa54816a515658e4c8b73b53efb6b79ab2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/H/blender-before-final-structure-check/hero.png",
+      "bytes": 679641,
+      "sha256": "0dfaf50930d13d2b5f3b917bf694973e9ceeadc337159a2155b8b660841ecc02"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/H/blender-before-final-structure-check/render-record.json",
+      "bytes": 537,
+      "sha256": "d9d96f5dec8d58d891f73c03b8cb8e38c1277429b9f664c8b840d6f95a32f4a8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/candidate23-interruption.json",
+      "bytes": 177,
+      "sha256": "ae13bfb2898ee438c24ca26c9e655d067bf1445bac01190111204705cf85fa78"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/candidate6-capture-record.json",
+      "bytes": 104275,
+      "sha256": "dc2698af8c6b897cc90770e773e19b2ce10454e0bebe79f5f1d9b89edf5ab278"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/candidate6-interrupted-on-temporal-defect.json",
+      "bytes": 70254,
+      "sha256": "90813791c766991e6a093fb9ac8cc097caf636353364def43087e2c22e6b1bc3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/continuous-candidate22-camera.json",
+      "bytes": 1102316,
+      "sha256": "fec4183dcec507fc237f0ffdae08b35104496c5e8ab1e898bf8de6944e2ef571"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/manual-candidate23-before-cache.json",
+      "bytes": 267757,
+      "sha256": "c10704d4d53248638594bf4e425d65b8fe8650deb5e2810891d4f206ae7ac1ea"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/manual-temporal-backtrack-stall.json",
+      "bytes": 268074,
+      "sha256": "2c1bdf48357c4a9019f69185c34673aa371f000830f47e47b20d837795e62735"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/manual-temporal-before-smoothing.json",
+      "bytes": 268113,
+      "sha256": "f37165f2e18b594e2d909e5df4cebc45f8f7a8036c2ed8c98bc3116d3c1378f4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/manual-temporal-elevation-overshoot.json",
+      "bytes": 200792,
+      "sha256": "62452a099633ee62f29f23f9116303b2f330652e758bef485d741c131169a8b0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/manual-temporal-spherical-first.json",
+      "bytes": 201003,
+      "sha256": "a616c0890469c1a827af87edac21a4baca63d7c998d5084fed4e8ed352bf0e8d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/r21-camera-backtrack-stall.js.txt",
+      "bytes": 7195,
+      "sha256": "db5b358abca1a76c29ad126f5546b408d987e93f2e38dac127c2cfba09f0dd54"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-2/r21-camera-spherical-first.js.txt",
+      "bytes": 6332,
+      "sha256": "bb9fe2051b1eaf60db503da180433f34eeaa187045a30a1bd6f46c477a115505"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/E-before-soft-planting-detail.png",
+      "bytes": 843653,
+      "sha256": "8901558019119ea2b8f8110e7ac0fc31a9b03c4ba1a1e41e576670119b62ba8d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/E-before-soft-planting-hero.png",
+      "bytes": 612170,
+      "sha256": "f47a7fd05957aa5916818a5e2d77c3aa1a208d7e65044e4dc3e854cdfa58fc03"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/E-before-soft-planting-top.png",
+      "bytes": 655246,
+      "sha256": "034d8464e3826beb268900205a6544dfb08d9eea2bcea58328843ec25e2db0c3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/E-planting-before-after.jpg",
+      "bytes": 85323,
+      "sha256": "c4c8cab6927786a5a8f161758ccaf8cfb37aed86d47ec0de98f676227a51a0ff"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/WHY.md",
+      "bytes": 454,
+      "sha256": "c1c341ebedda834e15c5744601ef1ff79bc43cc180f0e9860b74ca7a4224c006"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/candidate24-interrupted-on-art-defect.json",
+      "bytes": 66928,
+      "sha256": "e7bc31f525a273cd19520fc1e27d6836d2349877425864fc04c5ab5246ca6ff9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/planting-source-comparison.json",
+      "bytes": 737,
+      "sha256": "4697c82b3b5cbd7d1772bc228fc49876e6bf41627fd38e77d19dfe353a911e12"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/soft-planting-details/E-rain-garden.png",
+      "bytes": 899102,
+      "sha256": "df6764a2d50d57d006b927749588cfd37e7444ca7fb81d8866e8e9eeb1adcade"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/soft-planting-details/E-roof-planting.png",
+      "bytes": 982227,
+      "sha256": "d9b1aed14560feaa1874241dd3f146de6d9b944202d2b7810182d69023f831b0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/soft-planting-details/render-record.json",
+      "bytes": 1105,
+      "sha256": "6c3607f1ad6cf96f3baef8e2878fb8774cb989ad63d2fb9328ff9eafda645ae5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/soft-planting-probe/E/blender/hero.png",
+      "bytes": 650933,
+      "sha256": "8da30260e6c0ea9857858d646aa5d626c7a41b65479eee06f2e689aeb023733c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-3/soft-planting-probe/E/blender/render-record.json",
+      "bytes": 537,
+      "sha256": "f0f81bba97a32933b0fcdc0d3c9bcc8762486c0357086fb7116e73f81c81881c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-4/H-soft-foot-search-trial.json",
+      "bytes": 1726,
+      "sha256": "90746ebaeaa8ed58e1d7c88871af21dbbdc4dec65ced81c84e9e10935beb79c8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-4/WHY.md",
+      "bytes": 767,
+      "sha256": "f34ee13bfb5db45858cd7e3e83019ae68fcfab7811aa326af1bbfddd91b83567"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-4/native-equivalence-and-superseded-axis-assertion.log",
+      "bytes": 2093,
+      "sha256": "a17fbd069f2b93fad4028db2e1098462e1d40c042e9ae3a76cef397d1637d866"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-4/soft-foot-search-trial.js.txt",
+      "bytes": 16019,
+      "sha256": "94a24d50b8af848c3c66c7542f4b72883348128f102a35de1dd1fa518dd1820f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/E-native-body-before-after.jpg",
+      "bytes": 101126,
+      "sha256": "fbbc550ff4a85f4ecebb99710250599f0a9e0c193a20b2bf461ebe157018037a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/README.md",
+      "bytes": 899,
+      "sha256": "43dd02e7f0a73eaf38e690432356a68ff94c979a786a93e62d61a9ea7218b172"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/before-E-desktop-native.png",
+      "bytes": 254986,
+      "sha256": "e6b79e209fe07b6f7e81fb37737406fcf8557b32d4f07415de1fe5f224524641"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/before-E-portrait-native.png",
+      "bytes": 196658,
+      "sha256": "3bb3edc0b8f0703d1bac04a3fcc96afbb991d30c4341fbd4295f32b97c6f2e07"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/before-camera-config.json",
+      "bytes": 713,
+      "sha256": "6dc34a34d9d48c1b7bc114ec647afa6cdec6812126ab1fb9c7d58ebbd1fcb799"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/before-capture-record.json",
+      "bytes": 5680,
+      "sha256": "6a3084ca86adba4638ba9b3b4de07a890b41f741d07a6a0e0f91e5741bc49f60"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/candidate-minus2p7/E-portrait-native.png",
+      "bytes": 189270,
+      "sha256": "58bf22602259f8addc4f6bc36e069254c3f1f1da2977b6297756cff7ebc0097f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/candidate-minus2p7/capture-record.json",
+      "bytes": 3000,
+      "sha256": "fd522e271e4f1078eb14167e94a39fd74430b9f7eec878785c4c1ddce8acce90"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/candidate-minus3p5/E-portrait-native.png",
+      "bytes": 161379,
+      "sha256": "8c204f3accb640de8b5a55b78f9d96fa4fb48d10a5e801d593ce343ea7e62384"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/candidate-minus3p5/capture-record.json",
+      "bytes": 3027,
+      "sha256": "b6deae9dcb823a6f21dbca51a510e573e5ff52cfa11759610e8a1a448c8cb0c4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/lower-body-before-failed.json",
+      "bytes": 6896,
+      "sha256": "285e8e42428a3b9a9e731e5a3ce457f9caa49e2d80331075bd01679f60d03b3b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/native-benchmark-alias-before.log",
+      "bytes": 1174,
+      "sha256": "0e146411f1443ab343b4344e13e1771a94df37f3845ca92b86b072ef88eaed94"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/pre-heading-complete70.json",
+      "bytes": 94758,
+      "sha256": "70ba4e8de40a524fa5c9f69a546fb8c26fbd4f40dc2fdc301e4e9ec419d98f01"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/pre-tree-source-checkpoint.json",
+      "bytes": 1179,
+      "sha256": "97cf55b07590d9526b9e3c5bbe46b7f56337ad913ad4dbd27b2dcb7e4242a3d0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/pre-tree-source-consistency.json",
+      "bytes": 56445,
+      "sha256": "51e9e72d74906b4a1069e768df5e000ad8ff07a6d3f1dae61472b531a41fcd6b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0000.png",
+      "bytes": 208209,
+      "sha256": "3023c3a140d18adc9b4de3625636ff54fdf5a1633208a64c8cc71c9a5c22ab38"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0030.png",
+      "bytes": 206423,
+      "sha256": "022bbe1400cfc9f602e4407fe826332a7c764f45a32ccc4533213b21302e4016"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0060.png",
+      "bytes": 173284,
+      "sha256": "968f63b4ec2b7ac12f99e1fa188871d3035968c15a6f2fb1b768c6bb5da3391e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0090.png",
+      "bytes": 167686,
+      "sha256": "3994b8ae8226a1c2d318345c4511f4b2c06c89eda253267f1939cb8a31d2b9f8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0120.png",
+      "bytes": 166303,
+      "sha256": "aceece6ee706cf165b686267e19e30d98497a7452f64bdd80c7462924764b075"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0150.png",
+      "bytes": 160958,
+      "sha256": "be0936c3ba922dfbf572bdf3f07c24c90b0e9bd4f0cf1fa56652e8672ab4aa59"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0180.png",
+      "bytes": 144574,
+      "sha256": "639768698167b03d70c86b22cca9882ee42cbf9d1dc601c892be23bf0a121e9c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0210.png",
+      "bytes": 147385,
+      "sha256": "aff06ee233c810c02dc1cb563fb92d1f9c23d8361b40ab1b79f402705cb2ecb9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0240.png",
+      "bytes": 179171,
+      "sha256": "4c587638e14840cdc6c13ac2a389fc7cd809a6739db9f4ebe9f2dcd47a4e43e1"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0270.png",
+      "bytes": 178804,
+      "sha256": "2a24eb6bf2ab7ec61d4cc188a60dfe767f6bf4a572df9781d070cd26552821cc"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B/0284.png",
+      "bytes": 178806,
+      "sha256": "244586fdd5de8100eef8a3a0b9e1052dc036408f1c3a6333c7d54e888d3369bb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B-manual-turn-trace.json",
+      "bytes": 67128,
+      "sha256": "4553f16598148d30c0c004ae67e744f1ae722ee14613f7b8ce2ee4b18a5c6011"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/preflight-operation/B-trace.json",
+      "bytes": 136930,
+      "sha256": "cded3c172aa2fb3b8844a71188309700927aa88e0fcaa26e6ef10785a7d940cc"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0000.png",
+      "bytes": 207613,
+      "sha256": "adab9bb84ce7a6241f4598a800187260a21909c82f96f4c869e4a2b8af9ccdcb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0030.png",
+      "bytes": 204760,
+      "sha256": "7f053e8d43a1bc2683dda2f994c6f726c187883108d60dfb7f8f5cae524bc81a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0060.png",
+      "bytes": 169136,
+      "sha256": "66180e05b20e066e2970ba711b1f34d6e71551dfe60baf189e1c1a708d784a24"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0090.png",
+      "bytes": 166517,
+      "sha256": "75f1da2cf6b060f9af2f50134463f8586e4211405dcb0aaec308e04fe79e3be1"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0120.png",
+      "bytes": 165647,
+      "sha256": "2233d5f7d047f8cccb7129d21d7cc682ae0ca0e108e11840ccb00841ba483dda"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0150.png",
+      "bytes": 155166,
+      "sha256": "9c475ea2929e44766bf4bccfe53a4043687912217324b59ae81e6920d8bbee56"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0180.png",
+      "bytes": 151335,
+      "sha256": "fc62907c4decbd63f2cd945cd610db2bd5255f407df95504474a8ecdb9b13e75"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0210.png",
+      "bytes": 155901,
+      "sha256": "658cbdb7bbe64ad1ca18b6d9de5847ccc6bda3af61dfb9ec5a8fba36140c3035"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0240.png",
+      "bytes": 156363,
+      "sha256": "d532c5330ac2c8135d99ddefba8a912ab11529188e28d75e7dfd9731a80689c7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0270.png",
+      "bytes": 151354,
+      "sha256": "9038d98e57e0401608e6fcb7d9cade46f2cba0a8ffef9e024681239fd63fb1be"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0300.png",
+      "bytes": 154944,
+      "sha256": "3ae26d9a236ab325a96b4d4e50c4948d1425172b7d5a7d271c729d1c52b802cf"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0330.png",
+      "bytes": 156802,
+      "sha256": "f93314a8f63fd551378bbdc1bea24bb7d155d242fe21d73de06837b513e6df34"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0360.png",
+      "bytes": 151262,
+      "sha256": "f61ef436077d59fdbc4acf3ec19778a67a1427dde1f427fced4dbcd6f52eca5a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0390.png",
+      "bytes": 154451,
+      "sha256": "d255a41ba9018283f388e7a922575e017a453b5d02e99c2d74b9a945029ba88a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0420.png",
+      "bytes": 157258,
+      "sha256": "a2291aef8defd8a62e72169ad9d19d80b43d1ed35cd2b684b9bb80c61651f39e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0450.png",
+      "bytes": 151736,
+      "sha256": "2f2fb9c32d34a6a3ee591f29581e46269cff993d79db9c177a60ebd7a9837dc6"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0480.png",
+      "bytes": 153352,
+      "sha256": "7325b37eb03e726f2c37aee5ceb3cd0c715523744698cfcd40eab79a15344f94"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0510.png",
+      "bytes": 157107,
+      "sha256": "8723a22e23a3fdc08de341a24aba799664c72f5e6acf72059c1d9b2f37a96f6a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0540.png",
+      "bytes": 152999,
+      "sha256": "eb88bd767406c1a36393d6890158f8469ea60d2eb3961daf194fc27ca15fa7e5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0570.png",
+      "bytes": 152231,
+      "sha256": "5476a6c738a588383d7716b8652147950210bb0106ff2f9c4727264a0d1394fe"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0600.png",
+      "bytes": 156992,
+      "sha256": "6e49f2724a593393bd57956fcaecbe6636945f7020ad1ef7e4f413c810276602"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0630.png",
+      "bytes": 153188,
+      "sha256": "c63a44cf600a255033c2cc6dad7885371b7377bc4fafb2fbfc1d05987eee7b8d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0660.png",
+      "bytes": 151288,
+      "sha256": "d77b7a8367eb85f55574e42a49155d1f607c0e752d86b8344864cc6ec4b6c4d6"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0690.png",
+      "bytes": 157593,
+      "sha256": "8f5d3508a0b6913c3ddd1cc6328275670b648425503889b6e2354ada8c46826b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0720.png",
+      "bytes": 154319,
+      "sha256": "3b667c1ed673ca7d26139efdcbed9cb7aaf5c8613af5e48b411a153a7178f1c7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0750.png",
+      "bytes": 151183,
+      "sha256": "fef5c0f9fa215c39734d7c8a098835d893dafbb186abc35a105ff1fcfaf94f02"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0780.png",
+      "bytes": 157551,
+      "sha256": "5f91e5abd30e52fab81b8e8f300c7846eee618fb1d9294258a27bae18c0f49b4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0810.png",
+      "bytes": 154647,
+      "sha256": "656a40e9d91f82fabb38028592ba842f9395503cd3fcf8ed65537d2086439b1e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0840.png",
+      "bytes": 151027,
+      "sha256": "53cf7005be033a6acca8f7f01282f348fe53505ddcba4e8f823e8f72946dbd14"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0870.png",
+      "bytes": 156696,
+      "sha256": "9a47ec40c01330b34e603ce3aa2c3e0e904a52b6546cad41937829a9958771e6"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0900.png",
+      "bytes": 154736,
+      "sha256": "ddde6c5883a6fdbaeed9e73c57d70281881a3e8cdf29db5f27cdd5fba8e390d5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0930.png",
+      "bytes": 150814,
+      "sha256": "65afa38e5483aa874031fbcab5fb74e999e4d566377b2306d18114ca9b9fa4f7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0960.png",
+      "bytes": 156082,
+      "sha256": "6dd6172442dd1505b1d96bb1d13e6039bd99a6fcafd0de004df333c48cbc1758"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B/0990.png",
+      "bytes": 155878,
+      "sha256": "2ae5958a3adec6824de53b2279099b58de6ca2ce701158a333b1f60263608558"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/B-trace.json",
+      "bytes": 415538,
+      "sha256": "d177a4a6b06cb724ee17b8a34c6b49752b15461909f9f86606a6e00fdcb2c4c0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/replay-before/failed-driver.log",
+      "bytes": 1029,
+      "sha256": "374ae283dc13ef4dab896aa861f345f93efddd0397a73da83a7b74ab2c321c8d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/tree-clear-proof/E-portrait-native.png",
+      "bytes": 195858,
+      "sha256": "7f7afc441ec023118a2e137e8836477609132931418be1f4f9809ea494a50bc2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/tree-clear-proof/capture-record.json",
+      "bytes": 2995,
+      "sha256": "fc44757c261a40f888cc55938b244e26d768bc3d9dd7f0a9b03b2cd7c8b4271f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/iteration-5/tree-shift-metrics.json",
+      "bytes": 933,
+      "sha256": "958a4d8ede916395c7bd5c5a17329149ca2fccecc06c416f40b14fcb1958357c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0000.png",
+      "bytes": 207762,
+      "sha256": "8def69dcdb78b6d88901c88513d267c9e3f8661d391f1716ec338099cce3aa78"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0030.png",
+      "bytes": 205419,
+      "sha256": "6c10a536ac3d61a670328e05f1709a30926804838a28a4e374895857be524a07"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0060.png",
+      "bytes": 172804,
+      "sha256": "db9515909aad312e34b09bd50cdb4e5e4dd0a09960f11e1e6603dbbd09ae6ad1"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0090.png",
+      "bytes": 167794,
+      "sha256": "4731f97e0566fab75bc003f3a49c506df3647992742e72dce3181318cc3270bb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0120.png",
+      "bytes": 166198,
+      "sha256": "e8bde8bdcbe96539a46f13d1d3cdbbe1aef7d79fe13899fe831708cc38cd890f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0150.png",
+      "bytes": 161050,
+      "sha256": "d58ecb7b2a9dcdf73ca8add7d4d70af39c2ac51dddd937993ea51db50973a637"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0180.png",
+      "bytes": 143987,
+      "sha256": "fb9a955503dfb2496e15979e4993d6ae9d91da52a7c0e83c5f340e3910bac45c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0210.png",
+      "bytes": 147520,
+      "sha256": "adcf935b3b81455bd0e91650c1feb138e1e424c84d6a4ee9cc4f181c4d91a7da"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0240.png",
+      "bytes": 179071,
+      "sha256": "02197e9e7190e5f9a20d1830db84eaffb3cc85917cd02fdd6570f5d5c45cc215"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0270.png",
+      "bytes": 178809,
+      "sha256": "7d81159dc317f0925aff11ef562fae2e0f978d60ffad633501c61bf794e57e3e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B/0284.png",
+      "bytes": 178812,
+      "sha256": "470f57af7e73672e93ca9b271266df276c3ee76a04eefbc9d0556098baf2b2fd"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B-manual-turn-trace.json",
+      "bytes": 67128,
+      "sha256": "4553f16598148d30c0c004ae67e744f1ae722ee14613f7b8ce2ee4b18a5c6011"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/B-trace.json",
+      "bytes": 136930,
+      "sha256": "cded3c172aa2fb3b8844a71188309700927aa88e0fcaa26e6ef10785a7d940cc"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0000.png",
+      "bytes": 211549,
+      "sha256": "92d51f1d633b71fb0713bfee8ee4f125e9d1f01322ce3a121542d4bf958c2214"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0030.png",
+      "bytes": 208049,
+      "sha256": "db868a968863517165e465cae1508349c7e5f7326eccd83e7b9fd24df4437da6"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0060.png",
+      "bytes": 162108,
+      "sha256": "240424b686bcbb015b5b4f736783911e86468840a34b4d91b35544b9add6f0c7"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0090.png",
+      "bytes": 152953,
+      "sha256": "f4cfdc32b69cfaf0ff6c852a8b100574840efac00907dfaced234dfe144367c4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0120.png",
+      "bytes": 140541,
+      "sha256": "41f26b1f1be6f9ce401d7f2fba73b4508ca20d30f1c6374ba488323ca4103853"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0150.png",
+      "bytes": 92274,
+      "sha256": "c52e4242c71174d2965fc4e9e55b49c39e0149ae5007db5a99c1e9f0559ca933"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0180.png",
+      "bytes": 80943,
+      "sha256": "058ddd1b98c6104768563d4d05c8f685df0c836b8377d64d5b5dc60dde9e542f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0210.png",
+      "bytes": 146575,
+      "sha256": "a43bccd92af589abdea0b556902cf220882cce4081904fd5c983361eb29a127a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0240.png",
+      "bytes": 162859,
+      "sha256": "daf591cfe2ec8a25837b370a5d83d90b6c61d407e7708de6decf5418d6009510"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0270.png",
+      "bytes": 164114,
+      "sha256": "9515fde88479ab5efc13203e5f32c3cc8785c34d6e90593df552df58f6626790"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0300.png",
+      "bytes": 164611,
+      "sha256": "42b9b5a6a1c737160c6d1fd1b3d900904475f2e1ee3875b3aa1efefa5a213527"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D/0319.png",
+      "bytes": 164605,
+      "sha256": "17c081047e4c54cde79359fdb0f33ec94118e5638f67e93ac2ba3bdcc96b53c5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D-manual-turn-trace.json",
+      "bytes": 66680,
+      "sha256": "36960fefd748b07eadcfc605a77717380d1a935f75bccecdf330ddcfc2e8961c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/D-trace.json",
+      "bytes": 154132,
+      "sha256": "d22386fb73597a4f9b7195fae7fabcd0cf0781f05158e45dfa2270e398b24415"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0000.png",
+      "bytes": 188289,
+      "sha256": "417cb3d147d8318bd96eaaeedc73d66006127d30dabdd4d6aa6c9eec18b42a7b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0030.png",
+      "bytes": 177171,
+      "sha256": "844bae16c8469289e8e0940f1fc2cb817004aa90464c512d584a60677a862411"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0060.png",
+      "bytes": 139207,
+      "sha256": "27c152bce7dfbd081325b9904e9d2aa53b6b7bf7c892ba8370e7b0e1c40861bd"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0090.png",
+      "bytes": 164056,
+      "sha256": "eb393cf1e7a599babdba4b6c98c4370285e0032842bb897015ec3a531085ac26"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0120.png",
+      "bytes": 164005,
+      "sha256": "5bf943bf4f9cb839a944c64bf226c0c4c7099bcf18dee506720dc6be22a3f96b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0150.png",
+      "bytes": 132288,
+      "sha256": "2a09187e4243cca03560768a37c4faa90c5b4326de2bbcb6038d46466b8009ba"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0180.png",
+      "bytes": 83179,
+      "sha256": "e7361c1afc617d614573864128ad7f0adac4da400838081a735c2058faf243d3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0210.png",
+      "bytes": 77302,
+      "sha256": "b58bfbb6571340fd6fe8fd0adf9c1dbfb3a03101e63bfc2e0f2abb68872bc5aa"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0240.png",
+      "bytes": 169644,
+      "sha256": "c1940ee2d2feecded69eaedf61e3581bab7d1ba79a9bac9301f1f502ae17da27"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0270.png",
+      "bytes": 195626,
+      "sha256": "8fd1ab7082e3ce297650e89e1ab73e42f8558b66ff172d34f0a849a974a557e4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0300.png",
+      "bytes": 195028,
+      "sha256": "0769eb4361ebe7c49068cda0a390f3ecd3a2e1de16dc7fdddcf0f0b4df3faacb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E/0314.png",
+      "bytes": 195028,
+      "sha256": "0769eb4361ebe7c49068cda0a390f3ecd3a2e1de16dc7fdddcf0f0b4df3faacb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E-manual-turn-trace.json",
+      "bytes": 67290,
+      "sha256": "d78caf6a425674f885226f95662e0646e71e4987520c771c95b04c8199800036"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/E-trace.json",
+      "bytes": 153980,
+      "sha256": "3c5a4f859d23193e23ece69a56337ae496608680577b691ed932956cee734162"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0000.png",
+      "bytes": 218872,
+      "sha256": "3a1296e8e1183c6a74a9af922b2f56118bfb8f25bf2b7f7eaa07a2fb7196a6db"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0030.png",
+      "bytes": 217639,
+      "sha256": "4e38cf3d892a7b19a54b83897e58fb46c3279b50b1bb11c72e17ca49780e5622"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0060.png",
+      "bytes": 212682,
+      "sha256": "833b5635a0ed6e3ad6e3ad417ae7dbff5cad815961d0f705633211ad140e8a25"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0090.png",
+      "bytes": 158466,
+      "sha256": "cb94ec4ef49d4c232cadc3e00ed0b17b02ef3af7d117df5e355f258646922a8f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0120.png",
+      "bytes": 185107,
+      "sha256": "0f50bffd4cbb7d5ba479dbe709af7f05986740900f2c853c8e95d5417e6e55f8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0150.png",
+      "bytes": 148475,
+      "sha256": "cbaf53c017acb52a7fd216548fa74cbbb50346c581cac31e01d6c7e5cb45756e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0180.png",
+      "bytes": 139875,
+      "sha256": "e0fb8e68c493c634f7ca8fbeab76dc4fae4053b941a0ec255b3dd93c051f6896"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0210.png",
+      "bytes": 177278,
+      "sha256": "6f1246316c3cc924ef4f07a82fe4edaea9928f58f8ee5c4ff3b9f6718e1955d2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0240.png",
+      "bytes": 154926,
+      "sha256": "76f930dd2f2d52b6417c9a4916389f640511269f1bf4660293b5c6cd613bc6c6"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H/0262.png",
+      "bytes": 155004,
+      "sha256": "a7889a17d8fc8f06be4c80fd0beaa9597379d31345372b74a255836d3f2ca9e2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H-manual-turn-trace.json",
+      "bytes": 67323,
+      "sha256": "6b9a9cde1a6072118c08c67622364b7cad480bd6dbc8ff6b059e6b5be0621477"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/operation/H-trace.json",
+      "bytes": 125705,
+      "sha256": "a1fca6745620927662482a437f60054c7e70d0c1d10676a6f881d5fc57235333"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/performance/H-native-before.json",
+      "bytes": 3454,
+      "sha256": "c26911a74a2b4d43bf0d48c22ce4877f650ab6334af83429f17ad9316fa35292"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/performance/H-spatial-after.json",
+      "bytes": 3813,
+      "sha256": "bf37494809711a0e2f5ccaf33d77e5a49756234cb605a31cc56b62e818613b10"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/performance/camera-index-comparison.json",
+      "bytes": 1633,
+      "sha256": "d2337849a91f726daecc3bdecd700b4c7d0147cb469c6a85c6e8f0ae3a410222"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/performance.json",
+      "bytes": 47167,
+      "sha256": "b583144647411cb7f33202ef4e97331ce309801a4a7b5ae0ade708fc73603889"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/physical-edit-audit.json",
+      "bytes": 5819,
+      "sha256": "1592656b968ecb617d4e27e58370a7bd0338774aec316682e287c7280da9eaac"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/recovery-20261108/critical26-before-spatial-index.json",
+      "bytes": 10107,
+      "sha256": "631602aca13b4e58370a25348791acf47535d7e899b088cc9b34e602cb167ffb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/recovery-20261108/full-final25.json",
+      "bytes": 101075,
+      "sha256": "276063779d429a967d05042c09833743c7ad066f291c9d85fb2c954da888a0d3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/recovery-20261108/npm-check-final25.log",
+      "bytes": 11162,
+      "sha256": "5186e8e9b9c79e6d75ab6cb0a4bb7eb3515b1e33437da7c7a5c6c97b87caeaa3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/recovery-20261108/npm-check-spatial-source.log",
+      "bytes": 11608,
+      "sha256": "46e692dbba983e72fb8b4485cd275632aa7c2cb2a86d2b75e4572b6f552f8f4f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/recovery-20261108/progress-final25.ndjson",
+      "bytes": 11518,
+      "sha256": "425b8fcbf9c082592c4a9179ff43ddada7ff7abd65060bcf27ce8768c807bda9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/recovery-20261108/summary.json",
+      "bytes": 1789,
+      "sha256": "ce16e84cb1402c21434036a6df1572b6d8c3cd65333ea9f4f2335a273c197d31"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/README.md",
+      "bytes": 1032,
+      "sha256": "37975f42699e370eb05304e89ce14c6c3ab8ee05e0cd076f79bf5d2c968b8dcf"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/architecture-first-diagnostic.txt",
+      "bytes": 565,
+      "sha256": "2c740c24e04d3793d77b55119ebd78018696c3b07518660e0073e7872adee708"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/browser-routes-desktop.json",
+      "bytes": 3782,
+      "sha256": "1bf5d52451498d13bf373550ccd97e06a88d5a3b52aaf89e0ecc3a9e39a41b63"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/browser-routes-mobile.json",
+      "bytes": 3781,
+      "sha256": "5ba0a3cf0638312e74788008c5b1c88bd7973cbeb571d0145da2d02534a42e9d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/companion-probe-result.json",
+      "bytes": 4982,
+      "sha256": "6c4cf55a31b04a390669a588a03d5d5a64ace4e4a0a0bde8fa54978ac6eec475"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/companion-probe-source.mjs.txt",
+      "bytes": 11576,
+      "sha256": "c37e91a0f733abac8f3f77eaace6ce43245976970127548399a3cf687d1223a5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/companion-probe.log",
+      "bytes": 1067,
+      "sha256": "90390e2936029f85cb8d64ee69b46377f075c447b48119440796df2cd40e5b81"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/companion-return-test.log",
+      "bytes": 1067,
+      "sha256": "70323b182bbfca912a544581ae685f776fc7f7fffce29244116ac1d52806b62f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/continuous-camera-desktop.json",
+      "bytes": 1100367,
+      "sha256": "8c8fa56c2436494322cfe0711ad497304416f4cf6cc7fdc410c58a956cc1ba95"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/continuous-camera-mobile.json",
+      "bytes": 1102967,
+      "sha256": "e91738621376e79985526669fff1ce84c61928e30e5cdf9d23c610dabd409ed0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/desktop-controller.json",
+      "bytes": 16962,
+      "sha256": "12547db967a5f18ca32a7663fb014cdf8cd56fc97a6c7709ba8125732e083267"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/final26/continuous-camera-desktop.json",
+      "bytes": 1100367,
+      "sha256": "8c8fa56c2436494322cfe0711ad497304416f4cf6cc7fdc410c58a956cc1ba95"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/final26/continuous-camera-mobile.json",
+      "bytes": 1102967,
+      "sha256": "9712d57a24332e893c4553e524863976784b483b5feb971f17f789cc478439b1"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/final26/spaces-desktop.json",
+      "bytes": 10895,
+      "sha256": "1fa69d21cacf2131f5da38a5a41da7521c302be07aa181593aa08981fe5e4949"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/final26/spaces-progress-desktop.ndjson",
+      "bytes": 3125,
+      "sha256": "82d9e9707b403028a7b3eb71d45f7b389ab155bee21a5d877010293a8e109a3a"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/final26/spaces-progress-mobile.ndjson",
+      "bytes": 2859,
+      "sha256": "fa52de1afc686c6eb23149adacb64187b3cd6f8d985094dd669966f11ef1c808"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/first-concurrent-progress.ndjson",
+      "bytes": 430,
+      "sha256": "f419d1a311c27331d67ba014fb5c14ceccc9ae36221641b393e8c7a1d9cea64e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/first-concurrent-run.json",
+      "bytes": 55469,
+      "sha256": "7bb62dc122350f0f9b50b90fd90c3ec6adbdefde8a1de025aab246cbd040f707"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/held-wall-before-fix.json",
+      "bytes": 6709,
+      "sha256": "fd13b69ea5765cea9288e20efe8aa2f9a15c787a67766a810351d3170f1d0a93"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/legacy-generated-outputs/docs/previews/bdeh-r21/regression/node-public-circuits.json",
+      "bytes": 6528,
+      "sha256": "b0a08c071d4f0e4c09e91beeeb9978b1bd959f3229ce47e5b50fae03956f0c1f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/legacy-generated-outputs/docs/previews/industry-youth-island-c-v1/interactions-desktop.json",
+      "bytes": 2795,
+      "sha256": "fcbcb2e14c3da268cfc5d90de2141c47210af8719f3c31d661c45307a6fdbb66"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/legacy-generated-outputs/docs/previews/industry-youth-island-c-v1/interactions-mobile.json",
+      "bytes": 2793,
+      "sha256": "beeacac69998836f297fe53ecd8630441c432ca4ac8cf478445d5d9228186e36"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/legacy-generated-outputs/docs/previews/yuan-bridges-landscape-v1/zone-check-desktop.json",
+      "bytes": 2881,
+      "sha256": "ff672b8d370300cdc66ca6f01904caceeb259a9b35cbbdb67ded056d77dcecd5"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/legacy-generated-outputs/docs/previews/yuan-bridges-landscape-v1/zone-check-mobile.json",
+      "bytes": 2881,
+      "sha256": "1632c350357f1cc7bb369d644db69837a2662a84abd9f137e145eb055d4447eb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/performance-baseline-server-unavailable.log",
+      "bytes": 355,
+      "sha256": "35fd010027e2903fda8d5f9ab688b542819d5eb836f183d4c9249a6f55f25f6b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/playwright-final26-critical.json",
+      "bytes": 10107,
+      "sha256": "631602aca13b4e58370a25348791acf47535d7e899b088cc9b34e602cb167ffb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/playwright-implementation-final25.json",
+      "bytes": 101075,
+      "sha256": "276063779d429a967d05042c09833743c7ad066f291c9d85fb2c954da888a0d3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/playwright-panorama-recheck.json",
+      "bytes": 4658,
+      "sha256": "5ceedd0abec0dcc36e31eca494c0aaa2d1d30bfb710cadb5e9ebeedd881446c3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/history/playwright-serial.json",
+      "bytes": 105721,
+      "sha256": "903ba73dc1239bf35d2ba8ffa1800f40be07e53aa77180c83fc113be45d365ad"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/in-progress-checkpoint.ndjson",
+      "bytes": 5828,
+      "sha256": "4792ce99421b9d9ea3eef39b5d3449d65fc22ad3cfa2ddae21dc89db9d0e956c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/interactions-desktop.json",
+      "bytes": 2777,
+      "sha256": "83d76368afb789d87a4ed36bd65e23c52138628430667b60bfe31716e31b9175"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/interactions-mobile.json",
+      "bytes": 2795,
+      "sha256": "a3477461867bc91a3ea4903a7d69bf390fe872534a570499c84fe5661e8dc306"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/manual-temporal-portrait.json",
+      "bytes": 267925,
+      "sha256": "c5476d596cdb82cc15ca52dc34746be051f0b39c028692054877558a92dde5e9"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/mobile-controller.json",
+      "bytes": 16993,
+      "sha256": "cae1879b42005df1d6add421f5e03db94e5d32958ceb3b37967102dd6c52c5e4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/node-public-circuits.json",
+      "bytes": 6528,
+      "sha256": "b0a08c071d4f0e4c09e91beeeb9978b1bd959f3229ce47e5b50fae03956f0c1f"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/npm-check.json",
+      "bytes": 265,
+      "sha256": "f410ac9cd6e82a64e4cca26a190419c8dbac49ec3b3efd90c57caeb77393f7cf"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/npm-check.log",
+      "bytes": 11608,
+      "sha256": "b610a3b63f51f8c8dbefdfd326466b00d636a286e33d547e02f39337b5df4235"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/panorama-events-desktop.json",
+      "bytes": 1857,
+      "sha256": "67fdc2b3e8bd7d522079a6cda54462d337846b92c7bf2adb6eede48a353c7e78"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/panorama-events-mobile.json",
+      "bytes": 1890,
+      "sha256": "028599165369dfbec6d4f214f45abbe348e76d1041eb89687b93db5ab369637c"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/playwright-final.json",
+      "bytes": 18049,
+      "sha256": "6138f3917b8752bd3edabc24cdb989cd659f79d1d28ce5429c34782f3bb536cb"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/playwright-full-serial.json",
+      "bytes": 105721,
+      "sha256": "903ba73dc1239bf35d2ba8ffa1800f40be07e53aa77180c83fc113be45d365ad"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/playwright-implementation-final.json",
+      "bytes": 94771,
+      "sha256": "5a4548632785e24dc43fa04f65fa6ec359d6562eb6ef1174b03bd09444e32bae"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/playwright-panorama-recheck.json",
+      "bytes": 4658,
+      "sha256": "5ceedd0abec0dcc36e31eca494c0aaa2d1d30bfb710cadb5e9ebeedd881446c3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/r21-desktop.json",
+      "bytes": 13667,
+      "sha256": "202ad0a33dd73626c64145910e5a410ea77babd0ff6395e9bc9aa29d50aa53a3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/r21-mobile.json",
+      "bytes": 13622,
+      "sha256": "9c0994dc5790c6cbb916e2cc200cf4e9c2380d1b0459f49367313716dacb2543"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spaces-desktop.json",
+      "bytes": 11460,
+      "sha256": "7a885bc1f51718a5a1b702a7fd186e2ac938df827010a31f1a7c07ba942288dd"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spaces-mobile.json",
+      "bytes": 11460,
+      "sha256": "f18fe1ae0f528f144aa55b1eddff7123f08b4e24b03a65a1fba382c27260ee1b"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spaces-progress-desktop.ndjson",
+      "bytes": 3177,
+      "sha256": "2aa4c4581c5ca7722f093f2149e9dce0c821ecbd343c77e651e4df152e7fda02"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spaces-progress-mobile.ndjson",
+      "bytes": 3153,
+      "sha256": "9cb3bbc5ed1dcf32817794080248819c44fa87432fab59ab2f837a3e936c88c6"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spatial-critical/continuous-camera-desktop.json",
+      "bytes": 1100367,
+      "sha256": "8c8fa56c2436494322cfe0711ad497304416f4cf6cc7fdc410c58a956cc1ba95"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spatial-critical/continuous-camera-mobile.json",
+      "bytes": 1102967,
+      "sha256": "e91738621376e79985526669fff1ce84c61928e30e5cdf9d23c610dabd409ed0"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spatial-critical/spaces-desktop.json",
+      "bytes": 11460,
+      "sha256": "bbfc24dff481f2a89522f1b432dd73d8d5c4e6fc934eca58db06999e87de1888"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spatial-critical/spaces-mobile.json",
+      "bytes": 11460,
+      "sha256": "9dd838b41a4468767ddb129ebd414fa966d7c0efef0b3947f1941949a4be520e"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spatial-critical/spaces-progress-desktop.ndjson",
+      "bytes": 3149,
+      "sha256": "0d27ea75ab8ec1571e1131dc25205916037513201ac9ef51640563c90cc362ff"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/spatial-critical/spaces-progress-mobile.ndjson",
+      "bytes": 3151,
+      "sha256": "9447c94a587c999ee6b71eb038a427125f290accdbcc5da939d60a8cfe280ced"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/water-interactions-desktop.json",
+      "bytes": 6812,
+      "sha256": "741921cd3066a20f9611cfa1f4c45af43ef8f06620ed4c63ae0581bd91bc58b4"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/water-interactions-mobile.json",
+      "bytes": 6814,
+      "sha256": "e2ff9647976c9abe3a6a67e9804c605f6819a844c27a6c34fd67838c653c23fa"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/wet-recovery-desktop.json",
+      "bytes": 3294,
+      "sha256": "f352b8b9da5618390338ec5b0d7b45ba4231845fe912019601098189051bf7e3"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/wet-recovery-mobile.json",
+      "bytes": 3295,
+      "sha256": "6e9d465288f51ce177f74b9dc60be8c2cd2ff8337db333acce7d82a2b7882e8d"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/zone-check-desktop.json",
+      "bytes": 2881,
+      "sha256": "fac011101d377f780df872abd4c6decb4b12e9190313fc9a1232fb1fd6d1aec8"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/regression/zone-check-mobile.json",
+      "bytes": 2881,
+      "sha256": "c5dc2b932928a6edde2166b07b37774f127894245f71c9b022c29d4e9faa6eb2"
+    },
+    {
+      "path": "docs/previews/bdeh-r21/final-qa/source-consistency.json",
+      "bytes": 56444,
+      "sha256": "974f5a0f2723f757e61362ca0353aa7034e319ec5d0260dd92532be4eed420c8"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 75829,
+      "sha256": "31b673b8d064007438e8a0af06a53c66a15d8d0da59c53ed144d68753ad6ab06"
+    },
+    {
+      "path": "package.json",
+      "bytes": 922,
+      "sha256": "385faa68d6888fb65008a5dbd81458845cfc8eee9c3de319a17439551c0a415f"
+    },
+    {
+      "path": "public/data/policies.json",
+      "bytes": 957,
+      "sha256": "83e6373ff9808bf8c65148b37e835a03fb32ac5041005229c15058de3e3c56ce"
+    },
+    {
+      "path": "public/models/bdeh-r21/B.glb",
+      "bytes": 2752080,
+      "sha256": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3"
+    },
+    {
+      "path": "public/models/bdeh-r21/D.glb",
+      "bytes": 2021352,
+      "sha256": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595"
+    },
+    {
+      "path": "public/models/bdeh-r21/E.glb",
+      "bytes": 2439356,
+      "sha256": "c3cd1f41fa17479a724eebacaf2067b59c9ee6ed14b27d8d2e0bd23ddb78736f"
+    },
+    {
+      "path": "public/models/bdeh-r21/H.glb",
+      "bytes": 2221400,
+      "sha256": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9"
+    },
+    {
+      "path": "public/models/flood-control-g/flood-control-g.glb",
+      "bytes": 4626100,
+      "sha256": "0346a6aff20bf016d7fc71fd808f8bae483055906557f487667585ddea4b6075"
+    },
+    {
+      "path": "public/models/industry-youth-c/industry-youth-c.glb",
+      "bytes": 2225844,
+      "sha256": "008c72da95ebf7fa299df3cb46f7a7f6ca523c0889b8c454895cbeea76db0f43"
+    },
+    {
+      "path": "public/models/parent-child-centre/parent-child-centre.glb",
+      "bytes": 20239060,
+      "sha256": "67898a2cb2b6229384662c8ab9be90865043171c6ab92df60b40877eb6554a44"
+    },
+    {
+      "path": "public/prototypes/transport-elevated-station-v9/transport-station-v9-game-candidate.glb",
+      "bytes": 17633080,
+      "sha256": "d9292bf4e7b6c667e75f5e3d668ff5fb52eca2677a7c2cb080a95193b31878ac"
+    },
+    {
+      "path": "scripts/bdeh/final-qa-requirements.txt",
+      "bytes": 141,
+      "sha256": "ff3c384a21247eb0f4337afa0d437349cbb9321b9c87dd5c1966ea3c2b2da069"
+    },
+    {
+      "path": "scripts/bdeh/final_collision.py",
+      "bytes": 5436,
+      "sha256": "f7b9166d374d45087a792155ab313935bbddd1d0448bef72795d4fb038550a3b"
+    },
+    {
+      "path": "scripts/blender/audit_bdeh_final.py",
+      "bytes": 2202,
+      "sha256": "8258aeb7931fec7bbfc98f9a62ecfd75956bd2410ceebea1d6815501dcabb0a7"
+    },
+    {
+      "path": "scripts/blender/export_bdeh_camera_canopies.py",
+      "bytes": 2783,
+      "sha256": "4591d9e5fc628d57d289382c9eeb1bbb9f1ff3e38736a1a4ce897c6087af1d3f"
+    },
+    {
+      "path": "scripts/blender/flood_export.py",
+      "bytes": 4073,
+      "sha256": "d482ae72e0e6ccafdd280b405043a8ab0e898e61e65c853b497d45b993984b18"
+    },
+    {
+      "path": "scripts/blender/polish_bdeh_final.py",
+      "bytes": 14867,
+      "sha256": "46e28d36c8819032366ea1b54eeddf734474268ff177af08d240641cc2012065"
+    },
+    {
+      "path": "scripts/blender/render_bdeh_final_details.py",
+      "bytes": 2206,
+      "sha256": "9ec5a93c5c65cfd248eb44ba0e6e92517bc2573b4a74d8fd394905a10f8e9b62"
+    },
+    {
+      "path": "scripts/blender/render_bdeh_r21.py",
+      "bytes": 1870,
+      "sha256": "d00803270cc7debb45ea1547d461867132d67d7e5ed05eeabda389764beb8976"
+    },
+    {
+      "path": "scripts/qa/audit-r21-camera-domain.py",
+      "bytes": 1239,
+      "sha256": "bd5e5b3936acd13491835df34e6ccaaf8a6629fcce48f1bbe3b7521a44d43317"
+    },
+    {
+      "path": "scripts/qa/audit-r21-final-evidence.py",
+      "bytes": 3899,
+      "sha256": "48ce8779f467932b9bdd366a50c4a71777fe78f38b63305252e845e9bce643b5"
+    },
+    {
+      "path": "scripts/qa/audit-r21-glb.py",
+      "bytes": 3380,
+      "sha256": "a1ac1ea71952602aab290d27310202adcc625909250d09d350137d7a5a6e0245"
+    },
+    {
+      "path": "scripts/qa/boards-r21-final.py",
+      "bytes": 1920,
+      "sha256": "5036cdbd421f32468782b2595e483da60a66671209dd99ba45add1c68f53334d"
+    },
+    {
+      "path": "scripts/qa/capture-r21-final.mjs",
+      "bytes": 7872,
+      "sha256": "1804be967fea3ada3d91b5864189a6fe5d14da8d0f2e6205aca614616e79813e"
+    },
+    {
+      "path": "scripts/qa/check-r21-manual.mjs",
+      "bytes": 5331,
+      "sha256": "538cf60dcd1d7ca40b27c1d94ad379a6df1ae3c0fce377bda11c3563a33a59fd"
+    },
+    {
+      "path": "scripts/qa/compare-r21-camera-cpu.py",
+      "bytes": 2569,
+      "sha256": "0a36108573a874d257fb36d41d907e17c2f669823d160b43ee7d3343810f7da5"
+    },
+    {
+      "path": "scripts/qa/debug-r21-continuity.mjs",
+      "bytes": 3121,
+      "sha256": "51739bcb4cc19796828a5cb88f31b7b528fbb77bd4f07c2382c4237c27bac7a6"
+    },
+    {
+      "path": "scripts/qa/final-r21-pipeline.py",
+      "bytes": 3348,
+      "sha256": "13b1536f9ccec1b08be468865b4a275afd1917fd13f226d395f795999deea0f7"
+    },
+    {
+      "path": "scripts/qa/manifest-r21-final.py",
+      "bytes": 3851,
+      "sha256": "2453b8578df8913bccbbfd62592743efba5e192a12d65b5fcc71a42199955e5d"
+    },
+    {
+      "path": "scripts/qa/measure-r21-final.mjs",
+      "bytes": 6942,
+      "sha256": "e368ce95b144d65d1620aeb50806ebc14eefcd217cd8864ccb7941fc5f401e63"
+    },
+    {
+      "path": "scripts/qa/merge-r21-browser-evidence.py",
+      "bytes": 2706,
+      "sha256": "f728dcd554c19c6ebfcd4eb630ed71f518d827ded5cf410d25b6134c32215a25"
+    },
+    {
+      "path": "scripts/qa/native-r21-benchmark.config.mjs",
+      "bytes": 401,
+      "sha256": "93a6ce835ed10b68b0ea6f21dfd29a095d1a83b1e5ca3366c6c139d1037965a6"
+    },
+    {
+      "path": "scripts/qa/native-r21-query.mjs",
+      "bytes": 180,
+      "sha256": "12a35fffa32c4b108ec3c07b82f88d9005a0bd567cd302f05afd02329a5bcb21"
+    },
+    {
+      "path": "scripts/qa/profile-r21-spaces.mjs",
+      "bytes": 3193,
+      "sha256": "e88a776d7f18a95cb654784df3e53d3a3b560e44a91317c46bd030fe5af4e712"
+    },
+    {
+      "path": "scripts/qa/progress-reporter.cjs",
+      "bytes": 434,
+      "sha256": "483da0ba12d44ed18d529c0d02ae963979f378c5c8ad1dbcaf876dd53b574fbf"
+    },
+    {
+      "path": "scripts/qa/replay-r21-final.mjs",
+      "bytes": 8636,
+      "sha256": "2a202e6536dee3fb68827470e3c554df4607a8e28dcb5eefe132789e720c3f5d"
+    },
+    {
+      "path": "scripts/qa/report-r21-final.py",
+      "bytes": 18491,
+      "sha256": "7e64700b809f0e45e251db8cd4a6b8908b39b9b6562e620d3a1f5334f5abd049"
+    },
+    {
+      "path": "scripts/qa/verify-r21-final.py",
+      "bytes": 1636,
+      "sha256": "4af57935dfd518fab410cadebdc4f78010b4ee87f02acdacfdbcae124a241f16"
+    },
+    {
+      "path": "src/data/bdeh-b-collision.json",
+      "bytes": 3393072,
+      "sha256": "b070c2dde31ba7978a05a3afb9bc06d36e78e8afc873d7f1dd592516d0e1e54c"
+    },
+    {
+      "path": "src/data/bdeh-camera-canopies.json",
+      "bytes": 331323,
+      "sha256": "e1b7db7f05162b0d029053df62cea98769de21f7d0b8f035ead20e7f10e209a3"
+    },
+    {
+      "path": "src/data/bdeh-camera.json",
+      "bytes": 713,
+      "sha256": "6dc34a34d9d48c1b7bc114ec647afa6cdec6812126ab1fb9c7d58ebbd1fcb799"
+    },
+    {
+      "path": "src/data/bdeh-e-collision.json",
+      "bytes": 2936375,
+      "sha256": "4e2613741713dc5e900117b42e79c59f92ce941b6f27ce04d1a9fe8f55627ae5"
+    },
+    {
+      "path": "src/data/bdeh-final-qa.json",
+      "bytes": 1355,
+      "sha256": "5272896c2e90502700dd6c2d21af5a8756635996498f9f4c82a6891d49706df1"
+    },
+    {
+      "path": "src/data/bdeh-h-collision.json",
+      "bytes": 2952476,
+      "sha256": "ff76b529063205c8d7e063cd6c303c7923a2bfd5eefcac8a1e25766c0ca6b92b"
+    },
+    {
+      "path": "src/data/bridge-landscape.json",
+      "bytes": 213911,
+      "sha256": "f1fa1391238740ccf23374b247af2e53f205735d124b6319218716ecc83df77e"
+    },
+    {
+      "path": "src/data/flood-control-art.json",
+      "bytes": 3024,
+      "sha256": "336e21c537d42e1d7b8e68abaf30a2632f929aec675d3dc8c2c34465c41bddde"
+    },
+    {
+      "path": "src/data/flood-control-bridge-soffit.json",
+      "bytes": 6820,
+      "sha256": "e389f617b2227d0ddc7cb6ba55945c006444145bead2672d2c8d4ab35aaf2d18"
+    },
+    {
+      "path": "src/data/flood-control-collision.json",
+      "bytes": 620925,
+      "sha256": "6f5d9227c42127c4269a58352e038035c9644db91fb6897909f84017a9caaf75"
+    },
+    {
+      "path": "src/data/flood-control-floor.json",
+      "bytes": 16679,
+      "sha256": "139120e0b0dc6ec336a33c7aa410bd692f1998a97516c839da1d79e98f6a4a68"
+    },
+    {
+      "path": "src/data/flood-control-paving.json",
+      "bytes": 22364,
+      "sha256": "106a28e2ffd6398b2b8fc1c8d74ddbded04a9b19566e927de3abfcc231f34a7c"
+    },
+    {
+      "path": "src/data/flood-control-plan.json",
+      "bytes": 12932,
+      "sha256": "af54e7ff6349ba7dd8dcadfe1c2a0546efb8d1aec7f0d41b535b67d7517a7b27"
+    },
+    {
+      "path": "src/data/flood-control-site.json",
+      "bytes": 29711,
+      "sha256": "7a948201e33b5414aa6d9634540c7e93fd04310bf31662c71977a2de351ebd2c"
+    },
+    {
+      "path": "src/data/industry-youth-collision.json",
+      "bytes": 1282361,
+      "sha256": "a4dd2151edc1222509e875f62b113e96f58790d7985da2ecefae4d5d30ac597c"
+    },
+    {
+      "path": "src/data/industry-youth-plan.json",
+      "bytes": 4275,
+      "sha256": "99743161c8808b2a6a4dc74e18912c11c17e177197b6ba84899529de50d07b92"
+    },
+    {
+      "path": "src/data/industry-youth-v3-buildings.json",
+      "bytes": 1253,
+      "sha256": "d35f09a1f55f53dfcc144640e6a792042f231d352ab7c8e2350b427f40dd4312"
+    },
+    {
+      "path": "src/data/parent-child-collision.json",
+      "bytes": 1034450,
+      "sha256": "3ecda08b9e10dc58e412aa6c7b90cde055c71b7d87f62080e3dc172bdb392156"
+    },
+    {
+      "path": "src/data/parent-child-model.json",
+      "bytes": 3335,
+      "sha256": "73932f1fcd8a0ac74012a022e1cd1288842d003160675be6d8e7a6aa0768b600"
+    },
+    {
+      "path": "src/data/station-model.json",
+      "bytes": 946,
+      "sha256": "09819aef6cc55fc8850a4890c0709603e726b59c0f41fa632d23ffa69b514a1c"
+    },
+    {
+      "path": "src/data/transport.json",
+      "bytes": 1638,
+      "sha256": "858d6f58940fee8f4ff5dfa92524936d73825f93a51a5000ec0e6d64b58927eb"
+    },
+    {
+      "path": "src/data/yuan-layout.json",
+      "bytes": 80308,
+      "sha256": "9b784a0978f1eb2945519b8a6c5ad20887c2631b55382143b5947af291c8053a"
+    },
+    {
+      "path": "src/data/yuan-plan.json",
+      "bytes": 86654,
+      "sha256": "869dccb512523d0c5092e6870eaaeaa68b83006579717674c52dcc3d2c969775"
+    },
+    {
+      "path": "src/data/yuan-surface.json",
+      "bytes": 452969,
+      "sha256": "c6d3ca9686195c6fced2ccd9fd3630b105732e1916d81d193db57408a8cafa02"
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 13225,
+      "sha256": "9261f1a69550f1ac6ce08e473bc6682d612680fa3a33664c19274c8d09008c69"
+    },
+    {
+      "path": "src/sim/audio.js",
+      "bytes": 8570,
+      "sha256": "d2a2f74f1d5f634d566c3dfab89ee0fbab6fab39ccbfedc66b9dee43e109bf84"
+    },
+    {
+      "path": "src/sim/camera-clearance.js",
+      "bytes": 1795,
+      "sha256": "9e75cefd34bbdd53c99f0b01e095a4b5144cbc58f5efafead6b3e69bc4f3d523"
+    },
+    {
+      "path": "src/sim/camera-profile.js",
+      "bytes": 403,
+      "sha256": "d61d3978fad50b6b4438b5c5ef494a4f0a6a14a0b0864b303f7e9964ce508e79"
+    },
+    {
+      "path": "src/sim/movement.js",
+      "bytes": 2471,
+      "sha256": "1aa6f30fffc45466484ceeee974af3e8372740dbf1a8f22433d8075862d2882a"
+    },
+    {
+      "path": "src/sim/panorama.js",
+      "bytes": 2575,
+      "sha256": "a14c372c992091484c0ffd47cfd1efd5b274756f3ee7879f5601a419db5db312"
+    },
+    {
+      "path": "src/sim/player.js",
+      "bytes": 8816,
+      "sha256": "026fe21a032de3aee88e31521a29e10a73f10a27a67698da9529be5b1ff7d1eb"
+    },
+    {
+      "path": "src/sim/puzzle.js",
+      "bytes": 2159,
+      "sha256": "6f225b6104c557963346bf3fde12f6bc99557cc8081fb790eb9f807080452f7c"
+    },
+    {
+      "path": "src/sim/r21-camera.js",
+      "bytes": 14710,
+      "sha256": "84ce03c2530cf5182273f6d076103b312700f03b2e313eb6276340facf02c4b7"
+    },
+    {
+      "path": "src/sim/r21-triangle-index.js",
+      "bytes": 5567,
+      "sha256": "9a2643cb7077ef7de940f0a832faff80950ad3f2910ffd86b98de5e8394a1693"
+    },
+    {
+      "path": "src/sim/rng.js",
+      "bytes": 871,
+      "sha256": "69d254e1d153a9cb2b5af90bc72fd353f62dc5a1423a51bafd58f8cd725cee71"
+    },
+    {
+      "path": "src/sim/walkways.js",
+      "bytes": 3098,
+      "sha256": "3d60a2760048b3df7530a495bc1996780d9462449570dd02f90228b8590cd1fe"
+    },
+    {
+      "path": "src/world/bdeh-r21.js",
+      "bytes": 5287,
+      "sha256": "16e24eb588fd506342fba6da2f7d275d28e2a30741257beb284dcc9f898c40fd"
+    },
+    {
+      "path": "src/world/elevated-station.js",
+      "bytes": 7674,
+      "sha256": "cda24e5a2e2502e6fb1b36eaf4fdafd0bf80b11b11c30402d668d60b6b3ee086"
+    },
+    {
+      "path": "src/world/flood-control.js",
+      "bytes": 8081,
+      "sha256": "e676774c9ddf09e9a26792e6e12b990b7ee57e050771664661498ba8c06527cf"
+    },
+    {
+      "path": "src/world/industry-youth.js",
+      "bytes": 4973,
+      "sha256": "b0ba8d95c2da7be13c6d09081e52e9830dd79add6ef6897ab45e7b90132475b8"
+    },
+    {
+      "path": "src/world/parent-child-model.js",
+      "bytes": 8348,
+      "sha256": "61c7b7eb9bb437b025f4584d24ddc93fabc36f739af56ebe50564f8727991d57"
+    },
+    {
+      "path": "src/world/station-model.js",
+      "bytes": 6388,
+      "sha256": "83354b54c04aa91cde840c54bcdb3f48c6d3de9412e397b051609a994e16c207"
+    },
+    {
+      "path": "test/bdeh-r21.e2e.js",
+      "bytes": 5508,
+      "sha256": "96fb9dbb409ae97bc31de8e592fd8e1db8b624f77f271eadc615f7802ac032f2"
+    },
+    {
+      "path": "test/bdeh-r21.test.js",
+      "bytes": 11663,
+      "sha256": "97eec66fda0b997728e959b42a7cfae5bff096f3955510954b86eedb8e1cc3c4"
+    },
+    {
+      "path": "test/bridge-landscape.e2e.js",
+      "bytes": 4258,
+      "sha256": "8d7ee2187529e3abf979d561ca5c3575ebf1937670ead9b87f667a49d9c7d09f"
+    },
+    {
+      "path": "test/flood-control.e2e.js",
+      "bytes": 3322,
+      "sha256": "ef0c918d69dfdd8f9936aebb1fea8b7dd84e0120cdaae8c5a6d68258cb49e242"
+    },
+    {
+      "path": "test/helpers/r21-arrival-audit.js",
+      "bytes": 7785,
+      "sha256": "56df08df3097cf842fd95580f280ec9a62270b758a8969640d51767af4739d1b"
+    },
+    {
+      "path": "test/helpers/software-qa.js",
+      "bytes": 852,
+      "sha256": "ade00495203783fb92c3b393083d81d1a72f499f398dd931025bbb5d81db6ec9"
+    },
+    {
+      "path": "test/helpers/world-spaces-audit.js",
+      "bytes": 4832,
+      "sha256": "35cb0bc8805142468b339d6f4833434c77971feeb3d7d9332be18e0c3b419e0a"
+    },
+    {
+      "path": "test/panorama.e2e.js",
+      "bytes": 6000,
+      "sha256": "7e128b6b2d74db63f0400c50256827923f9d4da0f31976ada8275d7d97f592b3"
+    },
+    {
+      "path": "test/r21-final-camera.test.js",
+      "bytes": 5642,
+      "sha256": "fe490b69a610cc6aa1dfe0fdac0b3ea57a0f941c4a547292e339791f350787ff"
+    },
+    {
+      "path": "test/r21-final-qa.e2e.js",
+      "bytes": 904,
+      "sha256": "dec784917bcc322f494436e7757571d56423a9d446b386dd9c4c5d14b977e174"
+    },
+    {
+      "path": "test/r21-triangle-index.test.js",
+      "bytes": 3000,
+      "sha256": "c6fa3bc47c8c95efb27786672ede16edf11bd4fb777b7601b2106b13baf4768b"
+    },
+    {
+      "path": "test/walkways.e2e.js",
+      "bytes": 8101,
+      "sha256": "a71131d4e483c4f8893222315c90c288838b8027c95617c08c4b7c8d300142ef"
+    },
+    {
+      "path": "test/world-spaces.e2e.js",
+      "bytes": 1266,
+      "sha256": "6f275ea098a40490c9d0d8c2c6442d59f88a1403616e2dbe6c1a1e0ee45bfdaa"
+    }
+  ]
+}
