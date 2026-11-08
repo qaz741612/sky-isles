@@ -9,8 +9,8 @@ import {worldCameraConstraint} from './camera-clearance.js';
 import {moveWithGuards,nearestOnSegment} from './walkways.js';
 const angle=a=>Math.atan2(Math.sin(a),Math.cos(a));
 export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environment=null){
- let dt=1/60,active=null,idle=0,manual=false,expected=null,previous=null,previousHead=null,detouring=false,movingIntent=false;
- const metrics={arrivals:0,idleTurns:0,manualOverrides:0,localFrames:0,maximumIdleYawStep:0};
+ let dt=1/60,active=null,idle=0,manual=false,expected=null,previous=null,previousHead=null,detouring=false,movingIntent=false,goalMemo=null;
+ const metrics={arrivals:0,idleTurns:0,manualOverrides:0,localFrames:0,maximumIdleYawStep:0,endpointCacheHits:0,endpointSearches:0};
  const entries=Object.entries(places).map(([code,p])=>({code,p,centre:p.config.centre,radius:Math.max(...p.config.maxDimensions)/2+2.0}));
  const opaqueMeshes=environment===null?null:[...environment,...Object.values(places).flatMap(p=>p.opaqueCameraObstacles??p.cameraObstacles??[])];
  const opaqueConstrain=opaqueMeshes?worldCameraConstraint(opaqueMeshes):constrain;
@@ -33,14 +33,15 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
  };
  let effectiveOrbit;
  const safe=new Map(entries.map(e=>[e.code,floodCameraConstraint(forecastConstrain,{pos:new THREE.Vector3(...e.centre)},()=>effectiveOrbit)]));
- const reset=()=>{active=null;idle=0;manual=false;expected=null;previous=null;previousHead=null;detouring=false;};
+ const reset=()=>{active=null;idle=0;manual=false;expected=null;previous=null;previousHead=null;detouring=false;goalMemo=null;};
  const apply=(target,position)=>{
   const entry=entries.find(e=>Math.hypot(target.x-e.centre[0],target.z-e.centre[2])<e.radius);
   if(!entry){reset();return constrain(target,position);}
   foliageCache.clear();plannedCache.clear();
-  const o=getOrbit(),player=getPlayer?.(),preset=views[entry.code];
+  const o=getOrbit(),player=getPlayer?.(),preset=views[entry.code],portrait=o.fov===58;
+  const fallbackYaw=portrait?preset.fallbackYaw:(preset.desktopFallbackYaw??preset.fallbackYaw);
   const newVisit=active!==entry.code;
-  if(newVisit){active=entry.code;idle=0;manual=false;expected={...o};previous=position.clone();previousHead=target.clone();detouring=false;metrics.arrivals++;}
+  if(newVisit){active=entry.code;idle=0;manual=false;expected={...o};previous=position.clone();previousHead=target.clone();detouring=false;goalMemo=null;metrics.arrivals++;}
   if(expected&&(Math.abs(angle(o.yaw-expected.yaw))>.001||Math.abs(o.pitch-expected.pitch)>.001||Math.abs(o.dist-expected.dist)>.01)){
    if(!manual)metrics.manualOverrides++;
    manual=true;
@@ -54,14 +55,14 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
   if(!manual&&idle>views.idleDelay&&player){
    const anchor=preset.arrivalFocus??[preset.focus[0],preset.focus[2]];
    const dx=target.x-entry.centre[0]-anchor[0],dz=target.z-entry.centre[2]-anchor[1];
-   const desired=Math.hypot(dx,dz)>3?Math.atan2(dx,dz):preset.fallbackYaw;
+   const desired=Math.hypot(dx,dz)>3?Math.atan2(dx,dz):fallbackYaw;
    const step=THREE.MathUtils.clamp(angle(desired-o.yaw),-views.maximumIdleYawRate*dt,views.maximumIdleYawRate*dt);
    o.yaw+=step;metrics.idleTurns++;metrics.maximumIdleYawStep=Math.max(metrics.maximumIdleYawStep,Math.abs(step));
   }
   expected={...o};
   const distance=Math.hypot(target.x-entry.centre[0],target.z-entry.centre[2]);
   const blend=THREE.MathUtils.smoothstep(entry.radius-distance,0,3);
-  const portrait=o.fov===58,basePitch=portrait?.67:.60;
+  const basePitch=portrait?.67:.60;
   // Shorten the travelling boom before a nearby facade corner, not after
   // crossing its shadow. Only real tall walls/columns of this island count;
   // original zoom remains stored and is restored on the open public ground.
@@ -103,7 +104,14 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
   if(manual||moving){
    // User orbit takes priority over the automatic distant composition. Seek
    // a clear lower/closer lens at the requested azimuth before choosing a side.
-   let best=null,score=-Infinity;
+   // Camera shells are a static indexed snapshot. Reuse only the pure
+   // endpoint search when every input is exactly identical; never reuse the
+   // interpolated pose or skip this frame's actual visibility clamp. Holding
+   // a joystick against a rail must not search six elevations65 times.
+   const key=[entry.code,head.x,head.y,head.z,o.yaw,pitch,range,...forecastPath.flatMap(v=>[v.x,v.z]),...(entry.p.group?.matrixWorld.elements??[])].join(',');
+   if(goalMemo?.key===key){desired.copy(goalMemo.point);metrics.endpointCacheHits++;}
+   else{
+   metrics.endpointSearches++;let best=null,score=-Infinity;
    for(const elevation of new Set([pitch,Math.min(pitch,.25),Math.min(pitch,.12),.02,Math.max(pitch,.75),Math.max(pitch,1.15)])){
     if(range-5*Math.abs(elevation-pitch)<=score)continue;
     const candidate=head.clone().add(new THREE.Vector3(Math.sin(o.yaw)*Math.cos(elevation)*range,Math.sin(elevation)*range,Math.cos(o.yaw)*Math.cos(elevation)*range));
@@ -111,7 +119,8 @@ export function r21DiscoveryCamera(constrain,places,getOrbit,getPlayer,environme
     const distance=candidate.distanceTo(head),value=distance-5*Math.abs(elevation-pitch);
     if(distance>=1.8&&planned(candidate)&&value>score){best=candidate;score=value;if(distance>=range-.01&&Math.abs(elevation-pitch)<.001)break;}
    }
-   if(best)desired.copy(best);else safe.get(entry.code)(head,desired);
+   if(best){desired.copy(best);goalMemo={key,point:best.clone()};}else{goalMemo=null;safe.get(entry.code)(head,desired);}
+   }
   }else safe.get(entry.code)(head,desired);
   // The older body-visibility clamp can settle at nine units under an eave.
   // Prefer a nearby unobstructed ordinary orbit over a sudden apparent zoom.

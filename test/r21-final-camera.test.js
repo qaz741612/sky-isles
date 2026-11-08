@@ -49,3 +49,11 @@ test('local arrival converges to the same view at20,60 and120 simulation Hz',()=
  }
  for(const r of results){assert.ok(Math.abs(r.yaw-Math.PI)<.001);assert.ok(r.camera.distanceTo(results[1].camera)<.1);}
 });
+
+test('stationary held-input camera still follows a later manual zoom and orbit',()=>{
+ const{orbit,rig,tick,camera}=make('E'),c=places.E.config.centre,head=new T.Vector3(c[0],1.645,c[2]);rig.setInput({x:1,z:0});
+ for(let i=0;i<180;i++)tick();assert.ok(Math.abs(camera.distanceTo(head)-22)<.05);
+ orbit.dist=12;for(let i=0;i<180;i++)tick();assert.ok(Math.abs(camera.distanceTo(head)-12)<.05,'a stable endpoint must not freeze zoom');
+ const before=Math.atan2(camera.x-head.x,camera.z-head.z);orbit.yaw+=.8;for(let i=0;i<180;i++)tick();const after=Math.atan2(camera.x-head.x,camera.z-head.z);
+ assert.ok(Math.abs(Math.atan2(Math.sin(after-before),Math.cos(after-before))-.8)<.02,'a stable endpoint must not freeze manual orbit');
+});

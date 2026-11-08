@@ -14,5 +14,5 @@ test('active landscape zones preserve every route in both directions with the li
   p.teleport(lx+c*.5,1.35,lz-s*.5);p.move.vy=6;tick();const directHead=p.pos.y+1.6;if(directHead>3.025)throw Error('upward sweep missed real emitter '+directHead);const lampHeadroom={id:lamp.id,maxHead,minOverlappingClearance,directHead,airborneQAStart:true,verified:true};
   return{records,bays,lampHeadroom,ticks,respawns:p.respawnCount,stats:w.bridges.landscape.stats};
  });
- expect(results.respawns).toBe(0);expect(results.records.length).toBeGreaterThan(0);expect(errors).toEqual([]);fs.writeFileSync(`docs/previews/yuan-bridges-landscape-v1/zone-check-${isMobile?'mobile':'desktop'}.json`,JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify(results));
+ expect(results.respawns).toBe(0);expect(results.records.length).toBeGreaterThan(0);expect(errors).toEqual([]);const output=process.env.SKYISLES_QA_OUTPUT_DIR??'docs/previews/yuan-bridges-landscape-v1';fs.mkdirSync(output,{recursive:true});fs.writeFileSync(`${output}/zone-check-${isMobile?'mobile':'desktop'}.json`,JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify(results));
 });

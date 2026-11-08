@@ -35,7 +35,8 @@
     "arrivalFocus": [
       0,
       1.2
-    ]
+    ],
+    "desktopFallbackYaw": -1.8
   },
   "H": {
     "pitch": 0.42,

@@ -1,3 +1,9 @@
+## 目前修正檢查點：候選26，90單元與E桌機到達測試通過
+
+E新增desktopFallbackYaw=-1.8（直式維持-3），不改dist/FOV或世界比例。修正final25桌機雨水花園出框。另對靜態鏡頭殼、完全相同的head/yaw/pitch/range/forecast/group-matrix輸入重用純端點搜尋，逐幀實際視線及插值仍照做；手動旋轉／縮放有新增真實位置斷言，90單元/lint/build已通過。world-spaces未放寬420秒限制，新增每島進度檔，候選26桌機目前已到第8島；手機仍待本輪重測。
+
+frozen26端口4298，work/r21-final-candidate26-dist。關鍵4案例報告work/r21-final-qa/playwright-final26-critical.json及final26-critical-progress.ndjson；所有模型與32+5Blender來源仍為677208f，不重建。後續完成受影響26案例的分批重跑、最終59張遊戲畫面、性能及單指回放。完整final25的64/4/2保留，不能宣稱最終70項單次全過。
+
 ## 2026-11-08 環境恢復：本機成果仍存在，完整回歸2項未通過
 
 目前分支codex/bdeh-r21-game-integration，模型／32張同源視圖／5近景已在677208f。命令列曾短暫不可用，新工作區資訊後成功恢復；未reset/clean。完整final25結果64通過、4依裝置跳過、2未通過：E桌機雨水花園NDC y=-1.2686超出初始畫面；mobile world-spaces420秒逾時。原始報告、progress、check紀錄與摘要見recovery-20261108/。尚未開始最後59張遊戲圖與效能／操作回放。不要把候選6／23的game-after當新版E最終成果。
