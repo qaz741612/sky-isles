@@ -1,0 +1,70 @@
+{"title":"loads without console errors and renders non-uniform pixels","project":"desktop","status":"passed","duration":39662,"retry":0}
+{"title":"getState exposes the core game state","project":"desktop","status":"passed","duration":16555,"retry":0}
+{"title":"all eight policies open from the menu and have no invented content","project":"desktop","status":"passed","duration":19591,"retry":0}
+{"title":"world label opens matching policy and Escape closes the dialog","project":"desktop","status":"passed","duration":16914,"retry":0}
+{"title":"teleport moves the player and fall respawns at last ground","project":"desktop","status":"passed","duration":17107,"retry":0}
+{"title":"R21 four real Blender places: public circuits, NPC dry plots, native camera, policy and panorama checkpoint recovery","project":"desktop","status":"passed","duration":247858,"retry":0}
+{"title":"active landscape zones preserve every route in both directions with the live Player","project":"desktop","status":"passed","duration":282995,"retry":0}
+{"title":"KeyW moves the character along the camera-relative forward direction","project":"desktop","status":"passed","duration":17546,"retry":0}
+{"title":"KeyS moves the character along the camera-relative back direction","project":"desktop","status":"passed","duration":17253,"retry":0}
+{"title":"KeyA moves the character along the camera-relative left direction","project":"desktop","status":"passed","duration":17566,"retry":0}
+{"title":"KeyD moves the character along the camera-relative right direction","project":"desktop","status":"passed","duration":17240,"retry":0}
+{"title":"touch joystick up moves the character forward","project":"desktop","status":"skipped","duration":251,"retry":0}
+{"title":"new V9 plinth visible north/east/west guards stop ordinary live Player walking","project":"desktop","status":"passed","duration":16081,"retry":0}
+{"title":"V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information","project":"desktop","status":"passed","duration":25261,"retry":0}
+{"title":"G Blender park: 22 routes, public circuit, water barriers, policy and camera","project":"desktop","status":"passed","duration":312858,"retry":0}
+{"title":"G actual water-edge walks, model policy picking and panorama state restoration","project":"desktop","status":"passed","duration":18742,"retry":0}
+{"title":"V5.1 nine real wet falls recover the dry checkpoint and retain policy-puzzle progress","project":"desktop","status":"passed","duration":51618,"retry":0}
+{"title":"C real model picking, original spring, NPC approach and live boundary guards","project":"desktop","status":"passed","duration":17539,"retry":0}
+{"title":"real 3D panorama fits, locks movement, preserves progress and returns the exploration camera","project":"desktop","status":"passed","duration":41712,"retry":0}
+{"title":"approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama","project":"desktop","status":"passed","duration":24420,"retry":0}
+{"title":"final R21 arrival: original-profile landmarks, continuous gate-to-guide camera, manual orbit, dry checkpoint and panorama","project":"desktop","status":"failed","duration":32745,"retry":0,"error":"Error: page.evaluate: Error: native landmark off screen E {\"projection\":[[-0.19407777812164342,0.2418012466722007,0.9904131255678738],[-0.11596191891143491,-1.2686031622583778,0.9761015165765934]],\"camera\":[30.478062395614398,8.744517002593316,-34.686098915381635],\"player\":[32.5,0.14499999582767498,-20.5],\"orbit\":{\"yaw\":3.2831853071795867,\"pitch\":0.6,\"dist\":16,\"fov\":55}}\n    at auditR21Arrival (eval at evaluate (:303:30), <anonymous>:137:104)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n  "}
+{"title":"compact portrait and landscape menu remain usable with first-visit help","project":"desktop","status":"skipped","duration":249,"retry":0}
+{"title":"all authored policy places render and retain their readable policy entry","project":"desktop","status":"passed","duration":21926,"retry":0}
+{"title":"imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged","project":"desktop","status":"passed","duration":16486,"retry":0}
+{"title":"V9 replaces legacy transport geometry without changing the policy or chime identities","project":"desktop","status":"passed","duration":15507,"retry":0}
+{"title":"transport portrait and landscape keep policy, panorama and existing input available","project":"desktop","status":"passed","duration":18394,"retry":0}
+{"title":"original home chime responds to native keyboard or touchscreen interaction","project":"desktop","status":"passed","duration":17185,"retry":0}
+{"title":"transport scene preserves policy picking, jumping, orbit and locked elevated train display","project":"desktop","status":"passed","duration":18855,"retry":0}
+{"title":"menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry","project":"desktop","status":"passed","duration":16573,"retry":0}
+{"title":"camera zoom remains stable, follows movement and keeps world scale intact","project":"desktop","status":"passed","duration":18893,"retry":0}
+{"title":"mobile instructions dismiss once; pinch zoom does not open policy","project":"desktop","status":"skipped","duration":251,"retry":0}
+{"title":"walk every island without jumping through keyboard or a single joystick pointer","project":"desktop","status":"passed","duration":170596,"retry":0}
+{"title":"guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker","project":"desktop","status":"passed","duration":14706,"retry":0}
+{"title":"native single-finger release and cancellation reset the stick and stop without camera turning","project":"desktop","status":"skipped","duration":274,"retry":0}
+{"title":"eight current places: authored public circuits, accessible exterior guards and camera orbit","project":"desktop","status":"passed","duration":388229,"retry":0}
+{"title":"loads without console errors and renders non-uniform pixels","project":"mobile","status":"passed","duration":24309,"retry":0}
+{"title":"getState exposes the core game state","project":"mobile","status":"passed","duration":12477,"retry":0}
+{"title":"all eight policies open from the menu and have no invented content","project":"mobile","status":"passed","duration":15478,"retry":0}
+{"title":"world label opens matching policy and Escape closes the dialog","project":"mobile","status":"passed","duration":14113,"retry":0}
+{"title":"teleport moves the player and fall respawns at last ground","project":"mobile","status":"passed","duration":13652,"retry":0}
+{"title":"R21 four real Blender places: public circuits, NPC dry plots, native camera, policy and panorama checkpoint recovery","project":"mobile","status":"passed","duration":360719,"retry":0}
+{"title":"active landscape zones preserve every route in both directions with the live Player","project":"mobile","status":"passed","duration":400872,"retry":0}
+{"title":"KeyW moves the character along the camera-relative forward direction","project":"mobile","status":"passed","duration":14360,"retry":0}
+{"title":"KeyS moves the character along the camera-relative back direction","project":"mobile","status":"passed","duration":13194,"retry":0}
+{"title":"KeyA moves the character along the camera-relative left direction","project":"mobile","status":"passed","duration":13501,"retry":0}
+{"title":"KeyD moves the character along the camera-relative right direction","project":"mobile","status":"passed","duration":13839,"retry":0}
+{"title":"touch joystick up moves the character forward","project":"mobile","status":"passed","duration":14389,"retry":0}
+{"title":"new V9 plinth visible north/east/west guards stop ordinary live Player walking","project":"mobile","status":"passed","duration":11028,"retry":0}
+{"title":"V9 live game: spawn, four mouths, new solids, closed access, original gameplay and information","project":"mobile","status":"passed","duration":21503,"retry":0}
+{"title":"G Blender park: 22 routes, public circuit, water barriers, policy and camera","project":"mobile","status":"passed","duration":437956,"retry":0}
+{"title":"G actual water-edge walks, model policy picking and panorama state restoration","project":"mobile","status":"passed","duration":13901,"retry":0}
+{"title":"V5.1 nine real wet falls recover the dry checkpoint and retain policy-puzzle progress","project":"mobile","status":"passed","duration":39521,"retry":0}
+{"title":"C real model picking, original spring, NPC approach and live boundary guards","project":"mobile","status":"passed","duration":13124,"retry":0}
+{"title":"real 3D panorama fits, locks movement, preserves progress and returns the exploration camera","project":"mobile","status":"passed","duration":27796,"retry":0}
+{"title":"approved family island: four gates, destinations, headroom, orbit visibility, policies and panorama","project":"mobile","status":"passed","duration":19843,"retry":0}
+{"title":"final R21 arrival: original-profile landmarks, continuous gate-to-guide camera, manual orbit, dry checkpoint and panorama","project":"mobile","status":"passed","duration":73036,"retry":0}
+{"title":"compact portrait and landscape menu remain usable with first-visit help","project":"mobile","status":"passed","duration":20202,"retry":0}
+{"title":"all authored policy places render and retain their readable policy entry","project":"mobile","status":"passed","duration":17223,"retry":0}
+{"title":"imported station lintel and canopy stop real Player double jumps; open-air jump stays unchanged","project":"mobile","status":"passed","duration":11822,"retry":0}
+{"title":"V9 replaces legacy transport geometry without changing the policy or chime identities","project":"mobile","status":"passed","duration":11610,"retry":0}
+{"title":"transport portrait and landscape keep policy, panorama and existing input available","project":"mobile","status":"passed","duration":16021,"retry":0}
+{"title":"original home chime responds to native keyboard or touchscreen interaction","project":"mobile","status":"passed","duration":12583,"retry":0}
+{"title":"transport scene preserves policy picking, jumping, orbit and locked elevated train display","project":"mobile","status":"passed","duration":14243,"retry":0}
+{"title":"menu collapses, exposes eight policies and avoids touch controls; home label is a HUD entry","project":"mobile","status":"passed","duration":14146,"retry":0}
+{"title":"camera zoom remains stable, follows movement and keeps world scale intact","project":"mobile","status":"passed","duration":15338,"retry":0}
+{"title":"mobile instructions dismiss once; pinch zoom does not open policy","project":"mobile","status":"passed","duration":24545,"retry":0}
+{"title":"walk every island without jumping through keyboard or a single joystick pointer","project":"mobile","status":"passed","duration":300593,"retry":0}
+{"title":"guards block sideways movement on the live mesh; stepping on a mushroom never launches a walker","project":"mobile","status":"passed","duration":12206,"retry":0}
+{"title":"native single-finger release and cancellation reset the stick and stop without camera turning","project":"mobile","status":"passed","duration":11378,"retry":0}
+{"title":"eight current places: authored public circuits, accessible exterior guards and camera orbit","project":"mobile","status":"timedOut","duration":439370,"retry":0,"error":"\u001b[31mTest timeout of 420000ms exceeded.\u001b[39m"}

@@ -3,25 +3,27 @@
 本輪從 PR19 `39f41940fd3af0f432b477ebd36ad5b677a71db1` 已完成的正式 Blender 增量精修。**不要重跑早期 R18／R20 或 stage1 建模來源覆蓋本輪工程**。
 
 ```sh
+python3 -m venv /tmp/sky-isles-bdeh-tools
+/tmp/sky-isles-bdeh-tools/bin/pip install -r scripts/bdeh/final-qa-requirements.txt
 npm ci
 blender -b -t 1 --python-exit-code 1 --python scripts/blender/polish_bdeh_final.py
-/workspace/.venvs/bdeh-r21/bin/python scripts/bdeh/final_collision.py
+/tmp/sky-isles-bdeh-tools/bin/python scripts/bdeh/final_collision.py
 blender -b -t 1 --python-exit-code 1 --python scripts/blender/audit_bdeh_final.py
 blender -b -t 1 --python-exit-code 1 --python scripts/blender/render_bdeh_r21.py -- --output docs/previews/bdeh-r21/final-qa
 blender -b -t 1 --python-exit-code 1 --python scripts/blender/export_bdeh_camera_canopies.py
 npm run check
-npm run dev -- --port 4296 --strictPort
+npm run dev -- --port 4297 --strictPort
 ```
 
 Blender4.3.2；Python 碰撞工具使用現有 NumPy、trimesh、Shapely。沒有新增遊戲依賴。`polish_bdeh_final.py` 自動從 `docs/design/bdeh-r21/final-qa-baseline/` 的正式原檔開啟，保留主體，只做具名的局部增量；可使用 `--code E`。產出的 `work/r21-final-qa/*-polish-parts.json` 為碰撞計算暫存，不是另外一套場景。路網生成器本輪不執行。
 
 正式原檔仍在 `docs/design/bdeh-r21/{B,D,E,H}/`，執行中的 GLB 在 `public/models/bdeh-r21/`。渲染器只讀同一份最終 .blend，輸出每島8張，record 包含原檔SHA。遊戲截圖額外核對 HTTP 實際回傳 GLB 與編譯 JS 的SHA，不能以本機檔案存在代替載入證明。
 
-比較圖重建：分別啟動 `39f4194` 與本輪 production build 在4275及4296，執行：
+比較圖重建：分別啟動 `39f4194` 與本輪 production build 在4275及4297，執行：
 
 ```sh
 node scripts/qa/capture-r21-final.mjs 4275 docs/previews/bdeh-r21/final-qa/game-before --models docs/design/bdeh-r21/final-qa-baseline/public/models/bdeh-r21
-node scripts/qa/capture-r21-final.mjs 4296 docs/previews/bdeh-r21/final-qa/game-after --models public/models/bdeh-r21
+node scripts/qa/capture-r21-final.mjs 4297 docs/previews/bdeh-r21/final-qa/game-after --models public/models/bdeh-r21
 python scripts/qa/boards-r21-final.py
 ```
 
@@ -33,4 +35,6 @@ python scripts/qa/boards-r21-final.py
 
 瀏覽器測試使用 `SKY_SOFTWARE_QA=1` 控制 SwiftShader 提交量，仍使用真 GLB、原生rAF／物理／UI，對畫面案例顯式繪製。固定60Hz行走稽核及操作回放另行標示，不能當硬體流暢度。避免與 Blender 或其它 WebGL 擷取同時跑；完整結果與失敗證據見 REPORT。
 
-補充近景（不改寫源Blender、不取代玩家視角）：`blender -b -t 1 --python-exit-code 1 --python scripts/blender/render_bdeh_final_details.py`。GLB原始buffers／法線／尺寸稽核：`/workspace/.venvs/bdeh-r21/bin/python scripts/qa/audit-r21-glb.py`；相機作用域：同一Python執行 `scripts/qa/audit-r21-camera-domain.py`。
+補充近景（不改寫源Blender、不取代玩家視角）：`blender -b -t 1 --python-exit-code 1 --python scripts/blender/render_bdeh_final_details.py`。GLB原始buffers／法線／尺寸稽核：`/tmp/sky-isles-bdeh-tools/bin/python scripts/qa/audit-r21-glb.py`；相機作用域：同一Python執行 `scripts/qa/audit-r21-camera-domain.py`。
+
+離線幾何／圖片工具的實際版本已固定於 `scripts/bdeh/final-qa-requirements.txt`；Blender內部Python與遊戲npm依賴分開，不需在遊戲加入Python或新套件。上述/tmp虛擬環境是可攜重建示例，與作者工作階段的既存venv路徑無關。
