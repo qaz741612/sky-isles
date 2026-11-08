@@ -133,7 +133,7 @@
       },
       {
         "name": "trees",
-        "footprintArea": 0.07833984547290987,
+        "footprintArea": 0.07833984660973986,
         "base": 0.1,
         "top": 1.914678,
         "outsideIslandArea": 0.0,

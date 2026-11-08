@@ -4,6 +4,7 @@ import json,math,hashlib,sys
 R=Path(__file__).resolve().parents[2];W=R/'work/r21-final-qa';O=R/'docs/previews/bdeh-r21/final-qa/performance';O.mkdir(exist_ok=True)
 a=json.loads(Path(sys.argv[1] if len(sys.argv)>1 else W/'H-native-before.json').read_text());b=json.loads(Path(sys.argv[2] if len(sys.argv)>2 else W/'H-spatial-after.json').read_text());beforeDist=Path(sys.argv[3]) if len(sys.argv)>3 else R/'work/r21-final-candidate26-dist';afterDist=Path(sys.argv[4]) if len(sys.argv)>4 else R/'work/r21-final-spatial-dist'
 assert a['codes']==b['codes']=='H'and a['marks'][-1]['ticks']==b['marks'][-1]['ticks']
+assert a['result']['r21CameraIndex']['opaque'].get('acceleration')!='static-triangle-grid' and b['result']['r21CameraIndex']['opaque']['acceleration']=='static-triangle-grid','Compare native and indexed backends, not two identical builds'
 x,y=a['result']['records'][0],b['result']['records'][0]
 for key in ['route','edgeProbes','orbitProbes','availableBoundarySegments','sampledBoundarySegments','excludedEdgeStarts']:assert x[key]==y[key],key
 assert math.dist(x['end'],y['end'])<1e-8

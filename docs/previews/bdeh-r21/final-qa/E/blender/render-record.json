@@ -1,6 +1,6 @@
 {
   "sameSource": true,
-  "sourceBlendSHA256": "8d281049dae771ffa8de13b15b5048c797507a37caa41ebe2ff4f37a14787a54",
+  "sourceBlendSHA256": "874f3144cbbe35735db443a94e59d8604d538d9734a62301f28d36c55c7f88b3",
   "engine": "Cycles CPU, no denoiser available",
   "samples": 64,
   "records": [
@@ -21,7 +21,7 @@
         800,
         600
       ],
-      "seconds": 15.690269466955215
+      "seconds": 57.260043236000456
     },
     {
       "name": "front",
@@ -40,7 +40,7 @@
         800,
         600
       ],
-      "seconds": 16.81902904395247
+      "seconds": 53.01865502600049
     },
     {
       "name": "back",
@@ -59,7 +59,7 @@
         800,
         600
       ],
-      "seconds": 15.390699091018178
+      "seconds": 48.27311266400011
     },
     {
       "name": "left",
@@ -78,7 +78,7 @@
         800,
         600
       ],
-      "seconds": 13.193535739963409
+      "seconds": 48.1976675370006
     },
     {
       "name": "right",
@@ -97,7 +97,7 @@
         800,
         600
       ],
-      "seconds": 13.31475533201592
+      "seconds": 40.90164971100057
     },
     {
       "name": "top",
@@ -116,7 +116,7 @@
         800,
         600
       ],
-      "seconds": 24.9580332019832
+      "seconds": 62.29326088699963
     },
     {
       "name": "architecture",
@@ -135,7 +135,7 @@
         800,
         600
       ],
-      "seconds": 26.916289692977443
+      "seconds": 56.85945918299967
     },
     {
       "name": "public-space",
@@ -154,7 +154,7 @@
         800,
         600
       ],
-      "seconds": 21.843953946023248
+      "seconds": 76.8337052550005
     }
   ]
 }

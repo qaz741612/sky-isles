@@ -1,3 +1,7 @@
+## 最終模型與32+5渲染已同步；新完整70正在執行
+
+E原生、左右單指及NPC圖已看過，角色完整可見；相機預設完整恢復原設定。移樹後4關鍵案例通過，93單元/lint/build及4島單指時序通過；B真實CDP搖桿連續路線完成。E新8+2的source SHA均核對，所有32+5渲染對應目前.blend。完整70進度work/r21-final-qa/final-visible-progress.ndjson；完成後同一shell會跑final-r21-pipeline.py 4305 work/r21-final-visible-dist final-visible。該pipeline接著序列量測4306原生backend／4305索引backend的相同H稽核、59張新圖、整世界效能與4島單指回放，最後來源與19比較板。不要把前一版66/4當本次最終驗證；source-consistency暫明確pending，舊資料在iteration-5。新報告產生器會拒絕GLB／bundle不相符的舊結果。完成後還需親自看最終原生圖、產生REPORT／manifest、push、逐檔GitHub下載驗SHA、收據專用後續提交並更新Draft PR19。不得合併／部署。
+
 ## 最新施工檢查點：E樹冠遮擋實體修正，尚在複驗
 
 完整66/4先前通過後，看最終圖仍抓出E直式樹冠遮身。追加真正GLB的0.35/0.5m身體射線，舊版確實失敗；iteration-5保存證據。兩個改yaw候選犧牲構圖均未採用，已恢復完全相同相機設定。只將E既有樹從(-0.2,-4.6)側移至(-3.4,-4.6)，保留建築、島面、道路、距離和FOV；碰撞／鏡頭殼同步重生，93單元/lint/build通過。最新遊戲4305/work/r21-final-visible-dist，原生backend對照4306/work/r21-final-visible-dist-native。E8+2同源64sample渲染與加強後4關鍵案例進行中；必須重跑最終70、擷取與效能後才交付。前次66/4及CPU時序不是本次移樹後全套驗證。

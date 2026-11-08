@@ -72,7 +72,7 @@
       "code": "E",
       "name": "rain-garden",
       "kind": "Blender close inspection lens, never a native game/player camera",
-      "sourceBlendSHA256": "8d281049dae771ffa8de13b15b5048c797507a37caa41ebe2ff4f37a14787a54",
+      "sourceBlendSHA256": "874f3144cbbe35735db443a94e59d8604d538d9734a62301f28d36c55c7f88b3",
       "cameraModelLocalYup": [
         10,
         7,
@@ -88,13 +88,13 @@
         800,
         600
       ],
-      "seconds": 41.345448990003206
+      "seconds": 136.73563920200013
     },
     {
       "code": "E",
       "name": "roof-planting",
       "kind": "Blender close inspection lens, never a native game/player camera",
-      "sourceBlendSHA256": "8d281049dae771ffa8de13b15b5048c797507a37caa41ebe2ff4f37a14787a54",
+      "sourceBlendSHA256": "874f3144cbbe35735db443a94e59d8604d538d9734a62301f28d36c55c7f88b3",
       "cameraModelLocalYup": [
         -12,
         12,
@@ -110,7 +110,7 @@
         800,
         600
       ],
-      "seconds": 48.125606219051406
+      "seconds": 164.79658543699952
     }
   ]
 }

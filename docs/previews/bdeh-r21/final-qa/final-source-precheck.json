@@ -1,33 +1,30 @@
 {
-  "status": "32 final Blender views and5 details match4 saved models; final25 game captures and70-case regression still pending",
+  "status": "32 current Blender views +5 details match4 final models after E tree placement fix. Renewed full70 and all final game captures/performance still pending. Final authoritative linkage will be source-consistency.json.",
   "models": [
     {
       "code": "B",
       "blendSHA256": "a6889d5b53a3362f9b9e415ed54d672e09251f368efe4bbcad9f3ce44b8f2e34",
-      "glbSHA256": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
-      "sourceViews": 8,
-      "triangles": 43036
+      "GLBSHA256": "4ea71f5c17bc2927ec35406c0273744b9efc7be16bcbef97b9437f6284e706b3",
+      "views": 8
     },
     {
       "code": "D",
       "blendSHA256": "e8b46de68157b12f84bd82e7dc9a898b104f547fda2d8fe93eec667110628b52",
-      "glbSHA256": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
-      "sourceViews": 8,
-      "triangles": 32448
+      "GLBSHA256": "7a5b82e5f38c4071565f63db6f1628743bbdbbb0d19590b6879fa7ca2b9f3595",
+      "views": 8
     },
     {
       "code": "E",
-      "blendSHA256": "8d281049dae771ffa8de13b15b5048c797507a37caa41ebe2ff4f37a14787a54",
-      "glbSHA256": "6c3470e9af3ff609a954360a98646bbb39778cbf8cdab25cf7946413c2281da1",
-      "sourceViews": 8,
-      "triangles": 38860
+      "blendSHA256": "874f3144cbbe35735db443a94e59d8604d538d9734a62301f28d36c55c7f88b3",
+      "GLBSHA256": "c3cd1f41fa17479a724eebacaf2067b59c9ee6ed14b27d8d2e0bd23ddb78736f",
+      "views": 8
     },
     {
       "code": "H",
       "blendSHA256": "a46127e6e151c7f33480c3a7ec79d7e435a7da7d614bbe9b1337f58e3c474e56",
-      "glbSHA256": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9",
-      "sourceViews": 8,
-      "triangles": 36624
+      "GLBSHA256": "cf1e1fa6aae1d1bccc09baeff25d5f8b3a4a889194a26f0e959252ccba397df9",
+      "views": 8
     }
-  ]
+  ],
+  "extraSameSourceDetails": 5
 }

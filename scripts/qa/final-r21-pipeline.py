@@ -17,7 +17,7 @@ try:
  assert stats['expected']==66 and stats['skipped']==4 and stats['unexpected']==0 and stats.get('interrupted',0)==0 and stats['flaky']==0,stats
  note('full-browser-regression','66passed4intentional-skips')
  shutil.copyfile(raw,W/'playwright-implementation-final.json')
- run('browser-evidence',['python','scripts/qa/merge-r21-browser-evidence.py'])
+ run('browser-evidence',['python','scripts/qa/merge-r21-browser-evidence.py',dist,port])
  check=(W/f'check-{label}.log').read_text();passed=int(re.search(r'pass\s+(\d+)',check)[1]);total=int(re.search(r'tests\s+(\d+)',check)[1]);assert passed==total and total>=93 and re.search(r'fail\s+0',check)and'built in'in check
  (O/'regression/npm-check.json').write_text(json.dumps({'command':'npm run check','unitTests':total,'passed':passed,'failed':0,'lint':'passed','productionBuild':'passed','log':'npm-check.log','scope':'Final source; actual command complete log preserved, no real-device or human art approval.'},indent=2)+'\n');shutil.copyfile(W/f'check-{label}.log',O/'regression/npm-check.log')
  if '--resume-after-captures' not in sys.argv[4:]:
